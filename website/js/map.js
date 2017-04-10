@@ -21,7 +21,7 @@
 	
 	function clickFeature(e) {
 		boundaries.setStyle(layerStyle);
-		constituency_id = e.target.feature.properties.Constituency_Number;
+		constituency_id = e.target.feature.properties.Ward_Code;
 		constituency_directory = e.target.feature.properties.Constituency_Directory;
 		var layer = e.target;
 		layer.setStyle({
@@ -44,7 +44,7 @@
 		});
 	}
 		
-	var boundaries = new L.GeoJSON.AJAX('/2016/NI/boundaries/OSNI_Constituencies.geojson', {
+	var boundaries = new L.GeoJSON.AJAX('/2017/SCO/boundaries/city-of-edinburgh.geojson', {
 		style: layerStyle,
 		onEachFeature: onEachFeature
 		});
@@ -55,7 +55,7 @@
 		tap: false,
 		minZoom: 7,
 		maxZoom: 16
-		}).setView([54.593346, -6.716200], 8);
+		}).setView([55.95, -3.18], 10);
     
 	mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
     
@@ -84,9 +84,9 @@
 
 	// method that we will use to update the map info control based on feature properties passed
 	info.update = function (props) {
-		this._div.innerHTML = '<h4>Constituency</h4>' +  (props ?
-			'<b>' + props.Constituency_Name + '</b><br />'
-			: 'Select a constituency');
+		this._div.innerHTML = '<h4>Ward</h4>' +  (props ?
+			'<b>' + props.Ward_Name + '</b><br />'
+			: 'Select a ward');
 	};
 
 	info.addTo(map);
