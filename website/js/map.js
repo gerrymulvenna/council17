@@ -44,7 +44,7 @@
 		});
 	}
 		
-	var boundaries = new L.GeoJSON.AJAX('/2017/SCO/boundaries/city-of-edinburgh.geojson', {
+	var boundaries = new L.GeoJSON.AJAX('/2017/SCO/boundaries/' + mapName + '.geojson', {
 		style: layerStyle,
 		onEachFeature: onEachFeature
 		});
@@ -55,7 +55,7 @@
 		tap: false,
 		minZoom: 7,
 		maxZoom: 16
-		}).setView([55.95, -3.18], 10);
+		}).setView([mapLat, mapLong], mapZoom);
     
 	mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
     

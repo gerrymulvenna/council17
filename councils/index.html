@@ -1,27 +1,20 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Scottish Council Elections 2017 #council17</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/lodash/4.11.1/lodash.min.js"></script>
-    <script type="text/javascript" src="http://d3js.org/d3.v3.js"></script>
-    <script type="text/javascript" src="http://d3js.org/d3.hexbin.v0.min.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/json5/0.3.0/json5.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vega/2.5.2/vega.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js"></script>
+	<script src="http://cdn.rawgit.com/calvinmetcalf/leaflet-ajax/gh-pages/dist/leaflet.ajax.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/lodash/4.11.1/lodash.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
 
-    <link rel="stylesheet" href="/website/css/font-awesome.min.css" />
-    <link rel="stylesheet" type="text/css" href="/website/css/style.css" media="screen, handheld" />
-    <link rel="stylesheet" type="text/css" href="/website/css/overview.css" media="screen, handheld" />
-    <link rel="stylesheet" type="text/css" href="/website/css/enhanced.css" media="screen  and (min-width: 60.5em)" />
-    <link rel="stylesheet" type="text/css" href="/website/css/stages.css" media="screen, handheld" />
-    <link rel="stylesheet" type="text/css" href="/website/css/transfers.css" media="screen, handheld" />
-
-    <link rel="icon" type="image/png" href="/website/image/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="/website/image/favicon-16x16.png" sizes="16x16" />
-    <!--[if (lt IE 9)&(!IEMobile)]>
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css"/>
+	<link rel="stylesheet" type="text/css" href="/website/css/style.css" media="screen, handheld" />
+	<link rel="stylesheet" type="text/css" href="/website/css/enhanced.css" media="screen  and (min-width: 50.5em)" />
+	<link rel="icon" type="image/png" href="/website/image/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="/website/image/favicon-16x16.png" sizes="16x16" />
+		<!--[if (lt IE 9)&(!IEMobile)]>
 		<link rel="stylesheet" type="text/css" href="enhanced.css" />
 		<![endif]-->
     <meta name="description" content="Presenting crowdsourced open data, live results and data visualisations for the Scottish Council Elections 2017" />
@@ -37,33 +30,14 @@
     <meta property="og:title" content="Scottish Council elections 2017 #council17" />
     <meta property="og:description" content="Presenting crowdsourced open data, live results and data visualisations for the Scottish Council Elections 2017" />
 <!--    <meta property="og:image" content="https://s3-eu-west-1.amazonaws.com/electionsni.org/website/image/banner.png" /> -->
-    <!-- data, elections, ni -->
+	<!-- data, elections, ni -->
+
 </head>
 <style>
-    #charttooltip {
-        font-size: 12px;
-        position: absolute;
-        height: auto;
-        padding: 10px;
-        color: #ffffff;
-        background-color: #000000;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        border-radius: 10px;
-        -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
-        -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
-        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
-        pointer-events: none;
-    }
 
-    #charttooltip.hidden {
-        display: none;
-    }
 </style>
-
 <body>
-
-    <div id="wrap">
+	<div id="wrap">
         <header>
             <h1><a href = "/">Scottish Council elections 2017</a></h1>
             <p>Open data for #council17 in Scotland</p>
@@ -77,13 +51,13 @@
                 <li><a href='/parties'><span>Parties</span></a></li>
             </ul>
         </div>
+
 		<div class="content">
 			<div id="map"></div>
-			<div id="constituencyinfo">Select a constituency</div>
+			<div id="councilinfo">Select a council</div>
 			<div id="candidates"></div>
 		</div>
 	</div>
-
 	<script src="/website/js/script.js"></script>
 	<script src="/website/js/map.js"></script>
 

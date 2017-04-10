@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Northern Ireland Elections Open Data</title>
+    <title>Scottish Council Elections 2017 #council17</title>
     <meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js"></script>
@@ -17,22 +17,19 @@
 		<!--[if (lt IE 9)&(!IEMobile)]>
 		<link rel="stylesheet" type="text/css" href="enhanced.css" />
 		<![endif]-->
-
-	<meta name="description" content="Generating crowdsourced open data, live results and data visualisations for the Northern Ireland Assembly Elections 2017." />
-	<meta name="keywords" content="assembly, elections, open data, northern ireland, 2016, 2017, AE16, AE17, crowdsource, results, single transferable vote, stv, constituency, candidate, odi belfast, open government network, nicva, voting, #AE17, tally, count, electoral" />
-	<meta name="author" content="Bob Harper">
-	<meta name="description" content="Generating crowdsourced open data, live results and data visualisations for the Northern Ireland Assembly Elections 2016." />
-	<meta name="keywords" content="assembly, elections, open data, northern ireland, 2016, crowdsource, results, single transferable vote, stv, constituency, candidate, odi belfast, open government network, nicva, voting, #ae16, tally, count, electoral" />
-	<meta name="author" content="metatags generator">
-	<meta name="robots" content="index, follow">
-	<meta name="revisit-after" content="1 month">
-	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:site" content="@electionsni" />
-	<meta name="twitter:creator" content="@odibelfast" />
-	<meta property="og:url" content="http://electionsni.org" />
-	<meta property="og:title" content="Elections NI #AE17" />
-	<meta property="og:description" content="Generating crowdsourced open data, live results and data visualisations for the Northern Ireland Assembly Elections 2017." />
-	<meta property="og:image" content="https://s3-eu-west-1.amazonaws.com/electionsni.org/website/image/banner.png" />
+    <meta name="description" content="Presenting crowdsourced open data, live results and data visualisations for the Scottish Council Elections 2017" />
+    <meta name="keywords" content="Scotland, local elections, open data, 2017, crowdsource, results, single transferable vote, stv, ward, candidate, voting, #council17, tally, count, electoral"
+    />
+    <meta name="author" content="Gerry Mulvenna">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="1 month">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@gerrymulvenna" />
+    <meta name="twitter:creator" content="@gerrymulvenna" />
+    <meta property="og:url" content="http://mulvenna.org" />
+    <meta property="og:title" content="Scottish Council elections 2017 #council17" />
+    <meta property="og:description" content="Presenting crowdsourced open data, live results and data visualisations for the Scottish Council Elections 2017" />
+<!--    <meta property="og:image" content="https://s3-eu-west-1.amazonaws.com/electionsni.org/website/image/banner.png" /> -->
 	<!-- data, elections, ni -->
 
 </head>
@@ -41,44 +38,26 @@
 </style>
 <body>
 	<div id="wrap">
-		<header>
-			<h1><a href = "/">Elections NI</a></h1>
-			<p>Open data for the Assembly Elections #AE17</p>
-		</header>
-		<label for="show-menu" class="show-menu">Menu</label>
-		<input type="checkbox" id="show-menu" role="button">
-		<div id='cssmenu'>
-			<ul>
-				<li class='active'><a href='/constituencies'><span>Constituencies</span></a></li>
-				<li><a href='/results'><span>Results</span></a></li>
-				<li><a href='/candidates'><span>Candidates</span></a></li>
-				<li><a href='/data'><span>Data</span></a></li>
-				<li class='last'><a href='/about'><span>About</span></a></li>
-		</ul>
-		</div>
-    <div class="cta">
-      <strong>Please note: data is unconfirmed until it has been verified against Electoral Office records</strong>
-<div id="seats_summary" style="background-color: #ffffff; margin: auto; color: #212121; border-bottom: solid; border-bottom-width: 1px;"></div>
-    </div>
+        <header>
+            <h1><a href = "/">Scottish Council elections 2017</a></h1>
+            <p>Open data for #council17 in Scotland</p>
+        </header>
+        <label for="show-menu" class="show-menu">Menu</label>
+        <input type="checkbox" id="show-menu" role="button">
+        <div id='cssmenu'>
+            <ul>
+                <li><a href='/candidates'><span>Candidates</span></a></li>
+                <li><a href='/councils'><span>Councils</span></a></li>
+                <li><a href='/parties'><span>Parties</span></a></li>
+            </ul>
+        </div>
 
 		<div class="content">
 			<div id="map"></div>
-			<div align="center">
-				<form id="year">
-          <input type="radio" name="year" value="2017" checked onClick="changeyear(2017);findInfo(checkedYear, 'all-candidates.json');candidates.update();constituencyinfo.update();"/> 2017
-					<input type="radio" name="year" value="2016" onClick="changeyear(2016);findInfo(checkedYear, 'all-candidates.json');candidates.update();constituencyinfo.update();"/> 2016
-					<input type="radio" name="year" value="2011" onClick="changeyear(2011);findInfo(checkedYear, 'all-candidates.json');candidates.update();constituencyinfo.update();"/> 2011
-					<input type="hidden" name="sum" value="" id="selected_year" />
-				</form>
-			</div>
-			<div id="constituencyinfo">Select a constituency</div>
+			<div id="councilinfo">City of Edinburgh Council</div>
 			<div id="candidates"></div>
 		</div>
 	</div>
-    <div id="footer">
-            Project by <a href="http://belfast.theodi.org">ODI Belfast</a> at <a href="http://www.nicva.org">NICVA</a> and the <a href="http://www.opengovernment.org.uk/about/ni-ogn/">Open Government Network NI</a></br><a href="http://www.nicva.org"><img src="/website/image/nicva500.png" height="75px" align="middle"></a><a href="http://belfast.theodi.org"><img src="/website/image/odibelfast500.png" height="75px" align="middle"></a><a href="http://www.opengovernment.org.uk/about/ni-ogn/"><img src="/website/image/ognni500.png" height="75px" align="middle"></a>
-    </div>
-
 	<script src="/website/js/script.js"></script>
 	<script src="/website/js/map.js"></script>
 
