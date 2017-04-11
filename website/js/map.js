@@ -32,8 +32,16 @@
 			layer.bringToFront();
 			}
 			info.update(layer.feature.properties);
-		candidates.update();
-		constituencyinfo.update();
+		if (mapUnit == 'Ward')
+		{
+			candidates.update();
+			constituencyinfo.update();
+		}
+		else
+		{
+			council_dir = e.target.feature.properties.FILE_NAME.toLowerCase().replace(/_/g,'-');
+			location.href = '/councils/' + council_dir;
+		}
 	}
 	
 	function onEachFeature(feature, layer) {
@@ -53,7 +61,7 @@
 		
     var map = L.map('map', {
 		tap: false,
-		minZoom: 7,
+		minZoom: 5,
 		maxZoom: 16
 		}).setView([mapLat, mapLong], mapZoom);
     
@@ -84,9 +92,9 @@
 
 	// method that we will use to update the map info control based on feature properties passed
 	info.update = function (props) {
-		this._div.innerHTML = '<h4>Ward</h4>' +  (props ?
-			'<b>' + props.Ward_Name + '</b><br />'
-			: 'Select a ward');
+		this._div.innerHTML = '<h4>' + mapUnit + '</h4>' +  (props ?
+			'<b>' + props[mapProperty] + '</b><br />'
+			: 'Select a ' + mapUnit.toLowerCase());
 	};
 
 	info.addTo(map);
