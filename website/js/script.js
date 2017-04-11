@@ -12,6 +12,16 @@ for (var i = 0; inputElements[i]; ++i) {
     }
 }
 
+// function to 
+function selectCouncil() {
+	$("#council-list").change(function()
+	{
+		document.location.href = $(this).val();
+	});
+};
+
+
+
 // create data for summary header
 function seatsSummary() {
     $.ajax({

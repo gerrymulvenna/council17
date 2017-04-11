@@ -39,8 +39,8 @@
 		}
 		else
 		{
-			council_dir = e.target.feature.properties.FILE_NAME.toLowerCase().replace(/_/g,'-');
-			location.href = '/councils/' + council_dir;
+			councilPath = e.target.feature.properties.FILE_NAME.toLowerCase().replace(/_/g,'-');
+			location.href = '/councils/' + councilPath  + '.html';
 		}
 	}
 	
