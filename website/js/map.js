@@ -21,8 +21,8 @@
 	
 	function clickFeature(e) {
 		boundaries.setStyle(layerStyle);
-		constituency_id = e.target.feature.properties.Ward_Code;
-		constituency_directory = e.target.feature.properties.Constituency_Directory;
+		ward_code = e.target.feature.properties.Ward_Code;
+//		constituency_directory = e.target.feature.properties.Constituency_Directory;
 		var layer = e.target;
 		layer.setStyle({
 				weight: 4,
@@ -35,7 +35,7 @@
 		if (mapUnit == 'Ward')
 		{
 			candidates.update();
-			constituencyinfo.update();
+			wardinfo.update();
 		}
 		else
 		{

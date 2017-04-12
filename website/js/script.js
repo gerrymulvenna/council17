@@ -1,6 +1,6 @@
 var checkedYear = 2017;
-var output = [];
-var constituenciesCount = [];
+var jsondata = [];
+var warddata = [];
 
 // though 2016 is the default checked radio element in the html some users who have reloaded may have checked '2011'
 // this function examines the two radios to see which has been checked
@@ -48,17 +48,18 @@ function changeyear(year) {
 }
 
 // load all candidates info for the checkedYear
-findInfo(checkedYear, 'all-candidates.json');
+findInfo(checkedYear, 'all-candidates.json');   //populate jsondata
+findWardInfo(checkedYear, 'all-ward-info.json');   //populate warddata
 
 // request candidate info for the specified year (can use this for other request by changing filename arg)
-// outputs the parse Json responseText to global var output
+// outputs the parse Json responseText to global var jsondata
 function findInfo(year, filename) {
     var request = new XMLHttpRequest();
-    var path = '/' + year + '/NI/' + filename;
+    var path = '/' + year + '/SCO/' + filename;
     console.log(path);
     request.onreadystatechange = function() {
         if (request.readyState == 4 && request.status >= 200 && request.status < 400) {
-            output = JSON.parse(request.responseText);
+            jsondata = JSON.parse(request.responseText);
         }
     };
     request.open('GET', path, false);
@@ -68,15 +69,16 @@ function findInfo(year, filename) {
     };
 }
 
-// similar to findInfo but used to get constituency count (votes polled etc) and output to global var 'constituenciesCount'
-function findConstituencyCountInfo(year, filename) {
+// similar to findInfo but used to get constituency count (votes polled etc) and output to global var 'warddata'
+function findWardInfo(year, filename) {
     var request = new XMLHttpRequest();
-    var path = '/' + year + '/NI/' + filename + '?' + new Date().getTime(); // add ? with timestamp to force XMLHttpRequest not to cache
+//    var path = '/' + year + '/SCO/' + filename + '?' + new Date().getTime(); // add ? with timestamp to force XMLHttpRequest not to cache
+    var path = '/' + year + '/SCO/' + filename; // add ? with timestamp to force XMLHttpRequest not to cache
     console.log(path);
     request.onreadystatechange = function() {
         if (request.readyState == 4 && request.status >= 200 && request.status < 400) {
-            constituenciesCount = JSON.parse(request.responseText);
-            console.log(constituenciesCount);
+            warddata = JSON.parse(request.responseText);
+            console.log(warddata);
         }
     };
     request.open('GET', path, false);
@@ -90,7 +92,7 @@ function findConstituencyCountInfo(year, filename) {
 function findElectedInfo(year) {
     electedOutput = [];
     var request = new XMLHttpRequest();
-    var path = '/' + year + '/NI/all-elected.json?' + new Date().getTime(); // add ? with timestamp to force XMLHttpRequest not to cache
+    var path = '/' + year + '/SCO/all-elected.json?' + new Date().getTime(); // add ? with timestamp to force XMLHttpRequest not to cache
     console.log(path);
     request.onreadystatechange = function() {
         if (request.readyState == 4 && request.status >= 200 && request.status < 400) {
@@ -131,40 +133,27 @@ function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
-////// FUNCTIONS TO HANDLE HTML ELEMENT POPULATION OF CANDIDATE AND CONSTITUENCY INFORMATION //////
+////// FUNCTIONS TO HANDLE HTML ELEMENT POPULATION OF CANDIDATE AND WARD INFORMATION //////
 var candidates = document.getElementById('candidates');
-var constituencyinfo = document.getElementById('constituencyinfo');
+var wardinfo = document.getElementById('wardinfo');
 
 candidates.update = function() {
     this.innerHTML = '';
-    var constituency = getObjects(output, 'Constituency_Number', constituency_id);
-    var candidates = constituency[0].Candidates;
+	var no_seats = '';
+    var ward = getObjects(jsondata, 'Ward_Code', ward_code);
+	var wardstats = getObjects(warddata, "Ward_Code", ward_code);
+    console.log(wardstats);
+
+	if (wardstats.length > 0)
+	{
+		no_seats = wardstats[0].Seats + ' council seats, ';
+	}
+    var candidates = ward[0].Candidates;
     console.log(candidates);
-    constituencyinfo.innerHTML = '<h2>' + constituency[0].Constituency_Name + ' (' + checkedYear + ')<h2>';
-    this.innerHTML += '<p><b>' + candidates.length + ' candidates</b></p>';
-    console.log(constituency_directory);
+    wardinfo.innerHTML = '<h2>' + ward[0].Ward_Name + ' ward (' + no_seats + candidates.length + ' candidates)</h2>';
+//    console.log(constituency_directory);
     for (i = 0; i < candidates.length; i++) {
-        if (candidates[i].Outgoing_Member == 1) {
-            var MLA_text = " MLA"
-        } else {
-            var MLA_text = ""
-        } // disabled - 'MLA' does not appear on ballot
         this.innerHTML += '<div class="votes ' + candidates[i].Party_Name.replace(/\s+/g, "-") + '" style="width: 20px;"></div><div id="candidate ' + candidates[i].Candidate_Id + '" class="tooltip ' + candidates[i].Party_Name.replace(/\s+/g, "-") + '_label">' + candidates[i].Firstname + ' ' + candidates[i].Surname + '<span class="tooltiptext">' + candidates[i].Party_Name + '</span></div><br/>';
-    }
-    findElectedInfo(checkedYear);
-    if (electedOutput.Constituencies) {
-        console.log(electedOutput);
-        var elected = getObjects(electedOutput, 'Constituency_Number', constituency_id);
-        console.log(elected);
-        if (elected.length > 0) {
-            var elected = elected[0].Elected; // determines if any candidates in the CONSTITUENCY have been ELECTED and returns them, else ignores
-        }
-        if (elected.length > 0) { // if none have been elected this does not change the div and therefore NOMINATED candidates info remains
-            this.innerHTML = '<p><b>' + elected.length + ' candidates ELECTED</b></p>';
-            for (i = 0; i < elected.length; i++) {
-                this.innerHTML += '<div class="votes ' + elected[i].Party_Name.replace(/\s+/g, "-") + '" style="width: 20px;"></div><div id="candidate ' + elected[i].Candidate_Id + '" class="tooltip ' + elected[i].Party_Name.replace(/\s+/g, "-") + '_label">' + elected[i].Firstname + ' ' + elected[i].Surname + '<span class="tooltiptext">' + elected[i].Party_Name + '</span></div><br/>'
-            }
-        }
     }
 };
 
@@ -173,38 +162,23 @@ function clearCandidates(msg) {
     candidates.innerHTML = msg;
 }
 
-constituencyinfo.update = function() {
-    findConstituencyCountInfo(checkedYear, 'all-constituency-info.json');
-    var constituency = getObjects(constituenciesCount, 'Constituency_Number', constituency_id);
-    console.log(constituency);
-    if (constituency[0].countInfo.Voting_Age_Pop) {
-        this.innerHTML += '<b>Voting Age Population:</b> ' + numberWithCommas(constituency[0].countInfo.Voting_Age_Pop) + '<br/>';
-    }
-    if (constituency[0].countInfo.Total_Electorate) {
-        this.innerHTML += '<b>Electorate:</b> ' + numberWithCommas(constituency[0].countInfo.Total_Electorate) + '<br/>';
-    }
-    if (constituency[0].countInfo.Total_Poll) {
-        this.innerHTML += '<b>Voted:</b> ' + numberWithCommas(constituency[0].countInfo.Total_Poll) + '<br/><b>Turnout:</b> ' + ((constituency[0].countInfo.Total_Poll / constituency[0].countInfo.Total_Electorate) * 100).toFixed(2) + '%';
-    }
-};
-
 // function to populate 'candidates' element with all candidates by party
 function partiesAll() {
     findInfo(checkedYear, 'all-party-candidates.json');
-    for (p = 0; p < output.Parties.length; p++) {
-        var id = output.Parties[p].Party_Number;
-        var title = output.Parties[p].Party_Name;
+    for (p = 0; p < jsondata.Parties.length; p++) {
+        var id = jsondata.Parties[p].Party_Number;
+        var title = jsondata.Parties[p].Party_Name;
         candidates.update('Party_Number', id, title);
     }
 };
 
-// function to populate 'candidates' element with all candidates by constituency
-function constituenciesAll() {
+// function to populate 'candidates' element with all candidates by ward
+function wardsAll() {
     findInfo(checkedYear, 'all-candidates.json');
-    for (p = 0; p < output.Constituencies.length; p++) {
-        var id = output.Constituencies[p].Constituency_Number;
-        var title = output.Constituencies[p].Constituency_Name;
-        candidates.update('Constituency_Number', id, title);
+    for (p = 0; p < jsondata.Wards.length; p++) {
+        var id = jsondata.Wards[p].Ward_Code;
+        var title = jsondata.Wards[p].Ward_Name;
+        candidates.update('Ward_Code', id, title);
     }
 };
 
@@ -248,16 +222,16 @@ function countMatrix(year, directory) {
 ////// FUNCTIONS TO HANDLE SELECT MENUS (OPTIONS FILLING) //////
 function partyoptions() {
     findInfo(checkedYear, 'all-party-candidates.json');
-    for (p = 0; p < output.Parties.length; p++) {
-        partySelect.innerHTML += '<option value="' + output.Parties[p].Party_Number + '">' + output.Parties[p].Party_Name + '</option>';
+    for (p = 0; p < jsondata.Parties.length; p++) {
+        partySelect.innerHTML += '<option value="' + jsondata.Parties[p].Party_Number + '">' + jsondata.Parties[p].Party_Name + '</option>';
     }
 }
 
-function constituencyoptions() {
-    findInfo(checkedYear, 'all-constituency-info.json');
-    console.log(output);
-    for (c = 0; c < output.Constituencies.length; c++) {
-        constituencySelect.innerHTML += '<option value="' + output.Constituencies[c].Constituency_Number + '" data-dir="' + output.Constituencies[c].Directory + '">' + output.Constituencies[c].Constituency_Name + '</option>';
+function wardoptions() {
+    findInfo(checkedYear, 'all-ward-info.json');
+    console.log(jsondata);
+    for (c = 0; c < jsondata.Wards.length; c++) {
+        wardSelect.innerHTML += '<option value="' + jsondata.Wards[c].Ward_Code + '" data-dir="' + jsondata.Wards[c].Directory + '">' + jsondata.Wards[c].Ward_Name + '</option>';
     }
 }
 

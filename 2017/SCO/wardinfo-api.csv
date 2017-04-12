@@ -1,0 +1,354 @@
+Council,Ward,Name,Council_no,Seats
+local.aberdeen-city.2017-05-04,local.aberdeen-city.airyhallbroomhillgarthdee.2017-05-04,Airyhall/Broomhill/Garthdee,S12000033,3
+local.aberdeen-city.2017-05-04,local.aberdeen-city.hiltonwoodsidestockethill.2017-05-04,Hilton/Woodside/Stockethill,S12000033,3
+local.aberdeen-city.2017-05-04,local.aberdeen-city.kingswellssheddocksleysummerhill.2017-05-04,Kingswells/Sheddocksley/Summerhill,S12000033,3
+local.aberdeen-city.2017-05-04,local.aberdeen-city.lower-deeside.2017-05-04,Lower Deeside,S12000033,3
+local.aberdeen-city.2017-05-04,local.aberdeen-city.midstocketrosemount.2017-05-04,Midstocket/Rosemount,S12000033,3
+local.aberdeen-city.2017-05-04,local.aberdeen-city.northfieldmastrick-north.2017-05-04,Northfield/Mastrick North,S12000033,3
+local.aberdeen-city.2017-05-04,local.aberdeen-city.tillydroneseatonold-aberdeen.2017-05-04,Tillydrone/Seaton/Old Aberdeen,S12000033,3
+local.aberdeenshire.2017-05-04,local.aberdeenshire.aboyne-upper-deeside-and-donside.2017-05-04,"Aboyne, Upper Deeside and Donside",S12000034,3
+local.aberdeenshire.2017-05-04,local.aberdeenshire.banchory-and-mid-deeside.2017-05-04,Banchory and Mid Deeside,S12000034,3
+local.aberdeenshire.2017-05-04,local.aberdeenshire.banff-and-district.2017-05-04,Banff and District,S12000034,3
+local.aberdeenshire.2017-05-04,local.aberdeenshire.peterhead-south-and-cruden.2017-05-04,Peterhead South and Cruden,S12000034,3
+local.aberdeenshire.2017-05-04,local.aberdeenshire.troup.2017-05-04,Troup,S12000034,3
+local.aberdeenshire.2017-05-04,local.aberdeenshire.west-garioch.2017-05-04,West Garioch,S12000034,3
+local.angus.2017-05-04,local.angus.arbroath-east-and-lunan.2017-05-04,Arbroath East and Lunan,S12000041,3
+local.angus.2017-05-04,local.angus.brechin-and-edzell.2017-05-04,Brechin and Edzell,S12000041,3
+local.angus.2017-05-04,local.angus.carnoustie-and-district.2017-05-04,Carnoustie and District,S12000041,3
+local.angus.2017-05-04,local.angus.kirriemuir-and-dean.2017-05-04,Kirriemuir and Dean,S12000041,3
+local.city-of-edinburgh.2017-05-04,local.city-of-edinburgh.colintonfairmilehead.2017-05-04,Colinton/Fairmilehead,S12000036,3
+local.city-of-edinburgh.2017-05-04,local.city-of-edinburgh.corstorphinemurrayfield.2017-05-04,Corstorphine/Murrayfield,S12000036,3
+local.city-of-edinburgh.2017-05-04,local.city-of-edinburgh.drum-braegyle.2017-05-04,Drum Brae/Gyle,S12000036,3
+local.city-of-edinburgh.2017-05-04,local.city-of-edinburgh.fountainbridgecraiglockhart.2017-05-04,Fountainbridge/Craiglockhart,S12000036,3
+local.city-of-edinburgh.2017-05-04,local.city-of-edinburgh.leith.2017-05-04,Leith,S12000036,3
+local.clackmannanshire.2017-05-04,local.clackmannanshire.clackmannanshire-central.2017-05-04,Clackmannanshire Central,S12000005,3
+local.clackmannanshire.2017-05-04,local.clackmannanshire.clackmannanshire-east.2017-05-04,Clackmannanshire East,S12000005,3
+local.dumfries-and-galloway.2017-05-04,local.dumfries-and-galloway.abbey.2017-05-04,Abbey,S12000006,3
+local.dumfries-and-galloway.2017-05-04,local.dumfries-and-galloway.annandale-east-and-eskdale.2017-05-04,Annandale East and Eskdale,S12000006,3
+local.dumfries-and-galloway.2017-05-04,local.dumfries-and-galloway.castle-douglas-and-crocketford.2017-05-04,Castle Douglas and Crocketford,S12000006,3
+local.dumfries-and-galloway.2017-05-04,local.dumfries-and-galloway.dee-and-glenkens.2017-05-04,Dee and Glenkens,S12000006,3
+local.dumfries-and-galloway.2017-05-04,local.dumfries-and-galloway.mid-and-upper-nithsdale.2017-05-04,Mid and Upper Nithsdale,S12000006,3
+local.east-ayrshire.2017-05-04,local.east-ayrshire.doon-valley.2017-05-04,Doon Valley,S12000008,3
+local.east-ayrshire.2017-05-04,local.east-ayrshire.irvine-valley.2017-05-04,Irvine Valley,S12000008,3
+local.east-ayrshire.2017-05-04,local.east-ayrshire.kilmarnock-north.2017-05-04,Kilmarnock North,S12000008,3
+local.east-ayrshire.2017-05-04,local.east-ayrshire.kilmarnock-south.2017-05-04,Kilmarnock South,S12000008,3
+local.east-dunbartonshire.2017-05-04,local.east-dunbartonshire.bearsden-north.2017-05-04,Bearsden North,S12000045,3
+local.east-dunbartonshire.2017-05-04,local.east-dunbartonshire.bearsden-south.2017-05-04,Bearsden South,S12000045,3
+local.east-dunbartonshire.2017-05-04,local.east-dunbartonshire.bishopbriggs-south.2017-05-04,Bishopbriggs South,S12000045,3
+local.east-dunbartonshire.2017-05-04,local.east-dunbartonshire.kirkintilloch-east-and-north-and-twechar.2017-05-04,Kirkintilloch East and North and Twechar,S12000045,3
+local.east-dunbartonshire.2017-05-04,local.east-dunbartonshire.lenzie-and-kirkintilloch-south.2017-05-04,Lenzie and Kirkintilloch South,S12000045,3
+local.east-dunbartonshire.2017-05-04,local.east-dunbartonshire.milngavie.2017-05-04,Milngavie,S12000045,3
+local.east-lothian.2017-05-04,local.east-lothian.dunbar-and-east-linton.2017-05-04,Dunbar and East Linton,S12000010,3
+local.east-lothian.2017-05-04,local.east-lothian.north-berwick-coastal.2017-05-04,North Berwick Coastal,S12000010,3
+local.east-renfrewshire.2017-05-04,local.east-renfrewshire.giffnock-and-thornliebank.2017-05-04,Giffnock and Thornliebank,S12000011,3
+local.east-renfrewshire.2017-05-04,local.east-renfrewshire.newton-means-north-and-neilston.2017-05-04,Newton Mearns North and Neilston,S12000011,3
+local.falkirk.2017-05-04,local.falkirk.bonnybridge-and-larbert.2017-05-04,Bonnybridge and Larbert,S12000014,3
+local.falkirk.2017-05-04,local.falkirk.falkirk-south.2017-05-04,Falkirk South,S12000014,3
+local.falkirk.2017-05-04,local.falkirk.grangemouth.2017-05-04,Grangemouth,S12000014,3
+local.falkirk.2017-05-04,local.falkirk.lower-braes.2017-05-04,Lower Braes,S12000014,3
+local.falkirk.2017-05-04,local.falkirk.upper-braes.2017-05-04,Upper Braes,S12000014,3
+local.fife.2017-05-04,local.fife.burntisland-kinghorn-and-western-kirkcaldy.2017-05-04,"Burntisland, Kinghorn and Western Kirkcaldy",S12000015,3
+local.fife.2017-05-04,local.fife.cupar.2017-05-04,Cupar,S12000015,3
+local.fife.2017-05-04,local.fife.dunfermline-north.2017-05-04,Dunfermline North,S12000015,3
+local.fife.2017-05-04,local.fife.east-neuk-and-landward.2017-05-04,East Neuk and Landward,S12000015,3
+local.fife.2017-05-04,local.fife.glenrothes-central-and-thornton.2017-05-04,Glenrothes Central and Thornton,S12000015,3
+local.fife.2017-05-04,local.fife.glenrothes-west-and-kinglassie.2017-05-04,Glenrothes West and Kinglassie,S12000015,3
+local.fife.2017-05-04,local.fife.howe-of-fife-and-tay-coast.2017-05-04,Howe of Fife and Tay Coast,S12000015,3
+local.fife.2017-05-04,local.fife.kirkcaldy-central.2017-05-04,Kirkcaldy Central,S12000015,3
+local.fife.2017-05-04,local.fife.kirkcaldy-east.2017-05-04,Kirkcaldy East,S12000015,3
+local.fife.2017-05-04,local.fife.kirkcaldy-north.2017-05-04,Kirkcaldy North,S12000015,3
+local.fife.2017-05-04,local.fife.rosyth.2017-05-04,Rosyth,S12000015,3
+local.fife.2017-05-04,local.fife.tay-bridgehead.2017-05-04,Tay Bridgehead,S12000015,3
+local.fife.2017-05-04,local.fife.west-fife-and-coastal-villages.2017-05-04,West Fife and Coastal Villages,S12000015,3
+local.glasgow-city.2017-05-04,local.glasgow-city.baillieston.2017-05-04,Baillieston,S12000046,3
+local.glasgow-city.2017-05-04,local.glasgow-city.dennistoun.2017-05-04,Dennistoun,S12000046,3
+local.glasgow-city.2017-05-04,local.glasgow-city.hillhead.2017-05-04,Hillhead,S12000046,3
+local.glasgow-city.2017-05-04,local.glasgow-city.maryhill.2017-05-04,Maryhill,S12000046,3
+local.glasgow-city.2017-05-04,local.glasgow-city.newlandsauldburn.2017-05-04,Newlands/Auldburn,S12000046,3
+local.glasgow-city.2017-05-04,local.glasgow-city.north-east.2017-05-04,North East,S12000046,3
+local.glasgow-city.2017-05-04,local.glasgow-city.victoria-park.2017-05-04,Victoria Park,S12000046,3
+local.highland.2017-05-04,local.highland.black-isle.2017-05-04,Black Isle,S12000017,3
+local.highland.2017-05-04,local.highland.caol-and-mallaig.2017-05-04,Caol and Mallaig,S12000017,3
+local.highland.2017-05-04,local.highland.culloden-and-ardersier.2017-05-04,Culloden and Ardersier,S12000017,3
+local.highland.2017-05-04,local.highland.east-sutherland-and-edderton.2017-05-04,East Sutherland and Edderton,S12000017,3
+local.highland.2017-05-04,local.highland.inverness-central.2017-05-04,Inverness Central,S12000017,3
+local.highland.2017-05-04,local.highland.inverness-millburn.2017-05-04,Inverness Millburn,S12000017,3
+local.highland.2017-05-04,local.highland.inverness-ness-side.2017-05-04,Inverness Ness-side,S12000017,3
+local.highland.2017-05-04,local.highland.inverness-west.2017-05-04,Inverness West,S12000017,3
+local.highland.2017-05-04,local.highland.north-west-and-central-sutherland.2017-05-04,"North, West and Central Sutherland",S12000017,3
+local.highland.2017-05-04,local.highland.tain-and-easter-ross.2017-05-04,Tain and Easter Ross,S12000017,3
+local.inverclyde.2017-05-04,local.inverclyde.inverclyde-central.2017-05-04,Inverclyde Central,S12000018,3
+local.inverclyde.2017-05-04,local.inverclyde.inverclyde-east.2017-05-04,Inverclyde East,S12000018,3
+local.inverclyde.2017-05-04,local.inverclyde.inverclyde-east-central.2017-05-04,Inverclyde East Central,S12000018,3
+local.inverclyde.2017-05-04,local.inverclyde.inverclyde-south.2017-05-04,Inverclyde South,S12000018,3
+local.inverclyde.2017-05-04,local.inverclyde.inverclyde-south-west.2017-05-04,Inverclyde South West,S12000018,3
+local.inverclyde.2017-05-04,local.inverclyde.inverclyde-west.2017-05-04,Inverclyde West,S12000018,3
+local.midlothian.2017-05-04,local.midlothian.bonnyrigg.2017-05-04,Bonnyrigg,S12000019,3
+local.midlothian.2017-05-04,local.midlothian.dalkeith.2017-05-04,Dalkeith,S12000019,3
+local.midlothian.2017-05-04,local.midlothian.midlothian-east.2017-05-04,Midlothian East,S12000019,3
+local.midlothian.2017-05-04,local.midlothian.midlothian-south.2017-05-04,Midlothian South,S12000019,3
+local.midlothian.2017-05-04,local.midlothian.midlothian-west.2017-05-04,Midlothian West,S12000019,3
+local.midlothian.2017-05-04,local.midlothian.penicuik.2017-05-04,Penicuik,S12000019,3
+local.moray.2017-05-04,local.moray.buckie.2017-05-04,Buckie,S12000020,3
+local.moray.2017-05-04,local.moray.elgin-city-north.2017-05-04,Elgin City North,S12000020,3
+local.moray.2017-05-04,local.moray.elgin-city-south.2017-05-04,Elgin City South,S12000020,3
+local.moray.2017-05-04,local.moray.fochabers-lhanbryde.2017-05-04,Fochabers Lhanbryde,S12000020,3
+local.moray.2017-05-04,local.moray.keith-and-cullen.2017-05-04,Keith and Cullen,S12000020,3
+local.moray.2017-05-04,local.moray.speyside-glenlivet.2017-05-04,Speyside Glenlivet,S12000020,3
+local.north-ayrshire.2017-05-04,local.north-ayrshire.ardrossan-and-arran.2017-05-04,Ardrossan and Arran,S12000021,3
+local.north-ayrshire.2017-05-04,local.north-ayrshire.dalry-and-west-kilbride.2017-05-04,Dalry and West Kilbride,S12000021,3
+local.north-ayrshire.2017-05-04,local.north-ayrshire.irvine-east.2017-05-04,Irvine East,S12000021,3
+local.north-ayrshire.2017-05-04,local.north-ayrshire.irvine-south.2017-05-04,Irvine South,S12000021,3
+local.north-ayrshire.2017-05-04,local.north-ayrshire.kilbirnie-and-beith.2017-05-04,Kilbirnie and Beith,S12000021,3
+local.north-ayrshire.2017-05-04,local.north-ayrshire.saltcoats.2017-05-04,Saltcoats,S12000021,3
+local.north-ayrshire.2017-05-04,local.north-ayrshire.stevenston.2017-05-04,Stevenston,S12000021,3
+local.north-lanarkshire.2017-05-04,local.north-lanarkshire.coatbridge-west.2017-05-04,Coatbridge West,S12000044,3
+local.north-lanarkshire.2017-05-04,local.north-lanarkshire.gartcosh-glenboig-and-moodiesburn.2017-05-04,"Gartcosh, Glenboig and Moodiesburn",S12000044,3
+local.north-lanarkshire.2017-05-04,local.north-lanarkshire.kilsyth.2017-05-04,Kilsyth,S12000044,3
+local.north-lanarkshire.2017-05-04,local.north-lanarkshire.mossend-and-holytown.2017-05-04,Mossend and Holytown,S12000044,3
+local.north-lanarkshire.2017-05-04,local.north-lanarkshire.motherwell-west.2017-05-04,Motherwell West,S12000044,3
+local.north-lanarkshire.2017-05-04,local.north-lanarkshire.stepps-chryston-and-muirhead.2017-05-04,"Stepps, Chryston and Muirhead",S12000044,3
+local.north-lanarkshire.2017-05-04,local.north-lanarkshire.thorniewood.2017-05-04,Thorniewood,S12000044,3
+local.perth-and-kinross.2017-05-04,local.perth-and-kinross.almond-and-earn.2017-05-04,Almond and Earn,S12000024,3
+local.perth-and-kinross.2017-05-04,local.perth-and-kinross.blairgowrie-and-glens.2017-05-04,Blairgowrie and Glens,S12000024,3
+local.perth-and-kinross.2017-05-04,local.perth-and-kinross.carse-of-gowrie.2017-05-04,Carse of Gowrie,S12000024,3
+local.perth-and-kinross.2017-05-04,local.perth-and-kinross.highland.2017-05-04,Highland,S12000024,3
+local.perth-and-kinross.2017-05-04,local.perth-and-kinross.perth-city-north.2017-05-04,Perth City North,S12000024,3
+local.perth-and-kinross.2017-05-04,local.perth-and-kinross.strathallan.2017-05-04,Strathallan,S12000024,3
+local.perth-and-kinross.2017-05-04,local.perth-and-kinross.strathearn.2017-05-04,Strathearn,S12000024,3
+local.perth-and-kinross.2017-05-04,local.perth-and-kinross.strathtay.2017-05-04,Strathtay,S12000024,3
+local.renfrewshire.2017-05-04,local.renfrewshire.bishopton-bridge-of-weir-and-langbank.2017-05-04,"Bishopton, Bridge of Weir and Langbank",S12000038,3
+local.renfrewshire.2017-05-04,local.renfrewshire.paisley-east-and-central.2017-05-04,Paisley East and Central,S12000038,3
+local.renfrewshire.2017-05-04,local.renfrewshire.paisley-northeast-and-ralston.2017-05-04,Paisley Northeast and Ralston,S12000038,3
+local.renfrewshire.2017-05-04,local.renfrewshire.paisley-southeast.2017-05-04,Paisley Southeast,S12000038,3
+local.renfrewshire.2017-05-04,local.renfrewshire.renfrew-south-and-gallowhill.2017-05-04,Renfrew South and Gallowhill,S12000038,3
+local.south-ayrshire.2017-05-04,local.south-ayrshire.ayr-east.2017-05-04,Ayr East,S12000028,3
+local.south-ayrshire.2017-05-04,local.south-ayrshire.girvan-and-south-carrick.2017-05-04,Girvan and South Carrick,S12000028,3
+local.south-ayrshire.2017-05-04,local.south-ayrshire.kyle.2017-05-04,Kyle,S12000028,3
+local.south-ayrshire.2017-05-04,local.south-ayrshire.maybole-north-carrick-and-coylton.2017-05-04,"Maybole, North Carrick and Coylton",S12000028,3
+local.south-lanarkshire.2017-05-04,local.south-lanarkshire.avondale-and-stonehouse.2017-05-04,Avondale and Stonehouse,S12000029,3
+local.south-lanarkshire.2017-05-04,local.south-lanarkshire.blantyre.2017-05-04,Blantyre,S12000029,3
+local.south-lanarkshire.2017-05-04,local.south-lanarkshire.bothwell-and-uddingston.2017-05-04,Bothwell and Uddingston,S12000029,3
+local.south-lanarkshire.2017-05-04,local.south-lanarkshire.cambuslang-east.2017-05-04,Cambuslang East,S12000029,3
+local.south-lanarkshire.2017-05-04,local.south-lanarkshire.cambuslang-west.2017-05-04,Cambuslang West,S12000029,3
+local.south-lanarkshire.2017-05-04,local.south-lanarkshire.clydesdale-east.2017-05-04,Clydesdale East,S12000029,3
+local.south-lanarkshire.2017-05-04,local.south-lanarkshire.clydesdale-north.2017-05-04,Clydesdale North,S12000029,3
+local.south-lanarkshire.2017-05-04,local.south-lanarkshire.clydesdale-south.2017-05-04,Clydesdale South,S12000029,3
+local.south-lanarkshire.2017-05-04,local.south-lanarkshire.east-kilbride-central-north.2017-05-04,East Kilbride Central North,S12000029,3
+local.south-lanarkshire.2017-05-04,local.south-lanarkshire.east-kilbride-central-south.2017-05-04,East Kilbride Central South,S12000029,3
+local.south-lanarkshire.2017-05-04,local.south-lanarkshire.east-kilbride-east.2017-05-04,East Kilbride East,S12000029,3
+local.south-lanarkshire.2017-05-04,local.south-lanarkshire.east-kilbride-south.2017-05-04,East Kilbride South,S12000029,3
+local.south-lanarkshire.2017-05-04,local.south-lanarkshire.east-kilbride-west.2017-05-04,East Kilbride West,S12000029,3
+local.south-lanarkshire.2017-05-04,local.south-lanarkshire.hamilton-north-and-east.2017-05-04,Hamilton North and East,S12000029,3
+local.south-lanarkshire.2017-05-04,local.south-lanarkshire.rutherglen-central-and-north.2017-05-04,Rutherglen Central and North,S12000029,3
+local.south-lanarkshire.2017-05-04,local.south-lanarkshire.rutherglen-south.2017-05-04,Rutherglen South,S12000029,3
+local.stirling.2017-05-04,local.stirling.bannockburn.2017-05-04,Bannockburn,S12000030,3
+local.stirling.2017-05-04,local.stirling.forth-and-endrick.2017-05-04,Forth and Endrick,S12000030,3
+local.stirling.2017-05-04,local.stirling.stirling-east.2017-05-04,Stirling East,S12000030,3
+local.stirling.2017-05-04,local.stirling.stirling-west.2017-05-04,Stirling West,S12000030,3
+local.stirling.2017-05-04,local.stirling.trossachs-and-teith.2017-05-04,Trossachs and Teith,S12000030,3
+local.west-dunbartonshire.2017-05-04,local.west-dunbartonshire.kilpatrick.2017-05-04,Kilpatrick,S12000039,3
+local.west-dunbartonshire.2017-05-04,local.west-dunbartonshire.lomond.2017-05-04,Lomond,S12000039,3
+local.aberdeen-city.2017-05-04,local.aberdeen-city.bridge-of-don.2017-05-04,Bridge of Don,S12000033,4
+local.aberdeen-city.2017-05-04,local.aberdeen-city.dycebucksburndanestone.2017-05-04,Dyce/Bucksburn/Danestone,S12000033,4
+local.aberdeen-city.2017-05-04,local.aberdeen-city.george-stharbour.2017-05-04,George St/Harbour,S12000033,4
+local.aberdeen-city.2017-05-04,local.aberdeen-city.hazleheadqueens-crosscountesswells.2017-05-04,Hazlehead/Queens Cross/Countesswells,S12000033,4
+local.aberdeen-city.2017-05-04,local.aberdeen-city.kincorthniggcove.2017-05-04,Kincorth/Nigg/Cove,S12000033,4
+local.aberdeen-city.2017-05-04,local.aberdeen-city.torryferryhill.2017-05-04,Torry/Ferryhill,S12000033,4
+local.aberdeenshire.2017-05-04,local.aberdeenshire.central-buchan.2017-05-04,Central Buchan,S12000034,4
+local.aberdeenshire.2017-05-04,local.aberdeenshire.east-garioch.2017-05-04,East Garioch,S12000034,4
+local.aberdeenshire.2017-05-04,local.aberdeenshire.ellon-and-district.2017-05-04,Ellon and District,S12000034,4
+local.aberdeenshire.2017-05-04,local.aberdeenshire.fraserburgh-and-district.2017-05-04,Fraserburgh and District,S12000034,4
+local.aberdeenshire.2017-05-04,local.aberdeenshire.huntly-strathbogie-and-howe-of-alford.2017-05-04,"Huntly, Strathbogie and Howe of Alford",S12000034,4
+local.aberdeenshire.2017-05-04,local.aberdeenshire.inverurie-and-district.2017-05-04,Inverurie and District,S12000034,4
+local.aberdeenshire.2017-05-04,local.aberdeenshire.mearns.2017-05-04,Mearns,S12000034,4
+local.aberdeenshire.2017-05-04,local.aberdeenshire.mid-formartine.2017-05-04,Mid Formartine,S12000034,4
+local.aberdeenshire.2017-05-04,local.aberdeenshire.north-kincardine.2017-05-04,North Kincardine,S12000034,4
+local.aberdeenshire.2017-05-04,local.aberdeenshire.peterhead-north-and-rattray.2017-05-04,Peterhead North and Rattray,S12000034,4
+local.aberdeenshire.2017-05-04,local.aberdeenshire.stonehaven-and-lower-deeside.2017-05-04,Stonehaven and Lower Deeside,S12000034,4
+local.aberdeenshire.2017-05-04,local.aberdeenshire.turriff-and-district.2017-05-04,Turriff and District,S12000034,4
+local.aberdeenshire.2017-05-04,local.aberdeenshire.westhill-and-district.2017-05-04,Westhill and District,S12000034,4
+local.angus.2017-05-04,local.angus.arbroath-west-letham-and-friockheim.2017-05-04,"Arbroath West, Letham and Friockheim",S12000041,4
+local.angus.2017-05-04,local.angus.forfar-and-district.2017-05-04,Forfar and District,S12000041,4
+local.angus.2017-05-04,local.angus.monifieth-and-sidlaw.2017-05-04,Monifieth and Sidlaw,S12000041,4
+local.angus.2017-05-04,local.angus.montrose-and-district.2017-05-04,Montrose and District,S12000041,4
+local.city-of-edinburgh.2017-05-04,local.city-of-edinburgh.almond.2017-05-04,Almond,S12000036,4
+local.city-of-edinburgh.2017-05-04,local.city-of-edinburgh.city-centre.2017-05-04,City Centre,S12000036,4
+local.city-of-edinburgh.2017-05-04,local.city-of-edinburgh.craigentinnyduddingston.2017-05-04,Craigentinny/Duddingston,S12000036,4
+local.city-of-edinburgh.2017-05-04,local.city-of-edinburgh.forth.2017-05-04,Forth,S12000036,4
+local.city-of-edinburgh.2017-05-04,local.city-of-edinburgh.inverleith.2017-05-04,Inverleith,S12000036,4
+local.city-of-edinburgh.2017-05-04,local.city-of-edinburgh.leith-walk.2017-05-04,Leith Walk,S12000036,4
+local.city-of-edinburgh.2017-05-04,local.city-of-edinburgh.libertongilmerton.2017-05-04,Liberton/Gilmerton,S12000036,4
+local.city-of-edinburgh.2017-05-04,local.city-of-edinburgh.morningside.2017-05-04,Morningside,S12000036,4
+local.city-of-edinburgh.2017-05-04,local.city-of-edinburgh.pentland-hills.2017-05-04,Pentland Hills,S12000036,4
+local.city-of-edinburgh.2017-05-04,local.city-of-edinburgh.portobellocraigmillar.2017-05-04,Portobello/Craigmillar,S12000036,4
+local.city-of-edinburgh.2017-05-04,local.city-of-edinburgh.sighthillgorgie.2017-05-04,Sighthill/Gorgie,S12000036,4
+local.city-of-edinburgh.2017-05-04,local.city-of-edinburgh.southsidenewington.2017-05-04,Southside/Newington,S12000036,4
+local.clackmannanshire.2017-05-04,local.clackmannanshire.clackmannanshire-north.2017-05-04,Clackmannanshire North,S12000005,4
+local.clackmannanshire.2017-05-04,local.clackmannanshire.clackmannanshire-south.2017-05-04,Clackmannanshire South,S12000005,4
+local.clackmannanshire.2017-05-04,local.clackmannanshire.clackmannanshire-west.2017-05-04,Clackmannanshire West,S12000005,4
+local.dumfries-and-galloway.2017-05-04,local.dumfries-and-galloway.annandale-north.2017-05-04,Annandale North,S12000006,4
+local.dumfries-and-galloway.2017-05-04,local.dumfries-and-galloway.annandale-south.2017-05-04,Annandale South,S12000006,4
+local.dumfries-and-galloway.2017-05-04,local.dumfries-and-galloway.lochar.2017-05-04,Lochar,S12000006,4
+local.dumfries-and-galloway.2017-05-04,local.dumfries-and-galloway.mid-galloway-and-wigtown-west.2017-05-04,Mid Galloway and Wigtown West,S12000006,4
+local.dumfries-and-galloway.2017-05-04,local.dumfries-and-galloway.nith.2017-05-04,Nith,S12000006,4
+local.dumfries-and-galloway.2017-05-04,local.dumfries-and-galloway.north-west-dumfries.2017-05-04,North West Dumfries,S12000006,4
+local.dumfries-and-galloway.2017-05-04,local.dumfries-and-galloway.stranraer-and-the-rhins.2017-05-04,Stranraer and the Rhins,S12000006,4
+local.east-ayrshire.2017-05-04,local.east-ayrshire.annick.2017-05-04,Annick,S12000008,4
+local.east-ayrshire.2017-05-04,local.east-ayrshire.ballochmyle.2017-05-04,Ballochmyle,S12000008,4
+local.east-ayrshire.2017-05-04,local.east-ayrshire.cumnock-and-new-cumnock.2017-05-04,Cumnock and New Cumnock,S12000008,4
+local.east-ayrshire.2017-05-04,local.east-ayrshire.kilmarnock-east-and-hurlford.2017-05-04,Kilmarnock East and Hurlford,S12000008,4
+local.east-ayrshire.2017-05-04,local.east-ayrshire.kilmarnock-west-and-crosshouse.2017-05-04,Kilmarnock West and Crosshouse,S12000008,4
+local.east-dunbartonshire.2017-05-04,local.east-dunbartonshire.bishopbriggs-north-and-campsie.2017-05-04,Bishopbriggs North and Campsie,S12000045,4
+local.east-lothian.2017-05-04,local.east-lothian.haddington-and-lammermuir.2017-05-04,Haddington and Lammermuir,S12000010,4
+local.east-lothian.2017-05-04,local.east-lothian.musselburgh.2017-05-04,Musselburgh,S12000010,4
+local.east-lothian.2017-05-04,local.east-lothian.preston-seton-and-gosford.2017-05-04,"Preston, Seton and Gosford",S12000010,4
+local.east-lothian.2017-05-04,local.east-lothian.tranent-wallyford-and-macmerry.2017-05-04,"Tranent, Wallyford and Macmerry",S12000010,4
+local.east-renfrewshire.2017-05-04,local.east-renfrewshire.barrhead-liboside-and-uplawmoor.2017-05-04,"Barrhead, Liboside and Uplawmoor",S12000011,4
+local.east-renfrewshire.2017-05-04,local.east-renfrewshire.clarkston-netherlee-and-williamwood.2017-05-04,"Clarkston, Netherlee and Williamwood",S12000011,4
+local.east-renfrewshire.2017-05-04,local.east-renfrewshire.newton-mearns-south-and-eaglesham.2017-05-04,Newton Mearns South and Eaglesham,S12000011,4
+local.falkirk.2017-05-04,local.falkirk.carse-kinnaird-and-tryst.2017-05-04,"Carse, Kinnaird and Tryst",S12000014,4
+local.falkirk.2017-05-04,local.falkirk.denny-and-banknock.2017-05-04,Denny and Banknock,S12000014,4
+local.falkirk.2017-05-04,local.falkirk.falkirk-north.2017-05-04,Falkirk North,S12000014,4
+local.fife.2017-05-04,local.fife.buckhaven-methil-and-wemyss-villages.2017-05-04,"Buckhaven, Methil and Wemyss Villages",S12000015,4
+local.fife.2017-05-04,local.fife.cowdenbeath.2017-05-04,Cowdenbeath,S12000015,4
+local.fife.2017-05-04,local.fife.dunfermline-central.2017-05-04,Dunfermline Central,S12000015,4
+local.fife.2017-05-04,local.fife.dunfermline-south.2017-05-04,Dunfermline South,S12000015,4
+local.fife.2017-05-04,local.fife.glenrothes-north-leslie-and-markinch.2017-05-04,"Glenrothes North, Leslie and Markinch",S12000015,4
+local.fife.2017-05-04,local.fife.inverkeithing-and-dalgety-bay.2017-05-04,Inverkeithing and Dalgety Bay,S12000015,4
+local.fife.2017-05-04,local.fife.leven-kennoway-and-largo.2017-05-04,"Leven, Kennoway and Largo",S12000015,4
+local.fife.2017-05-04,local.fife.lochgelly-cardenden-and-benarty.2017-05-04,"Lochgelly, Cardenden and Benarty",S12000015,4
+local.fife.2017-05-04,local.fife.st-andrews.2017-05-04,St Andrews,S12000015,4
+local.glasgow-city.2017-05-04,local.glasgow-city.anderstoncityyorkhill.2017-05-04,Anderston/City/Yorkhill,S12000046,4
+local.glasgow-city.2017-05-04,local.glasgow-city.calton.2017-05-04,Calton,S12000046,4
+local.glasgow-city.2017-05-04,local.glasgow-city.canal.2017-05-04,Canal,S12000046,4
+local.glasgow-city.2017-05-04,local.glasgow-city.cardonald.2017-05-04,Cardonald,S12000046,4
+local.glasgow-city.2017-05-04,local.glasgow-city.drumchapelanniesland.2017-05-04,Drumchapel/Anniesland,S12000046,4
+local.glasgow-city.2017-05-04,local.glasgow-city.east-centre.2017-05-04,East Centre,S12000046,4
+local.glasgow-city.2017-05-04,local.glasgow-city.garscaddenscotstounhill.2017-05-04,Garscadden/Scotstounhill,S12000046,4
+local.glasgow-city.2017-05-04,local.glasgow-city.govan.2017-05-04,Govan,S12000046,4
+local.glasgow-city.2017-05-04,local.glasgow-city.greater-pollok.2017-05-04,Greater Pollok,S12000046,4
+local.glasgow-city.2017-05-04,local.glasgow-city.langside.2017-05-04,Langside,S12000046,4
+local.glasgow-city.2017-05-04,local.glasgow-city.linn.2017-05-04,Linn,S12000046,4
+local.glasgow-city.2017-05-04,local.glasgow-city.partick-eastkelvindale.2017-05-04,Partick East/Kelvindale,S12000046,4
+local.glasgow-city.2017-05-04,local.glasgow-city.pollokshields.2017-05-04,Pollokshields,S12000046,4
+local.glasgow-city.2017-05-04,local.glasgow-city.shettleston.2017-05-04,Shettleston,S12000046,4
+local.glasgow-city.2017-05-04,local.glasgow-city.southside-central.2017-05-04,Southside Central,S12000046,4
+local.glasgow-city.2017-05-04,local.glasgow-city.springburnrobroyston.2017-05-04,Springburn/Robroyston,S12000046,4
+local.highland.2017-05-04,local.highland.aird-and-loch-ness.2017-05-04,Aird and Loch Ness,S12000017,4
+local.highland.2017-05-04,local.highland.badenoch-and-strathspey.2017-05-04,Badenoch and Strathspey,S12000017,4
+local.highland.2017-05-04,local.highland.cromarty-firth.2017-05-04,Cromarty Firth,S12000017,4
+local.highland.2017-05-04,local.highland.dingwall-and-seaforth.2017-05-04,Dingwall and Seaforth,S12000017,4
+local.highland.2017-05-04,local.highland.eilean-aa2-cha-o.2017-05-04,Eilean a′ Chéo,S12000017,4
+local.highland.2017-05-04,local.highland.fort-william-and-ardnamurchan.2017-05-04,Fort William and Ardnamurchan,S12000017,4
+local.highland.2017-05-04,local.highland.inverness-south.2017-05-04,Inverness South,S12000017,4
+local.highland.2017-05-04,local.highland.nairn-and-cawdor.2017-05-04,Nairn and Cawdor,S12000017,4
+local.highland.2017-05-04,local.highland.thurso-and-northwest-caithness.2017-05-04,Thurso and Northwest Caithness,S12000017,4
+local.highland.2017-05-04,local.highland.wester-ross-strathpeffer-and-lochalsh.2017-05-04,"Wester Ross, Strathpeffer and Lochalsh",S12000017,4
+local.highland.2017-05-04,local.highland.wick-and-east-caithness.2017-05-04,Wick and East Caithness,S12000017,4
+local.inverclyde.2017-05-04,local.inverclyde.inverclyde-north.2017-05-04,Inverclyde North,S12000018,4
+local.moray.2017-05-04,local.moray.forres.2017-05-04,Forres,S12000020,4
+local.moray.2017-05-04,local.moray.heldon-and-laich.2017-05-04,Heldon and Laich,S12000020,4
+local.north-ayrshire.2017-05-04,local.north-ayrshire.irvine-west.2017-05-04,Irvine West,S12000021,4
+local.north-ayrshire.2017-05-04,local.north-ayrshire.kilwinning.2017-05-04,Kilwinning,S12000021,4
+local.north-ayrshire.2017-05-04,local.north-ayrshire.north-coast-and-cumbraes.2017-05-04,North Coast and Cumbraes,S12000021,4
+local.north-lanarkshire.2017-05-04,local.north-lanarkshire.airdrie-central.2017-05-04,Airdrie Central,S12000044,4
+local.north-lanarkshire.2017-05-04,local.north-lanarkshire.airdrie-north.2017-05-04,Airdrie North,S12000044,4
+local.north-lanarkshire.2017-05-04,local.north-lanarkshire.airdrie-south.2017-05-04,Airdrie South,S12000044,4
+local.north-lanarkshire.2017-05-04,local.north-lanarkshire.bellshill.2017-05-04,Bellshill,S12000044,4
+local.north-lanarkshire.2017-05-04,local.north-lanarkshire.coatbridge-north.2017-05-04,Coatbridge North,S12000044,4
+local.north-lanarkshire.2017-05-04,local.north-lanarkshire.coatbridge-south.2017-05-04,Coatbridge South,S12000044,4
+local.north-lanarkshire.2017-05-04,local.north-lanarkshire.cumbernauld-east.2017-05-04,Cumbernauld East,S12000044,4
+local.north-lanarkshire.2017-05-04,local.north-lanarkshire.cumbernauld-north.2017-05-04,Cumbernauld North,S12000044,4
+local.north-lanarkshire.2017-05-04,local.north-lanarkshire.cumbernauld-south.2017-05-04,Cumbernauld South,S12000044,4
+local.north-lanarkshire.2017-05-04,local.north-lanarkshire.fortissat.2017-05-04,Fortissat,S12000044,4
+local.north-lanarkshire.2017-05-04,local.north-lanarkshire.motherwell-north.2017-05-04,Motherwell North,S12000044,4
+local.north-lanarkshire.2017-05-04,local.north-lanarkshire.motherwell-south-east-and-ravenscraig.2017-05-04,Motherwell South East and Ravenscraig,S12000044,4
+local.north-lanarkshire.2017-05-04,local.north-lanarkshire.murdostoun.2017-05-04,Murdostoun,S12000044,4
+local.north-lanarkshire.2017-05-04,local.north-lanarkshire.wishaw.2017-05-04,Wishaw,S12000044,4
+local.perth-and-kinross.2017-05-04,local.perth-and-kinross.kinross-shire.2017-05-04,Kinross-shire,S12000024,4
+local.perth-and-kinross.2017-05-04,local.perth-and-kinross.perth-city-centre.2017-05-04,Perth City Centre,S12000024,4
+local.perth-and-kinross.2017-05-04,local.perth-and-kinross.perth-city-south.2017-05-04,Perth City South,S12000024,4
+local.perth-and-kinross.2017-05-04,local.perth-and-kinross.strathmore.2017-05-04,Strathmore,S12000024,4
+local.renfrewshire.2017-05-04,local.renfrewshire.erskine-and-inchinnan.2017-05-04,Erskine and Inchinnan,S12000038,4
+local.renfrewshire.2017-05-04,local.renfrewshire.houston-crosslee-and-linwood.2017-05-04,"Houston, Crosslee and Linwood",S12000038,4
+local.renfrewshire.2017-05-04,local.renfrewshire.johnstone-north-kilbarchan-howwood-and-lochwinnoch.2017-05-04,"Johnstone North, Kilbarchan, Howwood and Lochwinnoch",S12000038,4
+local.renfrewshire.2017-05-04,local.renfrewshire.johnstone-south-and-elderslie.2017-05-04,Johnstone South and Elderslie,S12000038,4
+local.renfrewshire.2017-05-04,local.renfrewshire.paisley-northwest.2017-05-04,Paisley Northwest,S12000038,4
+local.renfrewshire.2017-05-04,local.renfrewshire.paisley-southwest.2017-05-04,Paisley Southwest,S12000038,4
+local.renfrewshire.2017-05-04,local.renfrewshire.renfrew-north-and-braehead.2017-05-04,Renfrew North and Braehead,S12000038,4
+local.south-ayrshire.2017-05-04,local.south-ayrshire.ayr-north.2017-05-04,Ayr North,S12000028,4
+local.south-ayrshire.2017-05-04,local.south-ayrshire.ayr-west.2017-05-04,Ayr West,S12000028,4
+local.south-ayrshire.2017-05-04,local.south-ayrshire.prestwick.2017-05-04,Prestwick,S12000028,4
+local.south-ayrshire.2017-05-04,local.south-ayrshire.troon.2017-05-04,Troon,S12000028,4
+local.south-lanarkshire.2017-05-04,local.south-lanarkshire.clydesdale-west.2017-05-04,Clydesdale West,S12000029,4
+local.south-lanarkshire.2017-05-04,local.south-lanarkshire.hamilton-south.2017-05-04,Hamilton South,S12000029,4
+local.south-lanarkshire.2017-05-04,local.south-lanarkshire.hamilton-west-and-earnock.2017-05-04,Hamilton West and Earnock,S12000029,4
+local.south-lanarkshire.2017-05-04,local.south-lanarkshire.larkhall.2017-05-04,Larkhall,S12000029,4
+local.stirling.2017-05-04,local.stirling.dunblane-and-bridge-of-allan.2017-05-04,Dunblane and Bridge of Allan,S12000030,4
+local.stirling.2017-05-04,local.stirling.stirling-north.2017-05-04,Stirling North,S12000030,4
+local.west-dunbartonshire.2017-05-04,local.west-dunbartonshire.clydebank-central.2017-05-04,Clydebank Central,S12000039,4
+local.west-dunbartonshire.2017-05-04,local.west-dunbartonshire.clydebank-waterfront.2017-05-04,Clydebank Waterfront,S12000039,4
+local.west-dunbartonshire.2017-05-04,local.west-dunbartonshire.dumbarton.2017-05-04,Dumbarton,S12000039,4
+local.west-dunbartonshire.2017-05-04,local.west-dunbartonshire.leven.2017-05-04,Leven,S12000039,4
+local.argyll-and-bute.2017-05-04,local.argyll-and-bute.cowal.2017-05-04,Cowal,S12000035,3
+local.argyll-and-bute.2017-05-04,local.argyll-and-bute.dunoon.2017-05-04,Dunoon,S12000035,3
+local.argyll-and-bute.2017-05-04,local.argyll-and-bute.helensburgh-and-lomond-south.2017-05-04,Helensburgh and Lomond South,S12000035,4
+local.argyll-and-bute.2017-05-04,local.argyll-and-bute.helensburgh-central.2017-05-04,Helensburgh Central,S12000035,3
+local.argyll-and-bute.2017-05-04,local.argyll-and-bute.isle-of-bute.2017-05-04,Isle of Bute,S12000035,3
+local.argyll-and-bute.2017-05-04,local.argyll-and-bute.kintyre-and-the-islands.2017-05-04,Kintyre and the Islands,S12000035,3
+local.argyll-and-bute.2017-05-04,local.argyll-and-bute.lomond-north.2017-05-04,Lomond North,S12000035,3
+local.argyll-and-bute.2017-05-04,local.argyll-and-bute.mid-argyll.2017-05-04,Mid Argyll,S12000035,3
+local.argyll-and-bute.2017-05-04,local.argyll-and-bute.oban-north-and-lorn.2017-05-04,Oban North and Lorn,S12000035,4
+local.argyll-and-bute.2017-05-04,local.argyll-and-bute.oban-south-and-the-isles.2017-05-04,Oban South and the Isles,S12000035,4
+local.argyll-and-bute.2017-05-04,local.argyll-and-bute.south-kintyre.2017-05-04,South Kintyre,S12000035,3
+local.dundee-city.2017-05-04,local.dundee-city.coldside.2017-05-04,Coldside,S12000042,4
+local.dundee-city.2017-05-04,local.dundee-city.east-end.2017-05-04,East End,S12000042,3
+local.dundee-city.2017-05-04,local.dundee-city.lochee.2017-05-04,Lochee,S12000042,4
+local.dundee-city.2017-05-04,local.dundee-city.maryfield.2017-05-04,Maryfield,S12000042,3
+local.dundee-city.2017-05-04,local.dundee-city.north-east.2017-05-04,North East,S12000042,3
+local.dundee-city.2017-05-04,local.dundee-city.strathmartine.2017-05-04,Strathmartine,S12000042,4
+local.dundee-city.2017-05-04,local.dundee-city.the-ferry.2017-05-04,The Ferry,S12000042,4
+local.dundee-city.2017-05-04,local.dundee-city.west-end.2017-05-04,West End,S12000042,4
+local.eilean-siar.2017-05-04,local.eilean-siar.an-taobh-siar-agus-nis.2017-05-04,An Taobh Siar agus Nis,S12000013,4
+local.eilean-siar.2017-05-04,local.eilean-siar.barraigh-bhatarsaigh-eirisgeigh-agus-uibhist-a-deas.2017-05-04,"Barraigh, Bhatarsaigh, Eirisgeigh agus Uibhist a Deas",S12000013,4
+local.eilean-siar.2017-05-04,local.eilean-siar.beinn-na-foghla-agus-uibhist-a-tuath.2017-05-04,Beinn na Foghla agus Uibhist a Tuath,S12000013,3
+local.eilean-siar.2017-05-04,local.eilean-siar.loch-a-tuath.2017-05-04,Loch a Tuath,S12000013,3
+local.eilean-siar.2017-05-04,local.eilean-siar.na-hearadh-agus-ceann-a-deas-nan-loch.2017-05-04,Na Hearadh agus Ceann a Deas nan Loch,S12000013,3
+local.eilean-siar.2017-05-04,local.eilean-siar.sgire-an-rubha.2017-05-04,Sgire an Rubha,S12000013,3
+local.eilean-siar.2017-05-04,local.eilean-siar.sgiruige-agus-ceann-a-tuath-nan-loch.2017-05-04,Sgir'Uige agus Ceann a Tuath nan Loch,S12000013,3
+local.eilean-siar.2017-05-04,local.eilean-siar.steornabhagh-a-deas.2017-05-04,Steòrnabhagh a Deas,S12000013,4
+local.eilean-siar.2017-05-04,local.eilean-siar.steornabhagh-a-tuath.2017-05-04,Steòrnabhagh a Tuath,S12000013,4
+local.orkney-islands.2017-05-04,local.orkney-islands.east-mainland-south-ronaldsay-and-burray.2017-05-04,"East Mainland, South Ronaldsay and Burray",S12000023,3
+local.orkney-islands.2017-05-04,local.orkney-islands.kirkwall-east.2017-05-04,Kirkwall East,S12000023,4
+local.orkney-islands.2017-05-04,local.orkney-islands.kirkwall-west-and-orphir.2017-05-04,Kirkwall West and Orphir,S12000023,4
+local.orkney-islands.2017-05-04,local.orkney-islands.north-isles.2017-05-04,North Isles,S12000023,3
+local.orkney-islands.2017-05-04,local.orkney-islands.stromness-and-south-isles.2017-05-04,Stromness and South Isles,S12000023,3
+local.orkney-islands.2017-05-04,local.orkney-islands.west-mainland.2017-05-04,West Mainland,S12000023,4
+local.the-scottish-borders.2017-05-04,local.the-scottish-borders.east-berwickshire.2017-05-04,East Berwickshire,S12000026,3
+local.the-scottish-borders.2017-05-04,local.the-scottish-borders.galashiels-and-district.2017-05-04,Galashiels and District,S12000026,4
+local.the-scottish-borders.2017-05-04,local.the-scottish-borders.hawick-and-denholm.2017-05-04,Hawick and Denholm,S12000026,3
+local.the-scottish-borders.2017-05-04,local.the-scottish-borders.hawick-and-hermitage.2017-05-04,Hawick and Hermitage,S12000026,3
+local.the-scottish-borders.2017-05-04,local.the-scottish-borders.jedburgh-and-district.2017-05-04,Jedburgh and District,S12000026,3
+local.the-scottish-borders.2017-05-04,local.the-scottish-borders.kelso-and-district.2017-05-04,Kelso and District,S12000026,3
+local.the-scottish-borders.2017-05-04,local.the-scottish-borders.leaderdale-and-melrose.2017-05-04,Leaderdale and Melrose,S12000026,3
+local.the-scottish-borders.2017-05-04,local.the-scottish-borders.mid-berwickshire.2017-05-04,Mid Berwickshire,S12000026,3
+local.the-scottish-borders.2017-05-04,local.the-scottish-borders.selkirkshire.2017-05-04,Selkirkshire,S12000026,3
+local.the-scottish-borders.2017-05-04,local.the-scottish-borders.tweeddale-east.2017-05-04,Tweeddale East,S12000026,3
+local.the-scottish-borders.2017-05-04,local.the-scottish-borders.tweeddale-west.2017-05-04,Tweeddale West,S12000026,3
+local.shetland-islands.2017-05-04,local.shetland-islands.lerwick-north.2017-05-04,Lerwick North,S12000027,3
+local.shetland-islands.2017-05-04,local.shetland-islands.lerwick-south.2017-05-04,Lerwick South,S12000027,4
+local.shetland-islands.2017-05-04,local.shetland-islands.north-isles.2017-05-04,North Isles,S12000027,3
+local.shetland-islands.2017-05-04,local.shetland-islands.shetland-central.2017-05-04,Shetland Central,S12000027,3
+local.shetland-islands.2017-05-04,local.shetland-islands.shetland-north.2017-05-04,Shetland North,S12000027,3
+local.shetland-islands.2017-05-04,local.shetland-islands.shetland-south.2017-05-04,Shetland South,S12000027,3
+local.shetland-islands.2017-05-04,local.shetland-islands.shetland-west.2017-05-04,Shetland West,S12000027,3
+local.west-lothian.2017-05-04,local.west-lothian.armadale-and-blackridge.2017-05-04,Armadale and Blackridge,S12000040,3
+local.west-lothian.2017-05-04,local.west-lothian.bathgate.2017-05-04,Bathgate,S12000040,4
+local.west-lothian.2017-05-04,local.west-lothian.broxburn-uphall-and-winchburgh.2017-05-04,"Broxburn, Uphall and Winchburgh",S12000040,4
+local.west-lothian.2017-05-04,local.west-lothian.east-livingston-and-east-calder.2017-05-04,East Livingston and East Calder,S12000040,4
+local.west-lothian.2017-05-04,local.west-lothian.fauldhouse-and-the-breich-valley.2017-05-04,Fauldhouse and the Breich Valley,S12000040,3
+local.west-lothian.2017-05-04,local.west-lothian.linlithgow.2017-05-04,Linlithgow,S12000040,3
+local.west-lothian.2017-05-04,local.west-lothian.livingston-north.2017-05-04,Livingston North,S12000040,4
+local.west-lothian.2017-05-04,local.west-lothian.livingston-south.2017-05-04,Livingston South,S12000040,4
+local.west-lothian.2017-05-04,local.west-lothian.whitburn-and-blackburn.2017-05-04,Whitburn and Blackburn,S12000040,4
