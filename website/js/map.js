@@ -30,6 +30,7 @@
 		if (!L.Browser.ie && !L.Browser.opera) {
 			layer.bringToFront();
 			}
+			console.log(layer.feature.properties);
 			info.update(layer.feature.properties);
 		if (mapUnit == 'Ward')
 		{
@@ -41,7 +42,7 @@
 		else
 		{
 			councilPath = e.target.feature.properties.FILE_NAME.toLowerCase().replace(/_/g,'-');
-			location.href = '/councils/' + councilPath  + '.html';
+			location.href = '/councils/' + councilPath  + '.php';
 		}
 	}
 	

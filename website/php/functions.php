@@ -1,7 +1,12 @@
+<?php
+function head($title, $mapName, $mapLat, $mapLong, $mapZoom, $mapProperty, $mapUnit, $mapWardDesc = NULL, $twimg = '/website/image/scotland.png')
+{
+    echo '
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Shetland Council Election 2017 #council17</title>
+<head>';
+    echo"    <title>$title</title>\n";
+    echo'
     <meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js"></script>
@@ -10,19 +15,23 @@
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
 <script type="text/javascript">
 // global vars for maps.js
-    var mapName = "shetland-islands";
-	var mapLat = 60.3;
-	var mapLong = -1.2659;
-	var mapZoom = 8;
-	var mapProperty = 'Ward_Name';
-	var mapUnit = 'Ward';
-	var mapWardDesc = 'CODE';
-</script>
-
+';
+    echo "    var mapName = '$mapName';\n";
+    echo "    var mapLat = $mapLat;\n";
+    echo "    var mapLong = $mapLong;\n";
+    echo "    var mapZoom = $mapZoom;\n";
+    echo "    var mapProperty = '$mapProperty';\n";
+    echo "    var mapUnit = '$mapUnit';\n";
+    if($mapWardDesc)
+    {
+        echo "    var mapWardDesc = '$mapWardDesc';\n";
+    }
+    echo '</script>
 
   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css"/>
 	<link rel="stylesheet" type="text/css" href="/website/css/style.css" media="screen, handheld" />
 	<link rel="stylesheet" type="text/css" href="/website/css/enhanced.css" media="screen  and (min-width: 50.5em)" />
+	<link rel="icon" type="image/png" href="/website/image/c17-icon-150x150.png" sizes="150x150" />
 	<link rel="icon" type="image/png" href="/website/image/favicon-32x32.png" sizes="32x32" />
 	<link rel="icon" type="image/png" href="/website/image/favicon-16x16.png" sizes="16x16" />
 		<!--[if (lt IE 9)&(!IEMobile)]>
@@ -40,38 +49,34 @@
     <meta property="og:url" content="http://mulvenna.org" />
     <meta property="og:title" content="Scottish Council elections 2017 #council17" />
     <meta property="og:description" content="Presenting crowdsourced open data, live results and data visualisations for the Scottish Council Elections 2017" />
-<!--    <meta property="og:image" content="https://s3-eu-west-1.amazonaws.com/electionsni.org/website/image/banner.png" /> -->
-	<!-- data, elections, ni -->
+';
+echo "    <meta property=\"og:image\" content=\"http://" . $_SERVER['SERVER_NAME'] . "$twimg\" />\n";
+echo '	<!-- data, elections, ni -->
 
-</head>
-<style>
+</head>';
 
-</style>
-<body>
-	<div id="wrap">
-        <header>
-            <h1><a href = "/">Scottish Council elections 2017</a></h1>
-            <p>Open data for #council17 in Scotland</p>
-        </header>
+}
+
+function navigation($title, $param2 = NULL, $param3 = NULL, $param4 = NULL)
+{
+    echo"<header><h1><a href = \"/\">$title</a></h1><p>Open data for #council17 in Scotland</p></header>\n";
+    echo'
         <label for="show-menu" class="show-menu">Menu</label>
         <input type="checkbox" id="show-menu" role="button">
-        <div id='cssmenu'>
+        <div id="cssmenu">
             <ul>
-                <li><a href='/candidates'><span>Candidates</span></a></li>
-                <li><a href='/councils'><span>Councils</span></a></li>
-                <li><a href='/parties'><span>Parties</span></a></li>
+                <li><a href="/candidates"><span>Candidates</span></a></li>
+                <li><a href="/councils"><span>Councils</span></a></li>
+                <li><a href="/parties"><span>Parties</span></a></li>
             </ul>
-        </div>
+        </div>';
+}
 
-		<div class="content">
-			<div id="map"></div>
-			<h2 id="breadcrumb"><a href="/councils/">Scotland</a> // <a href="shetland-islands.html">Shetland Council</a></h2>
-			<div id="wardinfo"></div>
-			<div id="candidates"></div>
-		</div>
-	</div>
-	<script src="/website/js/script.js"></script>
-	<script src="/website/js/map.js"></script>
+function content($param1 = NULL, $param2 = NULL, $param3 = NULL, $param4 = NULL)
+{
+}
 
-</body>
-</html>
+function footer($param1 = NULL, $param2 = NULL, $param3 = NULL, $param4 = NULL)
+{
+}
+?>
