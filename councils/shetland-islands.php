@@ -1,24 +1,26 @@
 <?php
 require $_SERVER["DOCUMENT_ROOT"] . "/website/php/functions.php";
 
-// function head($title, $mapName, $mapLat, $mapLong, $mapZoom, $mapProperty, $mapUnit, $mapWardDesc, $twimg)
-head("#council17 Shetland - Map-based interface to crowd-sourced data for the Scottish Council elections 2017", 'shetland-islands', 60.3, -1.2659, 8, 'Ward_Name', 'Ward', 'CODE', '/website/image/shetland-islands.png');
-echo '
-<body>
-	<div id="wrap">
-';
-navigation("Scottish Council elections 2017");
-echo '
-		<div class="content">
-			<div id="map"></div>
-			<h2 id="breadcrumb"><a href="/councils/">Scotland</a> // <a href="shetland-islands.php">Shetland Council</a></h2>
-			<div id="wardinfo"></div>
-			<div id="candidates"></div>
-		</div>
-	</div>
-	<script src="/website/js/script.js"></script>
-	<script src="/website/js/map.js"></script>
+// --------- council specific variables in this section --------
+// this should be the council identifier consistent with Democracy Club data, this website and to a certain extent the map data
+// used in the mapName js variable, the twitter image, the breadcrumb link
+$slug = 'shetland-islands';
+$council_name = 'Shetland';  // used in the title and breadcrumb
+$mapLat = 60.3;              // good centre position for the map
+$mapLong = -1.2659;          // good centre position for the map 
+$mapZoom = 8;                // zoom level starting position
+$mapProperty = 'Ward_Name';  // the property in the geojson file with the name of the ward
+$mapUnit = 'Ward';           // either Council or Ward
+$mapWardDesc= 'CODE';        // the property in the geojson file with the unique ward identifier
 
-</body>
-</html>';
+// function head($title, $mapName, $mapLat, $mapLong, $mapZoom, $mapProperty, $mapUnit, $mapWardDesc, $twimg)
+head("#council17 $council_name - Map-based interface to crowd-sourced data for the Scottish Council elections 2017", $slug, $mapLat, $mapLong, $mapZoom, $mapProperty, $mapUnit, $mapWardDesc, "/website/image/$slug.png");
+
+// ------ below here should be the same for each council --------
+
+// function head($title, $mapName, $mapLat, $mapLong, $mapZoom, $mapProperty, $mapUnit, $mapWardDesc, $twimg)
+head("#council17 $council_name - Map-based interface to crowd-sourced data for the Scottish Council elections 2017", $slug, $mapLat, $mapLong, $mapZoom, $mapProperty, $mapUnit, $mapWardDesc, "/website/image/$slug.png");
+navigation("Scottish Council elections 2017");
+content($council_name, $slug);
+foot();
 ?>

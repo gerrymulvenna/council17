@@ -1,26 +1,22 @@
 <?php
 require $_SERVER["DOCUMENT_ROOT"] . "/website/php/functions.php";
+// --------- council specific variables in this section --------
+// this should be the council identifier consistent with Democracy Club data, this website and to a certain extent the map data
+// used in the mapName js variable, the twitter image, the breadcrumb link
+$slug = 'city-of-edinburgh';
+$council_name = 'City of Edinburgh';  // used in the title and breadcrumb
+$mapLat = 55.95;              // good centre position for the map
+$mapLong = -3.18;          // good centre position for the map 
+$mapZoom = 10;                // zoom level starting position
+$mapProperty = 'Ward_Name';  // the property in the geojson file with the name of the ward
+$mapUnit = 'Ward';           // either Council or Ward
+$mapWardDesc= 'Ward_Code';        // the property in the geojson file with the unique ward identifier
+
+// ------ below here should be the same for each council --------
 
 // function head($title, $mapName, $mapLat, $mapLong, $mapZoom, $mapProperty, $mapUnit, $mapWardDesc, $twimg)
-head("#council17 City of Edinburgh - Map-based interface to crowd-sourced data for the Scottish Council elections 2017", 'city-of-edinburgh', 55.95, -3.18, 10, 'Ward_Name', 'Ward', 'Ward_Code', '/website/image/city-of-edinburgh.png');
-
-echo'
-<body>
-	<div id="wrap">
-';
+head("#council17 $council_name - Map-based interface to crowd-sourced data for the Scottish Council elections 2017", $slug, $mapLat, $mapLong, $mapZoom, $mapProperty, $mapUnit, $mapWardDesc, "/website/image/$slug.png");
 navigation("Scottish Council elections 2017");
-echo '
-		<div class="content">
-			<div id="map"></div>
-			<h3 id="breadcrumb"><a href="/councils/">Scotland</a> // <a href="city-of-edinburgh.php">City of Edinburgh Council</a></h3>
-			<div id="wardinfo"></div>
-			<div id="candidates"></div>
-		</div>
-	</div>
-	<script src="/website/js/script.js"></script>
-	<script src="/website/js/map.js"></script>
-
-</body>
-</html>';
-
+content($council_name, $slug);
+foot();
 ?>
