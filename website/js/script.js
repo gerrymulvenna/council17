@@ -48,7 +48,7 @@ function changeyear(year) {
 }
 
 // load all candidates info for the checkedYear
-findInfo(checkedYear, 'all-candidates.json');   //populate jsondata
+findInfo(checkedYear, 'two-tier-candidates.json');   //populate jsondata
 findWardInfo(checkedYear, 'all-ward-info.json');   //populate warddata
 
 // request candidate info for the specified year (can use this for other request by changing filename arg)
@@ -140,20 +140,22 @@ var wardinfo = document.getElementById('wardinfo');
 candidates.update = function() {
     this.innerHTML = '';
 	var no_seats = '';
-    var ward = getObjects(jsondata, 'Ward_Code', ward_code);
+    var ward = getObjects(jsondata, 'post_id', 'UTW:' + ward_code);
 	var wardstats = getObjects(warddata, "Ward_Code", ward_code);
-    console.log(wardstats);
 
 	if (wardstats.length > 0)
 	{
 		no_seats = wardstats[0].Seats + ' council seats, ';
 	}
-    var candidates = ward[0].Candidates;
+    var candidates = ward[0].candidates;
+    console.log(ward[0]);
+    console.log(ward[0].post_label);
+    console.log(wardstats);
     console.log(candidates);
-    wardinfo.innerHTML = '<h2>' + ward[0].Ward_Name + ' ward (' + no_seats + candidates.length + ' candidates)</h2>';
+    wardinfo.innerHTML = '<h2>' + ward[0].post_label + ' ward (' + no_seats + candidates.length + ' candidates)</h2>';
 //    console.log(constituency_directory);
     for (i = 0; i < candidates.length; i++) {
-        this.innerHTML += '<div class="votes ' + candidates[i].Party_Name.replace(/\s+/g, "-") + '" style="width: 20px;"></div><div id="candidate ' + candidates[i].Candidate_Id + '" class="tooltip ' + candidates[i].Party_Name.replace(/\s+/g, "-") + '_label">' + candidates[i].Firstname + ' ' + candidates[i].Surname + '<span class="tooltiptext">' + candidates[i].Party_Name + '</span></div><br/>';
+        this.innerHTML += '<div class="votes ' + candidates[i].party_name.replace(/\s+/g, "-") + '" style="width: 20px;"></div><div id="candidate ' + candidates[i].id + '" class="tooltip ' + candidates[i].party_name.replace(/\s+/g, "-") + '_label">' + candidates[i].name + '<span class="tooltiptext">' + candidates[i].party_name + '</span></div><br/>';
     }
 };
 
@@ -174,7 +176,7 @@ function partiesAll() {
 
 // function to populate 'candidates' element with all candidates by ward
 function wardsAll() {
-    findInfo(checkedYear, 'all-candidates.json');
+    findInfo(checkedYear, 'two-tier-candidates.json');
     for (p = 0; p < jsondata.Wards.length; p++) {
         var id = jsondata.Wards[p].Ward_Code;
         var title = jsondata.Wards[p].Ward_Name;

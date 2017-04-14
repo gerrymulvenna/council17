@@ -21,7 +21,6 @@
 	
 	function clickFeature(e) {
 		boundaries.setStyle(layerStyle);
-		ward_code = e.target.feature.properties.Ward_Code;
 //		constituency_directory = e.target.feature.properties.Constituency_Directory;
 		var layer = e.target;
 		layer.setStyle({
@@ -34,6 +33,8 @@
 			info.update(layer.feature.properties);
 		if (mapUnit == 'Ward')
 		{
+			ward_code = e.target.feature.properties[mapWardDesc];
+			console.log(ward_code);
 			candidates.update();
 			wardinfo.update();
 		}
