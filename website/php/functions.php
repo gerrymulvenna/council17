@@ -83,7 +83,7 @@ echo '
 		<div class="content">
     			<div id="map"></div>
 ';
-echo "			<h2 id=\"breadcrumb\"><a href=\"/councils/\">Scotland</a> // <a href=\"$slug.php\">$council_name Council</a></h2>\n";
+echo "			<h2 id=\"breadcrumb\"><a href=\"/councils/\">Scotland</a> | <a href=\"$slug.php\">$council_name</a></h2>\n";
 echo '			<div id="wardinfo"></div>
 			<div id="candidates">
             </div>

@@ -1,8 +1,25 @@
-    html, body {
+html, body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 0 0 0px;
     height: 100%;
 }
+
+a {
+	color: #0000bb;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #0000bb;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #7777bb;
+	text-decoration: underline;
+}
+
+
 
 #wrap {
     min-height: calc(100% - 125px);
@@ -27,6 +44,10 @@ header a {
     text-decoration: none;
 }
 
+header a:visited {
+    color: white;
+    text-decoration: none;
+}
 header a:hover {
     color: #00eecc;
     -webkit-transition: color .5s;
@@ -408,4 +429,10 @@ input[id=show-menu]:checked~#cssmenu {
 	display: inline;
 }
 
-	
+#breadcrumb {
+	margin-top: 0px;
+}
+
+.seats {
+	color: #444444;
+}

@@ -181,15 +181,15 @@
     color: #fff
 }
 
-.Solidarity_label:before {
+.Solidarity---Scotlands-Socialist-Movement_label:before {
 	content: "(Solidarity) ";
 }
 
-.Solidarity_abbr:before {
+.Solidarity---Scotlands-Socialist-Movement_abbr:before {
 	content: "Solidarity";
 }
 
-.Solidarity {
+.Solidarity---Scotlands-Socialist-Movement {
     fill: #054a24!important;
     background: #054a24!important;
     color: #fff
