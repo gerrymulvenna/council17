@@ -1,0 +1,27 @@
+local.city-of-edinburgh.2017-05-04
+Deleting row 118
+Array ( [0] => 6298 [1] => Dan Farthing [2] => Mr [3] => [4] => Male [5] => 1977-06-22 [6] => local.city-of-edinburgh.2017-05-04 [7] => party:90 [8] => Liberal Democrats [9] => UTW:southsidenewington [10] => Southside/Newington [11] => [12] => [13] => info@libdemdan.com [14] => lib_dem_dan [15] => https://www.facebook.com/danfarthingsykes [16] => http://www.libdems.org.uk/daniel_farthing-sykes [17] => [18] => http://www.libdemdan.com/ [19] => [20] => https://uk.linkedin.com/in/dan-farthing-sykes-b0251215 [21] => https://candidates.democracyclub.org.uk/media/images/5525f643413cb4432adffa79.png [22] => [23] => profile-photo [24] => dan3 [25] => It is on the candidates website ) 
+Deleting row 119
+Array ( [0] => https://libdemdan.files.wordpress.com/2015/02/dan-official.jpg" [1] => 56698209 [2] => 2017-05-04 [3] => True [4] => False [5] => [6] => [7] => [8] => [9] => PP90 ) 
+
+local.east-dunbartonshire.2017-05-04
+Deleting row 11
+Array ( [0] => 7451 [1] => Andrew Polson [2] => [3] => [4] => male [5] => [6] => local.east-dunbartonshire.2017-05-04 [7] => party:52 [8] => Conservative and Unionist Party [9] => UTW:bearsden-south [10] => Bearsden South [11] => [12] => False [13] => andrew.polson@scottishconservatives.com [14] => [15] => https://www.facebook.com/AndrewPolsonForEastDunbartonshire [16] => http://www.scottishconservatives.com/people/candidates-2/ [17] => [18] => [19] => [20] => [21] => https://candidates.democracyclub.org.uk/media/images/images/7451.png [22] => [23] => profile-photo [24] => UnionSaltire [25] => Source: https://www.facebook.com/AndrewPolsonForEastDunbartonshire ) 
+Deleting row 12
+Array ( [0] => ) 
+Deleting row 13
+Array ( [0] => I am a member of Andrew's campaign team and he had approved use of this image." [1] => [2] => 2017-05-04 [3] => True [4] => False [5] => [6] => [7] => [8] => [9] => PP52 ) 
+
+local.east-dunbartonshire.2017-05-04
+Deleting row 11
+Array ( [0] => 7451 [1] => Andrew Polson [2] => [3] => [4] => male [5] => [6] => local.east-dunbartonshire.2017-05-04 [7] => party:52 [8] => Conservative and Unionist Party [9] => UTW:bearsden-south [10] => Bearsden South [11] => [12] => False [13] => andrew.polson@scottishconservatives.com [14] => [15] => https://www.facebook.com/AndrewPolsonForEastDunbartonshire [16] => http://www.scottishconservatives.com/people/candidates-2/ [17] => [18] => [19] => [20] => [21] => https://candidates.democracyclub.org.uk/media/images/images/7451.png [22] => [23] => profile-photo [24] => UnionSaltire [25] => Source: https://www.facebook.com/AndrewPolsonForEastDunbartonshire ) 
+Deleting row 12
+Array ( [0] => ) 
+Deleting row 13
+Array ( [0] => I am a member of Andrew's campaign team and he had approved use of this image." [1] => [2] => 2017-05-04 [3] => True [4] => False [5] => [6] => [7] => [8] => [9] => PP52 ) 
+
+local.glasgow-city.2017-05-04
+Deleting row 177
+Array ( [0] => 8368 [1] => Thomas Kerr [2] => [3] => [4] => Male [5] => [6] => local.glasgow-city.2017-05-04 [7] => party:52 [8] => Conservative and Unionist Party [9] => UTW:shettleston [10] => Shettleston [11] => [12] => [13] => thomas.kerr@scottishconservatives.com [14] => Thomas_Kerr1 [15] => https://www.facebook.com/ThomasForShettleston/ [16] => http://www.glasgowconservatives.com/people/thomas-kerr [17] => [18] => [19] => [20] => [21] => https://candidates.democracyclub.org.uk/media/images/images/8368_noFLCAr.png [22] => [23] => profile-photo [24] => j0e_m [25] => www.glasgowconservatives.com/person/thomas-kerr ) 
+Deleting row 178
+Array ( [0] => ,775616885027119105,2017-05-04,True,False,,,,,PP52 ) 

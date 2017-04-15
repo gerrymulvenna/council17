@@ -1,0 +1,47 @@
+id,name,honorific_prefix,honorific_suffix,gender,birth_date,election,party_id,party_name,post_id,post_label,mapit_url,elected,email,twitter_username,facebook_page_url,party_ppc_page_url,facebook_personal_url,homepage_url,wikipedia_url,linkedin_url,image_url,proxy_image_url_template,image_copyright,image_uploading_user,image_uploading_user_notes,twitter_user_id,election_date,election_current,party_lists_in_use,party_list_position,gss_code,parlparse_id,theyworkforyou_url,party_ec_id
+22302,Ian Thomas Bryson,,,,,local.inverclyde.2017-05-04,party:52,Conservative and Unionist Party,UTW:inverclyde-central,Inverclyde Central,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP52
+22303,Colin Jackson,,,,,local.inverclyde.2017-05-04,party:53,Labour Party,UTW:inverclyde-central,Inverclyde Central,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
+22304,Michael McCormick,,,,,local.inverclyde.2017-05-04,party:53,Labour Party,UTW:inverclyde-central,Inverclyde Central,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
+22305,Jim McEleny,,,,,local.inverclyde.2017-05-04,party:102,Scottish National Party (SNP),UTW:inverclyde-central,Inverclyde Central,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
+22306,Jayne Peberdy,,,,,local.inverclyde.2017-05-04,party:102,Scottish National Party (SNP),UTW:inverclyde-central,Inverclyde Central,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
+22307,Kenny Shepherd,,,,,local.inverclyde.2017-05-04,party:90,Liberal Democrats,UTW:inverclyde-central,Inverclyde Central,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP90
+22293,Jim Boyland,,,,,local.inverclyde.2017-05-04,ynmp-party:2,Independent,UTW:inverclyde-east,Inverclyde East,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
+22294,Christopher Curley,,,,,local.inverclyde.2017-05-04,party:102,Scottish National Party (SNP),UTW:inverclyde-east,Inverclyde East,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
+22295,Stephen McCabe,,,,,local.inverclyde.2017-05-04,party:53,Labour Party,UTW:inverclyde-east,Inverclyde East,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
+22296,Jacci Stoyle,,,,,local.inverclyde.2017-05-04,party:90,Liberal Democrats,UTW:inverclyde-east,Inverclyde East,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP90
+2842,David Wilson,,,male,,local.inverclyde.2017-05-04,party:52,Conservative and Unionist Party,UTW:inverclyde-east,Inverclyde East,,False,david.wilson@scottishconservatives.com,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP52
+22297,Robbie Henderson,,,,,local.inverclyde.2017-05-04,party:90,Liberal Democrats,UTW:inverclyde-east-central,Inverclyde East Central,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP90
+22298,Iain D MacLeod,,,,,local.inverclyde.2017-05-04,party:52,Conservative and Unionist Party,UTW:inverclyde-east-central,Inverclyde East Central,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP52
+22299,Jim MacLeod,,,,,local.inverclyde.2017-05-04,party:102,Scottish National Party (SNP),UTW:inverclyde-east-central,Inverclyde East Central,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
+20438,Drew McKenzie,,,male,,local.inverclyde.2017-05-04,ynmp-party:2,Independent,UTW:inverclyde-east-central,Inverclyde East Central,,,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
+22300,Robert Moran,,,,,local.inverclyde.2017-05-04,party:53,Labour Party,UTW:inverclyde-east-central,Inverclyde East Central,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
+22301,Donna Pickett,,,,,local.inverclyde.2017-05-04,party:102,Scottish National Party (SNP),UTW:inverclyde-east-central,Inverclyde East Central,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
+22308,Martin Brennan,,,,,local.inverclyde.2017-05-04,party:53,Labour Party,UTW:inverclyde-north,Inverclyde North,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
+9166,Graeme Brooks,,,male,,local.inverclyde.2017-05-04,party:52,Conservative and Unionist Party,UTW:inverclyde-north,Inverclyde North,,,graeme.brooks@riscottishconservatives.co.uk,GraemeAB,https://www.facebook.com/Graeme.Brooks.Inverclyde,http://riscottishconservatives.co.uk/graeme.brooks.html,https://www.facebook.com/graeme.brooks.5,,,https://www.linkedin.com/in/graeme-brooks-b396b729,https://candidates.democracyclub.org.uk/media/images/images/9166.png,,profile-photo,buchser,https://www.facebook.com/graeme.brooks.5,20275889,2017-05-04,True,False,,,,,PP52
+22309,Jim Clocherty,,,,,local.inverclyde.2017-05-04,party:53,Labour Party,UTW:inverclyde-north,Inverclyde North,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
+22310,Philomena Donnachie,,,,,local.inverclyde.2017-05-04,party:102,Scottish National Party (SNP),UTW:inverclyde-north,Inverclyde North,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
+22311,Alasdair Higgins,,,,,local.inverclyde.2017-05-04,party:90,Liberal Democrats,UTW:inverclyde-north,Inverclyde North,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP90
+22312,Eddie McEleny,,,,,local.inverclyde.2017-05-04,ynmp-party:2,Independent,UTW:inverclyde-north,Inverclyde North,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
+22313,Elizabeth Robertson,,,,,local.inverclyde.2017-05-04,party:102,Scottish National Party (SNP),UTW:inverclyde-north,Inverclyde North,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
+22325,John Cooke,,,,,local.inverclyde.2017-05-04,ynmp-party:2,Independent,UTW:inverclyde-south,Inverclyde South,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
+22326,John Crowther,,,,,local.inverclyde.2017-05-04,party:102,Scottish National Party (SNP),UTW:inverclyde-south,Inverclyde South,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
+22327,Anne Duffy,,,,,local.inverclyde.2017-05-04,party:90,Liberal Democrats,UTW:inverclyde-south,Inverclyde South,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP90
+22328,Vaughan Jones,,,,,local.inverclyde.2017-05-04,ynmp-party:2,Independent,UTW:inverclyde-south,Inverclyde South,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
+22329,Agnes McAuley,,,,,local.inverclyde.2017-05-04,party:102,Scottish National Party (SNP),UTW:inverclyde-south,Inverclyde South,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
+22330,Maureen McNeil,,,,,local.inverclyde.2017-05-04,party:52,Conservative and Unionist Party,UTW:inverclyde-south,Inverclyde South,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP52
+22331,Tommy McVey,,,,,local.inverclyde.2017-05-04,ynmp-party:2,Independent,UTW:inverclyde-south,Inverclyde South,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
+22332,Natasha Murphy,,,,,local.inverclyde.2017-05-04,party:53,Labour Party,UTW:inverclyde-south,Inverclyde South,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
+22320,Gerry Dorrian,,,,,local.inverclyde.2017-05-04,party:53,Labour Party,UTW:inverclyde-south-west,Inverclyde South West,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
+22321,J B Houston,,,,,local.inverclyde.2017-05-04,ynmp-party:2,Independent,UTW:inverclyde-south-west,Inverclyde South West,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
+20785,Dominic Jack,,,male,,local.inverclyde.2017-05-04,party:52,Conservative and Unionist Party,UTW:inverclyde-south-west,Inverclyde South West,,,dominic.jack@riscottishconservatives.co.uk,Dominic_Jack97,https://www.facebook.com/DominicJackforInverclyde/,http://riscottishconservatives.co.uk/dominic.jack.html,https://www.facebook.com/dominic.jack.92,,,,,,,,,2472726264,2017-05-04,True,False,,,,,PP52
+2707,Innes Nelson,,,male,,local.inverclyde.2017-05-04,party:102,Scottish National Party (SNP),UTW:inverclyde-south-west,Inverclyde South West,,False,innes.nelson@inverclyde.gov.uk,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
+22322,Alan Nicholson,,,,,local.inverclyde.2017-05-04,party:102,Scottish National Party (SNP),UTW:inverclyde-south-west,Inverclyde South West,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
+22323,Gary Purdon,,,,,local.inverclyde.2017-05-04,ynmp-party:2,Independent,UTW:inverclyde-south-west,Inverclyde South West,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
+22324,Ciano Rebecchi,,,,,local.inverclyde.2017-05-04,party:90,Liberal Democrats,UTW:inverclyde-south-west,Inverclyde South West,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP90
+22314,Ronald Ahlfeld,,,male,,local.inverclyde.2017-05-04,ynmp-party:2,Independent,UTW:inverclyde-west,Inverclyde West,,False,,,,,https://www.facebook.com/profile.php?id=100009233425824,,,,https://candidates.democracyclub.org.uk/media/images/images/22314.png,,other,sjorford,https://www.facebook.com/profile.php?id=100009233425824,,2017-05-04,True,False,,,,,
+22315,Alan Holliday,,,,,local.inverclyde.2017-05-04,party:53,Labour Party,UTW:inverclyde-west,Inverclyde West,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
+22316,James Kelly,,,,,local.inverclyde.2017-05-04,party:52,Conservative and Unionist Party,UTW:inverclyde-west,Inverclyde West,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP52
+5715,Christopher William McEleny,,,male,,local.inverclyde.2017-05-04,party:102,Scottish National Party (SNP),UTW:inverclyde-west,Inverclyde West,,False,,,,,https://www.facebook.com/Councillor.Chris.McEleny,,,,,,,,,,2017-05-04,True,False,,,,,PP102
+22317,Lynne Quinn,,,,,local.inverclyde.2017-05-04,ynmp-party:2,Independent,UTW:inverclyde-west,Inverclyde West,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
+22318,Alan Taylor,,,,,local.inverclyde.2017-05-04,party:85,UK Independence Party (UKIP),UTW:inverclyde-west,Inverclyde West,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP85
+22319,George White,,,,,local.inverclyde.2017-05-04,party:90,Liberal Democrats,UTW:inverclyde-west,Inverclyde West,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP90

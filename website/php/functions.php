@@ -38,8 +38,8 @@ function head($title, $mapName, $mapLat, $mapLong, $mapZoom, $mapProperty, $mapU
 		<!--[if (lt IE 9)&(!IEMobile)]>
 		<link rel="stylesheet" type="text/css" href="enhanced.css" />
 		<![endif]-->
-    <meta name="description" content="Presenting crowdsourced open data, live results and data visualisations for the Scottish Council Elections 2017" />
-    <meta name="keywords" content="Scotland, local elections, open data, 2017, crowdsource, results, single transferable vote, stv, ward, candidate, voting, #council17, tally, count, electoral"
+    <meta name="description" content="Map-based interface to browse the candidates for the Scottish Council Elections 2017" />
+    <meta name="keywords" content="Scotland, local elections, open data, 2017, crowdsource, single transferable vote, stv, ward, candidate, voting, #council17, electoral"
     />
     <meta name="author" content="Gerry Mulvenna">
     <meta name="robots" content="index, follow">

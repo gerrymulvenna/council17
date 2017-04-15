@@ -39,10 +39,11 @@ $elections = array(
 $dataRoot = "https://candidates.democracyclub.org.uk/media/candidates-";
 $outDir = "../2017/SCO/";
 
-twoTier($elections, $dataRoot, $outDir);
+
+buildData($elections, $dataRoot, $outDir);
 
 // wards -> candidates 
-function twoTier($elections, $dataRoot, $dir)
+function buildData($elections, $dataRoot, $dir)
 {
     foreach ($elections as $election)
     {
@@ -51,7 +52,19 @@ function twoTier($elections, $dataRoot, $dir)
             $wards = array();
             $wardIDs = array();   //used to keep track of which wards have been added
             $candURL = $dataRoot.$election.".csv";
-            $arrCand = array_map('str_getcsv', explode(PHP_EOL, getData($candURL)));
+            $arrCand = getData($candURL, $election);
+            echo "$election<br>";
+            for ($i = 1; $i < count($arrCand); $i++)
+            {
+                if (count($arrCand[$i]) <= 1)
+                {
+                    echo "<br>Deleting row $i<br>\n";
+                    print_r($arrCand[$i]);
+                    echo "<br>";
+                    unset ($arrCand[$i]);
+                }
+            }
+
             $header = array_shift($arrCand);
             array_walk($arrCand, '_combine_array', $header);
   
@@ -98,52 +111,6 @@ function writeJSON($wards, $my_file)
   fclose($handle);
 }
 
-
-// councils - > wards -> candidates (stalled development)
-function threeTier($elections, $dataRoot, $my_file)
-{
-  $councils = array();
-  foreach ($elections as $election)
-  {
-     if (preg_match('/^local\.(.+)\.2017-05-04$/', $election, $matches))
-  	 {
-       $council = array('slug' => $matches[1], 'election' => $election, 'wards' => array());
-  
-       $candURL = $dataRoot.$election.".csv";
-       $arrCand = array_map('str_getcsv', explode(PHP_EOL, getData($candURL)));
-       $header = array_shift($arrCand);
-       array_walk($arrCand, '_combine_array', $header);
-  
-  		 foreach ($arrCand as $candidate)
-  		 {
-  		   $post_id = $candidate['post_id'];
-  			 if (!empty($post_id))
-  			 {
-    			 $post_label = $candidate['post_label'];
-    		   unset ($candidate['election']);
-  	  		 unset ($candidate['post_id']);
-  		     unset ($candidate['post_label']);
-  		     if (array_key_exists($post_id, $council['wards']))
-  			   {
-             array_push($council['wards'][$post_id]['candidates'], $candidate);			   
-  			   }
-  			   else
-  			   {
-  			 	   $council['wards'][$post_id] = array('post_label' => $post_label, 'candidates' => array($candidate));
-  			   }
-  			 }
-  		 }
-  		}
-      $councils[] = $council;
-  }
-	$dc = new DemoClub_Councils();
-	$dc->Councils = $councils;
-  $json = json_encode($dc);
-  $handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file);
-  fwrite($handle, $json);
-  fclose($handle);
-}
-
 function splitName($name)
 {
   $ret = array();
@@ -159,20 +126,35 @@ function splitName($name)
 }
 
 function _combine_array(&$row, $key, $header) {
-  $row = array_combine($header, $row);
+    if (count($row) > 1 )
+    {
+      $row = array_combine($header, $row);
+    }
 }
 
-function getData($csvURL)
+function getData($csvURL, $election)
 {
-        $ch = curl_init($csvURL);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
-        curl_setopt($ch, CURLOPT_FORBID_REUSE, true);
-        curl_setopt($ch, CURLOPT_HEADER, false);
-        $data = curl_exec($ch);
-        curl_close($ch);
+    $ch = curl_init($csvURL);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+    curl_setopt($ch, CURLOPT_FORBID_REUSE, true);
+    curl_setopt($ch, CURLOPT_HEADER, false);
+    $data = curl_exec($ch);
+    curl_close($ch);
 
-        return($data);
+    $my_file = $election .".csv";
+    $handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file);
+    fwrite($handle, $data);
+    fclose($handle);
+
+    $arr = array();
+    $handle = fopen($my_file, "r", filesize($my_file));
+    while ($row = fgetcsv($handle))
+    {
+        $arr[] = $row;
+    }
+    fclose($handle);
+    return ($arr);
 }
 
 class DemoClub_Councils
@@ -195,4 +177,17 @@ class DemoClub_Wards
  } 
 }
 
+
+// fgetcsv() is more resilient than str_getcsv when fields contain EOL characters
+function getCSV($my_file)
+{
+    $arr = array();
+    $handle = fopen($my_file, "r", filesize($my_file));
+    while ($row = fgetcsv($handle))
+    {
+        $arr[] = $row;
+    }
+    fclose($handle);
+    return ($arr);
+}
 ?>
