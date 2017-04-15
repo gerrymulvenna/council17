@@ -20,9 +20,9 @@ echo'<div class="content">
 <h3>About this site</h3>
 <p>In Scotland, the Scottish Parliament has <a href="http://www.parliament.scot/parliamentarybusiness/CurrentCommittees/101840.aspx">responsibility to oversee the local government elections</a>, but there are very few joined-up resources to look at the council elections as a whole, 
 as each council runs their own election and publishes data on their own website. The <a href="http://www.electionsscotland.info/emb/homepage/2/about_us">Electoral Management Board</a> administrates the local government election process in Scotland and does provide some useful data.</p>
-<p>However this site is one citizen&ksquo;s effort to provide a map-based interface to the data across all wards in Scotland. It uses the
+<p>However this site is one citizen&lsquo;s effort to provide a map-based interface to the data across all wards in Scotland. It uses the
 crowd-sourced data extracted from the SOPNs (Statement of Persons Notified) produced as PDFs by individual councils.</p>
-<p>This site is made possible by those users at Democracy Club who have given their time to manually enter all the candidate information from each SOPN published by the councils. Hopefully this interface to the data
+<p>This site is made possible by those users at <a href="http://democracyclub.org.uk">Democracy Club</a> who have given their time to manually enter all the candidate information from each SOPN published by the councils. Hopefully this interface to the data
 will make a valuable contribution to this election process.</p>
 </div>
 
