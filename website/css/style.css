@@ -119,6 +119,15 @@ header p {
     color: #777;
 }
 
+div.about {
+	display: inline-table;
+	width: 400px;
+	margin-top: 2em;
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-bottom: 1em;
+}
+
 #thepost {
     width: 2px;
     background-color: black;

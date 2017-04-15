@@ -1,25 +1,31 @@
-# electionsni
-Open Data frameworks, datasets and front-end for elections in Northern Ireland
+# Scottish council elections 2017
+Open Data frameworks, datasets and front-end for 2017 council elections in the 32 Scottish councils
 
 ## about the project
-The Elections NI Open Data project is a collaboration of people who wanted to produce datasets and visualisations of the 2016 Northern Ireland Assembly elections, led by ODI Belfast at NICVA and the NI Open Government Network.
+In Scotland, the Scottish Parliament has responsibility to oversee the local government elections, but there are very few joined-up resources to look at the council elections as a whole, 
+as each council runs their own election and publishes data on their own website. This is one citizen's attempt to provide a map-based interface to the candidates in each ward, using the
+crowd-sourced data extracted from the SOPNs (Statement of Persons Notified) produced as PDFs by individual councils.
 
-## the data
-To get the data, view the [Schema](https://github.com/NICVA/electionsni/blob/master/schema.md) and [browse](http://electionsni.org.s3-website-eu-west-1.amazonaws.com/data/) the directories.
 
-These databases are made available under the Open Database Licence (ODbL). Any rights in individual contents of the database are licensed under the Database Contents License. You should attribute authorship to electionsni.org and the Electoral Office for Northern Ireland.
+## author
+Find Gerry Mulvenna at @gerrymulvenna on Twitter
 
-## the site
-Find us at [electionsni.org](http://electionsni.org). We are visualising data and communicating it to the public at large.
+This site took its starting point from the work carried out by Bob Harper for the #AE17 assembly election in Northern Ireland.
+* http://electionsni.org
 
-The site uses a number of javascript libraries:
-* [d3](https://d3js.org/)
-* [leaflet](http://leafletjs.com/)
-* [lodash](https://lodash.com/)
+## the candidate data
+For more details on the Democracy Club data see https://candidates.democracyclub.org.uk/help/api
 
-The website data is comprised of JSON files, which are generated directly from the database hosted on the site.
+## the map data
+Map data came primarily from the Local Government Boundary Commission for Scotland
+* http://www.lgbc-scotland.gov.uk/maps/datafiles/index_1995_on.asp
 
-## contributing
-We're keen to have others contribute to the project however they can. Open an issue, or contact us to take part, or even if you just have an idea that we should look at.
+with the top-level Scottish council boundaries coming from the Ordnance Survey "boundary line" package
+https://www.ordnancesurvey.co.uk/business-and-government/help-and-support/products/boundary-line.html
 
-**We're also looking for observers at count centers to help us crowdsource the results live. Again, get in contact if you want to help.**
+The open source application QGIS was used to convert the shapefiles into GEOJSON format with latitute longitude coordinates (EPSG:4326)
+http://www.qgis.org/en/site/forusers/download.html
+
+The Map Shaper application was invaluable for simplifying the GEOJSON data to achieve the required level of detail for our purpose and to drastically reduce the size of the boundary
+Map Shaper is a very efficient and easy to use online application at http://mapshaper.org/
+

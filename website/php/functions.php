@@ -68,9 +68,10 @@ function navigation($title, $param2 = NULL, $param3 = NULL, $param4 = NULL)
         <input type="checkbox" id="show-menu" role="button">
         <div id="cssmenu">
             <ul>
-                <li><a href="/candidates"><span>Candidates</span></a></li>
+<!--                <li><a href="/candidates"><span>Candidates</span></a></li>-->
                 <li><a href="/councils"><span>Councils</span></a></li>
-                <li><a href="/parties"><span>Parties</span></a></li>
+<!--                <li><a href="/parties"><span>Parties</span></a></li>-->
+                <li><a href="/about"><span>About</span></a></li>
             </ul>
         </div>';
 }
