@@ -30,6 +30,7 @@ function head($title, $mapName, $mapLat, $mapLong, $mapZoom, $mapProperty, $mapU
 
   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css"/>
 	<link rel="stylesheet" type="text/css" href="/website/css/style.css" media="screen, handheld" />
+	<link rel="stylesheet" type="text/css" href="/website/css/parties.css" media="screen, handheld" />
 	<link rel="stylesheet" type="text/css" href="/website/css/enhanced.css" media="screen  and (min-width: 50.5em)" />
 	<link rel="icon" type="image/png" href="/website/image/c17-icon-150x150.png" sizes="150x150" />
 	<link rel="icon" type="image/png" href="/website/image/favicon-32x32.png" sizes="32x32" />

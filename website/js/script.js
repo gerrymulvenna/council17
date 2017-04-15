@@ -155,7 +155,7 @@ candidates.update = function() {
     wardinfo.innerHTML = '<h2>' + ward[0].post_label + ' ward (' + no_seats + candidates.length + ' candidates)</h2>';
 //    console.log(constituency_directory);
     for (i = 0; i < candidates.length; i++) {
-        this.innerHTML += '<div class="votes ' + candidates[i].party_name.replace(/\s+/g, "-") + '" style="width: 20px;"></div><div id="candidate ' + candidates[i].id + '" class="tooltip ' + candidates[i].party_name.replace(/\s+/g, "-") + '_label">' + candidates[i].name + '<span class="tooltiptext">' + candidates[i].party_name + '</span></div><br/>';
+        this.innerHTML += '<div class="votes ' + candidates[i].party_name.replace(/\s+/g, "-").replace(/[()]/g,"") + '" style="width: 20px;"></div><div id="candidate ' + candidates[i].id + '" class="tooltip ' + candidates[i].party_name.replace(/\s+/g, "-").replace(/[()]/g,"") + '_label">' + candidates[i].name + '<span class="tooltiptext">' + candidates[i].party_name + '</span></div><br/>';
     }
 };
 
