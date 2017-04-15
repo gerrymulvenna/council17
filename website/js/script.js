@@ -139,7 +139,7 @@ var candidates = document.getElementById('candidates');
 var wardinfo = document.getElementById('wardinfo');
 
 candidates.update = function() {
-   var ack = '<div id="ack"><div id="dc-caption">This full set of candidate data collated by</div><div id="dc-logo"><a href="http://democracyclub.org.uk"><img src="https://democracyclub.org.uk/static/dc_theme/images/logo-with-text-2017.png" width="200"></a></div></div>';
+   var ack = '<div id="ack"><div id="dc-caption">This full set of candidate data was collated by</div><div id="dc-logo"><a href="http://democracyclub.org.uk"><img src="https://democracyclub.org.uk/static/dc_theme/images/logo-with-text-2017.png" width="250"></a></div></div>';
 
 	this.innerHTML = '';
 	var no_seats = '';
@@ -222,26 +222,3 @@ function countMatrix(year, directory) {
         });
     }, "text");
 }
-
-//////<-------------------------------------------------->//////
-
-////// FUNCTIONS TO HANDLE SELECT MENUS (OPTIONS FILLING) //////
-function partyoptions() {
-    findInfo(checkedYear, 'all-party-candidates.json');
-    for (p = 0; p < jsondata.Parties.length; p++) {
-        partySelect.innerHTML += '<option value="' + jsondata.Parties[p].Party_Number + '">' + jsondata.Parties[p].Party_Name + '</option>';
-    }
-}
-
-function wardoptions() {
-    findInfo(checkedYear, 'all-ward-info.json');
-    console.log(jsondata);
-    for (c = 0; c < jsondata.Wards.length; c++) {
-        wardSelect.innerHTML += '<option value="' + jsondata.Wards[c].Ward_Code + '" data-dir="' + jsondata.Wards[c].Directory + '">' + jsondata.Wards[c].Ward_Name + '</option>';
-    }
-}
-
-function resetselect(select, defaulttext) {
-    select.innerHTML = '<option value=null>' + defaulttext + '</option>';
-}
-////// <-------------------------------------> //////

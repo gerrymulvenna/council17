@@ -26,10 +26,10 @@ crowd-sourced data extracted from the SOPNs (Statement of Persons Notified) prod
 will make a valuable contribution to this election process.</p>
 </div>
 
-<div id="author" class="about">
+<div id="dev" class="about">
 <a href="http://twiter.com/gerrymulvenna"><img src="/website/image/gerry-patlee.png" height="200"></a>
-<h3>About the author, Gerry Mulvenna<br><small>(pictured above on the right)</small></h3>
-<p>This site is provided without any statutory capacity. It has been put together by Gerry Mulvenna, a programmer living in Edinburgh, who wanted to help other voters reach the necessary information to cast their votes in the #council17 elections.
+<h3>About the developer<br><small>(pictured above on the right)</small></h3>
+<p>This site is provided without any statutory capacity. It has been put together by Gerry Mulvenna, a programmer living in Edinburgh, who wanted to help other voters access the necessary information to cast their votes in the #council17 elections.
 Gerry believes that STV (Single Transferable Vote) is the best available voting system and would like to see it introduced for all the elections in Scotland. He hopes that an improved voter engagement in these council elections will increase familiarity with STV among the voters of Scotland. </p>
 Find Gerry Mulvenna at <a href="http://twiter.com/gerrymulvenna">@gerrymulvenna on Twitter</a>
 </div>

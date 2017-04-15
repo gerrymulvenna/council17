@@ -63,14 +63,14 @@ echo '	<!-- data, elections, ni -->
 
 function navigation($title, $param2 = NULL, $param3 = NULL, $param4 = NULL)
 {
-    echo"<header><h1><a href = \"/\">$title</a></h1><p>Open data for #council17 in Scotland</p></header>\n";
+    echo"<header><h1><a href = \"/\">$title</a></h1><p>Browse candidates for #council17 in Scotland</p></header>\n";
     echo'
         <label for="show-menu" class="show-menu">Menu</label>
         <input type="checkbox" id="show-menu" role="button">
         <div id="cssmenu">
             <ul>
 <!--                <li><a href="/candidates"><span>Candidates</span></a></li>-->
-                <li><a href="/councils"><span>Councils</span></a></li>
+                <li><a href="/councils"><span>By map</span></a></li>
 <!--                <li><a href="/parties"><span>Parties</span></a></li>-->
                 <li><a href="/about"><span>About</span></a></li>
             </ul>
@@ -87,7 +87,8 @@ echo "			<h2 id=\"breadcrumb\"><a href=\"/councils/\">Scotland</a> // <a href=\"
 echo '			<div id="wardinfo"></div>
 			<div id="candidates">
             </div>
-		</div>';
+		</div>
+';
 }
 
 function foot($param1 = NULL, $param2 = NULL, $param3 = NULL, $param4 = NULL)
@@ -100,4 +101,5 @@ echo '
 </body>
 </html>';
 }
+
 ?>
