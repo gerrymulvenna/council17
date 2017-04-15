@@ -1,0 +1,355 @@
+council,ward_no,post_label,post_id
+"Aberdeen City Council Area",1,Dyce/Bucksburn/Danestone,S13002835
+"Aberdeen City Council Area",2,"Bridge of Don",S13002836
+"Aberdeen City Council Area",3,Kingswells/Sheddocksley/Summerhill,S13002837
+"Aberdeen City Council Area",4,"Northfield/Mastrick North",S13002838
+"Aberdeen City Council Area",5,Hilton/Woodside/Stockethill,S13002839
+"Aberdeen City Council Area",6,"Tillydrone/Seaton/Old Aberdeen",S13002840
+"Aberdeen City Council Area",7,Midstocket/Rosemount,S13002841
+"Aberdeen City Council Area",8,"George St/Harbour",S13002842
+"Aberdeen City Council Area",9,"Lower Deeside",S13002843
+"Aberdeen City Council Area",10,"Hazlehead/Queens Cross/Countesswells",S13002844
+"Aberdeen City Council Area",11,Airyhall/Broomhill/Garthdee,S13002845
+"Aberdeen City Council Area",12,Torry/Ferryhill,S13002846
+"Aberdeen City Council Area",13,Kincorth/Nigg/Cove,S13002847
+"Aberdeenshire Council Area",1,"Banff and District",S13002848
+"Aberdeenshire Council Area",2,Troup,S13002849
+"Aberdeenshire Council Area",3,"Fraserburgh and District",S13002850
+"Aberdeenshire Council Area",4,"Central Buchan",S13002851
+"Aberdeenshire Council Area",5,"Peterhead North and Rattray",S13002852
+"Aberdeenshire Council Area",6,"Peterhead South and Cruden",S13002853
+"Aberdeenshire Council Area",7,"Turriff and District",S13002854
+"Aberdeenshire Council Area",8,"Mid Formartine",S13002855
+"Aberdeenshire Council Area",9,"Ellon and District",S13002856
+"Aberdeenshire Council Area",10,"West Garioch",S13002857
+"Aberdeenshire Council Area",11,"Inverurie and District",S13002858
+"Aberdeenshire Council Area",12,"East Garioch",S13002859
+"Aberdeenshire Council Area",13,"Westhill and District",S13002860
+"Aberdeenshire Council Area",14,"Huntly, Strathbogie and Howe of Alford",S13002861
+"Aberdeenshire Council Area",15,"Aboyne, Upper Deeside and Donside",S13002862
+"Aberdeenshire Council Area",16,"Banchory and Mid Deeside",S13002863
+"Aberdeenshire Council Area",17,"North Kincardine",S13002864
+"Aberdeenshire Council Area",18,"Stonehaven and Lower Deeside",S13002865
+"Aberdeenshire Council Area",19,Mearns,S13002866
+"Angus Council Area",1,"Kirriemuir and Dean",S13002867
+"Angus Council Area",2,"Brechin and Edzell",S13002868
+"Angus Council Area",3,"Forfar and District",S13002869
+"Angus Council Area",4,"Monifieth and Sidlaw",S13002870
+"Angus Council Area",5,"Carnoustie and District",S13002871
+"Angus Council Area",6,"Arbroath West, Letham and Friockheim",S13002872
+"Angus Council Area",7,"Arbroath East and Lunan",S13002873
+"Angus Council Area",8,"Montrose and District",S13002874
+ARGYLL_AND_BUTE,9,"Lomond North Ward",S13002524
+ARGYLL_AND_BUTE,7,"Dunoon Ward",S13002522
+ARGYLL_AND_BUTE,11,"Helensburgh and Lomond South Ward",S13002526
+ARGYLL_AND_BUTE,10,"Helensburgh Central Ward",S13002525
+ARGYLL_AND_BUTE,6,"Cowal Ward",S13002521
+ARGYLL_AND_BUTE,0,"Kintyre and the Islands Ward",S13002517
+ARGYLL_AND_BUTE,8,"Isle of Bute Ward",S13002523
+ARGYLL_AND_BUTE,3,"Mid Argyll Ward",S13002518
+ARGYLL_AND_BUTE,0,"Oban South and the Isles Ward",S13002519
+ARGYLL_AND_BUTE,5,"Oban North and Lorn Ward",S13002520
+ARGYLL_AND_BUTE,1,"South Kintyre Ward",S13002516
+"City of Edinburgh Council Area",1,Almond,S13002919
+"City of Edinburgh Council Area",2,"Pentland Hills",S13002920
+"City of Edinburgh Council Area",3,"Drum Brae / Gyle",S13002921
+"City of Edinburgh Council Area",4,Forth,S13002922
+"City of Edinburgh Council Area",5,Inverleith,S13002923
+"City of Edinburgh Council Area",6,"Corstorphine / Murrayfield",S13002924
+"City of Edinburgh Council Area",7,"Sighthill / Gorgie",S13002925
+"City of Edinburgh Council Area",8,"Colinton / Fairmilehead",S13002926
+"City of Edinburgh Council Area",9,"Fountainbridge / Craiglockhart",S13002927
+"City of Edinburgh Council Area",10,Morningside,S13002928
+"City of Edinburgh Council Area",11,"City Centre",S13002929
+"City of Edinburgh Council Area",12,"Leith Walk",S13002930
+"City of Edinburgh Council Area",13,Leith,S13002931
+"City of Edinburgh Council Area",14,"Craigentinny / Duddingston",S13002932
+"City of Edinburgh Council Area",15,"Southside / Newington",S13002933
+"City of Edinburgh Council Area",16,"Liberton / Gilmerton",S13002934
+"City of Edinburgh Council Area",17,"Portobello / Craigmillar",S13002935
+"Clackmannanshire Council Area",1,"Clackmannanshire West",S13002875
+"Clackmannanshire Council Area",2,"Clackmannanshire North",S13002876
+"Clackmannanshire Council Area",3,"Clackmannanshire Central",S13002877
+"Clackmannanshire Council Area",4,"Clackmannanshire South",S13002878
+"Clackmannanshire Council Area",5,"Clackmannanshire East",S13002879
+"Dumfries and Galloway Council Area",1,"Stranraer and the Rhins",S13002880
+"Dumfries and Galloway Council Area",2,"Mid Galloway and Wigtown West",S13002881
+"Dumfries and Galloway Council Area",3,"Dee and Glenkens",S13002882
+"Dumfries and Galloway Council Area",4,"Castle Douglas and Crocketford",S13002883
+"Dumfries and Galloway Council Area",5,Abbey,S13002884
+"Dumfries and Galloway Council Area",6,"North West Dumfries",S13002885
+"Dumfries and Galloway Council Area",7,"Mid and Upper Nithsdale",S13002886
+"Dumfries and Galloway Council Area",8,Lochar,S13002887
+"Dumfries and Galloway Council Area",9,Nith,S13002888
+"Dumfries and Galloway Council Area",10,"Annandale South",S13002889
+"Dumfries and Galloway Council Area",11,"Annandale North",S13002890
+"Dumfries and Galloway Council Area",12,"Annandale East and Eskdale",S13002891
+DUNDEE_CITY,3,"West End Ward",S13002547
+DUNDEE_CITY,1,"Strathmartine Ward",S13002545
+DUNDEE_CITY,6,"North East Ward",S13002830
+DUNDEE_CITY,2,"Lochee Ward",S13002546
+DUNDEE_CITY,8,"The Ferry Ward",S13002552
+DUNDEE_CITY,5,"Maryfield Ward",S13002549
+DUNDEE_CITY,4,"Coldside Ward",S13002548
+DUNDEE_CITY,7,"East End Ward",S13002551
+"East Ayrshire Council Area",1,Annick,S13002892
+"East Ayrshire Council Area",2,"Kilmarnock North",S13002893
+"East Ayrshire Council Area",3,"Kilmarnock West and Crosshouse",S13002894
+"East Ayrshire Council Area",4,"Kilmarnock East and Hurlford",S13002895
+"East Ayrshire Council Area",5,"Kilmarnock South",S13002896
+"East Ayrshire Council Area",6,"Irvine Valley",S13002897
+"East Ayrshire Council Area",7,Ballochmyle,S13002898
+"East Ayrshire Council Area",8,"Cumnock and New Cumnock",S13002899
+"East Ayrshire Council Area",9,"Doon Valley",S13002900
+"East Dunbartonshire Council Area",1,Milngavie,S13002901
+"East Dunbartonshire Council Area",2,"Bearsden North",S13002902
+"East Dunbartonshire Council Area",3,"Bearsden South",S13002903
+"East Dunbartonshire Council Area",4,"Bishopbriggs North and Campsie",S13002904
+"East Dunbartonshire Council Area",5,"Bishopbriggs South",S13002905
+"East Dunbartonshire Council Area",6,"Lenzie and Kirkintilloch South",S13002906
+"East Dunbartonshire Council Area",7,"Kirkintilloch East and North and Twechar",S13002907
+"East Lothian Council Area",1,Musselburgh,S13002908
+"East Lothian Council Area",2,"Preston, Seton and Gosford",S13002909
+"East Lothian Council Area",3,"Tranent, Wallyford and Macmerry",S13002910
+"East Lothian Council Area",4,"North Berwick Coastal",S13002911
+"East Lothian Council Area",5,"Haddington and Lammermuir",S13002912
+"East Lothian Council Area",6,"Dunbar and East Linton",S13002913
+"East Renfrewshire Council Area",1,"Barrhead, Liboside and Uplawmoor",S13002914
+"East Renfrewshire Council Area",2,"Newton Mearns North and Neilston",S13002915
+"East Renfrewshire Council Area",3,"Giffnock and Thornliebank",S13002916
+"East Renfrewshire Council Area",4,"Clarkston, Netherlee and Williamwood",S13002917
+"East Renfrewshire Council Area",5,"Newton Mearns South and Eaglesham",S13002918
+"Falkirk Council Area",1,"Bo�ness and Blackness",S13002936
+"Falkirk Council Area",2,Grangemouth,S13002937
+"Falkirk Council Area",3,"Denny and Banknock",S13002938
+"Falkirk Council Area",4,"Carse, Kinnaird and Tryst",S13002939
+"Falkirk Council Area",5,"Bonnybridge and Larbert",S13002940
+"Falkirk Council Area",6,"Falkirk North",S13002941
+"Falkirk Council Area",7,"Falkirk South",S13002942
+"Falkirk Council Area",8,"Lower Braes",S13002943
+"Falkirk Council Area",9,"Upper Braes",S13002944
+"Fife Council Area",1,"West Fife and Coastal Villages",S13002945
+"Fife Council Area",2,"Dunfermline North",S13002946
+"Fife Council Area",3,"Dunfermline Central",S13002947
+"Fife Council Area",4,"Dunfermline South",S13002948
+"Fife Council Area",5,Rosyth,S13002949
+"Fife Council Area",6,"Inverkeithing and Dalgety Bay",S13002950
+"Fife Council Area",7,Cowdenbeath,S13002951
+"Fife Council Area",8,"Lochgelly, Cardenden and Benarty",S13002952
+"Fife Council Area",9,"Burntisland, Kinghorn and Western Kirkcaldy",S13002953
+"Fife Council Area",10,"Kirkcaldy North",S13002954
+"Fife Council Area",11,"Kirkcaldy Central",S13002955
+"Fife Council Area",12,"Kirkcaldy East",S13002956
+"Fife Council Area",13,"Glenrothes West and Kinglassie",S13002957
+"Fife Council Area",14,"Glenrothes North, Leslie and Markinch",S13002958
+"Fife Council Area",15,"Glenrothes Central and Thornton",S13002959
+"Fife Council Area",16,"Howe of Fife and Tay Coast",S13002960
+"Fife Council Area",17,"Tay Bridgehead",S13002961
+"Fife Council Area",18,"St Andrews",S13002962
+"Fife Council Area",19,"East Neuk and Landward",S13002963
+"Fife Council Area",20,Cupar,S13002964
+"Fife Council Area",21,"Leven, Kennoway and Largo",S13002965
+"Fife Council Area",22,"Buckhaven, Methil and Wemyss Villages",S13002966
+"Glasgow City Council Area",1,Linn,S13002967
+"Glasgow City Council Area",2,"Newlands / Auldburn",S13002968
+"Glasgow City Council Area",3,"Greater Pollok",S13002969
+"Glasgow City Council Area",4,Cardonald,S13002970
+"Glasgow City Council Area",5,Govan,S13002971
+"Glasgow City Council Area",6,Pollokshields,S13002972
+"Glasgow City Council Area",7,Langside,S13002973
+"Glasgow City Council Area",8,"Southside Central",S13002974
+"Glasgow City Council Area",9,Calton,S13002975
+"Glasgow City Council Area",10,Anderston/City/Yorkhill,S13002976
+"Glasgow City Council Area",11,Hillhead,S13002977
+"Glasgow City Council Area",12,"Victoria Park",S13002978
+"Glasgow City Council Area",13,"Garscadden / Scotstounhill",S13002979
+"Glasgow City Council Area",14,Drumchapel/Anniesland,S13002980
+"Glasgow City Council Area",15,Maryhill,S13002981
+"Glasgow City Council Area",16,Canal,S13002982
+"Glasgow City Council Area",17,"Springburn / Robroyston",S13002983
+"Glasgow City Council Area",18,"East Centre",S13002984
+"Glasgow City Council Area",19,Shettleston,S13002985
+"Glasgow City Council Area",20,Baillieston,S13002986
+"Glasgow City Council Area",21,"North East",S13002987
+"Glasgow City Council Area",22,Dennistoun,S13002988
+"Glasgow City Council Area",23,"Partick East/Kelvindale",S13002989
+"The Highland Council Area",1,"North, West and Central Sutherland",S13002990
+"The Highland Council Area",2,"Thurso and Northwest Caithness",S13002991
+"The Highland Council Area",3,"Wick and East Caithness",S13002992
+"The Highland Council Area",4,"East Sutherland and Edderton",S13002993
+"The Highland Council Area",5,"Wester Ross, Strathpeffer and Lochalsh",S13002994
+"The Highland Council Area",6,"Cromarty Firth",S13002995
+"The Highland Council Area",7,"Tain and Easter Ross",S13002996
+"The Highland Council Area",8,"Dingwall and Seaforth",S13002997
+"The Highland Council Area",9,"Black Isle",S13002998
+"The Highland Council Area",10,"Eilean a' Ch�o",S13002999
+"The Highland Council Area",11,"Caol and Mallaig",S13003000
+"The Highland Council Area",12,"Aird and Loch Ness",S13003001
+"The Highland Council Area",13,"Inverness West",S13003002
+"The Highland Council Area",14,"Inverness Central",S13003003
+"The Highland Council Area",15,"Inverness Ness-side",S13003004
+"The Highland Council Area",16,"Inverness Millburn",S13003005
+"The Highland Council Area",17,"Culloden  and Ardersier",S13003006
+"The Highland Council Area",18,"Nairn and Cawdor",S13003007
+"The Highland Council Area",19,"Inverness South",S13003008
+"The Highland Council Area",20,"Badenoch and Strathspey",S13003009
+"The Highland Council Area",21,"Fort William and Ardnamurchan",S13003010
+"Inverclyde Council Area",1,"Inverclyde East",S13003011
+"Inverclyde Council Area",2,"Inverclyde East Central",S13003012
+"Inverclyde Council Area",3,"Inverclyde Central",S13003013
+"Inverclyde Council Area",4,"Inverclyde North",S13003014
+"Inverclyde Council Area",5,"Inverclyde West",S13003015
+"Inverclyde Council Area",6,"Inverclyde South West",S13003016
+"Inverclyde Council Area",7,"Inverclyde South",S13003017
+"Midlothian Council Area",1,Penicuik,S13003018
+"Midlothian Council Area",2,Bonnyrigg,S13003019
+"Midlothian Council Area",3,Dalkeith,S13003020
+"Midlothian Council Area",4,"Midlothian West",S13003021
+"Midlothian Council Area",5,"Midlothian East",S13003022
+"Midlothian Council Area",6,"Midlothian South",S13003023
+"Moray Council Area",1,"Speyside Glenlivet",S13003024
+"Moray Council Area",2,"Keith and Cullen",S13003025
+"Moray Council Area",3,Buckie,S13003026
+"Moray Council Area",4,"Fochabers Lhanbryde",S13003027
+"Moray Council Area",5,"Heldon and Laich",S13003028
+"Moray Council Area",6,"Elgin City North",S13003029
+"Moray Council Area",7,"Elgin City South",S13003030
+"Moray Council Area",8,Forres,S13003031
+NA_H-EILEANAN_AN_IAR,7,"Steornabhagh a Tuath Ward",S13002606
+NA_H-EILEANAN_AN_IAR,5,"Sgire an Rubha Ward",S13002604
+NA_H-EILEANAN_AN_IAR,6,"Steornabhagh a Deas Ward",S13002605
+NA_H-EILEANAN_AN_IAR,9,"An Taobh Siar agus Nis Ward",S13002608
+NA_H-EILEANAN_AN_IAR,1,"Barraigh, Bhatarsaigh, Eirisgeigh agus Uibhist a Deas Ward",S13002600
+NA_H-EILEANAN_AN_IAR,2,"Beinn na Foghla agus Uibhist a Tuath Ward",S13002601
+NA_H-EILEANAN_AN_IAR,4,"Sgir'Uige agus Ceann a Tuath nan Loch Ward",S13002603
+NA_H-EILEANAN_AN_IAR,3,"Na Hearadh agus Ceann a Deas nan Loch Ward",S13002602
+NA_H-EILEANAN_AN_IAR,8,"Loch a Tuath Ward",S13002607
+"North Ayrshire Council Area",1,"Irvine West",S13003032
+"North Ayrshire Council Area",2,"Irvine East",S13003033
+"North Ayrshire Council Area",3,Kilwinning,S13003034
+"North Ayrshire Council Area",4,Stevenston,S13003035
+"North Ayrshire Council Area",5,"Ardrossan and Arran",S13003036
+"North Ayrshire Council Area",6,"Dalry and West Kilbride",S13003037
+"North Ayrshire Council Area",7,"Kilbirnie and Beith",S13003038
+"North Ayrshire Council Area",8,"North Coast and Cumbraes",S13003039
+"North Ayrshire Council Area",9,Saltcoats,S13003040
+"North Ayrshire Council Area",10,"Irvine South",S13003041
+"North Lanarkshire Council Area",1,Kilsyth,S13003042
+"North Lanarkshire Council Area",2,"Cumbernauld North",S13003043
+"North Lanarkshire Council Area",3,"Cumbernauld South",S13003044
+"North Lanarkshire Council Area",4,"Cumbernauld East",S13003045
+"North Lanarkshire Council Area",5,"Stepps, Chryston and Muirhead",S13003046
+"North Lanarkshire Council Area",6,"Gartcosh, Glenboig and Moodiesburn",S13003047
+"North Lanarkshire Council Area",7,"Coatbridge North",S13003048
+"North Lanarkshire Council Area",8,"Airdrie North",S13003049
+"North Lanarkshire Council Area",9,"Airdrie Central",S13003050
+"North Lanarkshire Council Area",10,"Coatbridge West",S13003051
+"North Lanarkshire Council Area",11,"Coatbridge South",S13003052
+"North Lanarkshire Council Area",12,"Airdrie South",S13003053
+"North Lanarkshire Council Area",13,Fortissat,S13003054
+"North Lanarkshire Council Area",14,Thorniewood,S13003055
+"North Lanarkshire Council Area",15,Bellshill,S13003056
+"North Lanarkshire Council Area",16,"Mossend and Holytown",S13003057
+"North Lanarkshire Council Area",17,"Motherwell West",S13003058
+"North Lanarkshire Council Area",18,"Motherwell North",S13003059
+"North Lanarkshire Council Area",19,"Motherwell South East and Ravenscraig",S13003060
+"North Lanarkshire Council Area",20,Murdostoun,S13003061
+"North Lanarkshire Council Area",21,Wishaw,S13003062
+ORKNEY_ISLANDS,4,"West Mainland",S13002735
+ORKNEY_ISLANDS,3,"Stromness and South Isles",S13002734
+ORKNEY_ISLANDS,5,"East Mainland, South Ronaldsay and Burray",S13002736
+ORKNEY_ISLANDS,2,"Kirkwall West and Orphir",S13002733
+ORKNEY_ISLANDS,1,"Kirkwall East",S13002732
+ORKNEY_ISLANDS,6,"North Isles",S13002737
+"Perth and Kinross Council Area",1,"Carse of Gowrie",S13003063
+"Perth and Kinross Council Area",2,Strathmore,S13003064
+"Perth and Kinross Council Area",3,"Blairgowrie and Glens",S13003065
+"Perth and Kinross Council Area",4,Highland,S13003066
+"Perth and Kinross Council Area",5,Strathtay,S13003067
+"Perth and Kinross Council Area",6,Strathearn,S13003068
+"Perth and Kinross Council Area",7,Strathallan,S13003069
+"Perth and Kinross Council Area",8,Kinross-shire,S13003070
+"Perth and Kinross Council Area",9,"Almond and Earn",S13003071
+"Perth and Kinross Council Area",10,"Perth City South",S13003072
+"Perth and Kinross Council Area",11,"Perth City North",S13003073
+"Perth and Kinross Council Area",12,"Perth City Centre",S13003074
+"Renfrewshire Council Area",1,"Renfrew North and Braehead",S13003075
+"Renfrewshire Council Area",2,"Renfrew South and Gallowhill",S13003076
+"Renfrewshire Council Area",3,"Paisley Northeast and Ralston",S13003077
+"Renfrewshire Council Area",4,"Paisley Northwest",S13003078
+"Renfrewshire Council Area",5,"Paisley East and Central",S13003079
+"Renfrewshire Council Area",6,"Paisley Southeast",S13003080
+"Renfrewshire Council Area",7,"Paisley Southwest",S13003081
+"Renfrewshire Council Area",8,"Johnstone South and Elderslie",S13003082
+"Renfrewshire Council Area",9,"Johnstone North, Kilbarchan, Howwood and Lochwinnoch",S13003083
+"Renfrewshire Council Area",10,"Houston, Crosslee and Linwood",S13003084
+"Renfrewshire Council Area",11,"Bishopton, Bridge of Weir and Langbank",S13003085
+"Renfrewshire Council Area",12,"Erskine and Inchinnan",S13003086
+SCOTTISH_BORDERS,7,"East Berwickshire Ward",S13002767
+SCOTTISH_BORDERS,1,"Tweeddale West Ward",S13002761
+SCOTTISH_BORDERS,4,"Selkirkshire Ward",S13002764
+SCOTTISH_BORDERS,11,"Hawick and Hermitage Ward",S13002771
+SCOTTISH_BORDERS,10,"Hawick and Denholm Ward",S13002770
+SCOTTISH_BORDERS,2,"Tweeddale East Ward",S13002762
+SCOTTISH_BORDERS,9,"Jedburgh and District Ward",S13002769
+SCOTTISH_BORDERS,8,"Kelso and District Ward",S13002768
+SCOTTISH_BORDERS,3,"Galashiels and District Ward",S13002763
+SCOTTISH_BORDERS,5,"Leaderdale and Melrose Ward",S13002765
+SCOTTISH_BORDERS,6,"Mid Berwickshire Ward",S13002766
+SHETLAND_ISLANDS,5,"Shetland South",S13002776
+SHETLAND_ISLANDS,2,"Shetland North",S13002773
+SHETLAND_ISLANDS,3,"Shetland West",S13002774
+SHETLAND_ISLANDS,1,"North Isles",S13002772
+SHETLAND_ISLANDS,7,"Lerwick South",S13002778
+SHETLAND_ISLANDS,4,"Shetland Central",S13002775
+SHETLAND_ISLANDS,6,"Lerwick North",S13002777
+"South Ayrshire Council Area",1,Troon,S13003087
+"South Ayrshire Council Area",2,Prestwick,S13003088
+"South Ayrshire Council Area",3,"Ayr North",S13003089
+"South Ayrshire Council Area",4,"Ayr East",S13003090
+"South Ayrshire Council Area",5,"Ayr West",S13003091
+"South Ayrshire Council Area",6,Kyle,S13003092
+"South Ayrshire Council Area",7,"Maybole, North Carrick and Coylton",S13003093
+"South Ayrshire Council Area",8,"Girvan and South Carrick",S13003094
+"South Lanarkshire Council Area",1,"Clydesdale West",S13003095
+"South Lanarkshire Council Area",2,"Clydesdale North",S13003096
+"South Lanarkshire Council Area",3,"Clydesdale East",S13003097
+"South Lanarkshire Council Area",4,"Clydesdale South",S13003098
+"South Lanarkshire Council Area",5,"Avondale and Stonehouse",S13003099
+"South Lanarkshire Council Area",6,"East Kilbride South",S13003100
+"South Lanarkshire Council Area",7,"East Kilbride Central South",S13003101
+"South Lanarkshire Council Area",8,"East Kilbride Central North",S13003102
+"South Lanarkshire Council Area",9,"East Kilbride West",S13003103
+"South Lanarkshire Council Area",10,"East Kilbride East",S13003104
+"South Lanarkshire Council Area",11,"Rutherglen South",S13003105
+"South Lanarkshire Council Area",12,"Rutherglen Central and North",S13003106
+"South Lanarkshire Council Area",13,"Cambuslang West",S13003107
+"South Lanarkshire Council Area",14,"Cambuslang East",S13003108
+"South Lanarkshire Council Area",15,Blantyre,S13003109
+"South Lanarkshire Council Area",16,"Bothwell and Uddingston",S13003110
+"South Lanarkshire Council Area",17,"Hamilton North and East",S13003111
+"South Lanarkshire Council Area",18,"Hamilton West and Earnock",S13003112
+"South Lanarkshire Council Area",19,"Hamilton South",S13003113
+"South Lanarkshire Council Area",20,Larkhall,S13003114
+"Stirling Council Area",1,"Trossachs and Teith",S13003115
+"Stirling Council Area",2,"Forth and Endrick",S13003116
+"Stirling Council Area",3,"Dunblane and Bridge of Allan",S13003117
+"Stirling Council Area",4,"Stirling North",S13003118
+"Stirling Council Area",5,"Stirling West",S13003119
+"Stirling Council Area",6,"Stirling East",S13003120
+"Stirling Council Area",7,Bannockburn,S13003121
+"West Dunbartonshire Council Area",1,Lomond,S13003122
+"West Dunbartonshire Council Area",2,Leven,S13003123
+"West Dunbartonshire Council Area",3,Dumbarton,S13003124
+"West Dunbartonshire Council Area",4,Kilpatrick,S13003125
+"West Dunbartonshire Council Area",5,"Clydebank Central",S13003126
+"West Dunbartonshire Council Area",6,"Clydebank Waterfront",S13003127
+WEST_LOTHIAN,1,"Linlithgow Ward",S13002820
+WEST_LOTHIAN,6,"Fauldhouse and the Breich Valley Ward",S13002825
+WEST_LOTHIAN,5,"East Livingston and East Calder Ward",S13002824
+WEST_LOTHIAN,9,"Armadale and Blackridge Ward",S13002828
+WEST_LOTHIAN,8,"Bathgate Ward",S13002827
+WEST_LOTHIAN,7,"Whitburn and Blackburn Ward",S13002826
+WEST_LOTHIAN,4,"Livingston South Ward",S13002823
+WEST_LOTHIAN,3,"Livingston North Ward",S13002822
+WEST_LOTHIAN,2,"Broxburn, Uphall and Winchburgh Ward",S13002821

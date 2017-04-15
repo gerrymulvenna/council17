@@ -41,10 +41,46 @@ $outDir = "../2017/SCO/";
 
 
 buildData($elections, $dataRoot, $outDir);
+//boundaryWards($elections, $outDir, "boundary-wardinfo.csv");
+
+// once-off routine to get ward codes from boundary data files
+function boundaryWards($elections, $dir, $my_file)
+{
+    $wardinfo = array();
+    foreach ($elections as $election)
+    {
+        if (preg_match('/^local\.(.+)\.2017-05-04$/', $election, $matches))
+  	    {
+            echo "$election<br>";
+            $b_file = $dir . 'boundaries/'. $matches[1] . ".geojson";
+            $json = file_get_contents($b_file);
+            $data = json_decode($json);
+            foreach($data->features as $feature)
+            {
+                $prop = $feature->properties;
+                // this is the newer boundary data
+                if (isset($prop->Ward_Code))
+                {
+                    $wardinfo[] = array('council' => $prop->Council, 'ward_no' => $prop->Ward_No, 'post_label' => $prop->Ward_Name, 'post_id' => $prop->Ward_Code);
+                }
+                // this is the older type
+                elseif (isset($prop->CODE))
+                {
+                    $wardinfo[] = array('council' => $prop->FILE_NAME, 'ward_no' => $prop->Ward_no, 'post_label' => $prop->NAME, 'post_id' => $prop->CODE);
+                }
+            }
+        }
+    }
+    saveCSV($wardinfo, $my_file);
+}
+            
+
+
 
 // wards -> candidates 
 function buildData($elections, $dataRoot, $dir)
 {
+    $wardinfo = array();
     foreach ($elections as $election)
     {
         if (preg_match('/^local\.(.+)\.2017-05-04$/', $election, $matches))
@@ -88,6 +124,7 @@ function buildData($elections, $dataRoot, $dir)
                     {
                         $wardIDs[] = $post_id;
                         $wards[] = array('post_id' => $post_id, 'post_label' => $post_label, 'election' => $election, 'candidates' => array($candidate));
+                        $wardinfo[] = array('post_id' => $post_id, 'post_label' => $post_label, 'election' => $matches[1]);
                     }
                     else
                     {
@@ -95,20 +132,12 @@ function buildData($elections, $dataRoot, $dir)
                     }
                 }
             }
-            writeJSON($wards, $dir . $election . ".json");
+            $dc = new DemoClub_Wards();
+            $dc->wards = $wards;
+            writeJSON($dc, $dir . $election . ".json");
         }
     }
-}
-
-// output the data as a JSON file
-function writeJSON($wards, $my_file)
-{
-  $dc = new DemoClub_Wards();
-  $dc->wards = $wards;
-  $json = json_encode($dc);
-  $handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file);
-  fwrite($handle, $json);
-  fclose($handle);
+    saveCSV($wardinfo, "candidate-wardinfo.csv");
 }
 
 function splitName($name)
@@ -148,7 +177,7 @@ function getData($csvURL, $election)
     fclose($handle);
 
     $arr = array();
-    $handle = fopen($my_file, "r", filesize($my_file));
+    $handle = fopen($my_file, "r");
     while ($row = fgetcsv($handle))
     {
         $arr[] = $row;
@@ -182,7 +211,7 @@ class DemoClub_Wards
 function getCSV($my_file)
 {
     $arr = array();
-    $handle = fopen($my_file, "r", filesize($my_file));
+    $handle = fopen($my_file, "r");
     while ($row = fgetcsv($handle))
     {
         $arr[] = $row;
@@ -190,4 +219,29 @@ function getCSV($my_file)
     fclose($handle);
     return ($arr);
 }
+
+//write an array to CSV (assumes two-dimensional array with headers in first row)
+function saveCSV($arr, $my_file)
+{
+    $header = array_keys($arr[0]);
+    $handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file);
+    fputcsv($handle, $header);
+    foreach ($arr as $row)
+    {
+        fputcsv($handle, $row);
+    }
+    fclose($handle);
+}
+
+// output the data as a JSON file
+function writeJSON($data, $my_file)
+{
+  $json = json_encode($data);
+  $handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file);
+  fwrite($handle, $json);
+  fclose($handle);
+}
+
+
+
 ?>

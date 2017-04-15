@@ -1,0 +1,355 @@
+post_id,post_label,election
+UTW:airyhallbroomhillgarthdee,Airyhall/Broomhill/Garthdee,aberdeen-city
+UTW:bridge-of-don,"Bridge of Don",aberdeen-city
+UTW:dycebucksburndanestone,Dyce/Bucksburn/Danestone,aberdeen-city
+UTW:george-stharbour,"George St/Harbour",aberdeen-city
+UTW:hazleheadqueens-crosscountesswells,"Hazlehead/Queens Cross/Countesswells",aberdeen-city
+UTW:hiltonwoodsidestockethill,Hilton/Woodside/Stockethill,aberdeen-city
+UTW:kincorthniggcove,Kincorth/Nigg/Cove,aberdeen-city
+UTW:kingswellssheddocksleysummerhill,Kingswells/Sheddocksley/Summerhill,aberdeen-city
+UTW:lower-deeside,"Lower Deeside",aberdeen-city
+UTW:midstocketrosemount,Midstocket/Rosemount,aberdeen-city
+UTW:northfieldmastrick-north,"Northfield/Mastrick North",aberdeen-city
+UTW:tillydroneseatonold-aberdeen,"Tillydrone/Seaton/Old Aberdeen",aberdeen-city
+UTW:torryferryhill,Torry/Ferryhill,aberdeen-city
+UTW:aboyne-upper-deeside-and-donside,"Aboyne, Upper Deeside and Donside",aberdeenshire
+UTW:banchory-and-mid-deeside,"Banchory and Mid Deeside",aberdeenshire
+UTW:banff-and-district,"Banff and District",aberdeenshire
+UTW:central-buchan,"Central Buchan",aberdeenshire
+UTW:east-garioch,"East Garioch",aberdeenshire
+UTW:ellon-and-district,"Ellon and District",aberdeenshire
+UTW:fraserburgh-and-district,"Fraserburgh and District",aberdeenshire
+UTW:huntly-strathbogie-and-howe-of-alford,"Huntly, Strathbogie and Howe of Alford",aberdeenshire
+UTW:inverurie-and-district,"Inverurie and District",aberdeenshire
+UTW:mearns,Mearns,aberdeenshire
+UTW:mid-formartine,"Mid Formartine",aberdeenshire
+UTW:north-kincardine,"North Kincardine",aberdeenshire
+UTW:peterhead-north-and-rattray,"Peterhead North and Rattray",aberdeenshire
+UTW:peterhead-south-and-cruden,"Peterhead South and Cruden",aberdeenshire
+UTW:stonehaven-and-lower-deeside,"Stonehaven and Lower Deeside",aberdeenshire
+UTW:troup,Troup,aberdeenshire
+UTW:turriff-and-district,"Turriff and District",aberdeenshire
+UTW:west-garioch,"West Garioch",aberdeenshire
+UTW:westhill-and-district,"Westhill and District",aberdeenshire
+UTW:arbroath-east-and-lunan,"Arbroath East and Lunan",angus
+UTW:arbroath-west-letham-and-friockheim,"Arbroath West, Letham and Friockheim",angus
+UTW:brechin-and-edzell,"Brechin and Edzell",angus
+UTW:carnoustie-and-district,"Carnoustie and District",angus
+UTW:forfar-and-district,"Forfar and District",angus
+UTW:kirriemuir-and-dean,"Kirriemuir and Dean",angus
+UTW:monifieth-and-sidlaw,"Monifieth and Sidlaw",angus
+UTW:montrose-and-district,"Montrose and District",angus
+UTW:S13002521,Cowal,argyll-and-bute
+UTW:S13002522,Dunoon,argyll-and-bute
+UTW:S13002525,"Helensburgh Central",argyll-and-bute
+UTW:S13002526,"Helensburgh and Lomond South",argyll-and-bute
+UTW:S13002523,"Isle of Bute",argyll-and-bute
+UTW:S13002517,"Kintyre and the Islands",argyll-and-bute
+UTW:S13002524,"Lomond North",argyll-and-bute
+UTW:S13002518,"Mid Argyll",argyll-and-bute
+UTW:S13002520,"Oban North and Lorn",argyll-and-bute
+UTW:S13002519,"Oban South and the Isles",argyll-and-bute
+UTW:S13002516,"South Kintyre",argyll-and-bute
+UTW:almond,Almond,city-of-edinburgh
+UTW:city-centre,"City Centre",city-of-edinburgh
+UTW:colintonfairmilehead,Colinton/Fairmilehead,city-of-edinburgh
+UTW:corstorphinemurrayfield,Corstorphine/Murrayfield,city-of-edinburgh
+UTW:craigentinnyduddingston,Craigentinny/Duddingston,city-of-edinburgh
+UTW:drum-braegyle,"Drum Brae/Gyle",city-of-edinburgh
+UTW:forth,Forth,city-of-edinburgh
+UTW:fountainbridgecraiglockhart,Fountainbridge/Craiglockhart,city-of-edinburgh
+UTW:inverleith,Inverleith,city-of-edinburgh
+UTW:leith,Leith,city-of-edinburgh
+UTW:leith-walk,"Leith Walk",city-of-edinburgh
+UTW:libertongilmerton,Liberton/Gilmerton,city-of-edinburgh
+UTW:morningside,Morningside,city-of-edinburgh
+UTW:pentland-hills,"Pentland Hills",city-of-edinburgh
+UTW:portobellocraigmillar,Portobello/Craigmillar,city-of-edinburgh
+UTW:sighthillgorgie,Sighthill/Gorgie,city-of-edinburgh
+UTW:southsidenewington,Southside/Newington,city-of-edinburgh
+UTW:clackmannanshire-central,"Clackmannanshire Central",clackmannanshire
+UTW:clackmannanshire-east,"Clackmannanshire East",clackmannanshire
+UTW:clackmannanshire-north,"Clackmannanshire North",clackmannanshire
+UTW:clackmannanshire-south,"Clackmannanshire South",clackmannanshire
+UTW:clackmannanshire-west,"Clackmannanshire West",clackmannanshire
+UTW:abbey,Abbey,dumfries-and-galloway
+UTW:annandale-east-and-eskdale,"Annandale East and Eskdale",dumfries-and-galloway
+UTW:annandale-north,"Annandale North",dumfries-and-galloway
+UTW:annandale-south,"Annandale South",dumfries-and-galloway
+UTW:castle-douglas-and-crocketford,"Castle Douglas and Crocketford",dumfries-and-galloway
+UTW:dee-and-glenkens,"Dee and Glenkens",dumfries-and-galloway
+UTW:lochar,Lochar,dumfries-and-galloway
+UTW:mid-galloway-and-wigtown-west,"Mid Galloway and Wigtown West",dumfries-and-galloway
+UTW:mid-and-upper-nithsdale,"Mid and Upper Nithsdale",dumfries-and-galloway
+UTW:nith,Nith,dumfries-and-galloway
+UTW:north-west-dumfries,"North West Dumfries",dumfries-and-galloway
+UTW:stranraer-and-the-rhins,"Stranraer and the Rhins",dumfries-and-galloway
+UTW:S13002548,Coldside,dundee-city
+UTW:S13002551,"East End",dundee-city
+UTW:S13002546,Lochee,dundee-city
+UTW:S13002549,Maryfield,dundee-city
+UTW:S13002830,"North East",dundee-city
+UTW:S13002545,Strathmartine,dundee-city
+UTW:S13002552,"The Ferry",dundee-city
+UTW:S13002547,"West End",dundee-city
+UTW:annick,Annick,east-ayrshire
+UTW:ballochmyle,Ballochmyle,east-ayrshire
+UTW:cumnock-and-new-cumnock,"Cumnock and New Cumnock",east-ayrshire
+UTW:doon-valley,"Doon Valley",east-ayrshire
+UTW:irvine-valley,"Irvine Valley",east-ayrshire
+UTW:kilmarnock-east-and-hurlford,"Kilmarnock East and Hurlford",east-ayrshire
+UTW:kilmarnock-north,"Kilmarnock North",east-ayrshire
+UTW:kilmarnock-south,"Kilmarnock South",east-ayrshire
+UTW:kilmarnock-west-and-crosshouse,"Kilmarnock West and Crosshouse",east-ayrshire
+UTW:bearsden-north,"Bearsden North",east-dunbartonshire
+UTW:bearsden-south,"Bearsden South",east-dunbartonshire
+UTW:bishopbriggs-north-and-campsie,"Bishopbriggs North and Campsie",east-dunbartonshire
+UTW:bishopbriggs-south,"Bishopbriggs South",east-dunbartonshire
+UTW:kirkintilloch-east-and-north-and-twechar,"Kirkintilloch East and North and Twechar",east-dunbartonshire
+UTW:lenzie-and-kirkintilloch-south,"Lenzie and Kirkintilloch South",east-dunbartonshire
+UTW:milngavie,Milngavie,east-dunbartonshire
+UTW:dunbar-and-east-linton,"Dunbar and East Linton",east-lothian
+UTW:haddington-and-lammermuir,"Haddington and Lammermuir",east-lothian
+UTW:musselburgh,Musselburgh,east-lothian
+UTW:north-berwick-coastal,"North Berwick Coastal",east-lothian
+UTW:preston-seton-and-gosford,"Preston, Seton and Gosford",east-lothian
+UTW:tranent-wallyford-and-macmerry,"Tranent, Wallyford and Macmerry",east-lothian
+UTW:barrhead-liboside-and-uplawmoor,"Barrhead, Liboside and Uplawmoor",east-renfrewshire
+UTW:clarkston-netherlee-and-williamwood,"Clarkston, Netherlee and Williamwood",east-renfrewshire
+UTW:giffnock-and-thornliebank,"Giffnock and Thornliebank",east-renfrewshire
+UTW:newton-means-north-and-neilston,"Newton Mearns North and Neilston",east-renfrewshire
+UTW:newton-mearns-south-and-eaglesham,"Newton Mearns South and Eaglesham",east-renfrewshire
+UTW:bonnybridge-and-larbert,"Bonnybridge and Larbert",falkirk
+UTW:boaness-and-blackness,"Boâness and Blackness",falkirk
+UTW:carse-kinnaird-and-tryst,"Carse, Kinnaird and Tryst",falkirk
+UTW:denny-and-banknock,"Denny and Banknock",falkirk
+UTW:falkirk-north,"Falkirk North",falkirk
+UTW:falkirk-south,"Falkirk South",falkirk
+UTW:grangemouth,Grangemouth,falkirk
+UTW:lower-braes,"Lower Braes",falkirk
+UTW:upper-braes,"Upper Braes",falkirk
+UTW:buckhaven-methil-and-wemyss-villages,"Buckhaven, Methil and Wemyss Villages",fife
+UTW:burntisland-kinghorn-and-western-kirkcaldy,"Burntisland, Kinghorn and Western Kirkcaldy",fife
+UTW:cowdenbeath,Cowdenbeath,fife
+UTW:cupar,Cupar,fife
+UTW:dunfermline-central,"Dunfermline Central",fife
+UTW:dunfermline-north,"Dunfermline North",fife
+UTW:dunfermline-south,"Dunfermline South",fife
+UTW:east-neuk-and-landward,"East Neuk and Landward",fife
+UTW:glenrothes-central-and-thornton,"Glenrothes Central and Thornton",fife
+UTW:glenrothes-north-leslie-and-markinch,"Glenrothes North, Leslie and Markinch",fife
+UTW:glenrothes-west-and-kinglassie,"Glenrothes West and Kinglassie",fife
+UTW:howe-of-fife-and-tay-coast,"Howe of Fife and Tay Coast",fife
+UTW:inverkeithing-and-dalgety-bay,"Inverkeithing and Dalgety Bay",fife
+UTW:kirkcaldy-central,"Kirkcaldy Central",fife
+UTW:kirkcaldy-east,"Kirkcaldy East",fife
+UTW:kirkcaldy-north,"Kirkcaldy North",fife
+UTW:leven-kennoway-and-largo,"Leven, Kennoway and Largo",fife
+UTW:lochgelly-cardenden-and-benarty,"Lochgelly, Cardenden and Benarty",fife
+UTW:rosyth,Rosyth,fife
+UTW:st-andrews,"St Andrews",fife
+UTW:tay-bridgehead,"Tay Bridgehead",fife
+UTW:west-fife-and-coastal-villages,"West Fife and Coastal Villages",fife
+UTW:anderstoncityyorkhill,Anderston/City/Yorkhill,glasgow-city
+UTW:baillieston,Baillieston,glasgow-city
+UTW:calton,Calton,glasgow-city
+UTW:canal,Canal,glasgow-city
+UTW:cardonald,Cardonald,glasgow-city
+UTW:dennistoun,Dennistoun,glasgow-city
+UTW:drumchapelanniesland,Drumchapel/Anniesland,glasgow-city
+UTW:east-centre,"East Centre",glasgow-city
+UTW:garscaddenscotstounhill,Garscadden/Scotstounhill,glasgow-city
+UTW:govan,Govan,glasgow-city
+UTW:greater-pollok,"Greater Pollok",glasgow-city
+UTW:hillhead,Hillhead,glasgow-city
+UTW:langside,Langside,glasgow-city
+UTW:linn,Linn,glasgow-city
+UTW:maryhill,Maryhill,glasgow-city
+UTW:newlandsauldburn,Newlands/Auldburn,glasgow-city
+UTW:north-east,"North East",glasgow-city
+UTW:partick-eastkelvindale,"Partick East/Kelvindale",glasgow-city
+UTW:pollokshields,Pollokshields,glasgow-city
+UTW:shettleston,Shettleston,glasgow-city
+UTW:southside-central,"Southside Central",glasgow-city
+UTW:springburnrobroyston,Springburn/Robroyston,glasgow-city
+UTW:victoria-park,"Victoria Park",glasgow-city
+UTW:aird-and-loch-ness,"Aird and Loch Ness",highland
+UTW:badenoch-and-strathspey,"Badenoch and Strathspey",highland
+UTW:black-isle,"Black Isle",highland
+UTW:caol-and-mallaig,"Caol and Mallaig",highland
+UTW:cromarty-firth,"Cromarty Firth",highland
+UTW:culloden-and-ardersier,"Culloden and Ardersier",highland
+UTW:dingwall-and-seaforth,"Dingwall and Seaforth",highland
+UTW:east-sutherland-and-edderton,"East Sutherland and Edderton",highland
+UTW:eilean-aa2-cha-o,"Eilean a′ Chéo",highland
+UTW:fort-william-and-ardnamurchan,"Fort William and Ardnamurchan",highland
+UTW:inverness-central,"Inverness Central",highland
+UTW:inverness-millburn,"Inverness Millburn",highland
+UTW:inverness-ness-side,"Inverness Ness-side",highland
+UTW:inverness-south,"Inverness South",highland
+UTW:inverness-west,"Inverness West",highland
+UTW:nairn-and-cawdor,"Nairn and Cawdor",highland
+UTW:north-west-and-central-sutherland,"North, West and Central Sutherland",highland
+UTW:tain-and-easter-ross,"Tain and Easter Ross",highland
+UTW:thurso-and-northwest-caithness,"Thurso and Northwest Caithness",highland
+UTW:wester-ross-strathpeffer-and-lochalsh,"Wester Ross, Strathpeffer and Lochalsh",highland
+UTW:wick-and-east-caithness,"Wick and East Caithness",highland
+UTW:inverclyde-central,"Inverclyde Central",inverclyde
+UTW:inverclyde-east,"Inverclyde East",inverclyde
+UTW:inverclyde-east-central,"Inverclyde East Central",inverclyde
+UTW:inverclyde-north,"Inverclyde North",inverclyde
+UTW:inverclyde-south,"Inverclyde South",inverclyde
+UTW:inverclyde-south-west,"Inverclyde South West",inverclyde
+UTW:inverclyde-west,"Inverclyde West",inverclyde
+UTW:bonnyrigg,Bonnyrigg,midlothian
+UTW:dalkeith,Dalkeith,midlothian
+UTW:midlothian-east,"Midlothian East",midlothian
+UTW:midlothian-south,"Midlothian South",midlothian
+UTW:midlothian-west,"Midlothian West",midlothian
+UTW:penicuik,Penicuik,midlothian
+UTW:buckie,Buckie,moray
+UTW:elgin-city-north,"Elgin City North",moray
+UTW:elgin-city-south,"Elgin City South",moray
+UTW:fochabers-lhanbryde,"Fochabers Lhanbryde",moray
+UTW:forres,Forres,moray
+UTW:heldon-and-laich,"Heldon and Laich",moray
+UTW:keith-and-cullen,"Keith and Cullen",moray
+UTW:speyside-glenlivet,"Speyside Glenlivet",moray
+UTW:S13002608,"An Taobh Siar agus Nis",eilean-siar
+UTW:S13002600,"Barraigh, Bhatarsaigh, Eirisgeigh agus Uibhist a Deas",eilean-siar
+UTW:S13002601,"Beinn na Foghla agus Uibhist a Tuath",eilean-siar
+UTW:S13002607,"Loch a Tuath",eilean-siar
+UTW:S13002602,"Na Hearadh agus Ceann a Deas nan Loch",eilean-siar
+UTW:S13002603,"Sgir'Uige agus Ceann a Tuath nan Loch",eilean-siar
+UTW:S13002604,"Sgire an Rubha",eilean-siar
+UTW:S13002605,"Steòrnabhagh a Deas",eilean-siar
+UTW:S13002606,"Steòrnabhagh a Tuath",eilean-siar
+UTW:ardrossan-and-arran,"Ardrossan and Arran",north-ayrshire
+UTW:dalry-and-west-kilbride,"Dalry and West Kilbride",north-ayrshire
+UTW:irvine-east,"Irvine East",north-ayrshire
+UTW:irvine-south,"Irvine South",north-ayrshire
+UTW:irvine-west,"Irvine West",north-ayrshire
+UTW:kilbirnie-and-beith,"Kilbirnie and Beith",north-ayrshire
+UTW:kilwinning,Kilwinning,north-ayrshire
+UTW:north-coast-and-cumbraes,"North Coast and Cumbraes",north-ayrshire
+UTW:saltcoats,Saltcoats,north-ayrshire
+UTW:stevenston,Stevenston,north-ayrshire
+UTW:airdrie-central,"Airdrie Central",north-lanarkshire
+UTW:airdrie-north,"Airdrie North",north-lanarkshire
+UTW:airdrie-south,"Airdrie South",north-lanarkshire
+UTW:bellshill,Bellshill,north-lanarkshire
+UTW:coatbridge-north,"Coatbridge North",north-lanarkshire
+UTW:coatbridge-south,"Coatbridge South",north-lanarkshire
+UTW:coatbridge-west,"Coatbridge West",north-lanarkshire
+UTW:cumbernauld-east,"Cumbernauld East",north-lanarkshire
+UTW:cumbernauld-north,"Cumbernauld North",north-lanarkshire
+UTW:cumbernauld-south,"Cumbernauld South",north-lanarkshire
+UTW:fortissat,Fortissat,north-lanarkshire
+UTW:gartcosh-glenboig-and-moodiesburn,"Gartcosh, Glenboig and Moodiesburn",north-lanarkshire
+UTW:kilsyth,Kilsyth,north-lanarkshire
+UTW:mossend-and-holytown,"Mossend and Holytown",north-lanarkshire
+UTW:motherwell-north,"Motherwell North",north-lanarkshire
+UTW:motherwell-south-east-and-ravenscraig,"Motherwell South East and Ravenscraig",north-lanarkshire
+UTW:motherwell-west,"Motherwell West",north-lanarkshire
+UTW:murdostoun,Murdostoun,north-lanarkshire
+UTW:stepps-chryston-and-muirhead,"Stepps, Chryston and Muirhead",north-lanarkshire
+UTW:thorniewood,Thorniewood,north-lanarkshire
+UTW:wishaw,Wishaw,north-lanarkshire
+UTW:S13002736,"East Mainland, South Ronaldsay and Burray",orkney-islands
+UTW:S13002732,"Kirkwall East",orkney-islands
+UTW:S13002733,"Kirkwall West and Orphir",orkney-islands
+UTW:S13002737,"North Isles",orkney-islands
+UTW:S13002734,"Stromness and South Isles",orkney-islands
+UTW:S13002735,"West Mainland",orkney-islands
+UTW:almond-and-earn,"Almond and Earn",perth-and-kinross
+UTW:blairgowrie-and-glens,"Blairgowrie and Glens",perth-and-kinross
+UTW:carse-of-gowrie,"Carse of Gowrie",perth-and-kinross
+UTW:highland,Highland,perth-and-kinross
+UTW:kinross-shire,Kinross-shire,perth-and-kinross
+UTW:perth-city-centre,"Perth City Centre",perth-and-kinross
+UTW:perth-city-north,"Perth City North",perth-and-kinross
+UTW:perth-city-south,"Perth City South",perth-and-kinross
+UTW:strathallan,Strathallan,perth-and-kinross
+UTW:strathearn,Strathearn,perth-and-kinross
+UTW:strathmore,Strathmore,perth-and-kinross
+UTW:strathtay,Strathtay,perth-and-kinross
+UTW:bishopton-bridge-of-weir-and-langbank,"Bishopton, Bridge of Weir and Langbank",renfrewshire
+UTW:erskine-and-inchinnan,"Erskine and Inchinnan",renfrewshire
+UTW:houston-crosslee-and-linwood,"Houston, Crosslee and Linwood",renfrewshire
+UTW:johnstone-north-kilbarchan-howwood-and-lochwinnoch,"Johnstone North, Kilbarchan, Howwood and Lochwinnoch",renfrewshire
+UTW:johnstone-south-and-elderslie,"Johnstone South and Elderslie",renfrewshire
+UTW:paisley-east-and-central,"Paisley East and Central",renfrewshire
+UTW:paisley-northeast-and-ralston,"Paisley Northeast and Ralston",renfrewshire
+UTW:paisley-northwest,"Paisley Northwest",renfrewshire
+UTW:paisley-southeast,"Paisley Southeast",renfrewshire
+UTW:paisley-southwest,"Paisley Southwest",renfrewshire
+UTW:renfrew-north-and-braehead,"Renfrew North and Braehead",renfrewshire
+UTW:renfrew-south-and-gallowhill,"Renfrew South and Gallowhill",renfrewshire
+UTW:S13002767,"East Berwickshire",the-scottish-borders
+UTW:S13002763,"Galashiels and District",the-scottish-borders
+UTW:S13002770,"Hawick and Denholm",the-scottish-borders
+UTW:S13002771,"Hawick and Hermitage",the-scottish-borders
+UTW:S13002769,"Jedburgh and District",the-scottish-borders
+UTW:S13002768,"Kelso and District",the-scottish-borders
+UTW:S13002765,"Leaderdale and Melrose",the-scottish-borders
+UTW:S13002766,"Mid Berwickshire",the-scottish-borders
+UTW:S13002764,Selkirkshire,the-scottish-borders
+UTW:S13002762,"Tweeddale East",the-scottish-borders
+UTW:S13002761,"Tweeddale West",the-scottish-borders
+UTW:S13002777,"Lerwick North",shetland-islands
+UTW:S13002778,"Lerwick South",shetland-islands
+UTW:S13002772,"North Isles",shetland-islands
+UTW:S13002775,"Shetland Central",shetland-islands
+UTW:S13002773,"Shetland North",shetland-islands
+UTW:S13002776,"Shetland South",shetland-islands
+UTW:S13002774,"Shetland West",shetland-islands
+UTW:ayr-east,"Ayr East",south-ayrshire
+UTW:ayr-north,"Ayr North",south-ayrshire
+UTW:ayr-west,"Ayr West",south-ayrshire
+UTW:girvan-and-south-carrick,"Girvan and South Carrick",south-ayrshire
+UTW:kyle,Kyle,south-ayrshire
+UTW:maybole-north-carrick-and-coylton,"Maybole, North Carrick and Coylton",south-ayrshire
+UTW:prestwick,Prestwick,south-ayrshire
+UTW:troon,Troon,south-ayrshire
+UTW:avondale-and-stonehouse,"Avondale and Stonehouse",south-lanarkshire
+UTW:blantyre,Blantyre,south-lanarkshire
+UTW:bothwell-and-uddingston,"Bothwell and Uddingston",south-lanarkshire
+UTW:cambuslang-east,"Cambuslang East",south-lanarkshire
+UTW:cambuslang-west,"Cambuslang West",south-lanarkshire
+UTW:clydesdale-east,"Clydesdale East",south-lanarkshire
+UTW:clydesdale-north,"Clydesdale North",south-lanarkshire
+UTW:clydesdale-south,"Clydesdale South",south-lanarkshire
+UTW:clydesdale-west,"Clydesdale West",south-lanarkshire
+UTW:east-kilbride-central-north,"East Kilbride Central North",south-lanarkshire
+UTW:east-kilbride-central-south,"East Kilbride Central South",south-lanarkshire
+UTW:east-kilbride-east,"East Kilbride East",south-lanarkshire
+UTW:east-kilbride-south,"East Kilbride South",south-lanarkshire
+UTW:east-kilbride-west,"East Kilbride West",south-lanarkshire
+UTW:hamilton-north-and-east,"Hamilton North and East",south-lanarkshire
+UTW:hamilton-south,"Hamilton South",south-lanarkshire
+UTW:hamilton-west-and-earnock,"Hamilton West and Earnock",south-lanarkshire
+UTW:larkhall,Larkhall,south-lanarkshire
+UTW:rutherglen-central-and-north,"Rutherglen Central and North",south-lanarkshire
+UTW:rutherglen-south,"Rutherglen South",south-lanarkshire
+UTW:bannockburn,Bannockburn,stirling
+UTW:dunblane-and-bridge-of-allan,"Dunblane and Bridge of Allan",stirling
+UTW:forth-and-endrick,"Forth and Endrick",stirling
+UTW:stirling-east,"Stirling East",stirling
+UTW:stirling-north,"Stirling North",stirling
+UTW:stirling-west,"Stirling West",stirling
+UTW:trossachs-and-teith,"Trossachs and Teith",stirling
+UTW:clydebank-central,"Clydebank Central",west-dunbartonshire
+UTW:clydebank-waterfront,"Clydebank Waterfront",west-dunbartonshire
+UTW:dumbarton,Dumbarton,west-dunbartonshire
+UTW:kilpatrick,Kilpatrick,west-dunbartonshire
+UTW:leven,Leven,west-dunbartonshire
+UTW:lomond,Lomond,west-dunbartonshire
+UTW:S13002828,"Armadale and Blackridge",west-lothian
+UTW:S13002827,Bathgate,west-lothian
+UTW:S13002821,"Broxburn, Uphall and Winchburgh",west-lothian
+UTW:S13002824,"East Livingston and East Calder",west-lothian
+UTW:S13002825,"Fauldhouse and the Breich Valley",west-lothian
+UTW:S13002820,Linlithgow,west-lothian
+UTW:S13002822,"Livingston North",west-lothian
+UTW:S13002823,"Livingston South",west-lothian
+UTW:S13002826,"Whitburn and Blackburn",west-lothian
