@@ -28,7 +28,7 @@ will make a valuable contribution to this election process.</p>
 
 <div id="author" class="about">
 <a href="http://twiter.com/gerrymulvenna"><img src="/website/image/gerry-patlee.png" height="200"></a>
-<h3>About the author, Gerry Mulvenna</h3>
+<h3>About the author, Gerry Mulvenna<br><small>(pictured above on the right)</small></h3>
 <p>This site is provided without any statutory capacity. It has been put together by Gerry Mulvenna, a programmer living in Edinburgh, who wanted to help other voters reach the necessary information to cast their votes in the #council17 elections.
 Gerry believes that STV (Single Transferable Vote) is the best available voting system and would like to see it introduced for all the elections in Scotland. He hopes that an improved voter engagement in these council elections will increase familiarity with STV among the voters of Scotland. </p>
 Find Gerry Mulvenna at <a href="http://twiter.com/gerrymulvenna">@gerrymulvenna on Twitter</a>
@@ -52,7 +52,7 @@ Find Gerry Mulvenna at <a href="http://twiter.com/gerrymulvenna">@gerrymulvenna 
 <ol>
 <li>Map data came primarily from the <a href="http://www.lgbc-scotland.gov.uk/maps/datafiles/index_1995_on.asp">Local Government Boundary Commission for Scotland</a> with the top-level Scottish council boundaries coming from the Ordnance Survey <a href="https://www.ordnancesurvey.co.uk/business-and-government/help-and-support/products/boundary-line.html">boundary line</a> package.</li>
 <li>The open source application <a href="http://www.qgis.org/en/site/forusers/download.html">QGIS</a> was used to convert the shapefiles into GEOJSON format with latitute longitude coordinates (EPSG:4326)</li>
-<li>The Map Shaper application was invaluable for simplifying the GEOJSON data to achieve the required level of detail for our purpose and to drastically reduce the size of the boundary
+<li>The Map Shaper application was invaluable for simplifying the GEOJSON data to achieve the required level of (less) detail for our purpose and to drastically reduce the size of the boundary
 Map Shaper is a very efficient and easy to use online application at <a href="http://mapshaper.org/">http://mapshaper.org/</a>.</li>
 </ol>
 </div>

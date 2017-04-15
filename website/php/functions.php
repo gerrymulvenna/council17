@@ -81,11 +81,12 @@ function content($council_name, $slug, $param3 = NULL, $param4 = NULL)
 {
 echo '
 		<div class="content">
-			<div id="map"></div>
+    			<div id="map"></div>
 ';
 echo "			<h2 id=\"breadcrumb\"><a href=\"/councils/\">Scotland</a> // <a href=\"$slug.php\">$council_name Council</a></h2>\n";
 echo '			<div id="wardinfo"></div>
-			<div id="candidates"></div>
+			<div id="candidates">
+            </div>
 		</div>';
 }
 

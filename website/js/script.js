@@ -1,4 +1,5 @@
 var checkedYear = 2017;
+var electionDate = '2017-05-04';
 var jsondata = [];
 var warddata = [];
 
@@ -48,7 +49,7 @@ function changeyear(year) {
 }
 
 // load all candidates info for the checkedYear
-findInfo(checkedYear, 'two-tier-candidates.json');   //populate jsondata
+findInfo(checkedYear, 'local.' + mapName +'.' + electionDate + '.json');   //populate jsondata
 findWardInfo(checkedYear, 'all-ward-info.json');   //populate warddata
 
 // request candidate info for the specified year (can use this for other request by changing filename arg)
@@ -138,7 +139,9 @@ var candidates = document.getElementById('candidates');
 var wardinfo = document.getElementById('wardinfo');
 
 candidates.update = function() {
-    this.innerHTML = '';
+   var ack = '<div id="ack"><div id="dc-caption">This full set of candidate data collated by</div><div id="dc-logo"><a href="http://democracyclub.org.uk"><img src="https://democracyclub.org.uk/static/dc_theme/images/logo-with-text-2017.png" width="200"></a></div></div>';
+
+	this.innerHTML = '';
 	var no_seats = '';
     var ward = getObjects(jsondata, 'post_id', 'UTW:' + ward_code);
 	var wardstats = getObjects(warddata, "Ward_Code", ward_code);
@@ -157,6 +160,7 @@ candidates.update = function() {
     for (i = 0; i < candidates.length; i++) {
         this.innerHTML += '<div class="votes ' + candidates[i].party_name.replace(/\s+/g, "-").replace(/[()]/g,"") + '" style="width: 20px;"></div><div id="candidate ' + candidates[i].id + '" class="tooltip ' + candidates[i].party_name.replace(/\s+/g, "-").replace(/[()]/g,"") + '_label">' + candidates[i].name + '<span class="tooltiptext">' + candidates[i].party_name + '</span></div><br/>';
     }
+	this.innerHTML += ack;
 };
 
 // optional message on clearing 'candidates' element. If none set arg to ''
