@@ -57,7 +57,6 @@
 	
     var map = L.map('map', {
 		tap: false,
-		zoomControl: false,
 		minZoom: 5,
 		maxZoom: 16
 		}).setView([mapLat, mapLong], mapZoom);
@@ -76,7 +75,6 @@
 	// detect if user agent is a mobile device and if so disable map zooming panning etc
 	if ( /Android|webOS|iPhone|iPad|iPod|Blackberry|IEMobile|Opera Mini|Mobi/.test(navigator.userAgent)) {
 		console.log('mobile device detected');
-//		map.dragging.disable();
 	}
 	
 	var info = L.control();
@@ -94,6 +92,4 @@
 			: 'Select a ' + mapUnit.toLowerCase());
 	};
 
-	L.control.pan().addTo(map);
-	L.control.zoom().addTo(map);
 	info.addTo(map);
