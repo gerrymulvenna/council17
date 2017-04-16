@@ -16,12 +16,8 @@
 		info.update();
 	}	
 	
-	var constituency_id = null;
-	var constituency_directory = null;
-	
 	function clickFeature(e) {
 		boundaries.setStyle(layerStyle);
-//		constituency_directory = e.target.feature.properties.Constituency_Directory;
 		var layer = e.target;
 		layer.setStyle({
 				weight: 4,
@@ -59,19 +55,18 @@
 		onEachFeature: onEachFeature
 		});
 	
-	console.log(boundaries);
-		
     var map = L.map('map', {
 		tap: false,
+		zoomControl: false,
 		minZoom: 5,
 		maxZoom: 16
 		}).setView([mapLat, mapLong], mapZoom);
-    
+	
 	mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
     
 	L.tileLayer(
             'https://a.tiles.mapbox.com/v4/mapbox.light/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiYm9iaGFycGVyIiwiYSI6ImQwOTg1YTg2MTQzYzk3Mzc5MWVjYzFkZDQzN2M1NTUzIn0.mA2WO4WAZzh-qwoqN4QVjg', {
-            attribution: '&copy; ' + mapLink + ' | <a href=\"https://www.mapbox.com/about/maps/\" target=\"_blank\">&copy; Mapbox</a> | Boundaries: <a href="https://www.opendatani.gov.uk/dataset/osni-open-data-50k-admin-boundaries-parliamentary-constituencies-2008">LPS</a>',
+            attribution: '&copy; ' + mapLink + ' | <a href=\"https://www.mapbox.com/about/maps/\" target=\"_blank\">&copy; Mapbox</a> | Boundaries: <a href="http://www.lgbc-scotland.gov.uk/maps/datafiles/index_1995_on.asp">LGBC</a>',
             maxZoom: 18,
             }).addTo(map);
 	
@@ -81,11 +76,11 @@
 	// detect if user agent is a mobile device and if so disable map zooming panning etc
 	if ( /Android|webOS|iPhone|iPad|iPod|Blackberry|IEMobile|Opera Mini|Mobi/.test(navigator.userAgent)) {
 		console.log('mobile device detected');
-		map.dragging.disable();
+//		map.dragging.disable();
 	}
 	
 	var info = L.control();
-
+    
 	info.onAdd = function (map) {
 		this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info" inside the map
 		this.update();
@@ -99,4 +94,6 @@
 			: 'Select a ' + mapUnit.toLowerCase());
 	};
 
+	L.control.pan().addTo(map);
+	L.control.zoom().addTo(map);
 	info.addTo(map);

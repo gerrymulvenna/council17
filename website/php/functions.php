@@ -10,6 +10,11 @@ function head($title, $mapName, $mapLat, $mapLong, $mapZoom, $mapProperty, $mapU
     <meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js"></script>
+    <script src="../website/js/pancontrol/src/L.Control.Pan.js" ></script>    
+    <link rel="stylesheet" href="../website/js/pancontrol/src/L.Control.Pan.css" />
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="../website/js/pancontrol/src/L.Control.Pan.ie.css"/>
+    <![endif]-->
 	<script src="http://cdn.rawgit.com/calvinmetcalf/leaflet-ajax/gh-pages/dist/leaflet.ajax.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/lodash/4.11.1/lodash.min.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
