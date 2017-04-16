@@ -47,7 +47,7 @@ function head($title, $mapName, $mapLat, $mapLong, $mapZoom, $mapProperty, $mapU
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@gerrymulvenna" />
     <meta name="twitter:creator" content="@gerrymulvenna" />
-    <meta property="og:url" content="http://mulvenna.org" />
+    <meta property="og:url" content="http://council17.mulvenna.org/councils/" />
     <meta property="og:title" content="Scottish Council elections 2017 #council17" />
     <meta property="og:description" content="Presenting crowdsourced open data, live results and data visualisations for the Scottish Council Elections 2017" />
 ';
