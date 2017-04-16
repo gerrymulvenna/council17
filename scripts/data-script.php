@@ -94,9 +94,6 @@ function buildData($elections, $dataRoot, $dir)
             {
                 if (count($arrCand[$i]) <= 1)
                 {
-                    echo "<br>Deleting row $i<br>\n";
-                    print_r($arrCand[$i]);
-                    echo "<br>";
                     unset ($arrCand[$i]);
                 }
             }

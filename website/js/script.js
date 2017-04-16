@@ -159,7 +159,7 @@ candidates.update = function() {
 			console.log(candidates);
 			wardinfo.innerHTML = '<h3>' + ward[0].post_label + ' ward<br><span class="seats">' + no_seats + candidates.length + ' candidates</span></h3>';
 			for (i = 0; i < candidates.length; i++) {
-				this.innerHTML += "<div class=\"votes " + candidates[i].party_name.replace(/\s+/g, "-").replace(/[\'()]/g,"") + "\" style=\"width: 20px;\"></div><div id=\"candidate " + candidates[i].id + "\" class=\"tooltip " + candidates[i].party_name.replace(/\s+/g, "-").replace(/[\'()]/g,"") + "_label\">" + candidates[i].name + "<span class=\"tooltiptext\">" + candidates[i].party_name + "</span></div><br/>";
+				this.innerHTML += "<div class=\"votes " + candidates[i].party_name.replace(/\s+/g, "-").replace(/[\',–()]/g,"") + "\" style=\"width: 20px;\"></div><div id=\"candidate " + candidates[i].id + "\" class=\"tooltip " + candidates[i].party_name.replace(/\s+/g, "-").replace(/[\',–()]/g,"") + "_label\">" + candidates[i].name + "<span class=\"tooltiptext\">" + candidates[i].party_name + "</span></div><br/>";
 			}
 			this.innerHTML += ack;
 		}

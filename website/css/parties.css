@@ -181,15 +181,15 @@
     color: #fff
 }
 
-.Solidarity---Scotlands-Socialist-Movement_label:before {
+.RISE---Respect-Independence-Socialism-Environmentalism_label:before {
 	content: "(Solidarity) ";
 }
 
-.Solidarity---Scotlands-Socialist-Movement_abbr:before {
+.RISE---Respect-Independence-Socialism-Environmentalism_abbr:before {
 	content: "Solidarity";
 }
 
-.Solidarity---Scotlands-Socialist-Movement {
+.RISE---Respect-Independence-Socialism-Environmentalism {
     fill: #054a24!important;
     background: #054a24!important;
     color: #fff
@@ -223,6 +223,19 @@
     color: #fff
 }
 
+.RISE---Respect-Independence-Socialism-and-Environmentalism_label:before {
+	content: "(RISE) ";
+}
+
+.RISE---Respect-Independence-Socialism-and-Environmentalism_abbr:before {
+	content: "RISE";
+}
+
+.RISE---Respect-Independence-Socialism-and-Environmentalism {
+    fill: rgba(242, 93, 37, 1)!important;
+    background: rgba(242, 93, 37, 1)!important;
+    color: #fff
+}
 
 
 .Alliance-Party_label:before {
