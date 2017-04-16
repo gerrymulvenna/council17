@@ -143,6 +143,7 @@ header p {
 div.about {
 	display: inline-table;
 	width: 400px;
+	max-width: 100%;
 	margin-top: 2em;
 	margin-left: 1em;
 	margin-right: 1em;
@@ -412,6 +413,7 @@ input[id=show-menu]:checked~#cssmenu {
 #ack {
 	display: block;
 	padding-top: 50px;
+	width: 300px;
 }
 
 #dc-logo {
@@ -424,6 +426,14 @@ input[id=show-menu]:checked~#cssmenu {
 	font-style: italic;
 	margin-bottom: 5px;
 }
+
+#disclaimer {
+	display: block;
+	font-size: 0.7em;
+	font-style: italic;
+	margin-bottom: 5px;
+}
+
 
 #left {
 	display: inline;

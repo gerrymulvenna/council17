@@ -5,8 +5,8 @@ require $_SERVER["DOCUMENT_ROOT"] . "/website/php/functions.php";
 // used in the mapName js variable, the twitter image, the breadcrumb link
 $slug = 'aberdeenshire';
 $council_name = 'Aberdeenshire';  // used in the title and breadcrumb
-$mapLat = 57.253113;            // good centre position for the map
-$mapLong = -3.38;          // good centre position for the map 
+$mapLat = 57.2322;            // good centre position for the map
+$mapLong = -2.4457;          // good centre position for the map 
 $mapZoom = 8;                // zoom level starting position
 $mapProperty = 'Ward_Name';  // the property in the geojson file with the name of the ward
 $mapUnit = 'Ward';           // either Council or Ward

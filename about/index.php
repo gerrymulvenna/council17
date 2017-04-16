@@ -23,7 +23,7 @@ as each council runs their own election and publishes data on their own website.
 <p>However this site is one citizen&lsquo;s effort to provide a map-based interface to the data across all wards in Scotland. It uses the
 crowd-sourced data extracted from the SOPNs (Statement of Persons Notified) produced as PDFs by individual councils.</p>
 <p>This site is made possible by those users at <a href="http://democracyclub.org.uk">Democracy Club</a> who have given their time to manually enter all the candidate information from each SOPN published by the councils. Hopefully this interface to the data
-will make a valuable contribution to this election process.</p>
+will make a valuable contribution to this episode of local democracy.</p>
 </div>
 
 <div id="dev" class="about">
@@ -52,11 +52,16 @@ Find Gerry Mulvenna at <a href="http://twiter.com/gerrymulvenna">@gerrymulvenna 
 <ol>
 <li>Map data came primarily from the <a href="http://www.lgbc-scotland.gov.uk/maps/datafiles/index_1995_on.asp">Local Government Boundary Commission for Scotland</a> with the top-level Scottish council boundaries coming from the Ordnance Survey <a href="https://www.ordnancesurvey.co.uk/business-and-government/help-and-support/products/boundary-line.html">boundary line</a> package.</li>
 <li>The open source application <a href="http://www.qgis.org/en/site/forusers/download.html">QGIS</a> was used to convert the shapefiles into GEOJSON format with latitute longitude coordinates (EPSG:4326)</li>
-<li>The Map Shaper application was invaluable for simplifying the GEOJSON data to achieve the required level of (less) detail for our purpose and to drastically reduce the size of the boundary
+<li>The Map Shaper application was invaluable for simplifying the GEOJSON data to achieve the required level of (less) detail for our purpose and to drastically reduce the size of the boundary data.
 Map Shaper is a very efficient and easy to use online application at <a href="http://mapshaper.org/">http://mapshaper.org/</a>.</li>
 </ol>
 </div>
 
+<div id="open-code" class="about">
+<a href="https://github.com/gerrymulvenna/council17"><img src="https://assets-cdn.github.com/images/modules/open_graph/github-mark.png" height="200"></a>
+<h3>Open source code</h3>
+<p>The code and data files for this site are available under creative commons license on Github at <a href="https://github.com/gerrymulvenna/council17">https://github.com/gerrymulvenna/council17</a>.</p>
+</div>
 
 
 		</div>';
