@@ -32,6 +32,7 @@ function head($title, $mapName, $mapLat, $mapLong, $mapZoom, $mapProperty, $mapU
 	<link rel="stylesheet" type="text/css" href="/website/css/style.css" media="screen, handheld" />
 	<link rel="stylesheet" type="text/css" href="/website/css/parties.css" media="screen, handheld" />
 	<link rel="stylesheet" type="text/css" href="/website/css/enhanced.css" media="screen  and (min-width: 50.5em)" />
+    <link rel="stylesheet" href="/website/css/font-awesome.min.css">
 	<link rel="icon" type="image/png" href="/website/image/c17-icon-150x150.png" sizes="150x150" />
 	<link rel="icon" type="image/png" href="/website/image/favicon-32x32.png" sizes="32x32" />
 	<link rel="icon" type="image/png" href="/website/image/favicon-16x16.png" sizes="16x16" />
@@ -84,7 +85,8 @@ echo '
     			<div id="map"></div>
 ';
 echo "			<h2 id=\"breadcrumb\"><a href=\"/councils/\">Scotland</a> | <a href=\"$slug.php\">$council_name</a></h2>\n";
-echo '			<div id="wardinfo"></div>
+selectCouncil("Pick a different council from this list?");
+echo '			<div id="wardinfo"><h5>Choose a ward in this council from the map</h5></div>
 			<div id="candidates">
             </div>
 		</div>
@@ -110,6 +112,48 @@ echo"<script>
 </script>
 </body>
 </html>";
+}
+
+function selectCouncil ($prompt)
+{
+echo'<div id="select-council">
+				<select id="council-list" class="select" onClick="selectCouncil()">';
+echo "\n<option>$prompt</option>\n";
+echo '					<option value="aberdeen-city.php">Aberdeen City</option>
+					<option value="aberdeenshire.php">Aberdeenshire</option>
+					<option value="angus.php">Angus</option>
+					<option value="argyll-and-bute.php">Argyll And Bute</option>
+					<option value="city-of-edinburgh.php">City Of Edinburgh</option>
+					<option value="clackmannanshire.php">Clackmannanshire</option>
+					<option value="dumfries-and-galloway.php">Dumfries And Galloway</option>
+					<option value="dundee-city.php">Dundee City</option>
+					<option value="east-ayrshire.php">East Ayrshire</option>
+					<option value="east-dunbartonshire.php">East Dunbartonshire</option>
+					<option value="east-lothian.php">East Lothian</option>
+					<option value="east-renfrewshire.php">East Renfrewshire</option>
+					<option value="falkirk.php">Falkirk</option>
+					<option value="fife.php">Fife</option>
+					<option value="glasgow-city.php">Glasgow City</option>
+					<option value="highland.php">Highland</option>
+					<option value="inverclyde.php">Inverclyde</option>
+					<option value="midlothian.php">Midlothian</option>
+					<option value="moray.php">Moray</option>
+					<option value="eilean-siar.php">Na h-Eileanan An Iar</option>
+					<option value="north-ayrshire.php">North Ayrshire</option>
+					<option value="north-lanarkshire.php">North Lanarkshire</option>
+					<option value="orkney-islands.php">Orkney Islands</option>
+					<option value="perth-and-kinross.php">Perth And Kinross</option>
+					<option value="renfrewshire.php">Renfrewshire</option>
+					<option value="the-scottish-borders.php">Scottish Borders</option>
+					<option value="shetland-islands.php">Shetland Islands</option>
+					<option value="south-ayrshire.php">South Ayrshire</option>
+					<option value="south-lanarkshire.php">South Lanarkshire</option>
+					<option value="stirling.php">Stirling</option>
+					<option value="west-dunbartonshire.php">West Dunbartonshire</option>
+					<option value="west-lothian.php">West Lothian</option>
+				</select>
+			</div>';
+
 }
 
 ?>

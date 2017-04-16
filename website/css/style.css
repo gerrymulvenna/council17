@@ -169,7 +169,7 @@ div.about {
 
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 200px;
+    width: 180px;
     background-color: black;
     color: #fff;
     text-align: center;
@@ -177,6 +177,8 @@ div.about {
     padding: 5px 0;
     /* Position the tooltip */
     position: absolute;
+	left: -100px;
+	top: -20px;
     z-index: 1;
 }
 
@@ -186,7 +188,7 @@ div.about {
 
 .votes {
     height: 25px;
-    width: 0px;
+    width: 20px;
     position: absolute;
     fill: #B0BEC5;
     background: #B0BEC5;
@@ -198,6 +200,12 @@ div.about {
     padding-top: 3px;
     box-sizing: border-box;
     text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.cand-icons {
+    height: 25px;
+    width: 100px;
+	display: inline;
 }
 
 .Elected {
