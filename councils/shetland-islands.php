@@ -9,7 +9,7 @@ $council_name = 'Shetland';  // used in the title and breadcrumb
 $mapLat = 60.3;              // good centre position for the map
 $mapLong = -1.2659;          // good centre position for the map 
 $mapZoom = 8;                // zoom level starting position
-$mapProperty = 'Ward_Name';  // the property in the geojson file with the name of the ward
+$mapProperty = 'NAME';  // the property in the geojson file with the name of the ward
 $mapUnit = 'Ward';           // either Council or Ward
 $mapWardDesc= 'CODE';        // the property in the geojson file with the unique ward identifier
 

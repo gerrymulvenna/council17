@@ -9,7 +9,7 @@ $council_name = 'Orkney';  // used in the title and breadcrumb
 $mapLat = 58.9809;              // good centre position for the map
 $mapLong = -2.9605;          // good centre position for the map 
 $mapZoom = 8;                // zoom level starting position
-$mapProperty = 'Ward_Name';  // the property in the geojson file with the name of the ward
+$mapProperty = 'NAME';  // the property in the geojson file with the name of the ward
 $mapUnit = 'Ward';           // either Council or Ward
 $mapWardDesc= 'CODE';        // the property in the geojson file with the unique ward identifier
 
