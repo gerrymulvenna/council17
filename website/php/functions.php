@@ -93,13 +93,17 @@ echo '			<div id="wardinfo"><h5>Choose a ward in this council from the map</h5><
 ';
 }
 
-function foot($param1 = NULL, $param2 = NULL, $param3 = NULL, $param4 = NULL)
+function foot($infopage = False, $param2 = NULL, $param3 = NULL, $param4 = NULL)
 {
 echo '
-	</div>
-	<script src="/website/js/script.js"></script>
-	<script src="/website/js/map.js"></script>
-';
+	</div>';
+if (!$infopage)
+{
+    echo '
+        <script src="/website/js/script.js"></script>
+        <script src="/website/js/map.js"></script>
+    ';
+}
 echo"<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

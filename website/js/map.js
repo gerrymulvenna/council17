@@ -26,14 +26,12 @@
 		if (!L.Browser.ie && !L.Browser.opera) {
 			layer.bringToFront();
 			}
-			console.log(layer.feature.properties);
 			info.update(layer.feature.properties);
 		if (mapUnit == 'Ward')
 		{
 			ward_code = e.target.feature.properties[mapWardDesc];
-			console.log(ward_code);
 			candidates.update();
-			wardinfo.update();
+			wardinfo.update;
 		}
 		else
 		{

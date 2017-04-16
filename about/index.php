@@ -11,7 +11,7 @@ $council_name = 'About this site';  // used in the title and breadcrumb
 
 
 // function head($title, $mapName, $mapLat, $mapLong, $mapZoom, $mapProperty, $mapUnit, $mapWardDesc, $twimg)
-head("#council17 $council_name - Map-based interface to crowd-sourced data for the Scottish Council elections 2017", $slug, NULL, NULL, NULL, NULL, NULL);
+head("#council17 $council_name - Map-based interface to crowd-sourced data for the Scottish Council elections 2017", $slug, 0, 0, 0, NULL, NULL);
 navigation("Scottish Council elections 2017");
 
 echo'<div class="content">
@@ -65,5 +65,5 @@ Map Shaper is a very efficient and easy to use online application at <a href="ht
 
 
 		</div>';
-foot();
+foot(True);
 ?>

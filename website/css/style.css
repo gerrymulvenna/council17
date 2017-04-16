@@ -169,7 +169,7 @@ div.about {
 
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 180px;
+    width: 120px;
     background-color: black;
     color: #fff;
     text-align: center;
@@ -177,7 +177,7 @@ div.about {
     padding: 5px 0;
     /* Position the tooltip */
     position: absolute;
-	left: -100px;
+	left: 0px;
 	top: -20px;
     z-index: 1;
 }

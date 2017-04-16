@@ -34,7 +34,6 @@ function seatsSummary() {
             var result = _.fromPairs(_.sortBy(_.toPairs(_.countBy(_.map(data, 'Party_Name'))), function(a) {
                 return a[1]
             }).reverse());
-            console.log(result)
             _.forEach(result, function(value, key) {
                 document.getElementById("seats_summary").innerHTML += '<span class="' + key.replace(/\s+/g, "-") + '">&nbsp;&nbsp;&nbsp;</span>&nbsp;<span class="' + key.replace(/\s+/g, "-") + '_abbr ' + '"></span>' + ': ' + value + '&nbsp;';
             })
@@ -45,19 +44,20 @@ function seatsSummary() {
 // when a radio button is clicked change checkedYear global var (attached to element onchange)
 function changeyear(year) {
     checkedYear = year;
-    console.log(checkedYear);
 }
 
 // load all candidates info for the checkedYear
-findInfo(checkedYear, 'local.' + mapName +'.' + electionDate + '.json');   //populate jsondata
-findWardInfo(checkedYear, 'wardinfo.json');   //populate warddata
+if (mapUnit == 'Ward')
+{
+	findInfo(checkedYear, 'local.' + mapName +'.' + electionDate + '.json');   //populate jsondata
+	findWardInfo(checkedYear, 'wardinfo.json');   //populate warddata
+}
 
 // request candidate info for the specified year (can use this for other request by changing filename arg)
 // outputs the parse Json responseText to global var jsondata
 function findInfo(year, filename) {
     var request = new XMLHttpRequest();
     var path = '/' + year + '/SCO/' + filename;
-    console.log(path);
     request.onreadystatechange = function() {
         if (request.readyState == 4 && request.status >= 200 && request.status < 400) {
             jsondata = JSON.parse(request.responseText);
@@ -75,11 +75,9 @@ function findWardInfo(year, filename) {
     var request = new XMLHttpRequest();
 //    var path = '/' + year + '/SCO/' + filename + '?' + new Date().getTime(); // add ? with timestamp to force XMLHttpRequest not to cache
     var path = '/' + year + '/SCO/' + filename; // add ? with timestamp to force XMLHttpRequest not to cache
-    console.log(path);
     request.onreadystatechange = function() {
         if (request.readyState == 4 && request.status >= 200 && request.status < 400) {
             warddata = JSON.parse(request.responseText);
-            console.log(warddata);
         }
     };
     request.open('GET', path, false);
@@ -94,7 +92,6 @@ function findElectedInfo(year) {
     electedOutput = [];
     var request = new XMLHttpRequest();
     var path = '/' + year + '/SCO/all-elected.json?' + new Date().getTime(); // add ? with timestamp to force XMLHttpRequest not to cache
-    console.log(path);
     request.onreadystatechange = function() {
         if (request.readyState == 4 && request.status >= 200 && request.status < 400) {
             electedOutput = JSON.parse(request.responseText);
@@ -104,7 +101,6 @@ function findElectedInfo(year) {
     request.send();
     request.onerror = function() {
         electedOutput = [];
-        console.log('not ready');
     };
 }
 
@@ -160,7 +156,7 @@ candidates.update = function() {
 		if (ward.length > 0)
 		{
 			var candidates = ward[0].candidates;
-			wardinfo.innerHTML = '<h3>' + ward[0].post_label + ' ward<br><span class="seats">' + no_seats + candidates.length + ' candidates</span></h3>';
+			wardinfo.innerHTML = '<h3>' + wardstats[0].ward_name + ' ward<br><span class="seats">' + no_seats + candidates.length + ' candidates</span></h3>';
 			for (i = 0; i < candidates.length; i++) {
 				tw = (candidates[i].twitter_username) ? '<a href="http://twitter.com/' + candidates[i].twitter_username + '" target="~_blank"><i class="fa fa-twitter fa-fw" title="@' +  candidates[i].twitter_username + ' on Twitter"></i></a>' : '';
 				fb = (candidates[i].facebook_page_url) ? '<a href="' + candidates[i].facebook_page_url + '" target="_blank"><i class="fa fa-facebook fa-fw"  title="Facebook page"></i></a>' : '';
@@ -208,14 +204,12 @@ function countMatrix(year, directory) {
     $.get("/website/jsonspec/countSpec.json", function(json) {
         var spec = JSON5.parse(json);
         spec.data[0].url = '/' + year + '/constituency/' + directory + '/Count.csv'; // needed to dynamically change the data url in spec to our desired path
-        console.log(spec);
         vg.parse.spec(spec, function(chart) {
             var view = chart({
                     el: "#count_matrix"
                 })
                 .on("mouseover", function(event, item) {
                     if (item && item.datum.Surname && item.datum.Status) {
-                        console.log(item);
                         $('#matrixtooltip').show();
                         $('#matrixtooltip').html(
                             "<b>" + item.datum.Firstname + ' ' + item.datum.Surname + "</b><br/>" +
@@ -223,7 +217,6 @@ function countMatrix(year, directory) {
                             item.datum.Status + ' on count ' + item.datum.Occurred_On_Count
                         );
                     } else if (item && item.datum.Surname) {
-                        console.log(item);
                         $('#matrixtooltip').show();
                         $('#matrixtooltip').html(
                             "<b>" + item.datum.Firstname + ' ' + item.datum.Surname + "</b><br/>" +
