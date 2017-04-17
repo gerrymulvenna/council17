@@ -39,25 +39,51 @@ $elections = array(
 $dataRoot = "https://candidates.democracyclub.org.uk/media/candidates-";
 $outDir = "../2017/SCO/";
 
-buildTrees($outDir);
+buildTrees($elections, $outDir);
 
 //buildData($elections, $dataRoot, $outDir);
 //boundaryWards($elections, $outDir, "boundary-wardinfo.csv");
 
 //build JSON data for the jstree library using wardinfo and the candidate JSON for each council
-function buildTrees($dataDir)
+function buildTrees($elections, $dataDir)
 {
     $councils = array();
     $wards = array();
-
+    $cwards = array();
     $id = 0;
-    $root = new jstree_node(++$id,"Scottish Councils");
+    $ctotal = 0;
+
+    // convert the candidate data to tree nodes indexed by cand_ward_code (post_id)
+    foreach ($elections as $election)
+    {
+        if (preg_match('/^local\.(.+)\.2017-05-04$/', $election, $matches))
+  	    {
+            $cdata = readJSON($dataDir. $election . ".json");
+            foreach ($cdata->wards as $ward)
+            {
+                if (!empty($ward->post_id))
+                {
+                    echo "Candidate data " . $election . " " . $ward->post_id . "<br>\n";
+                    $node = new jstree_node(++$id, "ward", $ward->post_label);
+                    $node->no_candidates = count($ward->candidates);
+                    $node->children = convertCandidates ($ward->candidates, $id);
+                    $id += count($node->children);
+                    $ctotal = count($node->children);    // keep track of the total candidates
+                    $cwards[$ward->post_id] = $node;
+                }
+            }
+        }
+    }
+
+    // convert the wardinfo data to tree nodes and build the tree structure incorporating the candidate nodes
+    $root = new jstree_node(++$id,"root","Scottish Councils");
+    $root->no_candidates = $ctotal;
     $wardinfo = readJSON($dataDir . "wardinfo.json");
     foreach ($wardinfo->Wards as $ward)
     {
         if (!empty($ward->council))
         {
-            echo $ward->council . "<br>\n";
+            echo "Ward data " . $ward->council . " " . $ward->ward_name . "<br>\n";
             // create or update the council node
             if (array_key_exists($ward->council, $councils))
             {
@@ -65,23 +91,42 @@ function buildTrees($dataDir)
             }
             else
             {
-                $node = new jstree_node(++$id,$ward->council);
+                $node = new jstree_node(++$id,"council",$ward->council);
                 $node->no_seats = $ward->seats + 0;
 
                 $councils[$ward->council] = $node;
                 $root->children[] = $node;
             }
             // add the ward node
-            $ward_node = new jstree_node(++$id, $ward->ward_name);
+            $ward_node = new jstree_node(++$id, "ward", $ward->ward_name);
             $ward_node->no_seats = $ward->seats;
             $ward_node->properties["map_ward_code"] = $ward->map_ward_code;
             $ward_node->properties["cand_ward_code"] = $ward->cand_ward_code;
             $ward_node->properties["ward_no"] = $ward->ward_no;
+            $ward_node->children = $cwards[$ward->cand_ward_code]->children;
+            $ward_node->no_candidates = $cwards[$ward->cand_ward_code]->no_candidates;
             $node->children[] = $ward_node;
+            $node->no_candidates += $ward_node->no_candidates;
         }
     }
     writeJSON($root, $dataDir . "council-tree.json");
 }
+
+
+// convert an array of candidates to an array of jstree nodes
+function convertCandidates($candidates, $last_id)
+{
+    $nodes = array();
+    foreach ($candidates as $c)
+    {
+        $node = new jstree_node(++$last_id, "candidate", $c->name);
+        $node->no_candidates = 1;
+        $node->properties = $c;
+        $nodes[] = $node;
+    }
+    return($nodes);
+}
+
 
 
 // wards -> candidates 
@@ -246,15 +291,17 @@ class DemoClub_Wards
 class jstree_node
 {
     public $id;
+    public $type;
     public $text;
     public $no_seats;
     public $no_candidates;
     public $properties;
     public $children;
 
-    function __construct($id, $text, $properties = array())
+    function __construct($id, $type, $text, $properties = array())
     {
         $this->id = $id;
+        $this->type = $type;
         $this->text = $text;
         $this->no_seats = 0;
         $this->no_candidates = 0;
