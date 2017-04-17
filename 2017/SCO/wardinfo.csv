@@ -1,355 +1,355 @@
-council,ward_no,ward_name,map_ward_code,cand_ward_code,Seats
-aberdeen-city,11,Airyhall/Broomhill/Garthdee,S13002845,UTW:airyhallbroomhillgarthdee,3
-aberdeen-city,2,Bridge of Don,S13002836,UTW:bridge-of-don,4
-aberdeen-city,1,Dyce/Bucksburn/Danestone,S13002835,UTW:dycebucksburndanestone,4
-aberdeen-city,8,George St/Harbour,S13002842,UTW:george-stharbour,4
-aberdeen-city,10,Hazlehead/Queens Cross/Countesswells,S13002844,UTW:hazleheadqueens-crosscountesswells,4
-aberdeen-city,5,Hilton/Woodside/Stockethill,S13002839,UTW:hiltonwoodsidestockethill,3
-aberdeen-city,13,Kincorth/Nigg/Cove,S13002847,UTW:kincorthniggcove,4
-aberdeen-city,3,Kingswells/Sheddocksley/Summerhill,S13002837,UTW:kingswellssheddocksleysummerhill,3
-aberdeen-city,9,Lower Deeside,S13002843,UTW:lower-deeside,3
-aberdeen-city,7,Midstocket/Rosemount,S13002841,UTW:midstocketrosemount,3
-aberdeen-city,4,Northfield/Mastrick North,S13002838,UTW:northfieldmastrick-north,3
-aberdeen-city,6,Tillydrone/Seaton/Old Aberdeen,S13002840,UTW:tillydroneseatonold-aberdeen,3
-aberdeen-city,12,Torry/Ferryhill,S13002846,UTW:torryferryhill,4
-aberdeenshire,15,"Aboyne, Upper Deeside and Donside",S13002862,UTW:aboyne-upper-deeside-and-donside,3
-aberdeenshire,16,Banchory and Mid Deeside,S13002863,UTW:banchory-and-mid-deeside,3
-aberdeenshire,1,Banff and District,S13002848,UTW:banff-and-district,3
-aberdeenshire,4,Central Buchan,S13002851,UTW:central-buchan,4
-aberdeenshire,12,East Garioch,S13002859,UTW:east-garioch,4
-aberdeenshire,9,Ellon and District,S13002856,UTW:ellon-and-district,4
-aberdeenshire,3,Fraserburgh and District,S13002850,UTW:fraserburgh-and-district,4
-aberdeenshire,14,"Huntly, Strathbogie and Howe of Alford",S13002861,UTW:huntly-strathbogie-and-howe-of-alford,4
-aberdeenshire,11,Inverurie and District,S13002858,UTW:inverurie-and-district,4
-aberdeenshire,19,Mearns,S13002866,UTW:mearns,4
-aberdeenshire,8,Mid Formartine,S13002855,UTW:mid-formartine,4
-aberdeenshire,17,North Kincardine,S13002864,UTW:north-kincardine,4
-aberdeenshire,5,Peterhead North and Rattray,S13002852,UTW:peterhead-north-and-rattray,4
-aberdeenshire,6,Peterhead South and Cruden,S13002853,UTW:peterhead-south-and-cruden,3
-aberdeenshire,18,Stonehaven and Lower Deeside,S13002865,UTW:stonehaven-and-lower-deeside,4
-aberdeenshire,2,Troup,S13002849,UTW:troup,3
-aberdeenshire,7,Turriff and District,S13002854,UTW:turriff-and-district,4
-aberdeenshire,10,West Garioch,S13002857,UTW:west-garioch,3
-aberdeenshire,13,Westhill and District,S13002860,UTW:westhill-and-district,4
-angus,7,Arbroath East and Lunan,S13002873,UTW:arbroath-east-and-lunan,3
-angus,6,"Arbroath West, Letham and Friockheim",S13002872,UTW:arbroath-west-letham-and-friockheim,4
-angus,2,Brechin and Edzell,S13002868,UTW:brechin-and-edzell,3
-angus,5,Carnoustie and District,S13002871,UTW:carnoustie-and-district,3
-angus,3,Forfar and District,S13002869,UTW:forfar-and-district,4
-angus,1,Kirriemuir and Dean,S13002867,UTW:kirriemuir-and-dean,3
-angus,4,Monifieth and Sidlaw,S13002870,UTW:monifieth-and-sidlaw,4
-angus,8,Montrose and District,S13002874,UTW:montrose-and-district,4
-argyll-and-bute,6,Cowal Ward,S13002521,UTW:S13002521,3
-argyll-and-bute,7,Dunoon Ward,S13002522,UTW:S13002522,3
-argyll-and-bute,11,Helensburgh and Lomond South Ward,S13002526,UTW:S13002526,4
-argyll-and-bute,10,Helensburgh Central Ward,S13002525,UTW:S13002525,3
-argyll-and-bute,8,Isle of Bute Ward,S13002523,UTW:S13002523,3
-argyll-and-bute,0,Kintyre and the Islands Ward,S13002517,UTW:S13002517,3
-argyll-and-bute,9,Lomond North Ward,S13002524,UTW:S13002524,3
-argyll-and-bute,3,Mid Argyll Ward,S13002518,UTW:S13002518,3
-argyll-and-bute,5,Oban North and Lorn Ward,S13002520,UTW:S13002520,4
-argyll-and-bute,0,Oban South and the Isles Ward,S13002519,UTW:S13002519,4
-argyll-and-bute,1,South Kintyre Ward,S13002516,UTW:S13002516,3
-city-of-edinburgh,1,Almond,S13002919,UTW:almond,4
-city-of-edinburgh,11,City Centre,S13002929,UTW:city-centre,4
-city-of-edinburgh,8,Colinton / Fairmilehead,S13002926,UTW:colintonfairmilehead,3
-city-of-edinburgh,6,Corstorphine / Murrayfield,S13002924,UTW:corstorphinemurrayfield,3
-city-of-edinburgh,14,Craigentinny / Duddingston,S13002932,UTW:craigentinnyduddingston,4
-city-of-edinburgh,3,Drum Brae / Gyle,S13002921,UTW:drum-braegyle,3
-city-of-edinburgh,4,Forth,S13002922,UTW:forth,4
-city-of-edinburgh,9,Fountainbridge / Craiglockhart,S13002927,UTW:fountainbridgecraiglockhart,3
-city-of-edinburgh,5,Inverleith,S13002923,UTW:inverleith,4
-city-of-edinburgh,13,Leith,S13002931,UTW:leith,3
-city-of-edinburgh,12,Leith Walk,S13002930,UTW:leith-walk,4
-city-of-edinburgh,16,Liberton / Gilmerton,S13002934,UTW:libertongilmerton,4
-city-of-edinburgh,10,Morningside,S13002928,UTW:morningside,4
-city-of-edinburgh,2,Pentland Hills,S13002920,UTW:pentland-hills,4
-city-of-edinburgh,17,Portobello / Craigmillar,S13002935,UTW:portobellocraigmillar,4
-city-of-edinburgh,7,Sighthill / Gorgie,S13002925,UTW:sighthillgorgie,4
-city-of-edinburgh,15,Southside / Newington,S13002933,UTW:southsidenewington,4
-clackmannanshire,3,Clackmannanshire Central,S13002877,UTW:clackmannanshire-central,3
-clackmannanshire,5,Clackmannanshire East,S13002879,UTW:clackmannanshire-east,3
-clackmannanshire,2,Clackmannanshire North,S13002876,UTW:clackmannanshire-north,4
-clackmannanshire,4,Clackmannanshire South,S13002878,UTW:clackmannanshire-south,4
-clackmannanshire,1,Clackmannanshire West,S13002875,UTW:clackmannanshire-west,4
-dumfries-and-galloway,5,Abbey,S13002884,UTW:abbey,3
-dumfries-and-galloway,12,Annandale East and Eskdale,S13002891,UTW:annandale-east-and-eskdale,3
-dumfries-and-galloway,11,Annandale North,S13002890,UTW:annandale-north,4
-dumfries-and-galloway,10,Annandale South,S13002889,UTW:annandale-south,4
-dumfries-and-galloway,4,Castle Douglas and Crocketford,S13002883,UTW:castle-douglas-and-crocketford,3
-dumfries-and-galloway,3,Dee and Glenkens,S13002882,UTW:dee-and-glenkens,3
-dumfries-and-galloway,8,Lochar,S13002887,UTW:lochar,4
-dumfries-and-galloway,7,Mid and Upper Nithsdale,S13002886,UTW:mid-and-upper-nithsdale,3
-dumfries-and-galloway,2,Mid Galloway and Wigtown West,S13002881,UTW:mid-galloway-and-wigtown-west,4
-dumfries-and-galloway,9,Nith,S13002888,UTW:nith,4
-dumfries-and-galloway,6,North West Dumfries,S13002885,UTW:north-west-dumfries,4
-dumfries-and-galloway,1,Stranraer and the Rhins,S13002880,UTW:stranraer-and-the-rhins,4
-dundee-city,4,Coldside Ward,S13002548,UTW:S13002548,4
-dundee-city,7,East End Ward,S13002551,UTW:S13002551,3
-dundee-city,2,Lochee Ward,S13002546,UTW:S13002546,4
-dundee-city,5,Maryfield Ward,S13002549,UTW:S13002549,3
-dundee-city,6,North East Ward,S13002830,UTW:S13002830,3
-dundee-city,1,Strathmartine Ward,S13002545,UTW:S13002545,4
-dundee-city,8,The Ferry Ward,S13002552,UTW:S13002552,4
-dundee-city,3,West End Ward,S13002547,UTW:S13002547,4
-east-ayrshire,1,Annick,S13002892,UTW:annick,4
-east-ayrshire,7,Ballochmyle,S13002898,UTW:ballochmyle,4
-east-ayrshire,8,Cumnock and New Cumnock,S13002899,UTW:cumnock-and-new-cumnock,4
-east-ayrshire,9,Doon Valley,S13002900,UTW:doon-valley,3
-east-ayrshire,6,Irvine Valley,S13002897,UTW:irvine-valley,3
-east-ayrshire,4,Kilmarnock East and Hurlford,S13002895,UTW:kilmarnock-east-and-hurlford,4
-east-ayrshire,2,Kilmarnock North,S13002893,UTW:kilmarnock-north,3
-east-ayrshire,5,Kilmarnock South,S13002896,UTW:kilmarnock-south,3
-east-ayrshire,3,Kilmarnock West and Crosshouse,S13002894,UTW:kilmarnock-west-and-crosshouse,4
-east-dunbartonshire,2,Bearsden North,S13002902,UTW:bearsden-north,3
-east-dunbartonshire,3,Bearsden South,S13002903,UTW:bearsden-south,3
-east-dunbartonshire,4,Bishopbriggs North and Campsie,S13002904,UTW:bishopbriggs-north-and-campsie,4
-east-dunbartonshire,5,Bishopbriggs South,S13002905,UTW:bishopbriggs-south,3
-east-dunbartonshire,7,Kirkintilloch East and North and Twechar,S13002907,UTW:kirkintilloch-east-and-north-and-twechar,3
-east-dunbartonshire,6,Lenzie and Kirkintilloch South,S13002906,UTW:lenzie-and-kirkintilloch-south,3
-east-dunbartonshire,1,Milngavie,S13002901,UTW:milngavie,3
-east-lothian,6,Dunbar and East Linton,S13002913,UTW:dunbar-and-east-linton,3
-east-lothian,5,Haddington and Lammermuir,S13002912,UTW:haddington-and-lammermuir,4
-east-lothian,1,Musselburgh,S13002908,UTW:musselburgh,4
-east-lothian,4,North Berwick Coastal,S13002911,UTW:north-berwick-coastal,3
-east-lothian,2,"Preston, Seton and Gosford",S13002909,UTW:preston-seton-and-gosford,4
-east-lothian,3,"Tranent, Wallyford and Macmerry",S13002910,UTW:tranent-wallyford-and-macmerry,4
-east-renfrewshire,1,"Barrhead, Liboside and Uplawmoor",S13002914,UTW:barrhead-liboside-and-uplawmoor,4
-east-renfrewshire,4,"Clarkston, Netherlee and Williamwood",S13002917,UTW:clarkston-netherlee-and-williamwood,4
-east-renfrewshire,3,Giffnock and Thornliebank,S13002916,UTW:giffnock-and-thornliebank,3
-east-renfrewshire,2,Newton Mearns North and Neilston,S13002915,UTW:newton-means-north-and-neilston,3
-east-renfrewshire,5,Newton Mearns South and Eaglesham,S13002918,UTW:newton-mearns-south-and-eaglesham,4
-eilean-siar,9,An Taobh Siar agus Nis Ward,S13002608,UTW:S13002608,4
-eilean-siar,1,"Barraigh, Bhatarsaigh, Eirisgeigh agus Uibhist a Deas Ward",S13002600,UTW:S13002600,4
-eilean-siar,2,Beinn na Foghla agus Uibhist a Tuath Ward,S13002601,UTW:S13002601,3
-eilean-siar,8,Loch a Tuath Ward,S13002607,UTW:S13002607,3
-eilean-siar,3,Na Hearadh agus Ceann a Deas nan Loch Ward,S13002602,UTW:S13002602,3
-eilean-siar,5,Sgire an Rubha Ward,S13002604,UTW:S13002604,3
-eilean-siar,4,Sgir'Uige agus Ceann a Tuath nan Loch Ward,S13002603,UTW:S13002603,3
-eilean-siar,6,Steornabhagh a Deas Ward,S13002605,UTW:S13002605,4
-eilean-siar,7,Steornabhagh a Tuath Ward,S13002606,UTW:S13002606,4
-falkirk,1,Bo�ness and Blackness,S13002936,UTW:boaness-and-blackness,3
-falkirk,5,Bonnybridge and Larbert,S13002940,UTW:bonnybridge-and-larbert,3
-falkirk,4,"Carse, Kinnaird and Tryst",S13002939,UTW:carse-kinnaird-and-tryst,4
-falkirk,3,Denny and Banknock,S13002938,UTW:denny-and-banknock,4
-falkirk,6,Falkirk North,S13002941,UTW:falkirk-north,4
-falkirk,7,Falkirk South,S13002942,UTW:falkirk-south,3
-falkirk,2,Grangemouth,S13002937,UTW:grangemouth,3
-falkirk,8,Lower Braes,S13002943,UTW:lower-braes,3
-falkirk,9,Upper Braes,S13002944,UTW:upper-braes,3
-fife,22,"Buckhaven, Methil and Wemyss Villages",S13002966,UTW:buckhaven-methil-and-wemyss-villages,4
-fife,9,"Burntisland, Kinghorn and Western Kirkcaldy",S13002953,UTW:burntisland-kinghorn-and-western-kirkcaldy,3
-fife,7,Cowdenbeath,S13002951,UTW:cowdenbeath,4
-fife,20,Cupar,S13002964,UTW:cupar,3
-fife,3,Dunfermline Central,S13002947,UTW:dunfermline-central,4
-fife,2,Dunfermline North,S13002946,UTW:dunfermline-north,3
-fife,4,Dunfermline South,S13002948,UTW:dunfermline-south,4
-fife,19,East Neuk and Landward,S13002963,UTW:east-neuk-and-landward,3
-fife,15,Glenrothes Central and Thornton,S13002959,UTW:glenrothes-central-and-thornton,3
-fife,14,"Glenrothes North, Leslie and Markinch",S13002958,UTW:glenrothes-north-leslie-and-markinch,4
-fife,13,Glenrothes West and Kinglassie,S13002957,UTW:glenrothes-west-and-kinglassie,3
-fife,16,Howe of Fife and Tay Coast,S13002960,UTW:howe-of-fife-and-tay-coast,3
-fife,6,Inverkeithing and Dalgety Bay,S13002950,UTW:inverkeithing-and-dalgety-bay,4
-fife,11,Kirkcaldy Central,S13002955,UTW:kirkcaldy-central,3
-fife,12,Kirkcaldy East,S13002956,UTW:kirkcaldy-east,3
-fife,10,Kirkcaldy North,S13002954,UTW:kirkcaldy-north,3
-fife,21,"Leven, Kennoway and Largo",S13002965,UTW:leven-kennoway-and-largo,4
-fife,8,"Lochgelly, Cardenden and Benarty",S13002952,UTW:lochgelly-cardenden-and-benarty,4
-fife,5,Rosyth,S13002949,UTW:rosyth,3
-fife,18,St Andrews,S13002962,UTW:st-andrews,4
-fife,17,Tay Bridgehead,S13002961,UTW:tay-bridgehead,3
-fife,1,West Fife and Coastal Villages,S13002945,UTW:west-fife-and-coastal-villages,3
-glasgow-city,10,Anderston/City/Yorkhill,S13002976,UTW:anderstoncityyorkhill,4
-glasgow-city,20,Baillieston,S13002986,UTW:baillieston,3
-glasgow-city,9,Calton,S13002975,UTW:calton,4
-glasgow-city,16,Canal,S13002982,UTW:canal,4
-glasgow-city,4,Cardonald,S13002970,UTW:cardonald,4
-glasgow-city,22,Dennistoun,S13002988,UTW:dennistoun,3
-glasgow-city,14,Drumchapel/Anniesland,S13002980,UTW:drumchapelanniesland,4
-glasgow-city,18,East Centre,S13002984,UTW:east-centre,4
-glasgow-city,13,Garscadden / Scotstounhill,S13002979,UTW:garscaddenscotstounhill,4
-glasgow-city,5,Govan,S13002971,UTW:govan,4
-glasgow-city,3,Greater Pollok,S13002969,UTW:greater-pollok,4
-glasgow-city,11,Hillhead,S13002977,UTW:hillhead,3
-glasgow-city,7,Langside,S13002973,UTW:langside,4
-glasgow-city,1,Linn,S13002967,UTW:linn,4
-glasgow-city,15,Maryhill,S13002981,UTW:maryhill,3
-glasgow-city,2,Newlands / Auldburn,S13002968,UTW:newlandsauldburn,3
-glasgow-city,21,North East,S13002987,UTW:north-east,3
-glasgow-city,23,Partick East/Kelvindale,S13002989,UTW:partick-eastkelvindale,4
-glasgow-city,6,Pollokshields,S13002972,UTW:pollokshields,4
-glasgow-city,19,Shettleston,S13002985,UTW:shettleston,4
-glasgow-city,8,Southside Central,S13002974,UTW:southside-central,4
-glasgow-city,17,Springburn / Robroyston,S13002983,UTW:springburnrobroyston,4
-glasgow-city,12,Victoria Park,S13002978,UTW:victoria-park,3
-highland,12,Aird and Loch Ness,S13003001,UTW:aird-and-loch-ness,4
-highland,20,Badenoch and Strathspey,S13003009,UTW:badenoch-and-strathspey,4
-highland,9,Black Isle,S13002998,UTW:black-isle,3
-highland,11,Caol and Mallaig,S13003000,UTW:caol-and-mallaig,3
-highland,6,Cromarty Firth,S13002995,UTW:cromarty-firth,4
-highland,17,Culloden  and Ardersier,S13003006,UTW:culloden-and-ardersier,3
-highland,8,Dingwall and Seaforth,S13002997,UTW:dingwall-and-seaforth,4
-highland,4,East Sutherland and Edderton,S13002993,UTW:east-sutherland-and-edderton,3
-highland,10,Eilean a' Ch�o,S13002999,UTW:eilean-aa2-cha-o,4
-highland,21,Fort William and Ardnamurchan,S13003010,UTW:fort-william-and-ardnamurchan,4
-highland,14,Inverness Central,S13003003,UTW:inverness-central,3
-highland,16,Inverness Millburn,S13003005,UTW:inverness-millburn,3
-highland,15,Inverness Ness-side,S13003004,UTW:inverness-ness-side,3
-highland,19,Inverness South,S13003008,UTW:inverness-south,4
-highland,13,Inverness West,S13003002,UTW:inverness-west,3
-highland,18,Nairn and Cawdor,S13003007,UTW:nairn-and-cawdor,4
-highland,1,"North, West and Central Sutherland",S13002990,UTW:north-west-and-central-sutherland,3
-highland,7,Tain and Easter Ross,S13002996,UTW:tain-and-easter-ross,3
-highland,2,Thurso and Northwest Caithness,S13002991,UTW:thurso-and-northwest-caithness,4
-highland,5,"Wester Ross, Strathpeffer and Lochalsh",S13002994,UTW:wester-ross-strathpeffer-and-lochalsh,4
-highland,3,Wick and East Caithness,S13002992,UTW:wick-and-east-caithness,4
-inverclyde,3,Inverclyde Central,S13003013,UTW:inverclyde-central,3
-inverclyde,1,Inverclyde East,S13003011,UTW:inverclyde-east,3
-inverclyde,2,Inverclyde East Central,S13003012,UTW:inverclyde-east-central,3
-inverclyde,4,Inverclyde North,S13003014,UTW:inverclyde-north,4
-inverclyde,7,Inverclyde South,S13003017,UTW:inverclyde-south,3
-inverclyde,6,Inverclyde South West,S13003016,UTW:inverclyde-south-west,3
-inverclyde,5,Inverclyde West,S13003015,UTW:inverclyde-west,3
-midlothian,2,Bonnyrigg,S13003019,UTW:bonnyrigg,3
-midlothian,3,Dalkeith,S13003020,UTW:dalkeith,3
-midlothian,5,Midlothian East,S13003022,UTW:midlothian-east,3
-midlothian,6,Midlothian South,S13003023,UTW:midlothian-south,3
-midlothian,4,Midlothian West,S13003021,UTW:midlothian-west,3
-midlothian,1,Penicuik,S13003018,UTW:penicuik,3
-moray,3,Buckie,S13003026,UTW:buckie,3
-moray,6,Elgin City North,S13003029,UTW:elgin-city-north,3
-moray,7,Elgin City South,S13003030,UTW:elgin-city-south,3
-moray,4,Fochabers Lhanbryde,S13003027,UTW:fochabers-lhanbryde,3
-moray,8,Forres,S13003031,UTW:forres,4
-moray,5,Heldon and Laich,S13003028,UTW:heldon-and-laich,4
-moray,2,Keith and Cullen,S13003025,UTW:keith-and-cullen,3
-moray,1,Speyside Glenlivet,S13003024,UTW:speyside-glenlivet,3
-north-ayrshire,5,Ardrossan and Arran,S13003036,UTW:ardrossan-and-arran,3
-north-ayrshire,6,Dalry and West Kilbride,S13003037,UTW:dalry-and-west-kilbride,3
-north-ayrshire,2,Irvine East,S13003033,UTW:irvine-east,3
-north-ayrshire,10,Irvine South,S13003041,UTW:irvine-south,3
-north-ayrshire,1,Irvine West,S13003032,UTW:irvine-west,4
-north-ayrshire,7,Kilbirnie and Beith,S13003038,UTW:kilbirnie-and-beith,3
-north-ayrshire,3,Kilwinning,S13003034,UTW:kilwinning,4
-north-ayrshire,8,North Coast and Cumbraes,S13003039,UTW:north-coast-and-cumbraes,4
-north-ayrshire,9,Saltcoats,S13003040,UTW:saltcoats,3
-north-ayrshire,4,Stevenston,S13003035,UTW:stevenston,3
-north-lanarkshire,9,Airdrie Central,S13003050,UTW:airdrie-central,4
-north-lanarkshire,8,Airdrie North,S13003049,UTW:airdrie-north,4
-north-lanarkshire,12,Airdrie South,S13003053,UTW:airdrie-south,4
-north-lanarkshire,15,Bellshill,S13003056,UTW:bellshill,4
-north-lanarkshire,7,Coatbridge North,S13003048,UTW:coatbridge-north,4
-north-lanarkshire,11,Coatbridge South,S13003052,UTW:coatbridge-south,4
-north-lanarkshire,10,Coatbridge West,S13003051,UTW:coatbridge-west,3
-north-lanarkshire,4,Cumbernauld East,S13003045,UTW:cumbernauld-east,4
-north-lanarkshire,2,Cumbernauld North,S13003043,UTW:cumbernauld-north,4
-north-lanarkshire,3,Cumbernauld South,S13003044,UTW:cumbernauld-south,4
-north-lanarkshire,13,Fortissat,S13003054,UTW:fortissat,4
-north-lanarkshire,6,"Gartcosh, Glenboig and Moodiesburn",S13003047,UTW:gartcosh-glenboig-and-moodiesburn,3
-north-lanarkshire,1,Kilsyth,S13003042,UTW:kilsyth,3
-north-lanarkshire,16,Mossend and Holytown,S13003057,UTW:mossend-and-holytown,3
-north-lanarkshire,18,Motherwell North,S13003059,UTW:motherwell-north,4
-north-lanarkshire,19,Motherwell South East and Ravenscraig,S13003060,UTW:motherwell-south-east-and-ravenscraig,4
-north-lanarkshire,17,Motherwell West,S13003058,UTW:motherwell-west,3
-north-lanarkshire,20,Murdostoun,S13003061,UTW:murdostoun,4
-north-lanarkshire,5,"Stepps, Chryston and Muirhead",S13003046,UTW:stepps-chryston-and-muirhead,3
-north-lanarkshire,14,Thorniewood,S13003055,UTW:thorniewood,3
-north-lanarkshire,21,Wishaw,S13003062,UTW:wishaw,4
-orkney-islands,5,"East Mainland, South Ronaldsay and Burray",S13002736,UTW:S13002736,3
-orkney-islands,1,Kirkwall East,S13002732,UTW:S13002732,4
-orkney-islands,2,Kirkwall West and Orphir,S13002733,UTW:S13002733,4
-orkney-islands,6,North Isles,S13002737,UTW:S13002737,3
-orkney-islands,3,Stromness and South Isles,S13002734,UTW:S13002734,3
-orkney-islands,4,West Mainland,S13002735,UTW:S13002735,4
-perth-and-kinross,9,Almond and Earn,S13003071,UTW:almond-and-earn,3
-perth-and-kinross,3,Blairgowrie and Glens,S13003065,UTW:blairgowrie-and-glens,3
-perth-and-kinross,1,Carse of Gowrie,S13003063,UTW:carse-of-gowrie,3
-perth-and-kinross,4,Highland,S13003066,UTW:highland,3
-perth-and-kinross,8,Kinross-shire,S13003070,UTW:kinross-shire,4
-perth-and-kinross,12,Perth City Centre,S13003074,UTW:perth-city-centre,4
-perth-and-kinross,11,Perth City North,S13003073,UTW:perth-city-north,3
-perth-and-kinross,10,Perth City South,S13003072,UTW:perth-city-south,4
-perth-and-kinross,7,Strathallan,S13003069,UTW:strathallan,3
-perth-and-kinross,6,Strathearn,S13003068,UTW:strathearn,3
-perth-and-kinross,2,Strathmore,S13003064,UTW:strathmore,4
-perth-and-kinross,5,Strathtay,S13003067,UTW:strathtay,3
-renfrewshire,11,"Bishopton, Bridge of Weir and Langbank",S13003085,UTW:bishopton-bridge-of-weir-and-langbank,3
-renfrewshire,12,Erskine and Inchinnan,S13003086,UTW:erskine-and-inchinnan,4
-renfrewshire,10,"Houston, Crosslee and Linwood",S13003084,UTW:houston-crosslee-and-linwood,4
-renfrewshire,9,"Johnstone North, Kilbarchan, Howwood and Lochwinnoch",S13003083,UTW:johnstone-north-kilbarchan-howwood-and-lochwinnoch,4
-renfrewshire,8,Johnstone South and Elderslie,S13003082,UTW:johnstone-south-and-elderslie,4
-renfrewshire,5,Paisley East and Central,S13003079,UTW:paisley-east-and-central,3
-renfrewshire,3,Paisley Northeast and Ralston,S13003077,UTW:paisley-northeast-and-ralston,3
-renfrewshire,4,Paisley Northwest,S13003078,UTW:paisley-northwest,4
-renfrewshire,6,Paisley Southeast,S13003080,UTW:paisley-southeast,3
-renfrewshire,7,Paisley Southwest,S13003081,UTW:paisley-southwest,4
-renfrewshire,1,Renfrew North and Braehead,S13003075,UTW:renfrew-north-and-braehead,4
-renfrewshire,2,Renfrew South and Gallowhill,S13003076,UTW:renfrew-south-and-gallowhill,3
-shetland-islands,6,Lerwick North,S13002777,UTW:S13002777,3
-shetland-islands,7,Lerwick South,S13002778,UTW:S13002778,4
-shetland-islands,1,North Isles,S13002772,UTW:S13002772,3
-shetland-islands,4,Shetland Central,S13002775,UTW:S13002775,3
-shetland-islands,2,Shetland North,S13002773,UTW:S13002773,3
-shetland-islands,5,Shetland South,S13002776,UTW:S13002776,3
-shetland-islands,3,Shetland West,S13002774,UTW:S13002774,3
-south-ayrshire,4,Ayr East,S13003090,UTW:ayr-east,3
-south-ayrshire,3,Ayr North,S13003089,UTW:ayr-north,4
-south-ayrshire,5,Ayr West,S13003091,UTW:ayr-west,4
-south-ayrshire,8,Girvan and South Carrick,S13003094,UTW:girvan-and-south-carrick,3
-south-ayrshire,6,Kyle,S13003092,UTW:kyle,3
-south-ayrshire,7,"Maybole, North Carrick and Coylton",S13003093,UTW:maybole-north-carrick-and-coylton,3
-south-ayrshire,2,Prestwick,S13003088,UTW:prestwick,4
-south-ayrshire,1,Troon,S13003087,UTW:troon,4
-south-lanarkshire,5,Avondale and Stonehouse,S13003099,UTW:avondale-and-stonehouse,3
-south-lanarkshire,15,Blantyre,S13003109,UTW:blantyre,3
-south-lanarkshire,16,Bothwell and Uddingston,S13003110,UTW:bothwell-and-uddingston,3
-south-lanarkshire,14,Cambuslang East,S13003108,UTW:cambuslang-east,3
-south-lanarkshire,13,Cambuslang West,S13003107,UTW:cambuslang-west,3
-south-lanarkshire,3,Clydesdale East,S13003097,UTW:clydesdale-east,3
-south-lanarkshire,2,Clydesdale North,S13003096,UTW:clydesdale-north,3
-south-lanarkshire,4,Clydesdale South,S13003098,UTW:clydesdale-south,3
-south-lanarkshire,1,Clydesdale West,S13003095,UTW:clydesdale-west,4
-south-lanarkshire,8,East Kilbride Central North,S13003102,UTW:east-kilbride-central-north,3
-south-lanarkshire,7,East Kilbride Central South,S13003101,UTW:east-kilbride-central-south,3
-south-lanarkshire,10,East Kilbride East,S13003104,UTW:east-kilbride-east,3
-south-lanarkshire,6,East Kilbride South,S13003100,UTW:east-kilbride-south,3
-south-lanarkshire,9,East Kilbride West,S13003103,UTW:east-kilbride-west,3
-south-lanarkshire,17,Hamilton North and East,S13003111,UTW:hamilton-north-and-east,3
-south-lanarkshire,19,Hamilton South,S13003113,UTW:hamilton-south,4
-south-lanarkshire,18,Hamilton West and Earnock,S13003112,UTW:hamilton-west-and-earnock,4
-south-lanarkshire,20,Larkhall,S13003114,UTW:larkhall,4
-south-lanarkshire,12,Rutherglen Central and North,S13003106,UTW:rutherglen-central-and-north,3
-south-lanarkshire,11,Rutherglen South,S13003105,UTW:rutherglen-south,3
-stirling,7,Bannockburn,S13003121,UTW:bannockburn,3
-stirling,3,Dunblane and Bridge of Allan,S13003117,UTW:dunblane-and-bridge-of-allan,4
-stirling,2,Forth and Endrick,S13003116,UTW:forth-and-endrick,3
-stirling,6,Stirling East,S13003120,UTW:stirling-east,3
-stirling,4,Stirling North,S13003118,UTW:stirling-north,4
-stirling,5,Stirling West,S13003119,UTW:stirling-west,3
-stirling,1,Trossachs and Teith,S13003115,UTW:trossachs-and-teith,3
-the-scottish-borders,7,East Berwickshire Ward,S13002767,UTW:S13002767,3
-the-scottish-borders,3,Galashiels and District Ward,S13002763,UTW:S13002763,4
-the-scottish-borders,10,Hawick and Denholm Ward,S13002770,UTW:S13002770,3
-the-scottish-borders,11,Hawick and Hermitage Ward,S13002771,UTW:S13002771,3
-the-scottish-borders,9,Jedburgh and District Ward,S13002769,UTW:S13002769,3
-the-scottish-borders,8,Kelso and District Ward,S13002768,UTW:S13002768,3
-the-scottish-borders,5,Leaderdale and Melrose Ward,S13002765,UTW:S13002765,3
-the-scottish-borders,6,Mid Berwickshire Ward,S13002766,UTW:S13002766,3
-the-scottish-borders,4,Selkirkshire Ward,S13002764,UTW:S13002764,3
-the-scottish-borders,2,Tweeddale East Ward,S13002762,UTW:S13002762,3
-the-scottish-borders,1,Tweeddale West Ward,S13002761,UTW:S13002761,3
-west-dunbartonshire,5,Clydebank Central,S13003126,UTW:clydebank-central,4
-west-dunbartonshire,6,Clydebank Waterfront,S13003127,UTW:clydebank-waterfront,4
-west-dunbartonshire,3,Dumbarton,S13003124,UTW:dumbarton,4
-west-dunbartonshire,4,Kilpatrick,S13003125,UTW:kilpatrick,3
-west-dunbartonshire,2,Leven,S13003123,UTW:leven,4
-west-dunbartonshire,1,Lomond,S13003122,UTW:lomond,3
-west-lothian,9,Armadale and Blackridge Ward,S13002828,UTW:S13002828,3
-west-lothian,8,Bathgate Ward,S13002827,UTW:S13002827,4
-west-lothian,2,"Broxburn, Uphall and Winchburgh Ward",S13002821,UTW:S13002821,4
-west-lothian,5,East Livingston and East Calder Ward,S13002824,UTW:S13002824,4
-west-lothian,6,Fauldhouse and the Breich Valley Ward,S13002825,UTW:S13002825,3
-west-lothian,1,Linlithgow Ward,S13002820,UTW:S13002820,3
-west-lothian,3,Livingston North Ward,S13002822,UTW:S13002822,4
-west-lothian,4,Livingston South Ward,S13002823,UTW:S13002823,4
-west-lothian,7,Whitburn and Blackburn Ward,S13002826,UTW:S13002826,4
+council,ward_no,ward_name,map_ward_code,cand_ward_code,seats,election
+Aberdeen City,11,Airyhall/Broomhill/Garthdee,S13002845,UTW:airyhallbroomhillgarthdee,3,aberdeen-city
+Aberdeen City,2,Bridge of Don,S13002836,UTW:bridge-of-don,4,aberdeen-city
+Aberdeen City,1,Dyce/Bucksburn/Danestone,S13002835,UTW:dycebucksburndanestone,4,aberdeen-city
+Aberdeen City,8,George St/Harbour,S13002842,UTW:george-stharbour,4,aberdeen-city
+Aberdeen City,10,Hazlehead/Queens Cross/Countesswells,S13002844,UTW:hazleheadqueens-crosscountesswells,4,aberdeen-city
+Aberdeen City,5,Hilton/Woodside/Stockethill,S13002839,UTW:hiltonwoodsidestockethill,3,aberdeen-city
+Aberdeen City,13,Kincorth/Nigg/Cove,S13002847,UTW:kincorthniggcove,4,aberdeen-city
+Aberdeen City,3,Kingswells/Sheddocksley/Summerhill,S13002837,UTW:kingswellssheddocksleysummerhill,3,aberdeen-city
+Aberdeen City,9,Lower Deeside,S13002843,UTW:lower-deeside,3,aberdeen-city
+Aberdeen City,7,Midstocket/Rosemount,S13002841,UTW:midstocketrosemount,3,aberdeen-city
+Aberdeen City,4,Northfield/Mastrick North,S13002838,UTW:northfieldmastrick-north,3,aberdeen-city
+Aberdeen City,6,Tillydrone/Seaton/Old Aberdeen,S13002840,UTW:tillydroneseatonold-aberdeen,3,aberdeen-city
+Aberdeen City,12,Torry/Ferryhill,S13002846,UTW:torryferryhill,4,aberdeen-city
+Aberdeenshire,15,"Aboyne, Upper Deeside and Donside",S13002862,UTW:aboyne-upper-deeside-and-donside,3,aberdeenshire
+Aberdeenshire,16,Banchory and Mid Deeside,S13002863,UTW:banchory-and-mid-deeside,3,aberdeenshire
+Aberdeenshire,1,Banff and District,S13002848,UTW:banff-and-district,3,aberdeenshire
+Aberdeenshire,4,Central Buchan,S13002851,UTW:central-buchan,4,aberdeenshire
+Aberdeenshire,12,East Garioch,S13002859,UTW:east-garioch,4,aberdeenshire
+Aberdeenshire,9,Ellon and District,S13002856,UTW:ellon-and-district,4,aberdeenshire
+Aberdeenshire,3,Fraserburgh and District,S13002850,UTW:fraserburgh-and-district,4,aberdeenshire
+Aberdeenshire,14,"Huntly, Strathbogie and Howe of Alford",S13002861,UTW:huntly-strathbogie-and-howe-of-alford,4,aberdeenshire
+Aberdeenshire,11,Inverurie and District,S13002858,UTW:inverurie-and-district,4,aberdeenshire
+Aberdeenshire,19,Mearns,S13002866,UTW:mearns,4,aberdeenshire
+Aberdeenshire,8,Mid Formartine,S13002855,UTW:mid-formartine,4,aberdeenshire
+Aberdeenshire,17,North Kincardine,S13002864,UTW:north-kincardine,4,aberdeenshire
+Aberdeenshire,5,Peterhead North and Rattray,S13002852,UTW:peterhead-north-and-rattray,4,aberdeenshire
+Aberdeenshire,6,Peterhead South and Cruden,S13002853,UTW:peterhead-south-and-cruden,3,aberdeenshire
+Aberdeenshire,18,Stonehaven and Lower Deeside,S13002865,UTW:stonehaven-and-lower-deeside,4,aberdeenshire
+Aberdeenshire,2,Troup,S13002849,UTW:troup,3,aberdeenshire
+Aberdeenshire,7,Turriff and District,S13002854,UTW:turriff-and-district,4,aberdeenshire
+Aberdeenshire,10,West Garioch,S13002857,UTW:west-garioch,3,aberdeenshire
+Aberdeenshire,13,Westhill and District,S13002860,UTW:westhill-and-district,4,aberdeenshire
+Angus,7,Arbroath East and Lunan,S13002873,UTW:arbroath-east-and-lunan,3,angus
+Angus,6,"Arbroath West, Letham and Friockheim",S13002872,UTW:arbroath-west-letham-and-friockheim,4,angus
+Angus,2,Brechin and Edzell,S13002868,UTW:brechin-and-edzell,3,angus
+Angus,5,Carnoustie and District,S13002871,UTW:carnoustie-and-district,3,angus
+Angus,3,Forfar and District,S13002869,UTW:forfar-and-district,4,angus
+Angus,1,Kirriemuir and Dean,S13002867,UTW:kirriemuir-and-dean,3,angus
+Angus,4,Monifieth and Sidlaw,S13002870,UTW:monifieth-and-sidlaw,4,angus
+Angus,8,Montrose and District,S13002874,UTW:montrose-and-district,4,angus
+Argyll and Bute,6,Cowal Ward,S13002521,UTW:S13002521,3,argyll-and-bute
+Argyll and Bute,7,Dunoon Ward,S13002522,UTW:S13002522,3,argyll-and-bute
+Argyll and Bute,11,Helensburgh and Lomond South Ward,S13002526,UTW:S13002526,4,argyll-and-bute
+Argyll and Bute,10,Helensburgh Central Ward,S13002525,UTW:S13002525,3,argyll-and-bute
+Argyll and Bute,8,Isle of Bute Ward,S13002523,UTW:S13002523,3,argyll-and-bute
+Argyll and Bute,0,Kintyre and the Islands Ward,S13002517,UTW:S13002517,3,argyll-and-bute
+Argyll and Bute,9,Lomond North Ward,S13002524,UTW:S13002524,3,argyll-and-bute
+Argyll and Bute,3,Mid Argyll Ward,S13002518,UTW:S13002518,3,argyll-and-bute
+Argyll and Bute,5,Oban North and Lorn Ward,S13002520,UTW:S13002520,4,argyll-and-bute
+Argyll and Bute,0,Oban South and the Isles Ward,S13002519,UTW:S13002519,4,argyll-and-bute
+Argyll and Bute,1,South Kintyre Ward,S13002516,UTW:S13002516,3,argyll-and-bute
+City of Edinburgh,1,Almond,S13002919,UTW:almond,4,city-of-edinburgh
+City of Edinburgh,11,City Centre,S13002929,UTW:city-centre,4,city-of-edinburgh
+City of Edinburgh,8,Colinton / Fairmilehead,S13002926,UTW:colintonfairmilehead,3,city-of-edinburgh
+City of Edinburgh,6,Corstorphine / Murrayfield,S13002924,UTW:corstorphinemurrayfield,3,city-of-edinburgh
+City of Edinburgh,14,Craigentinny / Duddingston,S13002932,UTW:craigentinnyduddingston,4,city-of-edinburgh
+City of Edinburgh,3,Drum Brae / Gyle,S13002921,UTW:drum-braegyle,3,city-of-edinburgh
+City of Edinburgh,4,Forth,S13002922,UTW:forth,4,city-of-edinburgh
+City of Edinburgh,9,Fountainbridge / Craiglockhart,S13002927,UTW:fountainbridgecraiglockhart,3,city-of-edinburgh
+City of Edinburgh,5,Inverleith,S13002923,UTW:inverleith,4,city-of-edinburgh
+City of Edinburgh,13,Leith,S13002931,UTW:leith,3,city-of-edinburgh
+City of Edinburgh,12,Leith Walk,S13002930,UTW:leith-walk,4,city-of-edinburgh
+City of Edinburgh,16,Liberton / Gilmerton,S13002934,UTW:libertongilmerton,4,city-of-edinburgh
+City of Edinburgh,10,Morningside,S13002928,UTW:morningside,4,city-of-edinburgh
+City of Edinburgh,2,Pentland Hills,S13002920,UTW:pentland-hills,4,city-of-edinburgh
+City of Edinburgh,17,Portobello / Craigmillar,S13002935,UTW:portobellocraigmillar,4,city-of-edinburgh
+City of Edinburgh,7,Sighthill / Gorgie,S13002925,UTW:sighthillgorgie,4,city-of-edinburgh
+City of Edinburgh,15,Southside / Newington,S13002933,UTW:southsidenewington,4,city-of-edinburgh
+Clackmannanshire,3,Clackmannanshire Central,S13002877,UTW:clackmannanshire-central,3,clackmannanshire
+Clackmannanshire,5,Clackmannanshire East,S13002879,UTW:clackmannanshire-east,3,clackmannanshire
+Clackmannanshire,2,Clackmannanshire North,S13002876,UTW:clackmannanshire-north,4,clackmannanshire
+Clackmannanshire,4,Clackmannanshire South,S13002878,UTW:clackmannanshire-south,4,clackmannanshire
+Clackmannanshire,1,Clackmannanshire West,S13002875,UTW:clackmannanshire-west,4,clackmannanshire
+Dumfries and Galloway,5,Abbey,S13002884,UTW:abbey,3,dumfries-and-galloway
+Dumfries and Galloway,12,Annandale East and Eskdale,S13002891,UTW:annandale-east-and-eskdale,3,dumfries-and-galloway
+Dumfries and Galloway,11,Annandale North,S13002890,UTW:annandale-north,4,dumfries-and-galloway
+Dumfries and Galloway,10,Annandale South,S13002889,UTW:annandale-south,4,dumfries-and-galloway
+Dumfries and Galloway,4,Castle Douglas and Crocketford,S13002883,UTW:castle-douglas-and-crocketford,3,dumfries-and-galloway
+Dumfries and Galloway,3,Dee and Glenkens,S13002882,UTW:dee-and-glenkens,3,dumfries-and-galloway
+Dumfries and Galloway,8,Lochar,S13002887,UTW:lochar,4,dumfries-and-galloway
+Dumfries and Galloway,7,Mid and Upper Nithsdale,S13002886,UTW:mid-and-upper-nithsdale,3,dumfries-and-galloway
+Dumfries and Galloway,2,Mid Galloway and Wigtown West,S13002881,UTW:mid-galloway-and-wigtown-west,4,dumfries-and-galloway
+Dumfries and Galloway,9,Nith,S13002888,UTW:nith,4,dumfries-and-galloway
+Dumfries and Galloway,6,North West Dumfries,S13002885,UTW:north-west-dumfries,4,dumfries-and-galloway
+Dumfries and Galloway,1,Stranraer and the Rhins,S13002880,UTW:stranraer-and-the-rhins,4,dumfries-and-galloway
+Dundee City,4,Coldside Ward,S13002548,UTW:S13002548,4,dundee-city
+Dundee City,7,East End Ward,S13002551,UTW:S13002551,3,dundee-city
+Dundee City,2,Lochee Ward,S13002546,UTW:S13002546,4,dundee-city
+Dundee City,5,Maryfield Ward,S13002549,UTW:S13002549,3,dundee-city
+Dundee City,6,North East Ward,S13002830,UTW:S13002830,3,dundee-city
+Dundee City,1,Strathmartine Ward,S13002545,UTW:S13002545,4,dundee-city
+Dundee City,8,The Ferry Ward,S13002552,UTW:S13002552,4,dundee-city
+Dundee City,3,West End Ward,S13002547,UTW:S13002547,4,dundee-city
+East Ayrshire,1,Annick,S13002892,UTW:annick,4,east-ayrshire
+East Ayrshire,7,Ballochmyle,S13002898,UTW:ballochmyle,4,east-ayrshire
+East Ayrshire,8,Cumnock and New Cumnock,S13002899,UTW:cumnock-and-new-cumnock,4,east-ayrshire
+East Ayrshire,9,Doon Valley,S13002900,UTW:doon-valley,3,east-ayrshire
+East Ayrshire,6,Irvine Valley,S13002897,UTW:irvine-valley,3,east-ayrshire
+East Ayrshire,4,Kilmarnock East and Hurlford,S13002895,UTW:kilmarnock-east-and-hurlford,4,east-ayrshire
+East Ayrshire,2,Kilmarnock North,S13002893,UTW:kilmarnock-north,3,east-ayrshire
+East Ayrshire,5,Kilmarnock South,S13002896,UTW:kilmarnock-south,3,east-ayrshire
+East Ayrshire,3,Kilmarnock West and Crosshouse,S13002894,UTW:kilmarnock-west-and-crosshouse,4,east-ayrshire
+East Dunbartonshire,2,Bearsden North,S13002902,UTW:bearsden-north,3,east-dunbartonshire
+East Dunbartonshire,3,Bearsden South,S13002903,UTW:bearsden-south,3,east-dunbartonshire
+East Dunbartonshire,4,Bishopbriggs North and Campsie,S13002904,UTW:bishopbriggs-north-and-campsie,4,east-dunbartonshire
+East Dunbartonshire,5,Bishopbriggs South,S13002905,UTW:bishopbriggs-south,3,east-dunbartonshire
+East Dunbartonshire,7,Kirkintilloch East and North and Twechar,S13002907,UTW:kirkintilloch-east-and-north-and-twechar,3,east-dunbartonshire
+East Dunbartonshire,6,Lenzie and Kirkintilloch South,S13002906,UTW:lenzie-and-kirkintilloch-south,3,east-dunbartonshire
+East Dunbartonshire,1,Milngavie,S13002901,UTW:milngavie,3,east-dunbartonshire
+East Lothian,6,Dunbar and East Linton,S13002913,UTW:dunbar-and-east-linton,3,east-lothian
+East Lothian,5,Haddington and Lammermuir,S13002912,UTW:haddington-and-lammermuir,4,east-lothian
+East Lothian,1,Musselburgh,S13002908,UTW:musselburgh,4,east-lothian
+East Lothian,4,North Berwick Coastal,S13002911,UTW:north-berwick-coastal,3,east-lothian
+East Lothian,2,"Preston, Seton and Gosford",S13002909,UTW:preston-seton-and-gosford,4,east-lothian
+East Lothian,3,"Tranent, Wallyford and Macmerry",S13002910,UTW:tranent-wallyford-and-macmerry,4,east-lothian
+East Renfrewshire,1,"Barrhead, Liboside and Uplawmoor",S13002914,UTW:barrhead-liboside-and-uplawmoor,4,east-renfrewshire
+East Renfrewshire,4,"Clarkston, Netherlee and Williamwood",S13002917,UTW:clarkston-netherlee-and-williamwood,4,east-renfrewshire
+East Renfrewshire,3,Giffnock and Thornliebank,S13002916,UTW:giffnock-and-thornliebank,3,east-renfrewshire
+East Renfrewshire,2,Newton Mearns North and Neilston,S13002915,UTW:newton-means-north-and-neilston,3,east-renfrewshire
+East Renfrewshire,5,Newton Mearns South and Eaglesham,S13002918,UTW:newton-mearns-south-and-eaglesham,4,east-renfrewshire
+Falkirk,1,Bo'ness and Blackness,S13002936,UTW:boaness-and-blackness,3,falkirk
+Falkirk,5,Bonnybridge and Larbert,S13002940,UTW:bonnybridge-and-larbert,3,falkirk
+Falkirk,4,"Carse, Kinnaird and Tryst",S13002939,UTW:carse-kinnaird-and-tryst,4,falkirk
+Falkirk,3,Denny and Banknock,S13002938,UTW:denny-and-banknock,4,falkirk
+Falkirk,6,Falkirk North,S13002941,UTW:falkirk-north,4,falkirk
+Falkirk,7,Falkirk South,S13002942,UTW:falkirk-south,3,falkirk
+Falkirk,2,Grangemouth,S13002937,UTW:grangemouth,3,falkirk
+Falkirk,8,Lower Braes,S13002943,UTW:lower-braes,3,falkirk
+Falkirk,9,Upper Braes,S13002944,UTW:upper-braes,3,falkirk
+Fife,22,"Buckhaven, Methil and Wemyss Villages",S13002966,UTW:buckhaven-methil-and-wemyss-villages,4,fife
+Fife,9,"Burntisland, Kinghorn and Western Kirkcaldy",S13002953,UTW:burntisland-kinghorn-and-western-kirkcaldy,3,fife
+Fife,7,Cowdenbeath,S13002951,UTW:cowdenbeath,4,fife
+Fife,20,Cupar,S13002964,UTW:cupar,3,fife
+Fife,3,Dunfermline Central,S13002947,UTW:dunfermline-central,4,fife
+Fife,2,Dunfermline North,S13002946,UTW:dunfermline-north,3,fife
+Fife,4,Dunfermline South,S13002948,UTW:dunfermline-south,4,fife
+Fife,19,East Neuk and Landward,S13002963,UTW:east-neuk-and-landward,3,fife
+Fife,15,Glenrothes Central and Thornton,S13002959,UTW:glenrothes-central-and-thornton,3,fife
+Fife,14,"Glenrothes North, Leslie and Markinch",S13002958,UTW:glenrothes-north-leslie-and-markinch,4,fife
+Fife,13,Glenrothes West and Kinglassie,S13002957,UTW:glenrothes-west-and-kinglassie,3,fife
+Fife,16,Howe of Fife and Tay Coast,S13002960,UTW:howe-of-fife-and-tay-coast,3,fife
+Fife,6,Inverkeithing and Dalgety Bay,S13002950,UTW:inverkeithing-and-dalgety-bay,4,fife
+Fife,11,Kirkcaldy Central,S13002955,UTW:kirkcaldy-central,3,fife
+Fife,12,Kirkcaldy East,S13002956,UTW:kirkcaldy-east,3,fife
+Fife,10,Kirkcaldy North,S13002954,UTW:kirkcaldy-north,3,fife
+Fife,21,"Leven, Kennoway and Largo",S13002965,UTW:leven-kennoway-and-largo,4,fife
+Fife,8,"Lochgelly, Cardenden and Benarty",S13002952,UTW:lochgelly-cardenden-and-benarty,4,fife
+Fife,5,Rosyth,S13002949,UTW:rosyth,3,fife
+Fife,18,St Andrews,S13002962,UTW:st-andrews,4,fife
+Fife,17,Tay Bridgehead,S13002961,UTW:tay-bridgehead,3,fife
+Fife,1,West Fife and Coastal Villages,S13002945,UTW:west-fife-and-coastal-villages,3,fife
+Glasgow City,10,Anderston/City/Yorkhill,S13002976,UTW:anderstoncityyorkhill,4,glasgow-city
+Glasgow City,20,Baillieston,S13002986,UTW:baillieston,3,glasgow-city
+Glasgow City,9,Calton,S13002975,UTW:calton,4,glasgow-city
+Glasgow City,16,Canal,S13002982,UTW:canal,4,glasgow-city
+Glasgow City,4,Cardonald,S13002970,UTW:cardonald,4,glasgow-city
+Glasgow City,22,Dennistoun,S13002988,UTW:dennistoun,3,glasgow-city
+Glasgow City,14,Drumchapel/Anniesland,S13002980,UTW:drumchapelanniesland,4,glasgow-city
+Glasgow City,18,East Centre,S13002984,UTW:east-centre,4,glasgow-city
+Glasgow City,13,Garscadden / Scotstounhill,S13002979,UTW:garscaddenscotstounhill,4,glasgow-city
+Glasgow City,5,Govan,S13002971,UTW:govan,4,glasgow-city
+Glasgow City,3,Greater Pollok,S13002969,UTW:greater-pollok,4,glasgow-city
+Glasgow City,11,Hillhead,S13002977,UTW:hillhead,3,glasgow-city
+Glasgow City,7,Langside,S13002973,UTW:langside,4,glasgow-city
+Glasgow City,1,Linn,S13002967,UTW:linn,4,glasgow-city
+Glasgow City,15,Maryhill,S13002981,UTW:maryhill,3,glasgow-city
+Glasgow City,2,Newlands / Auldburn,S13002968,UTW:newlandsauldburn,3,glasgow-city
+Glasgow City,21,North East,S13002987,UTW:north-east,3,glasgow-city
+Glasgow City,23,Partick East/Kelvindale,S13002989,UTW:partick-eastkelvindale,4,glasgow-city
+Glasgow City,6,Pollokshields,S13002972,UTW:pollokshields,4,glasgow-city
+Glasgow City,19,Shettleston,S13002985,UTW:shettleston,4,glasgow-city
+Glasgow City,8,Southside Central,S13002974,UTW:southside-central,4,glasgow-city
+Glasgow City,17,Springburn / Robroyston,S13002983,UTW:springburnrobroyston,4,glasgow-city
+Glasgow City,12,Victoria Park,S13002978,UTW:victoria-park,3,glasgow-city
+Highland,12,Aird and Loch Ness,S13003001,UTW:aird-and-loch-ness,4,highland
+Highland,20,Badenoch and Strathspey,S13003009,UTW:badenoch-and-strathspey,4,highland
+Highland,9,Black Isle,S13002998,UTW:black-isle,3,highland
+Highland,11,Caol and Mallaig,S13003000,UTW:caol-and-mallaig,3,highland
+Highland,6,Cromarty Firth,S13002995,UTW:cromarty-firth,4,highland
+Highland,17,Culloden  and Ardersier,S13003006,UTW:culloden-and-ardersier,3,highland
+Highland,8,Dingwall and Seaforth,S13002997,UTW:dingwall-and-seaforth,4,highland
+Highland,4,East Sutherland and Edderton,S13002993,UTW:east-sutherland-and-edderton,3,highland
+Highland,10,Eilean a' Cho,S13002999,UTW:eilean-aa2-cha-o,4,highland
+Highland,21,Fort William and Ardnamurchan,S13003010,UTW:fort-william-and-ardnamurchan,4,highland
+Highland,14,Inverness Central,S13003003,UTW:inverness-central,3,highland
+Highland,16,Inverness Millburn,S13003005,UTW:inverness-millburn,3,highland
+Highland,15,Inverness Ness-side,S13003004,UTW:inverness-ness-side,3,highland
+Highland,19,Inverness South,S13003008,UTW:inverness-south,4,highland
+Highland,13,Inverness West,S13003002,UTW:inverness-west,3,highland
+Highland,18,Nairn and Cawdor,S13003007,UTW:nairn-and-cawdor,4,highland
+Highland,1,"North, West and Central Sutherland",S13002990,UTW:north-west-and-central-sutherland,3,highland
+Highland,7,Tain and Easter Ross,S13002996,UTW:tain-and-easter-ross,3,highland
+Highland,2,Thurso and Northwest Caithness,S13002991,UTW:thurso-and-northwest-caithness,4,highland
+Highland,5,"Wester Ross, Strathpeffer and Lochalsh",S13002994,UTW:wester-ross-strathpeffer-and-lochalsh,4,highland
+Highland,3,Wick and East Caithness,S13002992,UTW:wick-and-east-caithness,4,highland
+Inverclyde,3,Inverclyde Central,S13003013,UTW:inverclyde-central,3,inverclyde
+Inverclyde,1,Inverclyde East,S13003011,UTW:inverclyde-east,3,inverclyde
+Inverclyde,2,Inverclyde East Central,S13003012,UTW:inverclyde-east-central,3,inverclyde
+Inverclyde,4,Inverclyde North,S13003014,UTW:inverclyde-north,4,inverclyde
+Inverclyde,7,Inverclyde South,S13003017,UTW:inverclyde-south,3,inverclyde
+Inverclyde,6,Inverclyde South West,S13003016,UTW:inverclyde-south-west,3,inverclyde
+Inverclyde,5,Inverclyde West,S13003015,UTW:inverclyde-west,3,inverclyde
+Midlothian,2,Bonnyrigg,S13003019,UTW:bonnyrigg,3,midlothian
+Midlothian,3,Dalkeith,S13003020,UTW:dalkeith,3,midlothian
+Midlothian,5,Midlothian East,S13003022,UTW:midlothian-east,3,midlothian
+Midlothian,6,Midlothian South,S13003023,UTW:midlothian-south,3,midlothian
+Midlothian,4,Midlothian West,S13003021,UTW:midlothian-west,3,midlothian
+Midlothian,1,Penicuik,S13003018,UTW:penicuik,3,midlothian
+Moray,3,Buckie,S13003026,UTW:buckie,3,moray
+Moray,6,Elgin City North,S13003029,UTW:elgin-city-north,3,moray
+Moray,7,Elgin City South,S13003030,UTW:elgin-city-south,3,moray
+Moray,4,Fochabers Lhanbryde,S13003027,UTW:fochabers-lhanbryde,3,moray
+Moray,8,Forres,S13003031,UTW:forres,4,moray
+Moray,5,Heldon and Laich,S13003028,UTW:heldon-and-laich,4,moray
+Moray,2,Keith and Cullen,S13003025,UTW:keith-and-cullen,3,moray
+Moray,1,Speyside Glenlivet,S13003024,UTW:speyside-glenlivet,3,moray
+Na h-Eileanan an Iar,9,An Taobh Siar agus Nis Ward,S13002608,UTW:S13002608,4,eilean-siar
+Na h-Eileanan an Iar,1,"Barraigh, Bhatarsaigh, Eirisgeigh agus Uibhist a Deas Ward",S13002600,UTW:S13002600,4,eilean-siar
+Na h-Eileanan an Iar,2,Beinn na Foghla agus Uibhist a Tuath Ward,S13002601,UTW:S13002601,3,eilean-siar
+Na h-Eileanan an Iar,8,Loch a Tuath Ward,S13002607,UTW:S13002607,3,eilean-siar
+Na h-Eileanan an Iar,3,Na Hearadh agus Ceann a Deas nan Loch Ward,S13002602,UTW:S13002602,3,eilean-siar
+Na h-Eileanan an Iar,5,Sgire an Rubha Ward,S13002604,UTW:S13002604,3,eilean-siar
+Na h-Eileanan an Iar,4,Sgir'Uige agus Ceann a Tuath nan Loch Ward,S13002603,UTW:S13002603,3,eilean-siar
+Na h-Eileanan an Iar,6,Steornabhagh a Deas Ward,S13002605,UTW:S13002605,4,eilean-siar
+Na h-Eileanan an Iar,7,Steornabhagh a Tuath Ward,S13002606,UTW:S13002606,4,eilean-siar
+North Ayrshire,5,Ardrossan and Arran,S13003036,UTW:ardrossan-and-arran,3,north-ayrshire
+North Ayrshire,6,Dalry and West Kilbride,S13003037,UTW:dalry-and-west-kilbride,3,north-ayrshire
+North Ayrshire,2,Irvine East,S13003033,UTW:irvine-east,3,north-ayrshire
+North Ayrshire,10,Irvine South,S13003041,UTW:irvine-south,3,north-ayrshire
+North Ayrshire,1,Irvine West,S13003032,UTW:irvine-west,4,north-ayrshire
+North Ayrshire,7,Kilbirnie and Beith,S13003038,UTW:kilbirnie-and-beith,3,north-ayrshire
+North Ayrshire,3,Kilwinning,S13003034,UTW:kilwinning,4,north-ayrshire
+North Ayrshire,8,North Coast and Cumbraes,S13003039,UTW:north-coast-and-cumbraes,4,north-ayrshire
+North Ayrshire,9,Saltcoats,S13003040,UTW:saltcoats,3,north-ayrshire
+North Ayrshire,4,Stevenston,S13003035,UTW:stevenston,3,north-ayrshire
+North Lanarkshire,9,Airdrie Central,S13003050,UTW:airdrie-central,4,north-lanarkshire
+North Lanarkshire,8,Airdrie North,S13003049,UTW:airdrie-north,4,north-lanarkshire
+North Lanarkshire,12,Airdrie South,S13003053,UTW:airdrie-south,4,north-lanarkshire
+North Lanarkshire,15,Bellshill,S13003056,UTW:bellshill,4,north-lanarkshire
+North Lanarkshire,7,Coatbridge North,S13003048,UTW:coatbridge-north,4,north-lanarkshire
+North Lanarkshire,11,Coatbridge South,S13003052,UTW:coatbridge-south,4,north-lanarkshire
+North Lanarkshire,10,Coatbridge West,S13003051,UTW:coatbridge-west,3,north-lanarkshire
+North Lanarkshire,4,Cumbernauld East,S13003045,UTW:cumbernauld-east,4,north-lanarkshire
+North Lanarkshire,2,Cumbernauld North,S13003043,UTW:cumbernauld-north,4,north-lanarkshire
+North Lanarkshire,3,Cumbernauld South,S13003044,UTW:cumbernauld-south,4,north-lanarkshire
+North Lanarkshire,13,Fortissat,S13003054,UTW:fortissat,4,north-lanarkshire
+North Lanarkshire,6,"Gartcosh, Glenboig and Moodiesburn",S13003047,UTW:gartcosh-glenboig-and-moodiesburn,3,north-lanarkshire
+North Lanarkshire,1,Kilsyth,S13003042,UTW:kilsyth,3,north-lanarkshire
+North Lanarkshire,16,Mossend and Holytown,S13003057,UTW:mossend-and-holytown,3,north-lanarkshire
+North Lanarkshire,18,Motherwell North,S13003059,UTW:motherwell-north,4,north-lanarkshire
+North Lanarkshire,19,Motherwell South East and Ravenscraig,S13003060,UTW:motherwell-south-east-and-ravenscraig,4,north-lanarkshire
+North Lanarkshire,17,Motherwell West,S13003058,UTW:motherwell-west,3,north-lanarkshire
+North Lanarkshire,20,Murdostoun,S13003061,UTW:murdostoun,4,north-lanarkshire
+North Lanarkshire,5,"Stepps, Chryston and Muirhead",S13003046,UTW:stepps-chryston-and-muirhead,3,north-lanarkshire
+North Lanarkshire,14,Thorniewood,S13003055,UTW:thorniewood,3,north-lanarkshire
+North Lanarkshire,21,Wishaw,S13003062,UTW:wishaw,4,north-lanarkshire
+Orkney Islands,5,"East Mainland, South Ronaldsay and Burray",S13002736,UTW:S13002736,3,orkney-islands
+Orkney Islands,1,Kirkwall East,S13002732,UTW:S13002732,4,orkney-islands
+Orkney Islands,2,Kirkwall West and Orphir,S13002733,UTW:S13002733,4,orkney-islands
+Orkney Islands,6,North Isles,S13002737,UTW:S13002737,3,orkney-islands
+Orkney Islands,3,Stromness and South Isles,S13002734,UTW:S13002734,3,orkney-islands
+Orkney Islands,4,West Mainland,S13002735,UTW:S13002735,4,orkney-islands
+Perth and Kinross,9,Almond and Earn,S13003071,UTW:almond-and-earn,3,perth-and-kinross
+Perth and Kinross,3,Blairgowrie and Glens,S13003065,UTW:blairgowrie-and-glens,3,perth-and-kinross
+Perth and Kinross,1,Carse of Gowrie,S13003063,UTW:carse-of-gowrie,3,perth-and-kinross
+Perth and Kinross,4,Highland,S13003066,UTW:highland,3,perth-and-kinross
+Perth and Kinross,8,Kinross-shire,S13003070,UTW:kinross-shire,4,perth-and-kinross
+Perth and Kinross,12,Perth City Centre,S13003074,UTW:perth-city-centre,4,perth-and-kinross
+Perth and Kinross,11,Perth City North,S13003073,UTW:perth-city-north,3,perth-and-kinross
+Perth and Kinross,10,Perth City South,S13003072,UTW:perth-city-south,4,perth-and-kinross
+Perth and Kinross,7,Strathallan,S13003069,UTW:strathallan,3,perth-and-kinross
+Perth and Kinross,6,Strathearn,S13003068,UTW:strathearn,3,perth-and-kinross
+Perth and Kinross,2,Strathmore,S13003064,UTW:strathmore,4,perth-and-kinross
+Perth and Kinross,5,Strathtay,S13003067,UTW:strathtay,3,perth-and-kinross
+Renfrewshire,11,"Bishopton, Bridge of Weir and Langbank",S13003085,UTW:bishopton-bridge-of-weir-and-langbank,3,renfrewshire
+Renfrewshire,12,Erskine and Inchinnan,S13003086,UTW:erskine-and-inchinnan,4,renfrewshire
+Renfrewshire,10,"Houston, Crosslee and Linwood",S13003084,UTW:houston-crosslee-and-linwood,4,renfrewshire
+Renfrewshire,9,"Johnstone North, Kilbarchan, Howwood and Lochwinnoch",S13003083,UTW:johnstone-north-kilbarchan-howwood-and-lochwinnoch,4,renfrewshire
+Renfrewshire,8,Johnstone South and Elderslie,S13003082,UTW:johnstone-south-and-elderslie,4,renfrewshire
+Renfrewshire,5,Paisley East and Central,S13003079,UTW:paisley-east-and-central,3,renfrewshire
+Renfrewshire,3,Paisley Northeast and Ralston,S13003077,UTW:paisley-northeast-and-ralston,3,renfrewshire
+Renfrewshire,4,Paisley Northwest,S13003078,UTW:paisley-northwest,4,renfrewshire
+Renfrewshire,6,Paisley Southeast,S13003080,UTW:paisley-southeast,3,renfrewshire
+Renfrewshire,7,Paisley Southwest,S13003081,UTW:paisley-southwest,4,renfrewshire
+Renfrewshire,1,Renfrew North and Braehead,S13003075,UTW:renfrew-north-and-braehead,4,renfrewshire
+Renfrewshire,2,Renfrew South and Gallowhill,S13003076,UTW:renfrew-south-and-gallowhill,3,renfrewshire
+Shetland Islands,6,Lerwick North,S13002777,UTW:S13002777,3,shetland-islands
+Shetland Islands,7,Lerwick South,S13002778,UTW:S13002778,4,shetland-islands
+Shetland Islands,1,North Isles,S13002772,UTW:S13002772,3,shetland-islands
+Shetland Islands,4,Shetland Central,S13002775,UTW:S13002775,3,shetland-islands
+Shetland Islands,2,Shetland North,S13002773,UTW:S13002773,3,shetland-islands
+Shetland Islands,5,Shetland South,S13002776,UTW:S13002776,3,shetland-islands
+Shetland Islands,3,Shetland West,S13002774,UTW:S13002774,3,shetland-islands
+South Ayrshire,4,Ayr East,S13003090,UTW:ayr-east,3,south-ayrshire
+South Ayrshire,3,Ayr North,S13003089,UTW:ayr-north,4,south-ayrshire
+South Ayrshire,5,Ayr West,S13003091,UTW:ayr-west,4,south-ayrshire
+South Ayrshire,8,Girvan and South Carrick,S13003094,UTW:girvan-and-south-carrick,3,south-ayrshire
+South Ayrshire,6,Kyle,S13003092,UTW:kyle,3,south-ayrshire
+South Ayrshire,7,"Maybole, North Carrick and Coylton",S13003093,UTW:maybole-north-carrick-and-coylton,3,south-ayrshire
+South Ayrshire,2,Prestwick,S13003088,UTW:prestwick,4,south-ayrshire
+South Ayrshire,1,Troon,S13003087,UTW:troon,4,south-ayrshire
+South Lanarkshire,5,Avondale and Stonehouse,S13003099,UTW:avondale-and-stonehouse,3,south-lanarkshire
+South Lanarkshire,15,Blantyre,S13003109,UTW:blantyre,3,south-lanarkshire
+South Lanarkshire,16,Bothwell and Uddingston,S13003110,UTW:bothwell-and-uddingston,3,south-lanarkshire
+South Lanarkshire,14,Cambuslang East,S13003108,UTW:cambuslang-east,3,south-lanarkshire
+South Lanarkshire,13,Cambuslang West,S13003107,UTW:cambuslang-west,3,south-lanarkshire
+South Lanarkshire,3,Clydesdale East,S13003097,UTW:clydesdale-east,3,south-lanarkshire
+South Lanarkshire,2,Clydesdale North,S13003096,UTW:clydesdale-north,3,south-lanarkshire
+South Lanarkshire,4,Clydesdale South,S13003098,UTW:clydesdale-south,3,south-lanarkshire
+South Lanarkshire,1,Clydesdale West,S13003095,UTW:clydesdale-west,4,south-lanarkshire
+South Lanarkshire,8,East Kilbride Central North,S13003102,UTW:east-kilbride-central-north,3,south-lanarkshire
+South Lanarkshire,7,East Kilbride Central South,S13003101,UTW:east-kilbride-central-south,3,south-lanarkshire
+South Lanarkshire,10,East Kilbride East,S13003104,UTW:east-kilbride-east,3,south-lanarkshire
+South Lanarkshire,6,East Kilbride South,S13003100,UTW:east-kilbride-south,3,south-lanarkshire
+South Lanarkshire,9,East Kilbride West,S13003103,UTW:east-kilbride-west,3,south-lanarkshire
+South Lanarkshire,17,Hamilton North and East,S13003111,UTW:hamilton-north-and-east,3,south-lanarkshire
+South Lanarkshire,19,Hamilton South,S13003113,UTW:hamilton-south,4,south-lanarkshire
+South Lanarkshire,18,Hamilton West and Earnock,S13003112,UTW:hamilton-west-and-earnock,4,south-lanarkshire
+South Lanarkshire,20,Larkhall,S13003114,UTW:larkhall,4,south-lanarkshire
+South Lanarkshire,12,Rutherglen Central and North,S13003106,UTW:rutherglen-central-and-north,3,south-lanarkshire
+South Lanarkshire,11,Rutherglen South,S13003105,UTW:rutherglen-south,3,south-lanarkshire
+Stirling,7,Bannockburn,S13003121,UTW:bannockburn,3,stirling
+Stirling,3,Dunblane and Bridge of Allan,S13003117,UTW:dunblane-and-bridge-of-allan,4,stirling
+Stirling,2,Forth and Endrick,S13003116,UTW:forth-and-endrick,3,stirling
+Stirling,6,Stirling East,S13003120,UTW:stirling-east,3,stirling
+Stirling,4,Stirling North,S13003118,UTW:stirling-north,4,stirling
+Stirling,5,Stirling West,S13003119,UTW:stirling-west,3,stirling
+Stirling,1,Trossachs and Teith,S13003115,UTW:trossachs-and-teith,3,stirling
+The Scottish Borders,7,East Berwickshire Ward,S13002767,UTW:S13002767,3,the-scottish-borders
+The Scottish Borders,3,Galashiels and District Ward,S13002763,UTW:S13002763,4,the-scottish-borders
+The Scottish Borders,10,Hawick and Denholm Ward,S13002770,UTW:S13002770,3,the-scottish-borders
+The Scottish Borders,11,Hawick and Hermitage Ward,S13002771,UTW:S13002771,3,the-scottish-borders
+The Scottish Borders,9,Jedburgh and District Ward,S13002769,UTW:S13002769,3,the-scottish-borders
+The Scottish Borders,8,Kelso and District Ward,S13002768,UTW:S13002768,3,the-scottish-borders
+The Scottish Borders,5,Leaderdale and Melrose Ward,S13002765,UTW:S13002765,3,the-scottish-borders
+The Scottish Borders,6,Mid Berwickshire Ward,S13002766,UTW:S13002766,3,the-scottish-borders
+The Scottish Borders,4,Selkirkshire Ward,S13002764,UTW:S13002764,3,the-scottish-borders
+The Scottish Borders,2,Tweeddale East Ward,S13002762,UTW:S13002762,3,the-scottish-borders
+The Scottish Borders,1,Tweeddale West Ward,S13002761,UTW:S13002761,3,the-scottish-borders
+West Dunbartonshire,5,Clydebank Central,S13003126,UTW:clydebank-central,4,west-dunbartonshire
+West Dunbartonshire,6,Clydebank Waterfront,S13003127,UTW:clydebank-waterfront,4,west-dunbartonshire
+West Dunbartonshire,3,Dumbarton,S13003124,UTW:dumbarton,4,west-dunbartonshire
+West Dunbartonshire,4,Kilpatrick,S13003125,UTW:kilpatrick,3,west-dunbartonshire
+West Dunbartonshire,2,Leven,S13003123,UTW:leven,4,west-dunbartonshire
+West Dunbartonshire,1,Lomond,S13003122,UTW:lomond,3,west-dunbartonshire
+West Lothian,9,Armadale and Blackridge Ward,S13002828,UTW:S13002828,3,west-lothian
+West Lothian,8,Bathgate Ward,S13002827,UTW:S13002827,4,west-lothian
+West Lothian,2,"Broxburn, Uphall and Winchburgh Ward",S13002821,UTW:S13002821,4,west-lothian
+West Lothian,5,East Livingston and East Calder Ward,S13002824,UTW:S13002824,4,west-lothian
+West Lothian,6,Fauldhouse and the Breich Valley Ward,S13002825,UTW:S13002825,3,west-lothian
+West Lothian,1,Linlithgow Ward,S13002820,UTW:S13002820,3,west-lothian
+West Lothian,3,Livingston North Ward,S13002822,UTW:S13002822,4,west-lothian
+West Lothian,4,Livingston South Ward,S13002823,UTW:S13002823,4,west-lothian
+West Lothian,7,Whitburn and Blackburn Ward,S13002826,UTW:S13002826,4,west-lothian

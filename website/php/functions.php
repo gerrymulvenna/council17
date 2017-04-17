@@ -13,6 +13,9 @@ function head($title, $mapName, $mapLat, $mapLong, $mapZoom, $mapProperty, $mapU
 	<script src="http://cdn.rawgit.com/calvinmetcalf/leaflet-ajax/gh-pages/dist/leaflet.ajax.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/lodash/4.11.1/lodash.min.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
+  <script src="/website/js/jstree/jstree.min.js"></script>
+  <script src="/website/js/jstree/jstree.types.js"></script>
+  <script src="/website/js/jstree/jstree.search.js"></script>
 <script type="text/javascript">
 // global vars for maps.js
 ';
@@ -33,6 +36,7 @@ function head($title, $mapName, $mapLat, $mapLong, $mapZoom, $mapProperty, $mapU
 	<link rel="stylesheet" type="text/css" href="/website/css/parties.css" media="screen, handheld" />
 	<link rel="stylesheet" type="text/css" href="/website/css/enhanced.css" media="screen  and (min-width: 50.5em)" />
     <link rel="stylesheet" href="/website/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/website/js/jstree/themes/default/style.min.css" />
 	<link rel="icon" type="image/png" href="/website/image/c17-icon-150x150.png" sizes="150x150" />
 	<link rel="icon" type="image/png" href="/website/image/favicon-32x32.png" sizes="32x32" />
 	<link rel="icon" type="image/png" href="/website/image/favicon-16x16.png" sizes="16x16" />
@@ -93,7 +97,7 @@ echo '			<div id="wardinfo"><h5>Choose a ward in this council from the map</h5><
 ';
 }
 
-function foot($infopage = False, $param2 = NULL, $param3 = NULL, $param4 = NULL)
+function foot($infopage = False, $treeview = False, $param3 = NULL, $param4 = NULL)
 {
 echo '
 	</div>';
@@ -104,6 +108,13 @@ if (!$infopage)
         <script src="/website/js/map.js"></script>
     ';
 }
+if ($treeview)
+{
+    echo '
+        <script src="/website/js/treeview.js"></script>
+    ';
+}
+// Google analytics
 echo"<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
