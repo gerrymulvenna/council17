@@ -13,13 +13,29 @@
 </head>
 <body>
 	<h1>AJAX demo</h1>
+	<input type="text" id="tree-search" value="" class="input" style="margin:0em auto 1em auto; display:block; padding:4px; border-radius:4px; border:1px solid silver;" />
 	<div id="ajax" class="demo"></div>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script src="./../../jstree.min.js"></script>
 	<script src="./../../jstree.types.js"></script>
+	<script src="./../../jstree.search.js"></script>
 	
 	<script>
+// search the tree
+$(function () {
+  $("#ajax").jstree({
+    "plugins" : [ "search" ]
+  });
+  var to = false;
+  $('#tree-search').keyup(function () {
+    if(to) { clearTimeout(to); }
+    to = setTimeout(function () {
+      var v = $('#tree-search').val();
+      $('#ajax').jstree(true).search(v);
+    }, 250);
+  });
+});
 	// ajax demo
 	$('#ajax').jstree({
 		'core' : {
@@ -51,7 +67,7 @@
       "valid_children" : []
     }
   },
-  "plugins" : ["types", "theme"]
+  "plugins" : ["types", "theme", "search"]
 });
 
 	// interaction and events
