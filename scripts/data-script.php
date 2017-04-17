@@ -109,9 +109,22 @@ function buildTrees($elections, $dataDir)
             $node->no_seats += $ward->seats + 0;
         }
     }
+    extendNames($root);
     writeJSON($root, $dataDir . "council-tree.json");
 }
 
+// quick fix to show seats and candidates for parent nodes (recursive)
+function extendNames($node)
+{
+    if (count($node->children))
+    {
+        $node->text .= " (" . $node->no_seats . " seats, " . $node->no_candidates . " candidates)";
+        foreach ($node->children as $child)
+        {
+            extendNames($child);
+        }
+    }
+}
 
 // convert an array of candidates to an array of jstree nodes
 function convertCandidates($candidates, $last_id)
