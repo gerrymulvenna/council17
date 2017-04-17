@@ -12,8 +12,36 @@
 	<link rel="stylesheet" href="./../../themes/default/style.min.css" />
 </head>
 <body>
+	<h1>HTML demo</h1>
+	<div id="html" class="demo">
+		<ul>
+			<li data-jstree='{ "opened" : true }'>Root node
+				<ul>
+					<li data-jstree='{ "selected" : true }'>Child node 1</li>
+					<li>Child node 2</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+	<h1>Inline data demo</h1>
+	<div id="data" class="demo"></div>
+
+	<h1>Data format demo</h1>
+	<div id="frmt" class="demo"></div>
+
 	<h1>AJAX demo</h1>
 	<div id="ajax" class="demo"></div>
+
+	<h1>Lazy loading demo</h1>
+	<div id="lazy" class="demo"></div>
+
+	<h1>Callback function data demo</h1>
+	<div id="clbk" class="demo"></div>
+
+	<h1>Interaction and events demo</h1>
+	<button id="evts_button">select node with id 1</button> <em>either click the button or a node in the tree</em>
+	<div id="evts" class="demo"></div>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script src="./../../jstree.min.js"></script>
