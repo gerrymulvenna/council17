@@ -39,42 +39,49 @@ $elections = array(
 $dataRoot = "https://candidates.democracyclub.org.uk/media/candidates-";
 $outDir = "../2017/SCO/";
 
+buildTrees($outDir);
 
-buildData($elections, $dataRoot, $outDir);
+//buildData($elections, $dataRoot, $outDir);
 //boundaryWards($elections, $outDir, "boundary-wardinfo.csv");
 
-// once-off routine to get ward codes from boundary data files
-function boundaryWards($elections, $dir, $my_file)
+//build JSON data for the jstree library using wardinfo and the candidate JSON for each council
+function buildTrees($dataDir)
 {
-    $wardinfo = array();
-    foreach ($elections as $election)
+    $councils = array();
+    $wards = array();
+
+    $id = 0;
+    $root = new jstree_node(++$id,"Scottish Councils");
+    $wardinfo = readJSON($dataDir . "wardinfo.json");
+    foreach ($wardinfo->Wards as $ward)
     {
-        if (preg_match('/^local\.(.+)\.2017-05-04$/', $election, $matches))
-  	    {
-            echo "$election<br>";
-            $b_file = $dir . 'boundaries/'. $matches[1] . ".geojson";
-            $json = file_get_contents($b_file);
-            $data = json_decode($json);
-            foreach($data->features as $feature)
+        if (!empty($ward->council))
+        {
+            echo $ward->council . "<br>\n";
+            // create or update the council node
+            if (array_key_exists($ward->council, $councils))
             {
-                $prop = $feature->properties;
-                // this is the newer boundary data
-                if (isset($prop->Ward_Code))
-                {
-                    $wardinfo[] = array('council' => $prop->Council, 'ward_no' => $prop->Ward_No, 'post_label' => $prop->Ward_Name, 'post_id' => $prop->Ward_Code);
-                }
-                // this is the older type
-                elseif (isset($prop->CODE))
-                {
-                    $wardinfo[] = array('council' => $prop->FILE_NAME, 'ward_no' => $prop->Ward_no, 'post_label' => $prop->NAME, 'post_id' => $prop->CODE);
-                }
+                $root->no_seats += $ward->seats;
             }
+            else
+            {
+                $node = new jstree_node(++$id,$ward->council);
+                $node->no_seats = $ward->seats + 0;
+
+                $councils[$ward->council] = $node;
+                $root->children[] = $node;
+            }
+            // add the ward node
+            $ward_node = new jstree_node(++$id, $ward->ward_name);
+            $ward_node->no_seats = $ward->seats;
+            $ward_node->properties["map_ward_code"] = $ward->map_ward_code;
+            $ward_node->properties["cand_ward_code"] = $ward->cand_ward_code;
+            $ward_node->properties["ward_no"] = $ward->ward_no;
+            $node->children[] = $ward_node;
         }
     }
-    saveCSV($wardinfo, $my_file);
+    writeJSON($root, $dataDir . "council-tree.json");
 }
-            
-
 
 
 // wards -> candidates 
@@ -101,6 +108,7 @@ function buildData($elections, $dataRoot, $dir)
             $header = array_shift($arrCand);
             array_walk($arrCand, '_combine_array', $header);
   
+            $node = new jstree_node(++$id, $matches[1]);
             foreach ($arrCand as $candidate)
             {
                 // fudge to get surname using part after last space
@@ -136,6 +144,38 @@ function buildData($elections, $dataRoot, $dir)
     }
     saveCSV($wardinfo, "candidate-wardinfo.csv");
 }
+
+// once-off routine to get ward codes from boundary data files
+function boundaryWards($elections, $dir, $my_file)
+{
+    $wardinfo = array();
+    foreach ($elections as $election)
+    {
+        if (preg_match('/^local\.(.+)\.2017-05-04$/', $election, $matches))
+  	    {
+            echo "$election<br>";
+            $b_file = $dir . 'boundaries/'. $matches[1] . ".geojson";
+            $json = file_get_contents($b_file);
+            $data = json_decode($json);
+            foreach($data->features as $feature)
+            {
+                $prop = $feature->properties;
+                // this is the newer boundary data
+                if (isset($prop->Ward_Code))
+                {
+                    $wardinfo[] = array('council' => $prop->Council, 'ward_no' => $prop->Ward_No, 'post_label' => $prop->Ward_Name, 'post_id' => $prop->Ward_Code);
+                }
+                // this is the older type
+                elseif (isset($prop->CODE))
+                {
+                    $wardinfo[] = array('council' => $prop->FILE_NAME, 'ward_no' => $prop->Ward_no, 'post_label' => $prop->NAME, 'post_id' => $prop->CODE);
+                }
+            }
+        }
+    }
+    saveCSV($wardinfo, $my_file);
+}
+            
 
 function splitName($name)
 {
@@ -203,6 +243,26 @@ class DemoClub_Wards
  } 
 }
 
+class jstree_node
+{
+    public $id;
+    public $text;
+    public $no_seats;
+    public $no_candidates;
+    public $properties;
+    public $children;
+
+    function __construct($id, $text, $properties = array())
+    {
+        $this->id = $id;
+        $this->text = $text;
+        $this->no_seats = 0;
+        $this->no_candidates = 0;
+        $this->properties = $properties;
+        $this->children = array();
+    }
+}
+
 
 // fgetcsv() is more resilient than str_getcsv when fields contain EOL characters
 function getCSV($my_file)
@@ -239,6 +299,14 @@ function writeJSON($data, $my_file)
   fclose($handle);
 }
 
-
+// input data from a JSON file
+function readJSON($my_file)
+{
+    $handle = fopen($my_file, 'r') or die('Cannot open file:  '.$my_file);
+    $json = fread($handle, filesize($my_file));
+    fclose($handle);
+    $data = json_decode($json);
+    return ($data);
+}
 
 ?>
