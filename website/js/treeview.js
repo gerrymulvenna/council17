@@ -58,25 +58,8 @@ $(function () {
 });
 
 // interaction and events
-$('#evts_button').on("click", function () {
-	var instance = $('#evts').jstree(true);
-	instance.deselect_all();
-	instance.select_node('1');
+$('#council-tree').on("changed.jstree", function (e, data) {
+  console.log(data.node.original.no_seats);
+  console.log(data.node.original.no_candidates);
 });
-$('#evts')
-	.on("changed.jstree", function (e, data) {
-		if(data.selected.length) {
-			alert('The selected node is: ' + data.instance.get_node(data.selected[0]).text);
-		}
-	})
-	.jstree({
-		'core' : {
-			'multiple' : false,
-			'data' : [
-				{ "text" : "Root node", "children" : [
-						{ "text" : "Child node 1", "id" : 1 },
-						{ "text" : "Child node 2" }
-				]}
-			]
-		}
-	});
+

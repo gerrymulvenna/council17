@@ -68,7 +68,7 @@ function buildTrees($elections, $dataDir)
                     $node->no_candidates = count($ward->candidates);
                     $node->children = convertCandidates ($ward->candidates, $id);
                     $id += count($node->children);
-                    $ctotal = count($node->children);    // keep track of the total candidates
+                    $ctotal += count($node->children);    // keep track of the total candidates
                     $cwards[$ward->post_id] = $node;
                 }
             }
@@ -81,20 +81,19 @@ function buildTrees($elections, $dataDir)
     $wardinfo = readJSON($dataDir . "wardinfo.json");
     foreach ($wardinfo->Wards as $ward)
     {
-        if (!empty($ward->council))
+        if (!empty($ward->election))
         {
-            echo "Ward data " . $ward->council . " " . $ward->ward_name . "<br>\n";
+            echo "Ward data " . $ward->election . " " . $ward->ward_name . "<br>\n";
             // create or update the council node
-            if (array_key_exists($ward->council, $councils))
+            if (array_key_exists($ward->election, $councils))
             {
-                $root->no_seats += $ward->seats;
+                $root->no_seats += $ward->seats + 0;
             }
             else
             {
+                $root->no_seats += $ward->seats + 0;
                 $node = new jstree_node(++$id,"council",$ward->council);
-                $node->no_seats = $ward->seats + 0;
-
-                $councils[$ward->council] = $node;
+                $councils[$ward->election] = $node;
                 $root->children[] = $node;
             }
             // add the ward node
@@ -107,6 +106,7 @@ function buildTrees($elections, $dataDir)
             $ward_node->no_candidates = $cwards[$ward->cand_ward_code]->no_candidates;
             $node->children[] = $ward_node;
             $node->no_candidates += $ward_node->no_candidates;
+            $node->no_seats += $ward->seats + 0;
         }
     }
     writeJSON($root, $dataDir . "council-tree.json");

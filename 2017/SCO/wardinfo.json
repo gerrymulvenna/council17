@@ -1,2838 +1,3188 @@
-{"Wards": [
+{"Wards":[
 	{
-		"council": "aberdeen-city",
+		"council": "Aberdeen City",
 		"ward_no": "11",
 		"ward_name": "Airyhall/Broomhill/Garthdee",
 		"map_ward_code": "S13002845",
 		"cand_ward_code": "UTW:airyhallbroomhillgarthdee",
-		"seats": "3"
+		"seats": "3",
+		"election": "aberdeen-city"
 	},
 	{
-		"council": "aberdeen-city",
+		"council": "Aberdeen City",
 		"ward_no": "2",
 		"ward_name": "Bridge of Don",
 		"map_ward_code": "S13002836",
 		"cand_ward_code": "UTW:bridge-of-don",
-		"seats": "4"
+		"seats": "4",
+		"election": "aberdeen-city"
 	},
 	{
-		"council": "aberdeen-city",
+		"council": "Aberdeen City",
 		"ward_no": "1",
 		"ward_name": "Dyce/Bucksburn/Danestone",
 		"map_ward_code": "S13002835",
 		"cand_ward_code": "UTW:dycebucksburndanestone",
-		"seats": "4"
+		"seats": "4",
+		"election": "aberdeen-city"
 	},
 	{
-		"council": "aberdeen-city",
+		"council": "Aberdeen City",
 		"ward_no": "8",
 		"ward_name": "George St/Harbour",
 		"map_ward_code": "S13002842",
 		"cand_ward_code": "UTW:george-stharbour",
-		"seats": "4"
+		"seats": "4",
+		"election": "aberdeen-city"
 	},
 	{
-		"council": "aberdeen-city",
+		"council": "Aberdeen City",
 		"ward_no": "10",
 		"ward_name": "Hazlehead/Queens Cross/Countesswells",
 		"map_ward_code": "S13002844",
 		"cand_ward_code": "UTW:hazleheadqueens-crosscountesswells",
-		"seats": "4"
+		"seats": "4",
+		"election": "aberdeen-city"
 	},
 	{
-		"council": "aberdeen-city",
+		"council": "Aberdeen City",
 		"ward_no": "5",
 		"ward_name": "Hilton/Woodside/Stockethill",
 		"map_ward_code": "S13002839",
 		"cand_ward_code": "UTW:hiltonwoodsidestockethill",
-		"seats": "3"
+		"seats": "3",
+		"election": "aberdeen-city"
 	},
 	{
-		"council": "aberdeen-city",
+		"council": "Aberdeen City",
 		"ward_no": "13",
 		"ward_name": "Kincorth/Nigg/Cove",
 		"map_ward_code": "S13002847",
 		"cand_ward_code": "UTW:kincorthniggcove",
-		"seats": "4"
+		"seats": "4",
+		"election": "aberdeen-city"
 	},
 	{
-		"council": "aberdeen-city",
+		"council": "Aberdeen City",
 		"ward_no": "3",
 		"ward_name": "Kingswells/Sheddocksley/Summerhill",
 		"map_ward_code": "S13002837",
 		"cand_ward_code": "UTW:kingswellssheddocksleysummerhill",
-		"seats": "3"
+		"seats": "3",
+		"election": "aberdeen-city"
 	},
 	{
-		"council": "aberdeen-city",
+		"council": "Aberdeen City",
 		"ward_no": "9",
 		"ward_name": "Lower Deeside",
 		"map_ward_code": "S13002843",
 		"cand_ward_code": "UTW:lower-deeside",
-		"seats": "3"
+		"seats": "3",
+		"election": "aberdeen-city"
 	},
 	{
-		"council": "aberdeen-city",
+		"council": "Aberdeen City",
 		"ward_no": "7",
 		"ward_name": "Midstocket/Rosemount",
 		"map_ward_code": "S13002841",
 		"cand_ward_code": "UTW:midstocketrosemount",
-		"seats": "3"
+		"seats": "3",
+		"election": "aberdeen-city"
 	},
 	{
-		"council": "aberdeen-city",
+		"council": "Aberdeen City",
 		"ward_no": "4",
 		"ward_name": "Northfield/Mastrick North",
 		"map_ward_code": "S13002838",
 		"cand_ward_code": "UTW:northfieldmastrick-north",
-		"seats": "3"
+		"seats": "3",
+		"election": "aberdeen-city"
 	},
 	{
-		"council": "aberdeen-city",
+		"council": "Aberdeen City",
 		"ward_no": "6",
 		"ward_name": "Tillydrone/Seaton/Old Aberdeen",
 		"map_ward_code": "S13002840",
 		"cand_ward_code": "UTW:tillydroneseatonold-aberdeen",
-		"seats": "3"
+		"seats": "3",
+		"election": "aberdeen-city"
 	},
 	{
-		"council": "aberdeen-city",
+		"council": "Aberdeen City",
 		"ward_no": "12",
 		"ward_name": "Torry/Ferryhill",
 		"map_ward_code": "S13002846",
 		"cand_ward_code": "UTW:torryferryhill",
-		"seats": "4"
+		"seats": "4",
+		"election": "aberdeen-city"
 	},
 	{
-		"council": "aberdeenshire",
+		"council": "Aberdeenshire",
 		"ward_no": "15",
 		"ward_name": "Aboyne, Upper Deeside and Donside",
 		"map_ward_code": "S13002862",
 		"cand_ward_code": "UTW:aboyne-upper-deeside-and-donside",
-		"seats": "3"
+		"seats": "3",
+		"election": "aberdeenshire"
 	},
 	{
-		"council": "aberdeenshire",
+		"council": "Aberdeenshire",
 		"ward_no": "16",
 		"ward_name": "Banchory and Mid Deeside",
 		"map_ward_code": "S13002863",
 		"cand_ward_code": "UTW:banchory-and-mid-deeside",
-		"seats": "3"
+		"seats": "3",
+		"election": "aberdeenshire"
 	},
 	{
-		"council": "aberdeenshire",
+		"council": "Aberdeenshire",
 		"ward_no": "1",
 		"ward_name": "Banff and District",
 		"map_ward_code": "S13002848",
 		"cand_ward_code": "UTW:banff-and-district",
-		"seats": "3"
+		"seats": "3",
+		"election": "aberdeenshire"
 	},
 	{
-		"council": "aberdeenshire",
+		"council": "Aberdeenshire",
 		"ward_no": "4",
 		"ward_name": "Central Buchan",
 		"map_ward_code": "S13002851",
 		"cand_ward_code": "UTW:central-buchan",
-		"seats": "4"
+		"seats": "4",
+		"election": "aberdeenshire"
 	},
 	{
-		"council": "aberdeenshire",
+		"council": "Aberdeenshire",
 		"ward_no": "12",
 		"ward_name": "East Garioch",
 		"map_ward_code": "S13002859",
 		"cand_ward_code": "UTW:east-garioch",
-		"seats": "4"
+		"seats": "4",
+		"election": "aberdeenshire"
 	},
 	{
-		"council": "aberdeenshire",
+		"council": "Aberdeenshire",
 		"ward_no": "9",
 		"ward_name": "Ellon and District",
 		"map_ward_code": "S13002856",
 		"cand_ward_code": "UTW:ellon-and-district",
-		"seats": "4"
+		"seats": "4",
+		"election": "aberdeenshire"
 	},
 	{
-		"council": "aberdeenshire",
+		"council": "Aberdeenshire",
 		"ward_no": "3",
 		"ward_name": "Fraserburgh and District",
 		"map_ward_code": "S13002850",
 		"cand_ward_code": "UTW:fraserburgh-and-district",
-		"seats": "4"
+		"seats": "4",
+		"election": "aberdeenshire"
 	},
 	{
-		"council": "aberdeenshire",
+		"council": "Aberdeenshire",
 		"ward_no": "14",
 		"ward_name": "Huntly, Strathbogie and Howe of Alford",
 		"map_ward_code": "S13002861",
 		"cand_ward_code": "UTW:huntly-strathbogie-and-howe-of-alford",
-		"seats": "4"
+		"seats": "4",
+		"election": "aberdeenshire"
 	},
 	{
-		"council": "aberdeenshire",
+		"council": "Aberdeenshire",
 		"ward_no": "11",
 		"ward_name": "Inverurie and District",
 		"map_ward_code": "S13002858",
 		"cand_ward_code": "UTW:inverurie-and-district",
-		"seats": "4"
+		"seats": "4",
+		"election": "aberdeenshire"
 	},
 	{
-		"council": "aberdeenshire",
+		"council": "Aberdeenshire",
 		"ward_no": "19",
 		"ward_name": "Mearns",
 		"map_ward_code": "S13002866",
 		"cand_ward_code": "UTW:mearns",
-		"seats": "4"
+		"seats": "4",
+		"election": "aberdeenshire"
 	},
 	{
-		"council": "aberdeenshire",
+		"council": "Aberdeenshire",
 		"ward_no": "8",
 		"ward_name": "Mid Formartine",
 		"map_ward_code": "S13002855",
 		"cand_ward_code": "UTW:mid-formartine",
-		"seats": "4"
+		"seats": "4",
+		"election": "aberdeenshire"
 	},
 	{
-		"council": "aberdeenshire",
+		"council": "Aberdeenshire",
 		"ward_no": "17",
 		"ward_name": "North Kincardine",
 		"map_ward_code": "S13002864",
 		"cand_ward_code": "UTW:north-kincardine",
-		"seats": "4"
+		"seats": "4",
+		"election": "aberdeenshire"
 	},
 	{
-		"council": "aberdeenshire",
+		"council": "Aberdeenshire",
 		"ward_no": "5",
 		"ward_name": "Peterhead North and Rattray",
 		"map_ward_code": "S13002852",
 		"cand_ward_code": "UTW:peterhead-north-and-rattray",
-		"seats": "4"
+		"seats": "4",
+		"election": "aberdeenshire"
 	},
 	{
-		"council": "aberdeenshire",
+		"council": "Aberdeenshire",
 		"ward_no": "6",
 		"ward_name": "Peterhead South and Cruden",
 		"map_ward_code": "S13002853",
 		"cand_ward_code": "UTW:peterhead-south-and-cruden",
-		"seats": "3"
+		"seats": "3",
+		"election": "aberdeenshire"
 	},
 	{
-		"council": "aberdeenshire",
+		"council": "Aberdeenshire",
 		"ward_no": "18",
 		"ward_name": "Stonehaven and Lower Deeside",
 		"map_ward_code": "S13002865",
 		"cand_ward_code": "UTW:stonehaven-and-lower-deeside",
-		"seats": "4"
+		"seats": "4",
+		"election": "aberdeenshire"
 	},
 	{
-		"council": "aberdeenshire",
+		"council": "Aberdeenshire",
 		"ward_no": "2",
 		"ward_name": "Troup",
 		"map_ward_code": "S13002849",
 		"cand_ward_code": "UTW:troup",
-		"seats": "3"
+		"seats": "3",
+		"election": "aberdeenshire"
 	},
 	{
-		"council": "aberdeenshire",
+		"council": "Aberdeenshire",
 		"ward_no": "7",
 		"ward_name": "Turriff and District",
 		"map_ward_code": "S13002854",
 		"cand_ward_code": "UTW:turriff-and-district",
-		"seats": "4"
+		"seats": "4",
+		"election": "aberdeenshire"
 	},
 	{
-		"council": "aberdeenshire",
+		"council": "Aberdeenshire",
 		"ward_no": "10",
 		"ward_name": "West Garioch",
 		"map_ward_code": "S13002857",
 		"cand_ward_code": "UTW:west-garioch",
-		"seats": "3"
+		"seats": "3",
+		"election": "aberdeenshire"
 	},
 	{
-		"council": "aberdeenshire",
+		"council": "Aberdeenshire",
 		"ward_no": "13",
 		"ward_name": "Westhill and District",
 		"map_ward_code": "S13002860",
 		"cand_ward_code": "UTW:westhill-and-district",
-		"seats": "4"
+		"seats": "4",
+		"election": "aberdeenshire"
 	},
 	{
-		"council": "angus",
+		"council": "Angus",
 		"ward_no": "7",
 		"ward_name": "Arbroath East and Lunan",
 		"map_ward_code": "S13002873",
 		"cand_ward_code": "UTW:arbroath-east-and-lunan",
-		"seats": "3"
+		"seats": "3",
+		"election": "angus"
 	},
 	{
-		"council": "angus",
+		"council": "Angus",
 		"ward_no": "6",
 		"ward_name": "Arbroath West, Letham and Friockheim",
 		"map_ward_code": "S13002872",
 		"cand_ward_code": "UTW:arbroath-west-letham-and-friockheim",
-		"seats": "4"
+		"seats": "4",
+		"election": "angus"
 	},
 	{
-		"council": "angus",
+		"council": "Angus",
 		"ward_no": "2",
 		"ward_name": "Brechin and Edzell",
 		"map_ward_code": "S13002868",
 		"cand_ward_code": "UTW:brechin-and-edzell",
-		"seats": "3"
+		"seats": "3",
+		"election": "angus"
 	},
 	{
-		"council": "angus",
+		"council": "Angus",
 		"ward_no": "5",
 		"ward_name": "Carnoustie and District",
 		"map_ward_code": "S13002871",
 		"cand_ward_code": "UTW:carnoustie-and-district",
-		"seats": "3"
+		"seats": "3",
+		"election": "angus"
 	},
 	{
-		"council": "angus",
+		"council": "Angus",
 		"ward_no": "3",
 		"ward_name": "Forfar and District",
 		"map_ward_code": "S13002869",
 		"cand_ward_code": "UTW:forfar-and-district",
-		"seats": "4"
+		"seats": "4",
+		"election": "angus"
 	},
 	{
-		"council": "angus",
+		"council": "Angus",
 		"ward_no": "1",
 		"ward_name": "Kirriemuir and Dean",
 		"map_ward_code": "S13002867",
 		"cand_ward_code": "UTW:kirriemuir-and-dean",
-		"seats": "3"
+		"seats": "3",
+		"election": "angus"
 	},
 	{
-		"council": "angus",
+		"council": "Angus",
 		"ward_no": "4",
 		"ward_name": "Monifieth and Sidlaw",
 		"map_ward_code": "S13002870",
 		"cand_ward_code": "UTW:monifieth-and-sidlaw",
-		"seats": "4"
+		"seats": "4",
+		"election": "angus"
 	},
 	{
-		"council": "angus",
+		"council": "Angus",
 		"ward_no": "8",
 		"ward_name": "Montrose and District",
 		"map_ward_code": "S13002874",
 		"cand_ward_code": "UTW:montrose-and-district",
-		"seats": "4"
+		"seats": "4",
+		"election": "angus"
 	},
 	{
-		"council": "argyll-and-bute",
+		"council": "Argyll and Bute",
 		"ward_no": "6",
-		"ward_name": "Cowal",
+		"ward_name": "Cowal Ward",
 		"map_ward_code": "S13002521",
 		"cand_ward_code": "UTW:S13002521",
-		"seats": "3"
+		"seats": "3",
+		"election": "argyll-and-bute"
 	},
 	{
-		"council": "argyll-and-bute",
+		"council": "Argyll and Bute",
 		"ward_no": "7",
-		"ward_name": "Dunoon",
+		"ward_name": "Dunoon Ward",
 		"map_ward_code": "S13002522",
 		"cand_ward_code": "UTW:S13002522",
-		"seats": "3"
+		"seats": "3",
+		"election": "argyll-and-bute"
 	},
 	{
-		"council": "argyll-and-bute",
+		"council": "Argyll and Bute",
 		"ward_no": "11",
-		"ward_name": "Helensburgh and Lomond South",
+		"ward_name": "Helensburgh and Lomond South Ward",
 		"map_ward_code": "S13002526",
 		"cand_ward_code": "UTW:S13002526",
-		"seats": "4"
+		"seats": "4",
+		"election": "argyll-and-bute"
 	},
 	{
-		"council": "argyll-and-bute",
+		"council": "Argyll and Bute",
 		"ward_no": "10",
-		"ward_name": "Helensburgh Central",
+		"ward_name": "Helensburgh Central Ward",
 		"map_ward_code": "S13002525",
 		"cand_ward_code": "UTW:S13002525",
-		"seats": "3"
+		"seats": "3",
+		"election": "argyll-and-bute"
 	},
 	{
-		"council": "argyll-and-bute",
+		"council": "Argyll and Bute",
 		"ward_no": "8",
-		"ward_name": "Isle of Bute",
+		"ward_name": "Isle of Bute Ward",
 		"map_ward_code": "S13002523",
 		"cand_ward_code": "UTW:S13002523",
-		"seats": "3"
+		"seats": "3",
+		"election": "argyll-and-bute"
 	},
 	{
-		"council": "argyll-and-bute",
+		"council": "Argyll and Bute",
 		"ward_no": "0",
-		"ward_name": "Kintyre and the Islands",
+		"ward_name": "Kintyre and the Islands Ward",
 		"map_ward_code": "S13002517",
 		"cand_ward_code": "UTW:S13002517",
-		"seats": "3"
+		"seats": "3",
+		"election": "argyll-and-bute"
 	},
 	{
-		"council": "argyll-and-bute",
+		"council": "Argyll and Bute",
 		"ward_no": "9",
-		"ward_name": "Lomond North",
+		"ward_name": "Lomond North Ward",
 		"map_ward_code": "S13002524",
 		"cand_ward_code": "UTW:S13002524",
-		"seats": "3"
+		"seats": "3",
+		"election": "argyll-and-bute"
 	},
 	{
-		"council": "argyll-and-bute",
+		"council": "Argyll and Bute",
 		"ward_no": "3",
-		"ward_name": "Mid Argyll",
+		"ward_name": "Mid Argyll Ward",
 		"map_ward_code": "S13002518",
 		"cand_ward_code": "UTW:S13002518",
-		"seats": "3"
+		"seats": "3",
+		"election": "argyll-and-bute"
 	},
 	{
-		"council": "argyll-and-bute",
+		"council": "Argyll and Bute",
 		"ward_no": "5",
-		"ward_name": "Oban North and Lorn",
+		"ward_name": "Oban North and Lorn Ward",
 		"map_ward_code": "S13002520",
 		"cand_ward_code": "UTW:S13002520",
-		"seats": "4"
+		"seats": "4",
+		"election": "argyll-and-bute"
 	},
 	{
-		"council": "argyll-and-bute",
+		"council": "Argyll and Bute",
 		"ward_no": "0",
-		"ward_name": "Oban South and the Isles",
+		"ward_name": "Oban South and the Isles Ward",
 		"map_ward_code": "S13002519",
 		"cand_ward_code": "UTW:S13002519",
-		"seats": "4"
+		"seats": "4",
+		"election": "argyll-and-bute"
 	},
 	{
-		"council": "argyll-and-bute",
+		"council": "Argyll and Bute",
 		"ward_no": "1",
-		"ward_name": "South Kintyre",
+		"ward_name": "South Kintyre Ward",
 		"map_ward_code": "S13002516",
 		"cand_ward_code": "UTW:S13002516",
-		"seats": "3"
+		"seats": "3",
+		"election": "argyll-and-bute"
 	},
 	{
-		"council": "city-of-edinburgh",
+		"council": "City of Edinburgh",
 		"ward_no": "1",
 		"ward_name": "Almond",
 		"map_ward_code": "S13002919",
 		"cand_ward_code": "UTW:almond",
-		"seats": "4"
+		"seats": "4",
+		"election": "city-of-edinburgh"
 	},
 	{
-		"council": "city-of-edinburgh",
+		"council": "City of Edinburgh",
 		"ward_no": "11",
 		"ward_name": "City Centre",
 		"map_ward_code": "S13002929",
 		"cand_ward_code": "UTW:city-centre",
-		"seats": "4"
+		"seats": "4",
+		"election": "city-of-edinburgh"
 	},
 	{
-		"council": "city-of-edinburgh",
+		"council": "City of Edinburgh",
 		"ward_no": "8",
 		"ward_name": "Colinton / Fairmilehead",
 		"map_ward_code": "S13002926",
 		"cand_ward_code": "UTW:colintonfairmilehead",
-		"seats": "3"
+		"seats": "3",
+		"election": "city-of-edinburgh"
 	},
 	{
-		"council": "city-of-edinburgh",
+		"council": "City of Edinburgh",
 		"ward_no": "6",
 		"ward_name": "Corstorphine / Murrayfield",
 		"map_ward_code": "S13002924",
 		"cand_ward_code": "UTW:corstorphinemurrayfield",
-		"seats": "3"
+		"seats": "3",
+		"election": "city-of-edinburgh"
 	},
 	{
-		"council": "city-of-edinburgh",
+		"council": "City of Edinburgh",
 		"ward_no": "14",
 		"ward_name": "Craigentinny / Duddingston",
 		"map_ward_code": "S13002932",
 		"cand_ward_code": "UTW:craigentinnyduddingston",
-		"seats": "4"
+		"seats": "4",
+		"election": "city-of-edinburgh"
 	},
 	{
-		"council": "city-of-edinburgh",
+		"council": "City of Edinburgh",
 		"ward_no": "3",
 		"ward_name": "Drum Brae / Gyle",
 		"map_ward_code": "S13002921",
 		"cand_ward_code": "UTW:drum-braegyle",
-		"seats": "3"
+		"seats": "3",
+		"election": "city-of-edinburgh"
 	},
 	{
-		"council": "city-of-edinburgh",
+		"council": "City of Edinburgh",
 		"ward_no": "4",
 		"ward_name": "Forth",
 		"map_ward_code": "S13002922",
 		"cand_ward_code": "UTW:forth",
-		"seats": "4"
+		"seats": "4",
+		"election": "city-of-edinburgh"
 	},
 	{
-		"council": "city-of-edinburgh",
+		"council": "City of Edinburgh",
 		"ward_no": "9",
 		"ward_name": "Fountainbridge / Craiglockhart",
 		"map_ward_code": "S13002927",
 		"cand_ward_code": "UTW:fountainbridgecraiglockhart",
-		"seats": "3"
+		"seats": "3",
+		"election": "city-of-edinburgh"
 	},
 	{
-		"council": "city-of-edinburgh",
+		"council": "City of Edinburgh",
 		"ward_no": "5",
 		"ward_name": "Inverleith",
 		"map_ward_code": "S13002923",
 		"cand_ward_code": "UTW:inverleith",
-		"seats": "4"
+		"seats": "4",
+		"election": "city-of-edinburgh"
 	},
 	{
-		"council": "city-of-edinburgh",
+		"council": "City of Edinburgh",
 		"ward_no": "13",
 		"ward_name": "Leith",
 		"map_ward_code": "S13002931",
 		"cand_ward_code": "UTW:leith",
-		"seats": "3"
+		"seats": "3",
+		"election": "city-of-edinburgh"
 	},
 	{
-		"council": "city-of-edinburgh",
+		"council": "City of Edinburgh",
 		"ward_no": "12",
 		"ward_name": "Leith Walk",
 		"map_ward_code": "S13002930",
 		"cand_ward_code": "UTW:leith-walk",
-		"seats": "4"
+		"seats": "4",
+		"election": "city-of-edinburgh"
 	},
 	{
-		"council": "city-of-edinburgh",
+		"council": "City of Edinburgh",
 		"ward_no": "16",
 		"ward_name": "Liberton / Gilmerton",
 		"map_ward_code": "S13002934",
 		"cand_ward_code": "UTW:libertongilmerton",
-		"seats": "4"
+		"seats": "4",
+		"election": "city-of-edinburgh"
 	},
 	{
-		"council": "city-of-edinburgh",
+		"council": "City of Edinburgh",
 		"ward_no": "10",
 		"ward_name": "Morningside",
 		"map_ward_code": "S13002928",
 		"cand_ward_code": "UTW:morningside",
-		"seats": "4"
+		"seats": "4",
+		"election": "city-of-edinburgh"
 	},
 	{
-		"council": "city-of-edinburgh",
+		"council": "City of Edinburgh",
 		"ward_no": "2",
 		"ward_name": "Pentland Hills",
 		"map_ward_code": "S13002920",
 		"cand_ward_code": "UTW:pentland-hills",
-		"seats": "4"
+		"seats": "4",
+		"election": "city-of-edinburgh"
 	},
 	{
-		"council": "city-of-edinburgh",
+		"council": "City of Edinburgh",
 		"ward_no": "17",
 		"ward_name": "Portobello / Craigmillar",
 		"map_ward_code": "S13002935",
 		"cand_ward_code": "UTW:portobellocraigmillar",
-		"seats": "4"
+		"seats": "4",
+		"election": "city-of-edinburgh"
 	},
 	{
-		"council": "city-of-edinburgh",
+		"council": "City of Edinburgh",
 		"ward_no": "7",
 		"ward_name": "Sighthill / Gorgie",
 		"map_ward_code": "S13002925",
 		"cand_ward_code": "UTW:sighthillgorgie",
-		"seats": "4"
+		"seats": "4",
+		"election": "city-of-edinburgh"
 	},
 	{
-		"council": "city-of-edinburgh",
+		"council": "City of Edinburgh",
 		"ward_no": "15",
 		"ward_name": "Southside / Newington",
 		"map_ward_code": "S13002933",
 		"cand_ward_code": "UTW:southsidenewington",
-		"seats": "4"
+		"seats": "4",
+		"election": "city-of-edinburgh"
 	},
 	{
-		"council": "clackmannanshire",
+		"council": "Clackmannanshire",
 		"ward_no": "3",
 		"ward_name": "Clackmannanshire Central",
 		"map_ward_code": "S13002877",
 		"cand_ward_code": "UTW:clackmannanshire-central",
-		"seats": "3"
+		"seats": "3",
+		"election": "clackmannanshire"
 	},
 	{
-		"council": "clackmannanshire",
+		"council": "Clackmannanshire",
 		"ward_no": "5",
 		"ward_name": "Clackmannanshire East",
 		"map_ward_code": "S13002879",
 		"cand_ward_code": "UTW:clackmannanshire-east",
-		"seats": "3"
+		"seats": "3",
+		"election": "clackmannanshire"
 	},
 	{
-		"council": "clackmannanshire",
+		"council": "Clackmannanshire",
 		"ward_no": "2",
 		"ward_name": "Clackmannanshire North",
 		"map_ward_code": "S13002876",
 		"cand_ward_code": "UTW:clackmannanshire-north",
-		"seats": "4"
+		"seats": "4",
+		"election": "clackmannanshire"
 	},
 	{
-		"council": "clackmannanshire",
+		"council": "Clackmannanshire",
 		"ward_no": "4",
 		"ward_name": "Clackmannanshire South",
 		"map_ward_code": "S13002878",
 		"cand_ward_code": "UTW:clackmannanshire-south",
-		"seats": "4"
+		"seats": "4",
+		"election": "clackmannanshire"
 	},
 	{
-		"council": "clackmannanshire",
+		"council": "Clackmannanshire",
 		"ward_no": "1",
 		"ward_name": "Clackmannanshire West",
 		"map_ward_code": "S13002875",
 		"cand_ward_code": "UTW:clackmannanshire-west",
-		"seats": "4"
+		"seats": "4",
+		"election": "clackmannanshire"
 	},
 	{
-		"council": "dumfries-and-galloway",
+		"council": "Dumfries and Galloway",
 		"ward_no": "5",
 		"ward_name": "Abbey",
 		"map_ward_code": "S13002884",
 		"cand_ward_code": "UTW:abbey",
-		"seats": "3"
+		"seats": "3",
+		"election": "dumfries-and-galloway"
 	},
 	{
-		"council": "dumfries-and-galloway",
+		"council": "Dumfries and Galloway",
 		"ward_no": "12",
 		"ward_name": "Annandale East and Eskdale",
 		"map_ward_code": "S13002891",
 		"cand_ward_code": "UTW:annandale-east-and-eskdale",
-		"seats": "3"
+		"seats": "3",
+		"election": "dumfries-and-galloway"
 	},
 	{
-		"council": "dumfries-and-galloway",
+		"council": "Dumfries and Galloway",
 		"ward_no": "11",
 		"ward_name": "Annandale North",
 		"map_ward_code": "S13002890",
 		"cand_ward_code": "UTW:annandale-north",
-		"seats": "4"
+		"seats": "4",
+		"election": "dumfries-and-galloway"
 	},
 	{
-		"council": "dumfries-and-galloway",
+		"council": "Dumfries and Galloway",
 		"ward_no": "10",
 		"ward_name": "Annandale South",
 		"map_ward_code": "S13002889",
 		"cand_ward_code": "UTW:annandale-south",
-		"seats": "4"
+		"seats": "4",
+		"election": "dumfries-and-galloway"
 	},
 	{
-		"council": "dumfries-and-galloway",
+		"council": "Dumfries and Galloway",
 		"ward_no": "4",
 		"ward_name": "Castle Douglas and Crocketford",
 		"map_ward_code": "S13002883",
 		"cand_ward_code": "UTW:castle-douglas-and-crocketford",
-		"seats": "3"
+		"seats": "3",
+		"election": "dumfries-and-galloway"
 	},
 	{
-		"council": "dumfries-and-galloway",
+		"council": "Dumfries and Galloway",
 		"ward_no": "3",
 		"ward_name": "Dee and Glenkens",
 		"map_ward_code": "S13002882",
 		"cand_ward_code": "UTW:dee-and-glenkens",
-		"seats": "3"
+		"seats": "3",
+		"election": "dumfries-and-galloway"
 	},
 	{
-		"council": "dumfries-and-galloway",
+		"council": "Dumfries and Galloway",
 		"ward_no": "8",
 		"ward_name": "Lochar",
 		"map_ward_code": "S13002887",
 		"cand_ward_code": "UTW:lochar",
-		"seats": "4"
+		"seats": "4",
+		"election": "dumfries-and-galloway"
 	},
 	{
-		"council": "dumfries-and-galloway",
+		"council": "Dumfries and Galloway",
 		"ward_no": "7",
 		"ward_name": "Mid and Upper Nithsdale",
 		"map_ward_code": "S13002886",
 		"cand_ward_code": "UTW:mid-and-upper-nithsdale",
-		"seats": "3"
+		"seats": "3",
+		"election": "dumfries-and-galloway"
 	},
 	{
-		"council": "dumfries-and-galloway",
+		"council": "Dumfries and Galloway",
 		"ward_no": "2",
 		"ward_name": "Mid Galloway and Wigtown West",
 		"map_ward_code": "S13002881",
 		"cand_ward_code": "UTW:mid-galloway-and-wigtown-west",
-		"seats": "4"
+		"seats": "4",
+		"election": "dumfries-and-galloway"
 	},
 	{
-		"council": "dumfries-and-galloway",
+		"council": "Dumfries and Galloway",
 		"ward_no": "9",
 		"ward_name": "Nith",
 		"map_ward_code": "S13002888",
 		"cand_ward_code": "UTW:nith",
-		"seats": "4"
+		"seats": "4",
+		"election": "dumfries-and-galloway"
 	},
 	{
-		"council": "dumfries-and-galloway",
+		"council": "Dumfries and Galloway",
 		"ward_no": "6",
 		"ward_name": "North West Dumfries",
 		"map_ward_code": "S13002885",
 		"cand_ward_code": "UTW:north-west-dumfries",
-		"seats": "4"
+		"seats": "4",
+		"election": "dumfries-and-galloway"
 	},
 	{
-		"council": "dumfries-and-galloway",
+		"council": "Dumfries and Galloway",
 		"ward_no": "1",
 		"ward_name": "Stranraer and the Rhins",
 		"map_ward_code": "S13002880",
 		"cand_ward_code": "UTW:stranraer-and-the-rhins",
-		"seats": "4"
+		"seats": "4",
+		"election": "dumfries-and-galloway"
 	},
 	{
-		"council": "dundee-city",
+		"council": "Dundee City",
 		"ward_no": "4",
-		"ward_name": "Coldside",
+		"ward_name": "Coldside Ward",
 		"map_ward_code": "S13002548",
 		"cand_ward_code": "UTW:S13002548",
-		"seats": "4"
+		"seats": "4",
+		"election": "dundee-city"
 	},
 	{
-		"council": "dundee-city",
+		"council": "Dundee City",
 		"ward_no": "7",
-		"ward_name": "East End",
+		"ward_name": "East End Ward",
 		"map_ward_code": "S13002551",
 		"cand_ward_code": "UTW:S13002551",
-		"seats": "3"
+		"seats": "3",
+		"election": "dundee-city"
 	},
 	{
-		"council": "dundee-city",
+		"council": "Dundee City",
 		"ward_no": "2",
-		"ward_name": "Lochee",
+		"ward_name": "Lochee Ward",
 		"map_ward_code": "S13002546",
 		"cand_ward_code": "UTW:S13002546",
-		"seats": "4"
+		"seats": "4",
+		"election": "dundee-city"
 	},
 	{
-		"council": "dundee-city",
+		"council": "Dundee City",
 		"ward_no": "5",
-		"ward_name": "Maryfield",
+		"ward_name": "Maryfield Ward",
 		"map_ward_code": "S13002549",
 		"cand_ward_code": "UTW:S13002549",
-		"seats": "3"
+		"seats": "3",
+		"election": "dundee-city"
 	},
 	{
-		"council": "dundee-city",
+		"council": "Dundee City",
 		"ward_no": "6",
-		"ward_name": "North East",
+		"ward_name": "North East Ward",
 		"map_ward_code": "S13002830",
 		"cand_ward_code": "UTW:S13002830",
-		"seats": "3"
+		"seats": "3",
+		"election": "dundee-city"
 	},
 	{
-		"council": "dundee-city",
+		"council": "Dundee City",
 		"ward_no": "1",
-		"ward_name": "Strathmartine",
+		"ward_name": "Strathmartine Ward",
 		"map_ward_code": "S13002545",
 		"cand_ward_code": "UTW:S13002545",
-		"seats": "4"
+		"seats": "4",
+		"election": "dundee-city"
 	},
 	{
-		"council": "dundee-city",
+		"council": "Dundee City",
 		"ward_no": "8",
-		"ward_name": "The Ferry",
+		"ward_name": "The Ferry Ward",
 		"map_ward_code": "S13002552",
 		"cand_ward_code": "UTW:S13002552",
-		"seats": "4"
+		"seats": "4",
+		"election": "dundee-city"
 	},
 	{
-		"council": "dundee-city",
+		"council": "Dundee City",
 		"ward_no": "3",
-		"ward_name": "West End",
+		"ward_name": "West End Ward",
 		"map_ward_code": "S13002547",
 		"cand_ward_code": "UTW:S13002547",
-		"seats": "4"
+		"seats": "4",
+		"election": "dundee-city"
 	},
 	{
-		"council": "east-ayrshire",
+		"council": "East Ayrshire",
 		"ward_no": "1",
 		"ward_name": "Annick",
 		"map_ward_code": "S13002892",
 		"cand_ward_code": "UTW:annick",
-		"seats": "4"
+		"seats": "4",
+		"election": "east-ayrshire"
 	},
 	{
-		"council": "east-ayrshire",
+		"council": "East Ayrshire",
 		"ward_no": "7",
 		"ward_name": "Ballochmyle",
 		"map_ward_code": "S13002898",
 		"cand_ward_code": "UTW:ballochmyle",
-		"seats": "4"
+		"seats": "4",
+		"election": "east-ayrshire"
 	},
 	{
-		"council": "east-ayrshire",
+		"council": "East Ayrshire",
 		"ward_no": "8",
 		"ward_name": "Cumnock and New Cumnock",
 		"map_ward_code": "S13002899",
 		"cand_ward_code": "UTW:cumnock-and-new-cumnock",
-		"seats": "4"
+		"seats": "4",
+		"election": "east-ayrshire"
 	},
 	{
-		"council": "east-ayrshire",
+		"council": "East Ayrshire",
 		"ward_no": "9",
 		"ward_name": "Doon Valley",
 		"map_ward_code": "S13002900",
 		"cand_ward_code": "UTW:doon-valley",
-		"seats": "3"
+		"seats": "3",
+		"election": "east-ayrshire"
 	},
 	{
-		"council": "east-ayrshire",
+		"council": "East Ayrshire",
 		"ward_no": "6",
 		"ward_name": "Irvine Valley",
 		"map_ward_code": "S13002897",
 		"cand_ward_code": "UTW:irvine-valley",
-		"seats": "3"
+		"seats": "3",
+		"election": "east-ayrshire"
 	},
 	{
-		"council": "east-ayrshire",
+		"council": "East Ayrshire",
 		"ward_no": "4",
 		"ward_name": "Kilmarnock East and Hurlford",
 		"map_ward_code": "S13002895",
 		"cand_ward_code": "UTW:kilmarnock-east-and-hurlford",
-		"seats": "4"
+		"seats": "4",
+		"election": "east-ayrshire"
 	},
 	{
-		"council": "east-ayrshire",
+		"council": "East Ayrshire",
 		"ward_no": "2",
 		"ward_name": "Kilmarnock North",
 		"map_ward_code": "S13002893",
 		"cand_ward_code": "UTW:kilmarnock-north",
-		"seats": "3"
+		"seats": "3",
+		"election": "east-ayrshire"
 	},
 	{
-		"council": "east-ayrshire",
+		"council": "East Ayrshire",
 		"ward_no": "5",
 		"ward_name": "Kilmarnock South",
 		"map_ward_code": "S13002896",
 		"cand_ward_code": "UTW:kilmarnock-south",
-		"seats": "3"
+		"seats": "3",
+		"election": "east-ayrshire"
 	},
 	{
-		"council": "east-ayrshire",
+		"council": "East Ayrshire",
 		"ward_no": "3",
 		"ward_name": "Kilmarnock West and Crosshouse",
 		"map_ward_code": "S13002894",
 		"cand_ward_code": "UTW:kilmarnock-west-and-crosshouse",
-		"seats": "4"
+		"seats": "4",
+		"election": "east-ayrshire"
 	},
 	{
-		"council": "east-dunbartonshire",
+		"council": "East Dunbartonshire",
 		"ward_no": "2",
 		"ward_name": "Bearsden North",
 		"map_ward_code": "S13002902",
 		"cand_ward_code": "UTW:bearsden-north",
-		"seats": "3"
+		"seats": "3",
+		"election": "east-dunbartonshire"
 	},
 	{
-		"council": "east-dunbartonshire",
+		"council": "East Dunbartonshire",
 		"ward_no": "3",
 		"ward_name": "Bearsden South",
 		"map_ward_code": "S13002903",
 		"cand_ward_code": "UTW:bearsden-south",
-		"seats": "3"
+		"seats": "3",
+		"election": "east-dunbartonshire"
 	},
 	{
-		"council": "east-dunbartonshire",
+		"council": "East Dunbartonshire",
 		"ward_no": "4",
 		"ward_name": "Bishopbriggs North and Campsie",
 		"map_ward_code": "S13002904",
 		"cand_ward_code": "UTW:bishopbriggs-north-and-campsie",
-		"seats": "4"
+		"seats": "4",
+		"election": "east-dunbartonshire"
 	},
 	{
-		"council": "east-dunbartonshire",
+		"council": "East Dunbartonshire",
 		"ward_no": "5",
 		"ward_name": "Bishopbriggs South",
 		"map_ward_code": "S13002905",
 		"cand_ward_code": "UTW:bishopbriggs-south",
-		"seats": "3"
+		"seats": "3",
+		"election": "east-dunbartonshire"
 	},
 	{
-		"council": "east-dunbartonshire",
+		"council": "East Dunbartonshire",
 		"ward_no": "7",
 		"ward_name": "Kirkintilloch East and North and Twechar",
 		"map_ward_code": "S13002907",
 		"cand_ward_code": "UTW:kirkintilloch-east-and-north-and-twechar",
-		"seats": "3"
+		"seats": "3",
+		"election": "east-dunbartonshire"
 	},
 	{
-		"council": "east-dunbartonshire",
+		"council": "East Dunbartonshire",
 		"ward_no": "6",
 		"ward_name": "Lenzie and Kirkintilloch South",
 		"map_ward_code": "S13002906",
 		"cand_ward_code": "UTW:lenzie-and-kirkintilloch-south",
-		"seats": "3"
+		"seats": "3",
+		"election": "east-dunbartonshire"
 	},
 	{
-		"council": "east-dunbartonshire",
+		"council": "East Dunbartonshire",
 		"ward_no": "1",
 		"ward_name": "Milngavie",
 		"map_ward_code": "S13002901",
 		"cand_ward_code": "UTW:milngavie",
-		"seats": "3"
+		"seats": "3",
+		"election": "east-dunbartonshire"
 	},
 	{
-		"council": "east-lothian",
+		"council": "East Lothian",
 		"ward_no": "6",
 		"ward_name": "Dunbar and East Linton",
 		"map_ward_code": "S13002913",
 		"cand_ward_code": "UTW:dunbar-and-east-linton",
-		"seats": "3"
+		"seats": "3",
+		"election": "east-lothian"
 	},
 	{
-		"council": "east-lothian",
+		"council": "East Lothian",
 		"ward_no": "5",
 		"ward_name": "Haddington and Lammermuir",
 		"map_ward_code": "S13002912",
 		"cand_ward_code": "UTW:haddington-and-lammermuir",
-		"seats": "4"
+		"seats": "4",
+		"election": "east-lothian"
 	},
 	{
-		"council": "east-lothian",
+		"council": "East Lothian",
 		"ward_no": "1",
 		"ward_name": "Musselburgh",
 		"map_ward_code": "S13002908",
 		"cand_ward_code": "UTW:musselburgh",
-		"seats": "4"
+		"seats": "4",
+		"election": "east-lothian"
 	},
 	{
-		"council": "east-lothian",
+		"council": "East Lothian",
 		"ward_no": "4",
 		"ward_name": "North Berwick Coastal",
 		"map_ward_code": "S13002911",
 		"cand_ward_code": "UTW:north-berwick-coastal",
-		"seats": "3"
+		"seats": "3",
+		"election": "east-lothian"
 	},
 	{
-		"council": "east-lothian",
+		"council": "East Lothian",
 		"ward_no": "2",
 		"ward_name": "Preston, Seton and Gosford",
 		"map_ward_code": "S13002909",
 		"cand_ward_code": "UTW:preston-seton-and-gosford",
-		"seats": "4"
+		"seats": "4",
+		"election": "east-lothian"
 	},
 	{
-		"council": "east-lothian",
+		"council": "East Lothian",
 		"ward_no": "3",
 		"ward_name": "Tranent, Wallyford and Macmerry",
 		"map_ward_code": "S13002910",
 		"cand_ward_code": "UTW:tranent-wallyford-and-macmerry",
-		"seats": "4"
+		"seats": "4",
+		"election": "east-lothian"
 	},
 	{
-		"council": "east-renfrewshire",
+		"council": "East Renfrewshire",
 		"ward_no": "1",
 		"ward_name": "Barrhead, Liboside and Uplawmoor",
 		"map_ward_code": "S13002914",
 		"cand_ward_code": "UTW:barrhead-liboside-and-uplawmoor",
-		"seats": "4"
+		"seats": "4",
+		"election": "east-renfrewshire"
 	},
 	{
-		"council": "east-renfrewshire",
+		"council": "East Renfrewshire",
 		"ward_no": "4",
 		"ward_name": "Clarkston, Netherlee and Williamwood",
 		"map_ward_code": "S13002917",
 		"cand_ward_code": "UTW:clarkston-netherlee-and-williamwood",
-		"seats": "4"
+		"seats": "4",
+		"election": "east-renfrewshire"
 	},
 	{
-		"council": "east-renfrewshire",
+		"council": "East Renfrewshire",
 		"ward_no": "3",
 		"ward_name": "Giffnock and Thornliebank",
 		"map_ward_code": "S13002916",
 		"cand_ward_code": "UTW:giffnock-and-thornliebank",
-		"seats": "3"
+		"seats": "3",
+		"election": "east-renfrewshire"
 	},
 	{
-		"council": "east-renfrewshire",
+		"council": "East Renfrewshire",
 		"ward_no": "2",
 		"ward_name": "Newton Mearns North and Neilston",
 		"map_ward_code": "S13002915",
 		"cand_ward_code": "UTW:newton-means-north-and-neilston",
-		"seats": "3"
+		"seats": "3",
+		"election": "east-renfrewshire"
 	},
 	{
-		"council": "east-renfrewshire",
+		"council": "East Renfrewshire",
 		"ward_no": "5",
 		"ward_name": "Newton Mearns South and Eaglesham",
 		"map_ward_code": "S13002918",
 		"cand_ward_code": "UTW:newton-mearns-south-and-eaglesham",
-		"seats": "4"
+		"seats": "4",
+		"election": "east-renfrewshire"
 	},
 	{
-		"council": "eilean-siar",
-		"ward_no": "9",
-		"ward_name": "An Taobh Siar agus Nis",
-		"map_ward_code": "S13002608",
-		"cand_ward_code": "UTW:S13002608",
-		"seats": "4"
-	},
-	{
-		"council": "eilean-siar",
-		"ward_no": "1",
-		"ward_name": "Barraigh, Bhatarsaigh, Eirisgeigh agus Uibhist a Deas",
-		"map_ward_code": "S13002600",
-		"cand_ward_code": "UTW:S13002600",
-		"seats": "4"
-	},
-	{
-		"council": "eilean-siar",
-		"ward_no": "2",
-		"ward_name": "Beinn na Foghla agus Uibhist a Tuath",
-		"map_ward_code": "S13002601",
-		"cand_ward_code": "UTW:S13002601",
-		"seats": "3"
-	},
-	{
-		"council": "eilean-siar",
-		"ward_no": "8",
-		"ward_name": "Loch a Tuath",
-		"map_ward_code": "S13002607",
-		"cand_ward_code": "UTW:S13002607",
-		"seats": "3"
-	},
-	{
-		"council": "eilean-siar",
-		"ward_no": "3",
-		"ward_name": "Na Hearadh agus Ceann a Deas nan Loch",
-		"map_ward_code": "S13002602",
-		"cand_ward_code": "UTW:S13002602",
-		"seats": "3"
-	},
-	{
-		"council": "eilean-siar",
-		"ward_no": "5",
-		"ward_name": "Sgire an Rubha",
-		"map_ward_code": "S13002604",
-		"cand_ward_code": "UTW:S13002604",
-		"seats": "3"
-	},
-	{
-		"council": "eilean-siar",
-		"ward_no": "4",
-		"ward_name": "Sgir'Uige agus Ceann a Tuath nan Loch",
-		"map_ward_code": "S13002603",
-		"cand_ward_code": "UTW:S13002603",
-		"seats": "3"
-	},
-	{
-		"council": "eilean-siar",
-		"ward_no": "6",
-		"ward_name": "Steornabhagh a Deas",
-		"map_ward_code": "S13002605",
-		"cand_ward_code": "UTW:S13002605",
-		"seats": "4"
-	},
-	{
-		"council": "eilean-siar",
-		"ward_no": "7",
-		"ward_name": "Steornabhagh a Tuath",
-		"map_ward_code": "S13002606",
-		"cand_ward_code": "UTW:S13002606",
-		"seats": "4"
-	},
-	{
-		"council": "falkirk",
+		"council": "Falkirk",
 		"ward_no": "1",
 		"ward_name": "Bo'ness and Blackness",
 		"map_ward_code": "S13002936",
 		"cand_ward_code": "UTW:boaness-and-blackness",
-		"seats": "3"
+		"seats": "3",
+		"election": "falkirk"
 	},
 	{
-		"council": "falkirk",
+		"council": "Falkirk",
 		"ward_no": "5",
 		"ward_name": "Bonnybridge and Larbert",
 		"map_ward_code": "S13002940",
 		"cand_ward_code": "UTW:bonnybridge-and-larbert",
-		"seats": "3"
+		"seats": "3",
+		"election": "falkirk"
 	},
 	{
-		"council": "falkirk",
+		"council": "Falkirk",
 		"ward_no": "4",
 		"ward_name": "Carse, Kinnaird and Tryst",
 		"map_ward_code": "S13002939",
 		"cand_ward_code": "UTW:carse-kinnaird-and-tryst",
-		"seats": "4"
+		"seats": "4",
+		"election": "falkirk"
 	},
 	{
-		"council": "falkirk",
+		"council": "Falkirk",
 		"ward_no": "3",
 		"ward_name": "Denny and Banknock",
 		"map_ward_code": "S13002938",
 		"cand_ward_code": "UTW:denny-and-banknock",
-		"seats": "4"
+		"seats": "4",
+		"election": "falkirk"
 	},
 	{
-		"council": "falkirk",
+		"council": "Falkirk",
 		"ward_no": "6",
 		"ward_name": "Falkirk North",
 		"map_ward_code": "S13002941",
 		"cand_ward_code": "UTW:falkirk-north",
-		"seats": "4"
+		"seats": "4",
+		"election": "falkirk"
 	},
 	{
-		"council": "falkirk",
+		"council": "Falkirk",
 		"ward_no": "7",
 		"ward_name": "Falkirk South",
 		"map_ward_code": "S13002942",
 		"cand_ward_code": "UTW:falkirk-south",
-		"seats": "3"
+		"seats": "3",
+		"election": "falkirk"
 	},
 	{
-		"council": "falkirk",
+		"council": "Falkirk",
 		"ward_no": "2",
 		"ward_name": "Grangemouth",
 		"map_ward_code": "S13002937",
 		"cand_ward_code": "UTW:grangemouth",
-		"seats": "3"
+		"seats": "3",
+		"election": "falkirk"
 	},
 	{
-		"council": "falkirk",
+		"council": "Falkirk",
 		"ward_no": "8",
 		"ward_name": "Lower Braes",
 		"map_ward_code": "S13002943",
 		"cand_ward_code": "UTW:lower-braes",
-		"seats": "3"
+		"seats": "3",
+		"election": "falkirk"
 	},
 	{
-		"council": "falkirk",
+		"council": "Falkirk",
 		"ward_no": "9",
 		"ward_name": "Upper Braes",
 		"map_ward_code": "S13002944",
 		"cand_ward_code": "UTW:upper-braes",
-		"seats": "3"
+		"seats": "3",
+		"election": "falkirk"
 	},
 	{
-		"council": "fife",
+		"council": "Fife",
 		"ward_no": "22",
 		"ward_name": "Buckhaven, Methil and Wemyss Villages",
 		"map_ward_code": "S13002966",
 		"cand_ward_code": "UTW:buckhaven-methil-and-wemyss-villages",
-		"seats": "4"
+		"seats": "4",
+		"election": "fife"
 	},
 	{
-		"council": "fife",
+		"council": "Fife",
 		"ward_no": "9",
 		"ward_name": "Burntisland, Kinghorn and Western Kirkcaldy",
 		"map_ward_code": "S13002953",
 		"cand_ward_code": "UTW:burntisland-kinghorn-and-western-kirkcaldy",
-		"seats": "3"
+		"seats": "3",
+		"election": "fife"
 	},
 	{
-		"council": "fife",
+		"council": "Fife",
 		"ward_no": "7",
 		"ward_name": "Cowdenbeath",
 		"map_ward_code": "S13002951",
 		"cand_ward_code": "UTW:cowdenbeath",
-		"seats": "4"
+		"seats": "4",
+		"election": "fife"
 	},
 	{
-		"council": "fife",
+		"council": "Fife",
 		"ward_no": "20",
 		"ward_name": "Cupar",
 		"map_ward_code": "S13002964",
 		"cand_ward_code": "UTW:cupar",
-		"seats": "3"
+		"seats": "3",
+		"election": "fife"
 	},
 	{
-		"council": "fife",
+		"council": "Fife",
 		"ward_no": "3",
 		"ward_name": "Dunfermline Central",
 		"map_ward_code": "S13002947",
 		"cand_ward_code": "UTW:dunfermline-central",
-		"seats": "4"
+		"seats": "4",
+		"election": "fife"
 	},
 	{
-		"council": "fife",
+		"council": "Fife",
 		"ward_no": "2",
 		"ward_name": "Dunfermline North",
 		"map_ward_code": "S13002946",
 		"cand_ward_code": "UTW:dunfermline-north",
-		"seats": "3"
+		"seats": "3",
+		"election": "fife"
 	},
 	{
-		"council": "fife",
+		"council": "Fife",
 		"ward_no": "4",
 		"ward_name": "Dunfermline South",
 		"map_ward_code": "S13002948",
 		"cand_ward_code": "UTW:dunfermline-south",
-		"seats": "4"
+		"seats": "4",
+		"election": "fife"
 	},
 	{
-		"council": "fife",
+		"council": "Fife",
 		"ward_no": "19",
 		"ward_name": "East Neuk and Landward",
 		"map_ward_code": "S13002963",
 		"cand_ward_code": "UTW:east-neuk-and-landward",
-		"seats": "3"
+		"seats": "3",
+		"election": "fife"
 	},
 	{
-		"council": "fife",
+		"council": "Fife",
 		"ward_no": "15",
 		"ward_name": "Glenrothes Central and Thornton",
 		"map_ward_code": "S13002959",
 		"cand_ward_code": "UTW:glenrothes-central-and-thornton",
-		"seats": "3"
+		"seats": "3",
+		"election": "fife"
 	},
 	{
-		"council": "fife",
+		"council": "Fife",
 		"ward_no": "14",
 		"ward_name": "Glenrothes North, Leslie and Markinch",
 		"map_ward_code": "S13002958",
 		"cand_ward_code": "UTW:glenrothes-north-leslie-and-markinch",
-		"seats": "4"
+		"seats": "4",
+		"election": "fife"
 	},
 	{
-		"council": "fife",
+		"council": "Fife",
 		"ward_no": "13",
 		"ward_name": "Glenrothes West and Kinglassie",
 		"map_ward_code": "S13002957",
 		"cand_ward_code": "UTW:glenrothes-west-and-kinglassie",
-		"seats": "3"
+		"seats": "3",
+		"election": "fife"
 	},
 	{
-		"council": "fife",
+		"council": "Fife",
 		"ward_no": "16",
 		"ward_name": "Howe of Fife and Tay Coast",
 		"map_ward_code": "S13002960",
 		"cand_ward_code": "UTW:howe-of-fife-and-tay-coast",
-		"seats": "3"
+		"seats": "3",
+		"election": "fife"
 	},
 	{
-		"council": "fife",
+		"council": "Fife",
 		"ward_no": "6",
 		"ward_name": "Inverkeithing and Dalgety Bay",
 		"map_ward_code": "S13002950",
 		"cand_ward_code": "UTW:inverkeithing-and-dalgety-bay",
-		"seats": "4"
+		"seats": "4",
+		"election": "fife"
 	},
 	{
-		"council": "fife",
+		"council": "Fife",
 		"ward_no": "11",
 		"ward_name": "Kirkcaldy Central",
 		"map_ward_code": "S13002955",
 		"cand_ward_code": "UTW:kirkcaldy-central",
-		"seats": "3"
+		"seats": "3",
+		"election": "fife"
 	},
 	{
-		"council": "fife",
+		"council": "Fife",
 		"ward_no": "12",
 		"ward_name": "Kirkcaldy East",
 		"map_ward_code": "S13002956",
 		"cand_ward_code": "UTW:kirkcaldy-east",
-		"seats": "3"
+		"seats": "3",
+		"election": "fife"
 	},
 	{
-		"council": "fife",
+		"council": "Fife",
 		"ward_no": "10",
 		"ward_name": "Kirkcaldy North",
 		"map_ward_code": "S13002954",
 		"cand_ward_code": "UTW:kirkcaldy-north",
-		"seats": "3"
+		"seats": "3",
+		"election": "fife"
 	},
 	{
-		"council": "fife",
+		"council": "Fife",
 		"ward_no": "21",
 		"ward_name": "Leven, Kennoway and Largo",
 		"map_ward_code": "S13002965",
 		"cand_ward_code": "UTW:leven-kennoway-and-largo",
-		"seats": "4"
+		"seats": "4",
+		"election": "fife"
 	},
 	{
-		"council": "fife",
+		"council": "Fife",
 		"ward_no": "8",
 		"ward_name": "Lochgelly, Cardenden and Benarty",
 		"map_ward_code": "S13002952",
 		"cand_ward_code": "UTW:lochgelly-cardenden-and-benarty",
-		"seats": "4"
+		"seats": "4",
+		"election": "fife"
 	},
 	{
-		"council": "fife",
+		"council": "Fife",
 		"ward_no": "5",
 		"ward_name": "Rosyth",
 		"map_ward_code": "S13002949",
 		"cand_ward_code": "UTW:rosyth",
-		"seats": "3"
+		"seats": "3",
+		"election": "fife"
 	},
 	{
-		"council": "fife",
+		"council": "Fife",
 		"ward_no": "18",
 		"ward_name": "St Andrews",
 		"map_ward_code": "S13002962",
 		"cand_ward_code": "UTW:st-andrews",
-		"seats": "4"
+		"seats": "4",
+		"election": "fife"
 	},
 	{
-		"council": "fife",
+		"council": "Fife",
 		"ward_no": "17",
 		"ward_name": "Tay Bridgehead",
 		"map_ward_code": "S13002961",
 		"cand_ward_code": "UTW:tay-bridgehead",
-		"seats": "3"
+		"seats": "3",
+		"election": "fife"
 	},
 	{
-		"council": "fife",
+		"council": "Fife",
 		"ward_no": "1",
 		"ward_name": "West Fife and Coastal Villages",
 		"map_ward_code": "S13002945",
 		"cand_ward_code": "UTW:west-fife-and-coastal-villages",
-		"seats": "3"
+		"seats": "3",
+		"election": "fife"
 	},
 	{
-		"council": "glasgow-city",
+		"council": "Glasgow City",
 		"ward_no": "10",
 		"ward_name": "Anderston/City/Yorkhill",
 		"map_ward_code": "S13002976",
 		"cand_ward_code": "UTW:anderstoncityyorkhill",
-		"seats": "4"
+		"seats": "4",
+		"election": "glasgow-city"
 	},
 	{
-		"council": "glasgow-city",
+		"council": "Glasgow City",
 		"ward_no": "20",
 		"ward_name": "Baillieston",
 		"map_ward_code": "S13002986",
 		"cand_ward_code": "UTW:baillieston",
-		"seats": "3"
+		"seats": "3",
+		"election": "glasgow-city"
 	},
 	{
-		"council": "glasgow-city",
+		"council": "Glasgow City",
 		"ward_no": "9",
 		"ward_name": "Calton",
 		"map_ward_code": "S13002975",
 		"cand_ward_code": "UTW:calton",
-		"seats": "4"
+		"seats": "4",
+		"election": "glasgow-city"
 	},
 	{
-		"council": "glasgow-city",
+		"council": "Glasgow City",
 		"ward_no": "16",
 		"ward_name": "Canal",
 		"map_ward_code": "S13002982",
 		"cand_ward_code": "UTW:canal",
-		"seats": "4"
+		"seats": "4",
+		"election": "glasgow-city"
 	},
 	{
-		"council": "glasgow-city",
+		"council": "Glasgow City",
 		"ward_no": "4",
 		"ward_name": "Cardonald",
 		"map_ward_code": "S13002970",
 		"cand_ward_code": "UTW:cardonald",
-		"seats": "4"
+		"seats": "4",
+		"election": "glasgow-city"
 	},
 	{
-		"council": "glasgow-city",
+		"council": "Glasgow City",
 		"ward_no": "22",
 		"ward_name": "Dennistoun",
 		"map_ward_code": "S13002988",
 		"cand_ward_code": "UTW:dennistoun",
-		"seats": "3"
+		"seats": "3",
+		"election": "glasgow-city"
 	},
 	{
-		"council": "glasgow-city",
+		"council": "Glasgow City",
 		"ward_no": "14",
 		"ward_name": "Drumchapel/Anniesland",
 		"map_ward_code": "S13002980",
 		"cand_ward_code": "UTW:drumchapelanniesland",
-		"seats": "4"
+		"seats": "4",
+		"election": "glasgow-city"
 	},
 	{
-		"council": "glasgow-city",
+		"council": "Glasgow City",
 		"ward_no": "18",
 		"ward_name": "East Centre",
 		"map_ward_code": "S13002984",
 		"cand_ward_code": "UTW:east-centre",
-		"seats": "4"
+		"seats": "4",
+		"election": "glasgow-city"
 	},
 	{
-		"council": "glasgow-city",
+		"council": "Glasgow City",
 		"ward_no": "13",
 		"ward_name": "Garscadden / Scotstounhill",
 		"map_ward_code": "S13002979",
 		"cand_ward_code": "UTW:garscaddenscotstounhill",
-		"seats": "4"
+		"seats": "4",
+		"election": "glasgow-city"
 	},
 	{
-		"council": "glasgow-city",
+		"council": "Glasgow City",
 		"ward_no": "5",
 		"ward_name": "Govan",
 		"map_ward_code": "S13002971",
 		"cand_ward_code": "UTW:govan",
-		"seats": "4"
+		"seats": "4",
+		"election": "glasgow-city"
 	},
 	{
-		"council": "glasgow-city",
+		"council": "Glasgow City",
 		"ward_no": "3",
 		"ward_name": "Greater Pollok",
 		"map_ward_code": "S13002969",
 		"cand_ward_code": "UTW:greater-pollok",
-		"seats": "4"
+		"seats": "4",
+		"election": "glasgow-city"
 	},
 	{
-		"council": "glasgow-city",
+		"council": "Glasgow City",
 		"ward_no": "11",
 		"ward_name": "Hillhead",
 		"map_ward_code": "S13002977",
 		"cand_ward_code": "UTW:hillhead",
-		"seats": "3"
+		"seats": "3",
+		"election": "glasgow-city"
 	},
 	{
-		"council": "glasgow-city",
+		"council": "Glasgow City",
 		"ward_no": "7",
 		"ward_name": "Langside",
 		"map_ward_code": "S13002973",
 		"cand_ward_code": "UTW:langside",
-		"seats": "4"
+		"seats": "4",
+		"election": "glasgow-city"
 	},
 	{
-		"council": "glasgow-city",
+		"council": "Glasgow City",
 		"ward_no": "1",
 		"ward_name": "Linn",
 		"map_ward_code": "S13002967",
 		"cand_ward_code": "UTW:linn",
-		"seats": "4"
+		"seats": "4",
+		"election": "glasgow-city"
 	},
 	{
-		"council": "glasgow-city",
+		"council": "Glasgow City",
 		"ward_no": "15",
 		"ward_name": "Maryhill",
 		"map_ward_code": "S13002981",
 		"cand_ward_code": "UTW:maryhill",
-		"seats": "3"
+		"seats": "3",
+		"election": "glasgow-city"
 	},
 	{
-		"council": "glasgow-city",
+		"council": "Glasgow City",
 		"ward_no": "2",
 		"ward_name": "Newlands / Auldburn",
 		"map_ward_code": "S13002968",
 		"cand_ward_code": "UTW:newlandsauldburn",
-		"seats": "3"
+		"seats": "3",
+		"election": "glasgow-city"
 	},
 	{
-		"council": "glasgow-city",
+		"council": "Glasgow City",
 		"ward_no": "21",
 		"ward_name": "North East",
 		"map_ward_code": "S13002987",
 		"cand_ward_code": "UTW:north-east",
-		"seats": "3"
+		"seats": "3",
+		"election": "glasgow-city"
 	},
 	{
-		"council": "glasgow-city",
+		"council": "Glasgow City",
 		"ward_no": "23",
 		"ward_name": "Partick East/Kelvindale",
 		"map_ward_code": "S13002989",
 		"cand_ward_code": "UTW:partick-eastkelvindale",
-		"seats": "4"
+		"seats": "4",
+		"election": "glasgow-city"
 	},
 	{
-		"council": "glasgow-city",
+		"council": "Glasgow City",
 		"ward_no": "6",
 		"ward_name": "Pollokshields",
 		"map_ward_code": "S13002972",
 		"cand_ward_code": "UTW:pollokshields",
-		"seats": "4"
+		"seats": "4",
+		"election": "glasgow-city"
 	},
 	{
-		"council": "glasgow-city",
+		"council": "Glasgow City",
 		"ward_no": "19",
 		"ward_name": "Shettleston",
 		"map_ward_code": "S13002985",
 		"cand_ward_code": "UTW:shettleston",
-		"seats": "4"
+		"seats": "4",
+		"election": "glasgow-city"
 	},
 	{
-		"council": "glasgow-city",
+		"council": "Glasgow City",
 		"ward_no": "8",
 		"ward_name": "Southside Central",
 		"map_ward_code": "S13002974",
 		"cand_ward_code": "UTW:southside-central",
-		"seats": "4"
+		"seats": "4",
+		"election": "glasgow-city"
 	},
 	{
-		"council": "glasgow-city",
+		"council": "Glasgow City",
 		"ward_no": "17",
 		"ward_name": "Springburn / Robroyston",
 		"map_ward_code": "S13002983",
 		"cand_ward_code": "UTW:springburnrobroyston",
-		"seats": "4"
+		"seats": "4",
+		"election": "glasgow-city"
 	},
 	{
-		"council": "glasgow-city",
+		"council": "Glasgow City",
 		"ward_no": "12",
 		"ward_name": "Victoria Park",
 		"map_ward_code": "S13002978",
 		"cand_ward_code": "UTW:victoria-park",
-		"seats": "3"
+		"seats": "3",
+		"election": "glasgow-city"
 	},
 	{
-		"council": "highland",
+		"council": "Highland",
 		"ward_no": "12",
 		"ward_name": "Aird and Loch Ness",
 		"map_ward_code": "S13003001",
 		"cand_ward_code": "UTW:aird-and-loch-ness",
-		"seats": "4"
+		"seats": "4",
+		"election": "highland"
 	},
 	{
-		"council": "highland",
+		"council": "Highland",
 		"ward_no": "20",
 		"ward_name": "Badenoch and Strathspey",
 		"map_ward_code": "S13003009",
 		"cand_ward_code": "UTW:badenoch-and-strathspey",
-		"seats": "4"
+		"seats": "4",
+		"election": "highland"
 	},
 	{
-		"council": "highland",
+		"council": "Highland",
 		"ward_no": "9",
 		"ward_name": "Black Isle",
 		"map_ward_code": "S13002998",
 		"cand_ward_code": "UTW:black-isle",
-		"seats": "3"
+		"seats": "3",
+		"election": "highland"
 	},
 	{
-		"council": "highland",
+		"council": "Highland",
 		"ward_no": "11",
 		"ward_name": "Caol and Mallaig",
 		"map_ward_code": "S13003000",
 		"cand_ward_code": "UTW:caol-and-mallaig",
-		"seats": "3"
+		"seats": "3",
+		"election": "highland"
 	},
 	{
-		"council": "highland",
+		"council": "Highland",
 		"ward_no": "6",
 		"ward_name": "Cromarty Firth",
 		"map_ward_code": "S13002995",
 		"cand_ward_code": "UTW:cromarty-firth",
-		"seats": "4"
+		"seats": "4",
+		"election": "highland"
 	},
 	{
-		"council": "highland",
+		"council": "Highland",
 		"ward_no": "17",
 		"ward_name": "Culloden  and Ardersier",
 		"map_ward_code": "S13003006",
 		"cand_ward_code": "UTW:culloden-and-ardersier",
-		"seats": "3"
+		"seats": "3",
+		"election": "highland"
 	},
 	{
-		"council": "highland",
+		"council": "Highland",
 		"ward_no": "8",
 		"ward_name": "Dingwall and Seaforth",
 		"map_ward_code": "S13002997",
 		"cand_ward_code": "UTW:dingwall-and-seaforth",
-		"seats": "4"
+		"seats": "4",
+		"election": "highland"
 	},
 	{
-		"council": "highland",
+		"council": "Highland",
 		"ward_no": "4",
 		"ward_name": "East Sutherland and Edderton",
 		"map_ward_code": "S13002993",
 		"cand_ward_code": "UTW:east-sutherland-and-edderton",
-		"seats": "3"
+		"seats": "3",
+		"election": "highland"
 	},
 	{
-		"council": "highland",
+		"council": "Highland",
 		"ward_no": "10",
-		"ward_name": "Eilean a' Ch�o",
+		"ward_name": "Eilean a' Cho",
 		"map_ward_code": "S13002999",
 		"cand_ward_code": "UTW:eilean-aa2-cha-o",
-		"seats": "4"
+		"seats": "4",
+		"election": "highland"
 	},
 	{
-		"council": "highland",
+		"council": "Highland",
 		"ward_no": "21",
 		"ward_name": "Fort William and Ardnamurchan",
 		"map_ward_code": "S13003010",
 		"cand_ward_code": "UTW:fort-william-and-ardnamurchan",
-		"seats": "4"
+		"seats": "4",
+		"election": "highland"
 	},
 	{
-		"council": "highland",
+		"council": "Highland",
 		"ward_no": "14",
 		"ward_name": "Inverness Central",
 		"map_ward_code": "S13003003",
 		"cand_ward_code": "UTW:inverness-central",
-		"seats": "3"
+		"seats": "3",
+		"election": "highland"
 	},
 	{
-		"council": "highland",
+		"council": "Highland",
 		"ward_no": "16",
 		"ward_name": "Inverness Millburn",
 		"map_ward_code": "S13003005",
 		"cand_ward_code": "UTW:inverness-millburn",
-		"seats": "3"
+		"seats": "3",
+		"election": "highland"
 	},
 	{
-		"council": "highland",
+		"council": "Highland",
 		"ward_no": "15",
 		"ward_name": "Inverness Ness-side",
 		"map_ward_code": "S13003004",
 		"cand_ward_code": "UTW:inverness-ness-side",
-		"seats": "3"
+		"seats": "3",
+		"election": "highland"
 	},
 	{
-		"council": "highland",
+		"council": "Highland",
 		"ward_no": "19",
 		"ward_name": "Inverness South",
 		"map_ward_code": "S13003008",
 		"cand_ward_code": "UTW:inverness-south",
-		"seats": "4"
+		"seats": "4",
+		"election": "highland"
 	},
 	{
-		"council": "highland",
+		"council": "Highland",
 		"ward_no": "13",
 		"ward_name": "Inverness West",
 		"map_ward_code": "S13003002",
 		"cand_ward_code": "UTW:inverness-west",
-		"seats": "3"
+		"seats": "3",
+		"election": "highland"
 	},
 	{
-		"council": "highland",
+		"council": "Highland",
 		"ward_no": "18",
 		"ward_name": "Nairn and Cawdor",
 		"map_ward_code": "S13003007",
 		"cand_ward_code": "UTW:nairn-and-cawdor",
-		"seats": "4"
+		"seats": "4",
+		"election": "highland"
 	},
 	{
-		"council": "highland",
+		"council": "Highland",
 		"ward_no": "1",
 		"ward_name": "North, West and Central Sutherland",
 		"map_ward_code": "S13002990",
 		"cand_ward_code": "UTW:north-west-and-central-sutherland",
-		"seats": "3"
+		"seats": "3",
+		"election": "highland"
 	},
 	{
-		"council": "highland",
+		"council": "Highland",
 		"ward_no": "7",
 		"ward_name": "Tain and Easter Ross",
 		"map_ward_code": "S13002996",
 		"cand_ward_code": "UTW:tain-and-easter-ross",
-		"seats": "3"
+		"seats": "3",
+		"election": "highland"
 	},
 	{
-		"council": "highland",
+		"council": "Highland",
 		"ward_no": "2",
 		"ward_name": "Thurso and Northwest Caithness",
 		"map_ward_code": "S13002991",
 		"cand_ward_code": "UTW:thurso-and-northwest-caithness",
-		"seats": "4"
+		"seats": "4",
+		"election": "highland"
 	},
 	{
-		"council": "highland",
+		"council": "Highland",
 		"ward_no": "5",
 		"ward_name": "Wester Ross, Strathpeffer and Lochalsh",
 		"map_ward_code": "S13002994",
 		"cand_ward_code": "UTW:wester-ross-strathpeffer-and-lochalsh",
-		"seats": "4"
+		"seats": "4",
+		"election": "highland"
 	},
 	{
-		"council": "highland",
+		"council": "Highland",
 		"ward_no": "3",
 		"ward_name": "Wick and East Caithness",
 		"map_ward_code": "S13002992",
 		"cand_ward_code": "UTW:wick-and-east-caithness",
-		"seats": "4"
+		"seats": "4",
+		"election": "highland"
 	},
 	{
-		"council": "inverclyde",
+		"council": "Inverclyde",
 		"ward_no": "3",
 		"ward_name": "Inverclyde Central",
 		"map_ward_code": "S13003013",
 		"cand_ward_code": "UTW:inverclyde-central",
-		"seats": "3"
+		"seats": "3",
+		"election": "inverclyde"
 	},
 	{
-		"council": "inverclyde",
+		"council": "Inverclyde",
 		"ward_no": "1",
 		"ward_name": "Inverclyde East",
 		"map_ward_code": "S13003011",
 		"cand_ward_code": "UTW:inverclyde-east",
-		"seats": "3"
+		"seats": "3",
+		"election": "inverclyde"
 	},
 	{
-		"council": "inverclyde",
+		"council": "Inverclyde",
 		"ward_no": "2",
 		"ward_name": "Inverclyde East Central",
 		"map_ward_code": "S13003012",
 		"cand_ward_code": "UTW:inverclyde-east-central",
-		"seats": "3"
+		"seats": "3",
+		"election": "inverclyde"
 	},
 	{
-		"council": "inverclyde",
+		"council": "Inverclyde",
 		"ward_no": "4",
 		"ward_name": "Inverclyde North",
 		"map_ward_code": "S13003014",
 		"cand_ward_code": "UTW:inverclyde-north",
-		"seats": "4"
+		"seats": "4",
+		"election": "inverclyde"
 	},
 	{
-		"council": "inverclyde",
+		"council": "Inverclyde",
 		"ward_no": "7",
 		"ward_name": "Inverclyde South",
 		"map_ward_code": "S13003017",
 		"cand_ward_code": "UTW:inverclyde-south",
-		"seats": "3"
+		"seats": "3",
+		"election": "inverclyde"
 	},
 	{
-		"council": "inverclyde",
+		"council": "Inverclyde",
 		"ward_no": "6",
 		"ward_name": "Inverclyde South West",
 		"map_ward_code": "S13003016",
 		"cand_ward_code": "UTW:inverclyde-south-west",
-		"seats": "3"
+		"seats": "3",
+		"election": "inverclyde"
 	},
 	{
-		"council": "inverclyde",
+		"council": "Inverclyde",
 		"ward_no": "5",
 		"ward_name": "Inverclyde West",
 		"map_ward_code": "S13003015",
 		"cand_ward_code": "UTW:inverclyde-west",
-		"seats": "3"
+		"seats": "3",
+		"election": "inverclyde"
 	},
 	{
-		"council": "midlothian",
+		"council": "Midlothian",
 		"ward_no": "2",
 		"ward_name": "Bonnyrigg",
 		"map_ward_code": "S13003019",
 		"cand_ward_code": "UTW:bonnyrigg",
-		"seats": "3"
+		"seats": "3",
+		"election": "midlothian"
 	},
 	{
-		"council": "midlothian",
+		"council": "Midlothian",
 		"ward_no": "3",
 		"ward_name": "Dalkeith",
 		"map_ward_code": "S13003020",
 		"cand_ward_code": "UTW:dalkeith",
-		"seats": "3"
+		"seats": "3",
+		"election": "midlothian"
 	},
 	{
-		"council": "midlothian",
+		"council": "Midlothian",
 		"ward_no": "5",
 		"ward_name": "Midlothian East",
 		"map_ward_code": "S13003022",
 		"cand_ward_code": "UTW:midlothian-east",
-		"seats": "3"
+		"seats": "3",
+		"election": "midlothian"
 	},
 	{
-		"council": "midlothian",
+		"council": "Midlothian",
 		"ward_no": "6",
 		"ward_name": "Midlothian South",
 		"map_ward_code": "S13003023",
 		"cand_ward_code": "UTW:midlothian-south",
-		"seats": "3"
+		"seats": "3",
+		"election": "midlothian"
 	},
 	{
-		"council": "midlothian",
+		"council": "Midlothian",
 		"ward_no": "4",
 		"ward_name": "Midlothian West",
 		"map_ward_code": "S13003021",
 		"cand_ward_code": "UTW:midlothian-west",
-		"seats": "3"
+		"seats": "3",
+		"election": "midlothian"
 	},
 	{
-		"council": "midlothian",
+		"council": "Midlothian",
 		"ward_no": "1",
 		"ward_name": "Penicuik",
 		"map_ward_code": "S13003018",
 		"cand_ward_code": "UTW:penicuik",
-		"seats": "3"
+		"seats": "3",
+		"election": "midlothian"
 	},
 	{
-		"council": "moray",
+		"council": "Moray",
 		"ward_no": "3",
 		"ward_name": "Buckie",
 		"map_ward_code": "S13003026",
 		"cand_ward_code": "UTW:buckie",
-		"seats": "3"
+		"seats": "3",
+		"election": "moray"
 	},
 	{
-		"council": "moray",
+		"council": "Moray",
 		"ward_no": "6",
 		"ward_name": "Elgin City North",
 		"map_ward_code": "S13003029",
 		"cand_ward_code": "UTW:elgin-city-north",
-		"seats": "3"
+		"seats": "3",
+		"election": "moray"
 	},
 	{
-		"council": "moray",
+		"council": "Moray",
 		"ward_no": "7",
 		"ward_name": "Elgin City South",
 		"map_ward_code": "S13003030",
 		"cand_ward_code": "UTW:elgin-city-south",
-		"seats": "3"
+		"seats": "3",
+		"election": "moray"
 	},
 	{
-		"council": "moray",
+		"council": "Moray",
 		"ward_no": "4",
 		"ward_name": "Fochabers Lhanbryde",
 		"map_ward_code": "S13003027",
 		"cand_ward_code": "UTW:fochabers-lhanbryde",
-		"seats": "3"
+		"seats": "3",
+		"election": "moray"
 	},
 	{
-		"council": "moray",
+		"council": "Moray",
 		"ward_no": "8",
 		"ward_name": "Forres",
 		"map_ward_code": "S13003031",
 		"cand_ward_code": "UTW:forres",
-		"seats": "4"
+		"seats": "4",
+		"election": "moray"
 	},
 	{
-		"council": "moray",
+		"council": "Moray",
 		"ward_no": "5",
 		"ward_name": "Heldon and Laich",
 		"map_ward_code": "S13003028",
 		"cand_ward_code": "UTW:heldon-and-laich",
-		"seats": "4"
+		"seats": "4",
+		"election": "moray"
 	},
 	{
-		"council": "moray",
+		"council": "Moray",
 		"ward_no": "2",
 		"ward_name": "Keith and Cullen",
 		"map_ward_code": "S13003025",
 		"cand_ward_code": "UTW:keith-and-cullen",
-		"seats": "3"
+		"seats": "3",
+		"election": "moray"
 	},
 	{
-		"council": "moray",
+		"council": "Moray",
 		"ward_no": "1",
 		"ward_name": "Speyside Glenlivet",
 		"map_ward_code": "S13003024",
 		"cand_ward_code": "UTW:speyside-glenlivet",
-		"seats": "3"
+		"seats": "3",
+		"election": "moray"
 	},
 	{
-		"council": "north-ayrshire",
+		"council": "Na h-Eileanan an Iar",
+		"ward_no": "9",
+		"ward_name": "An Taobh Siar agus Nis Ward",
+		"map_ward_code": "S13002608",
+		"cand_ward_code": "UTW:S13002608",
+		"seats": "4",
+		"election": "eilean-siar"
+	},
+	{
+		"council": "Na h-Eileanan an Iar",
+		"ward_no": "1",
+		"ward_name": "Barraigh, Bhatarsaigh, Eirisgeigh agus Uibhist a Deas Ward",
+		"map_ward_code": "S13002600",
+		"cand_ward_code": "UTW:S13002600",
+		"seats": "4",
+		"election": "eilean-siar"
+	},
+	{
+		"council": "Na h-Eileanan an Iar",
+		"ward_no": "2",
+		"ward_name": "Beinn na Foghla agus Uibhist a Tuath Ward",
+		"map_ward_code": "S13002601",
+		"cand_ward_code": "UTW:S13002601",
+		"seats": "3",
+		"election": "eilean-siar"
+	},
+	{
+		"council": "Na h-Eileanan an Iar",
+		"ward_no": "8",
+		"ward_name": "Loch a Tuath Ward",
+		"map_ward_code": "S13002607",
+		"cand_ward_code": "UTW:S13002607",
+		"seats": "3",
+		"election": "eilean-siar"
+	},
+	{
+		"council": "Na h-Eileanan an Iar",
+		"ward_no": "3",
+		"ward_name": "Na Hearadh agus Ceann a Deas nan Loch Ward",
+		"map_ward_code": "S13002602",
+		"cand_ward_code": "UTW:S13002602",
+		"seats": "3",
+		"election": "eilean-siar"
+	},
+	{
+		"council": "Na h-Eileanan an Iar",
+		"ward_no": "5",
+		"ward_name": "Sgire an Rubha Ward",
+		"map_ward_code": "S13002604",
+		"cand_ward_code": "UTW:S13002604",
+		"seats": "3",
+		"election": "eilean-siar"
+	},
+	{
+		"council": "Na h-Eileanan an Iar",
+		"ward_no": "4",
+		"ward_name": "Sgir'Uige agus Ceann a Tuath nan Loch Ward",
+		"map_ward_code": "S13002603",
+		"cand_ward_code": "UTW:S13002603",
+		"seats": "3",
+		"election": "eilean-siar"
+	},
+	{
+		"council": "Na h-Eileanan an Iar",
+		"ward_no": "6",
+		"ward_name": "Steornabhagh a Deas Ward",
+		"map_ward_code": "S13002605",
+		"cand_ward_code": "UTW:S13002605",
+		"seats": "4",
+		"election": "eilean-siar"
+	},
+	{
+		"council": "Na h-Eileanan an Iar",
+		"ward_no": "7",
+		"ward_name": "Steornabhagh a Tuath Ward",
+		"map_ward_code": "S13002606",
+		"cand_ward_code": "UTW:S13002606",
+		"seats": "4",
+		"election": "eilean-siar"
+	},
+	{
+		"council": "North Ayrshire",
 		"ward_no": "5",
 		"ward_name": "Ardrossan and Arran",
 		"map_ward_code": "S13003036",
 		"cand_ward_code": "UTW:ardrossan-and-arran",
-		"seats": "3"
+		"seats": "3",
+		"election": "north-ayrshire"
 	},
 	{
-		"council": "north-ayrshire",
+		"council": "North Ayrshire",
 		"ward_no": "6",
 		"ward_name": "Dalry and West Kilbride",
 		"map_ward_code": "S13003037",
 		"cand_ward_code": "UTW:dalry-and-west-kilbride",
-		"seats": "3"
+		"seats": "3",
+		"election": "north-ayrshire"
 	},
 	{
-		"council": "north-ayrshire",
+		"council": "North Ayrshire",
 		"ward_no": "2",
 		"ward_name": "Irvine East",
 		"map_ward_code": "S13003033",
 		"cand_ward_code": "UTW:irvine-east",
-		"seats": "3"
+		"seats": "3",
+		"election": "north-ayrshire"
 	},
 	{
-		"council": "north-ayrshire",
+		"council": "North Ayrshire",
 		"ward_no": "10",
 		"ward_name": "Irvine South",
 		"map_ward_code": "S13003041",
 		"cand_ward_code": "UTW:irvine-south",
-		"seats": "3"
+		"seats": "3",
+		"election": "north-ayrshire"
 	},
 	{
-		"council": "north-ayrshire",
+		"council": "North Ayrshire",
 		"ward_no": "1",
 		"ward_name": "Irvine West",
 		"map_ward_code": "S13003032",
 		"cand_ward_code": "UTW:irvine-west",
-		"seats": "4"
+		"seats": "4",
+		"election": "north-ayrshire"
 	},
 	{
-		"council": "north-ayrshire",
+		"council": "North Ayrshire",
 		"ward_no": "7",
 		"ward_name": "Kilbirnie and Beith",
 		"map_ward_code": "S13003038",
 		"cand_ward_code": "UTW:kilbirnie-and-beith",
-		"seats": "3"
+		"seats": "3",
+		"election": "north-ayrshire"
 	},
 	{
-		"council": "north-ayrshire",
+		"council": "North Ayrshire",
 		"ward_no": "3",
 		"ward_name": "Kilwinning",
 		"map_ward_code": "S13003034",
 		"cand_ward_code": "UTW:kilwinning",
-		"seats": "4"
+		"seats": "4",
+		"election": "north-ayrshire"
 	},
 	{
-		"council": "north-ayrshire",
+		"council": "North Ayrshire",
 		"ward_no": "8",
 		"ward_name": "North Coast and Cumbraes",
 		"map_ward_code": "S13003039",
 		"cand_ward_code": "UTW:north-coast-and-cumbraes",
-		"seats": "4"
+		"seats": "4",
+		"election": "north-ayrshire"
 	},
 	{
-		"council": "north-ayrshire",
+		"council": "North Ayrshire",
 		"ward_no": "9",
 		"ward_name": "Saltcoats",
 		"map_ward_code": "S13003040",
 		"cand_ward_code": "UTW:saltcoats",
-		"seats": "3"
+		"seats": "3",
+		"election": "north-ayrshire"
 	},
 	{
-		"council": "north-ayrshire",
+		"council": "North Ayrshire",
 		"ward_no": "4",
 		"ward_name": "Stevenston",
 		"map_ward_code": "S13003035",
 		"cand_ward_code": "UTW:stevenston",
-		"seats": "3"
+		"seats": "3",
+		"election": "north-ayrshire"
 	},
 	{
-		"council": "north-lanarkshire",
+		"council": "North Lanarkshire",
 		"ward_no": "9",
 		"ward_name": "Airdrie Central",
 		"map_ward_code": "S13003050",
 		"cand_ward_code": "UTW:airdrie-central",
-		"seats": "4"
+		"seats": "4",
+		"election": "north-lanarkshire"
 	},
 	{
-		"council": "north-lanarkshire",
+		"council": "North Lanarkshire",
 		"ward_no": "8",
 		"ward_name": "Airdrie North",
 		"map_ward_code": "S13003049",
 		"cand_ward_code": "UTW:airdrie-north",
-		"seats": "4"
+		"seats": "4",
+		"election": "north-lanarkshire"
 	},
 	{
-		"council": "north-lanarkshire",
+		"council": "North Lanarkshire",
 		"ward_no": "12",
 		"ward_name": "Airdrie South",
 		"map_ward_code": "S13003053",
 		"cand_ward_code": "UTW:airdrie-south",
-		"seats": "4"
+		"seats": "4",
+		"election": "north-lanarkshire"
 	},
 	{
-		"council": "north-lanarkshire",
+		"council": "North Lanarkshire",
 		"ward_no": "15",
 		"ward_name": "Bellshill",
 		"map_ward_code": "S13003056",
 		"cand_ward_code": "UTW:bellshill",
-		"seats": "4"
+		"seats": "4",
+		"election": "north-lanarkshire"
 	},
 	{
-		"council": "north-lanarkshire",
+		"council": "North Lanarkshire",
 		"ward_no": "7",
 		"ward_name": "Coatbridge North",
 		"map_ward_code": "S13003048",
 		"cand_ward_code": "UTW:coatbridge-north",
-		"seats": "4"
+		"seats": "4",
+		"election": "north-lanarkshire"
 	},
 	{
-		"council": "north-lanarkshire",
+		"council": "North Lanarkshire",
 		"ward_no": "11",
 		"ward_name": "Coatbridge South",
 		"map_ward_code": "S13003052",
 		"cand_ward_code": "UTW:coatbridge-south",
-		"seats": "4"
+		"seats": "4",
+		"election": "north-lanarkshire"
 	},
 	{
-		"council": "north-lanarkshire",
+		"council": "North Lanarkshire",
 		"ward_no": "10",
 		"ward_name": "Coatbridge West",
 		"map_ward_code": "S13003051",
 		"cand_ward_code": "UTW:coatbridge-west",
-		"seats": "3"
+		"seats": "3",
+		"election": "north-lanarkshire"
 	},
 	{
-		"council": "north-lanarkshire",
+		"council": "North Lanarkshire",
 		"ward_no": "4",
 		"ward_name": "Cumbernauld East",
 		"map_ward_code": "S13003045",
 		"cand_ward_code": "UTW:cumbernauld-east",
-		"seats": "4"
+		"seats": "4",
+		"election": "north-lanarkshire"
 	},
 	{
-		"council": "north-lanarkshire",
+		"council": "North Lanarkshire",
 		"ward_no": "2",
 		"ward_name": "Cumbernauld North",
 		"map_ward_code": "S13003043",
 		"cand_ward_code": "UTW:cumbernauld-north",
-		"seats": "4"
+		"seats": "4",
+		"election": "north-lanarkshire"
 	},
 	{
-		"council": "north-lanarkshire",
+		"council": "North Lanarkshire",
 		"ward_no": "3",
 		"ward_name": "Cumbernauld South",
 		"map_ward_code": "S13003044",
 		"cand_ward_code": "UTW:cumbernauld-south",
-		"seats": "4"
+		"seats": "4",
+		"election": "north-lanarkshire"
 	},
 	{
-		"council": "north-lanarkshire",
+		"council": "North Lanarkshire",
 		"ward_no": "13",
 		"ward_name": "Fortissat",
 		"map_ward_code": "S13003054",
 		"cand_ward_code": "UTW:fortissat",
-		"seats": "4"
+		"seats": "4",
+		"election": "north-lanarkshire"
 	},
 	{
-		"council": "north-lanarkshire",
+		"council": "North Lanarkshire",
 		"ward_no": "6",
 		"ward_name": "Gartcosh, Glenboig and Moodiesburn",
 		"map_ward_code": "S13003047",
 		"cand_ward_code": "UTW:gartcosh-glenboig-and-moodiesburn",
-		"seats": "3"
+		"seats": "3",
+		"election": "north-lanarkshire"
 	},
 	{
-		"council": "north-lanarkshire",
+		"council": "North Lanarkshire",
 		"ward_no": "1",
 		"ward_name": "Kilsyth",
 		"map_ward_code": "S13003042",
 		"cand_ward_code": "UTW:kilsyth",
-		"seats": "3"
+		"seats": "3",
+		"election": "north-lanarkshire"
 	},
 	{
-		"council": "north-lanarkshire",
+		"council": "North Lanarkshire",
 		"ward_no": "16",
 		"ward_name": "Mossend and Holytown",
 		"map_ward_code": "S13003057",
 		"cand_ward_code": "UTW:mossend-and-holytown",
-		"seats": "3"
+		"seats": "3",
+		"election": "north-lanarkshire"
 	},
 	{
-		"council": "north-lanarkshire",
+		"council": "North Lanarkshire",
 		"ward_no": "18",
 		"ward_name": "Motherwell North",
 		"map_ward_code": "S13003059",
 		"cand_ward_code": "UTW:motherwell-north",
-		"seats": "4"
+		"seats": "4",
+		"election": "north-lanarkshire"
 	},
 	{
-		"council": "north-lanarkshire",
+		"council": "North Lanarkshire",
 		"ward_no": "19",
 		"ward_name": "Motherwell South East and Ravenscraig",
 		"map_ward_code": "S13003060",
 		"cand_ward_code": "UTW:motherwell-south-east-and-ravenscraig",
-		"seats": "4"
+		"seats": "4",
+		"election": "north-lanarkshire"
 	},
 	{
-		"council": "north-lanarkshire",
+		"council": "North Lanarkshire",
 		"ward_no": "17",
 		"ward_name": "Motherwell West",
 		"map_ward_code": "S13003058",
 		"cand_ward_code": "UTW:motherwell-west",
-		"seats": "3"
+		"seats": "3",
+		"election": "north-lanarkshire"
 	},
 	{
-		"council": "north-lanarkshire",
+		"council": "North Lanarkshire",
 		"ward_no": "20",
 		"ward_name": "Murdostoun",
 		"map_ward_code": "S13003061",
 		"cand_ward_code": "UTW:murdostoun",
-		"seats": "4"
+		"seats": "4",
+		"election": "north-lanarkshire"
 	},
 	{
-		"council": "north-lanarkshire",
+		"council": "North Lanarkshire",
 		"ward_no": "5",
 		"ward_name": "Stepps, Chryston and Muirhead",
 		"map_ward_code": "S13003046",
 		"cand_ward_code": "UTW:stepps-chryston-and-muirhead",
-		"seats": "3"
+		"seats": "3",
+		"election": "north-lanarkshire"
 	},
 	{
-		"council": "north-lanarkshire",
+		"council": "North Lanarkshire",
 		"ward_no": "14",
 		"ward_name": "Thorniewood",
 		"map_ward_code": "S13003055",
 		"cand_ward_code": "UTW:thorniewood",
-		"seats": "3"
+		"seats": "3",
+		"election": "north-lanarkshire"
 	},
 	{
-		"council": "north-lanarkshire",
+		"council": "North Lanarkshire",
 		"ward_no": "21",
 		"ward_name": "Wishaw",
 		"map_ward_code": "S13003062",
 		"cand_ward_code": "UTW:wishaw",
-		"seats": "4"
+		"seats": "4",
+		"election": "north-lanarkshire"
 	},
 	{
-		"council": "orkney-islands",
+		"council": "Orkney Islands",
 		"ward_no": "5",
 		"ward_name": "East Mainland, South Ronaldsay and Burray",
 		"map_ward_code": "S13002736",
 		"cand_ward_code": "UTW:S13002736",
-		"seats": "3"
+		"seats": "3",
+		"election": "orkney-islands"
 	},
 	{
-		"council": "orkney-islands",
+		"council": "Orkney Islands",
 		"ward_no": "1",
 		"ward_name": "Kirkwall East",
 		"map_ward_code": "S13002732",
 		"cand_ward_code": "UTW:S13002732",
-		"seats": "4"
+		"seats": "4",
+		"election": "orkney-islands"
 	},
 	{
-		"council": "orkney-islands",
+		"council": "Orkney Islands",
 		"ward_no": "2",
 		"ward_name": "Kirkwall West and Orphir",
 		"map_ward_code": "S13002733",
 		"cand_ward_code": "UTW:S13002733",
-		"seats": "4"
+		"seats": "4",
+		"election": "orkney-islands"
 	},
 	{
-		"council": "orkney-islands",
+		"council": "Orkney Islands",
 		"ward_no": "6",
 		"ward_name": "North Isles",
 		"map_ward_code": "S13002737",
 		"cand_ward_code": "UTW:S13002737",
-		"seats": "3"
+		"seats": "3",
+		"election": "orkney-islands"
 	},
 	{
-		"council": "orkney-islands",
+		"council": "Orkney Islands",
 		"ward_no": "3",
 		"ward_name": "Stromness and South Isles",
 		"map_ward_code": "S13002734",
 		"cand_ward_code": "UTW:S13002734",
-		"seats": "3"
+		"seats": "3",
+		"election": "orkney-islands"
 	},
 	{
-		"council": "orkney-islands",
+		"council": "Orkney Islands",
 		"ward_no": "4",
 		"ward_name": "West Mainland",
 		"map_ward_code": "S13002735",
 		"cand_ward_code": "UTW:S13002735",
-		"seats": "4"
+		"seats": "4",
+		"election": "orkney-islands"
 	},
 	{
-		"council": "perth-and-kinross",
+		"council": "Perth and Kinross",
 		"ward_no": "9",
 		"ward_name": "Almond and Earn",
 		"map_ward_code": "S13003071",
 		"cand_ward_code": "UTW:almond-and-earn",
-		"seats": "3"
+		"seats": "3",
+		"election": "perth-and-kinross"
 	},
 	{
-		"council": "perth-and-kinross",
+		"council": "Perth and Kinross",
 		"ward_no": "3",
 		"ward_name": "Blairgowrie and Glens",
 		"map_ward_code": "S13003065",
 		"cand_ward_code": "UTW:blairgowrie-and-glens",
-		"seats": "3"
+		"seats": "3",
+		"election": "perth-and-kinross"
 	},
 	{
-		"council": "perth-and-kinross",
+		"council": "Perth and Kinross",
 		"ward_no": "1",
 		"ward_name": "Carse of Gowrie",
 		"map_ward_code": "S13003063",
 		"cand_ward_code": "UTW:carse-of-gowrie",
-		"seats": "3"
+		"seats": "3",
+		"election": "perth-and-kinross"
 	},
 	{
-		"council": "perth-and-kinross",
+		"council": "Perth and Kinross",
 		"ward_no": "4",
 		"ward_name": "Highland",
 		"map_ward_code": "S13003066",
 		"cand_ward_code": "UTW:highland",
-		"seats": "3"
+		"seats": "3",
+		"election": "perth-and-kinross"
 	},
 	{
-		"council": "perth-and-kinross",
+		"council": "Perth and Kinross",
 		"ward_no": "8",
 		"ward_name": "Kinross-shire",
 		"map_ward_code": "S13003070",
 		"cand_ward_code": "UTW:kinross-shire",
-		"seats": "4"
+		"seats": "4",
+		"election": "perth-and-kinross"
 	},
 	{
-		"council": "perth-and-kinross",
+		"council": "Perth and Kinross",
 		"ward_no": "12",
 		"ward_name": "Perth City Centre",
 		"map_ward_code": "S13003074",
 		"cand_ward_code": "UTW:perth-city-centre",
-		"seats": "4"
+		"seats": "4",
+		"election": "perth-and-kinross"
 	},
 	{
-		"council": "perth-and-kinross",
+		"council": "Perth and Kinross",
 		"ward_no": "11",
 		"ward_name": "Perth City North",
 		"map_ward_code": "S13003073",
 		"cand_ward_code": "UTW:perth-city-north",
-		"seats": "3"
+		"seats": "3",
+		"election": "perth-and-kinross"
 	},
 	{
-		"council": "perth-and-kinross",
+		"council": "Perth and Kinross",
 		"ward_no": "10",
 		"ward_name": "Perth City South",
 		"map_ward_code": "S13003072",
 		"cand_ward_code": "UTW:perth-city-south",
-		"seats": "4"
+		"seats": "4",
+		"election": "perth-and-kinross"
 	},
 	{
-		"council": "perth-and-kinross",
+		"council": "Perth and Kinross",
 		"ward_no": "7",
 		"ward_name": "Strathallan",
 		"map_ward_code": "S13003069",
 		"cand_ward_code": "UTW:strathallan",
-		"seats": "3"
+		"seats": "3",
+		"election": "perth-and-kinross"
 	},
 	{
-		"council": "perth-and-kinross",
+		"council": "Perth and Kinross",
 		"ward_no": "6",
 		"ward_name": "Strathearn",
 		"map_ward_code": "S13003068",
 		"cand_ward_code": "UTW:strathearn",
-		"seats": "3"
+		"seats": "3",
+		"election": "perth-and-kinross"
 	},
 	{
-		"council": "perth-and-kinross",
+		"council": "Perth and Kinross",
 		"ward_no": "2",
 		"ward_name": "Strathmore",
 		"map_ward_code": "S13003064",
 		"cand_ward_code": "UTW:strathmore",
-		"seats": "4"
+		"seats": "4",
+		"election": "perth-and-kinross"
 	},
 	{
-		"council": "perth-and-kinross",
+		"council": "Perth and Kinross",
 		"ward_no": "5",
 		"ward_name": "Strathtay",
 		"map_ward_code": "S13003067",
 		"cand_ward_code": "UTW:strathtay",
-		"seats": "3"
+		"seats": "3",
+		"election": "perth-and-kinross"
 	},
 	{
-		"council": "renfrewshire",
+		"council": "Renfrewshire",
 		"ward_no": "11",
 		"ward_name": "Bishopton, Bridge of Weir and Langbank",
 		"map_ward_code": "S13003085",
 		"cand_ward_code": "UTW:bishopton-bridge-of-weir-and-langbank",
-		"seats": "3"
+		"seats": "3",
+		"election": "renfrewshire"
 	},
 	{
-		"council": "renfrewshire",
+		"council": "Renfrewshire",
 		"ward_no": "12",
 		"ward_name": "Erskine and Inchinnan",
 		"map_ward_code": "S13003086",
 		"cand_ward_code": "UTW:erskine-and-inchinnan",
-		"seats": "4"
+		"seats": "4",
+		"election": "renfrewshire"
 	},
 	{
-		"council": "renfrewshire",
+		"council": "Renfrewshire",
 		"ward_no": "10",
 		"ward_name": "Houston, Crosslee and Linwood",
 		"map_ward_code": "S13003084",
 		"cand_ward_code": "UTW:houston-crosslee-and-linwood",
-		"seats": "4"
+		"seats": "4",
+		"election": "renfrewshire"
 	},
 	{
-		"council": "renfrewshire",
+		"council": "Renfrewshire",
 		"ward_no": "9",
 		"ward_name": "Johnstone North, Kilbarchan, Howwood and Lochwinnoch",
 		"map_ward_code": "S13003083",
 		"cand_ward_code": "UTW:johnstone-north-kilbarchan-howwood-and-lochwinnoch",
-		"seats": "4"
+		"seats": "4",
+		"election": "renfrewshire"
 	},
 	{
-		"council": "renfrewshire",
+		"council": "Renfrewshire",
 		"ward_no": "8",
 		"ward_name": "Johnstone South and Elderslie",
 		"map_ward_code": "S13003082",
 		"cand_ward_code": "UTW:johnstone-south-and-elderslie",
-		"seats": "4"
+		"seats": "4",
+		"election": "renfrewshire"
 	},
 	{
-		"council": "renfrewshire",
+		"council": "Renfrewshire",
 		"ward_no": "5",
 		"ward_name": "Paisley East and Central",
 		"map_ward_code": "S13003079",
 		"cand_ward_code": "UTW:paisley-east-and-central",
-		"seats": "3"
+		"seats": "3",
+		"election": "renfrewshire"
 	},
 	{
-		"council": "renfrewshire",
+		"council": "Renfrewshire",
 		"ward_no": "3",
 		"ward_name": "Paisley Northeast and Ralston",
 		"map_ward_code": "S13003077",
 		"cand_ward_code": "UTW:paisley-northeast-and-ralston",
-		"seats": "3"
+		"seats": "3",
+		"election": "renfrewshire"
 	},
 	{
-		"council": "renfrewshire",
+		"council": "Renfrewshire",
 		"ward_no": "4",
 		"ward_name": "Paisley Northwest",
 		"map_ward_code": "S13003078",
 		"cand_ward_code": "UTW:paisley-northwest",
-		"seats": "4"
+		"seats": "4",
+		"election": "renfrewshire"
 	},
 	{
-		"council": "renfrewshire",
+		"council": "Renfrewshire",
 		"ward_no": "6",
 		"ward_name": "Paisley Southeast",
 		"map_ward_code": "S13003080",
 		"cand_ward_code": "UTW:paisley-southeast",
-		"seats": "3"
+		"seats": "3",
+		"election": "renfrewshire"
 	},
 	{
-		"council": "renfrewshire",
+		"council": "Renfrewshire",
 		"ward_no": "7",
 		"ward_name": "Paisley Southwest",
 		"map_ward_code": "S13003081",
 		"cand_ward_code": "UTW:paisley-southwest",
-		"seats": "4"
+		"seats": "4",
+		"election": "renfrewshire"
 	},
 	{
-		"council": "renfrewshire",
+		"council": "Renfrewshire",
 		"ward_no": "1",
 		"ward_name": "Renfrew North and Braehead",
 		"map_ward_code": "S13003075",
 		"cand_ward_code": "UTW:renfrew-north-and-braehead",
-		"seats": "4"
+		"seats": "4",
+		"election": "renfrewshire"
 	},
 	{
-		"council": "renfrewshire",
+		"council": "Renfrewshire",
 		"ward_no": "2",
 		"ward_name": "Renfrew South and Gallowhill",
 		"map_ward_code": "S13003076",
 		"cand_ward_code": "UTW:renfrew-south-and-gallowhill",
-		"seats": "3"
+		"seats": "3",
+		"election": "renfrewshire"
 	},
 	{
-		"council": "shetland-islands",
+		"council": "Shetland Islands",
 		"ward_no": "6",
 		"ward_name": "Lerwick North",
 		"map_ward_code": "S13002777",
 		"cand_ward_code": "UTW:S13002777",
-		"seats": "3"
+		"seats": "3",
+		"election": "shetland-islands"
 	},
 	{
-		"council": "shetland-islands",
+		"council": "Shetland Islands",
 		"ward_no": "7",
 		"ward_name": "Lerwick South",
 		"map_ward_code": "S13002778",
 		"cand_ward_code": "UTW:S13002778",
-		"seats": "4"
+		"seats": "4",
+		"election": "shetland-islands"
 	},
 	{
-		"council": "shetland-islands",
+		"council": "Shetland Islands",
 		"ward_no": "1",
 		"ward_name": "North Isles",
 		"map_ward_code": "S13002772",
 		"cand_ward_code": "UTW:S13002772",
-		"seats": "3"
+		"seats": "3",
+		"election": "shetland-islands"
 	},
 	{
-		"council": "shetland-islands",
+		"council": "Shetland Islands",
 		"ward_no": "4",
 		"ward_name": "Shetland Central",
 		"map_ward_code": "S13002775",
 		"cand_ward_code": "UTW:S13002775",
-		"seats": "3"
+		"seats": "3",
+		"election": "shetland-islands"
 	},
 	{
-		"council": "shetland-islands",
+		"council": "Shetland Islands",
 		"ward_no": "2",
 		"ward_name": "Shetland North",
 		"map_ward_code": "S13002773",
 		"cand_ward_code": "UTW:S13002773",
-		"seats": "3"
+		"seats": "3",
+		"election": "shetland-islands"
 	},
 	{
-		"council": "shetland-islands",
+		"council": "Shetland Islands",
 		"ward_no": "5",
 		"ward_name": "Shetland South",
 		"map_ward_code": "S13002776",
 		"cand_ward_code": "UTW:S13002776",
-		"seats": "3"
+		"seats": "3",
+		"election": "shetland-islands"
 	},
 	{
-		"council": "shetland-islands",
+		"council": "Shetland Islands",
 		"ward_no": "3",
 		"ward_name": "Shetland West",
 		"map_ward_code": "S13002774",
 		"cand_ward_code": "UTW:S13002774",
-		"seats": "3"
+		"seats": "3",
+		"election": "shetland-islands"
 	},
 	{
-		"council": "south-ayrshire",
+		"council": "South Ayrshire",
 		"ward_no": "4",
 		"ward_name": "Ayr East",
 		"map_ward_code": "S13003090",
 		"cand_ward_code": "UTW:ayr-east",
-		"seats": "3"
+		"seats": "3",
+		"election": "south-ayrshire"
 	},
 	{
-		"council": "south-ayrshire",
+		"council": "South Ayrshire",
 		"ward_no": "3",
 		"ward_name": "Ayr North",
 		"map_ward_code": "S13003089",
 		"cand_ward_code": "UTW:ayr-north",
-		"seats": "4"
+		"seats": "4",
+		"election": "south-ayrshire"
 	},
 	{
-		"council": "south-ayrshire",
+		"council": "South Ayrshire",
 		"ward_no": "5",
 		"ward_name": "Ayr West",
 		"map_ward_code": "S13003091",
 		"cand_ward_code": "UTW:ayr-west",
-		"seats": "4"
+		"seats": "4",
+		"election": "south-ayrshire"
 	},
 	{
-		"council": "south-ayrshire",
+		"council": "South Ayrshire",
 		"ward_no": "8",
 		"ward_name": "Girvan and South Carrick",
 		"map_ward_code": "S13003094",
 		"cand_ward_code": "UTW:girvan-and-south-carrick",
-		"seats": "3"
+		"seats": "3",
+		"election": "south-ayrshire"
 	},
 	{
-		"council": "south-ayrshire",
+		"council": "South Ayrshire",
 		"ward_no": "6",
 		"ward_name": "Kyle",
 		"map_ward_code": "S13003092",
 		"cand_ward_code": "UTW:kyle",
-		"seats": "3"
+		"seats": "3",
+		"election": "south-ayrshire"
 	},
 	{
-		"council": "south-ayrshire",
+		"council": "South Ayrshire",
 		"ward_no": "7",
 		"ward_name": "Maybole, North Carrick and Coylton",
 		"map_ward_code": "S13003093",
 		"cand_ward_code": "UTW:maybole-north-carrick-and-coylton",
-		"seats": "3"
+		"seats": "3",
+		"election": "south-ayrshire"
 	},
 	{
-		"council": "south-ayrshire",
+		"council": "South Ayrshire",
 		"ward_no": "2",
 		"ward_name": "Prestwick",
 		"map_ward_code": "S13003088",
 		"cand_ward_code": "UTW:prestwick",
-		"seats": "4"
+		"seats": "4",
+		"election": "south-ayrshire"
 	},
 	{
-		"council": "south-ayrshire",
+		"council": "South Ayrshire",
 		"ward_no": "1",
 		"ward_name": "Troon",
 		"map_ward_code": "S13003087",
 		"cand_ward_code": "UTW:troon",
-		"seats": "4"
+		"seats": "4",
+		"election": "south-ayrshire"
 	},
 	{
-		"council": "south-lanarkshire",
+		"council": "South Lanarkshire",
 		"ward_no": "5",
 		"ward_name": "Avondale and Stonehouse",
 		"map_ward_code": "S13003099",
 		"cand_ward_code": "UTW:avondale-and-stonehouse",
-		"seats": "3"
+		"seats": "3",
+		"election": "south-lanarkshire"
 	},
 	{
-		"council": "south-lanarkshire",
+		"council": "South Lanarkshire",
 		"ward_no": "15",
 		"ward_name": "Blantyre",
 		"map_ward_code": "S13003109",
 		"cand_ward_code": "UTW:blantyre",
-		"seats": "3"
+		"seats": "3",
+		"election": "south-lanarkshire"
 	},
 	{
-		"council": "south-lanarkshire",
+		"council": "South Lanarkshire",
 		"ward_no": "16",
 		"ward_name": "Bothwell and Uddingston",
 		"map_ward_code": "S13003110",
 		"cand_ward_code": "UTW:bothwell-and-uddingston",
-		"seats": "3"
+		"seats": "3",
+		"election": "south-lanarkshire"
 	},
 	{
-		"council": "south-lanarkshire",
+		"council": "South Lanarkshire",
 		"ward_no": "14",
 		"ward_name": "Cambuslang East",
 		"map_ward_code": "S13003108",
 		"cand_ward_code": "UTW:cambuslang-east",
-		"seats": "3"
+		"seats": "3",
+		"election": "south-lanarkshire"
 	},
 	{
-		"council": "south-lanarkshire",
+		"council": "South Lanarkshire",
 		"ward_no": "13",
 		"ward_name": "Cambuslang West",
 		"map_ward_code": "S13003107",
 		"cand_ward_code": "UTW:cambuslang-west",
-		"seats": "3"
+		"seats": "3",
+		"election": "south-lanarkshire"
 	},
 	{
-		"council": "south-lanarkshire",
+		"council": "South Lanarkshire",
 		"ward_no": "3",
 		"ward_name": "Clydesdale East",
 		"map_ward_code": "S13003097",
 		"cand_ward_code": "UTW:clydesdale-east",
-		"seats": "3"
+		"seats": "3",
+		"election": "south-lanarkshire"
 	},
 	{
-		"council": "south-lanarkshire",
+		"council": "South Lanarkshire",
 		"ward_no": "2",
 		"ward_name": "Clydesdale North",
 		"map_ward_code": "S13003096",
 		"cand_ward_code": "UTW:clydesdale-north",
-		"seats": "3"
+		"seats": "3",
+		"election": "south-lanarkshire"
 	},
 	{
-		"council": "south-lanarkshire",
+		"council": "South Lanarkshire",
 		"ward_no": "4",
 		"ward_name": "Clydesdale South",
 		"map_ward_code": "S13003098",
 		"cand_ward_code": "UTW:clydesdale-south",
-		"seats": "3"
+		"seats": "3",
+		"election": "south-lanarkshire"
 	},
 	{
-		"council": "south-lanarkshire",
+		"council": "South Lanarkshire",
 		"ward_no": "1",
 		"ward_name": "Clydesdale West",
 		"map_ward_code": "S13003095",
 		"cand_ward_code": "UTW:clydesdale-west",
-		"seats": "4"
+		"seats": "4",
+		"election": "south-lanarkshire"
 	},
 	{
-		"council": "south-lanarkshire",
+		"council": "South Lanarkshire",
 		"ward_no": "8",
 		"ward_name": "East Kilbride Central North",
 		"map_ward_code": "S13003102",
 		"cand_ward_code": "UTW:east-kilbride-central-north",
-		"seats": "3"
+		"seats": "3",
+		"election": "south-lanarkshire"
 	},
 	{
-		"council": "south-lanarkshire",
+		"council": "South Lanarkshire",
 		"ward_no": "7",
 		"ward_name": "East Kilbride Central South",
 		"map_ward_code": "S13003101",
 		"cand_ward_code": "UTW:east-kilbride-central-south",
-		"seats": "3"
+		"seats": "3",
+		"election": "south-lanarkshire"
 	},
 	{
-		"council": "south-lanarkshire",
+		"council": "South Lanarkshire",
 		"ward_no": "10",
 		"ward_name": "East Kilbride East",
 		"map_ward_code": "S13003104",
 		"cand_ward_code": "UTW:east-kilbride-east",
-		"seats": "3"
+		"seats": "3",
+		"election": "south-lanarkshire"
 	},
 	{
-		"council": "south-lanarkshire",
+		"council": "South Lanarkshire",
 		"ward_no": "6",
 		"ward_name": "East Kilbride South",
 		"map_ward_code": "S13003100",
 		"cand_ward_code": "UTW:east-kilbride-south",
-		"seats": "3"
+		"seats": "3",
+		"election": "south-lanarkshire"
 	},
 	{
-		"council": "south-lanarkshire",
+		"council": "South Lanarkshire",
 		"ward_no": "9",
 		"ward_name": "East Kilbride West",
 		"map_ward_code": "S13003103",
 		"cand_ward_code": "UTW:east-kilbride-west",
-		"seats": "3"
+		"seats": "3",
+		"election": "south-lanarkshire"
 	},
 	{
-		"council": "south-lanarkshire",
+		"council": "South Lanarkshire",
 		"ward_no": "17",
 		"ward_name": "Hamilton North and East",
 		"map_ward_code": "S13003111",
 		"cand_ward_code": "UTW:hamilton-north-and-east",
-		"seats": "3"
+		"seats": "3",
+		"election": "south-lanarkshire"
 	},
 	{
-		"council": "south-lanarkshire",
+		"council": "South Lanarkshire",
 		"ward_no": "19",
 		"ward_name": "Hamilton South",
 		"map_ward_code": "S13003113",
 		"cand_ward_code": "UTW:hamilton-south",
-		"seats": "4"
+		"seats": "4",
+		"election": "south-lanarkshire"
 	},
 	{
-		"council": "south-lanarkshire",
+		"council": "South Lanarkshire",
 		"ward_no": "18",
 		"ward_name": "Hamilton West and Earnock",
 		"map_ward_code": "S13003112",
 		"cand_ward_code": "UTW:hamilton-west-and-earnock",
-		"seats": "4"
+		"seats": "4",
+		"election": "south-lanarkshire"
 	},
 	{
-		"council": "south-lanarkshire",
+		"council": "South Lanarkshire",
 		"ward_no": "20",
 		"ward_name": "Larkhall",
 		"map_ward_code": "S13003114",
 		"cand_ward_code": "UTW:larkhall",
-		"seats": "4"
+		"seats": "4",
+		"election": "south-lanarkshire"
 	},
 	{
-		"council": "south-lanarkshire",
+		"council": "South Lanarkshire",
 		"ward_no": "12",
 		"ward_name": "Rutherglen Central and North",
 		"map_ward_code": "S13003106",
 		"cand_ward_code": "UTW:rutherglen-central-and-north",
-		"seats": "3"
+		"seats": "3",
+		"election": "south-lanarkshire"
 	},
 	{
-		"council": "south-lanarkshire",
+		"council": "South Lanarkshire",
 		"ward_no": "11",
 		"ward_name": "Rutherglen South",
 		"map_ward_code": "S13003105",
 		"cand_ward_code": "UTW:rutherglen-south",
-		"seats": "3"
+		"seats": "3",
+		"election": "south-lanarkshire"
 	},
 	{
-		"council": "stirling",
+		"council": "Stirling",
 		"ward_no": "7",
 		"ward_name": "Bannockburn",
 		"map_ward_code": "S13003121",
 		"cand_ward_code": "UTW:bannockburn",
-		"seats": "3"
+		"seats": "3",
+		"election": "stirling"
 	},
 	{
-		"council": "stirling",
+		"council": "Stirling",
 		"ward_no": "3",
 		"ward_name": "Dunblane and Bridge of Allan",
 		"map_ward_code": "S13003117",
 		"cand_ward_code": "UTW:dunblane-and-bridge-of-allan",
-		"seats": "4"
+		"seats": "4",
+		"election": "stirling"
 	},
 	{
-		"council": "stirling",
+		"council": "Stirling",
 		"ward_no": "2",
 		"ward_name": "Forth and Endrick",
 		"map_ward_code": "S13003116",
 		"cand_ward_code": "UTW:forth-and-endrick",
-		"seats": "3"
+		"seats": "3",
+		"election": "stirling"
 	},
 	{
-		"council": "stirling",
+		"council": "Stirling",
 		"ward_no": "6",
 		"ward_name": "Stirling East",
 		"map_ward_code": "S13003120",
 		"cand_ward_code": "UTW:stirling-east",
-		"seats": "3"
+		"seats": "3",
+		"election": "stirling"
 	},
 	{
-		"council": "stirling",
+		"council": "Stirling",
 		"ward_no": "4",
 		"ward_name": "Stirling North",
 		"map_ward_code": "S13003118",
 		"cand_ward_code": "UTW:stirling-north",
-		"seats": "4"
+		"seats": "4",
+		"election": "stirling"
 	},
 	{
-		"council": "stirling",
+		"council": "Stirling",
 		"ward_no": "5",
 		"ward_name": "Stirling West",
 		"map_ward_code": "S13003119",
 		"cand_ward_code": "UTW:stirling-west",
-		"seats": "3"
+		"seats": "3",
+		"election": "stirling"
 	},
 	{
-		"council": "stirling",
+		"council": "Stirling",
 		"ward_no": "1",
 		"ward_name": "Trossachs and Teith",
 		"map_ward_code": "S13003115",
 		"cand_ward_code": "UTW:trossachs-and-teith",
-		"seats": "3"
+		"seats": "3",
+		"election": "stirling"
 	},
 	{
-		"council": "the-scottish-borders",
+		"council": "The Scottish Borders",
 		"ward_no": "7",
-		"ward_name": "East Berwickshire",
+		"ward_name": "East Berwickshire Ward",
 		"map_ward_code": "S13002767",
 		"cand_ward_code": "UTW:S13002767",
-		"seats": "3"
+		"seats": "3",
+		"election": "the-scottish-borders"
 	},
 	{
-		"council": "the-scottish-borders",
+		"council": "The Scottish Borders",
 		"ward_no": "3",
-		"ward_name": "Galashiels and District",
+		"ward_name": "Galashiels and District Ward",
 		"map_ward_code": "S13002763",
 		"cand_ward_code": "UTW:S13002763",
-		"seats": "4"
+		"seats": "4",
+		"election": "the-scottish-borders"
 	},
 	{
-		"council": "the-scottish-borders",
+		"council": "The Scottish Borders",
 		"ward_no": "10",
-		"ward_name": "Hawick and Denholm",
+		"ward_name": "Hawick and Denholm Ward",
 		"map_ward_code": "S13002770",
 		"cand_ward_code": "UTW:S13002770",
-		"seats": "3"
+		"seats": "3",
+		"election": "the-scottish-borders"
 	},
 	{
-		"council": "the-scottish-borders",
+		"council": "The Scottish Borders",
 		"ward_no": "11",
-		"ward_name": "Hawick and Hermitage",
+		"ward_name": "Hawick and Hermitage Ward",
 		"map_ward_code": "S13002771",
 		"cand_ward_code": "UTW:S13002771",
-		"seats": "3"
+		"seats": "3",
+		"election": "the-scottish-borders"
 	},
 	{
-		"council": "the-scottish-borders",
+		"council": "The Scottish Borders",
 		"ward_no": "9",
-		"ward_name": "Jedburgh and District",
+		"ward_name": "Jedburgh and District Ward",
 		"map_ward_code": "S13002769",
 		"cand_ward_code": "UTW:S13002769",
-		"seats": "3"
+		"seats": "3",
+		"election": "the-scottish-borders"
 	},
 	{
-		"council": "the-scottish-borders",
+		"council": "The Scottish Borders",
 		"ward_no": "8",
-		"ward_name": "Kelso and District",
+		"ward_name": "Kelso and District Ward",
 		"map_ward_code": "S13002768",
 		"cand_ward_code": "UTW:S13002768",
-		"seats": "3"
+		"seats": "3",
+		"election": "the-scottish-borders"
 	},
 	{
-		"council": "the-scottish-borders",
+		"council": "The Scottish Borders",
 		"ward_no": "5",
-		"ward_name": "Leaderdale and Melrose",
+		"ward_name": "Leaderdale and Melrose Ward",
 		"map_ward_code": "S13002765",
 		"cand_ward_code": "UTW:S13002765",
-		"seats": "3"
+		"seats": "3",
+		"election": "the-scottish-borders"
 	},
 	{
-		"council": "the-scottish-borders",
+		"council": "The Scottish Borders",
 		"ward_no": "6",
-		"ward_name": "Mid Berwickshire",
+		"ward_name": "Mid Berwickshire Ward",
 		"map_ward_code": "S13002766",
 		"cand_ward_code": "UTW:S13002766",
-		"seats": "3"
+		"seats": "3",
+		"election": "the-scottish-borders"
 	},
 	{
-		"council": "the-scottish-borders",
+		"council": "The Scottish Borders",
 		"ward_no": "4",
-		"ward_name": "Selkirkshire",
+		"ward_name": "Selkirkshire Ward",
 		"map_ward_code": "S13002764",
 		"cand_ward_code": "UTW:S13002764",
-		"seats": "3"
+		"seats": "3",
+		"election": "the-scottish-borders"
 	},
 	{
-		"council": "the-scottish-borders",
+		"council": "The Scottish Borders",
 		"ward_no": "2",
-		"ward_name": "Tweeddale East",
+		"ward_name": "Tweeddale East Ward",
 		"map_ward_code": "S13002762",
 		"cand_ward_code": "UTW:S13002762",
-		"seats": "3"
+		"seats": "3",
+		"election": "the-scottish-borders"
 	},
 	{
-		"council": "the-scottish-borders",
+		"council": "The Scottish Borders",
 		"ward_no": "1",
-		"ward_name": "Tweeddale West",
+		"ward_name": "Tweeddale West Ward",
 		"map_ward_code": "S13002761",
 		"cand_ward_code": "UTW:S13002761",
-		"seats": "3"
+		"seats": "3",
+		"election": "the-scottish-borders"
 	},
 	{
-		"council": "west-dunbartonshire",
+		"council": "West Dunbartonshire",
 		"ward_no": "5",
 		"ward_name": "Clydebank Central",
 		"map_ward_code": "S13003126",
 		"cand_ward_code": "UTW:clydebank-central",
-		"seats": "4"
+		"seats": "4",
+		"election": "west-dunbartonshire"
 	},
 	{
-		"council": "west-dunbartonshire",
+		"council": "West Dunbartonshire",
 		"ward_no": "6",
 		"ward_name": "Clydebank Waterfront",
 		"map_ward_code": "S13003127",
 		"cand_ward_code": "UTW:clydebank-waterfront",
-		"seats": "4"
+		"seats": "4",
+		"election": "west-dunbartonshire"
 	},
 	{
-		"council": "west-dunbartonshire",
+		"council": "West Dunbartonshire",
 		"ward_no": "3",
 		"ward_name": "Dumbarton",
 		"map_ward_code": "S13003124",
 		"cand_ward_code": "UTW:dumbarton",
-		"seats": "4"
+		"seats": "4",
+		"election": "west-dunbartonshire"
 	},
 	{
-		"council": "west-dunbartonshire",
+		"council": "West Dunbartonshire",
 		"ward_no": "4",
 		"ward_name": "Kilpatrick",
 		"map_ward_code": "S13003125",
 		"cand_ward_code": "UTW:kilpatrick",
-		"seats": "3"
+		"seats": "3",
+		"election": "west-dunbartonshire"
 	},
 	{
-		"council": "west-dunbartonshire",
+		"council": "West Dunbartonshire",
 		"ward_no": "2",
 		"ward_name": "Leven",
 		"map_ward_code": "S13003123",
 		"cand_ward_code": "UTW:leven",
-		"seats": "4"
+		"seats": "4",
+		"election": "west-dunbartonshire"
 	},
 	{
-		"council": "west-dunbartonshire",
+		"council": "West Dunbartonshire",
 		"ward_no": "1",
 		"ward_name": "Lomond",
 		"map_ward_code": "S13003122",
 		"cand_ward_code": "UTW:lomond",
-		"seats": "3"
+		"seats": "3",
+		"election": "west-dunbartonshire"
 	},
 	{
-		"council": "west-lothian",
+		"council": "West Lothian",
 		"ward_no": "9",
-		"ward_name": "Armadale and Blackridge",
+		"ward_name": "Armadale and Blackridge Ward",
 		"map_ward_code": "S13002828",
 		"cand_ward_code": "UTW:S13002828",
-		"seats": "3"
+		"seats": "3",
+		"election": "west-lothian"
 	},
 	{
-		"council": "west-lothian",
+		"council": "West Lothian",
 		"ward_no": "8",
-		"ward_name": "Bathgate",
+		"ward_name": "Bathgate Ward",
 		"map_ward_code": "S13002827",
 		"cand_ward_code": "UTW:S13002827",
-		"seats": "4"
+		"seats": "4",
+		"election": "west-lothian"
 	},
 	{
-		"council": "west-lothian",
+		"council": "West Lothian",
 		"ward_no": "2",
-		"ward_name": "Broxburn, Uphall and Winchburgh",
+		"ward_name": "Broxburn, Uphall and Winchburgh Ward",
 		"map_ward_code": "S13002821",
 		"cand_ward_code": "UTW:S13002821",
-		"seats": "4"
+		"seats": "4",
+		"election": "west-lothian"
 	},
 	{
-		"council": "west-lothian",
+		"council": "West Lothian",
 		"ward_no": "5",
-		"ward_name": "East Livingston and East Calder",
+		"ward_name": "East Livingston and East Calder Ward",
 		"map_ward_code": "S13002824",
 		"cand_ward_code": "UTW:S13002824",
-		"seats": "4"
+		"seats": "4",
+		"election": "west-lothian"
 	},
 	{
-		"council": "west-lothian",
+		"council": "West Lothian",
 		"ward_no": "6",
-		"ward_name": "Fauldhouse and the Breich Valley",
+		"ward_name": "Fauldhouse and the Breich Valley Ward",
 		"map_ward_code": "S13002825",
 		"cand_ward_code": "UTW:S13002825",
-		"seats": "3"
+		"seats": "3",
+		"election": "west-lothian"
 	},
 	{
-		"council": "west-lothian",
+		"council": "West Lothian",
 		"ward_no": "1",
-		"ward_name": "Linlithgow",
+		"ward_name": "Linlithgow Ward",
 		"map_ward_code": "S13002820",
 		"cand_ward_code": "UTW:S13002820",
-		"seats": "3"
+		"seats": "3",
+		"election": "west-lothian"
 	},
 	{
-		"council": "west-lothian",
+		"council": "West Lothian",
 		"ward_no": "3",
-		"ward_name": "Livingston North",
+		"ward_name": "Livingston North Ward",
 		"map_ward_code": "S13002822",
 		"cand_ward_code": "UTW:S13002822",
-		"seats": "4"
+		"seats": "4",
+		"election": "west-lothian"
 	},
 	{
-		"council": "west-lothian",
+		"council": "West Lothian",
 		"ward_no": "4",
-		"ward_name": "Livingston South",
+		"ward_name": "Livingston South Ward",
 		"map_ward_code": "S13002823",
 		"cand_ward_code": "UTW:S13002823",
-		"seats": "4"
+		"seats": "4",
+		"election": "west-lothian"
 	},
 	{
-		"council": "west-lothian",
+		"council": "West Lothian",
 		"ward_no": "7",
-		"ward_name": "Whitburn and Blackburn",
+		"ward_name": "Whitburn and Blackburn Ward",
 		"map_ward_code": "S13002826",
 		"cand_ward_code": "UTW:S13002826",
-		"seats": "4"
-	},
-	{
-		"council": ""
+		"seats": "4",
+		"election": "west-lothian"
 	}
-]
-}
+]}
