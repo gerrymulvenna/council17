@@ -362,7 +362,7 @@
 	{
 		"council": "Argyll and Bute",
 		"ward_no": "6",
-		"ward_name": "Cowal Ward",
+		"ward_name": "Cowal",
 		"map_ward_code": "S13002521",
 		"cand_ward_code": "UTW:S13002521",
 		"seats": "3",
@@ -371,7 +371,7 @@
 	{
 		"council": "Argyll and Bute",
 		"ward_no": "7",
-		"ward_name": "Dunoon Ward",
+		"ward_name": "Dunoon",
 		"map_ward_code": "S13002522",
 		"cand_ward_code": "UTW:S13002522",
 		"seats": "3",
@@ -380,7 +380,7 @@
 	{
 		"council": "Argyll and Bute",
 		"ward_no": "11",
-		"ward_name": "Helensburgh and Lomond South Ward",
+		"ward_name": "Helensburgh and Lomond South",
 		"map_ward_code": "S13002526",
 		"cand_ward_code": "UTW:S13002526",
 		"seats": "4",
@@ -389,7 +389,7 @@
 	{
 		"council": "Argyll and Bute",
 		"ward_no": "10",
-		"ward_name": "Helensburgh Central Ward",
+		"ward_name": "Helensburgh Central",
 		"map_ward_code": "S13002525",
 		"cand_ward_code": "UTW:S13002525",
 		"seats": "3",
@@ -398,7 +398,7 @@
 	{
 		"council": "Argyll and Bute",
 		"ward_no": "8",
-		"ward_name": "Isle of Bute Ward",
+		"ward_name": "Isle of Bute",
 		"map_ward_code": "S13002523",
 		"cand_ward_code": "UTW:S13002523",
 		"seats": "3",
@@ -407,7 +407,7 @@
 	{
 		"council": "Argyll and Bute",
 		"ward_no": "0",
-		"ward_name": "Kintyre and the Islands Ward",
+		"ward_name": "Kintyre and the Islands",
 		"map_ward_code": "S13002517",
 		"cand_ward_code": "UTW:S13002517",
 		"seats": "3",
@@ -416,7 +416,7 @@
 	{
 		"council": "Argyll and Bute",
 		"ward_no": "9",
-		"ward_name": "Lomond North Ward",
+		"ward_name": "Lomond North",
 		"map_ward_code": "S13002524",
 		"cand_ward_code": "UTW:S13002524",
 		"seats": "3",
@@ -425,7 +425,7 @@
 	{
 		"council": "Argyll and Bute",
 		"ward_no": "3",
-		"ward_name": "Mid Argyll Ward",
+		"ward_name": "Mid Argyll",
 		"map_ward_code": "S13002518",
 		"cand_ward_code": "UTW:S13002518",
 		"seats": "3",
@@ -434,7 +434,7 @@
 	{
 		"council": "Argyll and Bute",
 		"ward_no": "5",
-		"ward_name": "Oban North and Lorn Ward",
+		"ward_name": "Oban North and Lorn",
 		"map_ward_code": "S13002520",
 		"cand_ward_code": "UTW:S13002520",
 		"seats": "4",
@@ -443,7 +443,7 @@
 	{
 		"council": "Argyll and Bute",
 		"ward_no": "0",
-		"ward_name": "Oban South and the Isles Ward",
+		"ward_name": "Oban South and the Isles",
 		"map_ward_code": "S13002519",
 		"cand_ward_code": "UTW:S13002519",
 		"seats": "4",
@@ -452,7 +452,7 @@
 	{
 		"council": "Argyll and Bute",
 		"ward_no": "1",
-		"ward_name": "South Kintyre Ward",
+		"ward_name": "South Kintyre",
 		"map_ward_code": "S13002516",
 		"cand_ward_code": "UTW:S13002516",
 		"seats": "3",
@@ -767,7 +767,7 @@
 	{
 		"council": "Dundee City",
 		"ward_no": "4",
-		"ward_name": "Coldside Ward",
+		"ward_name": "Coldside",
 		"map_ward_code": "S13002548",
 		"cand_ward_code": "UTW:S13002548",
 		"seats": "4",
@@ -776,7 +776,7 @@
 	{
 		"council": "Dundee City",
 		"ward_no": "7",
-		"ward_name": "East End Ward",
+		"ward_name": "East End",
 		"map_ward_code": "S13002551",
 		"cand_ward_code": "UTW:S13002551",
 		"seats": "3",
@@ -785,7 +785,7 @@
 	{
 		"council": "Dundee City",
 		"ward_no": "2",
-		"ward_name": "Lochee Ward",
+		"ward_name": "Lochee",
 		"map_ward_code": "S13002546",
 		"cand_ward_code": "UTW:S13002546",
 		"seats": "4",
@@ -794,7 +794,7 @@
 	{
 		"council": "Dundee City",
 		"ward_no": "5",
-		"ward_name": "Maryfield Ward",
+		"ward_name": "Maryfield",
 		"map_ward_code": "S13002549",
 		"cand_ward_code": "UTW:S13002549",
 		"seats": "3",
@@ -803,7 +803,7 @@
 	{
 		"council": "Dundee City",
 		"ward_no": "6",
-		"ward_name": "North East Ward",
+		"ward_name": "North East",
 		"map_ward_code": "S13002830",
 		"cand_ward_code": "UTW:S13002830",
 		"seats": "3",
@@ -812,7 +812,7 @@
 	{
 		"council": "Dundee City",
 		"ward_no": "1",
-		"ward_name": "Strathmartine Ward",
+		"ward_name": "Strathmartine",
 		"map_ward_code": "S13002545",
 		"cand_ward_code": "UTW:S13002545",
 		"seats": "4",
@@ -821,7 +821,7 @@
 	{
 		"council": "Dundee City",
 		"ward_no": "8",
-		"ward_name": "The Ferry Ward",
+		"ward_name": "The Ferry",
 		"map_ward_code": "S13002552",
 		"cand_ward_code": "UTW:S13002552",
 		"seats": "4",
@@ -830,7 +830,7 @@
 	{
 		"council": "Dundee City",
 		"ward_no": "3",
-		"ward_name": "West End Ward",
+		"ward_name": "West End",
 		"map_ward_code": "S13002547",
 		"cand_ward_code": "UTW:S13002547",
 		"seats": "4",
@@ -1946,7 +1946,7 @@
 	{
 		"council": "Na h-Eileanan an Iar",
 		"ward_no": "9",
-		"ward_name": "An Taobh Siar agus Nis Ward",
+		"ward_name": "An Taobh Siar agus Nis",
 		"map_ward_code": "S13002608",
 		"cand_ward_code": "UTW:S13002608",
 		"seats": "4",
@@ -1955,7 +1955,7 @@
 	{
 		"council": "Na h-Eileanan an Iar",
 		"ward_no": "1",
-		"ward_name": "Barraigh, Bhatarsaigh, Eirisgeigh agus Uibhist a Deas Ward",
+		"ward_name": "Barraigh, Bhatarsaigh, Eirisgeigh agus Uibhist a Deas",
 		"map_ward_code": "S13002600",
 		"cand_ward_code": "UTW:S13002600",
 		"seats": "4",
@@ -1964,7 +1964,7 @@
 	{
 		"council": "Na h-Eileanan an Iar",
 		"ward_no": "2",
-		"ward_name": "Beinn na Foghla agus Uibhist a Tuath Ward",
+		"ward_name": "Beinn na Foghla agus Uibhist a Tuath",
 		"map_ward_code": "S13002601",
 		"cand_ward_code": "UTW:S13002601",
 		"seats": "3",
@@ -1973,7 +1973,7 @@
 	{
 		"council": "Na h-Eileanan an Iar",
 		"ward_no": "8",
-		"ward_name": "Loch a Tuath Ward",
+		"ward_name": "Loch a Tuath",
 		"map_ward_code": "S13002607",
 		"cand_ward_code": "UTW:S13002607",
 		"seats": "3",
@@ -1982,7 +1982,7 @@
 	{
 		"council": "Na h-Eileanan an Iar",
 		"ward_no": "3",
-		"ward_name": "Na Hearadh agus Ceann a Deas nan Loch Ward",
+		"ward_name": "Na Hearadh agus Ceann a Deas nan Loch",
 		"map_ward_code": "S13002602",
 		"cand_ward_code": "UTW:S13002602",
 		"seats": "3",
@@ -1991,7 +1991,7 @@
 	{
 		"council": "Na h-Eileanan an Iar",
 		"ward_no": "5",
-		"ward_name": "Sgire an Rubha Ward",
+		"ward_name": "Sgire an Rubha",
 		"map_ward_code": "S13002604",
 		"cand_ward_code": "UTW:S13002604",
 		"seats": "3",
@@ -2000,7 +2000,7 @@
 	{
 		"council": "Na h-Eileanan an Iar",
 		"ward_no": "4",
-		"ward_name": "Sgir'Uige agus Ceann a Tuath nan Loch Ward",
+		"ward_name": "Sgir'Uige agus Ceann a Tuath nan Loch",
 		"map_ward_code": "S13002603",
 		"cand_ward_code": "UTW:S13002603",
 		"seats": "3",
@@ -2009,7 +2009,7 @@
 	{
 		"council": "Na h-Eileanan an Iar",
 		"ward_no": "6",
-		"ward_name": "Steornabhagh a Deas Ward",
+		"ward_name": "Steornabhagh a Deas",
 		"map_ward_code": "S13002605",
 		"cand_ward_code": "UTW:S13002605",
 		"seats": "4",
@@ -2018,7 +2018,7 @@
 	{
 		"council": "Na h-Eileanan an Iar",
 		"ward_no": "7",
-		"ward_name": "Steornabhagh a Tuath Ward",
+		"ward_name": "Steornabhagh a Tuath",
 		"map_ward_code": "S13002606",
 		"cand_ward_code": "UTW:S13002606",
 		"seats": "4",
@@ -2954,7 +2954,7 @@
 	{
 		"council": "The Scottish Borders",
 		"ward_no": "7",
-		"ward_name": "East Berwickshire Ward",
+		"ward_name": "East Berwickshire",
 		"map_ward_code": "S13002767",
 		"cand_ward_code": "UTW:S13002767",
 		"seats": "3",
@@ -2963,7 +2963,7 @@
 	{
 		"council": "The Scottish Borders",
 		"ward_no": "3",
-		"ward_name": "Galashiels and District Ward",
+		"ward_name": "Galashiels and District",
 		"map_ward_code": "S13002763",
 		"cand_ward_code": "UTW:S13002763",
 		"seats": "4",
@@ -2972,7 +2972,7 @@
 	{
 		"council": "The Scottish Borders",
 		"ward_no": "10",
-		"ward_name": "Hawick and Denholm Ward",
+		"ward_name": "Hawick and Denholm",
 		"map_ward_code": "S13002770",
 		"cand_ward_code": "UTW:S13002770",
 		"seats": "3",
@@ -2981,7 +2981,7 @@
 	{
 		"council": "The Scottish Borders",
 		"ward_no": "11",
-		"ward_name": "Hawick and Hermitage Ward",
+		"ward_name": "Hawick and Hermitage",
 		"map_ward_code": "S13002771",
 		"cand_ward_code": "UTW:S13002771",
 		"seats": "3",
@@ -2990,7 +2990,7 @@
 	{
 		"council": "The Scottish Borders",
 		"ward_no": "9",
-		"ward_name": "Jedburgh and District Ward",
+		"ward_name": "Jedburgh and District",
 		"map_ward_code": "S13002769",
 		"cand_ward_code": "UTW:S13002769",
 		"seats": "3",
@@ -2999,7 +2999,7 @@
 	{
 		"council": "The Scottish Borders",
 		"ward_no": "8",
-		"ward_name": "Kelso and District Ward",
+		"ward_name": "Kelso and District",
 		"map_ward_code": "S13002768",
 		"cand_ward_code": "UTW:S13002768",
 		"seats": "3",
@@ -3008,7 +3008,7 @@
 	{
 		"council": "The Scottish Borders",
 		"ward_no": "5",
-		"ward_name": "Leaderdale and Melrose Ward",
+		"ward_name": "Leaderdale and Melrose",
 		"map_ward_code": "S13002765",
 		"cand_ward_code": "UTW:S13002765",
 		"seats": "3",
@@ -3017,7 +3017,7 @@
 	{
 		"council": "The Scottish Borders",
 		"ward_no": "6",
-		"ward_name": "Mid Berwickshire Ward",
+		"ward_name": "Mid Berwickshire",
 		"map_ward_code": "S13002766",
 		"cand_ward_code": "UTW:S13002766",
 		"seats": "3",
@@ -3026,7 +3026,7 @@
 	{
 		"council": "The Scottish Borders",
 		"ward_no": "4",
-		"ward_name": "Selkirkshire Ward",
+		"ward_name": "Selkirkshire",
 		"map_ward_code": "S13002764",
 		"cand_ward_code": "UTW:S13002764",
 		"seats": "3",
@@ -3035,7 +3035,7 @@
 	{
 		"council": "The Scottish Borders",
 		"ward_no": "2",
-		"ward_name": "Tweeddale East Ward",
+		"ward_name": "Tweeddale East",
 		"map_ward_code": "S13002762",
 		"cand_ward_code": "UTW:S13002762",
 		"seats": "3",
@@ -3044,7 +3044,7 @@
 	{
 		"council": "The Scottish Borders",
 		"ward_no": "1",
-		"ward_name": "Tweeddale West Ward",
+		"ward_name": "Tweeddale West",
 		"map_ward_code": "S13002761",
 		"cand_ward_code": "UTW:S13002761",
 		"seats": "3",
@@ -3107,7 +3107,7 @@
 	{
 		"council": "West Lothian",
 		"ward_no": "9",
-		"ward_name": "Armadale and Blackridge Ward",
+		"ward_name": "Armadale and Blackridge",
 		"map_ward_code": "S13002828",
 		"cand_ward_code": "UTW:S13002828",
 		"seats": "3",
@@ -3116,7 +3116,7 @@
 	{
 		"council": "West Lothian",
 		"ward_no": "8",
-		"ward_name": "Bathgate Ward",
+		"ward_name": "Bathgate",
 		"map_ward_code": "S13002827",
 		"cand_ward_code": "UTW:S13002827",
 		"seats": "4",
@@ -3125,7 +3125,7 @@
 	{
 		"council": "West Lothian",
 		"ward_no": "2",
-		"ward_name": "Broxburn, Uphall and Winchburgh Ward",
+		"ward_name": "Broxburn, Uphall and Winchburgh",
 		"map_ward_code": "S13002821",
 		"cand_ward_code": "UTW:S13002821",
 		"seats": "4",
@@ -3134,7 +3134,7 @@
 	{
 		"council": "West Lothian",
 		"ward_no": "5",
-		"ward_name": "East Livingston and East Calder Ward",
+		"ward_name": "East Livingston and East Calder",
 		"map_ward_code": "S13002824",
 		"cand_ward_code": "UTW:S13002824",
 		"seats": "4",
@@ -3143,7 +3143,7 @@
 	{
 		"council": "West Lothian",
 		"ward_no": "6",
-		"ward_name": "Fauldhouse and the Breich Valley Ward",
+		"ward_name": "Fauldhouse and the Breich Valley",
 		"map_ward_code": "S13002825",
 		"cand_ward_code": "UTW:S13002825",
 		"seats": "3",
@@ -3152,7 +3152,7 @@
 	{
 		"council": "West Lothian",
 		"ward_no": "1",
-		"ward_name": "Linlithgow Ward",
+		"ward_name": "Linlithgow",
 		"map_ward_code": "S13002820",
 		"cand_ward_code": "UTW:S13002820",
 		"seats": "3",
@@ -3161,7 +3161,7 @@
 	{
 		"council": "West Lothian",
 		"ward_no": "3",
-		"ward_name": "Livingston North Ward",
+		"ward_name": "Livingston North",
 		"map_ward_code": "S13002822",
 		"cand_ward_code": "UTW:S13002822",
 		"seats": "4",
@@ -3170,7 +3170,7 @@
 	{
 		"council": "West Lothian",
 		"ward_no": "4",
-		"ward_name": "Livingston South Ward",
+		"ward_name": "Livingston South",
 		"map_ward_code": "S13002823",
 		"cand_ward_code": "UTW:S13002823",
 		"seats": "4",
@@ -3179,10 +3179,10 @@
 	{
 		"council": "West Lothian",
 		"ward_no": "7",
-		"ward_name": "Whitburn and Blackburn Ward",
+		"ward_name": "Whitburn and Blackburn",
 		"map_ward_code": "S13002826",
 		"cand_ward_code": "UTW:S13002826",
 		"seats": "4",
 		"election": "west-lothian"
 	}
-]}
+])

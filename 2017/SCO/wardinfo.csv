@@ -39,17 +39,17 @@ Angus,3,Forfar and District,S13002869,UTW:forfar-and-district,4,angus
 Angus,1,Kirriemuir and Dean,S13002867,UTW:kirriemuir-and-dean,3,angus
 Angus,4,Monifieth and Sidlaw,S13002870,UTW:monifieth-and-sidlaw,4,angus
 Angus,8,Montrose and District,S13002874,UTW:montrose-and-district,4,angus
-Argyll and Bute,6,Cowal Ward,S13002521,UTW:S13002521,3,argyll-and-bute
-Argyll and Bute,7,Dunoon Ward,S13002522,UTW:S13002522,3,argyll-and-bute
-Argyll and Bute,11,Helensburgh and Lomond South Ward,S13002526,UTW:S13002526,4,argyll-and-bute
-Argyll and Bute,10,Helensburgh Central Ward,S13002525,UTW:S13002525,3,argyll-and-bute
-Argyll and Bute,8,Isle of Bute Ward,S13002523,UTW:S13002523,3,argyll-and-bute
-Argyll and Bute,0,Kintyre and the Islands Ward,S13002517,UTW:S13002517,3,argyll-and-bute
-Argyll and Bute,9,Lomond North Ward,S13002524,UTW:S13002524,3,argyll-and-bute
-Argyll and Bute,3,Mid Argyll Ward,S13002518,UTW:S13002518,3,argyll-and-bute
-Argyll and Bute,5,Oban North and Lorn Ward,S13002520,UTW:S13002520,4,argyll-and-bute
-Argyll and Bute,0,Oban South and the Isles Ward,S13002519,UTW:S13002519,4,argyll-and-bute
-Argyll and Bute,1,South Kintyre Ward,S13002516,UTW:S13002516,3,argyll-and-bute
+Argyll and Bute,6,Cowal,S13002521,UTW:S13002521,3,argyll-and-bute
+Argyll and Bute,7,Dunoon,S13002522,UTW:S13002522,3,argyll-and-bute
+Argyll and Bute,11,Helensburgh and Lomond South,S13002526,UTW:S13002526,4,argyll-and-bute
+Argyll and Bute,10,Helensburgh Central,S13002525,UTW:S13002525,3,argyll-and-bute
+Argyll and Bute,8,Isle of Bute,S13002523,UTW:S13002523,3,argyll-and-bute
+Argyll and Bute,0,Kintyre and the Islands,S13002517,UTW:S13002517,3,argyll-and-bute
+Argyll and Bute,9,Lomond North,S13002524,UTW:S13002524,3,argyll-and-bute
+Argyll and Bute,3,Mid Argyll,S13002518,UTW:S13002518,3,argyll-and-bute
+Argyll and Bute,5,Oban North and Lorn,S13002520,UTW:S13002520,4,argyll-and-bute
+Argyll and Bute,0,Oban South and the Isles,S13002519,UTW:S13002519,4,argyll-and-bute
+Argyll and Bute,1,South Kintyre,S13002516,UTW:S13002516,3,argyll-and-bute
 City of Edinburgh,1,Almond,S13002919,UTW:almond,4,city-of-edinburgh
 City of Edinburgh,11,City Centre,S13002929,UTW:city-centre,4,city-of-edinburgh
 City of Edinburgh,8,Colinton / Fairmilehead,S13002926,UTW:colintonfairmilehead,3,city-of-edinburgh
@@ -84,14 +84,14 @@ Dumfries and Galloway,2,Mid Galloway and Wigtown West,S13002881,UTW:mid-galloway
 Dumfries and Galloway,9,Nith,S13002888,UTW:nith,4,dumfries-and-galloway
 Dumfries and Galloway,6,North West Dumfries,S13002885,UTW:north-west-dumfries,4,dumfries-and-galloway
 Dumfries and Galloway,1,Stranraer and the Rhins,S13002880,UTW:stranraer-and-the-rhins,4,dumfries-and-galloway
-Dundee City,4,Coldside Ward,S13002548,UTW:S13002548,4,dundee-city
-Dundee City,7,East End Ward,S13002551,UTW:S13002551,3,dundee-city
-Dundee City,2,Lochee Ward,S13002546,UTW:S13002546,4,dundee-city
-Dundee City,5,Maryfield Ward,S13002549,UTW:S13002549,3,dundee-city
-Dundee City,6,North East Ward,S13002830,UTW:S13002830,3,dundee-city
-Dundee City,1,Strathmartine Ward,S13002545,UTW:S13002545,4,dundee-city
-Dundee City,8,The Ferry Ward,S13002552,UTW:S13002552,4,dundee-city
-Dundee City,3,West End Ward,S13002547,UTW:S13002547,4,dundee-city
+Dundee City,4,Coldside,S13002548,UTW:S13002548,4,dundee-city
+Dundee City,7,East End,S13002551,UTW:S13002551,3,dundee-city
+Dundee City,2,Lochee,S13002546,UTW:S13002546,4,dundee-city
+Dundee City,5,Maryfield,S13002549,UTW:S13002549,3,dundee-city
+Dundee City,6,North East,S13002830,UTW:S13002830,3,dundee-city
+Dundee City,1,Strathmartine,S13002545,UTW:S13002545,4,dundee-city
+Dundee City,8,The Ferry,S13002552,UTW:S13002552,4,dundee-city
+Dundee City,3,West End,S13002547,UTW:S13002547,4,dundee-city
 East Ayrshire,1,Annick,S13002892,UTW:annick,4,east-ayrshire
 East Ayrshire,7,Ballochmyle,S13002898,UTW:ballochmyle,4,east-ayrshire
 East Ayrshire,8,Cumnock and New Cumnock,S13002899,UTW:cumnock-and-new-cumnock,4,east-ayrshire
@@ -215,15 +215,15 @@ Moray,8,Forres,S13003031,UTW:forres,4,moray
 Moray,5,Heldon and Laich,S13003028,UTW:heldon-and-laich,4,moray
 Moray,2,Keith and Cullen,S13003025,UTW:keith-and-cullen,3,moray
 Moray,1,Speyside Glenlivet,S13003024,UTW:speyside-glenlivet,3,moray
-Na h-Eileanan an Iar,9,An Taobh Siar agus Nis Ward,S13002608,UTW:S13002608,4,eilean-siar
-Na h-Eileanan an Iar,1,"Barraigh, Bhatarsaigh, Eirisgeigh agus Uibhist a Deas Ward",S13002600,UTW:S13002600,4,eilean-siar
-Na h-Eileanan an Iar,2,Beinn na Foghla agus Uibhist a Tuath Ward,S13002601,UTW:S13002601,3,eilean-siar
-Na h-Eileanan an Iar,8,Loch a Tuath Ward,S13002607,UTW:S13002607,3,eilean-siar
-Na h-Eileanan an Iar,3,Na Hearadh agus Ceann a Deas nan Loch Ward,S13002602,UTW:S13002602,3,eilean-siar
-Na h-Eileanan an Iar,5,Sgire an Rubha Ward,S13002604,UTW:S13002604,3,eilean-siar
-Na h-Eileanan an Iar,4,Sgir'Uige agus Ceann a Tuath nan Loch Ward,S13002603,UTW:S13002603,3,eilean-siar
-Na h-Eileanan an Iar,6,Steornabhagh a Deas Ward,S13002605,UTW:S13002605,4,eilean-siar
-Na h-Eileanan an Iar,7,Steornabhagh a Tuath Ward,S13002606,UTW:S13002606,4,eilean-siar
+Na h-Eileanan an Iar,9,An Taobh Siar agus Nis,S13002608,UTW:S13002608,4,eilean-siar
+Na h-Eileanan an Iar,1,"Barraigh, Bhatarsaigh, Eirisgeigh agus Uibhist a Deas",S13002600,UTW:S13002600,4,eilean-siar
+Na h-Eileanan an Iar,2,Beinn na Foghla agus Uibhist a Tuath,S13002601,UTW:S13002601,3,eilean-siar
+Na h-Eileanan an Iar,8,Loch a Tuath,S13002607,UTW:S13002607,3,eilean-siar
+Na h-Eileanan an Iar,3,Na Hearadh agus Ceann a Deas nan Loch,S13002602,UTW:S13002602,3,eilean-siar
+Na h-Eileanan an Iar,5,Sgire an Rubha,S13002604,UTW:S13002604,3,eilean-siar
+Na h-Eileanan an Iar,4,Sgir'Uige agus Ceann a Tuath nan Loch,S13002603,UTW:S13002603,3,eilean-siar
+Na h-Eileanan an Iar,6,Steornabhagh a Deas,S13002605,UTW:S13002605,4,eilean-siar
+Na h-Eileanan an Iar,7,Steornabhagh a Tuath,S13002606,UTW:S13002606,4,eilean-siar
 North Ayrshire,5,Ardrossan and Arran,S13003036,UTW:ardrossan-and-arran,3,north-ayrshire
 North Ayrshire,6,Dalry and West Kilbride,S13003037,UTW:dalry-and-west-kilbride,3,north-ayrshire
 North Ayrshire,2,Irvine East,S13003033,UTW:irvine-east,3,north-ayrshire
@@ -327,29 +327,29 @@ Stirling,6,Stirling East,S13003120,UTW:stirling-east,3,stirling
 Stirling,4,Stirling North,S13003118,UTW:stirling-north,4,stirling
 Stirling,5,Stirling West,S13003119,UTW:stirling-west,3,stirling
 Stirling,1,Trossachs and Teith,S13003115,UTW:trossachs-and-teith,3,stirling
-The Scottish Borders,7,East Berwickshire Ward,S13002767,UTW:S13002767,3,the-scottish-borders
-The Scottish Borders,3,Galashiels and District Ward,S13002763,UTW:S13002763,4,the-scottish-borders
-The Scottish Borders,10,Hawick and Denholm Ward,S13002770,UTW:S13002770,3,the-scottish-borders
-The Scottish Borders,11,Hawick and Hermitage Ward,S13002771,UTW:S13002771,3,the-scottish-borders
-The Scottish Borders,9,Jedburgh and District Ward,S13002769,UTW:S13002769,3,the-scottish-borders
-The Scottish Borders,8,Kelso and District Ward,S13002768,UTW:S13002768,3,the-scottish-borders
-The Scottish Borders,5,Leaderdale and Melrose Ward,S13002765,UTW:S13002765,3,the-scottish-borders
-The Scottish Borders,6,Mid Berwickshire Ward,S13002766,UTW:S13002766,3,the-scottish-borders
-The Scottish Borders,4,Selkirkshire Ward,S13002764,UTW:S13002764,3,the-scottish-borders
-The Scottish Borders,2,Tweeddale East Ward,S13002762,UTW:S13002762,3,the-scottish-borders
-The Scottish Borders,1,Tweeddale West Ward,S13002761,UTW:S13002761,3,the-scottish-borders
+The Scottish Borders,7,East Berwickshire,S13002767,UTW:S13002767,3,the-scottish-borders
+The Scottish Borders,3,Galashiels and District,S13002763,UTW:S13002763,4,the-scottish-borders
+The Scottish Borders,10,Hawick and Denholm,S13002770,UTW:S13002770,3,the-scottish-borders
+The Scottish Borders,11,Hawick and Hermitage,S13002771,UTW:S13002771,3,the-scottish-borders
+The Scottish Borders,9,Jedburgh and District,S13002769,UTW:S13002769,3,the-scottish-borders
+The Scottish Borders,8,Kelso and District,S13002768,UTW:S13002768,3,the-scottish-borders
+The Scottish Borders,5,Leaderdale and Melrose,S13002765,UTW:S13002765,3,the-scottish-borders
+The Scottish Borders,6,Mid Berwickshire,S13002766,UTW:S13002766,3,the-scottish-borders
+The Scottish Borders,4,Selkirkshire,S13002764,UTW:S13002764,3,the-scottish-borders
+The Scottish Borders,2,Tweeddale East,S13002762,UTW:S13002762,3,the-scottish-borders
+The Scottish Borders,1,Tweeddale West,S13002761,UTW:S13002761,3,the-scottish-borders
 West Dunbartonshire,5,Clydebank Central,S13003126,UTW:clydebank-central,4,west-dunbartonshire
 West Dunbartonshire,6,Clydebank Waterfront,S13003127,UTW:clydebank-waterfront,4,west-dunbartonshire
 West Dunbartonshire,3,Dumbarton,S13003124,UTW:dumbarton,4,west-dunbartonshire
 West Dunbartonshire,4,Kilpatrick,S13003125,UTW:kilpatrick,3,west-dunbartonshire
 West Dunbartonshire,2,Leven,S13003123,UTW:leven,4,west-dunbartonshire
 West Dunbartonshire,1,Lomond,S13003122,UTW:lomond,3,west-dunbartonshire
-West Lothian,9,Armadale and Blackridge Ward,S13002828,UTW:S13002828,3,west-lothian
-West Lothian,8,Bathgate Ward,S13002827,UTW:S13002827,4,west-lothian
-West Lothian,2,"Broxburn, Uphall and Winchburgh Ward",S13002821,UTW:S13002821,4,west-lothian
-West Lothian,5,East Livingston and East Calder Ward,S13002824,UTW:S13002824,4,west-lothian
-West Lothian,6,Fauldhouse and the Breich Valley Ward,S13002825,UTW:S13002825,3,west-lothian
-West Lothian,1,Linlithgow Ward,S13002820,UTW:S13002820,3,west-lothian
-West Lothian,3,Livingston North Ward,S13002822,UTW:S13002822,4,west-lothian
-West Lothian,4,Livingston South Ward,S13002823,UTW:S13002823,4,west-lothian
-West Lothian,7,Whitburn and Blackburn Ward,S13002826,UTW:S13002826,4,west-lothian
+West Lothian,9,Armadale and Blackridge,S13002828,UTW:S13002828,3,west-lothian
+West Lothian,8,Bathgate,S13002827,UTW:S13002827,4,west-lothian
+West Lothian,2,"Broxburn, Uphall and Winchburgh",S13002821,UTW:S13002821,4,west-lothian
+West Lothian,5,East Livingston and East Calder,S13002824,UTW:S13002824,4,west-lothian
+West Lothian,6,Fauldhouse and the Breich Valley,S13002825,UTW:S13002825,3,west-lothian
+West Lothian,1,Linlithgow,S13002820,UTW:S13002820,3,west-lothian
+West Lothian,3,Livingston North,S13002822,UTW:S13002822,4,west-lothian
+West Lothian,4,Livingston South,S13002823,UTW:S13002823,4,west-lothian
+West Lothian,7,Whitburn and Blackburn,S13002826,UTW:S13002826,4,west-lothian
