@@ -36,15 +36,38 @@ $elections = array(
 "local.west-dunbartonshire.2017-05-04",
 "local.west-lothian.2017-05-04");
 
+// this array of party abbreviations mirrors the classes in parties.css
+// used in the jstree data to prefix each candidate and set the icon class
+$party_prefix = array(
+"Independent" =>"(Ind)",
+"Independent-Network" =>"(Ind)",
+"Independent-Alliance-North-Lanarkshire" =>"(Ind)",
+"Scottish-Green-Party" =>"(Green)",
+"Orkney-Manifesto-Group" =>"(OMG)",
+"Trade-Unionist-and-Socialist-Coalition" =>"(TUSC)",
+"Liberal-Democrats" =>"(LD)",
+"Labour-Party" =>"(Lab)",
+"Labour-and-Co-operative-Party" =>"(Lab)",
+"Conservative-and-Unionist-Party" =>"(Con)",
+"Scottish-National-Party-SNP" =>"(SNP)",
+"Scottish-Socialist-Party" =>"(SSP)",
+"UK-Independence-Party-UKIP" =>"(UKIP)",
+"Scottish-Libertarian-Party" =>"(SLP)",
+"Solidarity---Scotlands-Socialist-Movement" =>"(Solidarity)",
+"National-Front" =>"(NF)",
+"West-Dunbartonshire-Community-Party" =>"(WDCP)",
+"RISE---Respect-Independence-Socialism-and-Environmentalism" =>"(RISE)");
+
+
 $dataRoot = "https://candidates.democracyclub.org.uk/media/candidates-";
 $outDir = "../2017/SCO/";
 
 buildData($elections, $dataRoot, $outDir);
-buildTrees($elections, $outDir);
+buildTrees($elections, $outDir, $party_prefix);
 //boundaryWards($elections, $outDir, "boundary-wardinfo.csv");
 
 //build JSON data for the jstree library using wardinfo and the candidate JSON for each council
-function buildTrees($elections, $dataDir)
+function buildTrees($elections, $dataDir, $party_prefix)
 {
     $councils = array();
     $wards = array();
@@ -65,7 +88,7 @@ function buildTrees($elections, $dataDir)
                     echo "Candidate data " . $election . " " . $ward->post_id . "<br>\n";
                     $node = new jstree_node(++$id, "ward", $ward->post_label);
                     $node->no_candidates = count($ward->candidates);
-                    $node->children = convertCandidates ($ward->candidates, $id);
+                    $node->children = convertCandidates ($ward->candidates, $id, $party_prefix);
                     $id += count($node->children);
                     $ctotal += count($node->children);    // keep track of the total candidates
                     $cwards[$ward->post_id] = $node;
@@ -126,12 +149,16 @@ function extendNames($node)
 }
 
 // convert an array of candidates to an array of jstree nodes
-function convertCandidates($candidates, $last_id)
+function convertCandidates($candidates, $last_id, $party_prefix)
 {
     $nodes = array();
     foreach ($candidates as $c)
     {
-        $node = new jstree_node(++$last_id, "candidate", $c->name);
+        $party = stripParty($c->party_name);
+        $prefix = (array_key_exists($party, $party_prefix)) ? " " . $party_prefix[$party] . " " : " ";
+        echo "$prefix ";
+        $node = new jstree_node(++$last_id, "candidate", $prefix . $c->name);
+        $node->icon = $party;        // icon property in jstree types plugin is interpreted as a class if it does not contain /
         $node->no_candidates = 1;
         $node->properties = $c;
         $nodes[] = $node;
@@ -245,6 +272,15 @@ function splitName($name)
 		$ret['firstname'] = $firstname;
 	}
 	return ($ret);
+}
+
+// replace and remove certain characters from a party name to be consistent with the CSS form used in script.js
+// party_name.replace(/\s+/g, "-").replace(/[\',()]/g,"")
+function stripParty($name)
+{
+    $pattern = array('/\s+/', "/[',()]/");
+    $replacement = array('-', '');
+    return( preg_replace($pattern, $replacement, $name));
 }
 
 function _combine_array(&$row, $key, $header) {

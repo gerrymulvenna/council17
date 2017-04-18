@@ -62,8 +62,6 @@ $(function () {
 
 // interaction and events
 $('#council-tree').on("changed.jstree", function (e, data) {
-  console.log(data.node.a_attr);
-	data.node.li_attr.class = "Scottish-National-Party-SNP";
   console.log(data.node);
 });
 
