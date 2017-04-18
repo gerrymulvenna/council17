@@ -52,14 +52,18 @@ $(function () {
     if(to) { clearTimeout(to); }
     to = setTimeout(function () {
       var v = $('#council-tree-search').val();
-      $('#council-tree').jstree(true).search(v);
+	  if (v.length >=3)
+	  {
+	      $('#council-tree').jstree(true).search(v);
+	  }
     }, 250);
   });
 });
 
 // interaction and events
 $('#council-tree').on("changed.jstree", function (e, data) {
-  console.log(data.node.original.no_seats);
-  console.log(data.node.original.no_candidates);
+  console.log(data.node.a_attr);
+	data.node.li_attr.class = "Scottish-National-Party-SNP";
+  console.log(data.node);
 });
 
