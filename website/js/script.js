@@ -74,7 +74,8 @@ function findInfo(year, filename) {
 function findWardInfo(year, filename) {
     var request = new XMLHttpRequest();
 //    var path = '/' + year + '/SCO/' + filename + '?' + new Date().getTime(); // add ? with timestamp to force XMLHttpRequest not to cache
-    var path = '/' + year + '/SCO/' + filename; // add ? with timestamp to force XMLHttpRequest not to cache
+    var path = '/' + year + '/SCO/' + filename; 
+	console.log(path);
     request.onreadystatechange = function() {
         if (request.readyState == 4 && request.status >= 200 && request.status < 400) {
             warddata = JSON.parse(request.responseText);
@@ -143,7 +144,6 @@ candidates.update = function() {
 	var fb;
 	var fbp;
 	var web;
-	var party;
 	var linkedin;
 	var wiki;
 
@@ -162,12 +162,11 @@ candidates.update = function() {
 				fb = (candidates[i].facebook_page_url) ? '<a href="' + candidates[i].facebook_page_url + '" target="_blank"><i class="fa fa-facebook fa-fw"  title="Facebook page"></i></a>' : '';
 				fbp = (candidates[i].facebook_personal_url) ? '<a href="' + candidates[i].facebook_personal_url + '" target="_blank"><i class="fa fa-facebook-official fa-fw" title="Personal Facebook profile"></i></a>' : '';
 				web = (candidates[i].homepage_url) ? '<a href="' + candidates[i].homepage_url + '" target="_blank"><i class="fa fa-globe fa-fw" title="Homepage for this candidate"></i></a>' : '';
-				party = (candidates[i].homepage_url) ? '<a href="' + candidates[i].homepage_url + '" target="_blank"><i class="fa fa-sitemap fa-fw" title="Party website for this candidate"></i></a>' : '';
 				linkedin = (candidates[i].linkedin_url) ? '<a href="' + candidates[i].linkedin_url + '" target="_blank"><i class="fa fa-linkedin fa-fw" title="This candidate has a LinkedIn profile"></i></a>' : '';
 				wiki = (candidates[i].wikipedia_url) ? '<a href="' + candidates[i].wikipedia_url + '" target="_blank"><i class="fa fa-wikipedia-w fa-fw" title="This candidate has an entry on Wikipedia"></i></a>' : '';
-				edit = '<a href="http://candidates.democracyclub.org.uk/person/' + candidates[i].id + '/update" target="_blank"><i class="fa fa-check-square-o fa-fw" title="add or amend info about this candidate on Democracy Club"></i></a>';
+				edit = '<a href="http://candidates.democracyclub.org.uk/person/' + candidates[i].id + '/" target="_blank"><i class="fa fa-check-square-o fa-fw" title="View or edit the Democracy Club details for this candidate"></i></a>';
 
-				this.innerHTML += "<div class=\"votes " + candidates[i].party_name.replace(/\s+/g, "-").replace(/[\',–()]/g,"") + "\"></div><div id=\"candidate " + candidates[i].id + "\" class=\"tooltip " + candidates[i].party_name.replace(/\s+/g, "-").replace(/[\',–()]/g,"") + "_label\"><span class=\"tooltiptext\">" + candidates[i].party_name + "</span>" + candidates[i].name + "<div class=\"cand-icons\">" + tw + fb + fbp + web  + linkedin + wiki + party + edit + "</div></div><br/>";
+				this.innerHTML += "<div class=\"votes " + candidates[i].party_name.replace(/\s+/g, "-").replace(/[\',()]/g,"") + "\"></div><div id=\"candidate " + candidates[i].id + "\" class=\"tooltip " + candidates[i].party_name.replace(/\s+/g, "-").replace(/[\',()]/g,"") + "_label\"><span class=\"tooltiptext\">" + candidates[i].party_name + "</span>" + candidates[i].name + "<div class=\"cand-icons\">" + tw + fb + fbp + web  + linkedin + wiki  + edit + "</div></div><br/>";
 			}
 			this.innerHTML += ack;
 		}
