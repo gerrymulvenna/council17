@@ -39,9 +39,8 @@ $elections = array(
 $dataRoot = "https://candidates.democracyclub.org.uk/media/candidates-";
 $outDir = "../2017/SCO/";
 
+buildData($elections, $dataRoot, $outDir);
 buildTrees($elections, $outDir);
-
-//buildData($elections, $dataRoot, $outDir);
 //boundaryWards($elections, $outDir, "boundary-wardinfo.csv");
 
 //build JSON data for the jstree library using wardinfo and the candidate JSON for each council
@@ -166,7 +165,6 @@ function buildData($elections, $dataRoot, $dir)
             $header = array_shift($arrCand);
             array_walk($arrCand, '_combine_array', $header);
   
-            $node = new jstree_node(++$id, $matches[1]);
             foreach ($arrCand as $candidate)
             {
                 // fudge to get surname using part after last space
