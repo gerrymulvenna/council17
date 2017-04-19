@@ -62,12 +62,92 @@ $party_prefix = array(
 $dataRoot = "https://candidates.democracyclub.org.uk/media/candidates-";
 $outDir = "../2017/SCO/";
 
-buildData($elections, $dataRoot, $outDir);
-buildTrees($elections, $outDir, $party_prefix);
+//buildData($elections, $dataRoot, $outDir);
+buildPtree($elections, $outDir, $party_prefix);
+//buildCtree($elections, $outDir, $party_prefix);
 //boundaryWards($elections, $outDir, "boundary-wardinfo.csv");
 
+//build JSON data for the jstree with Parties as the children of the root using wardinfo and the candidate JSON for each council
+function buildPTree($elections, $dataDir, $party_prefix)
+{
+    $parties = array();
+    $councils = array();
+    $wards = array();
+    $cwards = array();
+    $id = 0;
+    $ctotal = 0;
+    $root = new jstree_node(++$id,"root","All Parties");
+
+    // convert the candidate data to tree nodes indexed by cand_ward_code (post_id)
+    foreach ($elections as $election)
+    {
+        if (preg_match('/^local\.(.+)\.2017-05-04$/', $election, $matches))
+  	    {
+            $cdata = readJSON($dataDir. $election . ".json");
+            foreach ($cdata->wards as $ward)
+            {
+                if (!empty($ward->post_id))
+                {
+                    echo "PARTIES candidate data " . $election . " " . $ward->post_id . "<br>\n";
+                    $node = new jstree_node(++$id, "ward", $ward->post_label);
+                    foreach ($ward->candidates as $candidate)
+                    {
+                        // create or update the party node
+                        if (array_key_exists($candidate->party_name, $parties))
+                        {
+                            if (array_key_exists($candidate->party_name . $election, $councils))
+                            {
+                                if (array_key_exists($candidate->party_name . $election . $ward->post_label, $wards))
+                                {
+                                    $ward_node = $wards[$candidate->party_name . $election . $ward->post_label];
+                                }
+                                else
+                                {
+                                    $council_node = $councils[$candidate->party_name . $election];
+                                    $party_node = $parties[$candidate->party_name];
+                                    $ward_node = new jstree_node(++$id,"ward",$ward->post_label);
+                                    $wards[$candidate->party_name . $election . $ward->post_label] = $ward_node;
+                                    $council_node->children[] = $ward_node;
+                                }
+                            }
+                            else
+                            {
+                                $party_node = $parties[$candidate->party_name];
+                                $council_node = new jstree_node(++$id,"council",$election);
+                                $councils[$candidate->party_name . $election] = $council_node;
+                                $party_node->children[] = $council_node;
+                                $ward_node = new jstree_node(++$id,"ward",$ward->post_label);
+                                $wards[$candidate->party_name . $election . $ward->post_label] = $ward_node;
+                                $council_node->children[] = $ward_node;
+                            }
+                        }
+                        else
+                        {
+                            $party_node = new jstree_node(++$id,"party",$candidate->party_name);
+                            $parties[$candidate->party_name] = $party_node;
+                            $root->children[] = $party_node;
+                            $council_node = new jstree_node(++$id,"council",$election);
+                            $councils[$candidate->party_name . $election] = $council_node;
+                            $party_node->children[] = $council_node;
+                            $ward_node = new jstree_node(++$id,"ward",$ward->post_label);
+                            $wards[$candidate->party_name . $election . $ward->post_label] = $ward_node;
+                            $council_node->children[] = $ward_node;
+                        }
+                        $root->no_candidates += 1;
+                        $cand_node = new jstree_node(++$id,"candidate",$candidate->name);
+                        $cand_node->properties = $candidate;
+                        $ward_node->children[] = $cand_node;
+                    }
+                }
+            }
+        }
+    }
+    writeJSON($root, $dataDir . "party-tree.json");
+}
+
+
 //build JSON data for the jstree library using wardinfo and the candidate JSON for each council
-function buildTrees($elections, $dataDir, $party_prefix)
+function buildCTree($elections, $dataDir, $party_prefix)
 {
     $councils = array();
     $wards = array();
