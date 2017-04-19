@@ -424,6 +424,12 @@ input[id=show-menu]:checked~#cssmenu {
 	width: 300px;
 }
 
+#tree-ack {
+	display: block;
+	padding-top: 0px;
+	width: 300px;
+}
+
 #dc-logo {
 	display: inline-block;
 }

@@ -11,11 +11,13 @@ $council_name = 'Browse data by council';  // used in the title and breadcrumb
 
 
 // function head($title, $mapName, $mapLat, $mapLong, $mapZoom, $mapProperty, $mapUnit, $mapWardDesc, $twimg)
-head("#council17 Browse data by council / ward / candidate - interface to crowd-sourced data for the Scottish Council elections 2017", $slug, 0, 0, 0, NULL, NULL);
+head("#council17 Browse data by council / ward / candidate - interface to crowd-sourced data for the Scottish Council elections 2017", $slug, 0, 0, 0, NULL, "/website/image/treeview1.png");
 navigation("Scottish Council elections 2017");
 
 echo'<div class="content">
+
 <h3>Explore and search the full set of data</h3>
+<div id="tree-ack"><div id="dc-caption">This full set of candidate data was collated by</div><div id="dc-logo"><a href="http://democracyclub.org.uk"><img src="https://democracyclub.org.uk/static/dc_theme/images/logo-with-text-2017.png" width="250"></a></div></div>
 	<input type="text" id="council-tree-search" value="" class="input" placeholder="Find council, ward or candidate" />
 	<div id="council-tree" class="demo"></div>
 
