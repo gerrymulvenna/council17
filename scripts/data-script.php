@@ -3,38 +3,38 @@
 // script to pull data from Democracy Club csv and create JSONs
 
 $elections = array(
-"local.aberdeen-city.2017-05-04",
-"local.aberdeenshire.2017-05-04",
-"local.angus.2017-05-04",
-"local.argyll-and-bute.2017-05-04",
-"local.city-of-edinburgh.2017-05-04",
-"local.clackmannanshire.2017-05-04",
-"local.dumfries-and-galloway.2017-05-04",
-"local.dundee-city.2017-05-04",
-"local.east-ayrshire.2017-05-04",
-"local.east-dunbartonshire.2017-05-04",
-"local.east-lothian.2017-05-04",
-"local.east-renfrewshire.2017-05-04",
-"local.falkirk.2017-05-04",
-"local.fife.2017-05-04",
-"local.glasgow-city.2017-05-04",
-"local.highland.2017-05-04",
-"local.inverclyde.2017-05-04",
-"local.midlothian.2017-05-04",
-"local.moray.2017-05-04",
-"local.eilean-siar.2017-05-04",
-"local.north-ayrshire.2017-05-04",
-"local.north-lanarkshire.2017-05-04",
-"local.orkney-islands.2017-05-04",
-"local.perth-and-kinross.2017-05-04",
-"local.renfrewshire.2017-05-04",
-"local.the-scottish-borders.2017-05-04",
-"local.shetland-islands.2017-05-04",
-"local.south-ayrshire.2017-05-04",
-"local.south-lanarkshire.2017-05-04",
-"local.stirling.2017-05-04",
-"local.west-dunbartonshire.2017-05-04",
-"local.west-lothian.2017-05-04");
+"local.aberdeen-city.2017-05-04" => "Aberdeen City",
+"local.aberdeenshire.2017-05-04"=> "Aberdeenshire",
+"local.angus.2017-05-04" => "Angus",
+"local.argyll-and-bute.2017-05-04" => "Argyll and Bute",
+"local.city-of-edinburgh.2017-05-04" => "City of Edinburgh",
+"local.clackmannanshire.2017-05-04" => "Clackmannanshire",
+"local.dumfries-and-galloway.2017-05-04" => "Dumfries and Galloway",
+"local.dundee-city.2017-05-04" => "Dundee City",
+"local.east-ayrshire.2017-05-04" => "East Ayrshire",
+"local.east-dunbartonshire.2017-05-04" => "East Dunbartonshire",
+"local.east-lothian.2017-05-04" => "East Lothian",
+"local.east-renfrewshire.2017-05-04" => "East Renfrewshire",
+"local.falkirk.2017-05-04" => "Falkirk",
+"local.fife.2017-05-04" => "Fife",
+"local.glasgow-city.2017-05-04" => "Glasgow City",
+"local.highland.2017-05-04" => "Highland",
+"local.inverclyde.2017-05-04" => "Inverclyde",
+"local.midlothian.2017-05-04" => "Midlothian",
+"local.moray.2017-05-04" => "Moray",
+"local.eilean-siar.2017-05-04" => "Na h-Eileanan an Iar",
+"local.north-ayrshire.2017-05-04" => "North Ayrshire",
+"local.north-lanarkshire.2017-05-04" => "North Lanarkshire",
+"local.orkney-islands.2017-05-04" => "Orkney Islands",
+"local.perth-and-kinross.2017-05-04" => "Perth and Kinross",
+"local.renfrewshire.2017-05-04" => "Renfrewshire",
+"local.the-scottish-borders.2017-05-04" => "The Scottish Borders",
+"local.shetland-islands.2017-05-04" => "Shetland Islands",
+"local.south-ayrshire.2017-05-04" => "South Ayrshire",
+"local.south-lanarkshire.2017-05-04" => "South Lanarkshire",
+"local.stirling.2017-05-04" => "Stirling",
+"local.west-dunbartonshire.2017-05-04" => "West Dunbartonshire",
+"local.west-lothian.2017-05-04" => "West Lothian");
 
 // this array of party abbreviations mirrors the classes in parties.css
 // used in the jstree data to prefix each candidate and set the icon class
@@ -62,10 +62,10 @@ $party_prefix = array(
 $dataRoot = "https://candidates.democracyclub.org.uk/media/candidates-";
 $outDir = "../2017/SCO/";
 
-//buildData($elections, $dataRoot, $outDir);
+buildData(array_keys($elections), $dataRoot, $outDir);
 buildPtree($elections, $outDir, $party_prefix);
-//buildCtree($elections, $outDir, $party_prefix);
-//boundaryWards($elections, $outDir, "boundary-wardinfo.csv");
+buildCtree(array_keys($elections), $outDir, $party_prefix);
+//boundaryWards(array_keys($elections), $outDir, "boundary-wardinfo.csv");
 
 //build JSON data for the jstree with Parties as the children of the root using wardinfo and the candidate JSON for each council
 function buildPTree($elections, $dataDir, $party_prefix)
@@ -79,7 +79,7 @@ function buildPTree($elections, $dataDir, $party_prefix)
     $root = new jstree_node(++$id,"root","All Parties");
 
     // convert the candidate data to tree nodes indexed by cand_ward_code (post_id)
-    foreach ($elections as $election)
+    foreach ($elections as $election => $council)
     {
         if (preg_match('/^local\.(.+)\.2017-05-04$/', $election, $matches))
   	    {
@@ -117,7 +117,7 @@ function buildPTree($elections, $dataDir, $party_prefix)
                             {
                                 $party_node = $parties[$candidate->party_name];
                                 $party_node->no_candidates += 1;
-                                $council_node = new jstree_node(++$id,"council",$election);
+                                $council_node = new jstree_node(++$id,"council",$council);
                                 $councils[$candidate->party_name . $election] = $council_node;
                                 $party_node->children[] = $council_node;
                                 $ward_node = new jstree_node(++$id,"ward",$ward->post_label);
@@ -132,7 +132,7 @@ function buildPTree($elections, $dataDir, $party_prefix)
 
                             $parties[$candidate->party_name] = $party_node;
                             $root->children[] = $party_node;
-                            $council_node = new jstree_node(++$id,"council",$election);
+                            $council_node = new jstree_node(++$id,"council",$council);
                             $councils[$candidate->party_name . $election] = $council_node;
                             $party_node->children[] = $council_node;
                             $ward_node = new jstree_node(++$id,"ward",$ward->post_label);
@@ -239,10 +239,10 @@ function extendParties($node)
         switch ($node->type)
         {
             case "root":
-                $node->text .= " (" . $node->no_candidates . " candidates from " . count($node->children). " political parties)";
+                $node->text .= " (" . $node->no_candidates . " candidate(s) from " . count($node->children). " political parties)";
                 break;
             case "party":
-                $node->text .= " (" . $node->no_candidates . " candidates contesting " . $node->countType("ward") . " ward(s) across " . count($node->children) . " council(s))";
+                $node->text .= " (" . $node->no_candidates . " candidate(s) contesting " . $node->countType("ward") . " ward(s) across " . count($node->children) . " council(s))";
                 break;
         }
         foreach ($node->children as $child)
