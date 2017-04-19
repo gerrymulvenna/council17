@@ -100,11 +100,14 @@ function buildPTree($elections, $dataDir, $party_prefix)
                                 if (array_key_exists($candidate->party_name . $election . $ward->post_label, $wards))
                                 {
                                     $ward_node = $wards[$candidate->party_name . $election . $ward->post_label];
+                                    $party_node = $parties[$candidate->party_name];
+                                    $party_node->no_candidates += 1;
                                 }
                                 else
                                 {
                                     $council_node = $councils[$candidate->party_name . $election];
                                     $party_node = $parties[$candidate->party_name];
+                                    $party_node->no_candidates += 1;
                                     $ward_node = new jstree_node(++$id,"ward",$ward->post_label);
                                     $wards[$candidate->party_name . $election . $ward->post_label] = $ward_node;
                                     $council_node->children[] = $ward_node;
@@ -113,6 +116,7 @@ function buildPTree($elections, $dataDir, $party_prefix)
                             else
                             {
                                 $party_node = $parties[$candidate->party_name];
+                                $party_node->no_candidates += 1;
                                 $council_node = new jstree_node(++$id,"council",$election);
                                 $councils[$candidate->party_name . $election] = $council_node;
                                 $party_node->children[] = $council_node;
@@ -123,7 +127,9 @@ function buildPTree($elections, $dataDir, $party_prefix)
                         }
                         else
                         {
-                            $party_node = new jstree_node(++$id,"party",$candidate->party_name);
+                            $party_node = new jstree_node(++$id,"party", $candidate->party_name);
+                            $party_node->no_candidates = 1;
+
                             $parties[$candidate->party_name] = $party_node;
                             $root->children[] = $party_node;
                             $council_node = new jstree_node(++$id,"council",$election);
@@ -142,6 +148,16 @@ function buildPTree($elections, $dataDir, $party_prefix)
             }
         }
     }
+    $root->sortbycandidate();
+    $root->listChildren();
+    foreach ($root->children as $party_node)
+    {
+        $party = stripParty($party_node->text);
+        $party_node->icon = $party;        // icon property in jstree types plugin is interpreted as a class if it does not contain /
+        $prefix = (array_key_exists($party, $party_prefix)) ? " " . $party_prefix[$party] . " " : " ";
+        $party_node->text = $prefix . $party_node->text;
+    }
+    extendParties($root);
     writeJSON($root, $dataDir . "party-tree.json");
 }
 
@@ -215,18 +231,40 @@ function buildCTree($elections, $dataDir, $party_prefix)
     writeJSON($root, $dataDir . "council-tree.json");
 }
 
-// quick fix to show seats and candidates for parent nodes (recursive)
-function extendNames($node)
+// quick fix to show counts in party tree (recursive)
+function extendParties($node)
 {
     if (count($node->children))
     {
-        $node->text .= " (" . $node->no_seats . " seats, " . $node->no_candidates . " candidates)";
+        switch ($node->type)
+        {
+            case "root":
+                $node->text .= " (" . $node->no_candidates . " candidates from " . count($node->children). " political parties)";
+                break;
+            case "party":
+                $node->text .= " (" . $node->no_candidates . " candidates contesting " . $node->countType("ward") . " ward(s) across " . count($node->children) . " council(s))";
+                break;
+        }
         foreach ($node->children as $child)
         {
-            extendNames($child);
+            extendParties($child);
         }
     }
 }
+
+ // quick fix to show seats and candidates for parent nodes (recursive)
+ function extendNames($node)
+ {
+     if (count($node->children))
+     {
+         $node->text .= " (" . $node->no_seats . " seats, " . $node->no_candidates . " candidates)";
+         foreach ($node->children as $child)
+         {
+             extendNames($child);
+         }
+     }
+ }
+
 
 // convert an array of candidates to an array of jstree nodes
 function convertCandidates($candidates, $last_id, $party_prefix)
@@ -425,6 +463,8 @@ class jstree_node
     public $properties;
     public $children;
 
+    private $count;
+
     function __construct($id, $type, $text, $properties = array())
     {
         $this->id = $id;
@@ -434,6 +474,64 @@ class jstree_node
         $this->no_candidates = 0;
         $this->properties = $properties;
         $this->children = array();
+    }
+
+    // recursively count nodes of a given type
+    function countType($type)
+    {
+        $this->count = 0;
+        if ($this->type == $type)
+        {
+            $this->count = 1;
+        }
+        foreach ($this->children as $child)
+        {
+            $this->count += $child->countType($type);
+        }
+        return ($this->count);
+    }
+
+    function sortbytext()
+    {
+        $tmp = $this->children;
+        usort($tmp, array($this, "cmp"));
+        $this->children = $tmp;
+    }
+
+    function cmptext($a, $b)
+    {
+        if ($a->text == $b->text) {
+            return 0;
+        }
+        return ($a->text < $b->text) ? -1 : 1;
+    }
+
+    // descending by no_candidates
+    function sortbycandidate()
+    {
+        $tmp = $this->children;
+        usort($tmp, array($this, "cmpcandidate"));
+        $this->children = $tmp;
+    }
+
+    function cmpcandidate($a, $b)
+    {
+        if ($a->no_candidates == $b->no_candidates)
+        {
+            if ($a->text == $b->text) {
+                return 0;
+            }
+            return ($a->text < $b->text) ? -1 : 1;
+        }
+        return ($a->no_candidates < $b->no_candidates) ? 1 : -1;
+    }
+
+    function listChildren()
+    {
+        foreach ($this->children as $child)
+        {
+            echo $child->text . "<br>\n";
+        }
     }
 }
 

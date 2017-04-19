@@ -83,7 +83,6 @@ $('#council-tree').jstree(
 		},
 		"candidate" : 
 		{
-			"icon" : "/website/image/person-16.png",
 			 "valid_children" : []
 		}
 	},
