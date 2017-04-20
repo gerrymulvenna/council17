@@ -1,5 +1,5 @@
-var url = new URL(window.location);
-var searchParams = new URLSearchParams(url.search);
+	var url = new URL(window.location);
+	var searchParams = new URLSearchParams(url.search);
 
 	var layerStyle = {
 		weight: 2,
@@ -21,10 +21,10 @@ var searchParams = new URLSearchParams(url.search);
 	
 	function clickFeature(e) {
 		var layer = e.target;
-		layerSelect(layer);
+		layerSelect(layer, true);
 	}
 
-	function layerSelect(layer, by_event = true)
+	function layerSelect(layer, by_event)
 	{
 		boundaries.setStyle(layerStyle);
 		layer.setStyle({
