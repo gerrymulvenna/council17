@@ -37,7 +37,7 @@ id,name,honorific_prefix,honorific_suffix,gender,birth_date,election,party_id,pa
 22501,Jim Thomson,,,,,local.stirling.2017-05-04,party:102,Scottish National Party (SNP),UTW:stirling-north,Stirling North,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
 22502,Neil Benny,,,,,local.stirling.2017-05-04,party:52,Conservative and Unionist Party,UTW:stirling-west,Stirling West,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP52
 22503,Scott Farmer,,,,,local.stirling.2017-05-04,party:102,Scottish National Party (SNP),UTW:stirling-west,Stirling West,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
-22504,Morag Fulton,,,,,local.stirling.2017-05-04,party:102,Scottish National Party (SNP),UTW:stirling-west,Stirling West,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
+22504,Morag Fulton,,,,,local.stirling.2017-05-04,party:102,Scottish National Party (SNP),UTW:stirling-west,Stirling West,,False,,moragfulton,https://www.facebook.com/moragfultonstirling/,,,,,,,,,,,82429611,2017-05-04,True,False,,,,,PP102
 20045,Kevin Ralston,,,male,,local.stirling.2017-05-04,party:130,Scottish Green Party,UTW:stirling-west,Stirling West,,,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP130
 22505,Christine Simpson,,,,,local.stirling.2017-05-04,party:53,Labour Party,UTW:stirling-west,Stirling West,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
 22506,Robert Skilleter,,,,,local.stirling.2017-05-04,party:90,Liberal Democrats,UTW:stirling-west,Stirling West,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP90

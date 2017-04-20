@@ -64,7 +64,7 @@ $outDir = "../2017/SCO/";
 
 buildData(array_keys($elections), $dataRoot, $outDir);
 buildPtree($elections, $outDir, $party_prefix);
-buildCtree(array_keys($elections), $outDir, $party_prefix);
+buildCtree($elections, $outDir, $party_prefix);
 //boundaryWards(array_keys($elections), $outDir, "boundary-wardinfo.csv");
 
 //build JSON data for the jstree with Parties as the children of the root using wardinfo and the candidate JSON for each council
@@ -172,7 +172,7 @@ function buildCTree($elections, $dataDir, $party_prefix)
     $ctotal = 0;
 
     // convert the candidate data to tree nodes indexed by cand_ward_code (post_id)
-    foreach ($elections as $election)
+    foreach ($elections as $election => $council_slug)
     {
         if (preg_match('/^local\.(.+)\.2017-05-04$/', $election, $matches))
   	    {
@@ -184,6 +184,7 @@ function buildCTree($elections, $dataDir, $party_prefix)
                     echo "Candidate data " . $election . " " . $ward->post_id . "<br>\n";
                     $node = new jstree_node(++$id, "ward", $ward->post_label);
                     $node->no_candidates = count($ward->candidates);
+                    
                     $node->children = convertCandidates ($ward->candidates, $id, $party_prefix);
                     $id += count($node->children);
                     $ctotal += count($node->children);    // keep track of the total candidates
@@ -221,6 +222,7 @@ function buildCTree($elections, $dataDir, $party_prefix)
             $ward_node->properties["cand_ward_code"] = $ward->cand_ward_code;
             $ward_node->properties["ward_no"] = $ward->ward_no;
             $ward_node->children = $cwards[$ward->cand_ward_code]->children;
+            $ward_node->applyProperty("href", "/councils/" . $ward->election . ".php?ward=" . $ward->map_ward_code);
             $ward_node->no_candidates = $cwards[$ward->cand_ward_code]->no_candidates;
             $node->children[] = $ward_node;
             $node->no_candidates += $ward_node->no_candidates;
@@ -531,6 +533,23 @@ class jstree_node
         foreach ($this->children as $child)
         {
             echo $child->text . "<br>\n";
+        }
+    }
+
+    //add a property to a node and its children
+    function applyProperty($key, $value)
+    {
+        if (is_array($this->properties))
+        {
+            $this->properties[$key] = $value;
+        }
+        elseif (is_object($this->properties))
+        {
+            $this->properties->$key = $value;
+        }
+        foreach ($this->children as $child)
+        {
+            $child->applyProperty($key, $value);
         }
     }
 }

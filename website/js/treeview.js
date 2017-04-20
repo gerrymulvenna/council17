@@ -127,6 +127,9 @@ $(function () {
 
 // interaction and events
 $('#council-tree').on("changed.jstree", function (e, data) {
-  console.log(data.node);
+  if (data.node.original.properties.hasOwnProperty('href'))
+  {
+	  window.location = data.node.original.properties.href;
+  }
 });
 
