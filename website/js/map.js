@@ -1,3 +1,6 @@
+var url = new URL(window.location);
+var searchParams = new URLSearchParams(url.search);
+
 	var layerStyle = {
 		weight: 2,
 		color: 'blue',
@@ -17,8 +20,13 @@
 	}	
 	
 	function clickFeature(e) {
-		boundaries.setStyle(layerStyle);
 		var layer = e.target;
+		layerSelect(layer);
+	}
+
+	function layerSelect(layer, by_event = true)
+	{
+		boundaries.setStyle(layerStyle);
 		layer.setStyle({
 				weight: 4,
 				fillOpacity: 0.7
@@ -29,13 +37,26 @@
 			info.update(layer.feature.properties);
 		if (mapUnit == 'Ward')
 		{
-			ward_code = e.target.feature.properties[mapWardDesc];
+			ward_code = layer.feature.properties[mapWardDesc];
 			candidates.update();
 			wardinfo.update;
+			// modify the query string in the URL to reflect the ward
+			if (searchParams.has('ward'))
+			{
+				searchParams.set('ward', ward_code);
+			}
+			else
+			{
+				searchParams.append('ward', ward_code);
+			}
+			if (by_event)
+			{
+				window.history.replaceState({}, '', `${location.pathname}?${searchParams}`);
+			}
 		}
 		else
 		{
-			councilPath = e.target.feature.properties.FILE_NAME.toLowerCase().replace(/_/g,'-');
+			councilPath = layer.feature.properties.FILE_NAME.toLowerCase().replace(/_/g,'-');
 			location.href = '/councils/' + councilPath  + '.php';
 		}
 	}
@@ -52,13 +73,14 @@
 		style: layerStyle,
 		onEachFeature: onEachFeature
 		});
-	
+
     var map = L.map('map', {
 		tap: false,
 		minZoom: 5,
 		maxZoom: 16
-		}).setView([mapLat, mapLong], mapZoom);
-	
+		});
+
+	map.setView([mapLat, mapLong], mapZoom);
 	mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
     
 	L.tileLayer(
@@ -68,6 +90,17 @@
             }).addTo(map);
 	
 	boundaries.addTo(map);			
+
+	$(window).load(function(e) {
+			if (searchParams.has('ward'))
+				{
+					var initlayer = getLayer (boundaries, mapWardDesc, searchParams.get('ward'));
+					if (initlayer)
+					{
+						layerSelect(initlayer, false);
+					}
+				}
+	});
 	
 	
 	// detect if user agent is a mobile device and if so disable map zooming panning etc
@@ -91,3 +124,15 @@
 	};
 
 	info.addTo(map);
+
+
+// examine the boundaries object (b) for a feature with a matching property (key == val)
+function getLayer(b, key, val) {
+    for (var i in b._layers)
+	{
+		if (b._layers[i].feature.properties[key] == val)
+		{
+			return b._layers[i];
+		}
+    }
+}
