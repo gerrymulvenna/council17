@@ -497,10 +497,19 @@ input[id=show-menu]:checked~#cssmenu {
 
 .main-option {
 	max-width: 150px;
-	display: inline-block;
-	margin: 5 5 5 5;
+	display: inline-grid;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.main-option h1,h2,h3,h4,h5,h6 {
+		vertical-align: top;
 }
 
 .main-option img {
 	max-width: 140px;
+}
+
+.main-option a:hover {
+	opacity: 0.5;
 }

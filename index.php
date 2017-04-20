@@ -13,19 +13,19 @@ $council_name = 'Landing page';  // used in the title and breadcrumb
 head("#council17 Browse data by map / council / party - interface to crowd-sourced data for the Scottish Council elections 2017", $slug, 0, 0, 0, NULL, "/website/image/treeview1.png");
 navigation("Scottish Council elections 2017");
  
-echo'<div class="content">
+echo'<div class="content" align="center">
 <h1>Three ways to find your #council17 candidates</h1>
 <div class="main-option">
 <h3>Interactive map</h3>
-<img src="/website/image/scotland.png">
+<a href="/councils/"><img src="/website/image/scotland.png"></a>
 </div>
 <div class="main-option">
 <h3>Drill down by council</h3>
-<img src="/website/image/treeview1.png">
+<a href="/treeview/"><img src="/website/image/treeview1.png"></a>
 </div>
 <div class="main-option">
 <h3>Drill down by party</h3>
-<img src="/website/image/treeview2.png">
+<a href="/treeview/by-party.php"><img src="/website/image/treeview2.png"></a>
 </div>
  
 </div>';
