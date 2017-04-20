@@ -73,10 +73,21 @@ function buildPTree($elections, $dataDir, $party_prefix)
     $parties = array();
     $councils = array();
     $wards = array();
+    $wardcode = array();
     $cwards = array();
     $id = 0;
     $ctotal = 0;
     $root = new jstree_node(++$id,"root","All Parties");
+
+    // get an index of ward and council info so we can build href preoperties for ward and candidate nodes
+    $wardinfo = readJSON($dataDir . "wardinfo.json");
+    foreach ($wardinfo->Wards as $ward)
+    {
+        if (!empty($ward->election))
+        {
+            $wardcode[$ward->cand_ward_code] = $ward->map_ward_code;
+        }
+    }
 
     // convert the candidate data to tree nodes indexed by cand_ward_code (post_id)
     foreach ($elections as $election => $council)
@@ -109,6 +120,7 @@ function buildPTree($elections, $dataDir, $party_prefix)
                                     $party_node = $parties[$candidate->party_name];
                                     $party_node->no_candidates += 1;
                                     $ward_node = new jstree_node(++$id,"ward",$ward->post_label);
+                                    $ward_node->properties['cand_map_code'] = $ward->post_id;
                                     $wards[$candidate->party_name . $election . $ward->post_label] = $ward_node;
                                     $council_node->children[] = $ward_node;
                                 }
@@ -121,6 +133,7 @@ function buildPTree($elections, $dataDir, $party_prefix)
                                 $councils[$candidate->party_name . $election] = $council_node;
                                 $party_node->children[] = $council_node;
                                 $ward_node = new jstree_node(++$id,"ward",$ward->post_label);
+                                $ward_node->properties['cand_map_code'] = $ward->post_id;
                                 $wards[$candidate->party_name . $election . $ward->post_label] = $ward_node;
                                 $council_node->children[] = $ward_node;
                             }
@@ -136,6 +149,7 @@ function buildPTree($elections, $dataDir, $party_prefix)
                             $councils[$candidate->party_name . $election] = $council_node;
                             $party_node->children[] = $council_node;
                             $ward_node = new jstree_node(++$id,"ward",$ward->post_label);
+                            $ward_node->properties['cand_map_code'] = $ward->post_id;
                             $wards[$candidate->party_name . $election . $ward->post_label] = $ward_node;
                             $council_node->children[] = $ward_node;
                         }
@@ -143,6 +157,7 @@ function buildPTree($elections, $dataDir, $party_prefix)
                         $cand_node = new jstree_node(++$id,"candidate",$candidate->name);
                         $cand_node->properties = $candidate;
                         $ward_node->children[] = $cand_node;
+                        $ward_node->applyProperty('href', '/councils/' . $matches[1] . ".php?ward=" . $wardcode[$ward_node->properties['cand_map_code']]);
                     }
                 }
             }

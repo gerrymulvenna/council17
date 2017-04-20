@@ -133,3 +133,12 @@ $('#council-tree').on("changed.jstree", function (e, data) {
   }
 });
 
+// interaction and events
+$('#party-tree').on("changed.jstree", function (e, data) {
+	console.log (data.node.original.properties);
+  if (data.node.original.properties.hasOwnProperty('href'))
+  {
+	  window.location = data.node.original.properties.href;
+  }
+});
+
