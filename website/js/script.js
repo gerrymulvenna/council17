@@ -21,6 +21,15 @@ function selectCouncil() {
 	});
 };
 
+// change the title to reflect the ward selected
+function updateTitle (ward, council)
+{
+	var title = document.title;
+	var pos = title.indexOf(" - ");
+	document.title = "#council17 candidates for " + ward + ", " + council + title.substr(pos)
+}
+
+
 
 
 // create data for summary header
@@ -169,6 +178,7 @@ candidates.update = function() {
 				this.innerHTML += "<div class=\"votes " + candidates[i].party_name.replace(/\s+/g, "-").replace(/[\',()]/g,"") + "\"></div><div id=\"candidate " + candidates[i].id + "\" class=\"tooltip " + candidates[i].party_name.replace(/\s+/g, "-").replace(/[\',()]/g,"") + "_label\"><span class=\"tooltiptext\">" + candidates[i].party_name + "</span>" + candidates[i].name + "<div class=\"cand-icons\">" + tw + fb + fbp + web  + linkedin + wiki  + edit + "</div></div><br/>";
 			}
 			this.innerHTML += ack;
+			updateTitle(wardstats[0].ward_name, wardstats[0].council);
 		}
 	}
 };
