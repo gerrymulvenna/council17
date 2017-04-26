@@ -39,6 +39,12 @@ $elections = array(
 // this array of party abbreviations mirrors the classes in parties.css
 // used in the jstree data to prefix each candidate and set the icon class
 $party_prefix = array(
+"Christian-Party-Proclaiming-Christs-Lordship" => "(CPPCL)",
+"Socialist-Labour-Party" => "(SocLab)",
+"Social-Democratic-Party" => "(SDP)",
+"A-Better-Britain-_-Unionist-Party" => "(ABBUP)",
+"Scottish-Unionist-Party" => "(SUP)",
+"The-Rubbish-Party" => "(RP)",
 "Independent" =>"(Ind)",
 "Independent-Network" =>"(Ind)",
 "Independent-Alliance-North-Lanarkshire" =>"(Ind)",
@@ -413,8 +419,9 @@ function splitName($name)
 // party_name.replace(/\s+/g, "-").replace(/[\',()]/g,"")
 function stripParty($name)
 {
-    $pattern = array('/\s+/', "/[',()]/");
-    $replacement = array('-', '');
+    $endash = html_entity_decode('&#x2013;', ENT_COMPAT, 'UTF-8');
+    $pattern = array('/\s+/', "/['\",()]/", "/$endash/u");
+    $replacement = array('-', '', '_');
     return( preg_replace($pattern, $replacement, $name));
 }
 

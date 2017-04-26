@@ -36,7 +36,7 @@ id,name,honorific_prefix,honorific_suffix,gender,birth_date,election,party_id,pa
 22454,Pauline Clark,,,,,local.west-lothian.2017-05-04,party:102,Scottish National Party (SNP),UTW:S13002825,Fauldhouse and the Breich Valley,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
 22455,David Dodds,,,,,local.west-lothian.2017-05-04,party:53,Labour Party,UTW:S13002825,Fauldhouse and the Breich Valley,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
 22456,Marion Kerr,,,,,local.west-lothian.2017-05-04,party:52,Conservative and Unionist Party,UTW:S13002825,Fauldhouse and the Breich Valley,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP52
-8319,Greg McCarra,,,male,,local.west-lothian.2017-05-04,party:102,Scottish National Party (SNP),UTW:S13002825,Fauldhouse and the Breich Valley,,False,,GregMcCarra,https://www.facebook.com/Greg-McCarra-SNP-598120666983132,,https://www.facebook.com/greg.mccarra,,,,,,,,,2312792741,2017-05-04,True,False,,,,,PP102
+8319,Greg McCarra,,,male,,local.west-lothian.2017-05-04,party:102,Scottish National Party (SNP),UTW:S13002825,Fauldhouse and the Breich Valley,,False,,GregMcCarra,https://www.facebook.com/Greg-McCarra-SNP-598120666983132,,https://www.facebook.com/greg.mccarra,,,,https://candidates.democracyclub.org.uk/media/images/images/8319.png,,profile-photo,,Auto imported from Twitter,2312792741,2017-05-04,True,False,,,,,PP102
 22457,Cathy Muldoon,,,,,local.west-lothian.2017-05-04,party:53,Labour Party,UTW:S13002825,Fauldhouse and the Breich Valley,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
 22414,Tom Conn,,,,,local.west-lothian.2017-05-04,party:53,Labour Party,UTW:S13002820,Linlithgow,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
 22415,Alan Cooper,,,,,local.west-lothian.2017-05-04,party:85,UK Independence Party (UKIP),UTW:S13002820,Linlithgow,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP85
@@ -50,7 +50,7 @@ id,name,honorific_prefix,honorific_suffix,gender,birth_date,election,party_id,pa
 22429,Lorna Menzies Craig,,,,,local.west-lothian.2017-05-04,party:102,Scottish National Party (SNP),UTW:S13002822,Livingston North,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
 22431,Caron Lindsay,,,,,local.west-lothian.2017-05-04,party:90,Liberal Democrats,UTW:S13002822,Livingston North,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP90
 22432,Dom McGuire,,,,,local.west-lothian.2017-05-04,party:53,Labour Party,UTW:S13002822,Livingston North,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
-22433,Anne McMillan,,,,,local.west-lothian.2017-05-04,party:53,Labour Party,UTW:S13002822,Livingston North,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
+22433,Anne McMillan,,,Female,,local.west-lothian.2017-05-04,party:53,Labour Party,UTW:S13002822,Livingston North,,False,vote4anne@outlook.com,,https://www.facebook.com/anne.mcmillan.3950,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
 22434,Andrew Miller,,,,,local.west-lothian.2017-05-04,party:102,Scottish National Party (SNP),UTW:S13002822,Livingston North,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
 22435,Mark Wilkinson,,,,,local.west-lothian.2017-05-04,party:130,Scottish Green Party,UTW:S13002822,Livingston North,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP130
 22436,Lawrence Fitzpatrick,,,,,local.west-lothian.2017-05-04,party:53,Labour Party,UTW:S13002823,Livingston South,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53

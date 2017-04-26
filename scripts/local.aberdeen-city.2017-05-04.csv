@@ -22,7 +22,7 @@ id,name,honorific_prefix,honorific_suffix,gender,birth_date,election,party_id,pa
 20904,Dell Henrickson,,,male,,local.aberdeen-city.2017-05-04,party:102,Scottish National Party (SNP),UTW:george-stharbour,George St/Harbour,,,,,https://www.facebook.com/DellSNP/,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
 21070,Ryan Houghton,,,,,local.aberdeen-city.2017-05-04,party:52,Conservative and Unionist Party,UTW:george-stharbour,George St/Harbour,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP52
 21071,Michael Frederick Hutchison,,,,,local.aberdeen-city.2017-05-04,party:102,Scottish National Party (SNP),UTW:george-stharbour,George St/Harbour,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
-20500,Guy Ingerson,,,male,,local.aberdeen-city.2017-05-04,party:130,Scottish Green Party,UTW:george-stharbour,George St/Harbour,,,,guy_ingerson,,,,,,,,,,,,800793414585323520,2017-05-04,True,False,,,,,PP130
+20500,Guy Ingerson,,,male,,local.aberdeen-city.2017-05-04,party:130,Scottish Green Party,UTW:george-stharbour,George St/Harbour,,,aberdeen@scottishgreens.org.uk,guy_ingerson,https://www.facebook.com/aberdeen.scottishgreens/,,,http://greens.scot/aberdeen,,,,,,,,800793414585323520,2017-05-04,True,False,,,,,PP130
 21072,Sandra Macdonald,,,,,local.aberdeen-city.2017-05-04,party:53,Labour Party,UTW:george-stharbour,George St/Harbour,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
 21073,Mike Scott,,,,,local.aberdeen-city.2017-05-04,party:53,Labour Party,UTW:george-stharbour,George St/Harbour,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
 21074,John William Stephen,,,,,local.aberdeen-city.2017-05-04,party:85,UK Independence Party (UKIP),UTW:george-stharbour,George St/Harbour,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP85
@@ -97,6 +97,6 @@ id,name,honorific_prefix,honorific_suffix,gender,birth_date,election,party_id,pa
 20203,Catriona Mackenzie,,,female,,local.aberdeen-city.2017-05-04,party:102,Scottish National Party (SNP),UTW:torryferryhill,Torry/Ferryhill,,,,CatMackenzieSNP,,,,,,,,,,,,450587351,2017-05-04,True,False,,,,,PP102
 21227,Gregor McAbery,,,,,local.aberdeen-city.2017-05-04,party:90,Liberal Democrats,UTW:torryferryhill,Torry/Ferryhill,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP90
 21228,William Allan McIntosh,,,,,local.aberdeen-city.2017-05-04,party:85,UK Independence Party (UKIP),UTW:torryferryhill,Torry/Ferryhill,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP85
-20502,Renée Slater,,,female,,local.aberdeen-city.2017-05-04,party:130,Scottish Green Party,UTW:torryferryhill,Torry/Ferryhill,,,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP130
+20502,Renée Slater,,,female,,local.aberdeen-city.2017-05-04,party:130,Scottish Green Party,UTW:torryferryhill,Torry/Ferryhill,,,aberdeen@scottishgreens.org.uk,helena_torry,https://www.facebook.com/aberdeen.scottishgreens/,,,http://greens.scot/aberdeen,,,,,,,,544265909,2017-05-04,True,False,,,,,PP130
 21229,Piotr Teodorowski,,,,,local.aberdeen-city.2017-05-04,party:53,Labour Party,UTW:torryferryhill,Torry/Ferryhill,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
 21230,Billy Watson,,,,,local.aberdeen-city.2017-05-04,party:2707,National Front,UTW:torryferryhill,Torry/Ferryhill,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP2707
