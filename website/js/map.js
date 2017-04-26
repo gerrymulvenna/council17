@@ -1,5 +1,4 @@
-	var url = new URL(window.location);
-	var searchParams = new URLSearchParams(url.search);
+	var searchParams = getSearchParams();
 
 	var layerStyle = {
 		weight: 2,
@@ -40,18 +39,9 @@
 			ward_code = layer.feature.properties[mapWardDesc];
 			candidates.update();
 			wardinfo.update;
-			// modify the query string in the URL to reflect the ward
-			if (searchParams.has('ward'))
-			{
-				searchParams.set('ward', ward_code);
-			}
-			else
-			{
-				searchParams.append('ward', ward_code);
-			}
 			if (by_event)
 			{
-				window.history.replaceState({}, '', `${location.pathname}?${searchParams}`);
+				setWard(ward_code);
 			}
 		}
 		else
@@ -92,9 +82,9 @@
 	boundaries.addTo(map);			
 
 	$(window).load(function(e) {
-			if (searchParams.has('ward'))
+			if (searchParams['ward'])
 				{
-					var initlayer = getLayer (boundaries, mapWardDesc, searchParams.get('ward'));
+					var initlayer = getLayer (boundaries, mapWardDesc, searchParams['ward']);
 					if (initlayer)
 					{
 						layerSelect(initlayer, false);
@@ -133,4 +123,16 @@ function getLayer(b, key, val) {
 			return b._layers[i];
 		}
     }
+}
+
+// cross-browser search param functions
+function getSearchParams(k){
+ var p={};
+ location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(s,k,v){p[k]=v})
+ return k?p[k]:p;
+}
+
+//function to record ward_code in URL search query string (assumes it is only parameter)
+function setWard(ward_code){
+  window.history.replaceState({}, '', location.pathname + '?ward=' + ward_code );
 }
