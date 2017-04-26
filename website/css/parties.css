@@ -1,3 +1,89 @@
+.Christian-Party-Proclaiming-Christs-Lordship_label:before {
+    content: "(CPPCL) ";
+}
+
+.Christian-Party-Proclaiming-Christs-Lordship_abbr:before {
+	content: "CPPCL";
+}
+
+.Christian-Party-Proclaiming-Christs-Lordship {
+    fill: rgba(59,12,114,1)!important;
+    background: rgba(59,12,114,1)!important;
+    color: #fff
+}
+
+.Socialist-Labour-Party_label:before {
+    content: "(SocLab) ";
+}
+
+.Socialist-Labour-Party_abbr:before {
+	content: "SocLab";
+}
+
+.Socialist-Labour-Party {
+    fill: #ff0000!important;
+    background: #ff0000!important;
+    color: #fff
+}
+
+.Social-Democratic-Party_label:before {
+    content: "(SDP) ";
+}
+
+.Social-Democratic-Party_abbr:before {
+	content: "SDP";
+}
+
+.Social-Democratic-Party {
+    fill: #ff0000!important;
+    background: #ff0000!important;
+    color: #fff
+}
+
+.A-Better-Britain-_-Unionist-Party_label:before {
+    content: "(ABBUP) ";
+}
+
+.A-Better-Britain-_-Unionist-Party_abbr:before {
+	content: "ABBUP";
+}
+
+.A-Better-Britain-_-Unionist-Party {
+    fill: rgba(46,79,152,1)!important;
+    background: rgba(46,79,152,1)!important;
+    color: #fff
+}
+
+.Scottish-Unionist-Party_label:before {
+    content: "(SUP) ";
+}
+
+.Scottish-Unionist-Party_abbr:before {
+	content: "SUP";
+}
+
+.Scottish-Unionist-Party {
+    fill: rgba(3,74,166,1)!important;
+    background: rgba(3,74,166,1)!important;
+    color: #fff
+}
+
+.The-Rubbish-Party_label:before {
+    content: "(RP) ";
+}
+
+.The-Rubbish-Party_abbr:before {
+	content: "RP";
+}
+
+.The-Rubbish-Party {
+    fill: rgba(195,30,47,1)!important;
+    background: rgba(195,30,47,1)!important;
+    color: #fff
+}
+
+
+
 .Independent-Network_label:before {
     content: "(Ind) ";
 }
