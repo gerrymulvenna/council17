@@ -19,7 +19,9 @@ $mapWardDesc= NULL;        // the property in the geojson file with the unique w
 // function head($title, $mapName, $mapLat, $mapLong, $mapZoom, $mapProperty, $mapUnit, $mapWardDesc, $twimg)
 head("#council17 $council_name - Map-based interface to crowd-sourced data for the Scottish Council elections 2017", $slug, $mapLat, $mapLong, $mapZoom, $mapProperty, $mapUnit, $mapWardDesc, "/website/image/$slug.png");
 navigation("Scottish Council elections 2017");
-echo '
+echo "\n<script type=\"text/javascript\">\n";
+echo "    var mapTitle = 'Scotland';\n";
+echo '</script>
 <div class="content">
 			<div id="map"></div>
 			<h2 id="breadcrumb">Scotland</h2>

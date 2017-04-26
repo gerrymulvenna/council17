@@ -84,6 +84,9 @@ function navigation($title, $param2 = NULL, $param3 = NULL, $param4 = NULL)
 
 function content($council_name, $slug, $param3 = NULL, $param4 = NULL)
 {
+echo "<script type=\"text/javascript\">\n";
+echo "    var mapTitle = '$council_name';\n";
+echo "</script>\n";
 echo '
 		<div class="content">
     			<div id="map"></div>

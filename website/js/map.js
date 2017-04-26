@@ -75,7 +75,7 @@
 		});
 
     var map = L.map('map', {
-		tap: false,
+		tap: true,
 		minZoom: 5,
 		maxZoom: 16
 		});
@@ -118,9 +118,7 @@
 
 	// method that we will use to update the map info control based on feature properties passed
 	info.update = function (props) {
-		this._div.innerHTML = '<h4>' + mapUnit + '</h4>' +  (props ?
-			'<b>' + props[mapProperty] + '</b><br />'
-			: 'Select a ' + mapUnit.toLowerCase());
+		this._div.innerHTML = '<h4>' + mapTitle + '</h4>' +  (props ? '<strong>' + props[mapProperty] + '</strong>' : 'Select a ' + mapUnit.toLowerCase());
 	};
 
 	info.addTo(map);
