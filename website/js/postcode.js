@@ -8,7 +8,6 @@ function getPostcodeData (postcode)
     var path = 'https://mapit.democracyclub.org.uk/postcode/' + ptrim; 
 	var pdata = null;
 
-	console.log(path);
     request.onreadystatechange = function() {
         if (request.readyState == 4 && request.status >= 200 && request.status < 400) {
             pdata = JSON.parse(request.responseText);

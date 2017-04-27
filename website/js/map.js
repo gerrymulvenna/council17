@@ -136,19 +136,3 @@ function getSearchParams(k){
 function setWard(ward_code){
   window.history.replaceState({}, '', location.pathname + '?ward=' + ward_code );
 }
-
-// function to return ward code for a given postcode
-function findByPostcode(b, postcode)
-{
-	console.log(getPostcodeData(postcode));
-}
-
-document.getElementById('find').onclick = function() {
-	var postcode = document.getElementById('postcode').value;
-	var bScotland = new L.GeoJSON.AJAX('/2017/SCO/boundaries/scotland.geojson', {
-		style: layerStyle,
-		onEachFeature: onEachFeature
-		});
-
-	findByPostcode(bScotland, postcode);
-};

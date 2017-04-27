@@ -448,24 +448,63 @@ module.exports = leafletPip;
 
 },{}],3:[function(require,module,exports){
 var leafletPip = require('../'),
-    map = L.map('map').setView([57.6, -4.2247], 6),
-    gjLayer = L.geoJson(scotdata);
+    map = L.map('map').setView([57, -4], 6),
+    gjLayer = L.geoJson(statesData);
 
 L.tileLayer('https://a.tiles.mapbox.com/v4/mapbox.light/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiYm9iaGFycGVyIiwiYSI6ImQwOTg1YTg2MTQzYzk3Mzc5MWVjYzFkZDQzN2M1NTUzIn0.mA2WO4WAZzh-qwoqN4QVjg')
-   .addTo(map);
+    .addTo(map);
 
 gjLayer.addTo(map);
 
 document.getElementById('me').onclick = function() {
-		var lat = document.getElementById("lat").value;
-		var lng = document.getElementById("lng").value;
-        var res = leafletPip.pointInLayer(
-            [lng,lat], gjLayer);
-        if (res.length) {
-            document.getElementById('me').innerHTML = res[0].feature.properties.name;
-        } else {
-            document.getElementById('me').innerHTML = 'You aren\'t in America';
-        }
+	var postcode = document.getElementById("postcode").value;
+	var ward_code = "";
+
+	if (postcode.length)
+	{
+		var data = getPostcodeData(postcode);
+		if (data && data.hasOwnProperty('wgs84_lon'))
+		{
+			var lat = data.wgs84_lat;
+			var lng = data.wgs84_lon;
+
+			var res = leafletPip.pointInLayer(
+				[lng, lat], gjLayer);
+			if (res.length) 
+			{
+				// find council in Scotland data
+				var council = res[0].feature.properties.FILE_NAME.toLowerCase().replace(/_/g, '-');
+				// look in council data for ward
+				wardLayer = L.geoJson(readJSON('/2017/SCO/boundaries/' + council + '.geojson'));
+				var wardres = leafletPip.pointInLayer([lng, lat], wardLayer);
+				if (wardres.length)
+				{
+					if (wardres[0].feature.properties.hasOwnProperty('CODE'))
+					{
+						ward_code = wardres[0].feature.properties.CODE;
+					}
+					else if (wardres[0].feature.properties.hasOwnProperty('Ward_Code'))
+					{
+						ward_code = wardres[0].feature.properties.Ward_Code;
+					}
+					document.getElementById('me').innerHTML = council + ' / ' + ward_code;
+					location.href = '/councils/' + council + '.php?ward=' + ward_code;
+				}
+				else
+				{
+					document.getElementById('me').innerHTML = council + ' / ward not found';
+				}
+			}
+			else 
+			{
+				document.getElementById('me').innerHTML = 'Not in Scotland';
+			}
+		}
+		else
+		{
+			document.getElementById('me').innerHTML = 'Invalid postcode - please try again';
+		}
+	}
 };
 
 },{"../":1}]},{},[3]);

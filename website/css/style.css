@@ -122,6 +122,10 @@ header p {
     padding-top: 10px;
 }
 
+.hidden {
+	display: none;
+}
+
 .candidate {
     padding: 4px;
 }
@@ -513,3 +517,22 @@ input[id=show-menu]:checked~#cssmenu {
 .main-option a:hover {
 	opacity: 0.5;
 }
+
+#me {
+	background: darkblue;
+	color:#fff;
+	border-radius:5px;
+	border-width:0;
+	padding:10px;
+	font-size:20px;
+	width: 300px;
+	text-align: center;
+}
+
+input[id=postcode] {
+	padding:10px;
+    font-size: 20px;
+	width: 280px;
+	text-align: center;
+}
+
