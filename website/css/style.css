@@ -519,7 +519,7 @@ input[id=show-menu]:checked~#cssmenu {
 }
 
 #me {
-	background: darkblue;
+	background: #34495e;
 	color:#fff;
 	border-radius:5px;
 	border-width:0;
@@ -528,6 +528,11 @@ input[id=show-menu]:checked~#cssmenu {
 	width: 300px;
 	text-align: center;
 }
+
+#me:hover {
+	color: #00eecc;
+}
+
 
 input[id=postcode] {
 	padding:10px;
