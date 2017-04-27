@@ -541,3 +541,10 @@ input[id=postcode] {
 	text-align: center;
 }
 
+.main-option input[id=postcode] {
+	max-width: 130px;
+}
+
+.main-option #me {
+	max-width: 150px;
+}
