@@ -41,7 +41,7 @@ id,name,honorific_prefix,honorific_suffix,gender,birth_date,election,party_id,pa
 22021,David William West,,,,,local.perth-and-kinross.2017-05-04,ynmp-party:2,Independent,UTW:perth-city-centre,Perth City Centre,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
 22009,Philip James Brown,,,,,local.perth-and-kinross.2017-05-04,party:90,Liberal Democrats,UTW:perth-city-north,Perth City North,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP90
 22010,Harry Coates,,,,,local.perth-and-kinross.2017-05-04,party:52,Conservative and Unionist Party,UTW:perth-city-north,Perth City North,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP52
-15353,Dave Doogan,,,male,,local.perth-and-kinross.2017-05-04,party:102,Scottish National Party (SNP),UTW:perth-city-north,Perth City North,,False,,perthnorthdave,,,https://www.facebook.com/dave.doogan,,,,,,,,,398627964,2017-05-04,True,False,,,,,PP102
+15353,Dave Doogan,,,male,,local.perth-and-kinross.2017-05-04,party:102,Scottish National Party (SNP),UTW:perth-city-north,Perth City North,,False,,perthnorthdave,,,https://www.facebook.com/dave.doogan,,,,https://candidates.democracyclub.org.uk/media/images/images/15353.png,,profile-photo,,Auto imported from Twitter,398627964,2017-05-04,True,False,,,,,PP102
 22011,Sam Finlayson,,,,,local.perth-and-kinross.2017-05-04,ynmp-party:2,Independent,UTW:perth-city-north,Perth City North,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
 22012,Arthur Alexander Frater,,,,,local.perth-and-kinross.2017-05-04,ynmp-party:2,Independent,UTW:perth-city-north,Perth City North,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
 22013,Callum Gillies,,,,,local.perth-and-kinross.2017-05-04,party:53,Labour Party,UTW:perth-city-north,Perth City North,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
