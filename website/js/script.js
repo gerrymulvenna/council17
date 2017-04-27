@@ -1,7 +1,3 @@
-var testString = "A Better Britain \u2013 Unionist Party";
-console.log(testString);
-console.log(testString.replace(/\u2013/g, '_'));
-
 var checkedYear = 2017;
 var electionDate = '2017-05-04';
 var jsondata = [];

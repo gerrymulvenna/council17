@@ -16,6 +16,7 @@ function head($title, $mapName, $mapLat, $mapLong, $mapZoom, $mapProperty, $mapU
   <script src="/website/js/jstree/jstree.min.js"></script>
   <script src="/website/js/jstree/jstree.types.js"></script>
   <script src="/website/js/jstree/jstree.search.js"></script>
+  <script src="/website/js/leaflet-pip.js"></script>
 <script type="text/javascript">
 // global vars for maps.js
 ';
