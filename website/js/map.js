@@ -101,11 +101,6 @@
 	if ( /Android|webOS|iPhone|iPad|iPod|Blackberry|IEMobile|Opera Mini|Mobi/.test(navigator.userAgent)) {
 		console.log('mobile device detected');
 	}
-	// detect if user agent is iOS and provide two-tap guidance
-	if ( /iPhone|iPad|iPod/.test(navigator.userAgent)) {
-		tips.update('Tap once to preview, a second time to select');
-	}
-
 	// element to display council / ward information on map
 	var info = L.control();
 	info.onAdd = function (map) {
@@ -138,6 +133,11 @@
 		}
 	};
 	tips.addTo(map);
+
+	// detect if user agent is iOS and provide two-tap guidance
+	if ( /iPhone|iPad|iPod/.test(navigator.userAgent)) {
+		tips.update('Tap once to preview, a second time to select');
+	}
 
 
 // examine the boundaries object (b) for a feature with a matching property (key == val)
