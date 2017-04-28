@@ -39,6 +39,7 @@
 			ward_code = layer.feature.properties[mapWardDesc];
 			candidates.update();
 			wardinfo.update;
+			tips.update();
 			if (by_event)
 			{
 				setWard(ward_code);
@@ -92,26 +93,47 @@
 				}
 	});
 	
+	$(window).resize(function(e) {
+	});
+	
 	
 	// detect if user agent is a mobile device and if so disable map zooming panning etc
 	if ( /Android|webOS|iPhone|iPad|iPod|Blackberry|IEMobile|Opera Mini|Mobi/.test(navigator.userAgent)) {
 		console.log('mobile device detected');
 	}
-	
+
+	// element to display council / ward information on map
 	var info = L.control();
-    
 	info.onAdd = function (map) {
 		this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info" inside the map
 		this.update();
 		return this._div;
 	};
-
 	// method that we will use to update the map info control based on feature properties passed
 	info.update = function (props) {
 		this._div.innerHTML = '<h4>' + mapTitle + '</h4>' +  (props ? '<strong>' + props[mapProperty] + '</strong>' : 'Select a ' + mapUnit.toLowerCase());
 	};
-
 	info.addTo(map);
+
+	// element to display tips
+	var tips = L.control();
+	tips.onAdd = function (map) {
+		this._div = L.DomUtil.create('div', 'tips'); // create a div with a class "tips" inside the map
+		return this._div;
+	};
+	// display a prompt to look at candidates below on a small screen
+	tips.update = function () {
+		if ($(window).width()<792)
+		{
+			tips._div.style.display = "block";
+			this._div.innerHTML = '<a href="#candidates">Go to candidates list below</a>';
+		}
+		else
+		{
+			tips._div.style.display = "none";
+		}
+	};
+	tips.addTo(map);
 
 
 // examine the boundaries object (b) for a feature with a matching property (key == val)

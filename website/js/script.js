@@ -165,7 +165,7 @@ candidates.update = function() {
 		if (ward.length > 0)
 		{
 			var candidates = ward[0].candidates;
-			wardinfo.innerHTML = '<h3>' + wardstats[0].ward_name + ' ward<br><span class="seats">' + no_seats + candidates.length + ' candidates</span></h3>';
+			wardinfo.innerHTML = '<a onclick=\'tips._div.style.display = "none";\' name="candidates"><h3>' + wardstats[0].ward_name + ' ward<br><span class="seats">' + no_seats + candidates.length + ' candidates</span></h3></a>';
 			for (i = 0; i < candidates.length; i++) {
 				tw = (candidates[i].twitter_username) ? '<a href="http://twitter.com/' + candidates[i].twitter_username + '" target="~_blank"><i class="fa fa-twitter fa-fw" title="@' +  candidates[i].twitter_username + ' on Twitter"></i></a>' : '';
 				fb = (candidates[i].facebook_page_url) ? '<a href="' + candidates[i].facebook_page_url + '" target="_blank"><i class="fa fa-facebook fa-fw"  title="Facebook page"></i></a>' : '';
