@@ -136,7 +136,7 @@
 
 	// detect if user agent is iOS and provide two-tap guidance
 	if ( /iPhone|iPad|iPod/.test(navigator.userAgent)) {
-		tips.update('Tap once to preview, a second time to select');
+		tips.update('Tap once to preview<br>a second time to select');
 	}
 
 
