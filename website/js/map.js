@@ -39,7 +39,7 @@
 			ward_code = layer.feature.properties[mapWardDesc];
 			candidates.update();
 			wardinfo.update;
-			tips.update();
+			tips.update('<a href="#candidates">Go to candidates list below</a>');
 			if (by_event)
 			{
 				setWard(ward_code);
@@ -101,6 +101,10 @@
 	if ( /Android|webOS|iPhone|iPad|iPod|Blackberry|IEMobile|Opera Mini|Mobi/.test(navigator.userAgent)) {
 		console.log('mobile device detected');
 	}
+	// detect if user agent is iOS and provide two-tap guidance
+	if ( /iPhone|iPad|iPod/.test(navigator.userAgent)) {
+		tips.update('Tap once to preview, a second time to select');
+	}
 
 	// element to display council / ward information on map
 	var info = L.control();
@@ -122,11 +126,11 @@
 		return this._div;
 	};
 	// display a prompt to look at candidates below on a small screen
-	tips.update = function () {
+	tips.update = function (msg) {
 		if ($(window).width()<792)
 		{
 			tips._div.style.display = "block";
-			this._div.innerHTML = '<a href="#candidates">Go to candidates list below</a>';
+			this._div.innerHTML = msg;
 		}
 		else
 		{
