@@ -1,6 +1,6 @@
 //function generateData() {
 
-var constituencies = ["Belfast East", "Belfast North", "Belfast South", "Belfast West", "East Antrim", "East Londonderry", "Fermanagh and South Tyrone", "Foyle", "Lagan Valley", "Mid Ulster", "Newry and Armagh", "North Antrim", "North Down", "South Antrim", "South Down", "Strangford", "Upper Bann", "West Tyrone"];
+var constituencies = ["all-the-way", "only-so-far"];
 
 
 var parties_info = {
@@ -149,7 +149,7 @@ var parties_info = {
 
 var transferData = {};
 function getTransfersData(year) {
-	$.getJSON("/" + year + "/NI/party-transfers.json", function (json) {
+	$.getJSON("/2017/SCO/simulation/party-transfers.json", function (json) {
 		console.log(json);
 		var transfers = {};
 		$.each(json, function (i, constituency) {

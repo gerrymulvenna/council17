@@ -157,3 +157,7 @@
 #charttooltip.hidden {
 	display: none;
 }
+
+#overview_container {
+	display: none;
+}

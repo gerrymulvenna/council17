@@ -6,7 +6,7 @@
 
 var loop;
 
-function animateStages(year,constituencyFolder) {
+function animateStages(year,council,constituencyFolder) {
 
     clearInterval(loop);
     $("#animation").html("");
@@ -33,7 +33,7 @@ function animateStages(year,constituencyFolder) {
             $.ajax({
                 'async': false,
                 'global': false,
-                'url': '/' + year + "/constituency/" + constituencyFolder + "/ResultsJson.json",
+                'url': '/' + year + '/SCO/' + council + '/' + constituencyFolder + '/ResultsJson.json',
                 'dataType': "json",
                 'success': function (data) {
                     json = data;

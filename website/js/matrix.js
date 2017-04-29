@@ -1,4 +1,6 @@
-        $(document).ready(function() {
+var council = "simulation";
+		
+		$(document).ready(function() {
             $.ajaxSetup({
                 cache: false
             });
@@ -15,7 +17,7 @@
         });
 
         var year = $("#yearSelect :selected").text();
-        $.getJSON('/' + year + "/NI/all-constituency-info.json", function(data) {
+        $.getJSON('/' + year + "/SCO/" + council + "/all-constituency-info.json", function(data) {
             var constituencies = data.Constituencies;
             var constituencySelect = $("#constituencySelect");
             var yearSelect = $("#yearSelect");
@@ -27,21 +29,21 @@
             constituencySelect.change(function() {
                 var constituencyFolder = $("#constituencySelect :selected").val();
                 var year = $("#yearSelect :selected").text();
-                countMatrix(year, constituencyFolder);
-                animateStages(year, constituencyFolder);
+                countMatrix(year, council, constituencyFolder);
+                animateStages(year, council, constituencyFolder);
             })
             yearSelect.change(function() {
                 var constituencyFolder = $("#constituencySelect :selected").val();
                 var year = $("#yearSelect :selected").text();
                 getTransfersData(year);
-                countMatrix(year, constituencyFolder);
-                animateStages(year, constituencyFolder);
+                countMatrix(year, council, constituencyFolder);
+                animateStages(year, council, constituencyFolder);
             })
             var constituencyFolder = $("#constituencySelect :selected").val();
             var year = $("#yearSelect :selected").text();
             getTransfersData(year);
-            countMatrix(year, constituencyFolder);
-            animateStages(year, constituencyFolder);
+            countMatrix(year, council, constituencyFolder);
+            animateStages(year, council, constituencyFolder);
         })
 
 // create data for summary header
@@ -63,10 +65,10 @@ function seatsSummary() {
 }
 
 // function to retrive vega spec to populate count matrix //
-function countMatrix(year, directory) {
+function countMatrix(year, council, directory) {
     $.get("/website/jsonspec/countSpec.json", function(json) {
         var spec = JSON5.parse(json);
-        spec.data[0].url = '/' + year + '/constituency/' + directory + '/Count.csv'; // needed to dynamically change the data url in spec to our desired path
+        spec.data[0].url = '/' + year + '/SCO/' + council + "/" + directory + '/Count.csv'; // needed to dynamically change the data url in spec to our desired path
         vg.parse.spec(spec, function(chart) {
             var view = chart({
                     el: "#count_matrix"
