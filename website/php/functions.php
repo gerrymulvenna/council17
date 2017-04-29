@@ -255,7 +255,6 @@ function results_foot($param1 = NULL, $param2 = NULL, $param3 = NULL, $param4 = 
 echo '
     <!--Load local scripts-->
     <script type="text/javascript" src="/website/js/d3hexbin.js"></script>
-    <script type="text/javascript" src="/website/js/script.js"></script>
     <script type="text/javascript" src="/website/js/stages2.js"></script>
     <script type="text/javascript" src="/website/js/transfers.js"></script>
     <script type="text/javascript" src="/website/js/overview_matrix2.js"></script>

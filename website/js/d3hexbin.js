@@ -18,7 +18,7 @@ function getdata(year) {
         if (error) return console.warn(error);
         data = json;
         pushdata(data, "Party_Name", "asc");
-        document.getElementById("number-elected").innerHTML = candidate.length + ' candidates elected. Hover to see who and where.';
+//        document.getElementById("number-elected").innerHTML = candidate.length + ' candidates elected. Hover to see who and where.';
         visualise();
     });
 }
