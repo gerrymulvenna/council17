@@ -3,7 +3,7 @@ id,name,honorific_prefix,honorific_suffix,gender,birth_date,election,party_id,pa
 22511,Margaret Brisley,,,,,local.stirling.2017-05-04,party:53,Labour Party,UTW:bannockburn,Bannockburn,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
 22512,Gordon Bruce,,,,,local.stirling.2017-05-04,party:90,Liberal Democrats,UTW:bannockburn,Bannockburn,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP90
 1218,Paul Henke,,,male,,local.stirling.2017-05-04,party:52,Conservative and Unionist Party,UTW:bannockburn,Bannockburn,,False,henke@sol.co.uk,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP52
-20769,Alasdair MacPherson,,,male,,local.stirling.2017-05-04,party:102,Scottish National Party (SNP),UTW:bannockburn,Bannockburn,,,,councillormacph,,,,,,,,,,,,224407276,2017-05-04,True,False,,,,,PP102
+20769,Alasdair MacPherson,,,male,,local.stirling.2017-05-04,party:102,Scottish National Party (SNP),UTW:bannockburn,Bannockburn,,,,councillormacph,,,,,,,https://candidates.democracyclub.org.uk/media/images/images/20769.png,,profile-photo,,Auto imported from Twitter,224407276,2017-05-04,True,False,,,,,PP102
 19933,Jennifer Tollemache,,,female,,local.stirling.2017-05-04,party:130,Scottish Green Party,UTW:bannockburn,Bannockburn,,,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP130
 22513,Violet Weir,,,,,local.stirling.2017-05-04,party:53,Labour Party,UTW:bannockburn,Bannockburn,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
 22490,Stuart Auld,,,,,local.stirling.2017-05-04,party:90,Liberal Democrats,UTW:dunblane-and-bridge-of-allan,Dunblane and Bridge of Allan,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP90
@@ -26,7 +26,7 @@ id,name,honorific_prefix,honorific_suffix,gender,birth_date,election,party_id,pa
 22509,Chris Kane,,,,,local.stirling.2017-05-04,party:53,Labour Party,UTW:stirling-east,Stirling East,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
 20766,Alison Laurie,,,female,,local.stirling.2017-05-04,party:102,Scottish National Party (SNP),UTW:stirling-east,Stirling East,,,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
 22510,Corrie McChord,,,,,local.stirling.2017-05-04,party:53,Labour Party,UTW:stirling-east,Stirling East,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
-20767,Gerry McLaughlan,,,male,,local.stirling.2017-05-04,party:102,Scottish National Party (SNP),UTW:stirling-east,Stirling East,,,,gerrymcsnp,https://www.facebook.com/GerryMcLaughlanSNP/,,,,,,,,,,,948743978,2017-05-04,True,False,,,,,PP102
+20767,Gerry McLaughlan,,,male,,local.stirling.2017-05-04,party:102,Scottish National Party (SNP),UTW:stirling-east,Stirling East,,,,gerrymcsnp,https://www.facebook.com/GerryMcLaughlanSNP/,,,,,,https://candidates.democracyclub.org.uk/media/images/images/20767.png,,profile-photo,,Auto imported from Twitter,948743978,2017-05-04,True,False,,,,,PP102
 20042,Chloe Campbell,,,female,,local.stirling.2017-05-04,party:130,Scottish Green Party,UTW:stirling-north,Stirling North,,,,,https://www.facebook.com/chloecampbellgreen/,,,,,https://www.linkedin.com/in/chloe-campbell-9a013365/,,,,,,,2017-05-04,True,False,,,,,PP130
 22495,Danny Gibson,,,,,local.stirling.2017-05-04,party:53,Labour Party,UTW:stirling-north,Stirling North,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
 22496,James McDonald,,,,,local.stirling.2017-05-04,ynmp-party:2,Independent,UTW:stirling-north,Stirling North,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
