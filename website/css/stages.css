@@ -161,3 +161,7 @@
 #overview_container {
 	display: none;
 }
+
+#seats_summary {
+	display: none;
+}
