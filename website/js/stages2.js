@@ -173,7 +173,7 @@ function animateStages(year,council,constituencyFolder) {
         firstCount();  //run the first count
         var countNumber = 2;  //global loop variable
         // set the advance count function to run in a loop
-        loop = window.setInterval(advanceCount,4000*speed);
+//        loop = window.setInterval(advanceCount,4000*speed);
     }else{
         //if we didn't load a constituency var then we have no data yet
         $("#quota").text("There is no data up for this constituency at present. Once we receive and add it, it will display here.");
