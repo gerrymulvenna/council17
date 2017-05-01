@@ -1,4 +1,4 @@
-var council = "simulation";
+var council = "city-of-edinburgh";
 		
 		$(document).ready(function() {
             $.ajaxSetup({

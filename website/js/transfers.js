@@ -1,6 +1,6 @@
 //function generateData() {
 
-var constituencies = ["all-the-way", "only-so-far"];
+var constituencies = ["Corstorphine/Murrayfield"];
 
 
 var parties_info = {
