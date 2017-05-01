@@ -421,6 +421,9 @@ function animateStages(year,council,constituencyFolder) {
         for(var i=0;i<copy.length;i++){
             singleCountDict[copy[i]["key"]].order = i+start;
             candidatesDict[copy[i]["key"]].order = i+start;
+			console.log(singleCountDict[copy[i]["key"]]);
+			console.log(candidatesDict[copy[i]["key"]]);
+			console.log("----");
             if (singleCountDict[copy[i]["key"]]["status"] != "" ) {
                 candidatesDict[copy[i]["key"]].status = singleCountDict[copy[i]["key"]]["status"];
             }
