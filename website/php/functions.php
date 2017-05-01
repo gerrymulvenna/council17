@@ -74,8 +74,7 @@ echo '
             </select>
                     <select id="yearSelect">
                 <option>2017</option>
-                <option>2016</option>
-                <option>2011</option>
+                <option>2012</option>
             </select>
                 </div>
             </div>
