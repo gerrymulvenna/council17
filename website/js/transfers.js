@@ -44,7 +44,7 @@ var parties_info = {
     "Party_Abbreviation": "TUV",
     "Hex_Col": "#303F9F"
   },
-  "UK Independence Party": {
+  "UK Independence Party (UKIP)": {
     "Party_Id": 689,
     "Party_Abbreviation": "UKIP",
     "Hex_Col": "#9C27B0"

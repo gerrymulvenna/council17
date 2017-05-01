@@ -103,7 +103,7 @@ function animateStages(year,council,constituencyFolder) {
             if (!(data[i]["Candidate_Id"] in candidatesDict)) {
                 var party = data[i]["Party_Name"];
                 if (typeof(party)!="string"){ party = "Non-Party";}
-                party=party.replace(/\s+/g,"-");
+                party=party.replace(/\s+/g,"-").replace(/[\'\",()]/g,"").replace(/\u2013/g, '_');
                 candidates.push({
                     name:data[i]["Firstname"]+" "+((typeof(data[i]["Surname"])=="string")?data[i]["Surname"]:""),
                     id:data[i]["Candidate_Id"],
