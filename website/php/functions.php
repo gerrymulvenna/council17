@@ -92,14 +92,6 @@ echo '
                 <div id="animation"></div>
             </div>
 
-            <div class="row">
-                <h3>Count Matrix</h3>
-                <div id="overview_container">
-                    <div id="count_matrix"></div>
-                </div>
-                <div id="matrixtooltip"></div>
-                <p>Red = Eliminated, Green = Elected</p>
-            </div>
 
             <div class="row">
                 <h3>Party to Party Transfers</h3>

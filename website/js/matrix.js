@@ -29,20 +29,20 @@ var council = "simulation";
             constituencySelect.change(function() {
                 var constituencyFolder = $("#constituencySelect :selected").val();
                 var year = $("#yearSelect :selected").text();
-                countMatrix(year, council, constituencyFolder);
+                //countMatrix(year, council, constituencyFolder);
                 animateStages(year, council, constituencyFolder);
             })
             yearSelect.change(function() {
                 var constituencyFolder = $("#constituencySelect :selected").val();
                 var year = $("#yearSelect :selected").text();
                 getTransfersData(year);
-                countMatrix(year, council, constituencyFolder);
+                //countMatrix(year, council, constituencyFolder);
                 animateStages(year, council, constituencyFolder);
             })
             var constituencyFolder = $("#constituencySelect :selected").val();
             var year = $("#yearSelect :selected").text();
             getTransfersData(year);
-            countMatrix(year, council, constituencyFolder);
+            //countMatrix(year, council, constituencyFolder);
             animateStages(year, council, constituencyFolder);
         })
 
