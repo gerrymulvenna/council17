@@ -14,9 +14,9 @@ function animateStages(year,council,constituencyFolder) {
     $("#animation").append("<div id='theline' />")
     var playButton = $("#pause-replay");
     playButton.unbind();
-    if (playButton.hasClass("fa-play")) {
-        playButton.removeClass("fa-play");
-        playButton.addClass("fa-pause");
+    if (playButton.hasClass("fa-pause")) {
+        playButton.removeClass("fa-pause");
+        playButton.addClass("fa-play");
     }
     var speed = 1;
     var leftPadding = 10;
@@ -24,7 +24,7 @@ function animateStages(year,council,constituencyFolder) {
     var startLeft = leftPadding+nameSpace;
     var voteWidth = 400; // default = 600
     var postPosition = leftPadding + nameSpace + voteWidth;
-    var running = false;
+    var running = true;
     var earlyStage = true;
     var topMargin = 20;
 
