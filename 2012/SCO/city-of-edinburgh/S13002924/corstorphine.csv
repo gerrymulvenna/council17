@@ -9,29 +9,29 @@ Candidate_First_Pref_Votes,Status,Occurred_On_Count,Surname,Firstname,Constituen
 1788,,,EDIE,Paul,2,Liberal Democrats,10,2,10,7,1798
 502,,,HINDE,Dominic,2,Scottish Green Party,11,2,24,8,526
 1679,,,MCINALLY,Tom,2,Labour Party,12,2,19,9,1698
-161,Excluded,2,NISBET,James,2,UK Independence Party (UKIP),13,2,-161,10,0
+161,Excluded,1,NISBET,James,2,UK Independence Party (UKIP),13,2,-161,10,0
 2032,,,ROSS,Frank,2,Scottish National Party (SNP),14,2,21,11,2053
-2050,Elected,3,BALFOUR,Jeremy Ross,2,Conservative and Unionist Party,9,3,-46,12,2054
+2050,Elected,2,BALFOUR,Jeremy Ross,2,Conservative and Unionist Party,9,3,-46,12,2054
 1788,,,EDIE,Paul,2,Liberal Democrats,10,3,19.4691,13,1817.4691
 502,,,HINDE,Dominic,2,Scottish Green Party,11,3,4.0515,14,530.0515
 1679,,,MCINALLY,Tom,2,Labour Party,12,3,3.942,15,1701.942
-161,Excluded,2,NISBET,James,2,UK Independence Party (UKIP),13,3,0,16,0
+161,Excluded,1,NISBET,James,2,UK Independence Party (UKIP),13,3,0,16,0
 2032,,,ROSS,Frank,2,Scottish National Party (SNP),14,3,2.7156,17,2055.7156
-2050,Elected,3,BALFOUR,Jeremy Ross,2,Conservative and Unionist Party,9,4,0,18,2054
+2050,Elected,2,BALFOUR,Jeremy Ross,2,Conservative and Unionist Party,9,4,0,18,2054
 1788,,,EDIE,Paul,2,Liberal Democrats,10,4,0.37558,19,1817.84468
 502,,,HINDE,Dominic,2,Scottish Green Party,11,4,0.44838,20,530.49988
 1679,,,MCINALLY,Tom,2,Labour Party,12,4,0.36953,21,1702.31153
-161,Excluded,2,NISBET,James,2,UK Independence Party (UKIP),13,4,0,22,0
-2032,Elected,4,ROSS,Frank,2,Scottish National Party (SNP),14,4,-1.7156,23,2054
-2050,Elected,3,BALFOUR,Jeremy Ross,2,Conservative and Unionist Party,9,5,0,24,2054
+161,Excluded,1,NISBET,James,2,UK Independence Party (UKIP),13,4,0,22,0
+2032,Elected,3,ROSS,Frank,2,Scottish National Party (SNP),14,4,-1.7156,23,2054
+2050,Elected,2,BALFOUR,Jeremy Ross,2,Conservative and Unionist Party,9,5,0,24,2054
 1788,,,EDIE,Paul,2,Liberal Democrats,10,5,175.29387,25,1993.13855
-502,Excluded,5,HINDE,Dominic,2,Scottish Green Party,11,5,-530.49988,26,0
+502,Excluded,4,HINDE,Dominic,2,Scottish Green Party,11,5,-530.49988,26,0
 1679,,,MCINALLY,Tom,2,Labour Party,12,5,181.55373,27,1883.86526
-161,Excluded,2,NISBET,James,2,UK Independence Party (UKIP),13,5,0,28,0
-2032,Elected,4,ROSS,Frank,2,Scottish National Party (SNP),14,5,0,29,2054
-2050,Elected,3,BALFOUR,Jeremy Ross,2,Conservative and Unionist Party,9,6,0,30,2054
+161,Excluded,1,NISBET,James,2,UK Independence Party (UKIP),13,5,0,28,0
+2032,Elected,3,ROSS,Frank,2,Scottish National Party (SNP),14,5,0,29,2054
+2050,Elected,2,BALFOUR,Jeremy Ross,2,Conservative and Unionist Party,9,6,0,30,2054
 1788,Elected,6,EDIE,Paul,2,Liberal Democrats,10,6,804.5129,31,2797.65145
-502,Excluded,5,HINDE,Dominic,2,Scottish Green Party,11,6,0,32,0
+502,Excluded,4,HINDE,Dominic,2,Scottish Green Party,11,6,0,32,0
 1679,Excluded,6,MCINALLY,Tom,2,Labour Party,12,6,-1883.86526,33,0
-161,Excluded,2,NISBET,James,2,UK Independence Party (UKIP),13,6,0,34,0
-2032,Elected,4,ROSS,Frank,2,Scottish National Party (SNP),14,6,0,35,2054
+161,Excluded,1,NISBET,James,2,UK Independence Party (UKIP),13,6,0,34,0
+2032,Elected,3,ROSS,Frank,2,Scottish National Party (SNP),14,6,0,35,2054
