@@ -43,8 +43,7 @@ var council = "simulation";
             var year = $("#yearSelect :selected").text();
             getTransfersData(year);
             countMatrix(year, council, constituencyFolder);
-// don't play at startup
-//            animateStages(year, council, constituencyFolder);
+            animateStages(year, council, constituencyFolder);
         })
 
 // create data for summary header
