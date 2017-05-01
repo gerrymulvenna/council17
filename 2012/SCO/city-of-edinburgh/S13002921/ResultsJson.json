@@ -10,9 +10,9 @@
 		"Party_Name": "Liberal Democrats",
 		"Candidate_Id": "31",
 		"Count_Number": "1",
-		"Transfers": "19.8072",
+		"Transfers": "0",
 		"id": "0",
-		"Total_Votes": "1424.8072"
+		"Total_Votes": "1405"
 	},
 	{
 		"Candidate_First_Pref_Votes": "518",
@@ -24,9 +24,9 @@
 		"Party_Name": "Independent",
 		"Candidate_Id": "32",
 		"Count_Number": "1",
-		"Transfers": "13.81002",
+		"Transfers": "0",
 		"id": "1",
-		"Total_Votes": "531.81002"
+		"Total_Votes": "518"
 	},
 	{
 		"Candidate_First_Pref_Votes": "1201",
@@ -38,9 +38,9 @@
 		"Party_Name": "Conservative and Unionist Party",
 		"Candidate_Id": "33",
 		"Count_Number": "1",
-		"Transfers": "5.88714",
+		"Transfers": "0",
 		"id": "2",
-		"Total_Votes": "1206.88714"
+		"Total_Votes": "1201"
 	},
 	{
 		"Candidate_First_Pref_Votes": "1373",
@@ -52,9 +52,9 @@
 		"Party_Name": "Scottish National Party (SNP)",
 		"Candidate_Id": "34",
 		"Count_Number": "1",
-		"Transfers": "9.51846",
+		"Transfers": "0",
 		"id": "3",
-		"Total_Votes": "1382.51846"
+		"Total_Votes": "1373"
 	},
 	{
 		"Candidate_First_Pref_Votes": "271",
@@ -66,9 +66,9 @@
 		"Party_Name": "Scottish Green Party",
 		"Candidate_Id": "35",
 		"Count_Number": "1",
-		"Transfers": "13.81002",
+		"Transfers": "0",
 		"id": "4",
-		"Total_Votes": "284.81002"
+		"Total_Votes": "271"
 	},
 	{
 		"Candidate_First_Pref_Votes": "1981",
@@ -80,9 +80,9 @@
 		"Party_Name": "Labour Party",
 		"Candidate_Id": "36",
 		"Count_Number": "1",
-		"Transfers": "-109",
+		"Transfers": "0",
 		"id": "5",
-		"Total_Votes": "1872"
+		"Total_Votes": "1981"
 	},
 	{
 		"Candidate_First_Pref_Votes": "648",
@@ -94,9 +94,9 @@
 		"Party_Name": "Scottish National Party (SNP)",
 		"Candidate_Id": "37",
 		"Count_Number": "1",
-		"Transfers": "8.96826",
+		"Transfers": "0",
 		"id": "6",
-		"Total_Votes": "656.96826"
+		"Total_Votes": "648"
 	},
 	{
 		"Candidate_First_Pref_Votes": "90",
@@ -108,9 +108,9 @@
 		"Party_Name": "Independent",
 		"Candidate_Id": "38",
 		"Count_Number": "1",
-		"Transfers": "5.33694",
+		"Transfers": "0",
 		"id": "7",
-		"Total_Votes": "95.33694"
+		"Total_Votes": "90"
 	},
 	{
 		"Candidate_First_Pref_Votes": "1405",
@@ -122,9 +122,9 @@
 		"Party_Name": "Liberal Democrats",
 		"Candidate_Id": "31",
 		"Count_Number": "2",
-		"Transfers": "6.44016",
+		"Transfers": "19.8072",
 		"id": "8",
-		"Total_Votes": "1431.24736"
+		"Total_Votes": "1424.8072"
 	},
 	{
 		"Candidate_First_Pref_Votes": "518",
@@ -136,9 +136,9 @@
 		"Party_Name": "Independent",
 		"Candidate_Id": "32",
 		"Count_Number": "2",
-		"Transfers": "55.97108",
+		"Transfers": "13.81002",
 		"id": "9",
-		"Total_Votes": "587.7811"
+		"Total_Votes": "531.81002"
 	},
 	{
 		"Candidate_First_Pref_Votes": "1201",
@@ -150,9 +150,9 @@
 		"Party_Name": "Conservative and Unionist Party",
 		"Candidate_Id": "33",
 		"Count_Number": "2",
-		"Transfers": "5.11004",
+		"Transfers": "5.88714",
 		"id": "10",
-		"Total_Votes": "1211.99718"
+		"Total_Votes": "1206.88714"
 	},
 	{
 		"Candidate_First_Pref_Votes": "1373",
@@ -164,9 +164,9 @@
 		"Party_Name": "Scottish National Party (SNP)",
 		"Candidate_Id": "34",
 		"Count_Number": "2",
-		"Transfers": "3.11004",
+		"Transfers": "9.51846",
 		"id": "11",
-		"Total_Votes": "1385.6285"
+		"Total_Votes": "1382.51846"
 	},
 	{
 		"Candidate_First_Pref_Votes": "271",
@@ -178,9 +178,9 @@
 		"Party_Name": "Scottish Green Party",
 		"Candidate_Id": "35",
 		"Count_Number": "2",
-		"Transfers": "11.49518",
+		"Transfers": "13.81002",
 		"id": "12",
-		"Total_Votes": "296.3052"
+		"Total_Votes": "284.81002"
 	},
 	{
 		"Candidate_First_Pref_Votes": "1981",
@@ -192,7 +192,7 @@
 		"Party_Name": "Labour Party",
 		"Candidate_Id": "36",
 		"Count_Number": "2",
-		"Transfers": "0",
+		"Transfers": "-109",
 		"id": "13",
 		"Total_Votes": "1872"
 	},
@@ -206,9 +206,9 @@
 		"Party_Name": "Scottish National Party (SNP)",
 		"Candidate_Id": "37",
 		"Count_Number": "2",
-		"Transfers": "4.11004",
+		"Transfers": "8.96826",
 		"id": "14",
-		"Total_Votes": "661.0783"
+		"Total_Votes": "656.96826"
 	},
 	{
 		"Candidate_First_Pref_Votes": "90",
@@ -220,9 +220,9 @@
 		"Party_Name": "Independent",
 		"Candidate_Id": "38",
 		"Count_Number": "2",
-		"Transfers": "-95.33694",
+		"Transfers": "5.33694",
 		"id": "15",
-		"Total_Votes": "0"
+		"Total_Votes": "95.33694"
 	},
 	{
 		"Candidate_First_Pref_Votes": "1405",
@@ -234,9 +234,9 @@
 		"Party_Name": "Liberal Democrats",
 		"Candidate_Id": "31",
 		"Count_Number": "3",
-		"Transfers": "59.03574",
+		"Transfers": "6.44016",
 		"id": "16",
-		"Total_Votes": "1490.2831"
+		"Total_Votes": "1431.24736"
 	},
 	{
 		"Candidate_First_Pref_Votes": "518",
@@ -248,9 +248,9 @@
 		"Party_Name": "Independent",
 		"Candidate_Id": "32",
 		"Count_Number": "3",
-		"Transfers": "74.74136",
+		"Transfers": "55.97108",
 		"id": "17",
-		"Total_Votes": "662.52246"
+		"Total_Votes": "587.7811"
 	},
 	{
 		"Candidate_First_Pref_Votes": "1201",
@@ -262,9 +262,9 @@
 		"Party_Name": "Conservative and Unionist Party",
 		"Candidate_Id": "33",
 		"Count_Number": "3",
-		"Transfers": "20.66024",
+		"Transfers": "5.11004",
 		"id": "18",
-		"Total_Votes": "1232.65742"
+		"Total_Votes": "1211.99718"
 	},
 	{
 		"Candidate_First_Pref_Votes": "1373",
@@ -276,9 +276,9 @@
 		"Party_Name": "Scottish National Party (SNP)",
 		"Candidate_Id": "34",
 		"Count_Number": "3",
-		"Transfers": "20.33012",
+		"Transfers": "3.11004",
 		"id": "19",
-		"Total_Votes": "1405.95862"
+		"Total_Votes": "1385.6285"
 	},
 	{
 		"Candidate_First_Pref_Votes": "271",
@@ -290,9 +290,9 @@
 		"Party_Name": "Scottish Green Party",
 		"Candidate_Id": "35",
 		"Count_Number": "3",
-		"Transfers": "-296.3052",
+		"Transfers": "11.49518",
 		"id": "20",
-		"Total_Votes": "0"
+		"Total_Votes": "296.3052"
 	},
 	{
 		"Candidate_First_Pref_Votes": "1981",
@@ -318,23 +318,23 @@
 		"Party_Name": "Scottish National Party (SNP)",
 		"Candidate_Id": "37",
 		"Count_Number": "3",
-		"Transfers": "37.99036",
+		"Transfers": "4.11004",
 		"id": "22",
-		"Total_Votes": "699.06866"
+		"Total_Votes": "661.0783"
 	},
 	{
 		"Candidate_First_Pref_Votes": "90",
 		"Status": "Excluded",
-		"Occurred_On_Count": "3",
+		"Occurred_On_Count": "2",
 		"Surname": "SCOTT",
 		"Firstname": "John",
 		"Constituency_Number": "3",
 		"Party_Name": "Independent",
 		"Candidate_Id": "38",
 		"Count_Number": "3",
-		"Transfers": "",
+		"Transfers": "-95.33694",
 		"id": "23",
-		"Total_Votes": ""
+		"Total_Votes": "0"
 	},
 	{
 		"Candidate_First_Pref_Votes": "1405",
@@ -346,9 +346,9 @@
 		"Party_Name": "Liberal Democrats",
 		"Candidate_Id": "31",
 		"Count_Number": "4",
-		"Transfers": "145.96144",
+		"Transfers": "59.03574",
 		"id": "24",
-		"Total_Votes": "1636.24454"
+		"Total_Votes": "1490.2831"
 	},
 	{
 		"Candidate_First_Pref_Votes": "518",
@@ -360,9 +360,9 @@
 		"Party_Name": "Independent",
 		"Candidate_Id": "32",
 		"Count_Number": "4",
-		"Transfers": "-662.52246",
+		"Transfers": "74.74136",
 		"id": "25",
-		"Total_Votes": "0"
+		"Total_Votes": "662.52246"
 	},
 	{
 		"Candidate_First_Pref_Votes": "1201",
@@ -374,9 +374,9 @@
 		"Party_Name": "Conservative and Unionist Party",
 		"Candidate_Id": "33",
 		"Count_Number": "4",
-		"Transfers": "115.88032",
+		"Transfers": "20.66024",
 		"id": "26",
-		"Total_Votes": "1348.53774"
+		"Total_Votes": "1232.65742"
 	},
 	{
 		"Candidate_First_Pref_Votes": "1373",
@@ -388,23 +388,23 @@
 		"Party_Name": "Scottish National Party (SNP)",
 		"Candidate_Id": "34",
 		"Count_Number": "4",
-		"Transfers": "59.8253",
+		"Transfers": "20.33012",
 		"id": "27",
-		"Total_Votes": "1465.78392"
+		"Total_Votes": "1405.95862"
 	},
 	{
 		"Candidate_First_Pref_Votes": "271",
 		"Status": "Excluded",
-		"Occurred_On_Count": "4",
+		"Occurred_On_Count": "3",
 		"Surname": "HENDRY",
 		"Firstname": "Linda",
 		"Constituency_Number": "3",
 		"Party_Name": "Scottish Green Party",
 		"Candidate_Id": "35",
 		"Count_Number": "4",
-		"Transfers": "",
+		"Transfers": "-296.3052",
 		"id": "28",
-		"Total_Votes": ""
+		"Total_Votes": "0"
 	},
 	{
 		"Candidate_First_Pref_Votes": "1981",
@@ -430,14 +430,14 @@
 		"Party_Name": "Scottish National Party (SNP)",
 		"Candidate_Id": "37",
 		"Count_Number": "4",
-		"Transfers": "50.93534",
+		"Transfers": "37.99036",
 		"id": "30",
-		"Total_Votes": "750.004"
+		"Total_Votes": "699.06866"
 	},
 	{
 		"Candidate_First_Pref_Votes": "90",
 		"Status": "Excluded",
-		"Occurred_On_Count": "3",
+		"Occurred_On_Count": "2",
 		"Surname": "SCOTT",
 		"Firstname": "John",
 		"Constituency_Number": "3",
@@ -458,23 +458,23 @@
 		"Party_Name": "Liberal Democrats",
 		"Candidate_Id": "31",
 		"Count_Number": "5",
-		"Transfers": "58.99036",
+		"Transfers": "145.96144",
 		"id": "32",
-		"Total_Votes": "1695.2349"
+		"Total_Votes": "1636.24454"
 	},
 	{
 		"Candidate_First_Pref_Votes": "518",
 		"Status": "Excluded",
-		"Occurred_On_Count": "5",
+		"Occurred_On_Count": "4",
 		"Surname": "BINNEY",
 		"Firstname": "Steven",
 		"Constituency_Number": "3",
 		"Party_Name": "Independent",
 		"Candidate_Id": "32",
 		"Count_Number": "5",
-		"Transfers": "",
+		"Transfers": "-662.52246",
 		"id": "33",
-		"Total_Votes": ""
+		"Total_Votes": "0"
 	},
 	{
 		"Candidate_First_Pref_Votes": "1201",
@@ -486,9 +486,9 @@
 		"Party_Name": "Conservative and Unionist Party",
 		"Candidate_Id": "33",
 		"Count_Number": "5",
-		"Transfers": "21.2751",
+		"Transfers": "115.88032",
 		"id": "34",
-		"Total_Votes": "1369.81284"
+		"Total_Votes": "1348.53774"
 	},
 	{
 		"Candidate_First_Pref_Votes": "1373",
@@ -500,14 +500,14 @@
 		"Party_Name": "Scottish National Party (SNP)",
 		"Candidate_Id": "34",
 		"Count_Number": "5",
-		"Transfers": "586.44698",
+		"Transfers": "59.8253",
 		"id": "35",
-		"Total_Votes": "2052.2309"
+		"Total_Votes": "1465.78392"
 	},
 	{
 		"Candidate_First_Pref_Votes": "271",
 		"Status": "Excluded",
-		"Occurred_On_Count": "4",
+		"Occurred_On_Count": "3",
 		"Surname": "HENDRY",
 		"Firstname": "Linda",
 		"Constituency_Number": "3",
@@ -542,14 +542,14 @@
 		"Party_Name": "Scottish National Party (SNP)",
 		"Candidate_Id": "37",
 		"Count_Number": "5",
-		"Transfers": "-750.004",
+		"Transfers": "50.93534",
 		"id": "38",
-		"Total_Votes": "0"
+		"Total_Votes": "750.004"
 	},
 	{
 		"Candidate_First_Pref_Votes": "90",
 		"Status": "Excluded",
-		"Occurred_On_Count": "3",
+		"Occurred_On_Count": "2",
 		"Surname": "SCOTT",
 		"Firstname": "John",
 		"Constituency_Number": "3",
@@ -570,14 +570,14 @@
 		"Party_Name": "Liberal Democrats",
 		"Candidate_Id": "31",
 		"Count_Number": "6",
-		"Transfers": "39.62262",
+		"Transfers": "58.99036",
 		"id": "40",
-		"Total_Votes": "1734.85752"
+		"Total_Votes": "1695.2349"
 	},
 	{
 		"Candidate_First_Pref_Votes": "518",
 		"Status": "Excluded",
-		"Occurred_On_Count": "5",
+		"Occurred_On_Count": "4",
 		"Surname": "BINNEY",
 		"Firstname": "Steven",
 		"Constituency_Number": "3",
@@ -598,9 +598,9 @@
 		"Party_Name": "Conservative and Unionist Party",
 		"Candidate_Id": "33",
 		"Count_Number": "6",
-		"Transfers": "12.762",
+		"Transfers": "21.2751",
 		"id": "42",
-		"Total_Votes": "1382.57484"
+		"Total_Votes": "1369.81284"
 	},
 	{
 		"Candidate_First_Pref_Votes": "1373",
@@ -612,14 +612,14 @@
 		"Party_Name": "Scottish National Party (SNP)",
 		"Candidate_Id": "34",
 		"Count_Number": "6",
-		"Transfers": "-180.2309",
+		"Transfers": "586.44698",
 		"id": "43",
-		"Total_Votes": "1872"
+		"Total_Votes": "2052.2309"
 	},
 	{
 		"Candidate_First_Pref_Votes": "271",
 		"Status": "Excluded",
-		"Occurred_On_Count": "4",
+		"Occurred_On_Count": "3",
 		"Surname": "HENDRY",
 		"Firstname": "Linda",
 		"Constituency_Number": "3",
@@ -647,21 +647,21 @@
 	{
 		"Candidate_First_Pref_Votes": "648",
 		"Status": "Excluded",
-		"Occurred_On_Count": "6",
+		"Occurred_On_Count": "5",
 		"Surname": "LINDSAY",
 		"Firstname": "Alison",
 		"Constituency_Number": "3",
 		"Party_Name": "Scottish National Party (SNP)",
 		"Candidate_Id": "37",
 		"Count_Number": "6",
-		"Transfers": "",
+		"Transfers": "-750.004",
 		"id": "46",
-		"Total_Votes": ""
+		"Total_Votes": "0"
 	},
 	{
 		"Candidate_First_Pref_Votes": "90",
 		"Status": "Excluded",
-		"Occurred_On_Count": "3",
+		"Occurred_On_Count": "2",
 		"Surname": "SCOTT",
 		"Firstname": "John",
 		"Constituency_Number": "3",
@@ -674,22 +674,22 @@
 	},
 	{
 		"Candidate_First_Pref_Votes": "1405",
-		"Status": "Elected",
-		"Occurred_On_Count": "8",
+		"Status": "",
+		"Occurred_On_Count": "",
 		"Surname": "ALDRIDGE",
 		"Firstname": "Robert",
 		"Constituency_Number": "3",
 		"Party_Name": "Liberal Democrats",
 		"Candidate_Id": "31",
 		"Count_Number": "7",
-		"Transfers": "577.49136",
+		"Transfers": "39.62262",
 		"id": "48",
-		"Total_Votes": "2312.34888"
+		"Total_Votes": "1734.85752"
 	},
 	{
 		"Candidate_First_Pref_Votes": "518",
 		"Status": "Excluded",
-		"Occurred_On_Count": "5",
+		"Occurred_On_Count": "4",
 		"Surname": "BINNEY",
 		"Firstname": "Steven",
 		"Constituency_Number": "3",
@@ -702,36 +702,36 @@
 	},
 	{
 		"Candidate_First_Pref_Votes": "1201",
-		"Status": "Excluded",
-		"Occurred_On_Count": "8",
+		"Status": "",
+		"Occurred_On_Count": "",
 		"Surname": "BROWN",
 		"Firstname": "Mark",
 		"Constituency_Number": "3",
 		"Party_Name": "Conservative and Unionist Party",
 		"Candidate_Id": "33",
 		"Count_Number": "7",
-		"Transfers": "-1382.57484",
+		"Transfers": "12.762",
 		"id": "50",
-		"Total_Votes": "0"
+		"Total_Votes": "1382.57484"
 	},
 	{
 		"Candidate_First_Pref_Votes": "1373",
 		"Status": "Elected",
-		"Occurred_On_Count": "7",
+		"Occurred_On_Count": "6",
 		"Surname": "CAIRNS",
 		"Firstname": "Ron",
 		"Constituency_Number": "3",
 		"Party_Name": "Scottish National Party (SNP)",
 		"Candidate_Id": "34",
 		"Count_Number": "7",
-		"Transfers": "0",
+		"Transfers": "-180.2309",
 		"id": "51",
 		"Total_Votes": "1872"
 	},
 	{
 		"Candidate_First_Pref_Votes": "271",
 		"Status": "Excluded",
-		"Occurred_On_Count": "4",
+		"Occurred_On_Count": "3",
 		"Surname": "HENDRY",
 		"Firstname": "Linda",
 		"Constituency_Number": "3",
@@ -759,7 +759,7 @@
 	{
 		"Candidate_First_Pref_Votes": "648",
 		"Status": "Excluded",
-		"Occurred_On_Count": "6",
+		"Occurred_On_Count": "5",
 		"Surname": "LINDSAY",
 		"Firstname": "Alison",
 		"Constituency_Number": "3",
@@ -773,7 +773,7 @@
 	{
 		"Candidate_First_Pref_Votes": "90",
 		"Status": "Excluded",
-		"Occurred_On_Count": "3",
+		"Occurred_On_Count": "2",
 		"Surname": "SCOTT",
 		"Firstname": "John",
 		"Constituency_Number": "3",
@@ -782,6 +782,118 @@
 		"Count_Number": "7",
 		"Transfers": "",
 		"id": "55",
+		"Total_Votes": ""
+	},
+	{
+		"Candidate_First_Pref_Votes": "1405",
+		"Status": "Elected",
+		"Occurred_On_Count": "8",
+		"Surname": "ALDRIDGE",
+		"Firstname": "Robert",
+		"Constituency_Number": "3",
+		"Party_Name": "Liberal Democrats",
+		"Candidate_Id": "31",
+		"Count_Number": "8",
+		"Transfers": "577.49136",
+		"id": "",
+		"Total_Votes": "2312.34888"
+	},
+	{
+		"Candidate_First_Pref_Votes": "518",
+		"Status": "Excluded",
+		"Occurred_On_Count": "4",
+		"Surname": "BINNEY",
+		"Firstname": "Steven",
+		"Constituency_Number": "3",
+		"Party_Name": "Independent",
+		"Candidate_Id": "32",
+		"Count_Number": "8",
+		"Transfers": "",
+		"id": "",
+		"Total_Votes": ""
+	},
+	{
+		"Candidate_First_Pref_Votes": "1201",
+		"Status": "Excluded",
+		"Occurred_On_Count": "7",
+		"Surname": "BROWN",
+		"Firstname": "Mark",
+		"Constituency_Number": "3",
+		"Party_Name": "Conservative and Unionist Party",
+		"Candidate_Id": "33",
+		"Count_Number": "8",
+		"Transfers": "-1382.57484",
+		"id": "",
+		"Total_Votes": "0"
+	},
+	{
+		"Candidate_First_Pref_Votes": "1373",
+		"Status": "Elected",
+		"Occurred_On_Count": "6",
+		"Surname": "CAIRNS",
+		"Firstname": "Ron",
+		"Constituency_Number": "3",
+		"Party_Name": "Scottish National Party (SNP)",
+		"Candidate_Id": "34",
+		"Count_Number": "8",
+		"Transfers": "0",
+		"id": "",
+		"Total_Votes": "1872"
+	},
+	{
+		"Candidate_First_Pref_Votes": "271",
+		"Status": "Excluded",
+		"Occurred_On_Count": "3",
+		"Surname": "HENDRY",
+		"Firstname": "Linda",
+		"Constituency_Number": "3",
+		"Party_Name": "Scottish Green Party",
+		"Candidate_Id": "35",
+		"Count_Number": "8",
+		"Transfers": "",
+		"id": "",
+		"Total_Votes": ""
+	},
+	{
+		"Candidate_First_Pref_Votes": "1981",
+		"Status": "Elected",
+		"Occurred_On_Count": "1",
+		"Surname": "KEIL",
+		"Firstname": "Karen",
+		"Constituency_Number": "3",
+		"Party_Name": "Labour Party",
+		"Candidate_Id": "36",
+		"Count_Number": "8",
+		"Transfers": "0",
+		"id": "",
+		"Total_Votes": "1872"
+	},
+	{
+		"Candidate_First_Pref_Votes": "648",
+		"Status": "Excluded",
+		"Occurred_On_Count": "5",
+		"Surname": "LINDSAY",
+		"Firstname": "Alison",
+		"Constituency_Number": "3",
+		"Party_Name": "Scottish National Party (SNP)",
+		"Candidate_Id": "37",
+		"Count_Number": "8",
+		"Transfers": "",
+		"id": "",
+		"Total_Votes": ""
+	},
+	{
+		"Candidate_First_Pref_Votes": "90",
+		"Status": "Excluded",
+		"Occurred_On_Count": "2",
+		"Surname": "SCOTT",
+		"Firstname": "John",
+		"Constituency_Number": "3",
+		"Party_Name": "Independent",
+		"Candidate_Id": "38",
+		"Count_Number": "8",
+		"Transfers": "",
+		"id": "",
 		"Total_Votes": ""
 	}
 ]}

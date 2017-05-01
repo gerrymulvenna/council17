@@ -1,57 +1,65 @@
 Candidate_First_Pref_Votes,Status,Occurred_On_Count,Surname,Firstname,Constituency_Number,Party_Name,Candidate_Id,Count_Number,Transfers,id,Total_Votes
-1405,,,ALDRIDGE,Robert,3,Liberal Democrats,31,1,19.8072,0,1424.8072
-518,,,BINNEY,Steven,3,Independent,32,1,13.81002,1,531.81002
-1201,,,BROWN,Mark,3,Conservative and Unionist Party,33,1,5.88714,2,1206.88714
-1373,,,CAIRNS,Ron,3,Scottish National Party (SNP),34,1,9.51846,3,1382.51846
-271,,,HENDRY,Linda,3,Scottish Green Party,35,1,13.81002,4,284.81002
-1981,Elected,1,KEIL,Karen,3,Labour Party,36,1,-109,5,1872
-648,,,LINDSAY,Alison,3,Scottish National Party (SNP),37,1,8.96826,6,656.96826
-90,,,SCOTT,John,3,Independent,38,1,5.33694,7,95.33694
-1405,,,ALDRIDGE,Robert,3,Liberal Democrats,31,2,6.44016,8,1431.24736
-518,,,BINNEY,Steven,3,Independent,32,2,55.97108,9,587.7811
-1201,,,BROWN,Mark,3,Conservative and Unionist Party,33,2,5.11004,10,1211.99718
-1373,,,CAIRNS,Ron,3,Scottish National Party (SNP),34,2,3.11004,11,1385.6285
-271,,,HENDRY,Linda,3,Scottish Green Party,35,2,11.49518,12,296.3052
-1981,Elected,1,KEIL,Karen,3,Labour Party,36,2,0,13,1872
-648,,,LINDSAY,Alison,3,Scottish National Party (SNP),37,2,4.11004,14,661.0783
-90,,,SCOTT,John,3,Independent,38,2,-95.33694,15,0
-1405,,,ALDRIDGE,Robert,3,Liberal Democrats,31,3,59.03574,16,1490.2831
-518,,,BINNEY,Steven,3,Independent,32,3,74.74136,17,662.52246
-1201,,,BROWN,Mark,3,Conservative and Unionist Party,33,3,20.66024,18,1232.65742
-1373,,,CAIRNS,Ron,3,Scottish National Party (SNP),34,3,20.33012,19,1405.95862
-271,,,HENDRY,Linda,3,Scottish Green Party,35,3,-296.3052,20,0
+1405,,,ALDRIDGE,Robert,3,Liberal Democrats,31,1,0,0,1405
+518,,,BINNEY,Steven,3,Independent,32,1,0,1,518
+1201,,,BROWN,Mark,3,Conservative and Unionist Party,33,1,0,2,1201
+1373,,,CAIRNS,Ron,3,Scottish National Party (SNP),34,1,0,3,1373
+271,,,HENDRY,Linda,3,Scottish Green Party,35,1,0,4,271
+1981,Elected,1,KEIL,Karen,3,Labour Party,36,1,0,5,1981
+648,,,LINDSAY,Alison,3,Scottish National Party (SNP),37,1,0,6,648
+90,,,SCOTT,John,3,Independent,38,1,0,7,90
+1405,,,ALDRIDGE,Robert,3,Liberal Democrats,31,2,19.8072,8,1424.8072
+518,,,BINNEY,Steven,3,Independent,32,2,13.81002,9,531.81002
+1201,,,BROWN,Mark,3,Conservative and Unionist Party,33,2,5.88714,10,1206.88714
+1373,,,CAIRNS,Ron,3,Scottish National Party (SNP),34,2,9.51846,11,1382.51846
+271,,,HENDRY,Linda,3,Scottish Green Party,35,2,13.81002,12,284.81002
+1981,Elected,1,KEIL,Karen,3,Labour Party,36,2,-109,13,1872
+648,,,LINDSAY,Alison,3,Scottish National Party (SNP),37,2,8.96826,14,656.96826
+90,,,SCOTT,John,3,Independent,38,2,5.33694,15,95.33694
+1405,,,ALDRIDGE,Robert,3,Liberal Democrats,31,3,6.44016,16,1431.24736
+518,,,BINNEY,Steven,3,Independent,32,3,55.97108,17,587.7811
+1201,,,BROWN,Mark,3,Conservative and Unionist Party,33,3,5.11004,18,1211.99718
+1373,,,CAIRNS,Ron,3,Scottish National Party (SNP),34,3,3.11004,19,1385.6285
+271,,,HENDRY,Linda,3,Scottish Green Party,35,3,11.49518,20,296.3052
 1981,Elected,1,KEIL,Karen,3,Labour Party,36,3,0,21,1872
-648,,,LINDSAY,Alison,3,Scottish National Party (SNP),37,3,37.99036,22,699.06866
-90,Excluded,3,SCOTT,John,3,Independent,38,3,,23,
-1405,,,ALDRIDGE,Robert,3,Liberal Democrats,31,4,145.96144,24,1636.24454
-518,,,BINNEY,Steven,3,Independent,32,4,-662.52246,25,0
-1201,,,BROWN,Mark,3,Conservative and Unionist Party,33,4,115.88032,26,1348.53774
-1373,,,CAIRNS,Ron,3,Scottish National Party (SNP),34,4,59.8253,27,1465.78392
-271,Excluded,4,HENDRY,Linda,3,Scottish Green Party,35,4,,28,
+648,,,LINDSAY,Alison,3,Scottish National Party (SNP),37,3,4.11004,22,661.0783
+90,Excluded,2,SCOTT,John,3,Independent,38,3,-95.33694,23,0
+1405,,,ALDRIDGE,Robert,3,Liberal Democrats,31,4,59.03574,24,1490.2831
+518,,,BINNEY,Steven,3,Independent,32,4,74.74136,25,662.52246
+1201,,,BROWN,Mark,3,Conservative and Unionist Party,33,4,20.66024,26,1232.65742
+1373,,,CAIRNS,Ron,3,Scottish National Party (SNP),34,4,20.33012,27,1405.95862
+271,Excluded,3,HENDRY,Linda,3,Scottish Green Party,35,4,-296.3052,28,0
 1981,Elected,1,KEIL,Karen,3,Labour Party,36,4,0,29,1872
-648,,,LINDSAY,Alison,3,Scottish National Party (SNP),37,4,50.93534,30,750.004
-90,Excluded,3,SCOTT,John,3,Independent,38,4,,31,
-1405,,,ALDRIDGE,Robert,3,Liberal Democrats,31,5,58.99036,32,1695.2349
-518,Excluded,5,BINNEY,Steven,3,Independent,32,5,,33,
-1201,,,BROWN,Mark,3,Conservative and Unionist Party,33,5,21.2751,34,1369.81284
-1373,,,CAIRNS,Ron,3,Scottish National Party (SNP),34,5,586.44698,35,2052.2309
-271,Excluded,4,HENDRY,Linda,3,Scottish Green Party,35,5,,36,
+648,,,LINDSAY,Alison,3,Scottish National Party (SNP),37,4,37.99036,30,699.06866
+90,Excluded,2,SCOTT,John,3,Independent,38,4,,31,
+1405,,,ALDRIDGE,Robert,3,Liberal Democrats,31,5,145.96144,32,1636.24454
+518,Excluded,4,BINNEY,Steven,3,Independent,32,5,-662.52246,33,0
+1201,,,BROWN,Mark,3,Conservative and Unionist Party,33,5,115.88032,34,1348.53774
+1373,,,CAIRNS,Ron,3,Scottish National Party (SNP),34,5,59.8253,35,1465.78392
+271,Excluded,3,HENDRY,Linda,3,Scottish Green Party,35,5,,36,
 1981,Elected,1,KEIL,Karen,3,Labour Party,36,5,0,37,1872
-648,,,LINDSAY,Alison,3,Scottish National Party (SNP),37,5,-750.004,38,0
-90,Excluded,3,SCOTT,John,3,Independent,38,5,,39,
-1405,,,ALDRIDGE,Robert,3,Liberal Democrats,31,6,39.62262,40,1734.85752
-518,Excluded,5,BINNEY,Steven,3,Independent,32,6,,41,
-1201,,,BROWN,Mark,3,Conservative and Unionist Party,33,6,12.762,42,1382.57484
-1373,,,CAIRNS,Ron,3,Scottish National Party (SNP),34,6,-180.2309,43,1872
-271,Excluded,4,HENDRY,Linda,3,Scottish Green Party,35,6,,44,
+648,,,LINDSAY,Alison,3,Scottish National Party (SNP),37,5,50.93534,38,750.004
+90,Excluded,2,SCOTT,John,3,Independent,38,5,,39,
+1405,,,ALDRIDGE,Robert,3,Liberal Democrats,31,6,58.99036,40,1695.2349
+518,Excluded,4,BINNEY,Steven,3,Independent,32,6,,41,
+1201,,,BROWN,Mark,3,Conservative and Unionist Party,33,6,21.2751,42,1369.81284
+1373,,,CAIRNS,Ron,3,Scottish National Party (SNP),34,6,586.44698,43,2052.2309
+271,Excluded,3,HENDRY,Linda,3,Scottish Green Party,35,6,,44,
 1981,Elected,1,KEIL,Karen,3,Labour Party,36,6,0,45,1872
-648,Excluded,6,LINDSAY,Alison,3,Scottish National Party (SNP),37,6,,46,
-90,Excluded,3,SCOTT,John,3,Independent,38,6,,47,
-1405,Elected,8,ALDRIDGE,Robert,3,Liberal Democrats,31,7,577.49136,48,2312.34888
-518,Excluded,5,BINNEY,Steven,3,Independent,32,7,,49,
-1201,Excluded,8,BROWN,Mark,3,Conservative and Unionist Party,33,7,-1382.57484,50,0
-1373,Elected,7,CAIRNS,Ron,3,Scottish National Party (SNP),34,7,0,51,1872
-271,Excluded,4,HENDRY,Linda,3,Scottish Green Party,35,7,,52,
+648,Excluded,5,LINDSAY,Alison,3,Scottish National Party (SNP),37,6,-750.004,46,0
+90,Excluded,2,SCOTT,John,3,Independent,38,6,,47,
+1405,,,ALDRIDGE,Robert,3,Liberal Democrats,31,7,39.62262,48,1734.85752
+518,Excluded,4,BINNEY,Steven,3,Independent,32,7,,49,
+1201,,,BROWN,Mark,3,Conservative and Unionist Party,33,7,12.762,50,1382.57484
+1373,Elected,6,CAIRNS,Ron,3,Scottish National Party (SNP),34,7,-180.2309,51,1872
+271,Excluded,3,HENDRY,Linda,3,Scottish Green Party,35,7,,52,
 1981,Elected,1,KEIL,Karen,3,Labour Party,36,7,0,53,1872
-648,Excluded,6,LINDSAY,Alison,3,Scottish National Party (SNP),37,7,,54,
-90,Excluded,3,SCOTT,John,3,Independent,38,7,,55,
+648,Excluded,5,LINDSAY,Alison,3,Scottish National Party (SNP),37,7,,54,
+90,Excluded,2,SCOTT,John,3,Independent,38,7,,55,
+1405,Elected,8,ALDRIDGE,Robert,3,Liberal Democrats,31,8,577.49136,,2312.34888
+518,Excluded,4,BINNEY,Steven,3,Independent,32,8,,,
+1201,Excluded,7,BROWN,Mark,3,Conservative and Unionist Party,33,8,-1382.57484,,0
+1373,Elected,6,CAIRNS,Ron,3,Scottish National Party (SNP),34,8,0,,1872
+271,Excluded,3,HENDRY,Linda,3,Scottish Green Party,35,8,,,
+1981,Elected,1,KEIL,Karen,3,Labour Party,36,8,0,,1872
+648,Excluded,5,LINDSAY,Alison,3,Scottish National Party (SNP),37,8,,,
+90,Excluded,2,SCOTT,John,3,Independent,38,8,,,
