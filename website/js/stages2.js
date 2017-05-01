@@ -419,7 +419,7 @@ function animateStages(year,council,constituencyFolder) {
 
         //candidatesDict is global and we use it here to store state of where those people we're not ordering are elected
         for(var i=0;i<copy.length;i++){
-			console.log("Sorting " + i + " " + start + " " + singleCountDict[copy[i]["key"]].order + " " candidatesDict[copy[i]["key"]].order);
+			console.log("Sorting " + i + " " + start + " " + singleCountDict[copy[i]["key"]].order + " " + candidatesDict[copy[i]["key"]].order);
             singleCountDict[copy[i]["key"]].order = i+start;
             candidatesDict[copy[i]["key"]].order = i+start;
 			console.log(singleCountDict[copy[i]["key"]]);
