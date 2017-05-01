@@ -234,9 +234,9 @@
 		"Party_Name": "UK Independence Party (UKIP)",
 		"Candidate_Id": "5",
 		"Count_Number": "3",
-		"Transfers": "",
+		"Transfers": "0",
 		"id": "16",
-		"Total_Votes": ""
+		"Total_Votes": "0"
 	},
 	{
 		"Candidate_First_Pref_Votes": "2032",
@@ -318,9 +318,9 @@
 		"Party_Name": "UK Independence Party (UKIP)",
 		"Candidate_Id": "5",
 		"Count_Number": "4",
-		"Transfers": "",
+		"Transfers": "0",
 		"id": "22",
-		"Total_Votes": ""
+		"Total_Votes": "0"
 	},
 	{
 		"Candidate_First_Pref_Votes": "2032",
@@ -402,9 +402,9 @@
 		"Party_Name": "UK Independence Party (UKIP)",
 		"Candidate_Id": "5",
 		"Count_Number": "5",
-		"Transfers": "",
+		"Transfers": "0",
 		"id": "28",
-		"Total_Votes": ""
+		"Total_Votes": "0"
 	},
 	{
 		"Candidate_First_Pref_Votes": "2032",
@@ -458,9 +458,9 @@
 		"Party_Name": "Scottish Green Party",
 		"Candidate_Id": "3",
 		"Count_Number": "6",
-		"Transfers": "",
+		"Transfers": "0",
 		"id": "32",
-		"Total_Votes": ""
+		"Total_Votes": "0"
 	},
 	{
 		"Candidate_First_Pref_Votes": "1679",
@@ -486,9 +486,9 @@
 		"Party_Name": "UK Independence Party (UKIP)",
 		"Candidate_Id": "5",
 		"Count_Number": "6",
-		"Transfers": "",
+		"Transfers": "0",
 		"id": "34",
-		"Total_Votes": ""
+		"Total_Votes": "0"
 	},
 	{
 		"Candidate_First_Pref_Votes": "2032",
