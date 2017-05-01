@@ -30,7 +30,7 @@ var council = "simulation";
                 var constituencyFolder = $("#constituencySelect :selected").val();
                 var year = $("#yearSelect :selected").text();
                 countMatrix(year, council, constituencyFolder);
-                animateStages(year, council, constituencyFolder);
+//                animateStages(year, council, constituencyFolder);
             })
             yearSelect.change(function() {
                 var constituencyFolder = $("#constituencySelect :selected").val();
