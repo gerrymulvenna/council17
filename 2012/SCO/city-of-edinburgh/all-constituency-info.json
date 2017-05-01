@@ -4,6 +4,12 @@
     "Constituency_Number": 2,
     "Directory": "S13002924",
     "countInfo": {"Valid_Poll": "8212", "Number_Of_Seats": "3", "Total_Poll": "8268", "Voting_Age_Pop": "17445", "Quota": "2054", "Constituency_Name": "Corstorphine/Murrayfield", "Constituency_Number": "2", "Total_Electorate": "17445", "Spoiled": "56"}
+},
+{
+    "Constituency_Name": "Drum Brae/Gyle",
+    "Constituency_Number": 3,
+    "Directory": "S13002921",
+    "countInfo": {"Valid_Poll": "7487", "Number_Of_Seats": "3", "Total_Poll": "7565", "Voting_Age_Pop": "17123", "Quota": "1872", "Constituency_Name": "Drum Brae/Gyle", "Constituency_Number": "3", "Total_Electorate": "17123", "Spoiled": "78"}
 }
 ]
 }
