@@ -23,7 +23,7 @@ var council = "city-of-edinburgh";
             var yearSelect = $("#yearSelect");
             $.each(constituencies, function(i, constituency) {
                 var name = constituency.Constituency_Name;
-                var folder = name.toLowerCase().replace(" and ", "-").replace(/\s/, "-");
+                var folder = constituency.Directory;
                 $(constituencySelect).append($("<option/>").val(folder).text(name))
             })
             constituencySelect.change(function() {
