@@ -231,7 +231,7 @@ function animateStages(year,council,constituencyFolder) {
                     var top = topMargin+ (countDict[i-1][candidates[j].id]["order"]*30);
                     if (!transfered){
                         for (var t=0;t<candidates.length;t++) {
-							console.log("Left: ", left, ", Candidate: ", t);
+							console.log("Left: ", left, ", Candidate(j): ", j, ", Candidate(t)", t);
                             if (countDict[i][candidates[t].id]["transfers"] == false) {
                                 var localLeft = startLeft+countDict[i-1][candidates[t].id]["total"] * qFactor;
                                 $('<div data-candidate="'+candidates[t].id+'" style="width:'+transfers[candidates[t].id] * qFactor+'px;left:'+left+'px; top:'+top+'px;" class="votes '+candidates[t]["party"]+'"></div>')
