@@ -93,10 +93,6 @@
 				}
 	});
 	
-	$(window).resize(function(e) {
-	});
-	
-	
 	// detect if user agent is a mobile device and if so disable map zooming panning etc
 	if ( /Android|webOS|iPhone|iPad|iPod|Blackberry|IEMobile|Opera Mini|Mobi/.test(navigator.userAgent)) {
 		console.log('mobile device detected');

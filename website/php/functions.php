@@ -13,10 +13,15 @@ function head($title, $mapName, $mapLat, $mapLong, $mapZoom, $mapProperty, $mapU
 	<script src="http://cdn.rawgit.com/calvinmetcalf/leaflet-ajax/gh-pages/dist/leaflet.ajax.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/lodash/4.11.1/lodash.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
-    <script src="/website/js/jstree/jstree.min.js"></script>
+    <script type="text/javascript" src="https://raw.github.com/jasonenglish/jquery-flex/master/jquery.flex.js"></script>
+    <script type="text/javascript" src="/website/js/jstree/jstree.min.js"></script>
   <script src="/website/js/jstree/jstree.types.js"></script>
   <script src="/website/js/jstree/jstree.search.js"></script>
 <script type="text/javascript">
+        $(function() {
+            var demo = $(".flex").flex({ api: true });
+            $("#download small").text("(v" + demo.version + ")");
+        });
 // global vars for maps.js
 ';
     echo "    var mapName = '$mapName';\n";
