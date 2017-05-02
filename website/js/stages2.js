@@ -229,6 +229,7 @@ function animateStages(year,council,constituencyFolder) {
                     var transfers = transferDict[i];
 					console.log("startLeft: ", startLeft, ", countDict[i][candidates[j].id]['total']: ", countDict[i][candidates[j].id]['total'], ", i: ", i, ", j: ", j);
                     var left = startLeft + countDict[i][candidates[j].id]["total"] * qFactor;
+					console.log("left: ", left);
                     var top = topMargin+ (countDict[i-1][candidates[j].id]["order"]*30);
                     if (!transfered){
                         for (var t=0;t<candidates.length;t++) {
@@ -270,6 +271,7 @@ function animateStages(year,council,constituencyFolder) {
                                         }
                                     });
                                 left = left + transfers[candidates[t].id] * qFactor;
+								console.log("left incremented: ", left);
                             }
                         }
                         //could put dead votes in here
