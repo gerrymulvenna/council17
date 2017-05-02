@@ -565,5 +565,6 @@ input[id=postcode] {
 	max-width: 150px;
 }
 
-.flex {position:relative;min-height:60px;margin:0 auto;border:0px solid red;margin-top:10px;}
-.flex a {background-color:white;display:block;width:100px;height:100px;border-radius:8px;position:absolute;background-repeat:no-repeat;background-position:center;border:3px solid white;cursor:pointer;text-align:left;text-shadow:1px 1px 20px #000;color:white;font-size:18px;font-weight:bold;text-indent:10px;line-height:30px;}
+.flex {position:relative;min-height:80px;margin:0 auto;border:0px solid red;margin-top:10px;display:block;}
+.flex a {background-color:white;display:block;width:100px;height:100px;border-radius:8px;position:absolute;background-repeat:no-repeat;background-position:center;border:3px solid white;cursor:pointer;text-align:left;text-indent: 5px;text-shadow:1px 1px 20px #000;color:white;font-size:18px;font-weight:bold;line-height:30px;text-decoration:none;}
+.flex a:hover {color:#00eecc;}

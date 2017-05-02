@@ -157,6 +157,7 @@ candidates.update = function() {
 	var wiki;
 	var width=70;
 	var npics = 0;
+	var initials;
 
 	if (wardstats.length > 0)
 	{
@@ -171,6 +172,8 @@ candidates.update = function() {
 			var candidates = ward[0].candidates;
 			wardinfo.innerHTML = '<a onclick=\'tips._div.style.display = "none";\' name="candidates"><h3>' + wardstats[0].ward_name + ' ward<br><span class="seats">' + no_seats + candidates.length + ' candidates</span></h3></a>';
 			for (i = 0; i < candidates.length; i++) {
+				initials = candidates[i].name.match(/\b\w/g) || [];
+				initials = ((initials.shift() || '') + (initials.pop() || '')).toUpperCase();
 				tw = (candidates[i].twitter_username) ? '<a href="http://twitter.com/' + candidates[i].twitter_username + '" target="~_blank"><i class="fa fa-twitter fa-fw" title="@' +  candidates[i].twitter_username + ' on Twitter"></i></a>' : '';
 				fb = (candidates[i].facebook_page_url) ? '<a href="' + candidates[i].facebook_page_url + '" target="_blank"><i class="fa fa-facebook fa-fw"  title="Facebook page"></i></a>' : '';
 				fbp = (candidates[i].facebook_personal_url) ? '<a href="' + candidates[i].facebook_personal_url + '" target="_blank"><i class="fa fa-facebook-official fa-fw" title="Personal Facebook profile"></i></a>' : '';
@@ -178,7 +181,7 @@ candidates.update = function() {
 				linkedin = (candidates[i].linkedin_url) ? '<a href="' + candidates[i].linkedin_url + '" target="_blank"><i class="fa fa-linkedin fa-fw" title="This candidate has a LinkedIn profile"></i></a>' : '';
 				wiki = (candidates[i].wikipedia_url) ? '<a href="' + candidates[i].wikipedia_url + '" target="_blank"><i class="fa fa-wikipedia-w fa-fw" title="This candidate has an entry on Wikipedia"></i></a>' : '';
 				edit = '<a href="http://candidates.democracyclub.org.uk/person/' + candidates[i].id + '/" target="_blank"><i class="fa fa-check-square-o fa-fw" title="View or edit the Democracy Club details for this candidate"></i></a>';
-				pix += (candidates[i].image_url) ? '<a bg="pic-' + candidates[i].id + '" style="left:' + width * npics++ + 'px;top:0px;width:60px;height:80px;" width="150" height="200">' + candidates[i].name + "</a>\n" : '';
+				pix += (candidates[i].image_url) ? '<a bg="pic-' + candidates[i].id + '" style="left:' + width * npics++ + 'px;top:0px;width:60px;height:80px;" width="150" height="200">' + initials + "</a>\n" : '';
 				pix_style += (candidates[i].image_url) ? '[bg=pic-' + candidates[i].id + '] {background-image:url(' + candidates[i].image_url + ");background-size:80px;}\n" : '';
 
 				this.innerHTML += "<div class=\"votes " + candidates[i].party_name.replace(/\s+/g, "-").replace(/[\'\",()]/g,"").replace(/\u2013/g, '_') + "\"></div><div id=\"candidate " + candidates[i].id + "\" class=\"tooltip " + candidates[i].party_name.replace(/\s+/g, "-").replace(/[\'\",()]/g,"").replace(/\u2013/g, '_') + "_label\"><span class=\"tooltiptext\">" + candidates[i].party_name + "</span>" + candidates[i].name + "<div class=\"cand-icons\">" + tw + fb + fbp + web  + linkedin + wiki  + edit + "</div></div><br/>";
