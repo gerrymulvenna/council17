@@ -150,7 +150,6 @@ var parties_info = {
 var transferData = {};
 function getTransfersData(year) {
 	$.getJSON("/2017/SCO/simulation/party-transfers.json", function (json) {
-		console.log(json);
 		var transfers = {};
 		$.each(json, function (i, constituency) {
 			var con = constituency.Constituency_Name;
@@ -177,16 +176,12 @@ function getTransfersData(year) {
 				});
 			});
 		});
-		console.log("transfers", transfers);
 		// convert constituency objects to arrays of individual transfers
 		$.each(transfers, function (cname, constituency) { // loop thru constituencies
-	//        console.log("--- " + cname + " ---");
 			var data = [];
 			$.each(constituency, function (donor, transfers) { // loop thru donor parties
 				var totalTransfers = -transfers.total || 0;
-	   //         console.log(donor, totalTransfers);
 				$.each(transfers, function (recipient, amount) { // loop thru recipient parties
-	//                console.log(transfers);
 					if (recipient != "total") {
 						data.push({
 							donor: donor,
@@ -201,16 +196,16 @@ function getTransfersData(year) {
 			transferData[cname] = data;
 		});
 
-		console.log("transferData", transferData);
 
 		function loadViz() {
-			$.get("/website/jsonspec/transferSpec.json", function (json) {
+				if ($("#pause-replay").hasClass("fa-repeat")) {
+					$("#pause-replay").addClass("fa-play");
+				}			
+				$.get("/website/jsonspec/transferSpec.json", function (json) {
 				var spec = JSON5.parse(json);
 				var constituency = $("#constituencySelect :selected").text();
                 document.getElementById('transfers_constituency').innerHTML = constituency;
-				console.log("CONST", constituency);
 				var data = transferData[constituency];
-				console.log("DATA", data)
 				spec.data = [
 					{
 						name: "transfers",
@@ -261,7 +256,6 @@ function getTransfersData(year) {
 						})
 						.on("mouseover", function (event, item) {
 							if (item && item.datum.amount) {
-								console.log(item);
 								$('#matrixtooltip').show();
 								$('#matrixtooltip').html(
 									Math.round(item.datum.amount * 10) /10 + "%"

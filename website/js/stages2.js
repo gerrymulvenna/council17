@@ -247,7 +247,6 @@ function animateStages(year,council,constituencyFolder) {
                                     }).delay(100*speed)
                                     .animate({left:localLeft},900*speed, function(){
 										if (transfers[$(this).data('candidate')] + countDict[i][$(this).data('candidate')]["total"] >0 ){
-											console.log(countDict[i][$(this).data('candidate')]);
                                             $("#candidate"+$(this).data('candidate'))
                                             .text(countDict[i-1][$(this).data('candidate')]["total"]+transfers[$(this).data('candidate')]+ " " + countDict[i][$(this).data('candidate')]["status"]);
                                         } else {
@@ -419,12 +418,8 @@ function animateStages(year,council,constituencyFolder) {
 
         //candidatesDict is global and we use it here to store state of where those people we're not ordering are elected
         for(var i=0;i<copy.length;i++){
-			console.log("Sorting " + i + " " + start + " " + singleCountDict[copy[i]["key"]].order + " " + candidatesDict[copy[i]["key"]].order);
             singleCountDict[copy[i]["key"]].order = i+start;
             candidatesDict[copy[i]["key"]].order = i+start;
-			console.log(singleCountDict[copy[i]["key"]]);
-			console.log(candidatesDict[copy[i]["key"]]);
-			console.log("----");
             if (singleCountDict[copy[i]["key"]]["status"] != "" ) {
                 candidatesDict[copy[i]["key"]].status = singleCountDict[copy[i]["key"]]["status"];
             }
