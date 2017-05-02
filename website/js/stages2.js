@@ -271,7 +271,7 @@ function animateStages(year,council,constituencyFolder) {
                                         }
                                     });
                                 left = left + transfers[candidates[t].id] * qFactor;
-								console.log("left incremented: ", left, ", t: ", t, ", candidates[t].id: ", candidates[t].id, ", qFactor: ", qFactor);
+								console.log("left incremented: ", left, ", t: ", t, ", candidates[t].id: ", candidates[t].id, ", transfers[candidates[t].id]: ", transfers[candidates[t].id]);
                             }
                         }
                         //could put dead votes in here
