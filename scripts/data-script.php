@@ -281,11 +281,22 @@ function extendParties($node)
  {
      if (count($node->children))
      {
-         $node->text .= " (" . $node->no_seats . " seats, " . $node->no_candidates . " candidates)";
-         foreach ($node->children as $child)
-         {
-             extendNames($child);
-         }
+        switch ($node->type)
+        {
+            case "root":
+                $node->text .= " (" . count($node->children) . " councils, " . $node->countType("ward") . " wards, " . $node->no_seats . " seats, " . $node->no_candidates . " candidates)";
+                break;
+            case "council":
+                $node->text .= " (" . count($node->children) . " wards, " . $node->no_seats . " seats, " . $node->no_candidates . " candidates)";
+                break;
+            case "ward":
+                $node->text .= " (" . $node->no_seats . " seats, " . $node->no_candidates . " candidates)";
+                break;
+        }
+        foreach ($node->children as $child)
+        {
+            extendNames($child);
+        }
      }
  }
 
