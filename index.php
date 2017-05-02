@@ -56,7 +56,7 @@ navigation("Scottish Council elections 2017");
         <a href="/treeview/"><img src="/website/image/treeview1.png"></a>
     </div>
     <div class="main-option">
-        <h3>Explorer and search by party</h3>
+        <h3>Explore and search by party</h3>
         <a href="/treeview/by-party.php"><img src="/website/image/treeview2.png"></a>
     </div>
 </div>
