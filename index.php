@@ -52,11 +52,11 @@ navigation("Scottish Council elections 2017");
 	    <script src="/website/js/leaflet-pip.js"></script>
     </div>
     <div class="main-option">
-        <h3>Drill down by council</h3>
+        <h3>Explore and search by council</h3>
         <a href="/treeview/"><img src="/website/image/treeview1.png"></a>
     </div>
     <div class="main-option">
-        <h3>Drill down by party</h3>
+        <h3>Explorer and search by party</h3>
         <a href="/treeview/by-party.php"><img src="/website/image/treeview2.png"></a>
     </div>
 </div>
