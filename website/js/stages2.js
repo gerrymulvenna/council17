@@ -98,7 +98,7 @@ function animateStages(year,council,constituencyFolder) {
                 transfers:((data[i]["Status"] == "Excluded" && parseInt(data[i]["Transfers"]) < 0) ||
                            (data[i]["Status"] == "Elected" && parseInt(data[i]["Transfers"]) < 0))
             }
-            transferDict[data[i]["Count_Number"]][data[i]["Candidate_Id"]] = Math.max(0, parseInt(data[i]["Transfers"], 10));
+            transferDict[data[i]["Count_Number"]][data[i]["Candidate_Id"]] = Math.max(0, parseInt(data[i]["Transfers"] || 0, 10));
 
             if (!(data[i]["Candidate_Id"] in candidatesDict)) {
                 var party = data[i]["Party_Name"];
@@ -227,9 +227,7 @@ function animateStages(year,council,constituencyFolder) {
                     //we have to break it down now instead
                     $("#candidate"+candidates[j].id).width(countDict[i][candidates[j].id]["total"] * qFactor);
                     var transfers = transferDict[i];
-					console.log("startLeft: ", startLeft, ", countDict[i][candidates[j].id]['total']: ", countDict[i][candidates[j].id]['total'], ", i: ", i, ", j: ", j);
                     var left = startLeft + countDict[i][candidates[j].id]["total"] * qFactor;
-					console.log("left: ", left);
                     var top = topMargin+ (countDict[i-1][candidates[j].id]["order"]*30);
                     if (!transfered){
                         for (var t=0;t<candidates.length;t++) {
@@ -271,7 +269,6 @@ function animateStages(year,council,constituencyFolder) {
                                         }
                                     });
                                 left = left + transfers[candidates[t].id] * qFactor;
-								console.log("left incremented: ", left, ", t: ", t, ", candidates[t].id: ", candidates[t].id, ", transfers[candidates[t].id]: ", transfers[candidates[t].id]);
                             }
                         }
                         //could put dead votes in here
