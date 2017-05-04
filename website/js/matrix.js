@@ -1,4 +1,4 @@
-var council = "simulation";
+var council = "city-of-edinburgh";
 		
 		$(document).ready(function() {
             $.ajaxSetup({
@@ -23,26 +23,26 @@ var council = "simulation";
             var yearSelect = $("#yearSelect");
             $.each(constituencies, function(i, constituency) {
                 var name = constituency.Constituency_Name;
-                var folder = name.toLowerCase().replace(" and ", "-").replace(/\s/, "-");
+                var folder = constituency.Directory;
                 $(constituencySelect).append($("<option/>").val(folder).text(name))
             })
             constituencySelect.change(function() {
                 var constituencyFolder = $("#constituencySelect :selected").val();
                 var year = $("#yearSelect :selected").text();
-                countMatrix(year, council, constituencyFolder);
+                //countMatrix(year, council, constituencyFolder);
                 animateStages(year, council, constituencyFolder);
             })
             yearSelect.change(function() {
                 var constituencyFolder = $("#constituencySelect :selected").val();
                 var year = $("#yearSelect :selected").text();
                 getTransfersData(year);
-                countMatrix(year, council, constituencyFolder);
+                //countMatrix(year, council, constituencyFolder);
                 animateStages(year, council, constituencyFolder);
             })
             var constituencyFolder = $("#constituencySelect :selected").val();
             var year = $("#yearSelect :selected").text();
             getTransfersData(year);
-            countMatrix(year, council, constituencyFolder);
+            //countMatrix(year, council, constituencyFolder);
             animateStages(year, council, constituencyFolder);
         })
 

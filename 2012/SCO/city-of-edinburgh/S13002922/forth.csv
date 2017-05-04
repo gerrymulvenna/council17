@@ -1,0 +1,73 @@
+Candidate_First_Pref_Votes,Status,Occurred_On_Count,Surname,Firstname,Constituency_Number,Party_Name,Candidate_Id,Count_Number,Transfers,id,Total_Votes
+1377,,,CARDOWNIE,Steve,4,Scottish National Party (SNP),41,1,0,0,1377
+2230,Elected,1,DAY,Cammy,4,Labour Party,42,1,0,1,2230
+976,,,GORDON,George,4,Scottish National Party (SNP),43,1,0,2,976
+117,,,HENDERSON,Ruth Ann,4,Scottish Anti-Cuts Coalition,44,1,0,3,117
+1833,Elected,1,JACKSON,Allan George,4,Conservative and Unionist Party,45,1,0,4,1833
+573,,,JOESTER,Kate,4,Scottish Green Party,46,1,0,5,573
+57,,,MACMHICEAN,Seumas Stiubhard,4,Liberal Party in Scotland,47,1,0,6,57
+524,,,REDPATH,Vicki,4,Labour Party,48,1,0,7,524
+410,,,WIGHT,Tim,4,Liberal Democrats,49,1,0,8,410
+1377,,,CARDOWNIE,Steve,4,Scottish National Party (SNP),41,2,30.36294,,1407.36294
+2230,Elected,1,DAY,Cammy,4,Labour Party,42,2,-610,,1620
+976,,,GORDON,George,4,Scottish National Party (SNP),43,2,32.27772,,1008.27772
+117,,,HENDERSON,Ruth Ann,4,Scottish Anti-Cuts Coalition,44,2,10.39452,,127.39452
+1833,Elected,1,JACKSON,Allan George,4,Conservative and Unionist Party,45,2,0,,1833
+573,,,JOESTER,Kate,4,Scottish Green Party,46,2,24.6186,,597.6186
+57,,,MACMHICEAN,Seumas Stiubhard,4,Liberal Party in Scotland,47,2,7.38558,,64.38558
+524,,,REDPATH,Vicki,4,Labour Party,48,2,437.11692,,961.11692
+410,,,WIGHT,Tim,4,Liberal Democrats,49,2,13.12992,,423.12992
+1377,,,CARDOWNIE,Steve,4,Scottish National Party (SNP),41,3,14.9898,,1422.35274
+2230,Elected,1,DAY,Cammy,4,Labour Party,42,3,0,,1620
+976,,,GORDON,George,4,Scottish National Party (SNP),43,3,9.0636,,1017.34132
+117,,,HENDERSON,Ruth Ann,4,Scottish Anti-Cuts Coalition,44,3,2.4402,,129.83472
+1833,Elected,1,JACKSON,Allan George,4,Conservative and Unionist Party,45,3,-213,,1620
+573,,,JOESTER,Kate,4,Scottish Green Party,46,3,28.3528,,625.9714
+57,Excluded,3,MACMHICEAN,Seumas Stiubhard,4,Liberal Party in Scotland,47,3,8.715,,73.10058
+524,,,REDPATH,Vicki,4,Labour Party,48,3,14.525,,975.64192
+410,,,WIGHT,Tim,4,Liberal Democrats,49,3,50.4308,,473.56072
+1377,,,CARDOWNIE,Steve,4,Scottish National Party (SNP),41,4,9.2324,,1431.58514
+2230,Elected,1,DAY,Cammy,4,Labour Party,42,4,0,,1620
+976,,,GORDON,George,4,Scottish National Party (SNP),43,4,1.50594,,1018.84726
+117,,,HENDERSON,Ruth Ann,4,Scottish Anti-Cuts Coalition,44,4,2.62214,,132.45686
+1833,Elected,1,JACKSON,Allan George,4,Conservative and Unionist Party,45,4,0,,1620
+573,,,JOESTER,Kate,4,Scottish Green Party,46,4,10.73834,,636.70974
+57,Excluded,3,MACMHICEAN,Seumas Stiubhard,4,Liberal Party in Scotland,47,4,-73.10058,,0
+524,,,REDPATH,Vicki,4,Labour Party,48,4,11.5488,,987.19072
+410,,,WIGHT,Tim,4,Liberal Democrats,49,4,21.70824,,495.26896
+1377,,,CARDOWNIE,Steve,4,Scottish National Party (SNP),41,5,11.32656,,1442.9117
+2230,Elected,1,DAY,Cammy,4,Labour Party,42,5,0,,1620
+976,,,GORDON,George,4,Scottish National Party (SNP),43,5,15.77948,,1034.62674
+117,Excluded,4,HENDERSON,Ruth Ann,4,Scottish Anti-Cuts Coalition,44,5,-132.45686,,0
+1833,Elected,1,JACKSON,Allan George,4,Conservative and Unionist Party,45,5,0,,1620
+573,,,JOESTER,Kate,4,Scottish Green Party,46,5,46.7812,,683.49094
+57,Excluded,3,MACMHICEAN,Seumas Stiubhard,4,Liberal Party in Scotland,47,5,,,
+524,,,REDPATH,Vicki,4,Labour Party,48,5,21.37664,,1008.56736
+410,,,WIGHT,Tim,4,Liberal Democrats,49,5,4.38974,,499.6587
+1377,,,CARDOWNIE,Steve,4,Scottish National Party (SNP),41,6,39.07422,,1481.98592
+2230,Elected,1,DAY,Cammy,4,Labour Party,42,6,0,,1620
+976,,,GORDON,George,4,Scottish National Party (SNP),43,6,35.50044,,1070.12718
+117,Excluded,4,HENDERSON,Ruth Ann,4,Scottish Anti-Cuts Coalition,44,6,,,
+1833,Elected,1,JACKSON,Allan George,4,Conservative and Unionist Party,45,6,0,,1620
+573,,,JOESTER,Kate,4,Scottish Green Party,46,6,166.22476,,849.7157
+57,Excluded,3,MACMHICEAN,Seumas Stiubhard,4,Liberal Party in Scotland,47,6,,,
+524,,,REDPATH,Vicki,4,Labour Party,48,6,90.26892,,1098.83628
+410,Excluded,5,WIGHT,Tim,4,Liberal Democrats,49,6,-499.6587,,0
+1377,,,CARDOWNIE,Steve,4,Scottish National Party (SNP),41,7,72.31384,,1554.29976
+2230,Elected,1,DAY,Cammy,4,Labour Party,42,7,0,,1620
+976,,,GORDON,George,4,Scottish National Party (SNP),43,7,116.82994,,1186.95712
+117,Excluded,4,HENDERSON,Ruth Ann,4,Scottish Anti-Cuts Coalition,44,7,,,
+1833,Elected,1,JACKSON,Allan George,4,Conservative and Unionist Party,45,7,0,,1620
+573,Excluded,6,JOESTER,Kate,4,Scottish Green Party,46,7,-849.7157,,0
+57,Excluded,3,MACMHICEAN,Seumas Stiubhard,4,Liberal Party in Scotland,47,7,,,
+524,,,REDPATH,Vicki,4,Labour Party,48,7,248.11342,,1346.9497
+410,Excluded,5,WIGHT,Tim,4,Liberal Democrats,49,7,,,
+1377,Elected,,CARDOWNIE,Steve,4,Scottish National Party (SNP),41,8,822.9704,,2377.27016
+2230,Elected,1,DAY,Cammy,4,Labour Party,42,8,0,,1620
+976,Excluded,7,GORDON,George,4,Scottish National Party (SNP),43,8,-1186.95712,,0
+117,Excluded,4,HENDERSON,Ruth Ann,4,Scottish Anti-Cuts Coalition,44,8,,,
+1833,Elected,1,JACKSON,Allan George,4,Conservative and Unionist Party,45,8,0,,1620
+573,Excluded,6,JOESTER,Kate,4,Scottish Green Party,46,8,,,
+57,Excluded,3,MACMHICEAN,Seumas Stiubhard,4,Liberal Party in Scotland,47,8,,,
+524,Elected,8,REDPATH,Vicki,4,Labour Party,48,8,98.75794,,1445.70764
+410,Excluded,5,WIGHT,Tim,4,Liberal Democrats,49,8,,,

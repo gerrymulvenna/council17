@@ -73,9 +73,7 @@ echo '
                     <select id="constituencySelect">
             </select>
                     <select id="yearSelect">
-                <option>2017</option>
-                <option>2016</option>
-                <option>2011</option>
+                <option>2012</option>
             </select>
                 </div>
             </div>
@@ -92,14 +90,6 @@ echo '
                 <div id="animation"></div>
             </div>
 
-            <div class="row">
-                <h3>Count Matrix</h3>
-                <div id="overview_container">
-                    <div id="count_matrix"></div>
-                </div>
-                <div id="matrixtooltip"></div>
-                <p>Red = Eliminated, Green = Elected</p>
-            </div>
 
             <div class="row">
                 <h3>Party to Party Transfers</h3>

@@ -14,9 +14,9 @@ function animateStages(year,council,constituencyFolder) {
     $("#animation").append("<div id='theline' />")
     var playButton = $("#pause-replay");
     playButton.unbind();
-    if (playButton.hasClass("fa-play")) {
-        playButton.removeClass("fa-play");
-        playButton.addClass("fa-pause");
+    if (playButton.hasClass("fa-pause")) {
+        playButton.removeClass("fa-pause");
+        playButton.addClass("fa-play");
     }
     var speed = 1;
     var leftPadding = 10;
@@ -98,12 +98,12 @@ function animateStages(year,council,constituencyFolder) {
                 transfers:((data[i]["Status"] == "Excluded" && parseInt(data[i]["Transfers"]) < 0) ||
                            (data[i]["Status"] == "Elected" && parseInt(data[i]["Transfers"]) < 0))
             }
-            transferDict[data[i]["Count_Number"]][data[i]["Candidate_Id"]] = Math.max(0, parseInt(data[i]["Transfers"], 10));
+            transferDict[data[i]["Count_Number"]][data[i]["Candidate_Id"]] = Math.max(0, parseInt(data[i]["Transfers"] || 0, 10));
 
             if (!(data[i]["Candidate_Id"] in candidatesDict)) {
                 var party = data[i]["Party_Name"];
                 if (typeof(party)!="string"){ party = "Non-Party";}
-                party=party.replace(/\s+/g,"-");
+                party=party.replace(/\s+/g,"-").replace(/[\'\",()]/g,"").replace(/\u2013/g, '_');
                 candidates.push({
                     name:data[i]["Firstname"]+" "+((typeof(data[i]["Surname"])=="string")?data[i]["Surname"]:""),
                     id:data[i]["Candidate_Id"],
@@ -173,7 +173,7 @@ function animateStages(year,council,constituencyFolder) {
         firstCount();  //run the first count
         var countNumber = 2;  //global loop variable
         // set the advance count function to run in a loop
-        loop = window.setInterval(advanceCount,4000*speed);
+//        loop = window.setInterval(advanceCount,4000*speed);
     }else{
         //if we didn't load a constituency var then we have no data yet
         $("#quota").text("There is no data up for this constituency at present. Once we receive and add it, it will display here.");
@@ -247,7 +247,6 @@ function animateStages(year,council,constituencyFolder) {
                                     }).delay(100*speed)
                                     .animate({left:localLeft},900*speed, function(){
 										if (transfers[$(this).data('candidate')] + countDict[i][$(this).data('candidate')]["total"] >0 ){
-											console.log(transfers[$(this).data('candidate')] + countDict[i][$(this).data('candidate')]["total"]);
                                             $("#candidate"+$(this).data('candidate'))
                                             .text(countDict[i-1][$(this).data('candidate')]["total"]+transfers[$(this).data('candidate')]+ " " + countDict[i][$(this).data('candidate')]["status"]);
                                         } else {
