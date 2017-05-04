@@ -56,7 +56,7 @@ function results_content()
 {
 echo '
         <div class="cta">
-            <strong>Please note: data is unconfirmed until it has been verified against Electoral Office records</strong>
+            <strong>Please note: official results are published on each council website upon full completion of the counts in all wards for that council.</strong>
             <div id="seats_summary" style="background-color: #ffffff; margin: auto; color: #212121; border-bottom: solid; border-bottom-width: 1px;"></div>
         </div>
 
@@ -67,14 +67,14 @@ echo '
             </div>
 
             <div class="row">
-                <h2>Visualisations</h2>
-                <p>Choose a constituency and year.</p>
+                <h2>Unofficial results</h2>
+                <p>Choose a council, ward and election year.</p>
                 <div id="menuBar">
-                    <select id="constituencySelect">
-            </select>
-                    <select id="yearSelect">
-                <option>2012</option>
-            </select>
+';
+selectCouncil('Select a council');
+echo '
+                    <select id="constituencySelect"></select>
+                    <select id="yearSelect"><option>2012</option></select>
                 </div>
             </div>
 
@@ -91,7 +91,7 @@ echo '
             </div>
 
 
-            <div class="row">
+            <div class="row hidden">
                 <h3>Party to Party Transfers</h3>
                 <div class="alert alert-info" role="alert">This matrix summarises the percentage of transfers between candidates from each party. It is based on only those count stages with a transfer from one single candidate. It is only indicative of the transfers that were calculated during
                     the actual count process, and cannot account for all ballots cast in a constituency.</div>
@@ -100,7 +100,7 @@ echo '
                 <p>N/T = votes not transferred</p>
             </div>
 
-            <p>Thanks to James Bligh (<a href="http://twitter.com/anamates" target="_blank" title="External Link">@anamates</a>) for sharing the <a href="https://github.com/NICVA/electionsni/blob/master/website/js/stages.js" target="_blank" title="External Link">code</a>                for the transfers animation.</p>
+            <p><em>The Single Transferable Vote (STV) animation was developed by James Bligh (<a href="http://twitter.com/anamates" target="_blank" title="External Link">@anamates</a>) and adapted by Bob Harper on <a href="https://github.com/NICVA/electionsni/blob/master/website/js/stages.js" target="_blank" title="External Link">Elections NI</a>.</em></p>
         </div>
     </div>
 ';
