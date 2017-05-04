@@ -196,4 +196,101 @@ function readJSON($my_file)
     $data = json_decode($json);
     return ($data);
 }
+
+class Results
+{
+    public $Constituency;
+
+    function __construct($info)
+    {
+        $this->Constituency = new Constituency($info->Constituency_Name, $info->Constituency_Number, $info->Number_Of_Seats, $info->Voting_Age_Pop, $info->Total_Electorate, $info->Total_Poll, $info->Valid_Poll);
+    }
+}
+
+class Constituency
+{
+    public $countInfo;
+    public $countGroup;
+
+    function __construct($name, $no, $seats, $pop, $electorate, $total, $valid)
+    {
+        $this->countInfo = new countInfo($name, $no, $seats, $pop, $electorate, $total, $valid);
+        $this->countGroup = array();
+    }
+}
+
+class countInfo
+{
+    public $Valid_Poll;
+    public $Number_Of_Seats;
+    public $Total_Poll;
+    public $Voting_Age_Pop;
+    public $Quota;
+    public $Constituency_Name;
+    public $Constituency_Number;
+    public $Total_Electorate;
+    public $Spoiled;
+
+    function __construct($name, $no, $seats, $pop, $electorate, $total, $valid)
+    {
+        $this->Valid_Poll = $valid;
+        $this->Number_Of_Seats = $seats;
+        $this->Total_Poll = $total;
+        $this->Voting_Age_Pop = $pop;
+        $this->Quota = floor($valid/($seats+1))+1;
+        $this->Constituency_Name = $name;
+        $this->Constituency_Number = $no;
+        $this->Total_Electorate = $electorate;
+        $this->Spoiled = $total - $valid;
+    }
+}
+
+class countItem
+{
+    public $Candidate_First_Pref_Votes;
+    public $Status;
+    public $Occurred_On_Count;
+    public $Surname;
+    public $Firstname;
+    public $Constituency_Number;
+    public $Party_Name;
+    public $Candidate_Id;
+    public $Count_Number;
+    public $Transfers;
+    public $id;
+    public $Total_Votes;
+
+    function __construct($id, $no, $count, $party, $candID, $fname, $sname, $firstpref, $transfers, $total, $status = NULL, $occurred = NULL)
+    {
+        $this->Candidate_First_Pref_Votes = $firstpref;
+        $this->Status = $status;
+        $this->Occurred_On_Count = $occurred;
+        $this->Surname = $sname;
+        $this->Firstname = $fname;
+        $this->Constituency_Number = $no;
+        $this->Party_Name = $party;
+        $this->Candidate_Id = $candID;
+        $this->Count_Number = $count;
+        $this->Transfers = $transfers;
+        $this->id = $id;
+        $this->Total_Votes = $total;
+    }
+}
+
+class Constituencies
+{
+    public $Constituency_Name;
+    public $Constituency_Number;
+    public $Directory;
+    public $countInfo;
+
+    function __construct($name, $no, $code, $info)
+    {
+        $this->Constituency_Name = $name;
+        $this->Constituency_Number = $no;
+        $this->Directory = $code;
+        $this->countInfo = $info;
+    }
+}
+
 ?>
