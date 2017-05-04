@@ -146,7 +146,7 @@ id,name,honorific_prefix,honorific_suffix,gender,birth_date,election,party_id,pa
 22169,John McLaren,,,,,local.north-lanarkshire.2017-05-04,party:53,Labour Party,UTW:stepps-chryston-and-muirhead,"Stepps, Chryston and Muirhead",,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
 22218,Steven Bonnar,,,,,local.north-lanarkshire.2017-05-04,party:102,Scottish National Party (SNP),UTW:thorniewood,Thorniewood,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
 22219,Bob Burrows,,,,,local.north-lanarkshire.2017-05-04,party:53,Labour Party,UTW:thorniewood,Thorniewood,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
-8414,Hugh Gaffney,,,,,local.north-lanarkshire.2017-05-04,party:53,Labour Party,UTW:thorniewood,Thorniewood,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
+8414,Hugh Gaffney,,,male,,local.north-lanarkshire.2017-05-04,party:53,Labour Party,UTW:thorniewood,Thorniewood,,False,,hgaffney48,,,,,,,,,,,,1026135084,2017-05-04,True,False,,,,,PP53
 22220,Christine McConnell,,,,,local.north-lanarkshire.2017-05-04,party:52,Conservative and Unionist Party,UTW:thorniewood,Thorniewood,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP52
 22221,Josh Robertson,,,,,local.north-lanarkshire.2017-05-04,party:102,Scottish National Party (SNP),UTW:thorniewood,Thorniewood,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
 21327,Bob Burgess,,,,,local.north-lanarkshire.2017-05-04,party:52,Conservative and Unionist Party,UTW:wishaw,Wishaw,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP52

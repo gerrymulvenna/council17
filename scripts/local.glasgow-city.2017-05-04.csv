@@ -38,7 +38,7 @@ id,name,honorific_prefix,honorific_suffix,gender,birth_date,election,party_id,pa
 8390,Calum Mark Shepherd,,,,,local.glasgow-city.2017-05-04,party:90,Liberal Democrats,UTW:canal,Canal,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP90
 20601,Andrew Smith,,,male,,local.glasgow-city.2017-05-04,party:130,Scottish Green Party,UTW:canal,Canal,,,,andrewforcanal,https://www.facebook.com/andrewforcanal/,,,,,,https://candidates.democracyclub.org.uk/media/images/images/20601.png,,profile-photo,,Auto imported from Twitter,782697987956965376,2017-05-04,True,False,,,,,PP130
 21651,Robert Mathieson Barclay,,,,,local.glasgow-city.2017-05-04,party:85,UK Independence Party (UKIP),UTW:cardonald,Cardonald,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP85
-21652,Matt Kerr,,,,,local.glasgow-city.2017-05-04,party:53,Labour Party,UTW:cardonald,Cardonald,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
+21652,Matt Kerr,,,male,,local.glasgow-city.2017-05-04,party:53,Labour Party,UTW:cardonald,Cardonald,,False,,Cllr_Matt_Kerr,,,,,,,,,,,,105587507,2017-05-04,True,False,,,,,PP53
 21653,Judy Lockhart,,,,,local.glasgow-city.2017-05-04,party:52,Conservative and Unionist Party,UTW:cardonald,Cardonald,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP52
 21654,Elaine McSporran,,,female,,local.glasgow-city.2017-05-04,party:102,Scottish National Party (SNP),UTW:cardonald,Cardonald,,False,,ElaineMcsporran,,,,,,,,,,,,48903484,2017-05-04,True,False,,,,,PP102
 21655,Joe Murray,,,,,local.glasgow-city.2017-05-04,party:102,Scottish National Party (SNP),UTW:cardonald,Cardonald,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
@@ -99,7 +99,7 @@ id,name,honorific_prefix,honorific_suffix,gender,birth_date,election,party_id,pa
 21705,George Laird,,,,,local.glasgow-city.2017-05-04,ynmp-party:2,Independent,UTW:greater-pollok,Greater Pollok,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
 21706,David McDonald,,,male,,local.glasgow-city.2017-05-04,party:102,Scottish National Party (SNP),UTW:greater-pollok,Greater Pollok,,False,,SNPdavid,https://www.facebook.com/CllrDavidMcDonald,,,,,,,,,,,101087043,2017-05-04,True,False,,,,,PP102
 21707,Mark McGowan,,,,,local.glasgow-city.2017-05-04,party:804,Trade Unionist and Socialist Coalition,UTW:greater-pollok,Greater Pollok,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP804
-21708,Will Millinship,,,,,local.glasgow-city.2017-05-04,party:90,Liberal Democrats,UTW:greater-pollok,Greater Pollok,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP90
+21708,Will Millinship,,,Male,1982,local.glasgow-city.2017-05-04,party:90,Liberal Democrats,UTW:greater-pollok,Greater Pollok,,False,willmillinship@gmail.com,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP90
 21709,Rory O'Brien,,,,,local.glasgow-city.2017-05-04,party:52,Conservative and Unionist Party,UTW:greater-pollok,Greater Pollok,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP52
 8401,Rhiannon Spear,,,female,,local.glasgow-city.2017-05-04,party:102,Scottish National Party (SNP),UTW:greater-pollok,Greater Pollok,,False,rhiannonvspear@gmail.com,rhiannonv,https://www.facebook.com/RhiannonSpearSNP/,,,,,,,,,,,20669456,2017-05-04,True,False,,,,,PP102
 20424,Dean Ward,Mr,,Male,,local.glasgow-city.2017-05-04,ynmp-party:2,Independent,UTW:greater-pollok,Greater Pollok,,,deanwardforcouncillor@outlook.com,,https://www.facebook.com/DeanWardIndependant/,,,,,,,,,,,,2017-05-04,True,False,,,,,
