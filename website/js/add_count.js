@@ -1,8 +1,8 @@
 var warddata = [];
 var canddata = [];
-var countdata = [];
 findWardInfo('2017', 'wardinfo.json');
 var wardSelect = $("#wardSelect");
+var yearSelect = $("#yearSelect");
 var council = '';
 
 // function to populate wards for a given council
@@ -30,37 +30,50 @@ $(wardSelect).on('change', function() {
 	  loadCandidates($("#council-list :selected").val(), this.value,  $("#yearSelect :selected").text());
 });
 
+$(yearSelect).on('change', function() {
+	  loadCandidates($("#council-list :selected").val(), $("#wardSelect :selected").val(), this.value);
+});
+
+
 function loadCandidates(council, ward_code, year)
 {
-	findCountInfo(council, ward_code, year);
+	var countdata = getCountInfo(council, ward_code, year);
 	if (countdata.hasOwnProperty('Constituency') > 0)
 	{
 		var countInfo = countdata.Constituency.countInfo;
-		console.log(countInfo);
 		$('#electorate').val(countInfo.Total_Electorate);
 		$('#total_poll').val(countInfo.Total_Poll);
 		$('#valid_poll').val(countInfo.Valid_Poll);
 		$('#seats').val(countInfo.Number_Of_Seats);
 	}
-	var candinfo = document.getElementById("candidates");
-	var fname = 'local.' + council + '.2017-05-04.json';
-	findCandInfo(year, fname);
-	var ward = getObjects(canddata.wards, 'post_id', ward_code);
-
-	var wardstats = getObjects(warddata, "map_ward_code", ward_code);
-	if (wardstats.length > 0)
+	else
 	{
-		var cand_ward_code = wardstats[0].cand_ward_code;
-	    var ward = getObjects(canddata.wards, 'post_id', cand_ward_code);
-
-		if (ward.length > 0)
+		$('#electorate').val('');
+		$('#total_poll').val('');
+		$('#valid_poll').val('');
+		$('#seats').val('');
+	}
+	var candinfo = document.getElementById("candidates");
+	candinfo.innerHTML='';
+	var fname = 'local.' + council + '.2017-05-04.json';
+	if (year == '2017')
+	{
+		findCandInfo(year, fname);
+		var ward = getObjects(canddata.wards, 'post_id', ward_code);
+		var wardstats = getObjects(warddata, "map_ward_code", ward_code);
+		if (wardstats.length > 0)
 		{
-			candinfo.innerHTML='';
-			var candidates = ward[0].candidates;
-			for (i = 0; i < candidates.length; i++) {
-				candinfo.innerHTML += "<div class=\"votes " + candidates[i].party_name.replace(/\s+/g, "-").replace(/[\'\",()]/g,"").replace(/\u2013/g, '_') + "\"></div><div id=\"candidate " + candidates[i].id + "\" class=\"tooltip " + candidates[i].party_name.replace(/\s+/g, "-").replace(/[\'\",()]/g,"").replace(/\u2013/g, '_') + "_label\">" + candidates[i].name + "</div><br/>";
+			var cand_ward_code = wardstats[0].cand_ward_code;
+			var ward = getObjects(canddata.wards, 'post_id', cand_ward_code);
+
+			if (ward.length > 0)
+			{
+				var candidates = ward[0].candidates;
+				for (i = 0; i < candidates.length; i++) {
+					candinfo.innerHTML += "<div class=\"votes " + candidates[i].party_name.replace(/\s+/g, "-").replace(/[\'\",()]/g,"").replace(/\u2013/g, '_') + "\"></div><div id=\"candidate " + candidates[i].id + "\" class=\"tooltip " + candidates[i].party_name.replace(/\s+/g, "-").replace(/[\'\",()]/g,"").replace(/\u2013/g, '_') + "_label\">" + candidates[i].name + "</div><br/>";
+				}
+				$('#pastebin').attr('rows', candidates.length);
 			}
-			$('#pastebin').attr('rows', candidates.length);
 		}
 	}
 }
@@ -82,7 +95,8 @@ function findWardInfo(year, filename) {
 }
 
 // load count info for a given ward
-function findCountInfo(council, ward_code, year) {
+function getCountInfo(council, ward_code, year) {
+	var countdata = [];
     var request = new XMLHttpRequest();
     var path = '/' + year + '/SCO/' + council + '/' + ward_code + '/ResultsJson.json'; 
 	console.log(path);
@@ -96,6 +110,7 @@ function findCountInfo(council, ward_code, year) {
     request.onerror = function() {
         candinfo.innerHTML = 'Connection error retrieving data from the server'
     };
+	return(countdata);
 }
 
 

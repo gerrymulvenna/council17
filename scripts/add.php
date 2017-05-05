@@ -40,7 +40,7 @@ selectCouncil('Select a council', 'add-form', '');
                 </div>
                 <div class="row">
                     <div id="candidates"></div>
-                    <div id="data-entry"><textarea id="pastebin" rows="6" cols="100" placeholder="Paste data here"></textarea></div><br>
+                    <div id="data-entry"><textarea id="pastebin" name="pastebin" rows="6" cols="100" placeholder="Paste data here"></textarea></div><br>
                                           <input type="submit" value="Submit">
 
                 </div>
