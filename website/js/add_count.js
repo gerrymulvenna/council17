@@ -36,12 +36,11 @@ function loadCandidates(council, ward_code, year)
 	if (countdata.hasOwnProperty('Constituency') > 0)
 	{
 		var countInfo = countdata.Constituency.countInfo;
-//		$('#electorate'}.val(countdata.countInfo.Total_Electorate);
-//		$('#total_poll'}.val(countdata.countInfo.Total_Poll);
-//		$('#valid_poll'}.val(countdata.countInfo.Valid_Poll);
-$('#seats').val(4)
-//$('#seats'}.val(4)
-//countdata.countInfo.Number_Of_Seats
+		console.log(countInfo);
+		$('#electorate').val(countInfo.Total_Electorate);
+		$('#total_poll').val(countInfo.Total_Poll);
+		$('#valid_poll').val(countInfo.Valid_Poll);
+		$('#seats').val(countInfo.Number_Of_Seats);
 	}
 	var candinfo = document.getElementById("candidates");
 	var fname = 'local.' + council + '.2017-05-04.json';
