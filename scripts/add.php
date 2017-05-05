@@ -11,10 +11,10 @@ navigation("Scottish Council elections 2017");
 
         <div class="content">
 
-            <div class="row">
+            <form method="POST" action="update.php">
                 <h2>Parse some count data</h2>
-                <p>Choose a council, ward and election year.</p>
-                <form method="POST" action="update.php">
+                <div class="row">
+                    <p>Choose a council, ward and election year.</p>
                     <div id="menuBar">
 <?php
 selectCouncil('Select a council', 'add-form', '');
@@ -25,8 +25,26 @@ selectCouncil('Select a council', 'add-form', '');
                             <option>2012</option>
                         </select>
                     </div>
-                </form>
-            </div>
+                </div>
+                <div class="row">
+                    <div id="wardinfo">
+                      <label for="electorate">Electorate</label>
+                      <input type="text" name="electorate" id="electorate" size="10">
+                      <label for="total_poll">Total poll</label>
+                      <input type="text" name="total_poll" id="total_poll" size="10">
+                      <label for="valid_poll">Valid poll</label>
+                      <input type="text" name="valid_poll" id="valid_poll" size="10">
+                      <label for="seats">Seats</label>
+                      <input type="text" name="seats" id="seats" maxlength="1" size="2">
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="candidates"></div>
+                    <div id="data-entry"><textarea id="pastebin" rows="6" cols="100" placeholder="Paste data here"></textarea></div><br>
+                                          <input type="submit" value="Submit">
+
+                </div>
+            </form>
         </div>
 </div>
 

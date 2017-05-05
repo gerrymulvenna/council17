@@ -444,6 +444,10 @@ input[id=show-menu]:checked~#cssmenu {
     display: inline;
 }
 
+.add-form input, textarea, div {
+	padding: 5px 5px 5px 5px;
+}
+
 #menuBar {
     overflow: auto;
     padding: 4px 10px;
