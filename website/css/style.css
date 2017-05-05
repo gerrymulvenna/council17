@@ -611,3 +611,10 @@ input[id=postcode] {
 .main-option #me {
 	max-width: 150px;
 }
+
+#data-entry {
+	max-width: 420px;
+}
+#pastebin {
+	max-width: 400px;
+}

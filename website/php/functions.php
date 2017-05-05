@@ -316,7 +316,7 @@ echo "<script>
 function selectCouncil ($prompt, $class = "select", $suffix = ".php")
 {
 echo'<div id="select-council">
-				<select id="council-list" class="' . $class . '" onClick="selectCouncil()">';
+				<select id="council-list" class="' . $class . '" onClick="selectCouncil()" name="council">';
 echo "\n<option>$prompt</option>\n";
 echo '					<option value="aberdeen-city' . $suffix . '">Aberdeen City</option>
 					<option value="aberdeenshire' . $suffix . '">Aberdeenshire</option>

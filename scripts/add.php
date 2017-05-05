@@ -19,8 +19,8 @@ navigation("Scottish Council elections 2017");
 <?php
 selectCouncil('Select a council', 'add-form', '');
 ?>
-                        <select id="wardSelect" class="add-form"><option>Wards appear when council selected</option></select>
-                        <select id="yearSelect" class="add-form">
+                        <select id="wardSelect" class="add-form" name="ward"><option>Wards appear when council selected</option></select>
+                        <select id="yearSelect" class="add-form" name="year">
                             <option>2017</option>
                             <option>2012</option>
                         </select>
@@ -40,7 +40,7 @@ selectCouncil('Select a council', 'add-form', '');
                 </div>
                 <div class="row">
                     <div id="candidates"></div>
-                    <div id="data-entry"><textarea id="pastebin" name="pastebin" rows="6" cols="100" placeholder="Paste data here"></textarea></div><br>
+                    <div id="data-entry"><textarea id="pastebin" name="pastebin" rows="6" cols="50" placeholder="Paste data here"></textarea></div><br>
                                           <input type="submit" value="Submit">
 
                 </div>
