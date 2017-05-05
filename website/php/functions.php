@@ -1,4 +1,51 @@
 <?php
+
+function add_count_head($title, $name, $twimg)
+{
+    echo '
+<!DOCTYPE html>
+<html>
+<head>';
+    echo"    <title>$title</title>\n";
+    echo'
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
+
+    <link rel="stylesheet" href="/website/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="/website/css/style.css" media="screen, handheld" />
+    <link rel="stylesheet" type="text/css" href="/website/css/overview.css" media="screen, handheld" />
+    <link rel="stylesheet" type="text/css" href="/website/css/enhanced.css" media="screen  and (min-width: 60.5em)" />
+    <link rel="stylesheet" type="text/css" href="/website/css/parties.css" media="screen, handheld" />
+
+    <link rel="icon" type="image/png" href="/website/image/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/website/image/favicon-16x16.png" sizes="16x16" />
+    <!--[if (lt IE 9)&(!IEMobile)]>
+		<link rel="stylesheet" type="text/css" href="enhanced.css" />
+		<![endif]-->
+    <meta name="description" content="Map-based interface to browse the candidates for the Scottish Council Elections 2017" />
+    <meta name="keywords" content="Scotland, local elections, open data, 2017, crowdsource, single transferable vote, stv, ward, candidate, voting, #council17, electoral"
+    />
+    <meta name="author" content="Gerry Mulvenna">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="1 month">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@gerrymulvenna" />
+    <meta name="twitter:creator" content="@gerrymulvenna" />
+    <meta property="og:url" content="http://council17.mulvenna.org/councils/" />
+    <meta property="og:title" content="Scottish Council elections 2017 #council17" />
+    <meta property="og:description" content="Presenting crowdsourced open data, live results and data visualisations for the Scottish Council Elections 2017" />
+';
+echo "    <meta property=\"og:image\" content=\"http://" . $_SERVER['SERVER_NAME'] . "$twimg\" />\n";
+echo '
+
+</head>
+<body>
+
+    <div id="wrap">
+';
+}
+
 function results_head($title, $name, $twimg)
 {
     echo '
@@ -184,7 +231,7 @@ function navigation($title, $param2 = NULL, $param3 = NULL, $param4 = NULL)
                 <li><a href="/councils"><span>By map</span></a></li>
                 <li><a href="/postcode/"><span>By postcode</span></a></li>
                 <li><a href="/treeview/"><span>By council</span></a></li>
-                <li><a href="/treeview/by-party.php"><span>By party</span></a></li>
+                <li><a href="/treeview/by-party,php"><span>By party</span></a></li>
                 <li><a href="/about"><span>About</span></a></li>
             </ul>
         </div>';
@@ -266,43 +313,43 @@ echo "<script>
 
 }
 
-function selectCouncil ($prompt)
+function selectCouncil ($prompt, $class = "select", $suffix = ".php")
 {
 echo'<div id="select-council">
-				<select id="council-list" class="select" onClick="selectCouncil()">';
+				<select id="council-list" class="' . $class . '" onClick="selectCouncil()">';
 echo "\n<option>$prompt</option>\n";
-echo '					<option value="aberdeen-city.php">Aberdeen City</option>
-					<option value="aberdeenshire.php">Aberdeenshire</option>
-					<option value="angus.php">Angus</option>
-					<option value="argyll-and-bute.php">Argyll And Bute</option>
-					<option value="city-of-edinburgh.php">City Of Edinburgh</option>
-					<option value="clackmannanshire.php">Clackmannanshire</option>
-					<option value="dumfries-and-galloway.php">Dumfries And Galloway</option>
-					<option value="dundee-city.php">Dundee City</option>
-					<option value="east-ayrshire.php">East Ayrshire</option>
-					<option value="east-dunbartonshire.php">East Dunbartonshire</option>
-					<option value="east-lothian.php">East Lothian</option>
-					<option value="east-renfrewshire.php">East Renfrewshire</option>
-					<option value="falkirk.php">Falkirk</option>
-					<option value="fife.php">Fife</option>
-					<option value="glasgow-city.php">Glasgow City</option>
-					<option value="highland.php">Highland</option>
-					<option value="inverclyde.php">Inverclyde</option>
-					<option value="midlothian.php">Midlothian</option>
-					<option value="moray.php">Moray</option>
-					<option value="eilean-siar.php">Na h-Eileanan An Iar</option>
-					<option value="north-ayrshire.php">North Ayrshire</option>
-					<option value="north-lanarkshire.php">North Lanarkshire</option>
-					<option value="orkney-islands.php">Orkney Islands</option>
-					<option value="perth-and-kinross.php">Perth And Kinross</option>
-					<option value="renfrewshire.php">Renfrewshire</option>
-					<option value="the-scottish-borders.php">Scottish Borders</option>
-					<option value="shetland-islands.php">Shetland Islands</option>
-					<option value="south-ayrshire.php">South Ayrshire</option>
-					<option value="south-lanarkshire.php">South Lanarkshire</option>
-					<option value="stirling.php">Stirling</option>
-					<option value="west-dunbartonshire.php">West Dunbartonshire</option>
-					<option value="west-lothian.php">West Lothian</option>
+echo '					<option value="aberdeen-city' . $suffix . '">Aberdeen City</option>
+					<option value="aberdeenshire' . $suffix . '">Aberdeenshire</option>
+					<option value="angus' . $suffix . '">Angus</option>
+					<option value="argyll-and-bute' . $suffix . '">Argyll And Bute</option>
+					<option value="city-of-edinburgh' . $suffix . '">City Of Edinburgh</option>
+					<option value="clackmannanshire' . $suffix . '">Clackmannanshire</option>
+					<option value="dumfries-and-galloway' . $suffix . '">Dumfries And Galloway</option>
+					<option value="dundee-city' . $suffix . '">Dundee City</option>
+					<option value="east-ayrshire' . $suffix . '">East Ayrshire</option>
+					<option value="east-dunbartonshire' . $suffix . '">East Dunbartonshire</option>
+					<option value="east-lothian' . $suffix . '">East Lothian</option>
+					<option value="east-renfrewshire' . $suffix . '">East Renfrewshire</option>
+					<option value="falkirk' . $suffix . '">Falkirk</option>
+					<option value="fife' . $suffix . '">Fife</option>
+					<option value="glasgow-city' . $suffix . '">Glasgow City</option>
+					<option value="highland' . $suffix . '">Highland</option>
+					<option value="inverclyde' . $suffix . '">Inverclyde</option>
+					<option value="midlothian' . $suffix . '">Midlothian</option>
+					<option value="moray' . $suffix . '">Moray</option>
+					<option value="eilean-siar' . $suffix . '">Na h-Eileanan An Iar</option>
+					<option value="north-ayrshire' . $suffix . '">North Ayrshire</option>
+					<option value="north-lanarkshire' . $suffix . '">North Lanarkshire</option>
+					<option value="orkney-islands' . $suffix . '">Orkney Islands</option>
+					<option value="perth-and-kinross' . $suffix . '">Perth And Kinross</option>
+					<option value="renfrewshire' . $suffix . '">Renfrewshire</option>
+					<option value="the-scottish-borders' . $suffix . '">Scottish Borders</option>
+					<option value="shetland-islands' . $suffix . '">Shetland Islands</option>
+					<option value="south-ayrshire' . $suffix . '">South Ayrshire</option>
+					<option value="south-lanarkshire' . $suffix . '">South Lanarkshire</option>
+					<option value="stirling' . $suffix . '">Stirling</option>
+					<option value="west-dunbartonshire' . $suffix . '">West Dunbartonshire</option>
+					<option value="west-lothian' . $suffix . '">West Lothian</option>
 				</select>
 			</div>';
 

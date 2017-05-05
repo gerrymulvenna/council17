@@ -438,6 +438,49 @@ input[id=show-menu]:checked~#cssmenu {
     line-height: inherit;
 }
 
+.add-form {
+    font-size: 16px;
+    position: relative;
+    display: inline;
+}
+
+#menuBar {
+    overflow: auto;
+    padding: 4px 10px;
+}
+
+#menuBar select {
+    float: left;
+    margin-right: 10px;
+    border: 0px;
+    margin-top: 7px;
+}
+
+#data-entry {
+	display: block;
+}
+
+
+.add-form select {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    outline: none;
+    -webkit-appearance: none;
+    display: block;
+    padding: 1.2em 3em 1.3em 1.5em;
+    transition: border-color 0.2s;
+    border: 5px solid #EB5168;
+    border-radius: 5px;
+    background: #fff;
+    color: #555;
+    line-height: normal;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+
 #ack {
 	display: block;
 	padding-top: 50px;
