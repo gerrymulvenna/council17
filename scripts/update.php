@@ -3,7 +3,6 @@ require "functions.php";
 
 echo "<pre>\n";
 print_r($_POST);
-echo "</pre>\n";
 
 if (isset($_POST['council']) && isset($_POST['ward']) && isset($_POST['year']))
 {
@@ -24,7 +23,7 @@ if (isset($_POST['council']) && isset($_POST['ward']) && isset($_POST['year']))
         $rdata = new Results($ward_info);
     }
 
-    if (strlen($_POST['pastebin'] > 0))
+    if (strlen($_POST['pastebin']) > 0)
     {
         $pastebin = preg_split("/\\r\\n|\\r|\\n/", $_POST['pastebin']);
         $candidates = $_POST['Candidate_Id'];
@@ -45,9 +44,23 @@ if (isset($_POST['council']) && isset($_POST['ward']) && isset($_POST['year']))
                     {
                         for ($row = 0; $row < count($candidates); $row++)
                         {
-                            $rdata->Constituency->countGroup[] = new countItem($id++, $_POST['ward'], $stage, $_POST['Party_Name'][$row], $_POST['Candidate_Id'][$row], $_POST['Firstname'][$row], $_POST['Surname'][$row], $rdata->Constituency->countGroup[$row]->Candidate_First_Pref_Votes, $numbers[$row][$col], $numbers[$row][$col+1]);
+                            $arrStatus = $rdata->currentStatus($rdata->Constituency->countGroup[$row]->Candidate_Id);
+                            if ($arrStatus)
+                            {
+                                echo "Stage " . $stage . " data added for " . $_POST['Firstname'][$row] . " " . $_POST['Surname'][$row] . ", " . $arrStatus['Status'] . " " . $arrStatus['Occurred_On_Count'] . "\n";
+                                $rdata->Constituency->countGroup[] = new countItem($id++, $_POST['ward'], $stage, $_POST['Party_Name'][$row], $_POST['Candidate_Id'][$row], $_POST['Firstname'][$row], $_POST['Surname'][$row], $rdata->Constituency->countGroup[$row]->Candidate_First_Pref_Votes, $numbers[$row][$col], $numbers[$row][$col+1], $arrStatus['Status'], $arrStatus['Occurred_On_Count']);
+                            }
+                            else
+                            {
+                                echo "Stage " . $stage . " data added for " . $_POST['Firstname'][$row] . " " . $_POST['Surname'][$row] . "\n";
+                                $rdata->Constituency->countGroup[] = new countItem($id++, $_POST['ward'], $stage, $_POST['Party_Name'][$row], $_POST['Candidate_Id'][$row], $_POST['Firstname'][$row], $_POST['Surname'][$row], $rdata->Constituency->countGroup[$row]->Candidate_First_Pref_Votes, $numbers[$row][$col], $numbers[$row][$col+1]);
+                            }
                         }
                     }
+                }
+                else
+                {
+                    echo "Data mismatch. " . count($rdata->Constituency->countGroup) . " count records in JSON data, " . count($candidates) . " candidates.\n";
                 }
             }
             else
@@ -60,16 +73,26 @@ if (isset($_POST['council']) && isset($_POST['ward']) && isset($_POST['year']))
                     {
                         if ($stage == 1)
                         {
+                            echo "Stage " . $stage . " data added for " . $_POST['Firstname'][$row] . " " . $_POST['Surname'][$row] . "\n";
                             $rdata->Constituency->countGroup[] = new countItem($id++, $_POST['ward'], $stage, $_POST['Party_Name'][$row], $_POST['Candidate_Id'][$row], $_POST['Firstname'][$row], $_POST['Surname'][$row], $numbers[$row][0], 0, $numbers[$row][$col]);
                         }
                         else
                         {
+                            echo "Stage " . $stage . " data added for " . $_POST['Firstname'][$row] . " " . $_POST['Surname'][$row] . "\n";
                             $rdata->Constituency->countGroup[] = new countItem($id++, $_POST['ward'], $stage, $_POST['Party_Name'][$row], $_POST['Candidate_Id'][$row], $_POST['Firstname'][$row], $_POST['Surname'][$row], $numbers[$row][0], $numbers[$row][$col - 1], $numbers[$row][$col]);
                         }
                     }
                 }
             }
         }
+        else
+        {
+            echo "Data mismatch. " . count($pastebin) . " rows detected. " . count($candidates) . " candidates.\n";
+        }
+    }
+    else
+    {
+        echo "No new data detected. Length of 'pastebin' = " . strlen($_POST['pastebin']) . "\n";
     }
     $rdata->updateStatus();
     writeJSON($rdata, $fname);
@@ -81,18 +104,22 @@ if (isset($_POST['council']) && isset($_POST['ward']) && isset($_POST['year']))
         if ($alldata->Constituencies[$i]->Directory == $_POST['ward'])
         {
             $alldata->Constituencies[$i] = $wdata;
-            echo "Updating " . $wdata->Constituency_Name . "<br>\n";
+            echo "Updating " . $wdata->Constituency_Name . "\n";
             $new_ward = False;
         }
     }
     if ($new_ward)
     {
         $alldata->Constituencies[] = $wdata;
-        echo "Adding " . $wdata->Constituency_Name . "<br>\n";
+        echo "Adding " . $wdata->Constituency_Name . "\n";
     }
     writeJSON($alldata,"$datadir/all-constituency-info.json");
-    echo "Writing $datadir/all-constituency-info.json<br>\n";
-        
+    echo "Writing $datadir/all-constituency-info.json\n";
+}
+else
+{
+    echo "Meta-data not detected, council: " . $_POST['council'] . ", ward: " . $_POST['ward'] . ", year: " . $_POST['year'] . "\n";
 }
 
+echo "</pre>\n";
 ?>

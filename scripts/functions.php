@@ -243,6 +243,19 @@ class Results
     {
         foreach ($data AS $key => $value) $this->{$key} = $value;
     }
+
+    // returns array (with elements Status, Occurred_On_Count) if any records for a given candidate $cid have Status set
+    public function currentStatus($cid)
+    {
+        for ($i = 0; $i < count($this->Constituency->countGroup); $i++)
+        {
+            if ($this->Constituency->countGroup[$i]->Candidate_Id == $cid && !empty($this->Constituency->countGroup[$i]->Status))
+            {
+                return (array("Status" => $this->Constituency->countGroup[$i]->Status, "Occurred_On_Count" => $this->Constituency->countGroup[$i]->Occurred_On_Count));
+            }
+        }   
+        return (false);            
+    }
         
 }
 

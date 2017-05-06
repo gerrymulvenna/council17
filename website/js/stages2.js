@@ -33,7 +33,7 @@ function animateStages(year,council,constituencyFolder) {
             $.ajax({
                 'async': false,
                 'global': false,
-                'url': '/' + year + '/SCO/' + council + '/' + constituencyFolder + '/ResultsJson.json',
+                'url': '/' + year + '/SCO/' + council + '/' + constituencyFolder + '/ResultsJson.json?' + new Date().getTime(),
                 'dataType': "json",
                 'success': function (data) {
                     json = data;
