@@ -166,7 +166,7 @@ function findWardInfo(year, filename) {
 function getCountInfo(council, ward_code, year) {
 	var countdata = [];
     var request = new XMLHttpRequest();
-    var path = '/' + year + '/SCO/' + council + '/' + ward_code + '/ResultsJson.json'; 
+    var path = '/' + year + '/SCO/' + council + '/' + ward_code + '/ResultsJson.json?' + new Date().getTime(); // add ? with timestamp to force XMLHttpRequest not to cache
 	console.log(path);
     request.onreadystatechange = function() {
         if (request.readyState == 4 && request.status >= 200 && request.status < 400) {
