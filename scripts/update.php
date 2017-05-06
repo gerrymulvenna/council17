@@ -22,18 +22,49 @@ if (isset($_POST['council']) && isset($_POST['ward']) && isset($_POST['year']))
     {
         $rdata = new Results($ward_info);
     }
+
+    if (strlen($_POST['pastebin'] > 0))
+    {
+        $pastebin = preg_split("/\\r\\n|\\r|\\n/", $_POST['pastebin']);
+        $candidates = $_POST['Candidate_Id'];
+        if (count($pastebin) >= count($candidates))
+        {
+            for ($i=0; $i<count($candidates); $i++)
+            {
+                $numbers[$i] = preg_split("/\\s/", $pastebin[$i]);
+            }
+            if (count($rdata->Constituency->countGroup) > 0)
+            {
+                # the number of candidates should be a factor of the number of countInfo records
+                if (count($rdata->Constituency->countGroup) % count($candidates) == 0)
+                {
+                    $stage = (count($rdata->Constituency->countGroup) / count($candidates)) + 1;
+                    echo "Stage: $stage\n";
+                }
+            }
+            else
+            {
+                $stage = 1;
+                $id = 0;
+                for ($col = 0; $col < count($numbers[0]); $col+=2, $stage++)
+                {
+                    for ($row = 0; $row < count($candidates); $row++)
+                    {
+                        if ($stage == 1)
+                        {
+                            $rdata->Constituency->countGroup[] = new countItem($id++, $_POST['ward'], $stage, $_POST['Party_Name'][$row], $_POST['Candidate_Id'][$row], $_POST['Firstname'][$row], $_POST['Surname'][$row], $numbers[$row][0], 0, $numbers[$row][$col]);
+                        }
+                        else
+                        {
+                            $rdata->Constituency->countGroup[] = new countItem($id++, $_POST['ward'], $stage, $_POST['Party_Name'][$row], $_POST['Candidate_Id'][$row], $_POST['Firstname'][$row], $_POST['Surname'][$row], $numbers[$row][0], $numbers[$row][$col - 1], $numbers[$row][$col]);
+                        }
+                    }
+                }
+            }
+        }
+    }
     writeJSON($rdata, $fname);
     
-
-//    $stage++;
-//    $rdata->Constituency->countGroup[] = new countItem($id++, $ward_no, $stage, 'Scottish Green Party', 1, 'Nigel', 'BAGSHAW', 1642, 0, 1642);
-//    $rdata->Constituency->countGroup[] = new countItem($id++, $ward_no, $stage, 'Scottish National Party (SNP)', 2, 'Gavin', 'BARRIE', 1434, 0, 1434);
-//    $rdata->Constituency->countGroup[] = new countItem($id++, $ward_no, $stage, 'Conservative and Unionist Party', 3, 'Scott', 'DOUGLAS', 1291, 0, 1291);
-//    $rdata->Constituency->countGroup[] = new countItem($id++, $ward_no, $stage, 'Labour  Party', 4, 'Lesley', 'HINDS', 2751, 0, 2751, "Elected", 1);
-//    $rdata->Constituency->countGroup[] = new countItem($id++, $ward_no, $stage, 'Liberal Democrats', 5, 'Tim', 'McKAY', 1143, 0, 1143);
-//    $rdata->Constituency->countGroup[] = new countItem($id++, $ward_no, $stage, 'Conservative and Unionist Party', 6, 'Iain', 'WHYTE', 1956, 0, 1956);
-//    $rdata->Constituency->countGroup[] = new countItem($id++, $ward_no, $stage, 'Scottish National Party (SNP)', 7, 'John', 'YOUNG', 792, 0, 792);
-
     $wdata = new Constituencies($_POST['ward_name'], $_POST['ward'], $_POST['ward'], $ward_info);
     $new_ward = True;
     for ($i = 0; $i<count($alldata->Constituencies); $i++)
