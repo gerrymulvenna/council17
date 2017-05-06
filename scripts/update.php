@@ -6,11 +6,22 @@ print_r($_POST);
 
 if (isset($_POST['council']) && isset($_POST['ward']) && isset($_POST['year']))
 {
+    $ward_info = new countInfo($_POST['ward_name'], $_POST['ward'], $_POST['seats'], $_POST['electorate'], $_POST['electorate'], $_POST['total_poll'], $_POST['valid_poll']);
     $datadir = '../' . $_POST['year'] . '/SCO/' . $_POST['council'];
-    $alldata = readJSON("$datadir/all-constituency-info.json");
+    $topfile = "$datadir/all-constituency-info.json";
+    if (file_exists($topfile))
+    {
+        echo "Reading $topfile\n";
+        $json = readJSON($topfile);
+        $alldata = new Council($_POST['ward_name'], $_POST['ward'], $_POST['ward'], $ward_info);
+        $alldata->set($json);
+    }
+    else
+    {
+        $alldata = new Council($_POST['ward_name'], $_POST['ward'], $_POST['ward'], $ward_info);
+    }
 
     $fname = "$datadir/" . $_POST['ward']. "/ResultsJson.json";
-    $ward_info = new countInfo($_POST['ward_name'], $_POST['ward'], $_POST['seats'], $_POST['electorate'], $_POST['electorate'], $_POST['total_poll'], $_POST['valid_poll']);
     if (file_exists($fname))
     {
         echo "Reading $fname<br>\n";
@@ -23,9 +34,10 @@ if (isset($_POST['council']) && isset($_POST['ward']) && isset($_POST['year']))
         $rdata = new Results($ward_info);
     }
 
-    if (strlen($_POST['pastebin']) > 0)
+    $matrix = str_replace(',', '', $_POST['pastebin']);  // take out any commas
+    if (strlen($matrix) > 0)
     {
-        $pastebin = preg_split("/\\r\\n|\\r|\\n/", $_POST['pastebin']);
+        $pastebin = preg_split("/\\r\\n|\\r|\\n/", $matrix);
         $candidates = $_POST['Candidate_Id'];
         if (count($pastebin) >= count($candidates))
         {
@@ -92,12 +104,12 @@ if (isset($_POST['council']) && isset($_POST['ward']) && isset($_POST['year']))
     }
     else
     {
-        echo "No new data detected. Length of 'pastebin' = " . strlen($_POST['pastebin']) . "\n";
+        echo "No new data detected. Length of 'pastebin' = " . strlen($matrix) . "\n";
     }
     $rdata->updateStatus();
     writeJSON($rdata, $fname);
     
-    $wdata = new Constituencies($_POST['ward_name'], $_POST['ward'], $_POST['ward'], $ward_info);
+    $wdata = new Constituency_Summary($_POST['ward_name'], $_POST['ward'], $_POST['ward'], $ward_info);
     $new_ward = True;
     for ($i = 0; $i<count($alldata->Constituencies); $i++)
     {

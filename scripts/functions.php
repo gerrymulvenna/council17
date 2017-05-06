@@ -329,7 +329,24 @@ class countItem
     }
 }
 
-class Constituencies
+class Council
+{
+    public $Constituencies;
+
+    //adds the first summary
+    function __construct($name, $no, $code, $info)
+    {
+        $this->Constituencies[] = new Constituency_Summary ($name, $no, $code, $info);
+    }
+
+    // use this to convert a stdClass object imported from JSON
+    public function set($data)
+    {
+        foreach ($data AS $key => $value) $this->{$key} = $value;
+    }
+}
+
+class Constituency_Summary
 {
     public $Constituency_Name;
     public $Constituency_Number;
@@ -343,6 +360,7 @@ class Constituencies
         $this->Directory = $code;
         $this->countInfo = $info;
     }
+
 }
 
 ?>
