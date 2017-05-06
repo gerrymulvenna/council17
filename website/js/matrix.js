@@ -16,8 +16,15 @@ var council = "city-of-edinburgh";
             });
         });
 
+// function to populate wards for a given council
+function selectCouncil() {
+	$("#council-list").change(function()
+	{
         var year = $("#yearSelect :selected").text();
-        $.getJSON('/' + year + "/SCO/" + council + "/all-constituency-info.json", function(data) {
+		var council = $(this).val();
+		var path = '/' + year + "/SCO/" + council + "/all-constituency-info.json"; 
+		console.log(path);
+        $.getJSON(path, function(data) {
             var constituencies = data.Constituencies;
             var constituencySelect = $("#constituencySelect");
             var yearSelect = $("#yearSelect");
@@ -27,12 +34,14 @@ var council = "city-of-edinburgh";
                 $(constituencySelect).append($("<option/>").val(folder).text(name))
             })
             constituencySelect.change(function() {
+				var council = $("#council-list :selected").val();
                 var constituencyFolder = $("#constituencySelect :selected").val();
                 var year = $("#yearSelect :selected").text();
                 //countMatrix(year, council, constituencyFolder);
                 animateStages(year, council, constituencyFolder);
             })
             yearSelect.change(function() {
+				var council = $("#council-list :selected").val();
                 var constituencyFolder = $("#constituencySelect :selected").val();
                 var year = $("#yearSelect :selected").text();
                 getTransfersData(year);
@@ -45,6 +54,9 @@ var council = "city-of-edinburgh";
             //countMatrix(year, council, constituencyFolder);
             animateStages(year, council, constituencyFolder);
         })
+	});
+};
+
 
 // create data for summary header
 function seatsSummary() {

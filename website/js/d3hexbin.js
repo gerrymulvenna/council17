@@ -30,7 +30,6 @@ function sortit() {
 
 // order (by argument) and push data to arrays
 function pushdata(data, prop, asc) {
-    console.log(data);
     data = _.orderBy(data, prop, asc) // if we want to resort, we need a prop string to sort the data by
     color = [];
     party = [];

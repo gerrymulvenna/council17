@@ -38,6 +38,7 @@ $(yearSelect).on('change', function() {
 function loadCandidates(council, ward_code, year)
 {
 	var candinfo = document.getElementById("candidates");
+	var wardvars = document.getElementById("wardvars");
 	candinfo.innerHTML='';
 
 	var names;
@@ -106,6 +107,7 @@ function loadCandidates(council, ward_code, year)
 			var cand_ward_code = wardstats[0].cand_ward_code;
 			$('#seats').val(wardstats[0].seats);
 			var ward = getObjects(canddata.wards, 'post_id', cand_ward_code);
+			wardvars.innerHTML = '<input type="hidden" name="ward_name" value="' + wardstats[0].ward_name + '">';
 
 			if (ward.length > 0)
 			{

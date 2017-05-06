@@ -146,7 +146,6 @@ var parties_info = {
   }
 }
 
-
 var transferData = {};
 function getTransfersData(year) {
 	$.getJSON("/2017/SCO/simulation/party-transfers.json", function (json) {

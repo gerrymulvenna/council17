@@ -28,6 +28,7 @@ selectCouncil('Select a council', 'add-form', '');
                 </div>
                 <div class="row">
                     <div id="wardinfo">
+                      <div id="wardvars"></div>
                       <label for="electorate">Electorate</label>
                       <input type="text" name="electorate" id="electorate" size="10">
                       <label for="total_poll">Total poll</label>
