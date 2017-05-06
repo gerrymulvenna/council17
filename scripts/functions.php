@@ -260,7 +260,7 @@ class countItem
     public $id;
     public $Total_Votes;
 
-    function __construct($id, $no, $count, $party, $candID, $fname, $sname, $firstpref, $transfers, $total, $status = NULL, $occurred = NULL)
+    function __construct($id, $no, $count, $party, $candID, $fname, $sname, $firstpref, $transfers, $total, $status = "", $occurred = "")
     {
         $this->Candidate_First_Pref_Votes = $firstpref;
         $this->Status = $status;
