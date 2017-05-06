@@ -205,6 +205,45 @@ class Results
     {
         $this->Constituency = new Constituency($info->Constituency_Name, $info->Constituency_Number, $info->Number_Of_Seats, $info->Voting_Age_Pop, $info->Total_Electorate, $info->Total_Poll, $info->Valid_Poll);
     }
+
+    // go through the results and mark Elected/Excluded status where appropriate
+    public function updateStatus()
+    {
+        for ($i = 0; $i < count($this->Constituency->countGroup); $i++)
+        {
+            if (empty($this->Constituency->countGroup[$i]->Status))
+            {
+                if ($this->Constituency->countGroup[$i]->Total_Votes >= $this->Constituency->countInfo->Quota)
+                {
+                    $this->markStatus('Elected', $this->Constituency->countGroup[$i]->Candidate_Id, $this->Constituency->countGroup[$i]->Count_Number);
+                }
+                elseif ($this->Constituency->countGroup[$i]->Total_Votes == 0 && ($this->Constituency->countGroup[$i]->Transfers < 0))
+                {
+                    $this->markStatus('Excluded', $this->Constituency->countGroup[$i]->Candidate_Id, $this->Constituency->countGroup[$i]->Count_Number - 1);
+                }
+            }
+        }
+    }
+
+    // set the Status and Occurred_On_Count properties for a particular $cid in the countGroup data
+    function markStatus($status, $cid, $count)
+    {
+        for ($i = 0; $i < count($this->Constituency->countGroup); $i++)
+        {
+            if (($this->Constituency->countGroup[$i]->Candidate_Id == $cid) && ($this->Constituency->countGroup[$i]->Count_Number >= $count))
+            {
+                $this->Constituency->countGroup[$i]->Status = $status;
+                $this->Constituency->countGroup[$i]->Occurred_On_Count = $count;
+            }
+        }
+    }
+
+    // use this to convert a stdClass object imported from JSON
+    public function set($data)
+    {
+        foreach ($data AS $key => $value) $this->{$key} = $value;
+    }
+        
 }
 
 class Constituency

@@ -15,8 +15,9 @@ if (isset($_POST['council']) && isset($_POST['ward']) && isset($_POST['year']))
     if (file_exists($fname))
     {
         echo "Reading $fname<br>\n";
-        $rdata = readJSON($fname);
-        $rdata->Constituency->countInfo = $ward_info;
+        $json = readJSON($fname);
+        $rdata = new Results($ward_info);
+        $rdata->set($json);
     }
     else
     {
@@ -70,6 +71,7 @@ if (isset($_POST['council']) && isset($_POST['ward']) && isset($_POST['year']))
             }
         }
     }
+    $rdata->updateStatus();
     writeJSON($rdata, $fname);
     
     $wdata = new Constituencies($_POST['ward_name'], $_POST['ward'], $_POST['ward'], $ward_info);
