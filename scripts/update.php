@@ -39,7 +39,14 @@ if (isset($_POST['council']) && isset($_POST['ward']) && isset($_POST['year']))
                 if (count($rdata->Constituency->countGroup) % count($candidates) == 0)
                 {
                     $stage = (count($rdata->Constituency->countGroup) / count($candidates)) + 1;
-                    echo "Stage: $stage\n";
+                    $id = count($rdata->Constituency->countGroup);
+                    for ($col = 0; $col < count($numbers[0]); $col+=2, $stage++)
+                    {
+                        for ($row = 0; $row < count($candidates); $row++)
+                        {
+                            $rdata->Constituency->countGroup[] = new countItem($id++, $_POST['ward'], $stage, $_POST['Party_Name'][$row], $_POST['Candidate_Id'][$row], $_POST['Firstname'][$row], $_POST['Surname'][$row], $rdata->Constituency->countGroup[$row]->Candidate_First_Pref_Votes, $numbers[$row][$col], $numbers[$row][$col+1]);
+                        }
+                    }
                 }
             }
             else
