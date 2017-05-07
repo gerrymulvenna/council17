@@ -68,14 +68,6 @@ var council = "city-of-edinburgh";
         var year = $("#yearSelect :selected").text();
 		var council = cSelect.val();
 		loadWards(year, council);
-		$("#constituencySelect").change(function()
-		{
-			var year = $("#yearSelect :selected").text();
-			var council = $("#council-list-" + year + " :selected").val();
-			var constituencyFolder = $("#constituencySelect :selected").val();
-			//countMatrix(year, council, constituencyFolder);
-			animateStages(year, council, constituencyFolder);
-		});
 		var constituencyFolder = $("#constituencySelect :selected").val();
 		var year = $("#yearSelect :selected").text();
 		getTransfersData(year);
@@ -104,6 +96,14 @@ function loadWards(year, council, selected)
 		{
 			$(constituencySelect).val(selected);
 		}
+		$("#constituencySelect").change(function()
+		{
+			var year = $("#yearSelect :selected").text();
+			var council = $("#council-list-" + year + " :selected").val();
+			var constituencyFolder = $("#constituencySelect :selected").val();
+			//countMatrix(year, council, constituencyFolder);
+			animateStages(year, council, constituencyFolder);
+		});
 	})
 }
 
