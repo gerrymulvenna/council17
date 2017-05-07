@@ -7,7 +7,8 @@
 var loop;
 
 function animateStages(year,council,constituencyFolder) {
-
+	setSearchParams (year,council,constituencyFolder);
+	console.log ("animateStages", year,council,constituencyFolder);
     clearInterval(loop);
     $("#animation").html("");
     $("#animation").append("<div id='thepost' />")

@@ -1,6 +1,3 @@
-var searchParams = getSearchParams();
-
-
 var transferData = {};
 function getTransfersData(year) {
 	$.getJSON("/2017/SCO/simulation/party-transfers.json", function (json) {
@@ -119,12 +116,28 @@ function getTransfersData(year) {
 
 // honour URL params to display a particular result
 $(window).load(function(e) {
-		if (searchParams['council'] && searchParams['ward'] && searchParams['year'])
+	var searchParams = getSearchParams();
+	if (searchParams['council'] && searchParams['ward'] && searchParams['year'])
+	{
+		$("#yearSelect").val(searchParams['year']);
+		switch(searchParams['year'])
 		{
-			$("#council-list").val(searchParams['council']).change();
-			$("#constituencySelect").val(searchParams['ward']).change();
-			$("#yearSelect").val(searchParams['year']).change();
+			case '2012':
+				$("#council-list-2017").hide();
+				$("#council-list-2012").show();
+				break;
+			case '2017':
+				$("#council-list-2012").hide();
+				$("#council-list-2017").show();
+				break;
 		}
+		$("#council-list-" + searchParams['year']).val(searchParams['council']);
+		loadWards(searchParams['year'], searchParams['council'], searchParams['ward']);
+		$("#constituencySelect").val(searchParams['ward']);
+		animateStages(searchParams['year'], searchParams['council'], searchParams['ward']);
+	}
+//			$("#constituencySelect").val(searchParams['ward']);
+//		}
 });
 
 
@@ -136,6 +149,6 @@ function getSearchParams(k){
 }
 
 //function to record ward_code in URL search query string (assumes it is only parameter)
-function setSearchParams(council, ward, year){
+function setSearchParams(year, council, ward){
   window.history.replaceState({}, '', location.pathname + '?council=' + council + '&ward=' + ward + '&year=' + year);
 }

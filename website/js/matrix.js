@@ -67,32 +67,45 @@ var council = "city-of-edinburgh";
 	{
         var year = $("#yearSelect :selected").text();
 		var council = cSelect.val();
-		var path = '/' + year + "/SCO/" + council + "/all-constituency-info.json"; 
-		console.log(path);
-        $.getJSON(path, function(data) {
-            var constituencies = data.Constituencies.sort(cmpNames);
-            var constituencySelect = $("#constituencySelect");
-			constituencySelect.empty();
-            var yearSelect = $("#yearSelect");
-            $.each(constituencies, function(i, constituency) {
-                var name = constituency.Constituency_Name;
-                var folder = constituency.Directory;
-                $(constituencySelect).append($("<option/>").val(folder).text(name))
-            })
-            constituencySelect.change(function() {
-                var year = $("#yearSelect :selected").text();
-				var council = $("#council-list-" + year + " :selected").val();
-                var constituencyFolder = $("#constituencySelect :selected").val();
-                //countMatrix(year, council, constituencyFolder);
-                animateStages(year, council, constituencyFolder);
-            })
-            var constituencyFolder = $("#constituencySelect :selected").val();
-            var year = $("#yearSelect :selected").text();
-            getTransfersData(year);
-            //countMatrix(year, council, constituencyFolder);
-            animateStages(year, council, constituencyFolder);
-        })
+		loadWards(year, council);
+		$("#constituencySelect").change(function()
+		{
+			var year = $("#yearSelect :selected").text();
+			var council = $("#council-list-" + year + " :selected").val();
+			var constituencyFolder = $("#constituencySelect :selected").val();
+			//countMatrix(year, council, constituencyFolder);
+			animateStages(year, council, constituencyFolder);
+		});
+		var constituencyFolder = $("#constituencySelect :selected").val();
+		var year = $("#yearSelect :selected").text();
+		getTransfersData(year);
+		//countMatrix(year, council, constituencyFolder);
+		animateStages(year, council, constituencyFolder);
 	}
+
+// populate the ward select based on year and council
+function loadWards(year, council, selected)
+{
+	console.log ("loadWards", year, council, selected);
+	var path = '/' + year + "/SCO/" + council + "/all-constituency-info.json"; 
+	$.getJSON(path, function(data) 
+	{
+		var constituencies = data.Constituencies.sort(cmpNames);
+		var constituencySelect = $("#constituencySelect");
+		constituencySelect.empty();
+		var yearSelect = $("#yearSelect");
+		$.each(constituencies, function(i, constituency)
+		{
+			var name = constituency.Constituency_Name;
+			var folder = constituency.Directory;
+			$(constituencySelect).append($("<option/>").val(folder).text(name))
+		});
+		if (selected)
+		{
+			$(constituencySelect).val(selected);
+		}
+	})
+}
 
 // create data for summary header
 function seatsSummary() {
