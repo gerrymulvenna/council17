@@ -66,9 +66,9 @@ var council = "city-of-edinburgh";
                 $(constituencySelect).append($("<option/>").val(folder).text(name))
             })
             constituencySelect.change(function() {
+                var year = $("#yearSelect :selected").text();
 				var council = $("#council-list-" + year + " :selected").val();
                 var constituencyFolder = $("#constituencySelect :selected").val();
-                var year = $("#yearSelect :selected").text();
                 //countMatrix(year, council, constituencyFolder);
                 animateStages(year, council, constituencyFolder);
             })
