@@ -32,7 +32,7 @@ id,name,honorific_prefix,honorific_suffix,gender,birth_date,election,party_id,pa
 22496,James McDonald,,,,,local.stirling.2017-05-04,ynmp-party:2,Independent,UTW:stirling-north,Stirling North,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
 22497,Susan McGill,,,,,local.stirling.2017-05-04,party:102,Scottish National Party (SNP),UTW:stirling-north,Stirling North,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
 22498,Ross Oxburgh,,,,,local.stirling.2017-05-04,party:52,Conservative and Unionist Party,UTW:stirling-north,Stirling North,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP52
-22499,Jen Preston,,,female,,local.stirling.2017-05-04,party:53,Labour Party,UTW:stirling-north,Stirling North,,False,,jencpreston,,,,,,,,,,,,321517237,2017-05-04,True,False,,,,,PP53
+22499,Jen Preston,,,female,,local.stirling.2017-05-04,party:53,Labour Party,UTW:stirling-north,Stirling North,,False,,jencpreston,,,,,,,https://candidates.democracyclub.org.uk/media/images/images/22499.png,,profile-photo,,Auto imported from Twitter,321517237,2017-05-04,True,False,,,,,PP53
 22500,Fayzan Rehman,,,,,local.stirling.2017-05-04,party:90,Liberal Democrats,UTW:stirling-north,Stirling North,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP90
 22501,Jim Thomson,,,,,local.stirling.2017-05-04,party:102,Scottish National Party (SNP),UTW:stirling-north,Stirling North,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
 22502,Neil Benny,,,,,local.stirling.2017-05-04,party:52,Conservative and Unionist Party,UTW:stirling-west,Stirling West,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP52
