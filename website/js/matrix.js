@@ -49,6 +49,20 @@ var council = "city-of-edinburgh";
 		animateStages(year, council, constituencyFolder);
 	});
 
+	function cmpNames(a, b)
+	{
+		if (a.Constituency_Name < b.Constituency_Name) 
+		{
+			return -1;
+		}
+		if (a.Constituency_Name > b.Constituency_Name) 
+		{
+			return 1;
+		}
+		// a must be equal to b
+		return 0;
+	}
+
 	function manageChanges(cSelect)
 	{
         var year = $("#yearSelect :selected").text();
@@ -56,7 +70,7 @@ var council = "city-of-edinburgh";
 		var path = '/' + year + "/SCO/" + council + "/all-constituency-info.json"; 
 		console.log(path);
         $.getJSON(path, function(data) {
-            var constituencies = data.Constituencies;
+            var constituencies = data.Constituencies.sort(cmpNames);
             var constituencySelect = $("#constituencySelect");
 			constituencySelect.empty();
             var yearSelect = $("#yearSelect");

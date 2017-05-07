@@ -114,7 +114,8 @@ echo '
             </div>
 
             <div class="row">
-                <h2>Unofficial results</h2>
+                <h2>Results</h2>
+                <p>The results data here has been manually transcribed from the result published by each council, which is a slow process.</p>
                 <p>Choose a council, ward and election year.</p>
                 <div id="menuBar">
                     <select id="yearSelect">
@@ -398,6 +399,7 @@ function councilList ($id, $class, $name, $root)
     "west-lothian" => "West Lothian");
 
     $html = "<select id=\"$id\" class=\"$class\" name=\"$name\">\n";
+    $html .= "<option>Select a council</option>\n";
     $dirlist = scandir($root);
     foreach ($dirlist as $path)
     {
