@@ -16,17 +16,49 @@ var council = "city-of-edinburgh";
             });
         });
 
-// function to populate wards for a given council
-function selectCouncil() {
-	$("#council-list").change(function()
+	// function to populate wards for a given council
+	$("#council-list-2017").change(function()
+	{
+		manageChanges($(this));
+	});
+
+	// function to populate wards for a given council
+	$("#council-list-2012").change(function()
+	{
+		manageChanges($(this));
+	});
+
+	$('#yearSelect').change(function() {
+		var year = $("#yearSelect :selected").text();
+		switch(year)
+		{
+			case '2012':
+				$("#council-list-2017").hide();
+				$("#council-list-2012").show();
+				break;
+			case '2017':
+				$("#council-list-2012").hide();
+				$("#council-list-2017").show();
+				break;
+		}
+		var council = $("#council-list-" + year + " :selected").val();
+		var constituencyFolder = $("#constituencySelect :selected").val();
+
+		//getTransfersData(year);
+		//countMatrix(year, council, constituencyFolder);
+		animateStages(year, council, constituencyFolder);
+	});
+
+	function manageChanges(cSelect)
 	{
         var year = $("#yearSelect :selected").text();
-		var council = $(this).val();
+		var council = cSelect.val();
 		var path = '/' + year + "/SCO/" + council + "/all-constituency-info.json"; 
 		console.log(path);
         $.getJSON(path, function(data) {
             var constituencies = data.Constituencies;
             var constituencySelect = $("#constituencySelect");
+			constituencySelect.empty();
             var yearSelect = $("#yearSelect");
             $.each(constituencies, function(i, constituency) {
                 var name = constituency.Constituency_Name;
@@ -34,17 +66,9 @@ function selectCouncil() {
                 $(constituencySelect).append($("<option/>").val(folder).text(name))
             })
             constituencySelect.change(function() {
-				var council = $("#council-list :selected").val();
+				var council = $("#council-list-" + year + " :selected").val();
                 var constituencyFolder = $("#constituencySelect :selected").val();
                 var year = $("#yearSelect :selected").text();
-                //countMatrix(year, council, constituencyFolder);
-                animateStages(year, council, constituencyFolder);
-            })
-            yearSelect.change(function() {
-				var council = $("#council-list :selected").val();
-                var constituencyFolder = $("#constituencySelect :selected").val();
-                var year = $("#yearSelect :selected").text();
-                getTransfersData(year);
                 //countMatrix(year, council, constituencyFolder);
                 animateStages(year, council, constituencyFolder);
             })
@@ -54,9 +78,7 @@ function selectCouncil() {
             //countMatrix(year, council, constituencyFolder);
             animateStages(year, council, constituencyFolder);
         })
-	});
-};
-
+	}
 
 // create data for summary header
 function seatsSummary() {

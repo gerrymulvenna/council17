@@ -117,14 +117,16 @@ echo '
                 <h2>Unofficial results</h2>
                 <p>Choose a council, ward and election year.</p>
                 <div id="menuBar">
+                    <select id="yearSelect">
+                        <option value="2017">2017</option>
+                        <option value="2012">2012</option>
+                    </select>
 ';
-selectCouncil('Select a council', 'select', '');
+echo councilList("council-list-2017", "select", "2017", "../2017/SCO");
+echo councilList("council-list-2012", "select", "2012", "../2012/SCO");
+
 echo '
                     <select id="constituencySelect"></select>
-                    <select id="yearSelect">
-                        <option>2017</option>
-                        <option>2012</option>
-                    </select>
                 </div>
             </div>
 
@@ -357,5 +359,63 @@ echo '					<option value="aberdeen-city' . $suffix . '">Aberdeen City</option>
 			</div>';
 
 }
+
+// used on results page
+function councilList ($id, $class, $name, $root)
+{
+    $councils = array(
+    "aberdeen-city" => "Aberdeen City",
+    "aberdeenshire"=> "Aberdeenshire",
+    "angus" => "Angus",
+    "argyll-and-bute" => "Argyll and Bute",
+    "city-of-edinburgh" => "City of Edinburgh",
+    "clackmannanshire" => "Clackmannanshire",
+    "dumfries-and-galloway" => "Dumfries and Galloway",
+    "dundee-city" => "Dundee City",
+    "east-ayrshire" => "East Ayrshire",
+    "east-dunbartonshire" => "East Dunbartonshire",
+    "east-lothian" => "East Lothian",
+    "east-renfrewshire" => "East Renfrewshire",
+    "falkirk" => "Falkirk",
+    "fife" => "Fife",
+    "glasgow-city" => "Glasgow City",
+    "highland" => "Highland",
+    "inverclyde" => "Inverclyde",
+    "midlothian" => "Midlothian",
+    "moray" => "Moray",
+    "eilean-siar" => "Na h-Eileanan an Iar",
+    "north-ayrshire" => "North Ayrshire",
+    "north-lanarkshire" => "North Lanarkshire",
+    "orkney-islands" => "Orkney Islands",
+    "perth-and-kinross" => "Perth and Kinross",
+    "renfrewshire" => "Renfrewshire",
+    "the-scottish-borders" => "The Scottish Borders",
+    "shetland-islands" => "Shetland Islands",
+    "south-ayrshire" => "South Ayrshire",
+    "south-lanarkshire" => "South Lanarkshire",
+    "stirling" => "Stirling",
+    "west-dunbartonshire" => "West Dunbartonshire",
+    "west-lothian" => "West Lothian");
+
+    $html = "<select id=\"$id\" class=\"$class\" name=\"$name\">\n";
+    $dirlist = scandir($root);
+    foreach ($dirlist as $path)
+    {
+        if (!in_array($path,array(".","..")))
+        {
+            if (is_dir($root . DIRECTORY_SEPARATOR . $path) && in_array($path, array_keys($councils)))
+            {
+                $fname = $root . DIRECTORY_SEPARATOR . $path . DIRECTORY_SEPARATOR . "all-constituency-info.json";
+                if (file_exists($fname))
+                {
+                    $html .= '<option value="' . $path . '">' . $councils[$path] . '</option>' . "\n";
+                }
+            }
+        }
+    }
+    $html .= "</select>\n";
+    return ($html);
+}   
+
 
 ?>
