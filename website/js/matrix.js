@@ -81,13 +81,13 @@ var council = "city-of-edinburgh";
 // populate the ward select based on year and council
 function loadWards(year, council, selected)
 {
+	$(constituencySelect).empty();
 	console.log ("loadWards", year, council, selected);
 	var path = '/' + year + "/SCO/" + council + "/all-constituency-info.json"; 
 	$.getJSON(path, function(data) 
 	{
 		var constituencies = data.Constituencies.sort(cmpNames);
 		var constituencySelect = $("#constituencySelect");
-		$(constituencySelect).empty();
 		$(constituencySelect).append($("<option/>").val(0).text("Select a ward"));
 		var yearSelect = $("#yearSelect");
 		$.each(constituencies, function(i, constituency)
