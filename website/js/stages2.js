@@ -9,6 +9,7 @@ var loop;
 function animateStages(year,council,constituencyFolder) {
 	setSearchParams (year,council,constituencyFolder);
 	console.log ("animateStages", year,council,constituencyFolder);
+	
     clearInterval(loop);
     $("#animation").html("");
     $("#animation").append("<div id='thepost' />")
@@ -47,6 +48,7 @@ function animateStages(year,council,constituencyFolder) {
     if (json.Constituency.countGroup.length) {
 		var	constituency = json.Constituency.countInfo;
 		var data = json.Constituency.countGroup;
+		$('#raw-data').html("<h3>Raw transfer data</h3>" + tableHTML(tableCount(data)));
 	}
 
     if(constituency){

@@ -34,7 +34,6 @@ $(yearSelect).on('change', function() {
 	  loadCandidates($("#council-list :selected").val(), $("#wardSelect :selected").val(), this.value);
 });
 
-
 function loadCandidates(council, ward_code, year)
 {
 	var candinfo = document.getElementById("candidates");
@@ -42,7 +41,6 @@ function loadCandidates(council, ward_code, year)
 	candinfo.innerHTML='';
 
 	var names;
-	var table = []; // 2-dimensioal array
 	var countdata = getCountInfo(council, ward_code, year);
 	if (countdata.hasOwnProperty('Constituency') > 0)
 	{
@@ -51,44 +49,7 @@ function loadCandidates(council, ward_code, year)
 		$('#total_poll').val(countInfo.Total_Poll);
 		$('#valid_poll').val(countInfo.Valid_Poll);
 		$('#seats').val(countInfo.Number_Of_Seats);
-		var countGroup = countdata.Constituency.countGroup;  //stages data
-		if (countGroup.length > 0)
-		{
-			var row = 0;
-			var stage = 1;
-			$.each(countGroup, function(i, countItem) 
-			{
-				if (countItem.Count_Number == 1)
-				{
-					table[row] = [];
-					table[row][0] = countItem.Firstname;
-					table[row][1] = countItem.Surname;
-					table[row][2] = countItem.Party_Name;
-					table[row][3] = countItem.Candidate_Id;
-					table[row][4] = countItem.Candidate_First_Pref_Votes;
-					table[row][5] = countItem.Status;
-					table[row][6] = countItem.Occurred_On_Count;
-					row++;
-					col = 5;
-				}
-				else 
-				{
-					if (countItem.Count_Number > stage)
-					{
-						stage = countItem.Count_Number;
-						row = 0;
-						col +=2;
-					}
-					table[row][5] = countItem.Status;
-					table[row][6] = countItem.Occurred_On_Count;
-					table[row][col] = countItem.Transfers;
-					table[row][col + 1] = countItem.Total_Votes;
-					row++;
-				}
-			})
-			candinfo.innerHTML= tableHTML(table);
-			
-		}
+		candinfo.innerHTML= tableHTML(tableCount(countdata.Constituency.countGroup));
 	}
 	else
 	{
@@ -121,29 +82,6 @@ function loadCandidates(council, ward_code, year)
 			}
 		}
 	}
-}
-
-// produce table html
-function tableHTML(t)
-{
-	var html = '<tr><th>Firstname</th><th>Surname</th><th>Party</th><th>ID</th><th>1st pref</th><th>Status</th><th>At stage</th>';
-	var stage = 1;
-	for (var col=7; col<t[0].length; col+=2)
-	{
-		stage++;
-		html += '<th>Transfers</th><th>Stage ' + stage + '</th>';
-	}
-	html += '</tr>' + "\n";
-	for (var row=0; row<t.length;row++ )
-	{
-		html += '<tr>';
-		for (col=0; col<t[row].length;col++ )
-		{
-			html +='<td>' + t[row][col] + '</td>';
-		}
-		html += '</tr>' + "\n";
-	}
-	return '<table class="count-data">' + html + '</table>';
 }
 
 // load council / ward data to global var 'warddata'

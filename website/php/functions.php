@@ -143,6 +143,9 @@ echo '
                 <div id="animation"></div>
             </div>
 
+            <div class="row">
+                <div id="raw-data"></div>
+            </div>
 
             <div class="row hidden">
                 <h3>Party to Party Transfers</h3>
@@ -298,6 +301,7 @@ function results_foot($param1 = NULL, $param2 = NULL, $param3 = NULL, $param4 = 
 {
 echo '
     <!--Load local scripts-->
+    <script type="text/javascript" src="/website/js/results.js"></script>
     <script type="text/javascript" src="/website/js/d3hexbin.js"></script>
     <script type="text/javascript" src="/website/js/stages2.js"></script>
     <script type="text/javascript" src="/website/js/transfers.js"></script>

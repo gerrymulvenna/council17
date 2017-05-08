@@ -50,6 +50,7 @@ selectCouncil('Select a council', 'add-form', '');
 </div>
 
 <!--Load local scripts-->
+<script type="text/javascript" src="/website/js/results.js"></script>
 <script type="text/javascript" src="/website/js/add_count.js"></script>
 
 <!--google analytics-->
