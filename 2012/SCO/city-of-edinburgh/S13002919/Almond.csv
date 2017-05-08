@@ -1,0 +1,50 @@
+Candidate_First_Pref_Votes,Status,Occurred_On_Count,Surname,Firstname,Constituency_Number,Party_Name,Candidate_Id,Count_Number,Transfers,id,Total_Votes
+516,,,DUNWORTH,Moira,1,Scottish Green Party,10,1,0,0,516
+1248,,,FITZPATRICK,Billy,1,Labour Party,11,1,0,1,1248
+145,,,INGLIS,Otto,1,UK Independence Party (UKIP),12,1,0,2,145
+208,,,LONGSTAFF,John,1,Independent,13,1,0,3,208
+2194,,,PATERSON,Lindsay,1,Conservative and Unionist Party,14,1,0,4,2194
+1329,,,SHIELDS,Alastair Gordon,1,Liberal Democrats,15,1,0,5,1329
+2722,Elected,1,WORK,Norman James,1,Scottish National Party (SNP),16,1,0,6,2722
+516,,,DUNWORTH,Moira,1,Scottish Green Party,10,2,134.91342,7,650.91342
+1248,,,FITZPATRICK,Billy,1,Labour Party,11,2,102.22821,8,1350.22821
+145,,,INGLIS,Otto,1,UK Independence Party (UKIP),12,2,23.41281,9,168.41281
+208,,,LONGSTAFF,John,1,Independent,13,2,60.2706,10,268.2706
+2194,Elected,2,PATERSON,Lindsay,1,Conservative and Unionist Party,14,2,0,11,2194
+1329,,,SHIELDS,Alastair Gordon,1,Liberal Democrats,15,2,131.20446,12,1460.20446
+2722,Elected,1,WORK,Norman James,1,Scottish National Party (SNP),16,2,-631,13,2091
+516,,,DUNWORTH,Moira,1,Scottish Green Party,10,3,5.8675,14,656.78092
+1248,,,FITZPATRICK,Billy,1,Labour Party,11,3,5.82056,15,1356.04877
+145,Excluded,3,INGLIS,Otto,1,UK Independence Party (UKIP),12,3,12.25134,16,180.66415
+208,,,LONGSTAFF,John,1,Independent,13,3,7.36958,17,275.64018
+2194,Elected,2,PATERSON,Lindsay,1,Conservative and Unionist Party,14,3,-103,18,2091
+1329,,,SHIELDS,Alastair Gordon,1,Liberal Democrats,15,3,40.27452,19,1500.47898
+2722,Elected,1,WORK,Norman James,1,Scottish National Party (SNP),16,3,0,20,2091
+516,,,DUNWORTH,Moira,1,Scottish Green Party,10,4,26.21879,21,682.99971
+1248,,,FITZPATRICK,Billy,1,Labour Party,11,4,16.85737,22,1372.90614
+145,Excluded,3,INGLIS,Otto,1,UK Independence Party (UKIP),12,4,-180.66415,23,0
+208,Excluded,4,LONGSTAFF,John,1,Independent,13,4,62.78407,24,338.42425
+2194,Elected,2,PATERSON,Lindsay,1,Conservative and Unionist Party,14,4,0,25,2091
+1329,,,SHIELDS,Alastair Gordon,1,Liberal Democrats,15,4,14.68803,26,1515.16701
+2722,Elected,1,WORK,Norman James,1,Scottish National Party (SNP),16,4,0,27,2091
+516,Excluded,5,DUNWORTH,Moira,1,Scottish Green Party,10,5,85.01817,28,768.01788
+1248,,,FITZPATRICK,Billy,1,Labour Party,11,5,48.5434,29,1421.44954
+145,Excluded,3,INGLIS,Otto,1,UK Independence Party (UKIP),12,5,,30,
+208,Excluded,4,LONGSTAFF,John,1,Independent,13,5,-338.42425,31,0
+2194,Elected,2,PATERSON,Lindsay,1,Conservative and Unionist Party,14,5,0,32,2091
+1329,,,SHIELDS,Alastair Gordon,1,Liberal Democrats,15,5,63.99781,33,1579.16482
+2722,Elected,1,WORK,Norman James,1,Scottish National Party (SNP),16,5,0,34,2091
+516,Excluded,5,DUNWORTH,Moira,1,Scottish Green Party,10,6,-768.01788,35,0
+1248,Excluded,6,FITZPATRICK,Billy,1,Labour Party,11,6,201.23785,36,1622.68739
+145,Excluded,3,INGLIS,Otto,1,UK Independence Party (UKIP),12,6,,37,
+208,Excluded,4,LONGSTAFF,John,1,Independent,13,6,,38,
+2194,Elected,2,PATERSON,Lindsay,1,Conservative and Unionist Party,14,6,0,39,2091
+1329,,,SHIELDS,Alastair Gordon,1,Liberal Democrats,15,6,224.65183,40,1803.81665
+2722,Elected,1,WORK,Norman James,1,Scottish National Party (SNP),16,6,0,41,2091
+516,Excluded,5,DUNWORTH,Moira,1,Scottish Green Party,10,7,,42,
+1248,Excluded,6,FITZPATRICK,Billy,1,Labour Party,11,7,-1622.68739,43,0
+145,Excluded,3,INGLIS,Otto,1,UK Independence Party (UKIP),12,7,,44,
+208,Excluded,4,LONGSTAFF,John,1,Independent,13,7,,45,
+2194,Elected,2,PATERSON,Lindsay,1,Conservative and Unionist Party,14,7,0,46,2091
+1329,Elected,7,SHIELDS,Alastair Gordon,1,Liberal Democrats,15,7,622.00055,47,2425.8172
+2722,Elected,1,WORK,Norman James,1,Scottish National Party (SNP),16,7,0,48,2091

@@ -1,156 +1,6 @@
-//function generateData() {
-
-var constituencies = ["Belfast East", "Belfast North", "Belfast South", "Belfast West", "East Antrim", "East Londonderry", "Fermanagh and South Tyrone", "Foyle", "Lagan Valley", "Mid Ulster", "Newry and Armagh", "North Antrim", "North Down", "South Antrim", "South Down", "Strangford", "Upper Bann", "West Tyrone"];
-
-
-var parties_info = {
-  "Alliance Party": {
-    "Party_Id": 19,
-    "Party_Abbreviation": "APNI",
-    "Hex_Col": "#FDD835"
-  },
-  "Democratic Unionist Party": {
-    "Party_Id": 20,
-    "Party_Abbreviation": "DUP",
-    "Hex_Col": "#FF5722"
-  },
-  "Green Party": {
-    "Party_Id": 111,
-    "Party_Abbreviation": "GPNI",
-    "Hex_Col": "#64DD17"
-  },
-  "Independent": {
-    "Party_Id": 21,
-    "Party_Abbreviation": "IND",
-    "Hex_Col": "#B0BEC5"
-  },
-  "NI21": {
-    "Party_Id": 918,
-    "Party_Abbreviation": "NI21",
-    "Hex_Col": "#581845"
-  },
-  "Sinn Fein": {
-    "Party_Id": 24,
-    "Party_Abbreviation": "SF",
-    "Hex_Col": "#4CAF50"
-  },
-  "Social Democratic and Labour Party": {
-    "Party_Id": 23,
-    "Party_Abbreviation": "SDLP",
-    "Hex_Col": "#E53935"
-  },
-  "Traditional Unionist Voice": {
-    "Party_Id": 141,
-    "Party_Abbreviation": "TUV",
-    "Hex_Col": "#303F9F"
-  },
-  "UK Independence Party": {
-    "Party_Id": 689,
-    "Party_Abbreviation": "UKIP",
-    "Hex_Col": "#9C27B0"
-  },
-  "Ulster Unionist Party": {
-    "Party_Id": 26,
-    "Party_Abbreviation": "UUP",
-    "Hex_Col": "#03A9F4"
-  },
-  "People Before Profit Alliance": {
-    "Party_Id": 999,
-    "Party_Abbreviation": "PBP",
-    "Hex_Col": "#E91E63"
-  },
-  "Workers Party": {
-    "Party_Id": 998,
-    "Party_Abbreviation": "WP",
-    "Hex_Col": "#FF0000"
-  },
-  "Procapitalism": {
-    "Party_Id": 997,
-    "Party_Abbreviation": "CAP",
-    "Hex_Col": "#f633ff"
-  },
-  "Socialist Party": {
-    "Party_Id": 996,
-    "Party_Abbreviation": "SP",
-    "Hex_Col": "#e60000"
-  },
-  "Socialist Party (NI)": {
-    "Party_Id": 996,
-    "Party_Abbreviation": "SP",
-    "Hex_Col": "#e60000"
-  },
-  "British Nationalist Party": {
-    "Party_Id": 995,
-    "Party_Abbreviation": "BNP",
-    "Hex_Col": "#b7bdff"
-  },
-  "Progressive Unionist Party": {
-    "Party_Id": 994,
-    "Party_Abbreviation": "PUP",
-    "Hex_Col": "#880E4F"
-  },
-  "Animal Welfare Party": {
-    "Party_Id": 985,
-    "Party_Abbreviation": "AWP",
-    "Hex_Col": "#ce1d99"
-  },
-  "Cannabis Is Safer Than Alcohol": {
-    "Party_Id": 993,
-    "Party_Abbreviation": "CISTA",
-    "Hex_Col": "#F84651"
-  },
-  "Citizens Independent Social Thought Alliance": {
-    "Party_Id": 993,
-    "Party_Abbreviation": "CISTA",
-    "Hex_Col": "#F84651"
-  },
-  "Cross-Community Labour Alternative": {
-    "Party_Id": 987,
-    "Party_Abbreviation": "CCLAB",
-    "Hex_Col": "#E57373"
-  },
-  "Democracy First": {
-    "Party_Id": 986,
-    "Party_Abbreviation": "DF",
-    "Hex_Col": "#d7761d"
-  },
-  "Labour Alternative": {
-    "Party_Id": 992,
-    "Party_Abbreviation": "LABALT",
-    "Hex_Col": "#E57373"
-  },
-  "NI Conservatives": {
-    "Party_Id": 991,
-    "Party_Abbreviation": "CON",
-    "Hex_Col": "#B0BEC5"
-  },
-  "South Belfast Unionists": {
-    "Party_Id": 990,
-    "Party_Abbreviation": "SBU",
-    "Hex_Col": "#9195ff"
-  },
-  "Northern Ireland First": {
-    "Party_Id": 988,
-    "Party_Abbreviation": "NIF",
-    "Hex_Col": "#b3d71d"
-  },
-  "NI Labour Representation Committee": {
-    "Party_Id": 989,
-    "Party_Abbreviation": "LRC",
-    "Hex_Col": "#E57373"
-  },
-  "not_transferred": {
-    "Party_Id": 0,
-    "Party_Abbreviation": "N/T",
-    "Hex_Col": "#fff"
-  }
-}
-
-
 var transferData = {};
 function getTransfersData(year) {
-	$.getJSON("/" + year + "/NI/party-transfers.json", function (json) {
-		console.log(json);
+	$.getJSON("/2017/SCO/simulation/party-transfers.json", function (json) {
 		var transfers = {};
 		$.each(json, function (i, constituency) {
 			var con = constituency.Constituency_Name;
@@ -177,40 +27,25 @@ function getTransfersData(year) {
 				});
 			});
 		});
-		console.log("transfers", transfers);
 		// convert constituency objects to arrays of individual transfers
 		$.each(transfers, function (cname, constituency) { // loop thru constituencies
-	//        console.log("--- " + cname + " ---");
 			var data = [];
 			$.each(constituency, function (donor, transfers) { // loop thru donor parties
 				var totalTransfers = -transfers.total || 0;
-	   //         console.log(donor, totalTransfers);
-				$.each(transfers, function (recipient, amount) { // loop thru recipient parties
-	//                console.log(transfers);
-					if (recipient != "total") {
-						data.push({
-							donor: donor,
-							donor_short: parties_info[donor].Party_Abbreviation,
-							recipient: parties_info[recipient].Party_Abbreviation,
-							color: parties_info[donor].Hex_Col,
-							amount: amount / totalTransfers * 100
-						});
-					}
-				});
 			});
 			transferData[cname] = data;
 		});
 
-		console.log("transferData", transferData);
 
 		function loadViz() {
-			$.get("/website/jsonspec/transferSpec.json", function (json) {
+				if ($("#pause-replay").hasClass("fa-repeat")) {
+					$("#pause-replay").addClass("fa-play");
+				}			
+				$.get("/website/jsonspec/transferSpec.json", function (json) {
 				var spec = JSON5.parse(json);
 				var constituency = $("#constituencySelect :selected").text();
                 document.getElementById('transfers_constituency').innerHTML = constituency;
-				console.log("CONST", constituency);
 				var data = transferData[constituency];
-				console.log("DATA", data)
 				spec.data = [
 					{
 						name: "transfers",
@@ -261,7 +96,6 @@ function getTransfersData(year) {
 						})
 						.on("mouseover", function (event, item) {
 							if (item && item.datum.amount) {
-								console.log(item);
 								$('#matrixtooltip').show();
 								$('#matrixtooltip').html(
 									Math.round(item.datum.amount * 10) /10 + "%"
@@ -278,4 +112,41 @@ function getTransfersData(year) {
 		$("#constituencySelect").change(loadViz);
 		loadViz();
 });
+}
+
+// honour URL params to display a particular result
+$(window).load(function(e) {
+	var searchParams = getSearchParams();
+	if (searchParams['council'] && searchParams['ward'] && searchParams['year'])
+	{
+		$("#yearSelect").val(searchParams['year']);
+		switch(searchParams['year'])
+		{
+			case '2012':
+				$("#council-list-2017").hide();
+				$("#council-list-2012").show();
+				break;
+			case '2017':
+				$("#council-list-2012").hide();
+				$("#council-list-2017").show();
+				break;
+		}
+		$("#council-list-" + searchParams['year']).val(searchParams['council']);
+		loadWards(searchParams['year'], searchParams['council'], searchParams['ward']);
+		$("#constituencySelect").val(searchParams['ward']);
+		animateStages(searchParams['year'], searchParams['council'], searchParams['ward']);
+	}
+});
+
+
+// cross-browser search param functions
+function getSearchParams(k){
+ var p={};
+ location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(s,k,v){p[k]=v})
+ return k?p[k]:p;
+}
+
+//function to record ward_code in URL search query string (assumes it is only parameter)
+function setSearchParams(year, council, ward){
+  window.history.replaceState({}, '', location.pathname + '?council=' + council + '&ward=' + ward + '&year=' + year);
 }

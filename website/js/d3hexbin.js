@@ -18,7 +18,7 @@ function getdata(year) {
         if (error) return console.warn(error);
         data = json;
         pushdata(data, "Party_Name", "asc");
-        document.getElementById("number-elected").innerHTML = candidate.length + ' candidates elected. Hover to see who and where.';
+//        document.getElementById("number-elected").innerHTML = candidate.length + ' candidates elected. Hover to see who and where.';
         visualise();
     });
 }
@@ -30,7 +30,6 @@ function sortit() {
 
 // order (by argument) and push data to arrays
 function pushdata(data, prop, asc) {
-    console.log(data);
     data = _.orderBy(data, prop, asc) // if we want to resort, we need a prop string to sort the data by
     color = [];
     party = [];

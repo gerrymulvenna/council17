@@ -196,4 +196,170 @@ function readJSON($my_file)
     $data = json_decode($json);
     return ($data);
 }
+
+class Results
+{
+    public $Constituency;
+
+    function __construct($info)
+    {
+        $this->Constituency = new Constituency($info->Constituency_Name, $info->Constituency_Number, $info->Number_Of_Seats, $info->Voting_Age_Pop, $info->Total_Electorate, $info->Total_Poll, $info->Valid_Poll);
+    }
+
+    // go through the results and mark Elected/Excluded status where appropriate
+    public function updateStatus()
+    {
+        for ($i = 0; $i < count($this->Constituency->countGroup); $i++)
+        {
+            if (empty($this->Constituency->countGroup[$i]->Status))
+            {
+                if ($this->Constituency->countGroup[$i]->Total_Votes >= $this->Constituency->countInfo->Quota)
+                {
+                    $this->markStatus('Elected', $this->Constituency->countGroup[$i]->Candidate_Id, $this->Constituency->countGroup[$i]->Count_Number);
+                }
+                elseif ($this->Constituency->countGroup[$i]->Total_Votes == 0 && ($this->Constituency->countGroup[$i]->Transfers < 0))
+                {
+                    $this->markStatus('Excluded', $this->Constituency->countGroup[$i]->Candidate_Id, $this->Constituency->countGroup[$i]->Count_Number - 1);
+                }
+            }
+        }
+    }
+
+    // set the Status and Occurred_On_Count properties for a particular $cid in the countGroup data
+    function markStatus($status, $cid, $count)
+    {
+        for ($i = 0; $i < count($this->Constituency->countGroup); $i++)
+        {
+            if (($this->Constituency->countGroup[$i]->Candidate_Id == $cid) && ($this->Constituency->countGroup[$i]->Count_Number >= $count))
+            {
+                $this->Constituency->countGroup[$i]->Status = $status;
+                $this->Constituency->countGroup[$i]->Occurred_On_Count = $count;
+            }
+        }
+    }
+
+    // use this to convert a stdClass object imported from JSON
+    public function set($data)
+    {
+        foreach ($data AS $key => $value) $this->{$key} = $value;
+    }
+
+    // returns array (with elements Status, Occurred_On_Count) if any records for a given candidate $cid have Status set
+    public function currentStatus($cid)
+    {
+        for ($i = 0; $i < count($this->Constituency->countGroup); $i++)
+        {
+            if ($this->Constituency->countGroup[$i]->Candidate_Id == $cid && !empty($this->Constituency->countGroup[$i]->Status))
+            {
+                return (array("Status" => $this->Constituency->countGroup[$i]->Status, "Occurred_On_Count" => $this->Constituency->countGroup[$i]->Occurred_On_Count));
+            }
+        }   
+        return (false);            
+    }
+        
+}
+
+class Constituency
+{
+    public $countInfo;
+    public $countGroup;
+
+    function __construct($name, $no, $seats, $pop, $electorate, $total, $valid)
+    {
+        $this->countInfo = new countInfo($name, $no, $seats, $pop, $electorate, $total, $valid);
+        $this->countGroup = array();
+    }
+}
+
+class countInfo
+{
+    public $Valid_Poll;
+    public $Number_Of_Seats;
+    public $Total_Poll;
+    public $Voting_Age_Pop;
+    public $Quota;
+    public $Constituency_Name;
+    public $Constituency_Number;
+    public $Total_Electorate;
+    public $Spoiled;
+
+    function __construct($name, $no, $seats, $pop, $electorate, $total, $valid)
+    {
+        $this->Valid_Poll = $valid;
+        $this->Number_Of_Seats = $seats;
+        $this->Total_Poll = $total;
+        $this->Voting_Age_Pop = $pop;
+        $this->Quota = floor($valid/($seats+1))+1;
+        $this->Constituency_Name = $name;
+        $this->Constituency_Number = $no;
+        $this->Total_Electorate = $electorate;
+        $this->Spoiled = $total - $valid;
+    }
+}
+
+class countItem
+{
+    public $Candidate_First_Pref_Votes;
+    public $Status;
+    public $Occurred_On_Count;
+    public $Surname;
+    public $Firstname;
+    public $Constituency_Number;
+    public $Party_Name;
+    public $Candidate_Id;
+    public $Count_Number;
+    public $Transfers;
+    public $id;
+    public $Total_Votes;
+
+    function __construct($id, $no, $count, $party, $candID, $fname, $sname, $firstpref, $transfers, $total, $status = "", $occurred = "")
+    {
+        $this->Candidate_First_Pref_Votes = $firstpref;
+        $this->Status = $status;
+        $this->Occurred_On_Count = $occurred;
+        $this->Surname = $sname;
+        $this->Firstname = $fname;
+        $this->Constituency_Number = $no;
+        $this->Party_Name = $party;
+        $this->Candidate_Id = $candID;
+        $this->Count_Number = $count;
+        $this->Transfers = $transfers;
+        $this->id = $id;
+        $this->Total_Votes = $total;
+    }
+}
+
+class Council
+{
+    public $Constituencies;
+
+    //adds the first summary
+    function __construct($name, $no, $code, $info)
+    {
+        $this->Constituencies[] = new Constituency_Summary ($name, $no, $code, $info);
+    }
+
+    // use this to convert a stdClass object imported from JSON
+    public function set($data)
+    {
+        foreach ($data AS $key => $value) $this->{$key} = $value;
+    }
+}
+
+class Constituency_Summary
+{
+    public $Constituency_Name;
+    public $Constituency_Number;
+    public $Directory;
+    public $countInfo;
+
+    function __construct($name, $no, $code, $info)
+    {
+        $this->Constituency_Name = $name;
+        $this->Constituency_Number = $no;
+        $this->Directory = $code;
+        $this->countInfo = $info;
+    }
+
+}
 ?>
