@@ -38,7 +38,11 @@ require $_SERVER["DOCUMENT_ROOT"] . "/website/php/functions.php";
 navigation("Scottish Council elections 2017");
 ?>
 <div class="content" align="center">
-    <h1>Four ways to find your #council17 candidates</h1>
+    <h1>Explore the #council17 election data for Scotland</h1>
+    <div class="main-option">
+        <h3>Results visualisation</h3>
+        <a href="/results/"><img src="/website/image/results.png"></a>
+    </div>
     <div class="main-option">
         <h3>Interactive map</h3>
         <a href="/councils/"><img src="/website/image/scotland.png"></a>
