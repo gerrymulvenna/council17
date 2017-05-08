@@ -39,6 +39,7 @@ function getTransfersData(year) {
 
 		function loadViz() {
 				if ($("#pause-replay").hasClass("fa-repeat")) {
+					$("#pause-replay").removeClass("fa-repeat");
 					$("#pause-replay").addClass("fa-play");
 				}			
 				$.get("/website/jsonspec/transferSpec.json", function (json) {

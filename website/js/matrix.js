@@ -82,6 +82,13 @@ var council = "city-of-edinburgh";
 function loadWards(year, council, selected)
 {
 	$(constituencySelect).empty();
+	if ($('#pause-replay').hasClass("fa-replay")) {
+		$('#pause-replay').removeClass("fa-replay");
+		$('#pause-replay').addClass("fa-play");
+	} else if ($('#pause-replay').hasClass("fa-pause")) {
+		$('#pause-replay').removeClass("fa-pause");
+		$('#pause-replay').addClass("fa-play");
+	}
 	console.log ("loadWards", year, council, selected);
 	var path = '/' + year + "/SCO/" + council + "/all-constituency-info.json"; 
 	$.getJSON(path, function(data) 
@@ -102,6 +109,13 @@ function loadWards(year, council, selected)
 		});
 		$("#constituencySelect").change(function()
 		{
+			if ($('#pause-replay').hasClass('fa-repeat')) {
+				$('#pause-replay').removeClass('fa-repeat');
+				$('#pause-replay').addClass('fa-play');
+			} else if ($('#pause-replay').hasClass('fa-pause')) {
+				$('#pause-replay').removeClass('fa-pause');
+				$('#pause-replay').addClass('fa-play');
+			}
 			var year = $("#yearSelect :selected").text();
 			var council = $("#council-list-" + year + " :selected").val();
 			var constituencyFolder = $("#constituencySelect :selected").val();
