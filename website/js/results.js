@@ -12,14 +12,13 @@ function tableCount(countGroup)
 			{
 				table[row] = [];
 				table[row][0] = countItem.Firstname;
-				table[row][1] = countItem.Surname;
+				table[row][1] = countItem.Surname + ' <a target="_blank" href="http://candidates.democracyclub.org.uk/person/' + countItem.Candidate_Id +'/"><i class="fa fa-external-link"></i></a>';
 				table[row][2] = countItem.Party_Name;
-				table[row][3] = countItem.Candidate_Id;
-				table[row][4] = countItem.Candidate_First_Pref_Votes;
-				table[row][5] = countItem.Status;
-				table[row][6] = countItem.Occurred_On_Count;
+				table[row][3] = countItem.Candidate_First_Pref_Votes;
+				table[row][4] = countItem.Status;
+				table[row][5] = countItem.Occurred_On_Count;
 				row++;
-				col = 5;
+				col = 4;
 			}
 			else 
 			{
@@ -29,8 +28,8 @@ function tableCount(countGroup)
 					row = 0;
 					col +=2;
 				}
-				table[row][5] = countItem.Status;
-				table[row][6] = countItem.Occurred_On_Count;
+				table[row][4] = countItem.Status;
+				table[row][5] = countItem.Occurred_On_Count;
 				table[row][col] = countItem.Transfers;
 				table[row][col + 1] = countItem.Total_Votes;
 				row++;
@@ -42,7 +41,7 @@ function tableCount(countGroup)
 // return table of results as html
 function tableHTML(t)
 {
-	var html = '<tr><th>Firstname</th><th>Surname</th><th>Party</th><th>ID</th><th>1st pref</th><th>Status</th><th>At stage</th>';
+	var html = '<tr><th>Firstname</th><th>Surname</th><th>Party</th><th>1st pref</th><th>Status</th><th>At stage</th>';
 	var stage = 1;
 	for (var col=7; col<t[0].length; col+=2)
 	{
