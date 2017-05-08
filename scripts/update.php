@@ -27,7 +27,8 @@ if (isset($_POST['council']) && isset($_POST['ward']) && isset($_POST['year']))
         echo "Reading $fname<br>\n";
         $json = readJSON($fname);
         $rdata = new Results($ward_info);
-        $rdata->set($json);
+        $rdata->set($json);   // this isn't really working - it overwrites new countInfo data
+        $rdata->Constituency->countInfo = $ward_info; // so this is a workaround to bring in the posted values for electorate etc.
     }
     else
     {
@@ -107,6 +108,7 @@ if (isset($_POST['council']) && isset($_POST['ward']) && isset($_POST['year']))
         echo "No new data detected. Length of 'pastebin' = " . strlen($matrix) . "\n";
     }
     $rdata->updateStatus();
+    echo "Updating results data " . $fname . "\n";
     writeJSON($rdata, $fname);
     
     $wdata = new Constituency_Summary($_POST['ward_name'], $_POST['ward'], $_POST['ward'], $ward_info);
