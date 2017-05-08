@@ -136,8 +136,6 @@ $(window).load(function(e) {
 		$("#constituencySelect").val(searchParams['ward']);
 		animateStages(searchParams['year'], searchParams['council'], searchParams['ward']);
 	}
-//			$("#constituencySelect").val(searchParams['ward']);
-//		}
 });
 
 

@@ -35,10 +35,14 @@ var council = "city-of-edinburgh";
 			case '2012':
 				$("#council-list-2017").hide();
 				$("#council-list-2012").show();
+				$("#council-list-2012 option").filter('[value="0"]').prop("selected", true);
+				$("#constituencySelect").empty();
 				break;
 			case '2017':
 				$("#council-list-2012").hide();
 				$("#council-list-2017").show();
+				$("#council-list-2017 option").filter('[value="0"]').prop("selected", true);
+				$("#constituencySelect").empty();
 				break;
 		}
 		var council = $("#council-list-" + year + " :selected").val();
@@ -46,7 +50,7 @@ var council = "city-of-edinburgh";
 
 		//getTransfersData(year);
 		//countMatrix(year, council, constituencyFolder);
-		animateStages(year, council, constituencyFolder);
+		//animateStages(year, council, constituencyFolder);
 	});
 
 	function cmpNames(a, b)
@@ -69,10 +73,9 @@ var council = "city-of-edinburgh";
 		var council = cSelect.val();
 		loadWards(year, council);
 		var constituencyFolder = $("#constituencySelect :selected").val();
-		var year = $("#yearSelect :selected").text();
-		getTransfersData(year);
+		//getTransfersData(year);
 		//countMatrix(year, council, constituencyFolder);
-		animateStages(year, council, constituencyFolder);
+		//animateStages(year, council, constituencyFolder);
 	}
 
 // populate the ward select based on year and council
@@ -84,18 +87,19 @@ function loadWards(year, council, selected)
 	{
 		var constituencies = data.Constituencies.sort(cmpNames);
 		var constituencySelect = $("#constituencySelect");
-		constituencySelect.empty();
+		$(constituencySelect).empty();
+		$(constituencySelect).append($("<option/>").val(0).text("Select a ward"));
 		var yearSelect = $("#yearSelect");
 		$.each(constituencies, function(i, constituency)
 		{
 			var name = constituency.Constituency_Name;
 			var folder = constituency.Directory;
-			$(constituencySelect).append($("<option/>").val(folder).text(name))
+			$(constituencySelect).append($("<option/>").val(folder).text(name));
+			if (folder == selected)
+			{
+				$('#constituencySelect option').filter('[value=' + selected + ' ]').prop('selected', true);
+			}
 		});
-		if (selected)
-		{
-			$(constituencySelect).val(selected);
-		}
 		$("#constituencySelect").change(function()
 		{
 			var year = $("#yearSelect :selected").text();
