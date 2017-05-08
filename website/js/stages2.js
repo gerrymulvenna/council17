@@ -173,8 +173,8 @@ function animateStages(year,council,constituencyFolder) {
 
         firstCount();  //run the first count
         var countNumber = 2;  //global loop variable
-        // set the advance count function to run in a loop
-//        loop = window.setInterval(advanceCount,4000*speed);
+        // set the advance count function to run in a loop (this auto starts the animation, so I've commented it out)
+		// loop = window.setInterval(advanceCount,4000*speed);
     }else{
         //if we didn't load a constituency var then we have no data yet
         $("#quota").text("There is no data up for this constituency at present. Once we receive and add it, it will display here.");
@@ -213,7 +213,7 @@ function animateStages(year,council,constituencyFolder) {
 
     //find the first candidate who is transferring, all transfers from the round start from here
     //append some divs with width relative to transfer number, animate them to their candidates current order
-    //then animate them accross to end of candidates vote pile, when complete remove the new div and update the candidates div width
+    //then animate them across to end of candidates vote pile, when complete remove the new div and update the candidates div width
     //finally run the reorder animation
     function advanceCount(){
         var transfered=false;
@@ -235,8 +235,8 @@ function animateStages(year,council,constituencyFolder) {
                             if (countDict[i][candidates[t].id]["transfers"] == false) {
                                 var localLeft = startLeft+countDict[i-1][candidates[t].id]["total"] * qFactor;
                                 $('<div data-candidate="'+candidates[t].id+'" style="width:'+transfers[candidates[t].id] * qFactor+'px;left:'+left+'px; top:'+top+'px;" class="votes '+candidates[t]["party"]+'"></div>')
-                                    .appendTo("#animation").delay(300*speed)
-                                    .animate({top:topMargin+ (countDict[i-1][candidates[t].id]["order"]*30), left:startLeft+voteWidth+20},900*speed, function(){
+                                    .appendTo("#animation").delay(500*speed)
+                                    .animate({top:topMargin+ (countDict[i-1][candidates[t].id]["order"]*30), left:startLeft+voteWidth+20},1000*speed, function(){
                                         earlyStage = false;
                                         if (transfers[$(this).data('candidate')] + countDict[i-1][$(this).data('candidate')]["total"] >0 ){
                                             $("#candidate"+$(this).data('candidate'))
@@ -245,8 +245,8 @@ function animateStages(year,council,constituencyFolder) {
 											$("#candidate"+$(this).data('candidate'))
                                             .text("")
 										}
-                                    }).delay(100*speed)
-                                    .animate({left:localLeft},900*speed, function(){
+                                    }).delay(500*speed)
+                                    .animate({left:localLeft},1000*speed, function(){
 										if (transfers[$(this).data('candidate')] + countDict[i][$(this).data('candidate')]["total"] >0 ){
                                             $("#candidate"+$(this).data('candidate'))
                                             .text(countDict[i-1][$(this).data('candidate')]["total"]+transfers[$(this).data('candidate')]+ " " + countDict[i][$(this).data('candidate')]["status"]);

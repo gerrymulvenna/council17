@@ -116,7 +116,7 @@ echo '
             <div class="row">
                 <h2>Results</h2>
                 <p>Results data here are currently being manually transcribed ward by ward from the PDFs published by each council, which is a slow process. Please contact <a href="http://twitter.com/gerrymulvenna">@gerrymulvenna</a> if you spot any transcription errors.</p>
-                <p>Choose a council, ward and election year.</p>
+                <p>Choose election year, council, ward and then click play to run the animation.</p>
                 <div id="menuBar">
                     <select id="yearSelect">
                         <option value="2017">2017</option>
