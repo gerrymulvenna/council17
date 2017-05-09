@@ -38,6 +38,8 @@ selectCouncil('Select a council', 'add-form', '');
                       <input type="text" name="valid_poll" id="valid_poll" size="10">
                       <label for="seats">Seats</label>
                       <input type="text" name="seats" id="seats" maxlength="1" size="2">
+                      <label for="turnout">Turnout %</label>
+                      <input type="text" name="turnout" id="turnout" size="10">
                     </div>
                 </div>
                 <div class="row">

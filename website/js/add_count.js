@@ -202,3 +202,23 @@ function strrpos (haystack, needle, offset) {
   }
   return i >= 0 ? i : false
 }
+
+$('#turnout').change(function() {
+	if ($('#electorate').val().length == 0)
+	{
+		if ( !isNaN(parseFloat( $(this).val() )) && isFinite( $(this).val() ))
+		{
+			$('#electorate').val((100 * parseFloat($('#total_poll').val()) / parseFloat($(this).val())).toFixed(0));
+		}
+	}
+});
+
+$('#total_poll').change(function() {
+	if ($('#turnout').val().length == 0)
+	{
+		if ( !isNaN(parseFloat( $(this).val() )) && isFinite( $(this).val() ) && !isNaN(parseFloat( $('#electorate').val() )) && isFinite( $('#electorate').val() ))
+		{
+			$('#turnout').val((100 * parseFloat($(this).val()) / parseFloat($('#electorate').val())).toFixed(2));
+		}
+	}
+});
