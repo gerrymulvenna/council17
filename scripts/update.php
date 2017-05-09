@@ -89,12 +89,12 @@ if (isset($_POST['council']) && isset($_POST['ward']) && isset($_POST['year']))
                         if ($stage == 1)
                         {
                             echo "Stage " . $stage . " data added for " . $_POST['Firstname'][$row] . " " . $_POST['Surname'][$row] . "\n";
-                            $rdata->Constituency->countGroup[] = new countItem($id++, $_POST['ward'], $stage, $_POST['Party_Name'][$row], $_POST['Candidate_Id'][$row], $_POST['Firstname'][$row], $_POST['Surname'][$row], $numbers[$row][0], 0, $numbers[$row][$col + 1 + $offset]);
+                            $rdata->Constituency->countGroup[] = new countItem($id++, $_POST['ward'], $stage, $_POST['Party_Name'][$row], $_POST['Candidate_Id'][$row], $_POST['Firstname'][$row], $_POST['Surname'][$row], $numbers[$row][$offset + 1], 0, $numbers[$row][$col + 1 + $offset]);
                         }
                         else
                         {
                             echo "Stage " . $stage . " data added for " . $_POST['Firstname'][$row] . " " . $_POST['Surname'][$row] . "\n";
-                            $rdata->Constituency->countGroup[] = new countItem($id++, $_POST['ward'], $stage, $_POST['Party_Name'][$row], $_POST['Candidate_Id'][$row], $_POST['Firstname'][$row], $_POST['Surname'][$row], $numbers[$row][0], $numbers[$row][$col + $offset], $numbers[$row][$col + 1 + $offset]);
+                            $rdata->Constituency->countGroup[] = new countItem($id++, $_POST['ward'], $stage, $_POST['Party_Name'][$row], $_POST['Candidate_Id'][$row], $_POST['Firstname'][$row], $_POST['Surname'][$row], $numbers[$row][$offset + 1], $numbers[$row][$col + $offset], $numbers[$row][$col + 1 + $offset]);
                         }
                     }
                 }
