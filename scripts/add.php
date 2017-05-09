@@ -1,5 +1,6 @@
 <?php
 require $_SERVER["DOCUMENT_ROOT"] . "/website/php/functions.php";
+require $_SERVER["DOCUMENT_ROOT"] . "/scripts/functions.php";
 $slug = 'add-result';
 add_count_head("#council17 unofficial data entry for Scottish Council elections", $slug, "/website/image/scotland.png");
 navigation("Scottish Council elections 2017");
@@ -47,6 +48,16 @@ selectCouncil('Select a council', 'add-form', '');
                 </div>
             </form>
         </div>
+        <div id="promotional">
+<?php
+if (isset($_GET['council']))
+{
+    echo "<h3>Potential tweets</h3>\n";
+    showTweets('../2017/SCO/', $_GET['council']);
+}
+?>
+
+        </div>
 </div>
 
 <!--Load local scripts-->
@@ -66,3 +77,41 @@ selectCouncil('Select a council', 'add-form', '');
 </script>
 </body>
 </html>
+<?php
+
+function showTweets($dataDir, $council)
+{
+    $wardinfo = readJSON($dataDir . "wardinfo.json");
+    $wards = array();
+    foreach ($wardinfo->Wards as $ward)
+    {
+        if (!empty($ward->election))
+        {
+            $wards[$ward->cand_ward_code] = $ward;
+        }
+    }
+
+    $cdata = readJSON("$dataDir" . "local." . $council . ".2017-05-04.json");
+    foreach($cdata->wards as $ward)
+    {
+        $wdata = $wards[$ward->post_id];
+        $url = "http://council17.mulvenna.org/results/?year=2017&council=$council&ward=" . $wdata->map_ward_code;
+        $tweet = "#council17 #dataviz for " . $wdata->ward_name . ", " . $wdata->council ;
+        $ctwitter = array();
+        foreach($ward->candidates as $cdata)
+        {
+            if ($cdata->twitter_username)
+            {
+                $ctwitter[] = "@" . $cdata->twitter_username;
+            }
+        }
+        if (count($ctwitter))
+        {
+            $tweet .= " " . implode(' ', $ctwitter);
+        }
+        $tweet .= " $url";
+        echo "$tweet<br>\n";
+    }
+}
+
+?>
