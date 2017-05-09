@@ -29,6 +29,7 @@ function selectCouncil() {
 $(wardSelect).on('change', function() {
 	loadCandidates($("#council-list :selected").val(), this.value,  $("#yearSelect :selected").text());
 	$('#pastebin').val('');
+	$('#turnout').val('');
 });
 
 $(yearSelect).on('change', function() {
