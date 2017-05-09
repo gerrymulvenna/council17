@@ -2,7 +2,6 @@
 require "functions.php";
 
 echo "<pre>\n";
-print_r($_POST);
 
 if (isset($_POST['council']) && isset($_POST['ward']) && isset($_POST['year']))
 {

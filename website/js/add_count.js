@@ -27,11 +27,13 @@ function selectCouncil() {
 };
 
 $(wardSelect).on('change', function() {
-	  loadCandidates($("#council-list :selected").val(), this.value,  $("#yearSelect :selected").text());
+	loadCandidates($("#council-list :selected").val(), this.value,  $("#yearSelect :selected").text());
+	$('#pastebin').val('');
 });
 
 $(yearSelect).on('change', function() {
-	  loadCandidates($("#council-list :selected").val(), $("#wardSelect :selected").val(), this.value);
+	loadCandidates($("#council-list :selected").val(), $("#wardSelect :selected").val(), this.value);
+	$('#pastebin').val('');
 });
 
 function loadCandidates(council, ward_code, year)
