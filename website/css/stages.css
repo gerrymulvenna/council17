@@ -116,11 +116,15 @@
 }
 
 #quota {
-    float: left !important;
     margin-left: 10px !important;
     top: 10px;
     font-size: 14px;
-    color: #888;
+    color: #555;
+}
+
+#quota p {
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 #thepost{
