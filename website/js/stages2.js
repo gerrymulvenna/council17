@@ -24,7 +24,7 @@ function animateStages(year,council,constituencyFolder) {
     var leftPadding = 10;
     var nameSpace = 150;
     var startLeft = leftPadding+nameSpace;
-    var voteWidth = 300; // default = 600
+    var voteWidth = 250; // default = 600
     var postPosition = leftPadding + nameSpace + voteWidth;
     var running = true;
     var earlyStage = true;
