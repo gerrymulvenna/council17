@@ -41,22 +41,29 @@ function tableCount(countGroup)
 // return table of results as html
 function tableHTML(t)
 {
-	var html = '<tr><th>Firstname</th><th>Surname</th><th>Party</th><th>1st pref</th><th>Status</th><th>At stage</th>';
-	var stage = 1;
-	for (var col=7; col<t[0].length; col+=2)
+	if (t.length > 0)
 	{
-		stage++;
-		html += '<th>Transfers</th><th>Stage ' + stage + '</th>';
-	}
-	html += '</tr>' + "\n";
-	for (var row=0; row<t.length;row++ )
-	{
-		html += '<tr>';
-		for (col=0; col<t[row].length;col++ )
+		var html = '<tr><th>Firstname</th><th>Surname</th><th>Party</th><th>1st pref</th><th>Status</th><th>At stage</th>';
+		var stage = 1;
+		for (var col=6; col<t[0].length; col+=2)
 		{
-			html +='<td>' + t[row][col] + '</td>';
+			stage++;
+			html += '<th>Transfers</th><th>Stage ' + stage + '</th>';
 		}
 		html += '</tr>' + "\n";
+		for (var row=0; row<t.length;row++ )
+		{
+			html += '<tr>';
+			for (col=0; col<t[row].length;col++ )
+			{
+				html +='<td>' + t[row][col] + '</td>';
+			}
+			html += '</tr>' + "\n";
+		}
+		return '<table class="count-data">' + html + '</table>';
 	}
-	return '<table class="count-data">' + html + '</table>';
+	else
+	{
+		return "";
+	}
 }

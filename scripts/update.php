@@ -40,11 +40,13 @@ if (isset($_POST['council']) && isset($_POST['ward']) && isset($_POST['year']))
     {
         $pastebin = preg_split("/\\r\\n|\\r|\\n/", $matrix);
         $candidates = $_POST['Candidate_Id'];
-        if (count($pastebin) >= count($candidates))
+        $data_missing = True;
+        while (count($pastebin) >= count($candidates))
         {
+            $data_missing = False;
             for ($i=0; $i<count($candidates); $i++)
             {
-                $numbers[$i] = preg_split("/\\s/", $pastebin[$i]);
+                $numbers[$i] = preg_split("/\\s/", array_shift ($pastebin));
             }
             if (count($rdata->Constituency->countGroup) > 0)
             {
@@ -80,6 +82,7 @@ if (isset($_POST['council']) && isset($_POST['ward']) && isset($_POST['year']))
             {
                 $stage = 1;
                 $id = 0;
+                $offset = (($numbers[0][0] == 0) && (count($numbers[0]) % 2 == 0)) ? 0 : -1;          // allow a skip on first column of transfers 
                 for ($col = 0; $col < count($numbers[0]); $col+=2, $stage++)
                 {
                     for ($row = 0; $row < count($candidates); $row++)
@@ -87,18 +90,18 @@ if (isset($_POST['council']) && isset($_POST['ward']) && isset($_POST['year']))
                         if ($stage == 1)
                         {
                             echo "Stage " . $stage . " data added for " . $_POST['Firstname'][$row] . " " . $_POST['Surname'][$row] . "\n";
-                            $rdata->Constituency->countGroup[] = new countItem($id++, $_POST['ward'], $stage, $_POST['Party_Name'][$row], $_POST['Candidate_Id'][$row], $_POST['Firstname'][$row], $_POST['Surname'][$row], $numbers[$row][0], 0, $numbers[$row][$col]);
+                            $rdata->Constituency->countGroup[] = new countItem($id++, $_POST['ward'], $stage, $_POST['Party_Name'][$row], $_POST['Candidate_Id'][$row], $_POST['Firstname'][$row], $_POST['Surname'][$row], $numbers[$row][0], 0, $numbers[$row][$col + 1 + $offset]);
                         }
                         else
                         {
                             echo "Stage " . $stage . " data added for " . $_POST['Firstname'][$row] . " " . $_POST['Surname'][$row] . "\n";
-                            $rdata->Constituency->countGroup[] = new countItem($id++, $_POST['ward'], $stage, $_POST['Party_Name'][$row], $_POST['Candidate_Id'][$row], $_POST['Firstname'][$row], $_POST['Surname'][$row], $numbers[$row][0], $numbers[$row][$col - 1], $numbers[$row][$col]);
+                            $rdata->Constituency->countGroup[] = new countItem($id++, $_POST['ward'], $stage, $_POST['Party_Name'][$row], $_POST['Candidate_Id'][$row], $_POST['Firstname'][$row], $_POST['Surname'][$row], $numbers[$row][0], $numbers[$row][$col + $offset], $numbers[$row][$col + 1 + $offset]);
                         }
                     }
                 }
             }
         }
-        else
+        if ($data_missing)
         {
             echo "Data mismatch. " . count($pastebin) . " rows detected. " . count($candidates) . " candidates.\n";
         }
