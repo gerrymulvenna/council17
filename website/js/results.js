@@ -1,3 +1,12 @@
+// return capitalised initials for a string split on space
+function getInitials(name)
+{
+	var initials = name.match(/\b\w/g) || [];
+	initials = ((initials.shift() || '') + (initials.pop() || '')).toUpperCase();
+	return initials;
+}
+
+
 // takes an array of countInfo elements and returns essentially a two-dimensional array for display
 function tableCount(countGroup)
 {

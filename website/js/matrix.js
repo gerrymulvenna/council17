@@ -1,12 +1,10 @@
-var council = "city-of-edinburgh";
-		
-		$(document).ready(function() {
-            $.ajaxSetup({
-                cache: false
-            });
-        });
+	$(document).ready(function() {
+		$.ajaxSetup({
+			cache: false
+		});
+	});
 
-        seatsSummary();
+//        seatsSummary();
 
         // tooltip
         $(document).bind('mousemove', function(e) {
