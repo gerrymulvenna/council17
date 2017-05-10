@@ -56,12 +56,7 @@ function results_head($title, $name, $twimg)
     echo'
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/lodash/4.11.1/lodash.min.js"></script>
-    <script type="text/javascript" src="http://d3js.org/d3.v3.js"></script>
-    <script type="text/javascript" src="http://d3js.org/d3.hexbin.v0.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/json5/0.3.0/json5.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vega/2.5.2/vega.min.js"></script>
 
     <link rel="stylesheet" href="/website/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="/website/css/style.css" media="screen, handheld" />
@@ -108,11 +103,6 @@ echo '
         </div>
 
         <div class="content">
-            <div id="overview_container" class="row">
-                <div id="overview_matrix"></div>
-                <div id="party_matrix"></div>
-            </div>
-
             <div class="row">
                 <h2>Results</h2>
                 <p>Results data here are currently being manually transcribed ward by ward from the PDFs published by each council, which is a slow process. Please contact <a href="http://twitter.com/gerrymulvenna">@gerrymulvenna</a> if you spot any transcription errors.</p>
@@ -145,15 +135,6 @@ echo '
 
             <div class="row">
                 <div id="raw-data"></div>
-            </div>
-
-            <div class="row hidden">
-                <h3>Party to Party Transfers</h3>
-                <div class="alert alert-info" role="alert">This matrix summarises the percentage of transfers between candidates from each party. It is based on only those count stages with a transfer from one single candidate. It is only indicative of the transfers that were calculated during
-                    the actual count process, and cannot account for all ballots cast in a constituency.</div>
-                <h4 id="transfers_constituency"></h4>
-                <div id="transfers"></div>
-                <p>N/T = votes not transferred</p>
             </div>
 
             <p><em>The Single Transferable Vote (STV) animation was developed by James Bligh (<a href="http://twitter.com/anamates" target="_blank" title="External Link">@anamates</a>) and adapted by Bob Harper on <a href="https://github.com/NICVA/electionsni/blob/master/website/js/stages.js" target="_blank" title="External Link">Elections NI</a>.</em></p>
@@ -241,7 +222,7 @@ function navigation($title, $param2 = NULL, $param3 = NULL, $param4 = NULL)
                 <li><a href="/councils"><span>By map</span></a></li>
                 <li><a href="/postcode/"><span>By postcode</span></a></li>
                 <li><a href="/treeview/"><span>By council</span></a></li>
-                <li><a href="/treeview/by-party,php"><span>By party</span></a></li>
+                <li><a href="/treeview/by-party.php"><span>By party</span></a></li>
                 <li><a href="/about"><span>About</span></a></li>
             </ul>
         </div>';
@@ -302,11 +283,8 @@ function results_foot($param1 = NULL, $param2 = NULL, $param3 = NULL, $param4 = 
 echo '
     <!--Load local scripts-->
     <script type="text/javascript" src="/website/js/results.js"></script>
-    <script type="text/javascript" src="/website/js/d3hexbin.js"></script>
     <script type="text/javascript" src="/website/js/stages2.js"></script>
     <script type="text/javascript" src="/website/js/transfers.js"></script>
-    <script type="text/javascript" src="/website/js/overview_matrix2.js"></script>
-    <script type="text/javascript" src="/website/js/matrix.js"></script>
 ';
   // Google analytics
 echo "<script>
