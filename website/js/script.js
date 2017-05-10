@@ -25,8 +25,7 @@ function selectCouncil() {
 function updateTitle (ward, council)
 {
 	var title = document.title;
-	var pos = title.indexOf(" - ");
-	document.title = "#council17 candidates for " + ward + ", " + council + title.substr(pos)
+	document.title = ward + ", " + council + " candidates for local elections 2017";
 }
 
 

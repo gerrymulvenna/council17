@@ -1,5 +1,7 @@
 <?php
 
+require "mappings.php";
+
 function add_count_head($title, $name, $twimg)
 {
     echo '
@@ -48,6 +50,19 @@ echo '
 
 function results_head($title, $name, $twimg)
 {
+    global $councils, $wards;
+
+    $desc = "Presenting results and data visualisations for the Scottish Council Elections 2017";
+    $url = "http://council17.mulvenna.org/results/";
+    if (isset($_GET['year']) && isset($_GET['council']) && isset($_GET['ward']))
+    {
+        $url = "http://" . $_SERVER['SERVER_NAME'] . "/results/?year=" . $_GET['year'] . "&council=" . $_GET['council'] . "&ward=" . $_GET['ward'];
+        if (isset($councils[$_GET['council']]) && isset($wards[$_GET['ward']]))
+        {
+            $desc = $wards[$_GET['ward']] . ", " . $councils[$_GET['council']] . " ward-level results visualisation for the council election " . $_GET['year'];
+            $title = $desc;
+        }
+    }
     echo '
 <!DOCTYPE html>
 <html>
@@ -71,7 +86,7 @@ function results_head($title, $name, $twimg)
     <!--[if (lt IE 9)&(!IEMobile)]>
 		<link rel="stylesheet" type="text/css" href="enhanced.css" />
 		<![endif]-->
-    <meta name="description" content="Results visualisation for the Scottish Council Elections 2017" />
+    <meta name="description" content="' . $desc . '" />
     <meta name="keywords" content="Scotland, local elections, open data, 2017, crowdsource, single transferable vote, stv, ward, candidate, voting, #council17, electoral"
     />
     <meta name="author" content="Gerry Mulvenna">
@@ -80,9 +95,9 @@ function results_head($title, $name, $twimg)
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@gerrymulvenna" />
     <meta name="twitter:creator" content="@gerrymulvenna" />
-    <meta property="og:url" content="http://council17.mulvenna.org/results/" />
-    <meta property="og:title" content="Scottish Council elections 2017 #council17" />
-    <meta property="og:description" content="Presenting crowdsourced open data, live results and data visualisations for the Scottish Council Elections 2017" />
+    <meta property="og:url" content="' . $url . '" />
+    <meta property="og:title" content="' . $title . '" />
+    <meta property="og:description" content="' . $desc . '" />
 ';
 echo "    <meta property=\"og:image\" content=\"http://" . $_SERVER['SERVER_NAME'] . "$twimg\" />\n";
 echo '
@@ -145,6 +160,26 @@ echo '
 
 function head($title, $mapName, $mapLat, $mapLong, $mapZoom, $mapProperty, $mapUnit, $mapWardDesc = NULL, $twimg = '/website/image/scotland.png')
 {
+    global $councils, $wards;
+
+    $desc = "Ward level candidates list for the Scottish Council Elections 2017";
+    $url = $_SERVER['REQUEST_URI'];
+    if (preg_match("/^\/councils\/(.+)\.php$/", $_SERVER['SCRIPT_NAME'], $matches))
+    {
+        if (isset($councils[$matches[1]]))
+        {
+            $desc = $councils[$matches[1]] . " council election candidates 2017";
+            $title = $desc;
+            if (isset($_GET['ward']))
+            {
+                if (isset($wards[$_GET['ward']]))
+                {
+                    $desc = $wards[$_GET['ward']] . ", " . $councils[$matches[1]] . " council election candidates 2017";
+                    $title = $desc;
+                }
+            }
+        }
+    }
     echo '
 <!DOCTYPE html>
 <html>
@@ -187,7 +222,7 @@ function head($title, $mapName, $mapLat, $mapLong, $mapZoom, $mapProperty, $mapU
 		<!--[if (lt IE 9)&(!IEMobile)]>
 		<link rel="stylesheet" type="text/css" href="enhanced.css" />
 		<![endif]-->
-    <meta name="description" content="Map-based interface to browse the candidates for the Scottish Council Elections 2017" />
+    <meta name="description" content="' . $desc . '" />
     <meta name="keywords" content="Scotland, local elections, open data, 2017, crowdsource, single transferable vote, stv, ward, candidate, voting, #council17, electoral"
     />
     <meta name="author" content="Gerry Mulvenna">
@@ -196,9 +231,9 @@ function head($title, $mapName, $mapLat, $mapLong, $mapZoom, $mapProperty, $mapU
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@gerrymulvenna" />
     <meta name="twitter:creator" content="@gerrymulvenna" />
-    <meta property="og:url" content="http://council17.mulvenna.org/councils/" />
-    <meta property="og:title" content="Scottish Council elections 2017 #council17" />
-    <meta property="og:description" content="Presenting crowdsourced open data, live results and data visualisations for the Scottish Council Elections 2017" />
+    <meta property="og:url" content="' . $url . '" />
+    <meta property="og:title" content="' . $title . '" />
+    <meta property="og:description" content="' . $desc . '" />
 ';
 echo "    <meta property=\"og:image\" content=\"http://" . $_SERVER['SERVER_NAME'] . "$twimg\" />\n";
 echo '
@@ -212,7 +247,7 @@ echo '
 
 function navigation($title, $param2 = NULL, $param3 = NULL, $param4 = NULL)
 {
-    echo"<header><h1><a href = \"/\">$title</a></h1><p>Browse candidates for #council17 in Scotland</p></header>\n";
+    echo"<header><h1><a href = \"/\">$title</a></h1><p>Explore results and candidates for #council17 in Scotland</p></header>\n";
     echo'
         <label for="show-menu" class="show-menu">Menu</label>
         <input type="checkbox" id="show-menu" role="button">
