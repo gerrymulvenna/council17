@@ -76,7 +76,7 @@ function results_head($title, $name, $twimg)
     <!--[if (lt IE 9)&(!IEMobile)]>
 		<link rel="stylesheet" type="text/css" href="enhanced.css" />
 		<![endif]-->
-    <meta name="description" content="Map-based interface to browse the candidates for the Scottish Council Elections 2017" />
+    <meta name="description" content="Results visualisation for the Scottish Council Elections 2017" />
     <meta name="keywords" content="Scotland, local elections, open data, 2017, crowdsource, single transferable vote, stv, ward, candidate, voting, #council17, electoral"
     />
     <meta name="author" content="Gerry Mulvenna">
@@ -85,7 +85,7 @@ function results_head($title, $name, $twimg)
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@gerrymulvenna" />
     <meta name="twitter:creator" content="@gerrymulvenna" />
-    <meta property="og:url" content="http://council17.mulvenna.org/councils/" />
+    <meta property="og:url" content="http://council17.mulvenna.org/results/" />
     <meta property="og:title" content="Scottish Council elections 2017 #council17" />
     <meta property="og:description" content="Presenting crowdsourced open data, live results and data visualisations for the Scottish Council Elections 2017" />
 ';

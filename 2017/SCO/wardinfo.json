@@ -383,7 +383,7 @@
 		"ward_name": "Helensburgh and Lomond South",
 		"map_ward_code": "S13002526",
 		"cand_ward_code": "UTW:S13002526",
-		"seats": "4",
+		"seats": "3",
 		"election": "argyll-and-bute"
 	},
 	{
@@ -392,7 +392,7 @@
 		"ward_name": "Helensburgh Central",
 		"map_ward_code": "S13002525",
 		"cand_ward_code": "UTW:S13002525",
-		"seats": "3",
+		"seats": "4",
 		"election": "argyll-and-bute"
 	},
 	{
@@ -3184,5 +3184,8 @@
 		"cand_ward_code": "UTW:S13002826",
 		"seats": "4",
 		"election": "west-lothian"
+	},
+	{
+		"council": ""
 	}
 ]}

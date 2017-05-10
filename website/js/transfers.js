@@ -136,6 +136,7 @@ $(window).load(function(e) {
 		loadWards(searchParams['year'], searchParams['council'], searchParams['ward']);
 		$("#constituencySelect").val(searchParams['ward']);
 		animateStages(searchParams['year'], searchParams['council'], searchParams['ward']);
+//		$('meta[property="og:image"]').attr('content')
 	}
 });
 
