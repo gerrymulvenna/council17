@@ -244,7 +244,7 @@ function animateStages(year,council,constituencyFolder) {
                                         earlyStage = false;
                                         if (transfers[$(this).data('candidate')] + countDict[i-1][$(this).data('candidate')]["total"] >0 ){
                                             $("#candidate"+$(this).data('candidate'))
-                                            .text(countDict[i-1][$(this).data('candidate')]["total"]+" + "+transfers[$(this).data('candidate')]+ " " + countDict[i][$(this).data('candidate')]["status"]);
+                                            .text(countDict[i-1][$(this).data('candidate')]["total"]+" + "+transfers[$(this).data('candidate')]);
                                         } else {
 											$("#candidate"+$(this).data('candidate'))
                                             .text("")
