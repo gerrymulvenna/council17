@@ -2,6 +2,7 @@
 require $_SERVER["DOCUMENT_ROOT"] . "/website/php/functions.php";
 require $_SERVER["DOCUMENT_ROOT"] . "/scripts/functions.php";
 $slug = 'add-result';
+
 add_count_head("#council17 unofficial data entry for Scottish Council elections", $slug, "/website/image/scotland.png");
 navigation("Scottish Council elections 2017");
 ?>
@@ -11,13 +12,13 @@ navigation("Scottish Council elections 2017");
         </div>
 
         <div class="content">
-
             <form method="POST" action="update.php">
                 <h2>Parse some count data</h2>
                 <div class="row">
                     <p>Choose a council, ward and election year.</p>
                     <div id="menuBar">
 <?php
+echo "<!-- " . $_SERVER['SERVER_ADDR'] . "-->\n";
 selectCouncil('Select a council', 'add-form', '');
 ?>
                         <select id="wardSelect" class="add-form" name="ward"><option>Wards appear when council selected</option></select>
