@@ -207,8 +207,16 @@ class Results
     }
 
     // go through the results and mark Elected/Excluded status where appropriate
-    public function updateStatus()
+    public function updateStatus($retain = True)
     {
+        if ($retain == False)  // clear existing status fields
+        {
+            for ($i = 0; $i < count($this->Constituency->countGroup); $i++)
+            {
+                $this->Constituency->countGroup[$i]->Status = "";
+                $this->Constituency->countGroup[$i]->Occurred_On_Count = "";
+            }
+        }
         for ($i = 0; $i < count($this->Constituency->countGroup); $i++)
         {
             if (empty($this->Constituency->countGroup[$i]->Status))

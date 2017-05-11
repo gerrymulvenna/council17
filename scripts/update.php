@@ -109,7 +109,7 @@ if (isset($_POST['council']) && isset($_POST['ward']) && isset($_POST['year']))
     {
         echo "No new data detected. Length of 'pastebin' = " . strlen($matrix) . "\n";
     }
-    $rdata->updateStatus();
+    $rdata->updateStatus(strlen($matrix) > 0);  // take a fresh look at status if no new count data presented to allow for some correction
     echo "Updating results data " . $fname . "\n";
     writeJSON($rdata, $fname);
     verify_ward('../' . $_POST['year'] . '/SCO/', $_POST['council'], $_POST['ward'], 0.00001);
