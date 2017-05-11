@@ -18,7 +18,6 @@ navigation("Scottish Council elections 2017");
                     <p>Choose a council, ward and election year.</p>
                     <div id="menuBar">
 <?php
-echo "<!-- " . $_SERVER['SERVER_ADDR'] . "-->\n";
 selectCouncil('Select a council', 'add-form', '');
 ?>
                         <select id="wardSelect" class="add-form" name="ward"><option>Wards appear when council selected</option></select>
