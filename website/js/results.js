@@ -115,10 +115,22 @@ function loadWards(year, council, selected)
 			var year = $("#yearSelect :selected").text();
 			var council = $("#council-list-" + year + " :selected").val();
 			var constituencyFolder = $("#constituencySelect :selected").val();
+			if ($("#constituencySelect :selected").val() && $("#council-list-" + year + " :selected").val())
+			{
+				updateTitle($("#constituencySelect :selected").text(), $("#council-list-" + year + " :selected").text());
+			}
 			animateStages(year, council, constituencyFolder);
 		});
 	})
 }
+
+// change the title to reflect the ward selected
+function updateTitle (ward, council)
+{
+	var title = document.title;
+	document.title = ward + ", " + council + " ward-level results visualisation for the council elections 2017";
+}
+
 
 // straightfoward, take a number element e.g. 78521 and add thousand-separator comma to return '78,521' (n.b. this is a string)
 function numberWithCommas(x) {
