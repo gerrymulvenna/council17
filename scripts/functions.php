@@ -1,5 +1,13 @@
 <?php
 
+// avoid any scripting on public-facing website to avoid trashing any data files
+if ($_SERVER['SERVER_ADDR'] == "216.92.68.138")
+{
+    header("Location: /"); /* Redirect browser */
+    exit();
+}
+
+
 function _combine_array(&$row, $key, $header) {
     if (count($row) > 1 )
     {
