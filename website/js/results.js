@@ -35,10 +35,10 @@
 	// used in sorting candidates
 	function cmpSurnames(a, b)
 	{
-		anames = splitName(a.name);
-		bnames = splitName(b.name);
-		anorm = anames.Surname.toUpperCase() + " " + anames.Firstname.toUpperCase();
-		bnorm = bnames.Surname.toUpperCase() + " " + bnames.Firstname.toUpperCase();
+		var anames = splitName(a.name);
+		var bnames = splitName(b.name);
+		var anorm = anames.Surname.toUpperCase() + " " + anames.Firstname.toUpperCase();
+		var bnorm = bnames.Surname.toUpperCase() + " " + bnames.Firstname.toUpperCase();
 		if (anorm < bnorm) 
 		{
 			return -1;
