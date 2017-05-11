@@ -362,4 +362,71 @@ class Constituency_Summary
     }
 
 }
+
+function verify_all ($dir, $precision)
+{
+    echo "<pre>\n";
+    $clist = scandir($dir);    // list of council folders
+    foreach ($clist as $council)
+    {
+        if (!in_array($council,array(".","..")))
+        {
+            if (is_dir($dir  . "/" . $council))
+            {
+                verify_council($dir, $council, $precision);
+            }
+        }
+    }
+    echo "</pre>\n";
+}
+
+
+function verify_council($dir, $council, $precision)
+{
+    $fname = $dir . "/" . $council . "/all-constituency-info.json";
+    if (file_exists($fname))
+    {	
+        $wlist = scandir($dir . "/" . $council);  // list of ward folders
+        foreach ($wlist as $ward)
+        {
+            if (!in_array($ward,array(".","..")))
+            {
+                if (is_dir($dir  . "/" . $council . "/" . $ward))
+                {
+                    verify_ward($dir, $council, $ward, $precision);
+                }
+            }
+        }
+    }
+}
+
+
+function verify_ward($dir, $council, $ward, $precision)
+{
+    $fname = $dir . "/" . $council . "/" . $ward . "/ResultsJson.json";
+    if (file_exists($fname))
+    {	
+        echo "\nVerifying $fname\n";
+        $json = readJSON($fname);
+        $transfers = array();
+        $total_votes = array();
+        foreach($json->Constituency->countGroup as $item)
+        {
+            $transfers[$item->Candidate_Id][$item->Count_Number] = $item->Transfers + 0;
+            $total_votes[$item->Candidate_Id][$item->Count_Number] = $item->Total_Votes + 0;
+        }
+        foreach($total_votes as $id => $votes)
+        {
+            for ($stage = 2; $stage <= count($votes); $stage++)
+            {
+                $target = $votes[$stage-1] + $transfers[$id][$stage];
+                $diff = abs($votes[$stage] - $target);
+                if ($diff > $precision)
+                {
+                    echo "$council $ward $id $stage " . $votes[$stage-1] . " + " . $transfers[$id][$stage] . " <> " . $votes[$stage] . " target: " . $target . " diff: " . $diff . "\n";
+                }
+            }
+        }
+    }
+}
 ?>

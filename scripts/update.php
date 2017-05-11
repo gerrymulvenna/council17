@@ -112,6 +112,7 @@ if (isset($_POST['council']) && isset($_POST['ward']) && isset($_POST['year']))
     $rdata->updateStatus();
     echo "Updating results data " . $fname . "\n";
     writeJSON($rdata, $fname);
+    verify_ward('../' . $_POST['year'] . '/SCO/', $_POST['council'], $_POST['ward'], 0.00001);
     
     $wdata = new Constituency_Summary($_POST['ward_name'], $_POST['ward'], $_POST['ward'], $ward_info);
     $new_ward = True;
