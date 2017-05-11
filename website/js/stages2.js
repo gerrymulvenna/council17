@@ -196,7 +196,8 @@ function animateStages(year,council,constituencyFolder) {
         $("#stageNumber-1").addClass("active");
         //setActiveMarker(1);
         for(var j=0;j<candidates.length;j++){
-            $('<div id="cname'+candidates[j].id+'" class="candidateLabel '+candidates[j]["party"]+'_label" style="top:'+(topMargin+ (countDict[i-1][candidates[j].id]["order"]*30)) +'px;left:10px;"><span title="'+candidates[j].title + '">' + candidates[j].name + '</span></div>')
+//            $('<div id="cname'+candidates[j].id+'" class="candidateLabel '+candidates[j]["party"]+'_label" style="top:'+(topMargin+ (countDict[i-1][candidates[j].id]["order"]*30)) +'px;left:10px;"><span title="'+candidates[j].title + '">' + candidates[j].name + '</span></div>')
+             $('<div id="cname'+candidates[j].id+'" class="candidateLabel '+candidates[j]["party"]+'_label" style="top:'+(topMargin+ (j*30)) +'px;left:10px;">'+candidates[j]["name"]+'</div>')
             .appendTo("#animation");
             $('<div data-candidate="'+candidates[j].id+'" id="candidate'+candidates[j].id+'" class="votes '+candidates[j]["party"]+'" style="top:'+(topMargin+ (j*30)) +'px;left:'+startLeft+'px;"></div>')
             .appendTo("#animation")
