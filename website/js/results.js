@@ -129,7 +129,7 @@ function tableCount(countGroup)
 			{
 				table[row] = [];
 				table[row][0] = countItem.Firstname;
-				table[row][1] = countItem.Surname + ' <a target="_blank" href="http://candidates.democracyclub.org.uk/person/' + countItem.Candidate_Id +'/"><i class="fa fa-external-link"></i></a>';
+				table[row][1] = countItem.Surname + ' <a title="Open this candidate\'s page on Democracy Club" target="_blank" href="http://candidates.democracyclub.org.uk/person/' + countItem.Candidate_Id +'/"><i class="fa fa-external-link"></i></a>';
 				table[row][2] = countItem.Party_Name;
 				table[row][3] = countItem.Candidate_First_Pref_Votes;
 				table[row][4] = countItem.Status;

@@ -153,6 +153,7 @@ echo '
             </div>
 
             <p><em>The Single Transferable Vote (STV) animation was developed by James Bligh (<a href="http://twitter.com/anamates" target="_blank" title="External Link">@anamates</a>) and adapted by Bob Harper on <a href="https://github.com/NICVA/electionsni/blob/master/website/js/stages.js" target="_blank" title="External Link">Elections NI</a>.</em></p>
+            <div id="results-ack"><p><em>The full set of candidate data for #council17 was collated by</em></p></div><div id="dc-logo"><a href="http://democracyclub.org.uk"><img src="https://democracyclub.org.uk/static/dc_theme/images/logo-with-text-2017.png" width="250"></a></div>
         </div>
     </div>
 ';
