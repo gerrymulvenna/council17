@@ -651,6 +651,7 @@ a.result {
 	color: #ffffff;
 	padding: 2px 2px 2px 2px;
     border-radius: 5px;
+	white-space: nowrap;
 }
 
 #mapLink a {
@@ -658,6 +659,7 @@ a.result {
     color: white;
 	padding: 2px 2px 2px 2px;
     border-radius: 5px;
+	white-space: nowrap;
 }
 
 #mapLink {
