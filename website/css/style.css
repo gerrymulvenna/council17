@@ -650,8 +650,11 @@ a.result {
     background: #34495e;
 	color: #ffffff;
 	padding: 2px 2px 2px 2px;
+	margin-top: 5px;
     border-radius: 5px;
 	white-space: nowrap;
+	line-height: 1.5em;
+	font-size: 14px;
 }
 
 #mapLink a {
