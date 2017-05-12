@@ -228,7 +228,7 @@ div.about {
 	display: inline;
 }
 
-.Elected {
+.elected {
     font-weight: bold;
 }
 
@@ -632,4 +632,22 @@ th + th { border-left: 1px solid; padding: 2px; }
 
 #promotional {
 	font-size: 0.8em;
+}
+
+#quota {
+    margin-left: 10px !important;
+    top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+#quota p {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+a.result {
+	background-color: #0000bb;
+	color: #ffffff;
+	padding: 2px 2px 2px 2px;
 }

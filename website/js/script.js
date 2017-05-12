@@ -73,23 +73,6 @@ function findWardInfo(year, filename) {
     };
 }
 
-// again, similar to the above but we're trying to find if any elected candidates exist
-function findElectedInfo(year) {
-    electedOutput = [];
-    var request = new XMLHttpRequest();
-    var path = '/' + year + '/SCO/all-elected.json?' + new Date().getTime(); // add ? with timestamp to force XMLHttpRequest not to cache
-    request.onreadystatechange = function() {
-        if (request.readyState == 4 && request.status >= 200 && request.status < 400) {
-            electedOutput = JSON.parse(request.responseText);
-        }
-    };
-    request.open('GET', path, false);
-    request.send();
-    request.onerror = function() {
-        electedOutput = [];
-    };
-}
-
 // examine an object array (obj) for a key (key) matching a value (val) and return the matching object
 function getObjects(obj, key, val) {
     var objects = [];
@@ -126,6 +109,7 @@ candidates.update = function() {
 	var web;
 	var linkedin;
 	var wiki;
+	var status;
 
 	if (wardstats.length > 0)
 	{
@@ -135,8 +119,23 @@ candidates.update = function() {
 
 		if (ward.length > 0)
 		{
+			var result ="";
+            $.ajax({
+                'async': false,
+                'global': false,
+                'url': '/2017/SCO/' + wardstats[0].election + '/' + wardstats[0].map_ward_code + '/ResultsJson.json?' + new Date().getTime(),
+                'dataType': "json",
+                'success': function (data) {
+					var cinfo = data.Constituency.countInfo;
+					var quota = parseInt(cinfo.Quota);
+					var seats = parseInt(cinfo.Number_Of_Seats);
+					result = '<a class="result" href="/results?year=2017&council=' + wardstats[0].election + '&ward=' + wardstats[0].map_ward_code + '">View result</a>';
+					var turnout = ((parseInt(cinfo.Total_Poll)/parseInt(cinfo.Total_Electorate)) * 100).toFixed(2);
+					$("#quota").html("<p>Electorate: " + numberWithCommas(parseInt(cinfo.Total_Electorate)) + ", Turnout: " + numberWithCommas(parseInt(cinfo.Total_Poll)) + " (" + turnout + "%), Valid votes: " + numberWithCommas(parseInt(cinfo.Valid_Poll)) + ", Quota: " + quota + "</p>\n");
+                }});
+
 			var candidates = ward[0].candidates.sort(cmpSurnames);
-			wardinfo.innerHTML = '<a onclick=\'tips._div.style.display = "none";\' name="candidates"><h3>' + wardstats[0].ward_name + ' ward<br><span class="seats">' + no_seats + candidates.length + ' candidates</span></h3></a>';
+			wardinfo.innerHTML = '<a onclick=\'tips._div.style.display = "none";\' name="candidates"><h3>' + wardstats[0].ward_name + ' ward</a> ' + result + '<br><span class="seats">' + no_seats + candidates.length + ' candidates</span></h3>';
 			for (i = 0; i < candidates.length; i++) {
 				tw = (candidates[i].twitter_username) ? '<a href="http://twitter.com/' + candidates[i].twitter_username + '" target="~_blank"><i class="fa fa-twitter fa-fw" title="@' +  candidates[i].twitter_username + ' on Twitter"></i></a>' : '';
 				fb = (candidates[i].facebook_page_url) ? '<a href="' + candidates[i].facebook_page_url + '" target="_blank"><i class="fa fa-facebook fa-fw"  title="Facebook page"></i></a>' : '';
@@ -145,8 +144,18 @@ candidates.update = function() {
 				linkedin = (candidates[i].linkedin_url) ? '<a href="' + candidates[i].linkedin_url + '" target="_blank"><i class="fa fa-linkedin fa-fw" title="This candidate has a LinkedIn profile"></i></a>' : '';
 				wiki = (candidates[i].wikipedia_url) ? '<a href="' + candidates[i].wikipedia_url + '" target="_blank"><i class="fa fa-wikipedia-w fa-fw" title="This candidate has an entry on Wikipedia"></i></a>' : '';
 				edit = '<a href="http://candidates.democracyclub.org.uk/person/' + candidates[i].id + '/" target="_blank"><i class="fa fa-check-square-o fa-fw" title="View or edit the Democracy Club details for this candidate"></i></a>';
-
-				this.innerHTML += "<div class=\"votes " + candidates[i].party_name.replace(/\s+/g, "-").replace(/[\'\",()]/g,"").replace(/\u2013/g, '_') + "\"></div><div id=\"candidate " + candidates[i].id + "\" class=\"tooltip " + candidates[i].party_name.replace(/\s+/g, "-").replace(/[\'\",()]/g,"").replace(/\u2013/g, '_') + "_label\"><span class=\"tooltiptext\">" + candidates[i].party_name + "</span>" + candidates[i].name + "<div class=\"cand-icons\">" + tw + fb + fbp + web  + linkedin + wiki  + edit + "</div></div><br/>";
+				switch(candidates[i].elected)
+				{
+					case "True":
+						status = "elected";
+						break;
+					case "False":
+						status = "excluded";
+						break;
+					default:
+						status = "unkonwn";
+				}
+				this.innerHTML += "<div class=\"votes " + candidates[i].party_name.replace(/\s+/g, "-").replace(/[\'\",()]/g,"").replace(/\u2013/g, '_') + "\"></div><div id=\"candidate " + candidates[i].id + "\" class=\"tooltip " + candidates[i].party_name.replace(/\s+/g, "-").replace(/[\'\",()]/g,"").replace(/\u2013/g, '_') + "_label\"><span class=\"tooltiptext\">" + candidates[i].party_name + "</span>" + '<span class="' + status +'">' + candidates[i].name + "</span><div class=\"cand-icons\">" + tw + fb + fbp + web  + linkedin + wiki  + edit + "</div></div><br/>";
 			}
 			this.innerHTML += ack;
 			updateTitle(wardstats[0].ward_name, wardstats[0].council);
@@ -242,3 +251,9 @@ function wardsAll() {
         candidates.update('Ward_Code', id, title);
     }
 };
+
+
+// straightfoward, take a number element e.g. 78521 and add thousand-separator comma to return '78,521' (n.b. this is a string)
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
