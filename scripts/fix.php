@@ -5,7 +5,7 @@ require "functions.php";
 $dataDir = "../2017/SCO";
 
 echo "<pre>\n";
-markStatus_council($dataDir, "west-dunbartonshire");
+markStatus_all($dataDir);
 echo "</pre>\n";
 
 function correct_missing_first_pref_votes ($dir, $council)
