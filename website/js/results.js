@@ -121,6 +121,7 @@ function loadWards(year, council, selected)
 			if ($("#constituencySelect :selected").val() && $("#council-list-" + year + " :selected").val())
 			{
 				updateTitle($("#constituencySelect :selected").text(), $("#council-list-" + year + " :selected").text());
+				$('#mapLink').html('<a href="/councils/' + council + '.php?ward=' + constituencyFolder + '">View on map</a>');
 			}
 			animateStages(year, council, constituencyFolder);
 		});

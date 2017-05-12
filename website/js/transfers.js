@@ -136,7 +136,7 @@ $(window).load(function(e) {
 		loadWards(searchParams['year'], searchParams['council'], searchParams['ward']);
 		$("#constituencySelect").val(searchParams['ward']);
 		animateStages(searchParams['year'], searchParams['council'], searchParams['ward']);
-//		$('meta[property="og:image"]').attr('content')
+		$('#mapLink').html('<a href="/councils/' + searchParams['council'] + '.php?ward=' + searchParams['ward'] + '">View on map</a>');
 	}
 });
 

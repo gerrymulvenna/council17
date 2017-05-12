@@ -647,7 +647,19 @@ th + th { border-left: 1px solid; padding: 2px; }
 }
 
 a.result {
-	background-color: #0000bb;
+    background: #34495e;
 	color: #ffffff;
 	padding: 2px 2px 2px 2px;
+    border-radius: 5px;
+}
+
+#mapLink a {
+    background: #34495e;
+    color: white;
+	padding: 2px 2px 2px 2px;
+    border-radius: 5px;
+}
+
+#mapLink {
+	margin-top: 10px;
 }

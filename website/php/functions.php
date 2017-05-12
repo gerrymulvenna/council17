@@ -133,6 +133,7 @@ echo councilList("council-list-2012", "select", "2012", "../2012/SCO");
 
 echo '
                     <select id="constituencySelect"></select>
+                    <div id="mapLink"></div>
                 </div>
             </div>
 
