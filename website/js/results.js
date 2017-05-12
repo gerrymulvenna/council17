@@ -12,6 +12,7 @@
 
 	$('#yearSelect').change(function() {
 		var year = $("#yearSelect :selected").text();
+		$('#raw-data').html("");
 		switch(year)
 		{
 			case '2012':
@@ -68,6 +69,7 @@
 
 	function manageChanges(cSelect)
 	{
+		$('#raw-data').html("");
         var year = $("#yearSelect :selected").text();
 		var council = cSelect.val();
 		loadWards(year, council);
@@ -112,6 +114,7 @@ function loadWards(year, council, selected)
 				$('#pause-replay').removeClass('fa-pause');
 				$('#pause-replay').addClass('fa-play');
 			}
+			$('#raw-data').html("");
 			var year = $("#yearSelect :selected").text();
 			var council = $("#council-list-" + year + " :selected").val();
 			var constituencyFolder = $("#constituencySelect :selected").val();
