@@ -324,6 +324,7 @@ function convertCandidates($candidates, $last_id, $party_prefix)
 // wards -> candidates 
 function buildData($elections, $dataRoot, $dir)
 {
+    $elected = getElectedCandidates($dir);
     $wardinfo = array();
     foreach ($elections as $election)
     {
@@ -352,6 +353,10 @@ function buildData($elections, $dataRoot, $dir)
                 if (!empty($names))
                 {
                     $candidate = array_merge($candidate, $names);
+                }
+                if (isset($elected[$candidate['id']]))
+                {
+                    $candidate['elected'] = ($elected[$candidate['id']]) ? "True" : "False";
                 }
                 $post_id = $candidate['post_id'];
                 if (!empty($post_id))

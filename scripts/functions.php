@@ -545,4 +545,56 @@ function markStatus_ward($dir, $council, $ward)
    }
 }
 
+// returns an array of booleans where the key is the candidate_id
+function getElectedCandidates($dir)
+{
+    $elected = array();
+    $clist = scandir($dir);    // list of council folders
+    foreach ($clist as $council)
+    {
+        if (!in_array($council,array(".","..")))
+        {
+            if (is_dir($dir  . "/" . $council))
+            {
+                $fname = $dir . "/" . $council . "/all-constituency-info.json";
+                if (file_exists($fname))
+                {	
+                    $wlist = scandir($dir . "/" . $council);  // list of ward folders
+                    foreach ($wlist as $ward)
+                    {
+                        if (!in_array($ward,array(".","..")))
+                        {
+                            if (is_dir($dir  . "/" . $council . "/" . $ward))
+                            {
+                                $fname = $dir . "/" . $council . "/" . $ward . "/ResultsJson.json";
+                                if (file_exists($fname))
+                                {	
+                                    $json = readJSON($fname);
+                                    foreach ($json->Constituency->countGroup as $item)
+                                    {
+                                        if (!isset($elected[$item->Candidate_Id]))
+                                        {
+                                            switch ($item->Status)
+                                            {
+                                                case "Elected":
+                                                    $elected[$item->Candidate_Id] = True;
+                                                    break;
+                                        
+                                                case "Excluded":
+                                                    $elected[$item->Candidate_Id] = False;
+                                                    break;
+                                            }
+                                        }
+                                    }
+                               }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    return ($elected);
+}
 ?>

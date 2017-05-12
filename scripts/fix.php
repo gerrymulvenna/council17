@@ -5,7 +5,8 @@ require "functions.php";
 $dataDir = "../2017/SCO";
 
 echo "<pre>\n";
-markStatus_all($dataDir);
+$elected = getElectedCandidates($dataDir);
+print_r($elected);
 echo "</pre>\n";
 
 function correct_missing_first_pref_votes ($dir, $council)

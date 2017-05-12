@@ -114,7 +114,7 @@ id,name,honorific_prefix,honorific_suffix,gender,birth_date,election,party_id,pa
 22659,Cath MacInnes,,,female,,local.highland.2017-05-04,party:102,Scottish National Party (SNP),UTW:inverness-west,Inverness West,,False,,Cath_MacInnes,https://www.facebook.com/CathMacInnesSNP/,,,,,,,,,,,3003036869,2017-05-04,True,False,,,,,PP102
 22660,Fergus Mackenzie,,,,,local.highland.2017-05-04,party:52,Conservative and Unionist Party,UTW:inverness-west,Inverness West,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP52
 22661,Graham Ross,,,,,local.highland.2017-05-04,ynmp-party:2,Independent,UTW:inverness-west,Inverness West,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21044,Ritchie Cunningham,,,,,local.highland.2017-05-04,party:90,Liberal Democrats,UTW:nairn-and-cawdor,Nairn and Cawdor,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP90
+21044,Ritchie Cunningham,,,,,local.highland.2017-05-04,party:90,Liberal Democrats,UTW:nairn-and-cawdor,Nairn and Cawdor,,False,,,,,https://www.facebook.com/InvernessNairnBadnenochandStrathspey/,,,,,,,,,,2017-05-04,True,False,,,,,PP90
 21045,Laurie Fraser,,,,,local.highland.2017-05-04,ynmp-party:2,Independent,UTW:nairn-and-cawdor,Nairn and Cawdor,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
 21046,Stephen Fuller,,,,,local.highland.2017-05-04,party:102,Scottish National Party (SNP),UTW:nairn-and-cawdor,Nairn and Cawdor,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
 21047,Michael Green,,,,,local.highland.2017-05-04,ynmp-party:2,Independent,UTW:nairn-and-cawdor,Nairn and Cawdor,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
