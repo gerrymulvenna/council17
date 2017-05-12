@@ -217,6 +217,11 @@ class Results
     // go through the results and mark Elected/Excluded status where appropriate
     public function updateStatus($retain = True)
     {
+        $cand_status = array();
+        $cand_ids = array();
+        $last_stage = 0;
+        $no_elected = 0;
+
         if ($retain == False)  // clear existing status fields
         {
             for ($i = 0; $i < count($this->Constituency->countGroup); $i++)
@@ -227,15 +232,55 @@ class Results
         }
         for ($i = 0; $i < count($this->Constituency->countGroup); $i++)
         {
+            // get a handle on what the max count_number is
+            if ($this->Constituency->countGroup[$i]->Count_Number > $last_stage)
+            {
+                $last_stage = $this->Constituency->countGroup[$i]->Count_Number;
+            }
+            // build array of candidate IDs
+            if (!in_array($this->Constituency->countGroup[$i]->Candidate_Id, $cand_ids))
+            {
+                $cand_ids[] = $this->Constituency->countGroup[$i]->Candidate_Id;
+            }
+
             if (empty($this->Constituency->countGroup[$i]->Status))
             {
                 if ($this->Constituency->countGroup[$i]->Total_Votes >= $this->Constituency->countInfo->Quota)
                 {
                     $this->markStatus('Elected', $this->Constituency->countGroup[$i]->Candidate_Id, $this->Constituency->countGroup[$i]->Count_Number);
+                    $cand_status[$this->Constituency->countGroup[$i]->Candidate_Id] = 'Elected';
                 }
                 elseif ($this->Constituency->countGroup[$i]->Total_Votes == 0 && ($this->Constituency->countGroup[$i]->Transfers < 0))
                 {
                     $this->markStatus('Excluded', $this->Constituency->countGroup[$i]->Candidate_Id, $this->Constituency->countGroup[$i]->Count_Number - 1);
+                    $cand_status[$this->Constituency->countGroup[$i]->Candidate_Id] = 'Excluded';
+                }
+            }
+            else
+            {
+                $cand_status[$this->Constituency->countGroup[$i]->Candidate_Id] = $this->Constituency->countGroup[$i]->Status;
+            }
+        }
+        // get no. of elected
+        foreach ($cand_status as $key => $value)
+        {
+            if ($value == 'Elected')
+            {
+                $no_elected++;
+            }
+        }
+        if ($no_elected < $this->Constituency->countInfo->Number_Of_Seats)
+        {
+            // if all but one seats is filled and only one candidate is left without a status, then they must be Elected
+            if (count($cand_ids) - count($cand_status) == 1)
+            {
+                foreach ($cand_ids as $id)
+                {
+                    if (!in_array($id, array_keys($cand_status)))
+                    {
+                        $this->markStatus("Elected", $id, $last_stage);
+                        echo "Last candidate standing marked ELECTED ($id, stage $last_stage) in " . $this->Constituency->countInfo->Constituency_Name . "\n";
+                    }
                 }
             }
         }
@@ -445,4 +490,59 @@ function verify_ward($dir, $council, $ward, $precision)
         }
     }
 }
+
+function markStatus_all ($dir)
+{
+    echo "<pre>\n";
+    $clist = scandir($dir);    // list of council folders
+    foreach ($clist as $council)
+    {
+        if (!in_array($council,array(".","..")))
+        {
+            if (is_dir($dir  . "/" . $council))
+            {
+                markStatus_council($dir, $council);
+            }
+        }
+    }
+    echo "</pre>\n";
+}
+
+
+function markStatus_council($dir, $council)
+{
+    $fname = $dir . "/" . $council . "/all-constituency-info.json";
+    if (file_exists($fname))
+    {	
+        $wlist = scandir($dir . "/" . $council);  // list of ward folders
+        foreach ($wlist as $ward)
+        {
+            if (!in_array($ward,array(".","..")))
+            {
+                if (is_dir($dir  . "/" . $council . "/" . $ward))
+                {
+                    markStatus_ward($dir, $council, $ward);
+                }
+            }
+        }
+    }
+}
+
+
+function markStatus_ward($dir, $council, $ward)
+{
+    $fname = $dir . "/" . $council . "/" . $ward . "/ResultsJson.json";
+    if (file_exists($fname))
+    {	
+        echo "\nRefreshing status on $fname\n";
+        $json = readJSON($fname);
+        $info = new countInfo($json->Constituency->countInfo->Constituency_Name, $json->Constituency->countInfo->Constituency_Number, $json->Constituency->countInfo->Number_Of_Seats, 0, $json->Constituency->countInfo->Total_Electorate, $json->Constituency->countInfo->Total_Poll, $json->Constituency->countInfo->Valid_Poll);
+        $rdata = new Results($info);
+        $rdata->set($json);
+        $rdata->updateStatus(False);
+        echo "Writing $fname<br>\n";
+        writeJSON($rdata, $fname);
+   }
+}
+
 ?>
