@@ -323,7 +323,6 @@ echo '
     <!--Load local scripts-->
     <script type="text/javascript" src="/website/js/results.js"></script>
     <script type="text/javascript" src="/website/js/stages2.js"></script>
-    <script type="text/javascript" src="/website/js/transfers.js"></script>
 ';
   // Google analytics
 echo "<script>

@@ -262,3 +262,41 @@ function tableHTML(t)
 		return "";
 	}
 }
+
+// honour URL params to display a particular result
+$(window).load(function(e) {
+	var searchParams = getSearchParams();
+	if (searchParams['council'] && searchParams['ward'] && searchParams['year'])
+	{
+		$("#yearSelect").val(searchParams['year']);
+		switch(searchParams['year'])
+		{
+			case '2012':
+				$("#council-list-2017").hide();
+				$("#council-list-2012").show();
+				break;
+			case '2017':
+				$("#council-list-2012").hide();
+				$("#council-list-2017").show();
+				break;
+		}
+		$("#council-list-" + searchParams['year']).val(searchParams['council']);
+		loadWards(searchParams['year'], searchParams['council'], searchParams['ward']);
+		$("#constituencySelect").val(searchParams['ward']);
+		animateStages(searchParams['year'], searchParams['council'], searchParams['ward']);
+		$('#mapLink').html('<a href="/councils/' + searchParams['council'] + '.php?ward=' + searchParams['ward'] + '">View on map</a>');
+	}
+});
+
+
+// cross-browser search param functions
+function getSearchParams(k){
+ var p={};
+ location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(s,k,v){p[k]=v})
+ return k?p[k]:p;
+}
+
+//function to record ward_code in URL search query string (assumes it is only parameter)
+function setSearchParams(year, council, ward){
+  window.history.replaceState({}, '', location.pathname + '?council=' + council + '&ward=' + ward + '&year=' + year);
+}
