@@ -405,7 +405,7 @@ function councilList ($id, $class, $name, $root)
     "inverclyde" => "Inverclyde",
     "midlothian" => "Midlothian",
     "moray" => "Moray",
-    "eilean-siar" => "Na h-Eileanan an Iar",
+    "eilean-siar" => "Eilean Siar",
     "north-ayrshire" => "North Ayrshire",
     "north-lanarkshire" => "North Lanarkshire",
     "orkney-islands" => "Orkney Islands",
