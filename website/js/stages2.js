@@ -95,13 +95,13 @@ function animateStages(year,council,constituencyFolder) {
                 transferDict[data[i]["Count_Number"]] = {};
             }
             countDict[data[i]["Count_Number"]][data[i]["Candidate_Id"]] = {
-                total:parseInt(data[i]["Total_Votes"]),
+                total:parseFloat(data[i]["Total_Votes"]),
                 status:(typeof(data[i]["Status"])=="string")?data[i]["Status"]:"",
                 order:0,
                 transfers:((data[i]["Status"] == "Excluded" && parseInt(data[i]["Transfers"]) < 0) ||
                            (data[i]["Status"] == "Elected" && parseInt(data[i]["Transfers"]) < 0))
             }
-            transferDict[data[i]["Count_Number"]][data[i]["Candidate_Id"]] = Math.max(0, parseInt(data[i]["Transfers"] || 0, 10));
+            transferDict[data[i]["Count_Number"]][data[i]["Candidate_Id"]] = Math.max(0, parseFloat(data[i]["Transfers"] || 0));
 
             if (!(data[i]["Candidate_Id"] in candidatesDict)) {
                 var party = data[i]["Party_Name"];
@@ -244,7 +244,7 @@ function animateStages(year,council,constituencyFolder) {
                                         earlyStage = false;
                                         if (transfers[$(this).data('candidate')] + countDict[i-1][$(this).data('candidate')]["total"] >0 ){
                                             $("#candidate"+$(this).data('candidate'))
-                                            .text(countDict[i-1][$(this).data('candidate')]["total"]+" + "+transfers[$(this).data('candidate')]);
+                                            .text(Math.floor(countDict[i-1][$(this).data('candidate')]["total"]) + " + " + Math.floor(transfers[$(this).data('candidate')]));
                                         } else {
 											$("#candidate"+$(this).data('candidate'))
                                             .text("")
@@ -253,7 +253,7 @@ function animateStages(year,council,constituencyFolder) {
                                     .animate({left:localLeft},1000*speed, function(){
 										if (transfers[$(this).data('candidate')] + countDict[i][$(this).data('candidate')]["total"] >0 ){
                                             $("#candidate"+$(this).data('candidate'))
-                                            .text(countDict[i-1][$(this).data('candidate')]["total"]+transfers[$(this).data('candidate')]+ " " + countDict[i][$(this).data('candidate')]["status"]);
+                                            .text(Math.floor(countDict[i-1][$(this).data('candidate')]["total"]+transfers[$(this).data('candidate')]) + " " + countDict[i][$(this).data('candidate')]["status"]);
                                         } else {
 											$("#candidate"+$(this).data('candidate'))
                                             .text("")
