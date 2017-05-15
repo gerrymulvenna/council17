@@ -271,8 +271,8 @@ class Results
         }
         if ($no_elected < $this->Constituency->countInfo->Number_Of_Seats)
         {
-            // if all but one seats is filled and only one candidate is left without a status, then they must be Elected
-            if (count($cand_ids) - count($cand_status) == 1)
+            // if the number of candidates without status is the same and the unmber of unfilled seats, then they must be Elected
+            if (count($cand_ids) - count($cand_status) == $this->Constituency->countInfo->Number_Of_Seats - $no_elected)
             {
                 foreach ($cand_ids as $id)
                 {
