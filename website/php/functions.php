@@ -120,7 +120,7 @@ echo '
         <div class="content">
             <div class="row">
                 <h2>Results</h2>
-                <p>Results data here are currently being manually transcribed ward by ward from the PDFs published by each council, which is a slow process. Please contact <a href="http://twitter.com/gerrymulvenna">@gerrymulvenna</a> if you spot any transcription errors.</p>
+                <p>Results data for the 2017 local elections in all 32 Scottish councils have now been transcribed ward by ward from the PDFs published on each council website. Please contact <a href="http://twitter.com/gerrymulvenna">@gerrymulvenna</a> if you spot any transcription errors. A small 2012 dataset (just a handful of Edinburgh wards) was initially entered to test the animation.</p>
                 <p>Choose election year, council, ward and then click play to run the animation.</p>
                 <div id="menuBar">
                     <select id="yearSelect">
