@@ -244,7 +244,7 @@ function animateStages(year,council,constituencyFolder) {
                                         earlyStage = false;
                                         if (transfers[$(this).data('candidate')] + countDict[i-1][$(this).data('candidate')]["total"] >0 )
 										{
-											if (countDict[i][$(this).data('candidate')]["status"].length == 0)
+											if (countDict[i-1][$(this).data('candidate')]["status"] != 'Elected')
 											{
 												$("#candidate"+$(this).data('candidate'))
 												.text(Math.floor(countDict[i-1][$(this).data('candidate')]["total"]) + " + " + Math.floor(transfers[$(this).data('candidate')]));
