@@ -242,10 +242,16 @@ function animateStages(year,council,constituencyFolder) {
                                     .appendTo("#animation").delay(500*speed)
                                     .animate({top:topMargin+ (countDict[i-1][candidates[t].id]["order"]*30), left:startLeft+voteWidth+20},1000*speed, function(){
                                         earlyStage = false;
-                                        if (transfers[$(this).data('candidate')] + countDict[i-1][$(this).data('candidate')]["total"] >0 ){
-                                            $("#candidate"+$(this).data('candidate'))
-                                            .text(Math.floor(countDict[i-1][$(this).data('candidate')]["total"]) + " + " + Math.floor(transfers[$(this).data('candidate')]));
-                                        } else {
+                                        if (transfers[$(this).data('candidate')] + countDict[i-1][$(this).data('candidate')]["total"] >0 )
+										{
+											if (countDict[i][$(this).data('candidate')]["status"].length == 0)
+											{
+												$("#candidate"+$(this).data('candidate'))
+												.text(Math.floor(countDict[i-1][$(this).data('candidate')]["total"]) + " + " + Math.floor(transfers[$(this).data('candidate')]));
+											}
+                                        } 
+										else 
+										{
 											$("#candidate"+$(this).data('candidate'))
                                             .text("")
 										}
