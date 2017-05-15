@@ -1,7 +1,10 @@
 <?php
+// script to pull data from Democracy Club csv and create JSONs
 require "functions.php";
 
-// script to pull data from Democracy Club csv and create JSONs
+// array of candidate IDs in the 3 uncontested wards
+$elected_without_contest = array("21540", "21541", "21542", "21375", "8755", "21376", "20966", "20967", "20968");
+
 
 $elections = array(
 "local.aberdeen-city.2017-05-04" => "Aberdeen City",
@@ -69,14 +72,18 @@ $party_prefix = array(
 $dataRoot = "https://candidates.democracyclub.org.uk/media/candidates-";
 $outDir = "../2017/SCO/";
 
+$elected = getElectedCandidates($outDir, $elected_without_contest);
 buildData(array_keys($elections), $dataRoot, $outDir);
 buildPtree($elections, $outDir, $party_prefix);
 buildCtree($elections, $outDir, $party_prefix);
+
 //boundaryWards(array_keys($elections), $outDir, "boundary-wardinfo.csv");
 
 //build JSON data for the jstree with Parties as the children of the root using wardinfo and the candidate JSON for each council
 function buildPTree($elections, $dataDir, $party_prefix)
 {
+    global $elected;
+
     $parties = array();
     $councils = array();
     $wards = array();
@@ -161,7 +168,8 @@ function buildPTree($elections, $dataDir, $party_prefix)
                             $council_node->children[] = $ward_node;
                         }
                         $root->no_candidates += 1;
-                        $cand_node = new jstree_node(++$id,"candidate",$candidate->name);
+                        $name = ($candidate->elected == "True") ? '<span class="elected">' . $candidate->name . '</span>' : $candidate->name;
+                        $cand_node = new jstree_node(++$id,"candidate",$name);
                         $cand_node->properties = $candidate;
                         $ward_node->children[] = $cand_node;
                         $ward_node->applyProperty('href', '/councils/' . $matches[1] . ".php?ward=" . $wardcode[$ward_node->properties['cand_map_code']]);
@@ -310,7 +318,9 @@ function convertCandidates($candidates, $last_id, $party_prefix)
         $party = stripParty($c->party_name);
         $prefix = (array_key_exists($party, $party_prefix)) ? " " . $party_prefix[$party] . " " : " ";
         echo "$prefix ";
-        $node = new jstree_node(++$last_id, "candidate", $prefix . $c->name);
+        $name = ($c->elected == "True") ? '<span class="elected">' . $c->name . '</span>' : $c->name;
+
+        $node = new jstree_node(++$last_id, "candidate", $prefix . $name);
         $node->icon = $party;        // icon property in jstree types plugin is interpreted as a class if it does not contain /
         $node->no_candidates = 1;
         $node->properties = $c;
@@ -324,7 +334,8 @@ function convertCandidates($candidates, $last_id, $party_prefix)
 // wards -> candidates 
 function buildData($elections, $dataRoot, $dir)
 {
-    $elected = getElectedCandidates($dir);
+    global $elected;
+
     $wardinfo = array();
     foreach ($elections as $election)
     {

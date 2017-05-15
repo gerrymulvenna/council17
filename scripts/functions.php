@@ -546,9 +546,13 @@ function markStatus_ward($dir, $council, $ward)
 }
 
 // returns an array of booleans where the key is the candidate_id
-function getElectedCandidates($dir)
+function getElectedCandidates($dir, $uncontested)
 {
     $elected = array();
+    foreach($uncontested as $id)
+    {
+        $elected[$id] = "True";
+    }
     $clist = scandir($dir);    // list of council folders
     foreach ($clist as $council)
     {
