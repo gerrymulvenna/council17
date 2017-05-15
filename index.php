@@ -41,6 +41,7 @@ navigation("Scottish Council elections 2017");
     <h1>Explore the #council17 election data for Scotland</h1>
     <div class="main-option">
         <h3>Results visualisation</h3>
+        <small>All 351 contested wards from the 32 councils</small>
         <a href="/results/"><img src="/website/image/results.png"></a>
     </div>
     <div class="main-option">
