@@ -379,7 +379,7 @@ function animateStages(year,council,constituencyFolder) {
                     .appendTo("#animation");
                     $('<div data-candidate="'+candidates[j].id+'" id="candidate'+candidates[j].id+'" class="votes '+candidates[j]["party"]+'" style="top:'+(topMargin+ (countDict[i-1][candidates[j].id]["order"]*30)) +'px;left:'+startLeft+'px;"></div>')
                     .appendTo("#animation");
-                    $("#candidate"+candidates[j].id).width(countDict[i-1][candidates[j].id]["total"] * qFactor).text(countDict[i-1][candidates[j].id]["total"]);
+                    $("#candidate"+candidates[j].id).width(countDict[i-1][candidates[j].id]["total"] * qFactor).text(Math.floor(countDict[i-1][candidates[j].id]["total"]));
                 }
                 advanceCount();
             } else {
