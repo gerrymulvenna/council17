@@ -7,9 +7,9 @@ $outDir = "../2017/SCO/";
 
 $elected = getElectedCandidates($outDir, $elected_without_contest);
 buildRtree($elections, $outDir, $party_prefix);
-//buildData(array_keys($elections), $dataRoot, $outDir);
-//buildPtree($elections, $outDir, $party_prefix);
-//buildCtree($elections, $outDir, $party_prefix);
+buildData(array_keys($elections), $dataRoot, $outDir);
+buildPtree($elections, $outDir, $party_prefix);
+buildCtree($elections, $outDir, $party_prefix);
 
 //boundaryWards(array_keys($elections), $outDir, "boundary-wardinfo.csv");
 
@@ -215,10 +215,8 @@ function buildRTree($elections, $dataDir, $party_prefix)
             }
         }
     }
-    echo "<pre>\n";
     classifyParties($root, $party_prefix);
-    print_r($root->properties);
-    echo "</pre>\n";
+    $root->sortbyseats();
     writeJSON($root, $dataDir . "results-tree.json");
 }
 
@@ -227,11 +225,6 @@ function classifyParties($root, $party_prefix)
 {
     foreach ($root->children as $node)
     {
-        if ($node->type == "council")
-        {   
-            echo $node->text . "\n";
-            print_r($node->properties);
-        }
         if ($node->type == "party")
         {
             $party = stripParty($node->text);
@@ -339,7 +332,6 @@ function buildPTree($elections, $dataDir, $party_prefix)
                         $root->no_candidates += 1;
                         $name = ($candidate->elected == "True") ? '<span class="elected">' . $candidate->name . '</span>' : $candidate->name;
                         $cand_node = new jstree_node(++$id,"candidate",$name);
-                        $cand_node->properties = $candidate;
                         $ward_node->children[] = $cand_node;
                         $ward_node->applyProperty('href', '/councils/' . $matches[1] . ".php?ward=" . $wardcode[$ward_node->properties['cand_map_code']]);
                     }
@@ -492,7 +484,6 @@ function convertCandidates($candidates, $last_id, $party_prefix)
         $node = new jstree_node(++$last_id, "candidate", $prefix . $name);
         $node->icon = $party;        // icon property in jstree types plugin is interpreted as a class if it does not contain /
         $node->no_candidates = 1;
-        $node->properties = $c;
         $nodes[] = $node;
     }
     return($nodes);

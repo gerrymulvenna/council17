@@ -198,6 +198,28 @@ class jstree_node
         return ($a->no_candidates < $b->no_candidates) ? 1 : -1;
     }
 
+    // descending by no_seats
+    function sortbyseats()
+    {
+        $tmp = $this->children;
+        usort($tmp, array($this, "cmpseats"));
+        $this->children = $tmp;
+    }
+
+    function cmpseats($a, $b)
+    {
+        if ($a->type == "container") return -1;
+        if ($b->type == "container") return 1;
+        if ($a->no_seats == $b->no_seats)
+        {
+            if ($a->text == $b->text) {
+                return 0;
+            }
+            return ($a->text < $b->text) ? -1 : 1;
+        }
+        return ($a->no_seats < $b->no_seats) ? 1 : -1;
+    }
+
     function listChildren()
     {
         foreach ($this->children as $child)
