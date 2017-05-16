@@ -7,9 +7,9 @@ $outDir = "../2017/SCO/";
 
 $elected = getElectedCandidates($outDir, $elected_without_contest);
 buildRtree($elections, $outDir, $party_prefix);
-buildData(array_keys($elections), $dataRoot, $outDir);
-buildPtree($elections, $outDir, $party_prefix);
-buildCtree($elections, $outDir, $party_prefix);
+//buildData(array_keys($elections), $dataRoot, $outDir);
+//buildPtree($elections, $outDir, $party_prefix);
+//buildCtree($elections, $outDir, $party_prefix);
 
 //boundaryWards(array_keys($elections), $outDir, "boundary-wardinfo.csv");
 
@@ -181,14 +181,20 @@ function buildRTree($elections, $dataDir, $party_prefix)
                         $info = $json->Constituency->countInfo;
                         foreach ($parties as $party)
                         {
-                            $national_parties[$party]->incrementProperty("valid_poll",$info->Valid_Poll);
-                            $council_parties[$party . $election]->incrementProperty("valid_poll",$info->Valid_Poll);
+                            if (array_key_exists($party, $national_parties))
+                            {
+                                $national_parties[$party]->incrementProperty("valid_poll",$info->Valid_Poll);
+                                $national_parties[$party]->incrementProperty("ward_quotas",$info->Quota);
+                                $national_parties[$party]->incrementProperty("no_wards");
+                            }
+                            if (array_key_exists($party, $council_parties))
+                            {
+                                $council_parties[$party . $election]->incrementProperty("no_wards");
+                                $council_parties[$party . $election]->incrementProperty("ward_quotas",$info->Quota);
+                                $council_parties[$party . $election]->incrementProperty("valid_poll",$info->Valid_Poll);
+                            }
                             $ward_parties[$party . $election . $ward->post_label]->incrementProperty("valid_poll",$info->Valid_Poll);
-                            $national_parties[$party]->incrementProperty("ward_quotas",$info->Quota);
-                            $council_parties[$party . $election]->incrementProperty("ward_quotas",$info->Quota);
                             $ward_parties[$party . $election . $ward->post_label]->incrementProperty("ward_quotas",$info->Quota);
-                            $national_parties[$party]->incrementProperty("no_wards");
-                            $council_parties[$party . $election]->incrementProperty("no_wards");
                             $ward_parties[$party . $election . $ward->post_label]->incrementProperty("no_wards");
                         }
                         $root->incrementProperty("electorate", $info->Total_Electorate);
@@ -216,13 +222,17 @@ function buildRTree($elections, $dataDir, $party_prefix)
         }
     }
     classifyParties($root, $party_prefix);
-    $root->sortbyseats();
     writeJSON($root, $dataDir . "results-tree.json");
 }
 
 //recursive routine to apply prefix and class to party nodes
 function classifyParties($root, $party_prefix)
 {
+    if ($root->type == "root" || $root->type == "council" || $root->type == "ward")
+    {
+        echo "Sorting " . $root->text . "\n";
+        $root->sortbyseats();
+    }
     foreach ($root->children as $node)
     {
         if ($node->type == "party")
@@ -230,9 +240,18 @@ function classifyParties($root, $party_prefix)
             $party = stripParty($node->text);
             $node->icon = $party;        // icon property in jstree types plugin is interpreted as a class if it does not contain /
             $prefix = (array_key_exists($party, $party_prefix)) ? " " . $party_prefix[$party] . " " : " ";
-//            $node->text = $prefix . $node->text . " (" . $node->no_seats . " seat(s), " . $node->properties->first_prefs . " first preferences)";
+            
+            if (array_key_exists("first_prefs", $node->properties))
+            {
+                $suffix = ": " . $node->no_seats . (($node->no_seats == 1) ? " seat" : " seats") . sprintf(" (%.1f%%), ", 100 * $node->no_seats / $root->no_seats) . sprintf("%d first preferences (%.1f%%)", $node->properties['first_prefs'], 100 * $node->properties['first_prefs'] / $root->properties['valid_poll']);
+            }
+            else
+            {
+                $suffix = "";
+            }
+            $node->text = $prefix . $node->text . $suffix;
         }
-        if ($node->children)
+        if (count($node->children) > 0)
         {
             classifyParties($node, $party_prefix);
         }
