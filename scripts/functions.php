@@ -7,6 +7,71 @@ if ($_SERVER['SERVER_ADDR'] == "216.92.68.138")
     exit();
 }
 
+// array of candidate IDs in the 3 uncontested wards
+$elected_without_contest = array("21540", "21541", "21542", "21375", "8755", "21376", "20966", "20967", "20968");
+
+$elections = array(
+"local.aberdeen-city.2017-05-04" => "Aberdeen City",
+"local.aberdeenshire.2017-05-04"=> "Aberdeenshire",
+"local.angus.2017-05-04" => "Angus",
+"local.argyll-and-bute.2017-05-04" => "Argyll and Bute",
+"local.city-of-edinburgh.2017-05-04" => "City of Edinburgh",
+"local.clackmannanshire.2017-05-04" => "Clackmannanshire",
+"local.dumfries-and-galloway.2017-05-04" => "Dumfries and Galloway",
+"local.dundee-city.2017-05-04" => "Dundee City",
+"local.east-ayrshire.2017-05-04" => "East Ayrshire",
+"local.east-dunbartonshire.2017-05-04" => "East Dunbartonshire",
+"local.east-lothian.2017-05-04" => "East Lothian",
+"local.east-renfrewshire.2017-05-04" => "East Renfrewshire",
+"local.falkirk.2017-05-04" => "Falkirk",
+"local.fife.2017-05-04" => "Fife",
+"local.glasgow-city.2017-05-04" => "Glasgow City",
+"local.highland.2017-05-04" => "Highland",
+"local.inverclyde.2017-05-04" => "Inverclyde",
+"local.midlothian.2017-05-04" => "Midlothian",
+"local.moray.2017-05-04" => "Moray",
+"local.eilean-siar.2017-05-04" => "Na h-Eileanan an Iar",
+"local.north-ayrshire.2017-05-04" => "North Ayrshire",
+"local.north-lanarkshire.2017-05-04" => "North Lanarkshire",
+"local.orkney-islands.2017-05-04" => "Orkney Islands",
+"local.perth-and-kinross.2017-05-04" => "Perth and Kinross",
+"local.renfrewshire.2017-05-04" => "Renfrewshire",
+"local.the-scottish-borders.2017-05-04" => "The Scottish Borders",
+"local.shetland-islands.2017-05-04" => "Shetland Islands",
+"local.south-ayrshire.2017-05-04" => "South Ayrshire",
+"local.south-lanarkshire.2017-05-04" => "South Lanarkshire",
+"local.stirling.2017-05-04" => "Stirling",
+"local.west-dunbartonshire.2017-05-04" => "West Dunbartonshire",
+"local.west-lothian.2017-05-04" => "West Lothian");
+
+// this array of party abbreviations mirrors the classes in parties.css
+// used in the jstree data to prefix each candidate and set the icon class
+$party_prefix = array(
+"Christian-Party-Proclaiming-Christs-Lordship" => "(CPPCL)",
+"Socialist-Labour-Party" => "(SocLab)",
+"Social-Democratic-Party" => "(SDP)",
+"A-Better-Britain-_-Unionist-Party" => "(ABBUP)",
+"Scottish-Unionist-Party" => "(SUP)",
+"The-Rubbish-Party" => "(RP)",
+"Independent" =>"(Ind)",
+"Independent-Network" =>"(Ind)",
+"Independent-Alliance-North-Lanarkshire" =>"(Ind)",
+"Scottish-Green-Party" =>"(Green)",
+"Orkney-Manifesto-Group" =>"(OMG)",
+"Trade-Unionist-and-Socialist-Coalition" =>"(TUSC)",
+"Liberal-Democrats" =>"(LD)",
+"Labour-Party" =>"(Lab)",
+"Labour-and-Co-operative-Party" =>"(Lab)",
+"Conservative-and-Unionist-Party" =>"(Con)",
+"Scottish-National-Party-SNP" =>"(SNP)",
+"Scottish-Socialist-Party" =>"(SSP)",
+"UK-Independence-Party-UKIP" =>"(UKIP)",
+"Scottish-Libertarian-Party" =>"(SLP)",
+"Solidarity---Scotlands-Socialist-Movement" =>"(Solidarity)",
+"National-Front" =>"(NF)",
+"West-Dunbartonshire-Community-Party" =>"(WDCP)",
+"RISE---Respect-Independence-Socialism-and-Environmentalism" =>"(RISE)");
+
 
 function _combine_array(&$row, $key, $header) {
     if (count($row) > 1 )
@@ -280,6 +345,7 @@ class Results
                     {
                         $this->markStatus("Elected", $id, $last_stage);
                         echo "Last candidate standing marked ELECTED ($id, stage $last_stage) in " . $this->Constituency->countInfo->Constituency_Name . "\n";
+                        $no_elected++;
                     }
                 }
             }
@@ -551,7 +617,7 @@ function getElectedCandidates($dir, $uncontested)
     $elected = array();
     foreach($uncontested as $id)
     {
-        $elected[$id] = "True";
+        $elected[$id] = 1;
     }
     $clist = scandir($dir);    // list of council folders
     foreach ($clist as $council)
@@ -574,6 +640,8 @@ function getElectedCandidates($dir, $uncontested)
                                 if (file_exists($fname))
                                 {	
                                     $json = readJSON($fname);
+                                    $no_elected = 0;
+                                    $no_seats = $json->Constituency->countInfo->Number_Of_Seats;
                                     foreach ($json->Constituency->countGroup as $item)
                                     {
                                         if (!isset($elected[$item->Candidate_Id]))
@@ -582,11 +650,26 @@ function getElectedCandidates($dir, $uncontested)
                                             {
                                                 case "Elected":
                                                     $elected[$item->Candidate_Id] = True;
+                                                    $no_elected++;
                                                     break;
                                         
                                                 case "Excluded":
                                                     $elected[$item->Candidate_Id] = False;
                                                     break;
+                                            }
+                                        }
+                                    }
+                                    // in this second pass we catch all the candidates not elected, who didn't reach Excluded status (only applicable if contest is complete)
+                                    if ($no_elected == $no_seats)
+                                    {
+                                        foreach ($json->Constituency->countGroup as $item)
+                                        {
+                                            if (!isset($elected[$item->Candidate_Id]))
+                                            {
+                                                if (empty($item->Status))
+                                                {
+                                                    $elected[$item->Candidate_Id] = False;
+                                                }
                                             }
                                         }
                                     }

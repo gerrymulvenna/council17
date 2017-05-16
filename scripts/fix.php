@@ -4,9 +4,16 @@ require "functions.php";
 
 $dataDir = "../2017/SCO";
 
+markStatus_all($dataDir);
+
 echo "<pre>\n";
-$elected = getElectedCandidates($dataDir);
-print_r($elected);
+$elected = getElectedCandidates($dataDir, $elected_without_contest);
+foreach ($elected as $key => $value)
+{
+    $output[] = array("Candidate_ID" => $key, "Elected" => ($value) ? "True" : "False");
+}
+echo "Writing elected CSV...";
+saveCSV($output, "$dataDir/local.elected.2017-05-04.csv");
 echo "</pre>\n";
 
 function correct_missing_first_pref_votes ($dir, $council)
