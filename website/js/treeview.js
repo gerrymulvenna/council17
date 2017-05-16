@@ -1,3 +1,55 @@
+// configure the RESULTS tree
+$('#results-tree').jstree(
+{
+	'core' : 
+	{
+		'data' : 
+		{
+			"url" : "/2017/SCO/results-tree.json",
+			"dataType" : "json" // needed only if you do not supply JSON headers
+		}
+	},
+	"types" : 
+	{
+		"#" : 
+		{
+		  "max_children" : 1,
+		  "max_depth" : 7,
+		  "valid_children" : ["root"]
+		},
+		"root" : 
+		{
+			"icon" : "/website/image/scotland-16.png",
+			"valid_children" : ["party", "container"]
+		},
+		"party" : 
+		{
+			"valid_children" : ["candidate"]
+		},
+		"container" : 
+		{
+			"valid_children" : ["council", "ward"]
+		},
+		"council" : 
+		{
+			"icon" : "/website/image/building-16.png",
+			"valid_children" : ["party", "container"]
+		},
+		"ward" : 
+		{
+		  "icon" : "/website/image/group-16.png",
+		  "valid_children" : ["party"]
+		},
+		"candidate" : 
+		{
+			"icon" : "/website/image/person-16.png",
+			 "valid_children" : []
+		}
+	},
+	"plugins" : ["types", "theme", "search"]
+});
+
+
 // configure the PARTY tree
 $('#party-tree').jstree(
 {
@@ -124,6 +176,24 @@ $(function () {
     }, 250);
   });
 });
+
+$(function () {
+  $("#results-tree").jstree({
+    "plugins" : [ "search" ]
+  });
+  var to = false;
+  $('#results-tree-search').keyup(function () {
+    if(to) { clearTimeout(to); }
+    to = setTimeout(function () {
+      var v = $('#results-tree-search').val();
+	  if (v.length >=3)
+	  {
+	      $('#results-tree').jstree(true).search(v);
+	  }
+    }, 250);
+  });
+});
+
 
 // interaction and events
 $('#council-tree').on("changed.jstree", function (e, data) {

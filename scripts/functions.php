@@ -222,6 +222,47 @@ class jstree_node
             $child->applyProperty($key, $value);
         }
     }
+
+    //assign a numeric value to a node's property
+    function assignProperty($key, $value)
+    {
+        if (is_array($this->properties))
+        {
+            $this->properties[$key] = $value + 0;
+        }
+        elseif (is_object($this->properties))
+        {
+            $this->properties->$key = $value + 0;
+        }
+    }
+
+    //increment a node's property
+    function incrementProperty($key, $value = 1)
+    {
+        if (is_array($this->properties))
+        {
+            if (array_key_exists($key, $this->properties))
+            {
+                $this->properties[$key] += $value;
+            }
+            else
+            {
+                $this->properties[$key] = $value;
+            }
+        }
+        elseif (is_object($this->properties))
+        {
+            if (property_exists($this->properties, $key))
+            {
+                $this->properties->$key += $value;
+            }
+            else
+            {
+                $this->properties->$key = $value;
+            }
+        }
+    }
+
 }
 
 
