@@ -7,9 +7,9 @@ $outDir = "../2017/SCO/";
 
 $elected = getElectedCandidates($outDir, $elected_without_contest);
 buildRtree($elections, $outDir, $party_prefix);
-buildData(array_keys($elections), $dataRoot, $outDir);
-buildPtree($elections, $outDir, $party_prefix);
-buildCtree($elections, $outDir, $party_prefix);
+//buildData(array_keys($elections), $dataRoot, $outDir);
+//buildPtree($elections, $outDir, $party_prefix);
+//buildCtree($elections, $outDir, $party_prefix);
 
 //boundaryWards(array_keys($elections), $outDir, "boundary-wardinfo.csv");
 
@@ -136,6 +136,8 @@ function buildRTree($elections, $dataDir, $party_prefix)
                         $root->no_candidates += 1;
                         $ward_party_node->no_candidates += 1;
                         $council_party_node->no_candidates += 1;
+                        $ward_node->no_candidates += 1;
+                        $council_node->no_candidates += 1;
                         $national_party_node->no_candidates += 1;
                         $cand_node = new jstree_node(++$id,"candidate",$candidate->name);
                         $ward_party_node->children[] = $cand_node;
@@ -175,6 +177,10 @@ function buildRTree($elections, $dataDir, $party_prefix)
                                     {
                                         print_r($cArray[$item->Candidate_Id]);
                                     }
+                                }
+                                else
+                                {
+                                    echo "Candidate_Id NOT FOUND: " . $item->Candidate_Id . ", " . $item->Firstname . " " . $item->Surname . ", " . $item->Party_Name . "\n";
                                 }
                             }
                         }
@@ -221,13 +227,30 @@ function buildRTree($elections, $dataDir, $party_prefix)
             }
         }
     }
+    echo "<pre>\n";
     classifyParties($root, $party_prefix);
+    echo "</pre>\n";
     writeJSON($root, $dataDir . "results-tree.json");
 }
 
 //recursive routine to apply prefix and class to party nodes
 function classifyParties($root, $party_prefix)
 {
+    if ($root->type == "root" || $root->type == "council" || $root->type == "ward")
+    {
+        if (array_key_exists("total_poll", $root->properties))
+        {
+            $suffix =  number_format($root->no_seats) . (($root->no_seats == 1) ? " councillor" : " councillors");
+            $suffix .= ", electorate: " . number_format($root->properties['electorate']) . ", turnout: " . number_format($root->properties['total_poll']) . sprintf(" (%.2f%%)", 100 * $root->properties['total_poll'] / $root->properties['electorate']);
+            $suffix .= ", spoilt: " . number_format($root->properties['total_poll'] - $root->properties['valid_poll']) .  sprintf(" (%.1f%%)", 100 * ($root->properties['total_poll'] - $root->properties['valid_poll']) / $root->properties['total_poll']);
+        }
+        else
+        {
+            $suffix = "";
+        }
+        $root->text =  "<strong>" . $root->text . "</strong>";
+        $root->text .= " <em>" . $suffix . "</em>";
+    }
     if ($root->type == "root" || $root->type == "council" || $root->type == "ward")
     {
         echo "Sorting " . $root->text . "\n";
@@ -243,7 +266,7 @@ function classifyParties($root, $party_prefix)
             
             if (array_key_exists("first_prefs", $node->properties))
             {
-                $suffix = $node->no_seats . (($node->no_seats == 1) ? " seat" : " seats") . sprintf(" (%.1f%%), ", 100 * $node->no_seats / $root->no_seats) . sprintf("%d first preferences (%.1f%%)", $node->properties['first_prefs'], 100 * $node->properties['first_prefs'] / $root->properties['valid_poll']);
+                $suffix = $node->no_seats . (($node->no_seats == 1) ? " councillor" : " councillors") . sprintf(" (%.1f%%), ", 100 * $node->no_seats / $root->no_seats) . sprintf("%d first prefs (%.1f%%)", $node->properties['first_prefs'], 100 * $node->properties['first_prefs'] / $root->properties['valid_poll']);
             }
             else
             {
@@ -251,6 +274,7 @@ function classifyParties($root, $party_prefix)
             }
             $node->text = $prefix . " " . $suffix;
         }
+
         if (count($node->children) > 0)
         {
             classifyParties($node, $party_prefix);
