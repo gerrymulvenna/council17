@@ -47,30 +47,30 @@ $elections = array(
 // this array of party abbreviations mirrors the classes in parties.css
 // used in the jstree data to prefix each candidate and set the icon class
 $party_prefix = array(
-"Christian-Party-Proclaiming-Christs-Lordship" => "(CPPCL)",
-"Socialist-Labour-Party" => "(SocLab)",
-"Social-Democratic-Party" => "(SDP)",
-"A-Better-Britain-_-Unionist-Party" => "(ABBUP)",
-"Scottish-Unionist-Party" => "(SUP)",
-"The-Rubbish-Party" => "(RP)",
-"Independent" =>"(Ind)",
-"Independent-Network" =>"(Ind)",
-"Independent-Alliance-North-Lanarkshire" =>"(Ind)",
-"Scottish-Green-Party" =>"(Green)",
-"Orkney-Manifesto-Group" =>"(OMG)",
-"Trade-Unionist-and-Socialist-Coalition" =>"(TUSC)",
-"Liberal-Democrats" =>"(LD)",
-"Labour-Party" =>"(Lab)",
-"Labour-and-Co-operative-Party" =>"(Lab)",
-"Conservative-and-Unionist-Party" =>"(Con)",
-"Scottish-National-Party-SNP" =>"(SNP)",
-"Scottish-Socialist-Party" =>"(SSP)",
-"UK-Independence-Party-UKIP" =>"(UKIP)",
-"Scottish-Libertarian-Party" =>"(SLP)",
-"Solidarity---Scotlands-Socialist-Movement" =>"(Solidarity)",
-"National-Front" =>"(NF)",
-"West-Dunbartonshire-Community-Party" =>"(WDCP)",
-"RISE---Respect-Independence-Socialism-and-Environmentalism" =>"(RISE)");
+"Christian-Party-Proclaiming-Christs-Lordship" => "CPPCL",
+"Socialist-Labour-Party" => "SocLab",
+"Social-Democratic-Party" => "SDP",
+"A-Better-Britain-_-Unionist-Party" => "ABBUP",
+"Scottish-Unionist-Party" => "SUP",
+"The-Rubbish-Party" => "RP",
+"Independent" =>"Ind",
+"Independent-Network" =>"Ind",
+"Independent-Alliance-North-Lanarkshire" =>"Ind",
+"Scottish-Green-Party" =>"Green",
+"Orkney-Manifesto-Group" =>"OMG",
+"Trade-Unionist-and-Socialist-Coalition" =>"TUSC",
+"Liberal-Democrats" =>"LD",
+"Labour-Party" =>"Lab",
+"Labour-and-Co-operative-Party" =>"Lab",
+"Conservative-and-Unionist-Party" =>"Con",
+"Scottish-National-Party-SNP" =>"SNP",
+"Scottish-Socialist-Party" =>"SSP",
+"UK-Independence-Party-UKIP" =>"UKIP",
+"Scottish-Libertarian-Party" =>"SLP",
+"Solidarity---Scotlands-Socialist-Movement" =>"Solidarity",
+"National-Front" =>"NF",
+"West-Dunbartonshire-Community-Party" =>"WDCP",
+"RISE---Respect-Independence-Socialism-and-Environmentalism" =>"RISE");
 
 
 function _combine_array(&$row, $key, $header) {
@@ -198,6 +198,28 @@ class jstree_node
         return ($a->no_candidates < $b->no_candidates) ? 1 : -1;
     }
 
+    // descending by no_seats
+    function sortbyseats()
+    {
+        $tmp = $this->children;
+        usort($tmp, array($this, "cmpseats"));
+        $this->children = $tmp;
+    }
+
+    function cmpseats($a, $b)
+    {
+        if ($a->type == "container") return -1;
+        if ($b->type == "container") return 1;
+        if ($a->no_seats == $b->no_seats)
+        {
+            if ($a->text == $b->text) {
+                return 0;
+            }
+            return ($a->text < $b->text) ? -1 : 1;
+        }
+        return ($a->no_seats < $b->no_seats) ? 1 : -1;
+    }
+
     function listChildren()
     {
         foreach ($this->children as $child)
@@ -222,6 +244,47 @@ class jstree_node
             $child->applyProperty($key, $value);
         }
     }
+
+    //assign a numeric value to a node's property
+    function assignProperty($key, $value)
+    {
+        if (is_array($this->properties))
+        {
+            $this->properties[$key] = $value + 0;
+        }
+        elseif (is_object($this->properties))
+        {
+            $this->properties->$key = $value + 0;
+        }
+    }
+
+    //increment a node's property
+    function incrementProperty($key, $value = 1)
+    {
+        if (is_array($this->properties))
+        {
+            if (array_key_exists($key, $this->properties))
+            {
+                $this->properties[$key] += $value;
+            }
+            else
+            {
+                $this->properties[$key] = $value;
+            }
+        }
+        elseif (is_object($this->properties))
+        {
+            if (property_exists($this->properties, $key))
+            {
+                $this->properties->$key += $value;
+            }
+            else
+            {
+                $this->properties->$key = $value;
+            }
+        }
+    }
+
 }
 
 
