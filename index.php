@@ -40,9 +40,13 @@ navigation("Scottish Council elections 2017");
 <div class="content" align="center">
     <h1>Explore the #council17 election data for Scotland</h1>
     <div class="main-option">
-        <h3>Results visualisation</h3>
+        <h3>Vote transfer visualisation</h3>
         <small>All 351 contested wards from the 32 councils</small>
         <a href="/results/"><img src="/website/image/results.png"></a>
+    </div>
+    <div class="main-option">
+        <h3>Explore the numbers at national level, by party, by council and by ward</h3>
+        <a href="/treeview/results.php"><img src="/website/image/treeview3.png"></a>
     </div>
     <div class="main-option">
         <h3>Interactive map</h3>
@@ -57,11 +61,11 @@ navigation("Scottish Council elections 2017");
 	    <script src="/website/js/leaflet-pip.js"></script>
     </div>
     <div class="main-option">
-        <h3>Explore and search by council</h3>
+        <h3>Explore and search candidates by council</h3>
         <a href="/treeview/"><img src="/website/image/treeview1.png"></a>
     </div>
     <div class="main-option">
-        <h3>Explore and search by party</h3>
+        <h3>Explore and search candidates by party</h3>
         <a href="/treeview/by-party.php"><img src="/website/image/treeview2.png"></a>
     </div>
 </div>

@@ -11,12 +11,12 @@ $council_name = 'Explore #council17 results';  // used in the title and breadcru
 
 
 // function head($title, $mapName, $mapLat, $mapLong, $mapZoom, $mapProperty, $mapUnit, $mapWardDesc, $twimg)
-head("Explore Scottish local election results", $slug, 0, 0, 0, NULL, "/website/image/treeview1.png");
+head("Explore Scottish local election results", $slug, 0, 0, 0, NULL, "/website/image/treeview3.png");
 navigation("Scottish Council elections 2017");
 
 echo'<div class="content">
 
-<h3>Explore and search 2017 local election results for Scotland</h3>
+<h3>Explore and search the 2017 local election results for Scotland</h3>
 <div id="tree-ack"><div id="dc-caption">This full set of candidate data was collated by</div><div id="dc-logo"><a href="http://democracyclub.org.uk"><img src="https://democracyclub.org.uk/static/dc_theme/images/logo-with-text-2017.png" width="250"></a></div></div>
 	<input type="text" id="results-tree-search" value="" class="input" placeholder="Find party, candidate, council or ward" />
 	<div id="results-tree" class="demo"></div>
