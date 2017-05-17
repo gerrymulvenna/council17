@@ -57,6 +57,11 @@ function buildRTree($elections, $dataDir, $party_prefix)
                     $cArray = array();  //clear array of candidates for each ward. We'll use this when pulling in results
                     foreach ($ward->candidates as $candidate)
                     {
+                        // for the purposes of these summary data, let's treat "Labour-and-Co-operative-Party" as the same as "Labour Party"
+                        if ($candidate->party_name == "Labour and Co-operative Party")
+                        {
+                            $candidate->party_name = "Labour Party";
+                        }
                         $cArray[$candidate->id] = $candidate;
                         // create or update the party node
                         if (array_key_exists($election, $councils))
