@@ -125,6 +125,20 @@ class DemoClub_Wards
  } 
 }
 
+class jstree_state
+{
+    public $opened;
+    public $disabled;
+    public $selected;
+
+    function __construct($opened, $disabled, $selected)
+    {
+        $this->opened = $opened;
+        $this->disabled = $disabled;
+        $this->selected = $selected;
+    }
+}
+
 class jstree_node
 {
     public $id;
@@ -134,6 +148,7 @@ class jstree_node
     public $no_candidates;
     public $properties;
     public $children;
+    public $state;
 
     private $count;
 
@@ -146,6 +161,37 @@ class jstree_node
         $this->no_candidates = 0;
         $this->properties = $properties;
         $this->children = array();
+        $this->state = new jstree_state(false, false, false);
+    }
+
+    function open()
+    {
+        $this->state->opened = true;
+    }
+
+    function close()
+    {
+        $this->state->opened = false;
+    }
+
+    function disable()
+    {
+        $this->state->disabled = true;
+    }
+
+    function enable()
+    {
+        $this->state->disabled = false;
+    }
+
+    function select()
+    {
+        $this->state->selected = true;
+    }
+
+    function deselect()
+    {
+        $this->state->selected = false;
     }
 
     // recursively count nodes of a given type

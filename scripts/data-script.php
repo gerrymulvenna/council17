@@ -7,9 +7,9 @@ $outDir = "../2017/SCO/";
 
 $elected = getElectedCandidates($outDir, $elected_without_contest);
 buildRtree($elections, $outDir, $party_prefix);
-//buildData(array_keys($elections), $dataRoot, $outDir);
-//buildPtree($elections, $outDir, $party_prefix);
-//buildCtree($elections, $outDir, $party_prefix);
+buildData(array_keys($elections), $dataRoot, $outDir);
+buildPtree($elections, $outDir, $party_prefix);
+buildCtree($elections, $outDir, $party_prefix);
 
 //boundaryWards(array_keys($elections), $outDir, "boundary-wardinfo.csv");
 
@@ -29,6 +29,7 @@ function buildRTree($elections, $dataDir, $party_prefix)
     $id = 0;
     $ctotal = 0;
     $root = new jstree_node(++$id,"root","Scotland");
+    $root->open();      // expand at startup
     $council_container = new jstree_node(++$id, "container", "Explore by council"); 
     $root->children[] = $council_container;
 
@@ -324,6 +325,7 @@ function buildPTree($elections, $dataDir, $party_prefix)
     $id = 0;
     $ctotal = 0;
     $root = new jstree_node(++$id,"root","All Parties");
+    $root->open();      // expand at startup
 
     // get an index of ward and council info so we can build href preoperties for ward and candidate nodes
     $wardinfo = readJSON($dataDir . "wardinfo.json");
@@ -457,6 +459,7 @@ function buildCTree($elections, $dataDir, $party_prefix)
 
     // convert the wardinfo data to tree nodes and build the tree structure incorporating the candidate nodes
     $root = new jstree_node(++$id,"root","Scottish Councils");
+    $root->open();      // expand at startup
     $root->no_candidates = $ctotal;
     $wardinfo = readJSON($dataDir . "wardinfo.json");
     foreach ($wardinfo->Wards as $ward)
