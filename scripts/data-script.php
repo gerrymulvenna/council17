@@ -17,6 +17,7 @@ buildRtree($elections, $outDir, $party_prefix);
 function buildRTree($elections, $dataDir, $party_prefix)
 {
     global $elected;
+    global $elected_without_contest;
 
     $national_parties = array();
     $councils = array();
@@ -148,6 +149,16 @@ function buildRTree($elections, $dataDir, $party_prefix)
                             $national_party_node->no_seats += 1;
                             $council_party_node->children[] = $cand_node;
                         }
+                        // catch the uncontested wards here and update variables which won't get touched when we process the results
+                        if (in_array($candidate->id, $elected_without_contest))
+                        {
+                            $root->no_seats++;;
+                            $council_node->no_seats++;
+                            $ward_node->no_seats++;
+                            $root->incrementProperty("no_wards");
+                            $council_node->incrementProperty("no_wards");
+                            $ward_node->incrementProperty("no_wards");
+                        }
                     }
                     // now let's get the results data
                     $fname = $dataDir . $matches[1] . "/" . $wardcode[$ward->post_id] . "/ResultsJson.json";
@@ -190,17 +201,17 @@ function buildRTree($elections, $dataDir, $party_prefix)
                             if (array_key_exists($party, $national_parties))
                             {
                                 $national_parties[$party]->incrementProperty("valid_poll",$info->Valid_Poll);
-                                $national_parties[$party]->incrementProperty("ward_quotas",$info->Quota);
+                                $national_parties[$party]->incrementProperty("quotas",$info->Quota);
                                 $national_parties[$party]->incrementProperty("no_wards");
                             }
-                            if (array_key_exists($party, $council_parties))
+                            if (array_key_exists($party . $election, $council_parties))
                             {
                                 $council_parties[$party . $election]->incrementProperty("no_wards");
-                                $council_parties[$party . $election]->incrementProperty("ward_quotas",$info->Quota);
+                                $council_parties[$party . $election]->incrementProperty("quotas",$info->Quota);
                                 $council_parties[$party . $election]->incrementProperty("valid_poll",$info->Valid_Poll);
                             }
                             $ward_parties[$party . $election . $ward->post_label]->incrementProperty("valid_poll",$info->Valid_Poll);
-                            $ward_parties[$party . $election . $ward->post_label]->incrementProperty("ward_quotas",$info->Quota);
+                            $ward_parties[$party . $election . $ward->post_label]->incrementProperty("quotas",$info->Quota);
                             $ward_parties[$party . $election . $ward->post_label]->incrementProperty("no_wards");
                         }
                         $root->incrementProperty("electorate", $info->Total_Electorate);
@@ -221,7 +232,7 @@ function buildRTree($elections, $dataDir, $party_prefix)
                     }
                     else
                     {
-                        // probably an uncontested ward   
+                        // probably an uncontested ward, which are dealt with in the main candidate data loop abovve
                     }
                 }
             }
@@ -266,7 +277,18 @@ function classifyParties($root, $party_prefix)
             
             if (array_key_exists("first_prefs", $node->properties))
             {
-                $suffix = $node->no_seats . (($node->no_seats == 1) ? " councillor" : " councillors") . sprintf(" (%.1f%%), ", 100 * $node->no_seats / $root->no_seats) . sprintf("%d first prefs (%.1f%%)", $node->properties['first_prefs'], 100 * $node->properties['first_prefs'] / $root->properties['valid_poll']);
+                $suffix = $node->no_seats . (($node->no_seats == 1) ? " councillor" : " councillors") . sprintf(" (%.1f%%) ", 100 * $node->no_seats / $root->no_seats);
+                $suffix .= " from ". number_format($node->no_candidates) . (($node->no_candidates == 1) ? " candidate" : " candidates") . sprintf(" (%.1f%% success rate), ", 100 * $node->no_seats / $node->no_candidates); 
+                $suffix .= number_format($node->properties['first_prefs']) . " first prefs " . sprintf("(%.1f%%)", 100 * $node->properties['first_prefs'] / $root->properties['valid_poll']);
+                if (array_key_exists("quotas", $node->properties))
+                {
+                    $suffix .= sprintf(", %.2f quotas per ward", $node->properties['first_prefs'] / $node->properties['quotas']);
+                }
+            }
+            elseif ($node->no_candidates > 0) // uncontested wards will fall in here
+            {
+                $suffix = $node->no_seats . (($node->no_seats == 1) ? " councillor" : " councillors") . sprintf(" (%.1f%%) ", 100 * $node->no_seats / $root->no_seats);
+                $suffix .= " from ". number_format($node->no_candidates) . sprintf(" candidates (%.1f%% success rate), ", 100 * $node->no_seats / $node->no_candidates); 
             }
             else
             {

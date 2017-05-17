@@ -562,6 +562,24 @@ input[id=show-menu]:checked~#cssmenu {
 	border:1px solid silver;"
 }
 
+#results-tree
+{
+    height: 400px;
+    margin: auto;
+    width: 100%;
+    padding-top: 10px;
+}
+
+#results-tree-search 
+{
+	width: 200px;
+	display:block; 
+	padding:4px; 
+	border-radius:4px; 
+	border:1px solid silver;"
+}
+
+
 .main-option {
 	max-width: 150px;
 	display: inline-grid;
