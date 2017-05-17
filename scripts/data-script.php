@@ -243,13 +243,13 @@ function classifyParties($root, $party_prefix)
             
             if (array_key_exists("first_prefs", $node->properties))
             {
-                $suffix = ": " . $node->no_seats . (($node->no_seats == 1) ? " seat" : " seats") . sprintf(" (%.1f%%), ", 100 * $node->no_seats / $root->no_seats) . sprintf("%d first preferences (%.1f%%)", $node->properties['first_prefs'], 100 * $node->properties['first_prefs'] / $root->properties['valid_poll']);
+                $suffix = $node->no_seats . (($node->no_seats == 1) ? " seat" : " seats") . sprintf(" (%.1f%%), ", 100 * $node->no_seats / $root->no_seats) . sprintf("%d first preferences (%.1f%%)", $node->properties['first_prefs'], 100 * $node->properties['first_prefs'] / $root->properties['valid_poll']);
             }
             else
             {
                 $suffix = "";
             }
-            $node->text = $prefix . $node->text . $suffix;
+            $node->text = $prefix . " " . $suffix;
         }
         if (count($node->children) > 0)
         {
@@ -364,7 +364,7 @@ function buildPTree($elections, $dataDir, $party_prefix)
     {
         $party = stripParty($party_node->text);
         $party_node->icon = $party;        // icon property in jstree types plugin is interpreted as a class if it does not contain /
-        $prefix = (array_key_exists($party, $party_prefix)) ? " " . $party_prefix[$party] . " " : " ";
+        $prefix = (array_key_exists($party, $party_prefix)) ? " (" . $party_prefix[$party] . ") " : " ";
         $party_node->text = $prefix . $party_node->text;
     }
     extendParties($root);
@@ -496,7 +496,7 @@ function convertCandidates($candidates, $last_id, $party_prefix)
     foreach ($candidates as $c)
     {
         $party = stripParty($c->party_name);
-        $prefix = (array_key_exists($party, $party_prefix)) ? " " . $party_prefix[$party] . " " : " ";
+        $prefix = (array_key_exists($party, $party_prefix)) ? " (" . $party_prefix[$party] . ") " : " ";
         echo "$prefix ";
         $name = ($c->elected == "True") ? '<span class="elected">' . $c->name . '</span>' : $c->name;
 
