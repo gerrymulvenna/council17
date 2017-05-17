@@ -7,9 +7,9 @@ $outDir = "../2017/SCO/";
 
 $elected = getElectedCandidates($outDir, $elected_without_contest);
 buildRtree($elections, $outDir, $party_prefix);
-//buildData(array_keys($elections), $dataRoot, $outDir);
-//buildPtree($elections, $outDir, $party_prefix);
-//buildCtree($elections, $outDir, $party_prefix);
+buildData(array_keys($elections), $dataRoot, $outDir);
+buildPtree($elections, $outDir, $party_prefix);
+buildCtree($elections, $outDir, $party_prefix);
 
 //boundaryWards(array_keys($elections), $outDir, "boundary-wardinfo.csv");
 
