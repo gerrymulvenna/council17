@@ -318,7 +318,7 @@ input[id=show-menu]:checked~#cssmenu {
     padding: 10px 20px;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 12px;
     position: relative;
     -webkit-transition: color .25s;
     -moz-transition: color .25s;

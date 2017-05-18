@@ -255,13 +255,14 @@ function navigation($title, $param2 = NULL, $param3 = NULL, $param4 = NULL)
         <input type="checkbox" id="show-menu" role="button">
         <div id="cssmenu">
             <ul>
-                <li><a href="/results"><span>Ward results</span></a></li>
+                <li><a href="/results/"><span>Ward results</span></a></li>
                 <li><a href="/treeview/results.php"><span>Data explorer</span></a></li>
-                <li><a href="/councils"><span>By map</span></a></li>
+                <li><a href="/councils/"><span>By map</span></a></li>
                 <li><a href="/postcode/"><span>By postcode</span></a></li>
                 <li><a href="/treeview/"><span>By council</span></a></li>
                 <li><a href="/treeview/by-party.php"><span>By party</span></a></li>
-                <li><a href="/about"><span>About</span></a></li>
+                <li><a href="/download/"><span>Download</span></a></li>
+                <li><a href="/about/"><span>About</span></a></li>
             </ul>
         </div>';
 }
