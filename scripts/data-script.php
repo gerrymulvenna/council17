@@ -26,6 +26,7 @@ function buildRTree($elections, $dataDir, $party_prefix)
     $wards = array();
     $ward_parties = array();
     $wardcode = array();
+    $wardname = array();
     $cwards = array();
     $id = 0;
     $ctotal = 0;
@@ -41,6 +42,7 @@ function buildRTree($elections, $dataDir, $party_prefix)
         if (!empty($ward->election))
         {
             $wardcode[$ward->cand_ward_code] = $ward->map_ward_code;
+            $wardname[$ward->cand_ward_code] = $ward->ward_name;
         }
     }
 
@@ -79,7 +81,7 @@ function buildRTree($elections, $dataDir, $party_prefix)
                             {
                                 // need a new ward node
                                 $council_node = $councils[$election];
-                                $ward_node = new jstree_node(++$id, "ward", $ward->post_label);
+                                $ward_node = new jstree_node(++$id, "ward", $wardname[$ward->post_id]);
                                 $wards[$election . $ward->post_label] = $ward_node;
                                 $council_node->children[0]->children[] = $ward_node;  // first child of each council node should be "Explore by ward"
                             }
@@ -91,7 +93,7 @@ function buildRTree($elections, $dataDir, $party_prefix)
                             $council_node->children[] = new jstree_node(++$id, "container", "Explore by wards");
                             $councils[$election] = $council_node;
                             $council_container->children[] = $council_node;
-                            $ward_node = new jstree_node(++$id, "ward", $ward->post_label);
+                            $ward_node = new jstree_node(++$id, "ward", $wardname[$ward->post_id]);
                             $wards[$election . $ward->post_label] = $ward_node;
                             $council_node->children[0]->children[] = $ward_node;  // first child of each council node should be "Explore by ward"
                         }
@@ -160,7 +162,7 @@ function buildRTree($elections, $dataDir, $party_prefix)
                         $row['election'] = $election;
                         $row['cand_ward_id'] = $ward->post_id;
                         $row['map_ward_id'] = $wardcode[$ward->post_id];
-                        $row['ward_name'] = $ward->post_label;
+                        $row['ward_name'] = $wardname[$ward->post_id];
                         $row['contested'] = (in_array($candidate->id, $elected_without_contest)) ? 0 : 1;
                         $row['elected'] = ($candidate->elected == "True") ? 1 : 0;
                         $row['candidates'] = count($ward->candidates);
@@ -375,6 +377,7 @@ function buildPTree($elections, $dataDir, $party_prefix)
     $councils = array();
     $wards = array();
     $wardcode = array();
+    $wardname = array();
     $cwards = array();
     $id = 0;
     $ctotal = 0;
@@ -388,6 +391,7 @@ function buildPTree($elections, $dataDir, $party_prefix)
         if (!empty($ward->election))
         {
             $wardcode[$ward->cand_ward_code] = $ward->map_ward_code;
+            $wardname[$ward->cand_ward_code] = $ward->ward_name;
         }
     }
 
@@ -402,7 +406,7 @@ function buildPTree($elections, $dataDir, $party_prefix)
                 if (!empty($ward->post_id))
                 {
                     echo "PARTIES candidate data " . $election . " " . $ward->post_id . "<br>\n";
-                    $node = new jstree_node(++$id, "ward", $ward->post_label);
+                    $node = new jstree_node(++$id, "ward", $wardname[$ward->post_id]);
                     foreach ($ward->candidates as $candidate)
                     {
                         // create or update the party node
@@ -421,7 +425,7 @@ function buildPTree($elections, $dataDir, $party_prefix)
                                     $council_node = $councils[$candidate->party_name . $election];
                                     $party_node = $parties[$candidate->party_name];
                                     $party_node->no_candidates += 1;
-                                    $ward_node = new jstree_node(++$id,"ward",$ward->post_label);
+                                    $ward_node = new jstree_node(++$id,"ward",$wardname[$ward->post_id]);
                                     $ward_node->properties['cand_map_code'] = $ward->post_id;
                                     $wards[$candidate->party_name . $election . $ward->post_label] = $ward_node;
                                     $council_node->children[] = $ward_node;
@@ -434,7 +438,7 @@ function buildPTree($elections, $dataDir, $party_prefix)
                                 $council_node = new jstree_node(++$id,"council",$council);
                                 $councils[$candidate->party_name . $election] = $council_node;
                                 $party_node->children[] = $council_node;
-                                $ward_node = new jstree_node(++$id,"ward",$ward->post_label);
+                                $ward_node = new jstree_node(++$id,"ward",$wardname[$ward->post_id]);
                                 $ward_node->properties['cand_map_code'] = $ward->post_id;
                                 $wards[$candidate->party_name . $election . $ward->post_label] = $ward_node;
                                 $council_node->children[] = $ward_node;
@@ -450,7 +454,7 @@ function buildPTree($elections, $dataDir, $party_prefix)
                             $council_node = new jstree_node(++$id,"council",$council);
                             $councils[$candidate->party_name . $election] = $council_node;
                             $party_node->children[] = $council_node;
-                            $ward_node = new jstree_node(++$id,"ward",$ward->post_label);
+                            $ward_node = new jstree_node(++$id,"ward",$wardname[$ward->post_id]);
                             $ward_node->properties['cand_map_code'] = $ward->post_id;
                             $wards[$candidate->party_name . $election . $ward->post_label] = $ward_node;
                             $council_node->children[] = $ward_node;
