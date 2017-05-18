@@ -313,7 +313,7 @@ function classifyParties($root, $party_prefix)
         {
             $suffix =  number_format($root->no_seats) . (($root->no_seats == 1) ? " councillor" : " councillors");
             $suffix .= ", electorate: " . number_format($root->properties['electorate']) . ", turnout: " . number_format($root->properties['total_poll']) . sprintf(" (%.2f%%)", 100 * $root->properties['total_poll'] / $root->properties['electorate']);
-            $suffix .= ", spoilt: " . number_format($root->properties['total_poll'] - $root->properties['valid_poll']) .  sprintf(" (%.1f%%)", 100 * ($root->properties['total_poll'] - $root->properties['valid_poll']) / $root->properties['total_poll']);
+            $suffix .= ", rejected: " . number_format($root->properties['total_poll'] - $root->properties['valid_poll']) .  sprintf(" (%.1f%%)", 100 * ($root->properties['total_poll'] - $root->properties['valid_poll']) / $root->properties['total_poll']);
         }
         else
         {
