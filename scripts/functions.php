@@ -10,6 +10,53 @@ if ($_SERVER['SERVER_ADDR'] == "216.92.68.138")
 // array of candidate IDs in the 3 uncontested wards
 $elected_without_contest = array("21540", "21541", "21542", "21375", "8755", "21376", "20966", "20967", "20968");
 
+// blank template for the CSV data file
+$blank_row = array(
+"id" => "",
+"name" => "",
+"party_name" =>"",
+"council_id" => "",
+"council_name" => "",
+"election" => "",
+"cand_ward_id" => "",
+"map_ward_id" => "",
+"ward_name" => "",
+"contested" => "",
+"elected" => "",
+"status" => "",
+"occurred_on_count" => "",
+"first_prefs" => "",
+"transfers02"=>"",
+"total_votes02"=>"",
+"transfers03"=>"",
+"total_votes03"=>"",
+"transfers04"=>"",
+"total_votes04"=>"",
+"transfers05"=>"",
+"total_votes05"=>"",
+"transfers06"=>"",
+"total_votes06"=>"",
+"transfers07"=>"",
+"total_votes07"=>"",
+"transfers08"=>"",
+"total_votes08"=>"",
+"transfers09"=>"",
+"total_votes09"=>"",
+"transfers10"=>"",
+"total_votes10"=>"",
+"transfers11"=>"",
+"total_votes11"=>"",
+"transfers12"=>"",
+"total_votes12"=>"",
+"electorate"=>"",
+"total_poll"=>"",
+"valid_poll"=>"",
+"rejected"=>"",
+"quota"=>"",
+"seats"=>"",
+"candidates"=>""
+);
+
 $elections = array(
 "local.aberdeen-city.2017-05-04" => "Aberdeen City",
 "local.aberdeenshire.2017-05-04"=> "Aberdeenshire",

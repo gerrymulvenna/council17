@@ -7,9 +7,9 @@ $outDir = "../2017/SCO/";
 
 $elected = getElectedCandidates($outDir, $elected_without_contest);
 buildRtree($elections, $outDir, $party_prefix);
-buildData(array_keys($elections), $dataRoot, $outDir);
-buildPtree($elections, $outDir, $party_prefix);
-buildCtree($elections, $outDir, $party_prefix);
+//buildData(array_keys($elections), $dataRoot, $outDir);
+//buildPtree($elections, $outDir, $party_prefix);
+//buildCtree($elections, $outDir, $party_prefix);
 
 //boundaryWards(array_keys($elections), $outDir, "boundary-wardinfo.csv");
 
@@ -18,6 +18,7 @@ function buildRTree($elections, $dataDir, $party_prefix)
 {
     global $elected;
     global $elected_without_contest;
+    global $blank_row;
 
     $national_parties = array();
     $councils = array();
@@ -58,6 +59,7 @@ function buildRTree($elections, $dataDir, $party_prefix)
                     $cArray = array();  //clear array of candidates for each ward. We'll use this when pulling in results
                     foreach ($ward->candidates as $candidate)
                     {
+                        $row = $blank_row;
                         // for the purposes of these summary data, let's treat "Labour-and-Co-operative-Party" as the same as "Labour Party"
                         if ($candidate->party_name == "Labour and Co-operative Party")
                         {
@@ -148,6 +150,21 @@ function buildRTree($elections, $dataDir, $party_prefix)
                         $national_party_node->no_candidates += 1;
                         $cand_node = new jstree_node(++$id,"candidate",$candidate->name);
                         $ward_party_node->children[] = $cand_node;
+
+                        // populate the CSV data row for candidate variables
+                        $row['id'] = $candidate->id;
+                        $row['name'] = $candidate->name;
+                        $row['party_name'] = $candidate->party_name;
+                        $row['council_id'] = $matches[1];
+                        $row['council_name'] = $council;
+                        $row['election'] = $election;
+                        $row['cand_ward_id'] = $ward->post_id;
+                        $row['map_ward_id'] = $wardcode[$ward->post_id];
+                        $row['ward_name'] = $ward->post_label;
+                        $row['contested'] = (in_array($candidate->id, $elected_without_contest)) ? 0 : 1;
+                        $row['elected'] = ($candidate->elected == "True") ? 1 : 0;
+                        $row['candidates'] = count($ward->candidates);
+
                         if ($candidate->elected == "True")
                         {
                             $ward_party_node->no_seats += 1;
@@ -164,7 +181,9 @@ function buildRTree($elections, $dataDir, $party_prefix)
                             $root->incrementProperty("no_wards");
                             $council_node->incrementProperty("no_wards");
                             $ward_node->incrementProperty("no_wards");
+                            $row['status'] = 'Elected';
                         }
+                        $data[$candidate->id] = $row;
                     }
                     // now let's get the results data
                     $fname = $dataDir . $matches[1] . "/" . $wardcode[$ward->post_id] . "/ResultsJson.json";
@@ -172,6 +191,7 @@ function buildRTree($elections, $dataDir, $party_prefix)
                     if (file_exists($fname))
                     {
                         $json = readJSON($fname);
+                        $info = $json->Constituency->countInfo;
                         $parties = array();    // use this to update party properties once per ward
                         foreach ($json->Constituency->countGroup as $item)
                         {
@@ -179,6 +199,7 @@ function buildRTree($elections, $dataDir, $party_prefix)
                             {
                                 if (array_key_exists($item->Candidate_Id, $cArray))
                                 {
+                                    
                                     if (property_exists($cArray[$item->Candidate_Id], "party_name"))
                                     {
                                         $party = $cArray[$item->Candidate_Id]->party_name;
@@ -189,6 +210,16 @@ function buildRTree($elections, $dataDir, $party_prefix)
                                         $national_parties[$party]->incrementProperty("first_prefs",$item->Candidate_First_Pref_Votes);
                                         $council_parties[$party . $election]->incrementProperty("first_prefs",$item->Candidate_First_Pref_Votes);
                                         $ward_parties[$party . $election . $ward->post_label]->incrementProperty("first_prefs",$item->Candidate_First_Pref_Votes);
+                                        // update CSV data
+                                        $data[$item->Candidate_Id]['first_prefs'] = $item->Candidate_First_Pref_Votes;
+                                        $data[$item->Candidate_Id]['status'] = $item->Status;
+                                        $data[$item->Candidate_Id]['occurred_on_count'] = $item->Occurred_On_Count;
+                                        $data[$item->Candidate_Id]['electorate'] = $info->Total_Electorate;
+                                        $data[$item->Candidate_Id]['total_poll'] = $info->Total_Poll;
+                                        $data[$item->Candidate_Id]['valid_poll'] = $info->Valid_Poll;
+                                        $data[$item->Candidate_Id]['rejected'] = $info->Spoiled;
+                                        $data[$item->Candidate_Id]['quota'] = $info->Quota;
+                                        $data[$item->Candidate_Id]['seats'] = $info->Number_Of_Seats;
                                     }
                                     else
                                     {
@@ -200,8 +231,20 @@ function buildRTree($elections, $dataDir, $party_prefix)
                                     echo "Candidate_Id NOT FOUND: " . $item->Candidate_Id . ", " . $item->Firstname . " " . $item->Surname . ", " . $item->Party_Name . "\n";
                                 }
                             }
+                            else
+                            {
+                                // stages beyond the first add data to CSV
+                                $tkey = "transfers" . sprintf("%02d", $item->Count_Number);
+                                $vkey = "total_votes" . sprintf("%02d", $item->Count_Number);
+                                $data[$item->Candidate_Id][$tkey] = $item->Transfers;
+                                $data[$item->Candidate_Id][$vkey] = $item->Total_Votes;
+                                if (empty($data[$item->Candidate_Id]['status']))
+                                {
+                                    $data[$item->Candidate_Id]['status'] = $item->Status;
+                                    $data[$item->Candidate_Id]['occurred_on_count'] = $item->Occurred_On_Count;
+                                }
+                            }
                         }
-                        $info = $json->Constituency->countInfo;
                         foreach ($parties as $party)
                         {
                             if (array_key_exists($party, $national_parties))
@@ -248,6 +291,17 @@ function buildRTree($elections, $dataDir, $party_prefix)
     classifyParties($root, $party_prefix);
     echo "</pre>\n";
     writeJSON($root, $dataDir . "results-tree.json");
+
+    $csv = array_values($data);  // needs to be a standard array, not associative
+    for ($i=0;$i<count($csv); $i++)
+    {
+        // fill in a status for candidates not elected, but not excluded
+        if (empty($csv[$i]['status']))
+        {
+            $csv[$i]['status'] = "Not elected";
+        }
+    }
+    saveCSV($csv, $dataDir . "council17-mulvenna-org.csv");
 }
 
 //recursive routine to apply prefix and class to party nodes
