@@ -1,42 +1,42 @@
-id,name,honorific_prefix,honorific_suffix,gender,birth_date,election,party_id,party_name,post_id,post_label,mapit_url,elected,email,twitter_username,facebook_page_url,party_ppc_page_url,facebook_personal_url,homepage_url,wikipedia_url,linkedin_url,image_url,proxy_image_url_template,image_copyright,image_uploading_user,image_uploading_user_notes,twitter_user_id,election_date,election_current,party_lists_in_use,party_list_position,gss_code,parlparse_id,theyworkforyou_url,party_ec_id
-22259,Dianne Alexander,,,,,local.midlothian.2017-05-04,party:102,Scottish National Party (SNP),UTW:bonnyrigg,Bonnyrigg,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
-1406,Ian Baxter,Mr,,male,1957-12-23,local.midlothian.2017-05-04,party:130,Scottish Green Party,UTW:bonnyrigg,Bonnyrigg,,,ian.g.baxter@mac.com,ianbaxter_green,,http://midlothiangreens.org.uk/?page_id=445,https://www.facebook.com/ian.g.baxter,http://midlothiangreens.org.uk/,,,https://candidates.democracyclub.org.uk/media/images/54bc73dccb19ebca71e2af8d.png,,,,,21085228,2017-05-04,True,False,,,,,PP130
-22260,Colin Lawrie,,,,,local.midlothian.2017-05-04,party:102,Scottish National Party (SNP),UTW:bonnyrigg,Bonnyrigg,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
-22261,Janet Lay-Douglas,,,,,local.midlothian.2017-05-04,party:52,Conservative and Unionist Party,UTW:bonnyrigg,Bonnyrigg,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP52
-22262,George McIntyre,,,,,local.midlothian.2017-05-04,ynmp-party:2,Independent,UTW:bonnyrigg,Bonnyrigg,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-22263,Derek Milligan,,,,,local.midlothian.2017-05-04,party:53,Labour Party,UTW:bonnyrigg,Bonnyrigg,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
-22264,Louie Lorraine Milliken,,,,,local.midlothian.2017-05-04,party:53,Labour Party,UTW:bonnyrigg,Bonnyrigg,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
-22270,Jim Bryant,,,,,local.midlothian.2017-05-04,ynmp-party:2,Independent,UTW:dalkeith,Dalkeith,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-22271,Colin John Cassidy,,,,,local.midlothian.2017-05-04,party:102,Scottish National Party (SNP),UTW:dalkeith,Dalkeith,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
-22272,Stephen Curran,,,,,local.midlothian.2017-05-04,party:53,Labour Party,UTW:dalkeith,Dalkeith,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
-22273,Margot Russell,,,,,local.midlothian.2017-05-04,party:53,Labour Party,UTW:dalkeith,Dalkeith,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
-20388,Jill Simon,Ms,,female,,local.midlothian.2017-05-04,party:130,Scottish Green Party,UTW:dalkeith,Dalkeith,,,jilliansimon74@gmail.com,,,,,,,,https://candidates.democracyclub.org.uk/media/images/images/20388.png,,public-domain,ianbaxter,,,2017-05-04,True,False,,,,,PP130
-22274,Robin Traquair,,,,,local.midlothian.2017-05-04,party:52,Conservative and Unionist Party,UTW:dalkeith,Dalkeith,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP52
-22275,Gary Young,,,,,local.midlothian.2017-05-04,party:102,Scottish National Party (SNP),UTW:dalkeith,Dalkeith,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
-20390,Helen Armstrong,Ms,,female,,local.midlothian.2017-05-04,party:130,Scottish Green Party,UTW:midlothian-east,Midlothian East,,,helen@sunadal.co.uk,,,,,,,,https://candidates.democracyclub.org.uk/media/images/images/20390.png,,public-domain,ianbaxter,,,2017-05-04,True,False,,,,,PP130
-22276,Kenneth James Baird,,,,,local.midlothian.2017-05-04,party:102,Scottish National Party (SNP),UTW:midlothian-east,Midlothian East,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
-22277,Louise D'Arcy-Greig,,,,,local.midlothian.2017-05-04,party:102,Scottish National Party (SNP),UTW:midlothian-east,Midlothian East,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
-22278,John Hackett,,,,,local.midlothian.2017-05-04,party:53,Labour Party,UTW:midlothian-east,Midlothian East,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
-22279,Robert Hogg,,,,,local.midlothian.2017-05-04,ynmp-party:2,Independent,UTW:midlothian-east,Midlothian East,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-22280,Peter Smaill,,,,,local.midlothian.2017-05-04,party:52,Conservative and Unionist Party,UTW:midlothian-east,Midlothian East,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP52
-22281,Jason Ferry,,,,,local.midlothian.2017-05-04,ynmp-party:2,Independent,UTW:midlothian-south,Midlothian South,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-22282,Cath Johnstone,,,,,local.midlothian.2017-05-04,party:102,Scottish National Party (SNP),UTW:midlothian-south,Midlothian South,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
-22283,Jim Muirhead,,,,,local.midlothian.2017-05-04,party:53,Labour Party,UTW:midlothian-south,Midlothian South,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
-22284,Kieran Munro,,,,,local.midlothian.2017-05-04,party:52,Conservative and Unionist Party,UTW:midlothian-south,Midlothian South,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP52
-22285,Bryan Pottinger,,,,,local.midlothian.2017-05-04,party:53,Labour Party,UTW:midlothian-south,Midlothian South,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
-22286,Ellen Scott,,,,,local.midlothian.2017-05-04,party:102,Scottish National Party (SNP),UTW:midlothian-south,Midlothian South,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
-20389,Malcolm Spaven,Mr,,male,,local.midlothian.2017-05-04,party:130,Scottish Green Party,UTW:midlothian-south,Midlothian South,,,malcolmgspaven@gmail.com,,,,,,,,https://candidates.democracyclub.org.uk/media/images/images/20389.png,,public-domain,ianbaxter,,,2017-05-04,True,False,,,,,PP130
-20387,Helen Blackburn,Ms,,female,1965-10-23,local.midlothian.2017-05-04,party:130,Scottish Green Party,UTW:midlothian-west,Midlothian West,,,helen.blackburn@scottishgreens.org.uk,crazydiamond26,,,,,,,https://candidates.democracyclub.org.uk/media/images/images/20387.png,,public-domain,ianbaxter,,20602578,2017-05-04,True,False,,,,,PP130
-22287,Stephen Blain,,,,,local.midlothian.2017-05-04,party:53,Labour Party,UTW:midlothian-west,Midlothian West,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
-22288,Andrew Coventry,,,,,local.midlothian.2017-05-04,ynmp-party:2,Independent,UTW:midlothian-west,Midlothian West,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-22289,Russell Imrie,,,,,local.midlothian.2017-05-04,party:53,Labour Party,UTW:midlothian-west,Midlothian West,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
-6608,Ross Laird,,,male,,local.midlothian.2017-05-04,party:90,Liberal Democrats,UTW:midlothian-west,Midlothian West,,False,laird.ross@btinternet.com,,,http://www.libdems.org.uk/ross_laird,,,,,,,,,,,2017-05-04,True,False,,,,,PP90
-22290,Kelly Parry,,,,,local.midlothian.2017-05-04,party:102,Scottish National Party (SNP),UTW:midlothian-west,Midlothian West,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
-22291,David Temple,,,,,local.midlothian.2017-05-04,party:102,Scottish National Party (SNP),UTW:midlothian-west,Midlothian West,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
-22292,Pauline Winchester,,,,,local.midlothian.2017-05-04,party:52,Conservative and Unionist Party,UTW:midlothian-west,Midlothian West,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP52
-22265,Ken Brown,,,,,local.midlothian.2017-05-04,party:90,Liberal Democrats,UTW:penicuik,Penicuik,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP90
-20386,James Garry,Mr,,male,,local.midlothian.2017-05-04,party:130,Scottish Green Party,UTW:penicuik,Penicuik,,,jamesa.garry@virgin.net,JamesGarry7,,,,,,,https://candidates.democracyclub.org.uk/media/images/images/20386.png,,public-domain,ianbaxter,,3403349519,2017-05-04,True,False,,,,,PP130
-22266,Andrew Hardie,,,,,local.midlothian.2017-05-04,party:52,Conservative and Unionist Party,UTW:penicuik,Penicuik,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP52
-22267,Debbi McCall,,,,,local.midlothian.2017-05-04,party:102,Scottish National Party (SNP),UTW:penicuik,Penicuik,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
-22268,Adam Montgomery,,,,,local.midlothian.2017-05-04,party:53,Labour Party,UTW:penicuik,Penicuik,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP53
-22269,Joe Wallace,,,,,local.midlothian.2017-05-04,party:102,Scottish National Party (SNP),UTW:penicuik,Penicuik,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
+id,name,honorific_prefix,honorific_suffix,gender,birth_date,election,party_id,party_name,post_id,post_label,mapit_url,elected,email,twitter_username,facebook_page_url,party_ppc_page_url,facebook_personal_url,homepage_url,wikipedia_url,linkedin_url,image_url,proxy_image_url_template,image_copyright,image_uploading_user,image_uploading_user_notes,twitter_user_id,election_date,election_current,party_lists_in_use,party_list_position,old_person_ids,gss_code,parlparse_id,theyworkforyou_url,party_ec_id
+22259,Dianne Alexander,,,,,local.midlothian.2017-05-04,party:102,Scottish National Party (SNP),UTW:bonnyrigg,Bonnyrigg,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,PP102
+1406,Ian Baxter,Mr,,male,1957-12-23,local.midlothian.2017-05-04,party:130,Scottish Green Party,UTW:bonnyrigg,Bonnyrigg,,,ian.g.baxter@mac.com,ianbaxter_green,,http://midlothiangreens.org.uk/?page_id=445,https://www.facebook.com/ian.g.baxter,http://midlothiangreens.org.uk/,,,https://candidates.democracyclub.org.uk/media/images/54bc73dccb19ebca71e2af8d.png,,,,,21085228,2017-05-04,True,False,,,,,,PP130
+22260,Colin Lawrie,,,,,local.midlothian.2017-05-04,party:102,Scottish National Party (SNP),UTW:bonnyrigg,Bonnyrigg,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,PP102
+22261,Janet Lay-Douglas,,,,,local.midlothian.2017-05-04,party:52,Conservative and Unionist Party,UTW:bonnyrigg,Bonnyrigg,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,PP52
+22262,George McIntyre,,,,,local.midlothian.2017-05-04,ynmp-party:2,Independent,UTW:bonnyrigg,Bonnyrigg,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+22263,Derek Milligan,,,,,local.midlothian.2017-05-04,party:53,Labour Party,UTW:bonnyrigg,Bonnyrigg,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,PP53
+22264,Louie Lorraine Milliken,,,,,local.midlothian.2017-05-04,party:53,Labour Party,UTW:bonnyrigg,Bonnyrigg,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,PP53
+22270,Jim Bryant,,,,,local.midlothian.2017-05-04,ynmp-party:2,Independent,UTW:dalkeith,Dalkeith,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+22271,Colin John Cassidy,,,,,local.midlothian.2017-05-04,party:102,Scottish National Party (SNP),UTW:dalkeith,Dalkeith,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,PP102
+22272,Stephen Curran,,,,,local.midlothian.2017-05-04,party:53,Labour Party,UTW:dalkeith,Dalkeith,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,PP53
+22273,Margot Russell,,,,,local.midlothian.2017-05-04,party:53,Labour Party,UTW:dalkeith,Dalkeith,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,PP53
+20388,Jill Simon,Ms,,female,,local.midlothian.2017-05-04,party:130,Scottish Green Party,UTW:dalkeith,Dalkeith,,,jilliansimon74@gmail.com,,,,,,,,https://candidates.democracyclub.org.uk/media/images/images/20388.png,,public-domain,ianbaxter,,,2017-05-04,True,False,,,,,,PP130
+22274,Robin Traquair,,,,,local.midlothian.2017-05-04,party:52,Conservative and Unionist Party,UTW:dalkeith,Dalkeith,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,PP52
+22275,Gary Young,,,,,local.midlothian.2017-05-04,party:102,Scottish National Party (SNP),UTW:dalkeith,Dalkeith,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,PP102
+20390,Helen Armstrong,Ms,,female,,local.midlothian.2017-05-04,party:130,Scottish Green Party,UTW:midlothian-east,Midlothian East,,,helen@sunadal.co.uk,,,,,,,,https://candidates.democracyclub.org.uk/media/images/images/20390.png,,public-domain,ianbaxter,,,2017-05-04,True,False,,,,,,PP130
+22276,Kenneth James Baird,,,,,local.midlothian.2017-05-04,party:102,Scottish National Party (SNP),UTW:midlothian-east,Midlothian East,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,PP102
+22277,Louise D'Arcy-Greig,,,,,local.midlothian.2017-05-04,party:102,Scottish National Party (SNP),UTW:midlothian-east,Midlothian East,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,PP102
+22278,John Hackett,,,,,local.midlothian.2017-05-04,party:53,Labour Party,UTW:midlothian-east,Midlothian East,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,PP53
+22279,Robert Hogg,,,,,local.midlothian.2017-05-04,ynmp-party:2,Independent,UTW:midlothian-east,Midlothian East,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+22280,Peter Smaill,,,,,local.midlothian.2017-05-04,party:52,Conservative and Unionist Party,UTW:midlothian-east,Midlothian East,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,PP52
+22281,Jason Ferry,,,,,local.midlothian.2017-05-04,ynmp-party:2,Independent,UTW:midlothian-south,Midlothian South,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+22282,Cath Johnstone,,,,,local.midlothian.2017-05-04,party:102,Scottish National Party (SNP),UTW:midlothian-south,Midlothian South,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,PP102
+22283,Jim Muirhead,,,,,local.midlothian.2017-05-04,party:53,Labour Party,UTW:midlothian-south,Midlothian South,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,PP53
+22284,Kieran Munro,,,,,local.midlothian.2017-05-04,party:52,Conservative and Unionist Party,UTW:midlothian-south,Midlothian South,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,PP52
+22285,Bryan Pottinger,,,,,local.midlothian.2017-05-04,party:53,Labour Party,UTW:midlothian-south,Midlothian South,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,PP53
+22286,Ellen Scott,,,,,local.midlothian.2017-05-04,party:102,Scottish National Party (SNP),UTW:midlothian-south,Midlothian South,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,PP102
+20389,Malcolm Spaven,Mr,,male,,local.midlothian.2017-05-04,party:130,Scottish Green Party,UTW:midlothian-south,Midlothian South,,,malcolmgspaven@gmail.com,,,,,,,,https://candidates.democracyclub.org.uk/media/images/images/20389.png,,public-domain,ianbaxter,,,2017-05-04,True,False,,,,,,PP130
+20387,Helen Blackburn,Ms,,female,1965-10-23,local.midlothian.2017-05-04,party:130,Scottish Green Party,UTW:midlothian-west,Midlothian West,,,helen.blackburn@scottishgreens.org.uk,crazydiamond26,,,,,,,https://candidates.democracyclub.org.uk/media/images/images/20387.png,,public-domain,ianbaxter,,20602578,2017-05-04,True,False,,,,,,PP130
+22287,Stephen Blain,,,,,local.midlothian.2017-05-04,party:53,Labour Party,UTW:midlothian-west,Midlothian West,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,PP53
+22288,Andrew Coventry,,,,,local.midlothian.2017-05-04,ynmp-party:2,Independent,UTW:midlothian-west,Midlothian West,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+22289,Russell Imrie,,,,,local.midlothian.2017-05-04,party:53,Labour Party,UTW:midlothian-west,Midlothian West,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,PP53
+6608,Ross Laird,,,male,,local.midlothian.2017-05-04,party:90,Liberal Democrats,UTW:midlothian-west,Midlothian West,,False,laird.ross@btinternet.com,,,http://www.libdems.org.uk/ross_laird,,,,,,,,,,,2017-05-04,True,False,,3557,,,,PP90
+22290,Kelly Parry,,,,,local.midlothian.2017-05-04,party:102,Scottish National Party (SNP),UTW:midlothian-west,Midlothian West,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,PP102
+22291,David Temple,,,,,local.midlothian.2017-05-04,party:102,Scottish National Party (SNP),UTW:midlothian-west,Midlothian West,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,PP102
+22292,Pauline Winchester,,,,,local.midlothian.2017-05-04,party:52,Conservative and Unionist Party,UTW:midlothian-west,Midlothian West,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,PP52
+22265,Ken Brown,,,,,local.midlothian.2017-05-04,party:90,Liberal Democrats,UTW:penicuik,Penicuik,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,PP90
+20386,James Garry,Mr,,male,,local.midlothian.2017-05-04,party:130,Scottish Green Party,UTW:penicuik,Penicuik,,,jamesa.garry@virgin.net,JamesGarry7,,,,,,,https://candidates.democracyclub.org.uk/media/images/images/20386.png,,public-domain,ianbaxter,,3403349519,2017-05-04,True,False,,,,,,PP130
+22266,Andrew Hardie,,,,,local.midlothian.2017-05-04,party:52,Conservative and Unionist Party,UTW:penicuik,Penicuik,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,PP52
+22267,Debbi McCall,,,,,local.midlothian.2017-05-04,party:102,Scottish National Party (SNP),UTW:penicuik,Penicuik,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,PP102
+22268,Adam Montgomery,,,,,local.midlothian.2017-05-04,party:53,Labour Party,UTW:penicuik,Penicuik,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,PP53
+22269,Joe Wallace,,,,,local.midlothian.2017-05-04,party:102,Scottish National Party (SNP),UTW:penicuik,Penicuik,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,PP102

@@ -1,61 +1,61 @@
-id,name,honorific_prefix,honorific_suffix,gender,birth_date,election,party_id,party_name,post_id,post_label,mapit_url,elected,email,twitter_username,facebook_page_url,party_ppc_page_url,facebook_personal_url,homepage_url,wikipedia_url,linkedin_url,image_url,proxy_image_url_template,image_copyright,image_uploading_user,image_uploading_user_notes,twitter_user_id,election_date,election_current,party_lists_in_use,party_list_position,gss_code,parlparse_id,theyworkforyou_url,party_ec_id
-21866,Alistair MacLennan,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002608,An Taobh Siar agus Nis,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21865,John Mackay,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002608,An Taobh Siar agus Nis,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21867,John Norman Macleod,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002608,An Taobh Siar agus Nis,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21868,Kenneth Macleod,,,,,local.eilean-siar.2017-05-04,party:102,Scottish National Party (SNP),UTW:S13002608,An Taobh Siar agus Nis,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
-21869,Kenny John Macleod,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002608,An Taobh Siar agus Nis,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21870,Malcolm Ivor McTaggart,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002608,An Taobh Siar agus Nis,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21915,David Blaney,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002600,"Barraigh, Bhatarsaigh, Eirisgeigh agus Uibhist a Deas",,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21919,Iain Archie MacNeil,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002600,"Barraigh, Bhatarsaigh, Eirisgeigh agus Uibhist a Deas",,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21916,Ronald Joseph Mackinnon,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002600,"Barraigh, Bhatarsaigh, Eirisgeigh agus Uibhist a Deas",,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21917,Gerry Macleod,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002600,"Barraigh, Bhatarsaigh, Eirisgeigh agus Uibhist a Deas",,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21918,Calum Macmillan,,,,,local.eilean-siar.2017-05-04,party:102,Scottish National Party (SNP),UTW:S13002600,"Barraigh, Bhatarsaigh, Eirisgeigh agus Uibhist a Deas",,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
-21920,Donald Manford,,,,,local.eilean-siar.2017-05-04,party:102,Scottish National Party (SNP),UTW:S13002600,"Barraigh, Bhatarsaigh, Eirisgeigh agus Uibhist a Deas",,False,dmanford@hotmail.com,,,,,,,,https://candidates.democracyclub.org.uk/media/images/images/21920.png,,profile-photo,lewistbh,permission from candidate to use ,,2017-05-04,True,False,,,,,PP102
-21921,Donnie Steele,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002600,"Barraigh, Bhatarsaigh, Eirisgeigh agus Uibhist a Deas",,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21922,Paul Francis Steele,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002600,"Barraigh, Bhatarsaigh, Eirisgeigh agus Uibhist a Deas",,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21907,Neil MacDonald Beaton,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002601,Beinn na Foghla agus Uibhist a Tuath,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21908,Ken MacBrayne,,,,,local.eilean-siar.2017-05-04,party:52,Conservative and Unionist Party,UTW:S13002601,Beinn na Foghla agus Uibhist a Tuath,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP52
-21909,Roddy MacKay,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002601,Beinn na Foghla agus Uibhist a Tuath,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21912,Roslyn MacPherson,,,female,,local.eilean-siar.2017-05-04,party:102,Scottish National Party (SNP),UTW:S13002601,Beinn na Foghla agus Uibhist a Tuath,,False,roslyn@nuntonhills.net,,https://www.facebook.com/BenbeculaNorthUist,,,,,,https://candidates.democracyclub.org.uk/media/images/images/21912.png,,profile-photo,lewistbh,Permission from candidate to use ,,2017-05-04,True,False,,,,,PP102
-21910,Iain Murdoch Macleod,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002601,Beinn na Foghla agus Uibhist a Tuath,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21911,John Macleod,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002601,Beinn na Foghla agus Uibhist a Tuath,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21913,Uisdean Robertson,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002601,Beinn na Foghla agus Uibhist a Tuath,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21914,Andrew Walker,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002601,Beinn na Foghla agus Uibhist a Tuath,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21871,Donald Finlayson Crichton,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002607,Loch a Tuath,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-6609,Ruaraidh Ferguson,,,male,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002607,Loch a Tuath,,False,,RuaraidhF,,,https://www.facebook.com/ruaraidh.ferguson,,,,https://candidates.democracyclub.org.uk/media/images/553c9cf441b868785b1fe679.png,,profile-photo,edent,"This is the candidate’s twitter profile image, from https://twitter.com/RuaraidhF",124768144,2017-05-04,True,False,,,,,
-21872,Iain C MacIver,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002607,Loch a Tuath,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21873,John A MacIver,,,,,local.eilean-siar.2017-05-04,party:102,Scottish National Party (SNP),UTW:S13002607,Loch a Tuath,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
-21874,Allan Cameron MacLachlan,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002607,Loch a Tuath,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21875,Calum MacLean,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002607,Loch a Tuath,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21898,Finlay Cunningham,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002602,Na Hearadh agus Ceann a Deas nan Loch,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21899,Paul Anthony Finnegan,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002602,Na Hearadh agus Ceann a Deas nan Loch,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21900,Catherine MacDonald,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002602,Na Hearadh agus Ceann a Deas nan Loch,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21901,Fiona Macleod,,,,,local.eilean-siar.2017-05-04,party:102,Scottish National Party (SNP),UTW:S13002602,Na Hearadh agus Ceann a Deas nan Loch,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
-21902,Sheena Macleod,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002602,Na Hearadh agus Ceann a Deas nan Loch,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21903,DJ Macrae,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002602,Na Hearadh agus Ceann a Deas nan Loch,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21904,John Graham Mitchell,,,,,local.eilean-siar.2017-05-04,party:102,Scottish National Party (SNP),UTW:S13002602,Na Hearadh agus Ceann a Deas nan Loch,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP102
-21905,Alex Dan Smith,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002602,Na Hearadh agus Ceann a Deas nan Loch,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21906,Denise Wilson,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002602,Na Hearadh agus Ceann a Deas nan Loch,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-8734,Ranald Fraser,,,male,,local.eilean-siar.2017-05-04,party:52,Conservative and Unionist Party,UTW:S13002603,Sgir'Uige agus Ceann a Tuath nan Loch,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP52
-21895,Norman Alexander MacDonald,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002603,Sgir'Uige agus Ceann a Tuath nan Loch,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21896,Donald Cudig Macleod,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002603,Sgir'Uige agus Ceann a Tuath nan Loch,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21897,Angus Morrison,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002603,Sgir'Uige agus Ceann a Tuath nan Loch,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21889,Don MacDonald,,,,,local.eilean-siar.2017-05-04,party:52,Conservative and Unionist Party,UTW:S13002604,Sgire an Rubha,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,PP52
-21890,Norrie Tomsh MacDonald,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002604,Sgire an Rubha,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21892,John Murdo MacMillan,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002604,Sgire an Rubha,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21891,Alasdair Macleod,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002604,Sgire an Rubha,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21893,Tony Robson,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002604,Sgire an Rubha,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21894,Finlay MacKenzie Stewart,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002604,Sgire an Rubha,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21881,Caroline Linda Brick,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002605,Steòrnabhagh a Deas,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21882,Keith Dodson,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002605,Steòrnabhagh a Deas,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21883,Rae MacKenzie,,,,,local.eilean-siar.2017-05-04,party:102,Scottish National Party (SNP),UTW:S13002605,Steòrnabhagh a Deas,,False,raenel@tiscali.co.uk,,,,,,,,https://candidates.democracyclub.org.uk/media/images/images/21883.png,,public-domain,lewistbh,Publically provided photo ,,2017-05-04,True,False,,,,,PP102
-21884,Shonnie Beag MacRitchie,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002605,Steòrnabhagh a Deas,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21885,Angus McCormack,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002605,Steòrnabhagh a Deas,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21886,Campbell McKenzie,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002605,Steòrnabhagh a Deas,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21887,Derek McPherson,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002605,Steòrnabhagh a Deas,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21888,Charlie Nicolson,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002605,Steòrnabhagh a Deas,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21876,Iain MacLean Macaulay,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002606,Steòrnabhagh a Tuath,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21877,Neil Mackay,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002606,Steòrnabhagh a Tuath,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21878,Roddie Mackay,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002606,Steòrnabhagh a Tuath,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21879,Lesley McKenzie,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002606,Steòrnabhagh a Tuath,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,
-21880,Gordon Murray,,,,,local.eilean-siar.2017-05-04,party:102,Scottish National Party (SNP),UTW:S13002606,Steòrnabhagh a Tuath,,False,gmurrayshfc@yahoo.co.uk,,,,,,,,https://candidates.democracyclub.org.uk/media/images/images/21880.png,,profile-photo,lewistbh,Permission to use from candidate's Facebook,,2017-05-04,True,False,,,,,PP102
+id,name,honorific_prefix,honorific_suffix,gender,birth_date,election,party_id,party_name,post_id,post_label,mapit_url,elected,email,twitter_username,facebook_page_url,party_ppc_page_url,facebook_personal_url,homepage_url,wikipedia_url,linkedin_url,image_url,proxy_image_url_template,image_copyright,image_uploading_user,image_uploading_user_notes,twitter_user_id,election_date,election_current,party_lists_in_use,party_list_position,old_person_ids,gss_code,parlparse_id,theyworkforyou_url,party_ec_id
+21866,Alistair MacLennan,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002608,An Taobh Siar agus Nis,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21865,John Mackay,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002608,An Taobh Siar agus Nis,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21867,John Norman Macleod,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002608,An Taobh Siar agus Nis,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21868,Kenneth Macleod,,,,,local.eilean-siar.2017-05-04,party:102,Scottish National Party (SNP),UTW:S13002608,An Taobh Siar agus Nis,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,PP102
+21869,Kenny John Macleod,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002608,An Taobh Siar agus Nis,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21870,Malcolm Ivor McTaggart,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002608,An Taobh Siar agus Nis,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21915,David Blaney,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002600,"Barraigh, Bhatarsaigh, Eirisgeigh agus Uibhist a Deas",,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21919,Iain Archie MacNeil,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002600,"Barraigh, Bhatarsaigh, Eirisgeigh agus Uibhist a Deas",,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21916,Ronald Joseph Mackinnon,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002600,"Barraigh, Bhatarsaigh, Eirisgeigh agus Uibhist a Deas",,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21917,Gerry Macleod,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002600,"Barraigh, Bhatarsaigh, Eirisgeigh agus Uibhist a Deas",,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21918,Calum Macmillan,,,,,local.eilean-siar.2017-05-04,party:102,Scottish National Party (SNP),UTW:S13002600,"Barraigh, Bhatarsaigh, Eirisgeigh agus Uibhist a Deas",,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,PP102
+21920,Donald Manford,,,,,local.eilean-siar.2017-05-04,party:102,Scottish National Party (SNP),UTW:S13002600,"Barraigh, Bhatarsaigh, Eirisgeigh agus Uibhist a Deas",,False,dmanford@hotmail.com,,,,,,,,https://candidates.democracyclub.org.uk/media/images/images/21920.png,,profile-photo,lewistbh,permission from candidate to use ,,2017-05-04,True,False,,,,,,PP102
+21921,Donnie Steele,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002600,"Barraigh, Bhatarsaigh, Eirisgeigh agus Uibhist a Deas",,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21922,Paul Francis Steele,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002600,"Barraigh, Bhatarsaigh, Eirisgeigh agus Uibhist a Deas",,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21907,Neil MacDonald Beaton,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002601,Beinn na Foghla agus Uibhist a Tuath,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21908,Ken MacBrayne,,,,,local.eilean-siar.2017-05-04,party:52,Conservative and Unionist Party,UTW:S13002601,Beinn na Foghla agus Uibhist a Tuath,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,PP52
+21909,Roddy MacKay,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002601,Beinn na Foghla agus Uibhist a Tuath,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21912,Roslyn MacPherson,,,female,,local.eilean-siar.2017-05-04,party:102,Scottish National Party (SNP),UTW:S13002601,Beinn na Foghla agus Uibhist a Tuath,,False,roslyn@nuntonhills.net,,https://www.facebook.com/BenbeculaNorthUist,,,,,,https://candidates.democracyclub.org.uk/media/images/images/21912.png,,profile-photo,lewistbh,Permission from candidate to use ,,2017-05-04,True,False,,,,,,PP102
+21910,Iain Murdoch Macleod,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002601,Beinn na Foghla agus Uibhist a Tuath,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21911,John Macleod,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002601,Beinn na Foghla agus Uibhist a Tuath,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21913,Uisdean Robertson,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002601,Beinn na Foghla agus Uibhist a Tuath,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21914,Andrew Walker,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002601,Beinn na Foghla agus Uibhist a Tuath,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21871,Donald Finlayson Crichton,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002607,Loch a Tuath,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+6609,Ruaraidh Ferguson,,,male,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002607,Loch a Tuath,,False,,RuaraidhF,,,https://www.facebook.com/ruaraidh.ferguson,,,,https://candidates.democracyclub.org.uk/media/images/553c9cf441b868785b1fe679.png,,profile-photo,edent,"This is the candidate’s twitter profile image, from https://twitter.com/RuaraidhF",124768144,2017-05-04,True,False,,,,,,
+21872,Iain C MacIver,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002607,Loch a Tuath,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21873,John A MacIver,,,,,local.eilean-siar.2017-05-04,party:102,Scottish National Party (SNP),UTW:S13002607,Loch a Tuath,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,PP102
+21874,Allan Cameron MacLachlan,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002607,Loch a Tuath,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21875,Calum MacLean,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002607,Loch a Tuath,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21898,Finlay Cunningham,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002602,Na Hearadh agus Ceann a Deas nan Loch,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21899,Paul Anthony Finnegan,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002602,Na Hearadh agus Ceann a Deas nan Loch,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21900,Catherine MacDonald,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002602,Na Hearadh agus Ceann a Deas nan Loch,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21901,Fiona Macleod,,,,,local.eilean-siar.2017-05-04,party:102,Scottish National Party (SNP),UTW:S13002602,Na Hearadh agus Ceann a Deas nan Loch,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,PP102
+21902,Sheena Macleod,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002602,Na Hearadh agus Ceann a Deas nan Loch,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21903,DJ Macrae,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002602,Na Hearadh agus Ceann a Deas nan Loch,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21904,John Graham Mitchell,,,,,local.eilean-siar.2017-05-04,party:102,Scottish National Party (SNP),UTW:S13002602,Na Hearadh agus Ceann a Deas nan Loch,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,PP102
+21905,Alex Dan Smith,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002602,Na Hearadh agus Ceann a Deas nan Loch,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21906,Denise Wilson,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002602,Na Hearadh agus Ceann a Deas nan Loch,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+8734,Ranald Fraser,,,male,,local.eilean-siar.2017-05-04,party:52,Conservative and Unionist Party,UTW:S13002603,Sgir'Uige agus Ceann a Tuath nan Loch,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,PP52
+21895,Norman Alexander MacDonald,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002603,Sgir'Uige agus Ceann a Tuath nan Loch,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21896,Donald Cudig Macleod,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002603,Sgir'Uige agus Ceann a Tuath nan Loch,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21897,Angus Morrison,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002603,Sgir'Uige agus Ceann a Tuath nan Loch,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21889,Don MacDonald,,,,,local.eilean-siar.2017-05-04,party:52,Conservative and Unionist Party,UTW:S13002604,Sgire an Rubha,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,PP52
+21890,Norrie Tomsh MacDonald,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002604,Sgire an Rubha,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21892,John Murdo MacMillan,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002604,Sgire an Rubha,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21891,Alasdair Macleod,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002604,Sgire an Rubha,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21893,Tony Robson,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002604,Sgire an Rubha,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21894,Finlay MacKenzie Stewart,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002604,Sgire an Rubha,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21881,Caroline Linda Brick,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002605,Steòrnabhagh a Deas,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21882,Keith Dodson,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002605,Steòrnabhagh a Deas,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21883,Rae MacKenzie,,,,,local.eilean-siar.2017-05-04,party:102,Scottish National Party (SNP),UTW:S13002605,Steòrnabhagh a Deas,,False,raenel@tiscali.co.uk,,,,,,,,https://candidates.democracyclub.org.uk/media/images/images/21883.png,,public-domain,lewistbh,Publically provided photo ,,2017-05-04,True,False,,,,,,PP102
+21884,Shonnie Beag MacRitchie,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002605,Steòrnabhagh a Deas,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21885,Angus McCormack,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002605,Steòrnabhagh a Deas,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21886,Campbell McKenzie,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002605,Steòrnabhagh a Deas,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21887,Derek McPherson,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002605,Steòrnabhagh a Deas,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21888,Charlie Nicolson,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002605,Steòrnabhagh a Deas,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21876,Iain MacLean Macaulay,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002606,Steòrnabhagh a Tuath,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21877,Neil Mackay,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002606,Steòrnabhagh a Tuath,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21878,Roddie Mackay,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002606,Steòrnabhagh a Tuath,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21879,Lesley McKenzie,,,,,local.eilean-siar.2017-05-04,ynmp-party:2,Independent,UTW:S13002606,Steòrnabhagh a Tuath,,False,,,,,,,,,,,,,,,2017-05-04,True,False,,,,,,
+21880,Gordon Murray,,,,,local.eilean-siar.2017-05-04,party:102,Scottish National Party (SNP),UTW:S13002606,Steòrnabhagh a Tuath,,False,gmurrayshfc@yahoo.co.uk,,,,,,,,https://candidates.democracyclub.org.uk/media/images/images/21880.png,,profile-photo,lewistbh,Permission to use from candidate's Facebook,,2017-05-04,True,False,,,,,,PP102
