@@ -16,8 +16,7 @@ buildCtree($elections, $outDir, $party_prefix);
 //build a results tree to present party / councillor data at national, council and ward level
 function buildRTree($elections, $dataDir, $party_prefix)
 {
-    global $elected;
-    global $elected_without_contest;
+    global $elected_without_contest;  // array of candidate IDs standing in uncontested wards
     global $blank_row;
 
     $national_parties = array();
@@ -371,8 +370,6 @@ function classifyParties($root, $party_prefix)
 //build JSON data for the jstree with Parties as the children of the root using wardinfo and the candidate JSON for each council
 function buildPTree($elections, $dataDir, $party_prefix)
 {
-    global $elected;
-
     $parties = array();
     $councils = array();
     $wards = array();
