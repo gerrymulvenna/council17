@@ -6,18 +6,138 @@ $dataRoot = "https://candidates.democracyclub.org.uk/media/candidates-";
 $outDir = "../2017/SCO/";
 
 $elected = getElectedCandidates($outDir, $elected_without_contest);
-buildRtree($elections, $outDir, $party_prefix);
-buildData(array_keys($elections), $dataRoot, $outDir);
-buildPtree($elections, $outDir, $party_prefix);
-buildCtree($elections, $outDir, $party_prefix);
+buildRtree($elections, $outDir, $party_prefix, $party_colors);
+//buildData(array_keys($elections), $dataRoot, $outDir);
+//buildPtree($elections, $outDir, $party_prefix);
+//buildCtree($elections, $outDir, $party_prefix);
 
 //boundaryWards(array_keys($elections), $outDir, "boundary-wardinfo.csv");
 
+// process the transfer data in the STV results, includes a "Labour / Co-op" fudge
+function recordtransfers(&$tx, $data, $council, $ward)
+{
+    // first pass determine the donor at each stage
+    $donors = array();
+    $totals = array();
+    $max = 0;
+    foreach ($data as $item)
+    {
+        if ($item->Count_Number > $max)
+        {
+            $max = $item->Count_Number;
+        }
+        if ($item->Count_Number > 1)
+        {
+            if ($item->Transfers < 0)
+            {
+                $party = ($item->Party_Name == "Labour and Co-operative Party") ? "Labour Party" : $item->Party_Name;
+                $donors[$item->Count_Number] = $party;
+                addTransfers($tx, '.', $party, "total", 0 - $item->Transfers);
+                addTransfers($tx, $council, $party, "total", 0 - $item->Transfers);
+                addTransfers($tx, "$council/$ward", $party, "total",  0 - $item->Transfers);
+                $totals[$item->Count_Number] = 0 - $item->Transfers;
+            }
+        }
+    }
+
+    // second pass record transfers to recipient parties, accumulating subtotals of transfers so we can derive the non-transferred amounts in the next pass
+    $subtotals = array();
+    foreach ($data as $item)
+    {
+        if ($item->Count_Number > 1)
+        {
+            if ($item->Transfers > 0)
+            {
+                $party = ($item->Party_Name == "Labour and Co-operative Party") ? "Labour Party" : $item->Party_Name;
+                addTransfers($tx, '.', $donors[$item->Count_Number], $party, $item->Transfers);
+                addTransfers($tx, $council, $donors[$item->Count_Number], $party, $item->Transfers);
+                addTransfers($tx, "$council/$ward", $donors[$item->Count_Number], $party, $item->Transfers);
+                if (isset($subtotals[$item->Count_Number]))
+                {
+                    $subtotals[$item->Count_Number] += $item->Transfers;
+                }
+                else
+                {
+                    $subtotals[$item->Count_Number] = $item->Transfers;
+                }
+            }
+        }
+    }
+
+    // third pass to derive the non-transferred amounts 
+    for ($stage = 2; $stage <= $max; $stage++)
+    {
+        addTransfers($tx, '.', $donors[$stage], "Not transferred", $totals[$stage] - $subtotals[$stage]);
+        addTransfers($tx, $council, $donors[$stage], "Not transferred", $totals[$stage] - $subtotals[$stage]);
+        addTransfers($tx, "$council/$ward", $donors[$stage], "Not transferred", $totals[$stage] - $subtotals[$stage]);
+    }
+}
+
+function addTransfers(&$tx, $context, $donor, $recipient, $value)
+{
+    if (!array_key_exists($context, $tx))
+    {
+        $tx[$context] = array();
+    }
+    if (!array_key_exists($donor, $tx[$context]))
+    {
+        $tx[$context][$donor] = array();
+    }
+    if (array_key_exists($recipient, $tx[$context][$donor]))
+    {
+        $tx[$context][$donor][$recipient] += $value;
+    }
+    else
+    {
+        $tx[$context][$donor][$recipient] = $value;
+    }
+}
+
+class transfer
+{
+    public $donor;
+    public $donor_short;
+    public $recipient;
+    public $color;
+    public $amount;
+    public $total;
+
+    function __construct($donor, $short, $recipient, $color, $amount, $total)
+    {
+        $this->donor = $donor;
+        $this->donor_short = $short;
+        $this->recipient = $recipient;
+        $this->color = $color;
+        $this->amount = $amount;
+        $this->total = $total;
+    }
+}
+
+function saveTransfers($tx, $dir, $pp, $pc)
+{
+    foreach ($tx as $context => $data)
+    {
+        $json = array();
+        foreach ($data as $donor => $transfers)
+        {
+            foreach ($transfers as $recipient => $value)
+            {
+                if ($recipient != "total")
+                {
+                    $json[] = new transfer($donor, $pp[stripParty($donor)], $pp[stripParty($recipient)], $pc[stripParty($donor)], 100 * $value / $data[$donor]["total"], $data[$donor]["total"]);
+                }
+            }
+        }
+        writeJSON($json, $dir . $context . "/transfers.json");
+    }
+}
+        
+
 //build a results tree to present party / councillor data at national, council and ward level
-function buildRTree($elections, $dataDir, $party_prefix)
+function buildRTree($elections, $dataDir, $party_prefix, $party_colors)
 {
     global $elected_without_contest;  // array of candidate IDs standing in uncontested wards
-    global $blank_row;
+    global $blank_row;                // field specification for CSV structure
 
     $national_parties = array();
     $councils = array();
@@ -27,6 +147,7 @@ function buildRTree($elections, $dataDir, $party_prefix)
     $wardcode = array();
     $wardname = array();
     $cwards = array();
+    $txdata = array();
     $id = 0;
     $ctotal = 0;
     $root = new jstree_node(++$id,"root","Scotland");
@@ -192,6 +313,7 @@ function buildRTree($elections, $dataDir, $party_prefix)
                     if (file_exists($fname))
                     {
                         $json = readJSON($fname);
+                        recordtransfers($txdata, $json->Constituency->countGroup, $matches[1], $wardcode[$ward->post_id]);
                         $info = $json->Constituency->countInfo;
                         $parties = array();    // use this to update party properties once per ward
                         foreach ($json->Constituency->countGroup as $item)
@@ -292,6 +414,7 @@ function buildRTree($elections, $dataDir, $party_prefix)
     classifyParties($root, $party_prefix);
     echo "</pre>\n";
     writeJSON($root, $dataDir . "results-tree.json");
+    saveTransfers($txdata, $dataDir, $party_prefix, $party_colors);
 
     $csv = array_values($data);  // needs to be a standard array, not associative
     for ($i=0;$i<count($csv); $i++)

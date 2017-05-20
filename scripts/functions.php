@@ -95,6 +95,7 @@ $elections = array(
 // used in the jstree data to prefix each candidate and set the icon class
 $party_prefix = array(
 "Christian-Party-Proclaiming-Christs-Lordship" => "CPPCL",
+"Christian-Party-" => "CPPCL",
 "Socialist-Labour-Party" => "SocLab",
 "Social-Democratic-Party" => "SDP",
 "A-Better-Britain-_-Unionist-Party" => "ABBUP",
@@ -117,7 +118,38 @@ $party_prefix = array(
 "Solidarity---Scotlands-Socialist-Movement" =>"Solidarity",
 "National-Front" =>"NF",
 "West-Dunbartonshire-Community-Party" =>"WDCP",
-"RISE---Respect-Independence-Socialism-and-Environmentalism" =>"RISE");
+"RISE---Respect-Independence-Socialism-and-Environmentalism" =>"RISE",
+"Not-transferred" => "N/T");
+
+// this array of party abbreviations mirrors the classes in parties.css
+// used in the jstree data to prefix each candidate and set the icon class
+$party_colors = array(
+"Christian-Party-Proclaiming-Christs-Lordship" => "#3B0C72",
+"Christian-Party-" => "#3B0C72",
+"Socialist-Labour-Party" => "#ff0000",
+"Social-Democratic-Party" => "#ff0000",
+"A-Better-Britain-_-Unionist-Party" => "#2E4F98",
+"Scottish-Unionist-Party" => "#034AA6",
+"The-Rubbish-Party" => "#7ec0ee",
+"Independent" =>"#B0BEC5",
+"Independent-Network" =>"#B0BEC5",
+"Independent-Alliance-North-Lanarkshire" =>"#B0BEC5",
+"Scottish-Green-Party" =>"#43B02A",
+"Orkney-Manifesto-Group" =>"#008083",
+"Trade-Unionist-and-Socialist-Coalition" =>"#E5327E",
+"Liberal-Democrats" =>"#F2B027",
+"Labour-Party" =>"#cb2710",
+"Labour-and-Co-operative-Party" =>"#cb2710",
+"Conservative-and-Unionist-Party" =>"#00386B",
+"Scottish-National-Party-SNP" =>"#fef48b",
+"Scottish-Socialist-Party" =>"#DE3136",
+"UK-Independence-Party-UKIP" =>"112, 48, 160",
+"Scottish-Libertarian-Party" =>"0, 97, 167",
+"Solidarity---Scotlands-Socialist-Movement" =>"#054a24",
+"National-Front" =>"#B4716B",
+"West-Dunbartonshire-Community-Party" =>"#ED1A23",
+"RISE---Respect-Independence-Socialism-and-Environmentalism" =>"#F25D25",
+"Not-transferred" => "#000000");
 
 
 function _combine_array(&$row, $key, $header) {
