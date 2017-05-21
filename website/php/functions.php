@@ -285,8 +285,7 @@ selectCouncil("Pick a different council from this list?");
 echo '			<div id="wardinfo"><h5>Choose a ward in this council from the map</h5></div>
                             <div id="quota"></div>
 
-			<div id="candidates">
-            <div class="row">
+			<div id="candidates"></div>
                 <h3>Transfer analysis</h3>
                 <div class="alert alert-info" role="alert">This matrix summarises the percentage of transfers between candidates from each party. It is based on only those count stages with a transfer from one single candidate. It is only indicative of the transfers that were calculated during
                     the actual count process, and cannot account for all ballots cast in a constituency.</div>
@@ -294,8 +293,6 @@ echo '			<div id="wardinfo"><h5>Choose a ward in this council from the map</h5><
                 <div id="transfers"></div>
                 <div id="matrixtooltip"></div>
                 <p>N/T = votes not transferred</p>
-            </div>
-            </div>
 
 		</div>
 ';

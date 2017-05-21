@@ -118,8 +118,10 @@ function saveTransfers($tx, $dir, $pp, $pc)
     foreach ($tx as $context => $data)
     {
         $json = array();
+        uasort($data, "cmpDonors");
         foreach ($data as $donor => $transfers)
         {
+            uksort($transfers, "cmpRecipients");
             foreach ($transfers as $recipient => $value)
             {
                 if ($recipient != "total")
@@ -131,6 +133,49 @@ function saveTransfers($tx, $dir, $pp, $pc)
         writeJSON($json, $dir . $context . "/transfers.json");
     }
 }
+
+// sort by totals descending
+function cmpDonors($a, $b)
+{
+    if ($a["total"] == $b["total"])
+    {
+        return 0;
+    }
+    else
+    {
+        return ($a["total"] > $b["total"]) ? -1 : 1;
+    }
+}
+
+// sort in alphabetical order, but leave N/T last, total is ignored ultimately (note: needs uksort to sort by keys)
+function cmpRecipients($a, $b)
+{
+    if ($a == "total")
+    {
+        return 1;
+    }
+    if ($b == "total")
+    {
+        return -1;
+    }
+    if ($a == "Not transferred")
+    {
+        return 1;
+    }
+    if ($b == "Mot transferred")
+    {
+        return -1;
+    }
+    if ($a == $b)
+    {
+        return 0;
+    }
+    else
+    {
+        return ($a < $b) ? -1 : 1;
+    }
+}
+
         
 
 //build a results tree to present party / councillor data at national, council and ward level
@@ -412,9 +457,10 @@ function buildRTree($elections, $dataDir, $party_prefix, $party_colors)
     }
     echo "<pre>\n";
     classifyParties($root, $party_prefix);
-    echo "</pre>\n";
     writeJSON($root, $dataDir . "results-tree.json");
     saveTransfers($txdata, $dataDir, $party_prefix, $party_colors);
+    echo "</pre>\n";
+
 
     $csv = array_values($data);  // needs to be a standard array, not associative
     for ($i=0;$i<count($csv); $i++)
