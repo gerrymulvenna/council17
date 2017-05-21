@@ -700,3 +700,11 @@ a.result {
   line-height: 16px;
 }
 
+#transfers {
+	margin: 10px auto;
+	overflow: auto;
+}
+
+#council-list-2012 {
+	display: none;
+}
