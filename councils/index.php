@@ -29,10 +29,6 @@ echo '</script>
 	
 selectCouncil("Select a council from this list or the map");
 echo'
-                <div id="transfers"></div>
-                <div id="matrixtooltip"></div>
-                <p>N/T = votes not transferred</p>
-            </div>
 			<div id="candidates"></div>
 		</div>';
 foot();
