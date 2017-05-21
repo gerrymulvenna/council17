@@ -191,9 +191,13 @@ function head($title, $mapName, $mapLat, $mapLong, $mapZoom, $mapProperty, $mapU
     <meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js"></script>
+    <script type="text/javascript" src="http://d3js.org/d3.v3.js"></script>
+    <script type="text/javascript" src="http://d3js.org/d3.hexbin.v0.min.js"></script>
 	<script src="http://cdn.rawgit.com/calvinmetcalf/leaflet-ajax/gh-pages/dist/leaflet.ajax.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/lodash/4.11.1/lodash.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/json5/0.3.0/json5.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vega/2.5.2/vega.min.js"></script>
     <script src="/website/js/jstree/jstree.min.js"></script>
   <script src="/website/js/jstree/jstree.types.js"></script>
   <script src="/website/js/jstree/jstree.search.js"></script>
@@ -282,7 +286,17 @@ echo '			<div id="wardinfo"><h5>Choose a ward in this council from the map</h5><
                             <div id="quota"></div>
 
 			<div id="candidates">
+            <div class="row">
+                <h3>Transfer analysis</h3>
+                <div class="alert alert-info" role="alert">This matrix summarises the percentage of transfers between candidates from each party. It is based on only those count stages with a transfer from one single candidate. It is only indicative of the transfers that were calculated during
+                    the actual count process, and cannot account for all ballots cast in a constituency.</div>
+                <h4 id="transfers_constituency"></h4>
+                <div id="transfers"></div>
+                <div id="matrixtooltip"></div>
+                <p>N/T = votes not transferred</p>
             </div>
+            </div>
+
 		</div>
 ';
 }
@@ -294,6 +308,7 @@ echo '
 if (!$infopage)
 {
     echo '
+        <script src="/website/js/transfers.js"></script>
         <script src="/website/js/map.js"></script>
         <script src="/website/js/script.js"></script>
     ';

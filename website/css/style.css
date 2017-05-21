@@ -686,3 +686,17 @@ a.result {
 #mapLink {
 	margin-top: 10px;
 }
+
+#matrixtooltip {
+  display: none;
+  position: absolute;
+  float: left;
+  background-color: #444;
+  padding: 10px;
+  z-index: 1000;
+  font-size: 80%;
+  color: #fff;
+  font-family: sans-serif;
+  line-height: 16px;
+}
+

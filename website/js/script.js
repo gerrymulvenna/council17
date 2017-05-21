@@ -159,6 +159,9 @@ candidates.update = function() {
 			}
 			this.innerHTML += ack;
 			updateTitle(wardstats[0].ward_name, wardstats[0].council);
+			slug = wardstats[0].election + "/" + wardstats[0].map_ward_code;
+			getTransferData(slug);
+			loadViz();
 		}
 	}
 };
