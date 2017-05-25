@@ -52,7 +52,15 @@ function analyse_transfer_profile($infile)
         }
     } while ($values[0] > 0);
 
+    $names[0] = "";   //placeholder
+    for ($i=1; $i<=$candidates; $i++)
+    {
+        $names[$i] = preg_replace('/"/', '', trim(array_shift($profile)));  //candidate
+    }
+    $names[0] = preg_replace('/"/', '', trim(array_shift($profile)));       //ward
+
     echo "<pre>\n";
+    print_r($names);
     print_r($votes);
     print_r($npref);
     print_r($score);
