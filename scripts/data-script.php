@@ -7,9 +7,9 @@ $outDir = "../2017/SCO/";
 
 $elected = getElectedCandidates($outDir, $elected_without_contest);
 buildRtree($elections, $outDir, $party_prefix, $party_colors);
-buildData(array_keys($elections), $dataRoot, $outDir);
-buildPtree($elections, $outDir, $party_prefix);
-buildCtree($elections, $outDir, $party_prefix);
+//buildData(array_keys($elections), $dataRoot, $outDir);
+//buildPtree($elections, $outDir, $party_prefix);
+//buildCtree($elections, $outDir, $party_prefix);
 
 //boundaryWards(array_keys($elections), $outDir, "boundary-wardinfo.csv");
 
@@ -256,6 +256,7 @@ function buildRTree($elections, $dataDir, $party_prefix, $party_colors)
                             // need a new council node, new ward node 
                             $council_node = new jstree_node(++$id, "council", $council);
                             $council_node->children[] = new jstree_node(++$id, "container", "Explore by wards");
+                            $council_node->properties['slug'] = $matches[1];
                             $councils[$election] = $council_node;
                             $council_container->children[] = $council_node;
                             $ward_node = new jstree_node(++$id, "ward", $wardname[$ward->post_id]);
@@ -458,6 +459,12 @@ function buildRTree($elections, $dataDir, $party_prefix, $party_colors)
     echo "<pre>\n";
     classifyParties($root, $party_prefix);
     writeJSON($root, $dataDir . "results-tree.json");
+
+    // just Scotland-level data
+    $summary = getSummary($root->children[0], $party_prefix, $party_colors);
+    print_r($summary);
+    writeJSON($summary, $dataDir . "summary.json");
+
     saveTransfers($txdata, $dataDir, $party_prefix, $party_colors);
     echo "</pre>\n";
 
@@ -472,6 +479,44 @@ function buildRTree($elections, $dataDir, $party_prefix, $party_colors)
         }
     }
     saveCSV($csv, $dataDir . "council17-mulvenna-org.csv");
+}
+
+// return an array of councils containing information about the parties with most seats in each council
+// takes the "Explore by council" jsnode as its starting point
+// assumes that there is a "slug" property in each council node
+function getSummary($cnode, $party_prefix, $party_colors)
+{
+    $data = array();
+    foreach($cnode->children as $node)
+    {
+        $council = $node->properties['slug'];
+        $data[] = array('council'=>$council, 'no_seats' =>$node->no_seats, 'biggest_parties' => getPartiesWithMostSeats($node, $party_prefix, $party_colors));
+    }
+    return($data);
+}
+
+// return an array of one or more parties who have the most seats in a given council, specified by the council node ($parent)
+// assumes there is an "icon" property in each party note specifying the party name (with hyphens)
+function getPartiesWithMostSeats($parent, $party_prefix, $party_colors)
+{
+    $parties = array();
+    $max = 0;
+    foreach($parent->children as $party)
+    {
+        if ($party->no_seats > $max)
+        {
+            $max = $party->no_seats;
+        }
+    }
+    foreach($parent->children as $party)
+    {
+        if ($party->no_seats == $max)
+        {
+            $name = $party->icon;
+            $parties[] = array('party' => $party_prefix[$name], 'color' => $party_colors[$name], 'no_seats' => $party->no_seats);
+        }
+    }
+    return($parties);
 }
 
 //recursive routine to apply prefix and class to party nodes

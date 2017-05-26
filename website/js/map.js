@@ -1,8 +1,8 @@
 	var searchParams = getSearchParams();
 
 	var layerStyle = {
-		weight: 2,
-		color: 'blue',
+		weight: 1,
+		color: 'black',
 		fillOpacity: 0.1,
 		opacity: 1
 		};
