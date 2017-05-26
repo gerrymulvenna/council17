@@ -105,6 +105,7 @@
 							}
 						}
 					});		
+					legend.update('Colours denote parties with<br>most seats per council');
 				});
 			}
 
@@ -146,6 +147,18 @@
 		}
 	};
 	tips.addTo(map);
+
+	// element to display a legend about colouring
+	var legend = L.control();
+	legend.setPosition("bottomleft");
+	legend.onAdd = function (map) {
+		this._div = L.DomUtil.create('div', 'legend'); // create a div with a class "legend" inside the map
+		return this._div;
+	};
+	legend.update = function (msg) {
+		this._div.innerHTML = msg;
+	};
+	legend.addTo(map);
 
 	// detect if user agent is iOS and provide two-tap guidance
 	if ( /iPhone|iPad|iPod/.test(navigator.userAgent)) {
