@@ -80,22 +80,35 @@
             maxZoom: 18,
             }).addTo(map);
 	
-	boundaries.addTo(map);			
+	boundaries.addTo(map);
 
 	$(window).load(function(e) {
 			if (searchParams['ward'])
-				{
+			{
 					var initlayer = getLayer (boundaries, mapWardDesc, searchParams['ward']);
 					if (initlayer)
 					{
 						layerSelect(initlayer, false);
 					}
-				}
+			}
+			else if (mapName == 'scotland')
+			{
+				$.getJSON('/2017/SCO/summary.json', function (data) {
+					$.each( data, function( index, element ) {
+						if (element.biggest_parties.length == 1)
+						{
+							council = element.council.toUpperCase().replace(/-/g,'_');
+							var thisLayer = getLayer(boundaries, 'FILE_NAME', council);
+							if (thisLayer)
+							{
+								thisLayer.setStyle({fillColor: element.biggest_parties[0].color, fillOpacity: 0.9});
+							}
+						}
+					});		
+				});
+			}
+
 	});
-	
-	$(window).resize(function(e) {
-	});
-	
 	
 	// detect if user agent is a mobile device and if so disable map zooming panning etc
 	if ( /Android|webOS|iPhone|iPad|iPod|Blackberry|IEMobile|Opera Mini|Mobi/.test(navigator.userAgent)) {
@@ -138,6 +151,7 @@
 	if ( /iPhone|iPad|iPod/.test(navigator.userAgent)) {
 		tips.update('Tap once to preview<br>a second time to select');
 	}
+
 
 
 // examine the boundaries object (b) for a feature with a matching property (key == val)
