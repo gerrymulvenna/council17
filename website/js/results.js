@@ -251,7 +251,14 @@ function tableHTML(t)
 			html += '<tr>';
 			for (col=0; col<t[row].length;col++ )
 			{
-				html +='<td>' + t[row][col] + '</td>';
+				if (isNaN(t[row][col]))
+				{
+					html +='<td>' + t[row][col] + '</td>';
+				}
+				else
+				{
+					html +='<td align="right">' + t[row][col] + '</td>';
+				}
 			}
 			html += '</tr>' + "\n";
 		}

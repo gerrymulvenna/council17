@@ -217,7 +217,6 @@ function head($title, $mapName, $mapLat, $mapLong, $mapZoom, $mapProperty, $mapU
 	<link rel="stylesheet" type="text/css" href="/website/css/enhanced.css" media="screen  and (min-width: 50.5em)" />
     <link rel="stylesheet" href="/website/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/website/js/jstree/themes/default/style.min.css" />
-	<link rel="icon" type="image/png" href="/website/image/c17-icon-150x150.png" sizes="150x150" />
 	<link rel="icon" type="image/png" href="/website/image/favicon-32x32.png" sizes="32x32" />
 	<link rel="icon" type="image/png" href="/website/image/favicon-16x16.png" sizes="16x16" />
 		<!--[if (lt IE 9)&(!IEMobile)]>

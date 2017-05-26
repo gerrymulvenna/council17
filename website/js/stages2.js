@@ -57,7 +57,7 @@ function animateStages(year,council,constituencyFolder) {
         var quota = parseInt(constituency["Quota"]);
         var seats = parseInt(constituency["Number_Of_Seats"]);
         var turnout = ((parseInt(constituency["Total_Poll"])/parseInt(constituency["Total_Electorate"])) * 100).toFixed(2);
-        $("#quota").html("<p>Electorate: " + numberWithCommas(parseInt(constituency["Total_Electorate"])) + ", Turnout: " + numberWithCommas(parseInt(constituency["Total_Poll"])) + " (" + turnout + "%), Valid votes: " + numberWithCommas(parseInt(constituency["Valid_Poll"])) + ", Quota: " + quota + "</p>\n");
+        $("#quota").html("<p>Electorate: " + numberWithCommas(parseInt(constituency["Total_Electorate"])) + ", Turnout: " + numberWithCommas(parseInt(constituency["Total_Poll"])) + " (" + turnout + "%), Valid votes: " + numberWithCommas(parseInt(constituency["Valid_Poll"])) + ", Quota: " + numberWithCommas(quota) + "</p>\n");
         $("#seats-span").text(seats);
         $("#theline").css({top:17+(seats)*30});
         $("#theline").width(postPosition);

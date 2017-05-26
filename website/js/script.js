@@ -131,7 +131,7 @@ candidates.update = function() {
 					var seats = parseInt(cinfo.Number_Of_Seats);
 					result = '<a class="result" href="/results?year=2017&council=' + wardstats[0].election + '&ward=' + wardstats[0].map_ward_code + '">View result</a>';
 					var turnout = ((parseInt(cinfo.Total_Poll)/parseInt(cinfo.Total_Electorate)) * 100).toFixed(2);
-					$("#quota").html("<p>Electorate: " + numberWithCommas(parseInt(cinfo.Total_Electorate)) + ", Turnout: " + numberWithCommas(parseInt(cinfo.Total_Poll)) + " (" + turnout + "%), Valid votes: " + numberWithCommas(parseInt(cinfo.Valid_Poll)) + ", Quota: " + quota + "</p>\n");
+					$("#quota").html("<p>Electorate: " + numberWithCommas(parseInt(cinfo.Total_Electorate)) + ", Turnout: " + numberWithCommas(parseInt(cinfo.Total_Poll)) + " (" + turnout + "%), Valid votes: " + numberWithCommas(parseInt(cinfo.Valid_Poll)) + ", Quota: " + numberWithCommas(quota) + "</p>\n");
                 }});
 
 			var candidates = ward[0].candidates.sort(cmpSurnames);
