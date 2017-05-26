@@ -27,7 +27,7 @@
 	{
 		boundaries.setStyle(layerStyle);
 		layer.setStyle({
-				weight: 4,
+				weight: 2,
 				fillOpacity: 0.7
 		});
 		if (!L.Browser.ie && !L.Browser.opera) {
@@ -93,15 +93,37 @@
 			}
 			else if (mapName == 'scotland')
 			{
+				var stripes = [];   // an array of stripes objects
+				// if we're looking at map of Scotland, we can colour the councils according to the results
 				$.getJSON('/2017/SCO/summary.json', function (data) {
 					$.each( data, function( index, element ) {
 						if (element.biggest_parties.length == 1)
 						{
-							council = element.council.toUpperCase().replace(/-/g,'_');
+							var council = element.council.toUpperCase().replace(/-/g,'_');
 							var thisLayer = getLayer(boundaries, 'FILE_NAME', council);
 							if (thisLayer)
 							{
 								thisLayer.setStyle({fillColor: element.biggest_parties[0].color, fillOpacity: 0.9});
+							}
+						}
+						else if (element.biggest_parties.length == 2)  // we'll use the leaflet.pattern plugin to do stripes. Luckily we don't have a three-way tie
+						{
+							// Custom Stripes.
+							stripes[element.council] = new L.StripePattern({
+								color: element.biggest_parties[0].color,
+								opacity: 0.9,
+								spaceColor: element.biggest_parties[1].color,
+								spaceOpacity: 0.9,
+								weight: 4,
+								spaceWeight: 4,
+								angle: 45
+							});
+							var council = element.council.toUpperCase().replace(/-/g,'_');
+							stripes[element.council].addTo(map);
+							var thisLayer = getLayer(boundaries, 'FILE_NAME', council);
+							if (thisLayer)
+							{
+								thisLayer.setStyle({fillPattern: stripes[element.council], fillOpacity: 0.9});
 							}
 						}
 					});		
