@@ -152,6 +152,59 @@ $party_colors = array(
 "Not-transferred" => "#000000");
 
 
+class Overview
+{
+    public $electorate;
+    public $total_poll;
+    public $valid_poll;
+    public $no_seats;
+    public $no_candidates;
+    public $no_wards;
+    public $name;
+    public $slug;
+    public $type;
+    public $parties;
+
+    function __construct($name, $slug, $type)
+    {
+        $this->name = $name;
+        $this->slug = $slug;
+        $this->type = $type;
+        $this->parties = array();
+        $this->electorate = 0;
+        $this->total_poll = 0;
+        $this->valid_poll = 0;
+        $this->no_seats = 0;
+        $this->no_candidates = 0;
+        $this->no_wards = 0;
+   }
+}
+
+class Party
+{
+    public $no_seats;
+    public $no_candidates;
+    public $no_wards;
+    public $first_prefs;
+    public $quotas;
+    public $name;
+    public $short;
+    public $color;
+
+    function __construct($name, $short, $color)
+    {
+        $this->name = $name;
+        $this->short = $short;
+        $this->color = $color;
+        $this->no_seats = 0;
+        $this->no_candidates = 0;
+        $this->no_wards = 0;
+        $this->first_prefs = 0;
+        $this->quotas = 0;
+    }
+}
+
+
 function _combine_array(&$row, $key, $header) {
     if (count($row) > 1 )
     {

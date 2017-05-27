@@ -346,9 +346,6 @@ function buildRTree($elections, $dataDir, $party_prefix, $party_colors)
                             $root->no_seats++;;
                             $council_node->no_seats++;
                             $ward_node->no_seats++;
-                            $root->incrementProperty("no_wards");
-                            $council_node->incrementProperty("no_wards");
-                            $ward_node->incrementProperty("no_wards");
                             $row['status'] = 'Elected';
                         }
                         $data[$candidate->id] = $row;
@@ -444,6 +441,10 @@ function buildRTree($elections, $dataDir, $party_prefix, $party_colors)
                         $councils[$election]->incrementProperty("valid_poll", $info->Valid_Poll);
                         $wards[$election . $ward->post_label]->incrementProperty("valid_poll", $info->Valid_Poll);
 
+                        $root->incrementProperty("no_wards");
+                        $councils[$election]->incrementProperty("no_wards");
+                        $wards[$election . $ward->post_label]->incrementProperty("no_wards");
+
                         $root->no_seats += $info->Number_Of_Seats;
                         $councils[$election]->no_seats += $info->Number_Of_Seats;
                         $wards[$election . $ward->post_label]->no_seats += $info->Number_Of_Seats;
@@ -451,6 +452,9 @@ function buildRTree($elections, $dataDir, $party_prefix, $party_colors)
                     else
                     {
                         // probably an uncontested ward, which are dealt with in the main candidate data loop abovve
+                        $root->incrementProperty("no_wards");
+                        $council_node->incrementProperty("no_wards");
+                        $ward_node->incrementProperty("no_wards");
                     }
                 }
             }
@@ -462,10 +466,33 @@ function buildRTree($elections, $dataDir, $party_prefix, $party_colors)
 
     // just Scotland-level data
     $summary = getSummary($root->children[0], $party_prefix, $party_colors);
-    print_r($summary);
     writeJSON($summary, $dataDir . "summary.json");
 
-    saveTransfers($txdata, $dataDir, $party_prefix, $party_colors);
+    $overview = new Overview("All 32 Councils", "scotland","root");
+    $overview->electorate = $root->properties['electorate'];
+    $overview->total_poll = $root->properties['total_poll'];
+    $overview->valid_poll = $root->properties['valid_poll'];
+    $overview->no_seats = $root->no_seats;
+    $overview->no_candidates = $root->no_candidates;
+    $overview->no_wards = $root->properties['no_wards'];
+
+    for ($i = 1; $i < count($root->children); $i++)   //skip element 0, which is just the container
+    {
+        $name = $root->children[$i]->icon;
+        $short = $party_prefix[$name];
+        $color = $party_colors[$name];
+        $party = new Party($name, $short, $color);
+        $party->no_seats = $root->children[$i]->no_seats;
+        $party->no_candidates = $root->children[$i]->no_candidates;
+        $party->no_wards = $root->children[$i]->properties['no_wards'];
+        $party->first_prefs = $root->children[$i]->properties['first_prefs'];
+        $party->quotas = $root->children[$i]->properties['quotas'];
+        $overview->parties[] = $party;
+    }
+    writeJSON($overview, $dataDir . "overview.json");
+
+
+//    saveTransfers($txdata, $dataDir, $party_prefix, $party_colors);
     echo "</pre>\n";
 
 
