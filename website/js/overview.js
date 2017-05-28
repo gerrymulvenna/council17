@@ -1,5 +1,5 @@
-function overview_by_var(year, max, primary, secondary, singular, plural) {
-    $("#overview").html("");
+function overview_by_var(year, primary, secondary, singular, plural, refvar, target_div) {
+    $(target_div).html("");
 
 	var speed = 1;
     var leftPadding = 10;
@@ -30,13 +30,18 @@ function overview_by_var(year, max, primary, secondary, singular, plural) {
             return json;
         })();
     if(json.parties.length){
+		var max = 0;
 		var parties = [];
 		var rankings = [];
 		var rank = 0;
-		// exclude parties without seats, store ranking by var descending
+		// exclude parties without seats, store ranking by var descending, calculate max value
 		$.each(json.parties.sort(cmpPrimary), function(index, element) {
 			if (element[primary] > 0)
 			{	
+				if (element[primary] > max)
+				{
+					max = element[primary];
+				}
 				rankings[element.short] = rank++;
 				parties.push(element);
 			}
@@ -47,8 +52,7 @@ function overview_by_var(year, max, primary, secondary, singular, plural) {
         var seats = parseInt(json.no_seats);
         var turnout = ((parseInt(json.total_poll)/parseInt(json.electorate)) * 100).toFixed(2);
 		var rej_pc = ((parseInt(json.total_poll - json.valid_poll)/parseInt(json.total_poll)) * 100).toFixed(2);
-        $("#quota").html("<p>Electorate: " + numberWithCommas(parseInt(json.electorate)) + ", turnout: " + numberWithCommas(parseInt(json.total_poll)) + " (" + turnout + "%),<br>valid votes: " + numberWithCommas(parseInt(json.valid_poll)) + ", rejected: " + numberWithCommas(json.total_poll - json.valid_poll) + " (" + rej_pc + "%)</p>\n");
-        $("#seats-span").text(seats);
+        $("#electorate").html("<p>Electorate: " + numberWithCommas(parseInt(json.electorate)) + ", turnout: " + numberWithCommas(parseInt(json.total_poll)) + " (" + turnout + "%),<br>valid votes: " + numberWithCommas(parseInt(json.valid_poll)) + ", rejected: " + numberWithCommas(json.total_poll - json.valid_poll) + " (" + rej_pc + "%)</p>\n");
         var qFactor = voteWidth/max; //all seat counts are multiplied by this to get a div width in proportion
 
         displayOverview();  //show the animated bar chart
@@ -79,12 +83,12 @@ function overview_by_var(year, max, primary, secondary, singular, plural) {
 	//the magic, simple enough, append some divs and animate their width's to final position
     //then animate their top to final position and move the name div at the same time
     function displayOverview(){
-		$("#overview").height(parties.length*barHeight);
+		$(target_div).height(parties.length*barHeight);
         for(var j=0;j<parties.length;j++){
              $('<div id="cname'+parties[j].short+'" class="partyLabel" title="' + parties[j].name + '" style="top:' + (topMargin + (j*barHeight)) + 'px;left:10px;">' + parties[j].short + '</div>')
-            .appendTo("#overview");
+            .appendTo(target_div);
             $('<div data-candidate="'+parties[j].short+'" id="candidate' + parties[j].short+'" class="no-seats ' + parties[j].name +'" style="top:' + (topMargin + j*barHeight) +'px;left:'+ startLeft +'px;"></div>')
-            .appendTo("#overview").text(parties[j][primary])
+            .appendTo(target_div).text(parties[j][primary])
             .animate( {width:parties[j][primary] * qFactor}, {duration:1500*speed, complete:rankParties});
         }
     }
@@ -103,3 +107,25 @@ function overview_by_var(year, max, primary, secondary, singular, plural) {
 	}
 
 }
+
+$(document).ready(function() {
+    $(".tabs-menu a").click(function(event) {
+        event.preventDefault();
+        $(this).parent().addClass("current");
+        $(this).parent().siblings().removeClass("current");
+        var tab = $(this).attr("href");
+        $(".tab-content").not(tab).css("display", "none");
+		$(tab).html("");
+        $(tab).fadeIn(400, function(){
+			switch(tab)
+			{
+				case '#no_seats':
+					overview_by_var(2017, 'no_seats', 'first_prefs', 'councillor', 'councillors', 'no_seats', '#no_seats');
+					break;
+				case '#first_prefs':
+					overview_by_var(2017, 'first_prefs', 'no_seats', 'first preference', 'first preferences', 'valid_poll', '#first_prefs');
+					break;
+			}
+		});
+    });
+});

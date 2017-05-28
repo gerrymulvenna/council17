@@ -129,7 +129,7 @@
 					});		
 					legend.update('Colours denote parties with<br>most seats per council');
 				});
-				overview_by_var(2017, 431, 'no_seats', 'first_prefs', 'councillor', 'councillors');
+				overview_by_var(2017, 'no_seats', 'first_prefs', 'councillor', 'councillors', 'no_seats', '#no_seats');
 			}
 
 	});

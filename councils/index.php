@@ -30,8 +30,18 @@ echo '</script>
 	
 selectCouncil("Select a council from this list or the map");
 echo'
-                <div id="quota"></div>
-                <div id="overview"></div>
+            <div id="electorate"></div>
+            <div id="tabs-container">
+                <ul class="tabs-menu">
+                    <li class="current"><a href="#no_seats">Councillors</a></li>
+                    <li><a href="#first_prefs">First Preferences</a></li>
+                    <li><a href="#quotas">Quotas per ward</a></li>
+                </ul>
+                <div class="tab">
+                    <div id="no_seats" class="tab-content"></div>
+                    <div id="first_prefs" class="tab-content"></div>
+                    <div id="tab-3" class="tab-content"></div>
+                </div>
             </div>
             <div id="candidates"></div>
 		</div>';
