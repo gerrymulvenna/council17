@@ -1,4 +1,3 @@
-
 // display summary party data in a bar chart for a given year
 // primary is the main variable, sorted by primary, secondary desc
 // singular and plural are suffix string descriptors for the variable
@@ -12,9 +11,9 @@ function overview_by_var(year, primary, secondary, singular, plural, refvar, tar
     var nameSpace = 55;
     var startLeft = leftPadding+nameSpace;
     var voteWidth = 325;
-	if (startLeft + voteWidth > screen.width)
+	if (startLeft + voteWidth > screen.width - 20)
 	{
-		voteWidth = screen.width - startLeft;
+		voteWidth = screen.width - startLeft - 20;
 	}
     var topMargin = 0;
 	var barHeight = 30;
