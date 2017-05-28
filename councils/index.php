@@ -25,7 +25,7 @@ echo '</script>
 <div class="content">
 			<div id="map"></div>
             <div id="details">
-                <h2 id="breadcrumb">Results across all 32 Scottish councils</h2>
+                <h3 id="breadcrumb">Results: all 32 Scottish councils (4 May 2017)</h3>
 ';
 	
 selectCouncil("Select a council from this list or the map");

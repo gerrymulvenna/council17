@@ -5,7 +5,11 @@ function overview_by_seats(year, max) {
     var leftPadding = 10;
     var nameSpace = 55;
     var startLeft = leftPadding+nameSpace;
-    var voteWidth = 325; // default = 600
+    var voteWidth = 325;
+	if (startLeft + voteWidth > screen.width)
+	{
+		voteWidth = screen.width - startLeft;
+	}
     var postPosition = leftPadding + nameSpace + voteWidth;
     var topMargin = 0;
 	var barHeight = 30;
@@ -43,7 +47,7 @@ function overview_by_seats(year, max) {
         var seats = parseInt(json.no_seats);
         var turnout = ((parseInt(json.total_poll)/parseInt(json.electorate)) * 100).toFixed(2);
 		var rej_pc = ((parseInt(json.total_poll - json.valid_poll)/parseInt(json.total_poll)) * 100).toFixed(2);
-        $("#quota").html("<p>Electorate: " + numberWithCommas(parseInt(json.electorate)) + ", turnout: " + numberWithCommas(parseInt(json.total_poll)) + " (" + turnout + "%), valid votes: " + numberWithCommas(parseInt(json.valid_poll)) + ", rejected: " + numberWithCommas(json.total_poll - json.valid_poll) + " (" + rej_pc + "%)</p>\n");
+        $("#quota").html("<p>Electorate: " + numberWithCommas(parseInt(json.electorate)) + ", turnout: " + numberWithCommas(parseInt(json.total_poll)) + " (" + turnout + "%),<br>valid votes: " + numberWithCommas(parseInt(json.valid_poll)) + ", rejected: " + numberWithCommas(json.total_poll - json.valid_poll) + " (" + rej_pc + "%)</p>\n");
         $("#seats-span").text(seats);
         var qFactor = voteWidth/max; //all seat counts are multiplied by this to get a div width in proportion
 
