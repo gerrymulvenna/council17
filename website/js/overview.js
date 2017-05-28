@@ -85,10 +85,6 @@ function overview_by_seats(year, max) {
 			.animate({top:(topMargin + j*barHeight)},{duration:500*speed
 				,start:function(){
                     $("#candidate"+$(this).data('candidate')).animate({top:topMargin+(rankings[$(this).data('candidate')]*barHeight)},500*speed)
-                }
-			})
-			.animate({top:(topMargin + j*barHeight)},{duration:500*speed
-				,start:function(){
                     $("#cname"+$(this).data('candidate')).animate({top:topMargin+(rankings[$(this).data('candidate')]*barHeight)},500*speed)
                 }
             });
