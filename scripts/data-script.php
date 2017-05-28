@@ -486,7 +486,7 @@ function buildRTree($elections, $dataDir, $party_prefix, $party_colors)
         $party->no_candidates = $root->children[$i]->no_candidates;
         $party->no_wards = $root->children[$i]->properties['no_wards'];
         $party->first_prefs = $root->children[$i]->properties['first_prefs'];
-        $party->quotas = $root->children[$i]->properties['quotas'];
+        $party->quotas = round($root->children[$i]->properties['first_prefs'] / $root->children[$i]->properties['quotas'], 2);
         $overview->parties[] = $party;
     }
     writeJSON($overview, $dataDir . "overview.json");

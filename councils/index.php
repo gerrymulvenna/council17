@@ -40,7 +40,7 @@ echo'
                 <div class="tab">
                     <div id="no_seats" class="tab-content"></div>
                     <div id="first_prefs" class="tab-content"></div>
-                    <div id="tab-3" class="tab-content"></div>
+                    <div id="quotas" class="tab-content"></div>
                 </div>
             </div>
             <div id="candidates"></div>

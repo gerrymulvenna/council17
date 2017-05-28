@@ -1,6 +1,11 @@
+
+// display summary party data in a bar chart for a given year
+// primary is the main variable, sorted by primary, secondary desc
+// singular and plural are suffix string descriptors for the variable
+// refvar is the top-level variable from which a percentage can be derived, leave blank if no percentage appropriate
+// target_div is the div ID (with # prefix) in which the bar chart is rendered
 function overview_by_var(year, primary, secondary, singular, plural, refvar, target_div) {
     $(target_div).html("");
-
 	var target = target_div.substr(1);   // strip the first char (#) from target_div so we can use it as identifier segment
 	var speed = 1;
     var leftPadding = 10;
@@ -89,16 +94,16 @@ function overview_by_var(year, primary, secondary, singular, plural, refvar, tar
              $('<div id="' + target + '_name_' + parties[j].short.toUpperCase() + '" class="partyLabel" title="' + parties[j].name + '" style="top:' + (topMargin + (j*barHeight)) + 'px;left:10px;">' + parties[j].short + '</div>')
             .appendTo(target_div);
             $('<div data-' + target + '="' + parties[j].short.toUpperCase() + '" id="' + target + '_number_' + parties[j].short.toUpperCase() + '" class="no-seats ' + parties[j].name +'" style="top:' + (topMargin + j*barHeight) +'px;left:'+ startLeft +'px;"></div>')
-            .appendTo(target_div).text(parseInt(parties[j][primary], 10))
+            .appendTo(target_div).text(parseFloat(parties[j][primary]))
             .animate( {width:parties[j][primary] * qFactor}, {duration:1500*speed, complete:rankParties});
         }
     }
 
 	function appendSuffix()
 	{
-		var num = parseInt($(this).text());
+		var num = parseFloat($(this).text());
 		suffix = (num == 1) ? " " + singular : " " + plural;
-		share = " (" + Math.round(num * 1000 / json[refvar]) / 10 + "%)";
+		share = (json.hasOwnProperty(refvar)) ? " (" + Math.round(num * 1000 / json[refvar]) / 10 + "%)" : "";
 		$(this).text(numberWithCommas(num) + suffix + share);
 	}
 
@@ -127,6 +132,9 @@ $(document).ready(function() {
 					break;
 				case '#first_prefs':
 					overview_by_var(2017, 'first_prefs', 'no_seats', 'first pref', 'first prefs', 'valid_poll', '#first_prefs');
+					break;
+				case '#quotas':
+					overview_by_var(2017, 'quotas', 'no_wards', 'quota per ward', 'quotas per ward', '', '#quotas');
 					break;
 			}
 		});
