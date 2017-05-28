@@ -77,17 +77,25 @@ function overview_by_seats(year, max) {
     function displayOverview(){
 		$("#overview").height(parties.length*barHeight);
         for(var j=0;j<parties.length;j++){
-             $('<div id="cname'+parties[j].short+'" class="partyLabel" style="top:' + (topMargin + (j*barHeight)) + 'px;left:10px;">' + parties[j].short + '</div>')
+             $('<div id="cname'+parties[j].short+'" class="partyLabel" title="' + parties[j].name + '" style="top:' + (topMargin + (j*barHeight)) + 'px;left:10px;">' + parties[j].short + '</div>')
             .appendTo("#overview");
-            $('<div data-candidate="'+parties[j].short+'" id="candidate' + parties[j].short+'" class="votes ' + parties[j].name +'" style="top:' + (topMargin + j*barHeight) +'px;left:'+ startLeft +'px;"></div>')
-            .appendTo("#overview")
-            .animate({width:parties[j].no_seats * qFactor},1500*speed).text(parties[j].no_seats)
-			.animate({top:(topMargin + j*barHeight)},{duration:500*speed
-				,start:function(){
-                    $("#candidate"+$(this).data('candidate')).animate({top:topMargin+(rankings[$(this).data('candidate')]*barHeight)},500*speed)
-                    $("#cname"+$(this).data('candidate')).animate({top:topMargin+(rankings[$(this).data('candidate')]*barHeight)},500*speed)
-                }
-            });
+            $('<div data-candidate="'+parties[j].short+'" id="candidate' + parties[j].short+'" class="no-seats ' + parties[j].name +'" style="top:' + (topMargin + j*barHeight) +'px;left:'+ startLeft +'px;"></div>')
+            .appendTo("#overview").text(parties[j].no_seats)
+            .animate( {width:parties[j].no_seats * qFactor}, {duration:1500*speed, complete:rankParties});
         }
     }
+
+	function appendSuffix()
+	{
+		suffix = ($(this).text() == "1") ? " councillor" : " councillors";
+		share = " (" + Math.round(parseInt($(this).text()) * 1000 / json.no_seats) / 10 + "%)";
+		$(this).text($(this).text() + suffix + share);
+	}
+
+	function rankParties()
+	{
+		$("#candidate"+$(this).data('candidate')).animate({top:topMargin+(rankings[$(this).data('candidate')]*barHeight)},500*speed, appendSuffix);
+		$("#cname"+$(this).data('candidate')).animate({top:topMargin+(rankings[$(this).data('candidate')]*barHeight)},500*speed);
+	}
+
 }

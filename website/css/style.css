@@ -738,3 +738,20 @@ a.result {
     text-overflow:ellipsis;
 }
 
+.no-seats {
+	font-size: 1em;
+    height: 25px;
+    width: 20px;
+    position: absolute;
+    fill: #B0BEC5;
+    background: #B0BEC5;
+    color: #fff; // Default colours for independents, non-specified parties
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: white;
+    padding-top: 3px;
+    padding-left: 3px;
+    box-sizing: border-box;
+    text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
