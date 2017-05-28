@@ -35,7 +35,7 @@ echo'
                 <ul class="tabs-menu">
                     <li class="current"><a href="#no_seats">Councillors</a></li>
                     <li><a href="#first_prefs">First Preferences</a></li>
-                    <li><a href="#quotas">Quotas per ward</a></li>
+                    <li><a href="#quotas">Quotas</a></li>
                 </ul>
                 <div class="tab">
                     <div id="no_seats" class="tab-content"></div>
