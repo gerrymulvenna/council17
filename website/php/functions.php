@@ -63,8 +63,7 @@ function results_head($title, $name, $twimg)
             $title = $desc;
         }
     }
-    echo '
-<!DOCTYPE html>
+    echo '<!DOCTYPE html>
 <html>
 <head>';
     echo"    <title>$title</title>\n";
@@ -111,8 +110,7 @@ echo '
 
 function results_content()
 {
-echo '
-        <div class="cta">
+echo '        <div class="cta">
             <strong>Please note: official results are published on each council website upon full completion of the counts in all wards for that council.</strong>
             <div id="seats_summary" style="background-color: #ffffff; margin: auto; color: #212121; border-bottom: solid; border-bottom-width: 1px;"></div>
         </div>
@@ -182,8 +180,7 @@ function head($title, $mapName, $mapLat, $mapLong, $mapZoom, $mapProperty, $mapU
             }
         }
     }
-    echo '
-<!DOCTYPE html>
+    echo '<!DOCTYPE html>
 <html>
 <head>';
     echo"    <title>$title</title>\n";

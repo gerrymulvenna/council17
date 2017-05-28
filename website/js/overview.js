@@ -1,4 +1,4 @@
-function overview_by_seats(year, max) {
+function overview_by_var(year, max, primary, secondary, singular, plural) {
     $("#overview").html("");
 
 	var speed = 1;
@@ -33,9 +33,9 @@ function overview_by_seats(year, max) {
 		var parties = [];
 		var rankings = [];
 		var rank = 0;
-		// exclude parties without seats, store ranking by no_seats descending
-		$.each(json.parties.sort(cmpSeats), function(index, element) {
-			if (element.no_seats > 0)
+		// exclude parties without seats, store ranking by var descending
+		$.each(json.parties.sort(cmpPrimary), function(index, element) {
+			if (element[primary] > 0)
 			{	
 				rankings[element.short] = rank++;
 				parties.push(element);
@@ -63,17 +63,17 @@ function overview_by_seats(year, max) {
 		return ((a.short.toUpperCase() > b.short.toUpperCase()) ? 1: -1);
 	}
 
-	function cmpSeats(a, b)
+	function cmpPrimary(a, b)
 	{
-		if (a.no_seats == b.no_seats)
+		if (a[primary] == b[primary])
 		{
-			if (a.first_prefs == b.first_prefs)
+			if (a[secondary] == b[secondary])
 			{
 				return (0);
 			}
-			return ((a.first_prefs > b.first_prefs) ? -1: 1);
+			return ((a[secondary] > b[secondary]) ? -1: 1);
 		}
-		return ((a.no_seats > b.no_seats) ? -1: 1);
+		return ((a[primary] > b[primary]) ? -1: 1);
 	}
 
 	//the magic, simple enough, append some divs and animate their width's to final position
@@ -84,15 +84,15 @@ function overview_by_seats(year, max) {
              $('<div id="cname'+parties[j].short+'" class="partyLabel" title="' + parties[j].name + '" style="top:' + (topMargin + (j*barHeight)) + 'px;left:10px;">' + parties[j].short + '</div>')
             .appendTo("#overview");
             $('<div data-candidate="'+parties[j].short+'" id="candidate' + parties[j].short+'" class="no-seats ' + parties[j].name +'" style="top:' + (topMargin + j*barHeight) +'px;left:'+ startLeft +'px;"></div>')
-            .appendTo("#overview").text(parties[j].no_seats)
-            .animate( {width:parties[j].no_seats * qFactor}, {duration:1500*speed, complete:rankParties});
+            .appendTo("#overview").text(parties[j][primary])
+            .animate( {width:parties[j][primary] * qFactor}, {duration:1500*speed, complete:rankParties});
         }
     }
 
 	function appendSuffix()
 	{
-		suffix = ($(this).text() == "1") ? " councillor" : " councillors";
-		share = " (" + Math.round(parseInt($(this).text()) * 1000 / json.no_seats) / 10 + "%)";
+		suffix = ($(this).text() == "1") ? " " + singular : " " + plural;
+		share = " (" + Math.round(parseInt($(this).text()) * 1000 / json[primary]) / 10 + "%)";
 		$(this).text($(this).text() + suffix + share);
 	}
 
