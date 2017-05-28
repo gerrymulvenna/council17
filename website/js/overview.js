@@ -1,6 +1,7 @@
 function overview_by_var(year, primary, secondary, singular, plural, refvar, target_div) {
     $(target_div).html("");
 
+	var target = target_div.substr(1);   // strip the first char (#) from target_div so we can use it as identifier segment
 	var speed = 1;
     var leftPadding = 10;
     var nameSpace = 55;
@@ -10,7 +11,6 @@ function overview_by_var(year, primary, secondary, singular, plural, refvar, tar
 	{
 		voteWidth = screen.width - startLeft;
 	}
-    var postPosition = leftPadding + nameSpace + voteWidth;
     var topMargin = 0;
 	var barHeight = 30;
 
@@ -36,13 +36,13 @@ function overview_by_var(year, primary, secondary, singular, plural, refvar, tar
 		var rank = 0;
 		// exclude parties without seats, store ranking by var descending, calculate max value
 		$.each(json.parties.sort(cmpPrimary), function(index, element) {
-			if (element[primary] > 0)
+			if (parseFloat(element[primary]) > 0)
 			{	
-				if (element[primary] > max)
+				if (parseFloat(element[primary]) > max)
 				{
-					max = element[primary];
+					max = parseFloat(element[primary]);
 				}
-				rankings[element.short] = rank++;
+				rankings[element.short.toUpperCase()] = rank++;
 				parties.push(element);
 			}
 		});
@@ -69,41 +69,44 @@ function overview_by_var(year, primary, secondary, singular, plural, refvar, tar
 
 	function cmpPrimary(a, b)
 	{
-		if (a[primary] == b[primary])
+		if (parseFloat(a[primary]) == parseFloat(b[primary]))
 		{
-			if (a[secondary] == b[secondary])
+			if (parseFloat(a[secondary]) == parseFloat(b[secondary]))
 			{
 				return (0);
 			}
-			return ((a[secondary] > b[secondary]) ? -1: 1);
+			return ((parseFloat(a[secondary]) > parseFloat(b[secondary])) ? -1: 1);
 		}
-		return ((a[primary] > b[primary]) ? -1: 1);
+		return ((parseFloat(a[primary]) > parseFloat(b[primary])) ? -1: 1);
 	}
 
 	//the magic, simple enough, append some divs and animate their width's to final position
     //then animate their top to final position and move the name div at the same time
     function displayOverview(){
 		$(target_div).height(parties.length*barHeight);
+		$(target_div).html("");
         for(var j=0;j<parties.length;j++){
-             $('<div id="cname'+parties[j].short+'" class="partyLabel" title="' + parties[j].name + '" style="top:' + (topMargin + (j*barHeight)) + 'px;left:10px;">' + parties[j].short + '</div>')
+             $('<div id="' + target + '_name_' + parties[j].short.toUpperCase() + '" class="partyLabel" title="' + parties[j].name + '" style="top:' + (topMargin + (j*barHeight)) + 'px;left:10px;">' + parties[j].short + '</div>')
             .appendTo(target_div);
-            $('<div data-candidate="'+parties[j].short+'" id="candidate' + parties[j].short+'" class="no-seats ' + parties[j].name +'" style="top:' + (topMargin + j*barHeight) +'px;left:'+ startLeft +'px;"></div>')
-            .appendTo(target_div).text(parties[j][primary])
+            $('<div data-' + target + '="' + parties[j].short.toUpperCase() + '" id="' + target + '_number_' + parties[j].short.toUpperCase() + '" class="no-seats ' + parties[j].name +'" style="top:' + (topMargin + j*barHeight) +'px;left:'+ startLeft +'px;"></div>')
+            .appendTo(target_div).text(parseInt(parties[j][primary], 10))
             .animate( {width:parties[j][primary] * qFactor}, {duration:1500*speed, complete:rankParties});
         }
     }
 
 	function appendSuffix()
 	{
-		suffix = ($(this).text() == "1") ? " " + singular : " " + plural;
-		share = " (" + Math.round(parseInt($(this).text()) * 1000 / json[primary]) / 10 + "%)";
-		$(this).text($(this).text() + suffix + share);
+		var num = parseInt($(this).text());
+		suffix = (num == 1) ? " " + singular : " " + plural;
+		share = " (" + Math.round(num * 1000 / json[refvar]) / 10 + "%)";
+		$(this).text(numberWithCommas(num) + suffix + share);
 	}
 
 	function rankParties()
 	{
-		$("#candidate"+$(this).data('candidate')).animate({top:topMargin+(rankings[$(this).data('candidate')]*barHeight)},500*speed, appendSuffix);
-		$("#cname"+$(this).data('candidate')).animate({top:topMargin+(rankings[$(this).data('candidate')]*barHeight)},500*speed);
+		var short = $(this).data(target);
+		$('#' + target + '_name_'  + short).animate({top:topMargin+(rankings[short]*barHeight)},500*speed);
+		$('#' + target + '_number_' + short).animate({top:topMargin+(rankings[short]*barHeight)},500*speed, appendSuffix);
 	}
 
 }
@@ -123,7 +126,7 @@ $(document).ready(function() {
 					overview_by_var(2017, 'no_seats', 'first_prefs', 'councillor', 'councillors', 'no_seats', '#no_seats');
 					break;
 				case '#first_prefs':
-					overview_by_var(2017, 'first_prefs', 'no_seats', 'first preference', 'first preferences', 'valid_poll', '#first_prefs');
+					overview_by_var(2017, 'first_prefs', 'no_seats', 'first pref', 'first prefs', 'valid_poll', '#first_prefs');
 					break;
 			}
 		});
