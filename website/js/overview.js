@@ -11,9 +11,9 @@ function overview_by_var(year, primary, secondary, singular, plural, refvar, tar
     var nameSpace = 55;
     var startLeft = leftPadding+nameSpace;
     var voteWidth = 325;
-	if (startLeft + voteWidth > screen.width - 20)
+	if (startLeft + voteWidth > screen.width - 40)
 	{
-		voteWidth = screen.width - startLeft - 20;
+		voteWidth = screen.width - startLeft - 40;
 	}
     var topMargin = 0;
 	var barHeight = 30;
