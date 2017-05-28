@@ -717,3 +717,24 @@ a.result {
 #council-list-2012 {
 	display: none;
 }
+
+#overview {
+    position: relative;
+	margin-bottom: 35px;
+	margin-right: 15px;
+	margin-top: 20px;
+}
+
+#details {
+	display: inline-block;
+}
+
+.partyLabel{
+    height:25px;
+    width:150px;
+    position:absolute;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+

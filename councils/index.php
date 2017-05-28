@@ -24,12 +24,16 @@ echo "    var mapTitle = 'Scotland';\n";
 echo '</script>
 <div class="content">
 			<div id="map"></div>
-			<h2 id="breadcrumb">Scotland</h2>
+            <div id="details">
+                <h2 id="breadcrumb">Scotland</h2>
 ';
 	
 selectCouncil("Select a council from this list or the map");
 echo'
-			<div id="candidates"></div>
+                <div id="quota"></div>
+                <div id="overview"></div>
+            </div>
+            <div id="candidates"></div>
 		</div>';
 foot();
 ?>

@@ -13,9 +13,6 @@ $mapProperty = 'NAME';  // the property in the geojson file with the name of the
 $mapUnit = 'Ward';           // either Council or Ward
 $mapWardDesc= 'CODE';        // the property in the geojson file with the unique ward identifier
 
-// function head($title, $mapName, $mapLat, $mapLong, $mapZoom, $mapProperty, $mapUnit, $mapWardDesc, $twimg)
-head("#council17 $council_name - Map-based interface to crowd-sourced data for the Scottish Council elections 2017", $slug, $mapLat, $mapLong, $mapZoom, $mapProperty, $mapUnit, $mapWardDesc, "/website/image/$slug.png");
-
 // ------ below here should be the same for each council --------
 
 // function head($title, $mapName, $mapLat, $mapLong, $mapZoom, $mapProperty, $mapUnit, $mapWardDesc, $twimg)
