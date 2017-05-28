@@ -111,9 +111,9 @@
 							// Custom Stripes.
 							stripes[element.council] = new L.StripePattern({
 								color: element.biggest_parties[0].color,
-								opacity: 0.9,
+								opacity: 1,
 								spaceColor: element.biggest_parties[1].color,
-								spaceOpacity: 0.9,
+								spaceOpacity: 1,
 								weight: 4,
 								spaceWeight: 4,
 								angle: 45
