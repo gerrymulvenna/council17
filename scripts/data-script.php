@@ -392,7 +392,7 @@ function buildRTree($elections, $dataDir, $party_prefix, $party_colors)
                                 }
                                 else
                                 {
-                                    echo "Candidate_Id NOT FOUND: " . $item->Candidate_Id . ", " . $item->Firstname . " " . $item->Surname . ", " . $item->Party_Name . "\n";
+                                    echo "Candidate_Id NOT FOUND: " . $item->Candidate_Id . ", " . $item->Firstname . " " . $item->Surname . ", " . $item->Party_Name . "<br>\n";
                                 }
                             }
                             else
@@ -458,7 +458,6 @@ function buildRTree($elections, $dataDir, $party_prefix, $party_colors)
             }
         }
     }
-    echo "<pre>\n";
     classifyParties($root, $party_prefix);
     writeJSON($root, $dataDir . "results-tree.json");
 
@@ -536,8 +535,6 @@ function buildRTree($elections, $dataDir, $party_prefix, $party_colors)
 
 
 //    saveTransfers($txdata, $dataDir, $party_prefix, $party_colors);
-    echo "</pre>\n";
-
 
     $csv = array_values($data);  // needs to be a standard array, not associative
     for ($i=0;$i<count($csv); $i++)
@@ -602,7 +599,8 @@ function classifyParties($root, $party_prefix)
         }
         else
         {
-            $suffix = "";
+            $suffix =  number_format($root->no_seats) . (($root->no_seats == 1) ? " councillor" : " councillors");
+            $suffix .= ", uncontested ward";
         }
         $root->text =  "<strong>" . $root->text . "</strong>";
         $root->text .= " <em>" . $suffix . "</em>";
@@ -752,7 +750,6 @@ function buildPTree($elections, $dataDir, $party_prefix)
         }
     }
     $root->sortbycandidate();
-    $root->listChildren();
     foreach ($root->children as $party_node)
     {
         $party = stripParty($party_node->text);

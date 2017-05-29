@@ -19,7 +19,7 @@ id,name,honorific_prefix,honorific_suffix,gender,birth_date,election,party_id,pa
 20671,James Ferguson,,,,,local.south-lanarkshire.2017-05-04,party:130,Scottish Green Party,UTW:bothwell-and-uddingston,Bothwell and Uddingston,,,,,,,,,,,,,,,,,2017-05-04,False,False,,,,,,PP130,
 22784,Kenny McCreary,,,,,local.south-lanarkshire.2017-05-04,party:52,Conservative and Unionist Party,UTW:bothwell-and-uddingston,Bothwell and Uddingston,,False,,,,,,,,,,,,,,,2017-05-04,False,False,,,,,,PP52,
 22785,James McGuigan,,,,,local.south-lanarkshire.2017-05-04,party:102,Scottish National Party (SNP),UTW:bothwell-and-uddingston,Bothwell and Uddingston,,False,,,,,,,,,,,,,,,2017-05-04,False,False,,,,,,PP102,
-22786,Colin Robb,,,,,local.south-lanarkshire.2017-05-04,party:90,Liberal Democrats,UTW:bothwell-and-uddingston,Bothwell and Uddingston,,False,,,,,,,,,,,,,,,2017-05-04,False,False,,,,,,PP90,
+22786,Colin Robb,,,male,,local.south-lanarkshire.2017-05-04,party:90,Liberal Democrats,UTW:bothwell-and-uddingston,Bothwell and Uddingston,,False,,,,http://www.libdems.org.uk/colin_robb,,,,,,,,,,,2017-05-04,False,False,,,,,,PP90,
 22787,Phil Sykes,,,,,local.south-lanarkshire.2017-05-04,party:102,Scottish National Party (SNP),UTW:bothwell-and-uddingston,Bothwell and Uddingston,,False,,,,,,,,,,,,,,,2017-05-04,False,False,,,,,,PP102,
 22769,Walter Brogan,,,,,local.south-lanarkshire.2017-05-04,party:53,Labour Party,UTW:cambuslang-east,Cambuslang East,,False,,,,,,,,,,,,,,,2017-05-04,False,False,,,,,,PP53,
 22770,Ellen Bryson,,,,,local.south-lanarkshire.2017-05-04,party:90,Liberal Democrats,UTW:cambuslang-east,Cambuslang East,,False,,,,,,,,,,,,,,,2017-05-04,False,False,,,,,,PP90,
