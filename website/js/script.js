@@ -100,7 +100,7 @@ var wardinfo = document.getElementById('wardinfo');
 
 candidates.update = function() {
    var ack = '<div id="ack"><div id="dc-caption">This full set of candidate data was collated by</div><div id="dc-logo"><a href="http://democracyclub.org.uk"><img src="https://democracyclub.org.uk/static/dc_theme/images/logo-with-text-2017.png" width="250"></a></div><div id="disclaimer">DISCLAIMER The ordering of the candidates above is a best guess. The actual ballot paper for this ward may interpret the alphabetical ordering of candidates\' names differently.</div>';
-	$("#tabs-container").hide();
+	$("#tabs-container").css('display', 'none');
 	this.innerHTML = '';
 	var wardstats = getObjects(warddata, "map_ward_code", ward_code);
 	var tw;

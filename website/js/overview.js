@@ -4,7 +4,7 @@
 // refvar is the top-level variable from which a percentage can be derived, leave blank if no percentage appropriate
 // target_div is the div ID (with # prefix) in which the bar chart is rendered
 function overview_by_var(year, dir, primary, secondary, singular, plural, refvar, target_div) {
-	$('#tabs-container').show();
+	$('#tabs-container').css('display', 'block');
     $(target_div).html("");
 	var target = target_div.substr(1);   // strip the first char (#) from target_div so we can use it as identifier segment
 	var speed = 1;
@@ -15,6 +15,7 @@ function overview_by_var(year, dir, primary, secondary, singular, plural, refvar
 	if (startLeft + voteWidth > screen.width - 40)
 	{
 		voteWidth = screen.width - startLeft - 40;
+		$('.tabs-menu li').css('margin-right', '4px');
 		$('#details').css('width', (startLeft + voteWidth + 10) + 'px');
 	}
     var topMargin = 0;

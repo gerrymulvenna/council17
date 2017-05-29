@@ -275,7 +275,7 @@ echo '
 ';
 echo "			<h2 id=\"breadcrumb\"><a href=\"/councils/\">Scotland</a> | <a href=\"$slug.php\">$council_name</a></h2>\n";
 selectCouncil("Pick a different council from this list?");
-echo '			<div id="wardinfo"><h5>Choose a ward in this council from the map</h5></div>
+echo '			<div id="wardinfo"><h5>Choose a ward the map to see the candidates</h5></div>
             <div id="electorate"></div>
             <div id="tabs-container">
                 <ul class="tabs-menu">
