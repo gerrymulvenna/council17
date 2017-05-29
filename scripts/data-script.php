@@ -7,9 +7,9 @@ $outDir = "../2017/SCO/";
 
 $elected = getElectedCandidates($outDir, $elected_without_contest);
 buildRtree($elections, $outDir, $party_prefix, $party_colors);
-//buildData(array_keys($elections), $dataRoot, $outDir);
-//buildPtree($elections, $outDir, $party_prefix);
-//buildCtree($elections, $outDir, $party_prefix);
+buildData(array_keys($elections), $dataRoot, $outDir);
+buildPtree($elections, $outDir, $party_prefix);
+buildCtree($elections, $outDir, $party_prefix);
 
 //boundaryWards(array_keys($elections), $outDir, "boundary-wardinfo.csv");
 
@@ -633,6 +633,8 @@ function classifyParties($root, $party_prefix)
             {
                 $suffix = $node->no_seats . (($node->no_seats == 1) ? " councillor" : " councillors") . sprintf(" (%.1f%%) ", 100 * $node->no_seats / $root->no_seats);
                 $suffix .= " from ". number_format($node->no_candidates) . sprintf(" candidates (%.1f%% success rate), ", 100 * $node->no_seats / $node->no_candidates); 
+                $suffix .= "0 first prefs (0.0%)";
+                $suffix .= ", 0.00 quotas per ward";
             }
             else
             {
@@ -665,6 +667,7 @@ function buildPTree($elections, $dataDir, $party_prefix)
     $root->open();      // expand at startup
 
     // get an index of ward and council info so we can build href preoperties for ward and candidate nodes
+    echo "Building PARTIES data tree...<br>\n";
     $wardinfo = readJSON($dataDir . "wardinfo.json");
     foreach ($wardinfo->Wards as $ward)
     {
@@ -685,7 +688,6 @@ function buildPTree($elections, $dataDir, $party_prefix)
             {
                 if (!empty($ward->post_id))
                 {
-                    echo "PARTIES candidate data " . $election . " " . $ward->post_id . "<br>\n";
                     $node = new jstree_node(++$id, "ward", $wardname[$ward->post_id]);
                     foreach ($ward->candidates as $candidate)
                     {
@@ -773,6 +775,7 @@ function buildCTree($elections, $dataDir, $party_prefix)
     $ctotal = 0;
 
     // convert the candidate data to tree nodes indexed by cand_ward_code (post_id)
+    echo "Building CANDIDATE data tree...<br>\n";
     foreach ($elections as $election => $council_slug)
     {
         if (preg_match('/^local\.(.+)\.2017-05-04$/', $election, $matches))
@@ -782,7 +785,6 @@ function buildCTree($elections, $dataDir, $party_prefix)
             {
                 if (!empty($ward->post_id))
                 {
-                    echo "Candidate data " . $election . " " . $ward->post_id . "<br>\n";
                     $node = new jstree_node(++$id, "ward", $ward->post_label);
                     $node->no_candidates = count($ward->candidates);
                     
@@ -804,7 +806,6 @@ function buildCTree($elections, $dataDir, $party_prefix)
     {
         if (!empty($ward->election))
         {
-            echo "Ward data " . $ward->election . " " . $ward->ward_name . "<br>\n";
             // create or update the council node
             if (array_key_exists($ward->election, $councils))
             {
@@ -889,7 +890,6 @@ function convertCandidates($candidates, $last_id, $party_prefix)
     {
         $party = stripParty($c->party_name);
         $prefix = (array_key_exists($party, $party_prefix)) ? " (" . $party_prefix[$party] . ") " : " ";
-        echo "$prefix ";
         $name = ($c->elected == "True") ? '<span class="elected">' . $c->name . '</span>' : $c->name;
 
         $node = new jstree_node(++$last_id, "candidate", $prefix . $name);
@@ -908,6 +908,7 @@ function buildData($elections, $dataRoot, $dir)
     global $elected;
 
     $wardinfo = array();
+    echo "Building CANDIDATE data files...<br>\n";
     foreach ($elections as $election)
     {
         if (preg_match('/^local\.(.+)\.2017-05-04$/', $election, $matches))
@@ -916,7 +917,6 @@ function buildData($elections, $dataRoot, $dir)
             $wardIDs = array();   //used to keep track of which wards have been added
             $candURL = $dataRoot.$election.".csv";
             $arrCand = getData($candURL, $election);
-            echo "$election<br>";
             for ($i = 1; $i < count($arrCand); $i++)
             {
                 if (count($arrCand[$i]) <= 1)
@@ -972,11 +972,11 @@ function buildData($elections, $dataRoot, $dir)
 function boundaryWards($elections, $dir, $my_file)
 {
     $wardinfo = array();
+    echo "Getting ward code mappings...<br>\n";
     foreach ($elections as $election)
     {
         if (preg_match('/^local\.(.+)\.2017-05-04$/', $election, $matches))
   	    {
-            echo "$election<br>";
             $b_file = $dir . 'boundaries/'. $matches[1] . ".geojson";
             $json = file_get_contents($b_file);
             $data = json_decode($json);
