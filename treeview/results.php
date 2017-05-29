@@ -17,7 +17,7 @@ navigation("Scottish Council elections 2017");
 echo'<div class="content">
 
 <h3>Explore and search the 2017 local election results for Scotland</h3>
-<div id="tree-ack"><div id="dc-caption">This full set of candidate data was collated by</div><div id="dc-logo"><a href="http://democracyclub.org.uk"><img src="https://democracyclub.org.uk/static/dc_theme/images/logo-with-text-2017.png" width="250"></a></div></div>
+<div id="tree-ack"><div id="dc-caption">Results data collated by <a href="https://twitter.com/gerrymulvenna">@gerrymulvenna</a> (31 councils) and <a href="/https://twitter.com/andrewteale">@andrewteale</a> (Scottish Borders). The full set of candidate data was collated by</div><div id="dc-logo"><a href="http://democracyclub.org.uk"><img src="https://democracyclub.org.uk/static/dc_theme/images/logo-with-text-2017.png" width="250"></a></div></div>
 	<input type="text" id="results-tree-search" value="" class="input" placeholder="Find party, candidate, council or ward" />
 	<div id="results-tree" class="demo"></div>
 

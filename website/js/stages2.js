@@ -11,6 +11,7 @@ function animateStages(year,council,constituencyFolder) {
 	console.log ("animateStages", year,council,constituencyFolder);
 	
     clearInterval(loop);
+	$("#stv").css('display', 'block');
     $("#animation").html("");
     $("#animation").append("<div id='thepost' />")
     $("#animation").append("<div id='theline' />")

@@ -506,6 +506,11 @@ input[id=show-menu]:checked~#cssmenu {
 	width: 300px;
 }
 
+#results-ack {
+	font-size: 0.8em;
+}
+
+
 #dc-logo {
 	display: inline-block;
 }
@@ -846,4 +851,8 @@ a.result {
 #electorate p {
 	margin-top: 0px;
 	margin-bottom: 0px;
+}
+
+#stv {
+	display: none;
 }
