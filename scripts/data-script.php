@@ -212,11 +212,11 @@ function buildRTree($elections, $dataDir, $party_prefix, $party_colors)
     }
 
     // convert the candidate data to tree nodes indexed by cand_ward_code (post_id)
+    echo "Building RESULTS data tree...<br>\n";
     foreach ($elections as $election => $council)
     {
         if (preg_match('/^local\.(.+)\.2017-05-04$/', $election, $matches))
   	    {
-            echo "RESULTS data " . $election . "<br>\n";
             $cdata = readJSON($dataDir. $election . ".json");
             foreach ($cdata->wards as $ward)
             {
@@ -309,7 +309,7 @@ function buildRTree($elections, $dataDir, $party_prefix, $party_colors)
                             $ward_parties[$candidate->party_name . $election . $ward->post_label] = $ward_party_node;
                             $ward_node->children[] = $ward_party_node;
                         }
-                        // now that we have all the nodes in place for this candidate we can add it to the appropriate places and add quantitate data from the results
+                        // now that we have all the nodes in place for this candidate we can add it to the appropriate places and add quantitative data from the results
                         $root->no_candidates += 1;
                         $ward_party_node->no_candidates += 1;
                         $council_party_node->no_candidates += 1;
@@ -352,7 +352,6 @@ function buildRTree($elections, $dataDir, $party_prefix, $party_colors)
                     }
                     // now let's get the results data
                     $fname = $dataDir . $matches[1] . "/" . $wardcode[$ward->post_id] . "/ResultsJson.json";
-                    echo "Getting results from $fname<br>\n";
                     if (file_exists($fname))
                     {
                         $json = readJSON($fname);
@@ -365,7 +364,6 @@ function buildRTree($elections, $dataDir, $party_prefix, $party_colors)
                             {
                                 if (array_key_exists($item->Candidate_Id, $cArray))
                                 {
-                                    
                                     if (property_exists($cArray[$item->Candidate_Id], "party_name"))
                                     {
                                         $party = $cArray[$item->Candidate_Id]->party_name;
@@ -464,10 +462,11 @@ function buildRTree($elections, $dataDir, $party_prefix, $party_colors)
     classifyParties($root, $party_prefix);
     writeJSON($root, $dataDir . "results-tree.json");
 
-    // just Scotland-level data
+    // just Scotland-level data (used for colouring the map by biggest party)
     $summary = getSummary($root->children[0], $party_prefix, $party_colors);
     writeJSON($summary, $dataDir . "summary.json");
 
+    // generate the scotland-level overview JSON, a summary of the party standings across all councils
     $overview = new Overview("All 32 Councils", "scotland","root");
     $overview->electorate = $root->properties['electorate'];
     $overview->total_poll = $root->properties['total_poll'];
@@ -475,7 +474,6 @@ function buildRTree($elections, $dataDir, $party_prefix, $party_colors)
     $overview->no_seats = $root->no_seats;
     $overview->no_candidates = $root->no_candidates;
     $overview->no_wards = $root->properties['no_wards'];
-
     for ($i = 1; $i < count($root->children); $i++)   //skip element 0, which is just the container
     {
         $name = $root->children[$i]->icon;
@@ -490,6 +488,51 @@ function buildRTree($elections, $dataDir, $party_prefix, $party_colors)
         $overview->parties[] = $party;
     }
     writeJSON($overview, $dataDir . "overview.json");
+
+    foreach ($root->children[0]->children as $cnode)
+    {
+        // generate the council-level overview JSON, a summary of the party standings for a given council
+        if (preg_match('/<strong>(.+)<\/strong>/', $cnode->text, $matches))
+        {
+            $overview = new Overview($matches[1], $cnode->properties['slug'] ,"council");
+            $overview->electorate = $cnode->properties['electorate'];
+            $overview->total_poll = $cnode->properties['total_poll'];
+            $overview->valid_poll = $cnode->properties['valid_poll'];
+            $overview->no_seats = $cnode->no_seats;
+            $overview->no_candidates = $cnode->no_candidates;
+            $overview->no_wards = $cnode->properties['no_wards'];
+            for ($i = 1; $i < count($cnode->children); $i++)   //skip element 0, which is just the container
+            {
+                $name = $cnode->children[$i]->icon;
+                $short = $party_prefix[$name];
+                $color = $party_colors[$name];
+                $party = new Party($name, $short, $color);
+                $party->no_seats = $cnode->children[$i]->no_seats;
+                $party->no_candidates = $cnode->children[$i]->no_candidates;
+                // where a party's only candidate is in an uncontested ward, no_wards will be set to zero, so it actually means CONTESTED wards in that context
+                if (array_key_exists('no_wards', $cnode->children[$i]->properties))
+                {
+                    $party->no_wards = $cnode->children[$i]->properties['no_wards'];
+                }
+                else
+                {
+                    $party->no_wards = 0;
+                }
+                if (array_key_exists('first_prefs', $cnode->children[$i]->properties))
+                {
+                    $party->first_prefs = $cnode->children[$i]->properties['first_prefs'];
+                    $party->quotas = round($cnode->children[$i]->properties['first_prefs'] / $root->children[$i]->properties['quotas'], 2);
+                }
+                else
+                {
+                    $party->first_prefs = 0;
+                    $party->quotas = 0;
+                }
+                $overview->parties[] = $party;
+            }
+            writeJSON($overview, $dataDir . $cnode->properties['slug'] . "/overview.json");
+        }
+    }
 
 
 //    saveTransfers($txdata, $dataDir, $party_prefix, $party_colors);
@@ -566,7 +609,6 @@ function classifyParties($root, $party_prefix)
     }
     if ($root->type == "root" || $root->type == "council" || $root->type == "ward")
     {
-        echo "Sorting " . $root->text . "\n";
         $root->sortbyseats();
     }
     foreach ($root->children as $node)

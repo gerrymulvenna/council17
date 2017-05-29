@@ -495,6 +495,7 @@ function saveCSV($arr, $my_file)
 // output the data as a JSON file
 function writeJSON($data, $my_file)
 {
+  echo "Writing $my_file\n";
   $json = json_encode($data);
   $handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file);
   fwrite($handle, $json);
