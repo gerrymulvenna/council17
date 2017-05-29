@@ -33,7 +33,7 @@ echo'
             <div id="electorate"></div>
             <div id="tabs-container">
                 <ul class="tabs-menu">
-                    <li class="current"><a href="#no_seats">Councillors</a></li>
+                    <li class="current"><a id="ctab" href="#no_seats">Councillors</a></li>
                     <li><a href="#first_prefs">First Preferences</a></li>
                     <li><a href="#quotas">Quotas</a></li>
                 </ul>

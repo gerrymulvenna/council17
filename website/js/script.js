@@ -100,7 +100,7 @@ var wardinfo = document.getElementById('wardinfo');
 
 candidates.update = function() {
    var ack = '<div id="ack"><div id="dc-caption">This full set of candidate data was collated by</div><div id="dc-logo"><a href="http://democracyclub.org.uk"><img src="https://democracyclub.org.uk/static/dc_theme/images/logo-with-text-2017.png" width="250"></a></div><div id="disclaimer">DISCLAIMER The ordering of the candidates above is a best guess. The actual ballot paper for this ward may interpret the alphabetical ordering of candidates\' names differently.</div>';
-
+	$("#tabs-container").hide();
 	this.innerHTML = '';
 	var wardstats = getObjects(warddata, "map_ward_code", ward_code);
 	var tw;
@@ -131,7 +131,7 @@ candidates.update = function() {
 					var seats = parseInt(cinfo.Number_Of_Seats);
 					result = '<a class="result" href="/results?year=2017&council=' + wardstats[0].election + '&ward=' + wardstats[0].map_ward_code + '">View result</a>';
 					var turnout = ((parseInt(cinfo.Total_Poll)/parseInt(cinfo.Total_Electorate)) * 100).toFixed(2);
-					$("#quota").html("<p>Electorate: " + numberWithCommas(parseInt(cinfo.Total_Electorate)) + ", Turnout: " + numberWithCommas(parseInt(cinfo.Total_Poll)) + " (" + turnout + "%), Valid votes: " + numberWithCommas(parseInt(cinfo.Valid_Poll)) + ", Quota: " + numberWithCommas(quota) + "</p>\n");
+					$("#electorate").html("<p>Electorate: " + numberWithCommas(parseInt(cinfo.Total_Electorate)) + ", Turnout: " + numberWithCommas(parseInt(cinfo.Total_Poll)) + " (" + turnout + "%), Valid votes: " + numberWithCommas(parseInt(cinfo.Valid_Poll)) + ", Quota: " + numberWithCommas(quota) + "</p>\n");
                 }});
 
 			var candidates = ward[0].candidates.sort(cmpSurnames);

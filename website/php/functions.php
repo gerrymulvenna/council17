@@ -188,9 +188,9 @@ function head($title, $mapName, $mapLat, $mapLong, $mapZoom, $mapProperty, $mapU
     <meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js"></script>
+	<script src="http://cdn.rawgit.com/calvinmetcalf/leaflet-ajax/gh-pages/dist/leaflet.ajax.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
--	<script src="http://cdn.rawgit.com/calvinmetcalf/leaflet-ajax/gh-pages/dist/leaflet.ajax.min.js"></script>
--	<script src="/website/js/leaflet.pattern.js"></script>
+	<script src="/website/js/leaflet.pattern.js"></script>
     <script src="/website/js/jstree/jstree.min.js"></script>
   <script src="/website/js/jstree/jstree.types.js"></script>
   <script src="/website/js/jstree/jstree.search.js"></script>
@@ -271,14 +271,26 @@ echo "</script>\n";
 echo '
 		<div class="content">
     			<div id="map"></div>
+    			<div id="details">
 ';
 echo "			<h2 id=\"breadcrumb\"><a href=\"/councils/\">Scotland</a> | <a href=\"$slug.php\">$council_name</a></h2>\n";
 selectCouncil("Pick a different council from this list?");
 echo '			<div id="wardinfo"><h5>Choose a ward in this council from the map</h5></div>
-                            <div id="quota"></div>
-
+            <div id="electorate"></div>
+            <div id="tabs-container">
+                <ul class="tabs-menu">
+                    <li class="current"><a id="ctab" href="#no_seats">Councillors</a></li>
+                    <li><a href="#first_prefs">First Preferences</a></li>
+                    <li><a href="#quotas">Quotas</a></li>
+                </ul>
+                <div class="tab">
+                    <div id="no_seats" class="tab-content"></div>
+                    <div id="first_prefs" class="tab-content"></div>
+                    <div id="quotas" class="tab-content"></div>
+                </div>
+            </div>
 			<div id="candidates"></div>
-
+        </div>
 		</div>
 ';
 }

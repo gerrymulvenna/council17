@@ -725,6 +725,7 @@ a.result {
 
 #details {
 	display: inline-block;
+	width: 400px;
 }
 
 .partyLabel{
@@ -759,6 +760,7 @@ a.result {
     clear: both;
 	margin: 0;
 	padding-left: 0;
+	font-size: 0.85em;
 }
 
 .tabs-menu li {

@@ -3,7 +3,8 @@
 // singular and plural are suffix string descriptors for the variable
 // refvar is the top-level variable from which a percentage can be derived, leave blank if no percentage appropriate
 // target_div is the div ID (with # prefix) in which the bar chart is rendered
-function overview_by_var(year, primary, secondary, singular, plural, refvar, target_div) {
+function overview_by_var(year, dir, primary, secondary, singular, plural, refvar, target_div) {
+	$('#tabs-container').show();
     $(target_div).html("");
 	var target = target_div.substr(1);   // strip the first char (#) from target_div so we can use it as identifier segment
 	var speed = 1;
@@ -14,6 +15,7 @@ function overview_by_var(year, primary, secondary, singular, plural, refvar, tar
 	if (startLeft + voteWidth > screen.width - 40)
 	{
 		voteWidth = screen.width - startLeft - 40;
+		$('#details').css('width', (startLeft + voteWidth + 10) + 'px');
 	}
     var topMargin = 0;
 	var barHeight = 30;
@@ -23,7 +25,7 @@ function overview_by_var(year, primary, secondary, singular, plural, refvar, tar
             $.ajax({
                 'async': false,
                 'global': false,
-                'url': '/' + year + '/SCO/overview.json',
+                'url': '/' + year + '/' + dir + '/overview.json',
                 'dataType': "json",
                 'success': function (data) {
                     json = data;
@@ -34,6 +36,7 @@ function overview_by_var(year, primary, secondary, singular, plural, refvar, tar
             return json;
         })();
     if(json.parties.length){
+		$('#ctab').text("Councillors (" + numberWithCommas(parseInt(json.no_seats,10)) + ")");
 		var max = 0;
 		var parties = [];
 		var rankings = [];
@@ -117,6 +120,7 @@ function overview_by_var(year, primary, secondary, singular, plural, refvar, tar
 
 $(document).ready(function() {
     $(".tabs-menu a").click(function(event) {
+		var dir = (mapName == "scotland") ? 'SCO' : 'SCO/' + mapName;
         event.preventDefault();
         $(this).parent().addClass("current");
         $(this).parent().siblings().removeClass("current");
@@ -127,13 +131,13 @@ $(document).ready(function() {
 			switch(tab)
 			{
 				case '#no_seats':
-					overview_by_var(2017, 'no_seats', 'first_prefs', 'councillor', 'councillors', 'no_seats', '#no_seats');
+					overview_by_var(2017, dir, 'no_seats', 'first_prefs', 'councillor', 'councillors', 'no_seats', '#no_seats');
 					break;
 				case '#first_prefs':
-					overview_by_var(2017, 'first_prefs', 'no_seats', 'first pref', 'first prefs', 'valid_poll', '#first_prefs');
+					overview_by_var(2017, dir, 'first_prefs', 'no_seats', 'first pref', 'first prefs', 'valid_poll', '#first_prefs');
 					break;
 				case '#quotas':
-					overview_by_var(2017, 'quotas', 'no_wards', 'quota per ward', 'quotas per ward', '', '#quotas');
+					overview_by_var(2017, dir, 'quotas', 'no_wards', 'quota per ward', 'quotas per ward', '', '#quotas');
 					break;
 			}
 		});

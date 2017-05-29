@@ -521,7 +521,7 @@ function buildRTree($elections, $dataDir, $party_prefix, $party_colors)
                 if (array_key_exists('first_prefs', $cnode->children[$i]->properties))
                 {
                     $party->first_prefs = $cnode->children[$i]->properties['first_prefs'];
-                    $party->quotas = round($cnode->children[$i]->properties['first_prefs'] / $root->children[$i]->properties['quotas'], 2);
+                    $party->quotas = round($cnode->children[$i]->properties['first_prefs'] / $cnode->children[$i]->properties['quotas'], 2);
                 }
                 else
                 {

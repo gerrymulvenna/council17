@@ -2,7 +2,7 @@
 
 	var layerStyle = {
 		weight: 1,
-		color: 'black',
+		color: '#34495e',
 		fillOpacity: 0.1,
 		opacity: 1
 		};
@@ -129,7 +129,11 @@
 					});		
 					legend.update('Colours denote parties with<br>most seats per council');
 				});
-				overview_by_var(2017, 'no_seats', 'first_prefs', 'councillor', 'councillors', 'no_seats', '#no_seats');
+				overview_by_var(2017, 'SCO', 'no_seats', 'first_prefs', 'councillor', 'councillors', 'no_seats', '#no_seats');
+			}
+			else
+			{
+				overview_by_var(2017, 'SCO/' + mapName, 'no_seats', 'first_prefs', 'councillor', 'councillors', 'no_seats', '#no_seats');
 			}
 
 	});
