@@ -117,10 +117,7 @@ echo '        <div class="cta">
 
         <div class="content">
             <div class="row">
-                <h2>Ward results</h2>
-                <p>Results data for the 2017 local elections in all 32 Scottish councils have now been transcribed ward by ward from the PDFs published on each council website. Please contact <a href="http://twitter.com/gerrymulvenna">@gerrymulvenna</a> if you spot any transcription errors. A small 2012 dataset (just a handful of Edinburgh wards) was initially entered to test the animation.</p>
-
-                <h3>Single Transferable Vote (STV) animation</h3>
+                <h2>Single Transferable Vote (STV) animation</h2>
                 <p>Choose election year, council, ward and then click play to run the animation.</p>
                 <div id="menuBar">
                     <select id="yearSelect">
@@ -153,7 +150,7 @@ echo '
             </div>
             <div id="results-ack">
                 <p><em>The Single Transferable Vote (STV) animation was developed by James Bligh (<a href="http://twitter.com/anamates" target="_blank" title="External Link">@anamates</a>) and adapted by Bob Harper on <a href="http://electionsni.org" target="_blank" title="External Link">Elections NI</a>.</em><br>
-                <em>Results data were collated by <a href="https://twitter.com/gerrymulvenna">@gerrymulvenna</a> (31 councils) and <a href="/https://twitter.com/andrewteale">@andrewteale</a> (Scottish Borders).</em><br>
+                <em>Results data were collated by <a href="https://twitter.com/gerrymulvenna">@gerrymulvenna</a> (31 councils) and <a href="https://twitter.com/andrewteale">@andrewteale</a> (Scottish Borders).</em><br>
                 <em>The full set of candidate data for #council17 was collated by</em></div><div id="dc-logo"><a href="http://democracyclub.org.uk"><img src="https://democracyclub.org.uk/static/dc_theme/images/logo-with-text-2017.png" width="250"></a>
             </div>
         </div>
@@ -254,7 +251,7 @@ function navigation($title, $param2 = NULL, $param3 = NULL, $param4 = NULL)
         <input type="checkbox" id="show-menu" role="button">
         <div id="cssmenu">
             <ul>
-                <li><a href="/results/"><span>Ward results</span></a></li>
+                <li><a href="/results/"><span>STV animation</span></a></li>
                 <li><a href="/treeview/results.php"><span>Data explorer</span></a></li>
                 <li><a href="/councils/"><span>By map</span></a></li>
                 <li><a href="/postcode/"><span>By postcode</span></a></li>
