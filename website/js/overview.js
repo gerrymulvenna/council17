@@ -104,7 +104,7 @@ function overview_by_var(year, dir, primary, secondary, singular, plural, refvar
 
 	function appendSuffix()
 	{
-		var num = parseFloat($(this).text());
+		var num = parseFloat($(this).text().replace(/,/g,''));
 		suffix = (num == 1) ? " " + singular : " " + plural;
 		share = (json.hasOwnProperty(refvar)) ? " (" + Math.round(num * 1000 / json[refvar]) / 10 + "%)" : "";
 		$(this).text(numberWithCommas(num) + suffix + share);
