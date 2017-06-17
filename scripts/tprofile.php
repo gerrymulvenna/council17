@@ -1,7 +1,7 @@
 <?php
 // script to analyse a transfer profile report
 
-analyse_transfer_profile("sighthill-gorgie.csv");
+analyse_transfer_profile("Ward_3_-_Preference_Profile_Report.csv");
 
 function analyse_transfer_profile($infile)
 {

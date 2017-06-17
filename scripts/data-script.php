@@ -686,7 +686,6 @@ function buildPTree($elections, $dataDir, $party_prefix)
             {
                 if (!empty($ward->post_id))
                 {
-                    $node = new jstree_node(++$id, "ward", $wardname[$ward->post_id]);
                     foreach ($ward->candidates as $candidate)
                     {
                         // create or update the party node
