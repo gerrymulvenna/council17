@@ -1,12 +1,12 @@
 <?php
-require "functions.php";
+require "../website/php/europarl.php";
 
 echo "<pre>\n";
 
-if (isset($_POST['council']) && isset($_POST['ward']) && isset($_POST['year']))
+if (isset($_POST['region']) && isset($_POST['year']))
 {
     $ward_info = new countInfo($_POST['ward_name'], $_POST['ward'], $_POST['seats'], $_POST['electorate'], $_POST['electorate'], $_POST['total_poll'], $_POST['valid_poll']);
-    $datadir = '../' . $_POST['year'] . '/SCO/' . $_POST['council'];
+    $datadir = '../' . $_POST['year'] . '/IRL/' . $_POST['region'];
     $topfile = "$datadir/all-constituency-info.json";
     if (file_exists($topfile))
     {
