@@ -723,6 +723,10 @@ a.result {
 	display: none;
 }
 
+#region-list-2014 {
+	display: none;
+}
+
 #details {
 	display: inline-block;
 	width: 400px;
