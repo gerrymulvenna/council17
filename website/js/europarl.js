@@ -10,6 +10,8 @@
 		manageChanges($(this));
 	});
 
+
+
 	$('#yearSelect').change(function() {
 		var year = $("#yearSelect :selected").text();
 		$('#raw-data').html("");
@@ -26,7 +28,6 @@
 				$("#region-list-2019 option").filter('[value="0"]').prop("selected", true);
 				break;
 		}
-		var council = $("#region-list-" + year + " :selected").val();
 
 	});
 
@@ -69,10 +70,24 @@
 		$('#raw-data').html("");
         var year = $("#yearSelect :selected").text();
 		var region = cSelect.val();
+		if ($('#pause-replay').hasClass('fa-repeat')) {
+			$('#pause-replay').removeClass('fa-repeat');
+			$('#pause-replay').addClass('fa-play');
+		} else if ($('#pause-replay').hasClass('fa-pause')) {
+			$('#pause-replay').removeClass('fa-pause');
+			$('#pause-replay').addClass('fa-play');
+		}
+		$('#raw-data').html("");
+		var year = $("#yearSelect :selected").text();
+		if ($("#region-list-" + year + " :selected").val())
+		{
+			updateTitle($("#region-list-" + year + " :selected").text());
+		}
+		animateStages(year, region);
 	}
 
 // change the title to reflect the ward selected
-function updateTitle (ward, council)
+function updateTitle (region)
 {
 	var title = document.title;
 	document.title = region + " results visualisation for the European Parliament elections (Ireland)";
@@ -244,6 +259,6 @@ function getSearchParams(k){
 }
 
 //function to record ward_code in URL search query string (assumes it is only parameter)
-function setSearchParams(year, council, ward){
+function setSearchParams(year, region){
   window.history.replaceState({}, '', location.pathname + '?region=' + region + '&year=' + year);
 }

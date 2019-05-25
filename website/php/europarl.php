@@ -182,7 +182,7 @@ function europarl_foot($param1 = NULL, $param2 = NULL, $param3 = NULL, $param4 =
 echo '
     <!--Load local scripts-->
     <script type="text/javascript" src="/website/js/europarl.js"></script>
-    <script type="text/javascript" src="/website/js/stages2.js"></script>
+    <script type="text/javascript" src="/website/js/euro-stages.js"></script>
 ';
   // Google analytics
 echo "<script>
