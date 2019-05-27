@@ -59,10 +59,10 @@ function europarl_head($title, $name, $twimg)
     global $councils, $wards;
 
     $desc = "Presenting results and data visualisations for the European Parliament Elections (Ireland)";
-    $url = "http://council17.mulvenna.org/europarl/";
+    $url = "https://" . $_SERVER['SERVER_NAME'] . dirname($_SERVER['REQUEST_URI']);
     if (isset($_GET['year']) && isset($_GET['council']) && isset($_GET['ward']))
     {
-        $url = "http://" . $_SERVER['SERVER_NAME'] . "/results/?year=" . $_GET['year'] . "&council=" . $_GET['council'] . "&ward=" . $_GET['ward'];
+        $url = "https://" . $_SERVER['SERVER_NAME'] . dirname($_SERVER['REQUEST_URI']) . "/?year=" . $_GET['year'] . "&council=" . $_GET['council'] . "&ward=" . $_GET['ward'];
         if (isset($councils[$_GET['council']]) && isset($wards[$_GET['ward']]))
         {
             $desc = $wards[$_GET['ward']] . ", " . $councils[$_GET['council']] . " results visualisation for the European Parliament election " . $_GET['year'];
@@ -104,7 +104,7 @@ function europarl_head($title, $name, $twimg)
     <meta property="og:title" content="' . $title . '" />
     <meta property="og:description" content="' . $desc . '" />
 ';
-echo "    <meta property=\"og:image\" content=\"http://" . $_SERVER['SERVER_NAME'] . dirname($_SERVER['REQUEST_URI']) . "/$twimg\" />\n";
+echo "    <meta property=\"og:image\" content=\"https://" . $_SERVER['SERVER_NAME'] . dirname($_SERVER['REQUEST_URI']) . "/$twimg\" />\n";
 echo '
 
 </head>
