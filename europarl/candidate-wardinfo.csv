@@ -1,0 +1,13 @@
+post_id,post_label,election
+EUR:E15000008,"South East",europarl
+EUR:E15000006,Eastern,europarl
+EUR:E15000007,London,europarl
+EUR:E15000004,"East Midlands",europarl
+EUR:W08000001,Wales,europarl
+EUR:E15000003,"Yorkshire and the Humber",europarl
+EUR:S15000001,Scotland,europarl
+EUR:E15000002,"North West",europarl
+EUR:E15000001,"North East",europarl
+EUR:E15000005,"West Midlands",europarl
+EUR:N07000001,"Northern Ireland",europarl
+EUR:E15000009,"South West",europarl

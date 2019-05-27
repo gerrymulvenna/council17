@@ -1,0 +1,5 @@
+council,ward_no,ward_name,map_ward_code,cand_ward_code,seats,election
+United Kingdom,1,Northern Ireland,ni,EUR:N07000001,3,uk
+Republic of Ireland,1,Dublin,dublin,EUR:dublin,3,ireland
+Republic of Ireland,2,Midlands/North-west,midlands-northwest,EUR:midlands-northwest,4,ireland
+Republic of Ireland,3,South,south,EUR:south,4,ireland

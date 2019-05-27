@@ -1,0 +1,684 @@
+.Democratic-Unionist-Party---DUP_label:before {
+    content: "(DUP) ";
+}
+.Democratic-Unionist-Party---DUP_abbr:before {
+    content: "DUP";
+}
+.Democratic-Unionist-Party---DUP {
+    fill: #FF5722!important;
+    background: #FF5722!important;
+    color: #fff
+}
+
+.Traditional-Unionist-Voice---TUV_label:before {
+    content: "(TUV) ";
+}
+.Traditional-Unionist-Voice---TUV_abbr:before {
+    content: "TUV";
+}
+.Traditional-Unionist-Voice---TUV {
+    fill: #303F9F!important;
+    background: #303F9F!important;
+    color: #fff
+}
+
+
+.Alliance---Alliance-Party-of-Northern-Ireland_label:before {
+    content: "(Alliance) ";
+}
+.Alliance---Alliance-Party-of-Northern-Ireland_abbr:before {
+    content: "Alliance";
+}
+.Alliance---Alliance-Party-of-Northern-Ireland {
+    fill: #FDD835!important;
+    background: #FDD835!important;
+    color: #fff
+}
+
+
+.SDLP-Social-Democratic-and-Labour-Party_label:before {
+    content: "(SDLP) ";
+}
+.SDLP-Social-Democratic-and-Labour-Party_abbr:before {
+    content: "SDLP";
+}
+.SDLP-Social-Democratic-and-Labour-Party {
+    fill: #740803!important;
+    background: #740803!important;
+    color: #fff
+}
+
+
+.Christian-Party-Proclaiming-Christs-Lordship_label:before {
+    content: "(CPPCL) ";
+}
+
+.Christian-Party-Proclaiming-Christs-Lordship_abbr:before {
+	content: "CPPCL";
+}
+
+.Christian-Party-Proclaiming-Christs-Lordship {
+    fill: rgba(59,12,114,1)!important;
+    background: rgba(59,12,114,1)!important;
+    color: #fff
+}
+
+.Socialist-Labour-Party_label:before {
+    content: "(SocLab) ";
+}
+
+.Socialist-Labour-Party_abbr:before {
+	content: "SocLab";
+}
+
+.Socialist-Labour-Party {
+    fill: #ff0000!important;
+    background: #ff0000!important;
+    color: #fff
+}
+
+.Social-Democratic-Party_label:before {
+    content: "(SDP) ";
+}
+
+.Social-Democratic-Party_abbr:before {
+	content: "SDP";
+}
+
+.Social-Democratic-Party {
+    fill: #ff0000!important;
+    background: #ff0000!important;
+    color: #fff
+}
+
+.A-Better-Britain-_-Unionist-Party_label:before {
+    content: "(ABBUP) ";
+}
+
+.A-Better-Britain-_-Unionist-Party_abbr:before {
+	content: "ABBUP";
+}
+
+.A-Better-Britain-_-Unionist-Party {
+    fill: rgba(46,79,152,1)!important;
+    background: rgba(46,79,152,1)!important;
+    color: #fff
+}
+
+.Scottish-Unionist-Party_label:before {
+    content: "(SUP) ";
+}
+
+.Scottish-Unionist-Party_abbr:before {
+	content: "SUP";
+}
+
+.Scottish-Unionist-Party {
+    fill: rgba(3,74,166,1)!important;
+    background: rgba(3,74,166,1)!important;
+    color: #fff
+}
+
+.The-Rubbish-Party_label:before {
+    content: "(RP) ";
+}
+
+.The-Rubbish-Party_abbr:before {
+	content: "RP";
+}
+
+.The-Rubbish-Party {
+    fill: #7ec0ee!important;
+    background: #7ec0ee!important;
+    color: #fff
+}
+
+
+
+.Independent-Network_label:before {
+    content: "(Ind) ";
+}
+
+.Independent-Network_abbr:before {
+	content: "Ind";
+}
+
+.Independent-Network {
+    fill: #B0BEC5!important;
+    background: #B0BEC5!important;
+    color: #fff
+}
+
+.Independent-Alliance-North-Lanarkshire_label:before {
+    content: "(Ind) ";
+}
+
+.Independent-Alliance-North-Lanarkshire_abbr:before {
+	content: "Ind";
+}
+
+.Independent-Alliance-North-Lanarkshire {
+    fill: #B0BEC5!important;
+    background: #B0BEC5!important;
+    color: #fff
+}
+
+.Scottish-Green-Party_label:before {
+	content: "(Green) ";
+}
+
+.Scottish-Green-Party_abbr:before {
+	content: "Green";
+}
+
+.Scottish-Green-Party {
+    fill: rgba(67,176,42,1)!important;
+    background: rgba(67,176,42,1)!important;
+    color: #fff
+}
+
+.Orkney-Manifesto-Group_label:before {
+	content: "(OMG) ";
+}
+
+.Orkney-Manifesto-Group_abbr:before {
+	content: "OMG";
+}
+
+.Orkney-Manifesto-Group {
+    fill: rgba(0,128,131,1)!important;
+    background: rgba(0,128,131,1)!important;
+    color: #fff
+}
+
+
+.Trade-Unionist-and-Socialist-Coalition_label:before {
+	content: "(TUSC) ";
+}
+
+.Trade-Unionist-and-Socialist-Coalition_abbr:before {
+	content: "TUSC";
+}
+
+.Trade-Unionist-and-Socialist-Coalition {
+    fill: rgba(229,50,126,1)!important;
+    background: rgba(229,50,126,1)!important;
+    color: #fff
+}
+
+.Liberal-Democrats_label:before {
+	content: "(LD) ";
+}
+
+.Liberal-Democrats_abbr:before {
+	content: "LD";
+}
+
+.Liberal-Democrats {
+    fill: rgba(242,176,39,1)!important;
+    background: rgba(242,176,39,1)!important;
+    color: #fff
+}
+
+.Labour-Party_label:before {
+	content: "(Lab) ";
+}
+
+.Labour-Party_abbr:before {
+	content: "Lab";
+}
+
+.Labour-Party {
+    fill: #cb2710!important;
+    background: #cb2710!important;
+    color: #fff
+}
+
+.Labour-and-Co-operative-Party_label:before {
+	content: "(Lab) ";
+}
+
+.Labour-and-Co-operative-Party_abbr:before {
+	content: "Lab";
+}
+
+.Labour-and-Co-operative-Party {
+    fill: #cb2710!important;
+    background: #cb2710!important;
+    color: #fff
+}
+
+.Conservative-and-Unionist-Party_label:before {
+	content: "(Con) ";
+}
+
+.Conservative-and-Unionist-Party_abbr:before {
+	content: "Con";
+}
+
+.Conservative-and-Unionist-Party {
+    fill: rgba(0, 56, 107, 1)!important;
+    background: rgba(0, 56, 107, 1)!important;
+    color: #fff
+}
+
+.Scottish-National-Party-SNP_label:before {
+	content: "(SNP) ";
+}
+
+.Scottish-National-Party-SNP_abbr:before {
+	content: "SNP";
+}
+
+.Scottish-National-Party-SNP {
+    fill: #fef48b!important;
+    background: #fef48b!important;
+    color: #fff
+}
+
+.Scottish-Socialist-Party_label:before {
+	content: "(SSP) ";
+}
+
+.Scottish-Socialist-Party_abbr:before {
+	content: "SSP";
+}
+
+.Scottish-Socialist-Party {
+    fill: rgba(222, 49, 54, 1)!important;
+    background: rgba(222, 49, 54, 1)!important;
+    color: #fff
+}
+
+.UK-Independence-Party-UKIP_label:before {
+	content: "(UKIP) ";
+}
+
+.UK-Independence-Party-UKIP_abbr:before {
+	content: "UKIP";
+}
+
+.UK-Independence-Party-UKIP {
+    fill: rgba(112, 48, 160, 1)!important;
+    background: rgba(112, 48, 160, 1)!important;
+    color: #fff
+}
+
+.Scottish-Libertarian-Party_label:before {
+	content: "(SLP) ";
+}
+
+.Scottish-Libertarian-Party_abbr:before {
+	content: "SLP";
+}
+
+.Scottish-Libertarian-Party {
+    fill: rgba(0, 97, 167, 1)!important;
+    background: rgba(0, 97, 167, 1)!important;
+    color: #fff
+}
+
+.Solidarity---Scotlands-Socialist-Movement_label:before {
+	content: "(Solidarity) ";
+}
+
+.Solidarity---Scotlands-Socialist-Movement_abbr:before {
+	content: "Solidarity";
+}
+
+.Solidarity---Scotlands-Socialist-Movement {
+    fill: #054a24!important;
+    background: #054a24!important;
+    color: #fff
+}
+
+.National-Front_label:before {
+	content: "(NF) ";
+}
+
+.National-Front_abbr:before {
+	content: "NF";
+}
+
+.National-Front {
+    fill: rgba(180, 113, 107, 1)!important;
+    background: rgba(180, 113, 107, 1)!important;
+    color: #fff
+}
+
+.West-Dunbartonshire-Community-Party_label:before {
+	content: "(WDCP) ";
+}
+
+.West-Dunbartonshire-Community-Party_abbr:before {
+	content: "WDCP";
+}
+
+.West-Dunbartonshire-Community-Party {
+    fill: rgba(237, 26, 35, 1)!important;
+    background: rgba(237, 26, 35, 1)!important;
+    color: #fff
+}
+
+.RISE---Respect-Independence-Socialism-and-Environmentalism_label:before {
+	content: "(RISE) ";
+}
+
+.RISE---Respect-Independence-Socialism-and-Environmentalism_abbr:before {
+	content: "RISE";
+}
+
+.RISE---Respect-Independence-Socialism-and-Environmentalism {
+    fill: rgba(242, 93, 37, 1)!important;
+    background: rgba(242, 93, 37, 1)!important;
+    color: #fff
+}
+
+
+.Alliance-Party_label:before {
+    content: "(Alliance) ";
+}
+.Social-Democratic-and-Labour-Party_label:before {
+    content: "(SDLP) ";
+}
+.Ulster-Unionist-Party_label:before {
+    content: "(UUP) ";
+}
+.Sinn-Fein_label:before {
+    content: "(SF) ";
+}
+.Green-Party_label:before {
+    content: "(Greens) ";
+}
+.Democratic-Unionist-Party_label:before {
+    content: "(DUP) ";
+}
+.Traditional-Unionist-Voice_label:before {
+    content: "(TUV) ";
+}
+.Workers-Party_label:before {
+    content: "(WP) ";
+}
+.UK-Independence-Party_label:before {
+    content: "(UKIP) ";
+}
+.Progressive-Unionist-Party_label:before {
+    content: "(PUP) ";
+}
+.Socialist-Party_label:before {
+    content: "(SP) ";
+}
+.NI21_label:before {
+    content: "(NI21) ";
+}
+.Procapitalism_label:before {
+    content: "(CAP) ";
+}
+.NI-Conservatives_label:before {
+    content: "(CON) ";
+}
+.British-Nationalist-Party_label:before {
+    content: "(BNP) ";
+}
+.People-Before-Profit-Alliance_label:before {
+    content: "(PBP) ";
+}
+.Independent_label:before {
+    content: "(Ind) ";
+}
+.Cannabis-Is-Safer-Than-Alcohol_label:before {
+    content: "(CISTA) ";
+}
+.Citizens-Independent-Social-Thought-Alliance_label:before {
+    content: "(CISTA) ";
+}
+.Labour-Alternative_label:before {
+    content: "(LABALT) ";
+}
+.South-Belfast-Unionists_label:before {
+    content: "(SBU) ";
+}
+.NI-Labour-Representation-Committee_label:before {
+    content: "(LRC) ";
+}
+.Northern-Ireland-First_label:before {
+    content: "(NIF) ";
+}
+.Cross-Community-Labour-Alternative_label:before {
+    content: "(CCLAB) ";
+}
+.Democracy-First_label:before {
+    content: "(DF) ";
+}
+.Animal-Welfare-Party_label:before {
+    content: "(AWP) ";
+}
+
+.Alliance-Party_abbr:before {
+    content: "Alliance";
+}
+.Social-Democratic-and-Labour-Party_abbr:before {
+    content: "SDLP";
+}
+.Ulster-Unionist-Party_abbr:before {
+    content: "UUP";
+}
+.Sinn-Fein_abbr:before {
+    content: "SF";
+}
+.Green-Party_abbr:before {
+    content: "Greens";
+}
+.Democratic-Unionist-Party_abbr:before {
+    content: "DUP";
+}
+.Traditional-Unionist-Voice_abbr:before {
+    content: "TUV";
+}
+.Workers-Party_abbr:before {
+    content: "WP";
+}
+.UK-Independence-Party_abbr:before {
+    content: "UKIP";
+}
+.Progressive-Unionist-Party_abbr:before {
+    content: "PUP";
+}
+.Socialist-Party_abbr:before {
+    content: "SP";
+}
+.NI21_abbr:before {
+    content: "NI21";
+}
+.Procapitalism_abbr:before {
+    content: "CAP";
+}
+.NI-Conservatives_abbr:before {
+    content: "CON";
+}
+.British-Nationalist-Party_abbr:before {
+    content: "BNP";
+}
+.People-Before-Profit-Alliance_abbr:before {
+    content: "PBP";
+}
+.Independent_abbr:before {
+    content: "Ind";
+}
+.Cannabis-Is-Safer-Than-Alcohol_abbr:before {
+    content: "CISTA";
+}
+.Citizens-Independent-Social-Thought-Alliance_abbr:before {
+    content: "CISTA";
+}
+.Labour-Alternative_abbr:before {
+    content: "LABALT";
+}
+.South-Belfast-Unionists_abbr:before {
+    content: "SBU";
+}
+.NI-Labour-Representation-Committee_abbr:before {
+    content: "LRC";
+}
+.Northern-Ireland-First_abbr:before {
+    content: "NIF";
+}
+.Cross-Community-Labour-Alternative_abbr:before {
+    content: "CCLAB";
+}
+.Democracy-First_abbr:before {
+    content: "DF";
+}
+.Animal-Welfare-Party_abbr:before {
+    content: "AWP) ";
+}
+
+.Social-Democratic-and-Labour-Party {
+    fill: #E53935!important;
+    background: #E53935!important;
+    color: #fff
+}
+
+.Traditional-Unionist-Voice {
+    fill: #303F9F!important;
+    background: #303F9F!important;
+    color: #fff
+}
+
+.Green-Party {
+    fill: #64DD17!important;
+    background: #64DD17!important;
+    color: #fff
+}
+
+.Sinn-Fein {
+    fill: #4CAF50!important;
+    background: #4CAF50!important;
+    color: #fff
+}
+
+.Ulster-Unionist-Party {
+    fill: #03A9F4!important;
+    background: #03A9F4!important;
+    color: #fff
+}
+
+.Alliance-Party {
+    fill: #FDD835!important;
+    background: #FDD835!important;
+    color: #fff
+}
+
+.Democratic-Unionist-Party {
+    fill: #FF5722!important;
+    background: #FF5722!important;
+    color: #fff
+}
+
+.Workers-Party {
+    fill: #FF0000!important;
+    background: #FF0000!important;
+    color: #fff
+}
+
+.Independent {
+    fill: #B0BEC5!important;
+    background: #B0BEC5!important;
+    color: #fff
+}
+
+.Socialist-Party {
+    fill: #e60000!important;
+    background: #e60000!important;
+    color: #fff
+}
+
+.UK-Independence-Party {
+    fill: #9C27B0!important;
+    background: #9C27B0!important;
+    color: #fff
+}
+
+.People-Before-Profit-Alliance {
+    fill: #E91E63!important;
+    background: #E91E63!important;
+    color: #fff
+}
+
+.Progressive-Unionist-Party {
+    fill: #880E4F!important;
+    background: #880E4F!important;
+    color: #fff
+}
+
+.NI21 {
+    fill: #581845!important;
+    background: #581845!important;
+    color: #fff
+}
+
+.Procapitalism {
+    fill: #f633ff!important;
+    background: #f633ff!important;
+    color: #fff
+}
+
+.NI-Conservatives {
+    fill: #B0BEC5!important;
+    background: #B0BEC5!important;
+    color: #fff
+}
+
+.Labour-Alternative {
+    fill: #E57373!important;
+    background: #E57373!important;
+    color: #fff
+}
+
+.South-Belfast-Unionists {
+    fill: #9195FF!important;
+    background: #9195FF!important;
+    color: #fff
+}
+
+.NI-Labour-Representation-Committee {
+    fill: #E57373!important;
+    background: #E57373!important;
+    color: #fff
+}
+
+.Northern-Ireland-First {
+    fill: #b3d71d!important;
+    background: #b3d71d!important;
+    color: #fff
+}
+
+.Cross-Community-Labour-Alternative {
+    fill: #E57373!important;
+    background: #E57373!important;
+    color: #fff
+}
+
+.Democracy-First {
+    fill: #d7761d!important;
+    background: #d7761d!important;
+    color: #fff
+}
+
+.Animal-Welfare-Party {
+    fill: #ce1d99!important;
+    background: #ce1d99!important;
+    color: #fff
+}
+
+.Citizens-Independent-Social-Thought-Alliance {
+    fill: #F84651!important;
+    background: #F84651!important;
+    color: #fff
+}
+
+.Cannabis-Is-Safer-Than-Alcohol {
+    fill: #F84651!important;
+    background: #F84651!important;
+    color: #fff
+}

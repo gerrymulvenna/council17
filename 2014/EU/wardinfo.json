@@ -1,0 +1,38 @@
+[
+	{
+		"council": "United Kingdom",
+		"ward_no": "1",
+		"ward_name": "Northern Ireland",
+		"map_ward_code": "ni",
+		"cand_ward_code": "EUR:N07000001",
+		"seats": "3",
+		"election": "uk"
+	},
+	{
+		"council": "Republic of Ireland",
+		"ward_no": "1",
+		"ward_name": "Dublin",
+		"map_ward_code": "dublin",
+		"cand_ward_code": "EUR:dublin",
+		"seats": "3",
+		"election": "ireland"
+	},
+	{
+		"council": "Republic of Ireland",
+		"ward_no": "2",
+		"ward_name": "Midlands/North-west",
+		"map_ward_code": "midlands-northwest",
+		"cand_ward_code": "EUR:midlands-northwest",
+		"seats": "4",
+		"election": "ireland"
+	},
+	{
+		"council": "Republic of Ireland",
+		"ward_no": "3",
+		"ward_name": "South",
+		"map_ward_code": "south",
+		"cand_ward_code": "EUR:south",
+		"seats": "4",
+		"election": "ireland"
+	}
+]

@@ -1,9 +1,9 @@
 <?php
-require $_SERVER["DOCUMENT_ROOT"] . "/website/php/europarl.php";
-require $_SERVER["DOCUMENT_ROOT"] . "/scripts/functions.php";
+require "common.php";
+require "functions.php";
 $slug = 'add-result';
 
-add_count_head("unofficial data entry for European Parliament elections (Ireland)", $slug, "/website/image/scotland.png");
+add_count_head("unofficial data entry for European Parliament elections (Ireland)", $slug, "/website/image/results.png");
 navigation("European Parliament elections (Ireland)");
 ?>
         <div class="cta">
@@ -14,11 +14,12 @@ navigation("European Parliament elections (Ireland)");
             <form method="POST" action="update.php">
                 <h2>Parse some count data</h2>
                 <div class="row">
-                    <p>Choose a region and year</p>
+                    <p>Choose a state, region and election year.</p>
                     <div id="menuBar">
 <?php
-selectRegion('Select a region', 'add-form', '');
+selectCouncil('Select an EU member state', 'add-form', '');
 ?>
+                        <select id="wardSelect" class="add-form" name="ward"><option>Regions appear when state selected</option></select>
                         <select id="yearSelect" class="add-form" name="year">
                             <option>2019</option>
                             <option>2014</option>
@@ -56,8 +57,8 @@ selectRegion('Select a region', 'add-form', '');
 </div>
 
 <!--Load local scripts-->
-<script type="text/javascript" src="/website/js/europarl.js"></script>
-<script type="text/javascript" src="/website/js/euro_add_count.js"></script>
+<script type="text/javascript" src="js/europarl.js"></script>
+<script type="text/javascript" src="js/euro_add_count.js"></script>
 
 <!--google analytics-->
 <script>
