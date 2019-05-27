@@ -104,7 +104,7 @@ function europarl_head($title, $name, $twimg)
     <meta property="og:title" content="' . $title . '" />
     <meta property="og:description" content="' . $desc . '" />
 ';
-echo "    <meta property=\"og:image\" content=\"http://" . $_SERVER['SERVER_NAME'] . "$twimg\" />\n";
+echo "    <meta property=\"og:image\" content=\"http://" . $_SERVER['SERVER_NAME'] . dirname($_SERVER['REQUEST_URI']) . "/$twimg\" />\n";
 echo '
 
 </head>
