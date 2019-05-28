@@ -1,6 +1,6 @@
 var warddata = [];
 var canddata = [];
-findWardInfo('2014', 'wardinfo.json');
+findWardInfo('2014', 'uk', 'wardinfo.json');
 var wardSelect = $("#wardSelect");
 var yearSelect = $("#yearSelect");
 var council = '';
@@ -64,7 +64,7 @@ function loadCandidates(council, ward_code, year)
 	var fname = 'europarl.json';
 	if (year)
 	{
-		findCandInfo(year, fname);
+		findCandInfo(year, council, fname);
 		var wardstats = getObjects(warddata, "map_ward_code", ward_code);
 		if (wardstats.length > 0)
 		{
@@ -88,9 +88,9 @@ function loadCandidates(council, ward_code, year)
 }
 
 // load council / ward data to global var 'warddata'
-function findWardInfo(year, filename) {
+function findWardInfo(year, council, filename) {
     var request = new XMLHttpRequest();
-    var path = '/' + year + '/EU/' + filename; 
+    var path = '/' + year + '/EU/' + council + '/' + filename; 
     request.onreadystatechange = function() {
         if (request.readyState == 4 && request.status >= 200 && request.status < 400) {
             warddata = JSON.parse(request.responseText);
@@ -126,7 +126,7 @@ function getCountInfo(council, ward_code, year) {
 // load candidate info
 function findCandInfo(year, filename) {
     var request = new XMLHttpRequest();
-    var path = '/' + year + '/EU/' + filename; 
+    var path = '/' + year + '/EU/' + council + '/' + filename; 
     request.onreadystatechange = function() {
         if (request.readyState == 4 && request.status >= 200 && request.status < 400) {
             canddata = JSON.parse(request.responseText);
