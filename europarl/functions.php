@@ -205,6 +205,19 @@ function getData($csvURL, $election)
     return ($arr);
 }
 
+function getLocalData($my_file)
+{
+    $arr = array();
+    $handle = fopen($my_file, "r");
+    while ($row = fgetcsv($handle))
+    {
+        $arr[] = $row;
+    }
+    fclose($handle);
+    return ($arr);
+}
+
+
 class DemoClub_Councils
 {
  public $councils;
@@ -458,6 +471,18 @@ function saveCSV($arr, $my_file)
         fputcsv($handle, $row);
     }
     fclose($handle);
+}
+
+// json needs UTF8 encoding
+function utf8ize($d) {
+    if (is_array($d)) {
+        foreach ($d as $k => $v) {
+            $d[$k] = utf8ize($v);
+        }
+    } else if (is_string ($d)) {
+        return utf8_encode($d);
+    }
+    return $d;
 }
 
 // output the data as a JSON file

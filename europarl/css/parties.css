@@ -1,3 +1,119 @@
+.People-Before-Profit_label:before {
+    content: "(PBP) ";
+}
+.People-Before-Profit_abbr:before {
+    content: "PBP";
+}
+.People-Before-Profit {
+    fill: #E91E63!important;
+    background: #E91E63!important;
+    color: #fff
+}
+
+.Non-party_label:before {
+    content: "(NP) ";
+}
+.Non-party_abbr:before {
+    content: "NP";
+}
+.Non-party {
+    fill: #777777!important;
+    background: #777777!important;
+    color: #fff
+}
+
+.Renua-Ireland_label:before {
+    content: "(REN) ";
+}
+.Renua-Ireland_abbr:before {
+    content: "REN";
+}
+.Renua-Ireland {
+    fill: #777700!important;
+    background: #777700!important;
+    color: #fff
+}
+
+.Direct-Democracy-Ireland_label:before {
+    content: "(DDI) ";
+}
+.Direct-Democracy-Ireland_abbr:before {
+    content: "DDI";
+}
+.Direct-Democracy-Ireland {
+    fill: #770000!important;
+    background: #770000!important;
+    color: #fff
+}
+
+
+
+.Labour_label:before {
+	content: "(LAB) ";
+}
+
+.Labour_abbr:before {
+	content: "LAB";
+}
+
+.Labour {
+    fill: #cb2710!important;
+    background: #cb2710!important;
+    color: #fff
+}
+
+
+
+.Social-Democrats_label:before {
+    content: "(SD) ";
+}
+.Social-Democrats_abbr:before {
+    content: "SD";
+}
+.Social-Democrats {
+    fill: rgb(102, 0 ,230)!important;
+    background: rgb(102, 0 ,230)!important;
+    color: #fff
+}
+
+.Fine-Gael_label:before {
+    content: "(FG) ";
+}
+.Fine-Gael_abbr:before {
+    content: "FG";
+}
+.Fine-Gael {
+    fill: rgb(57,43,144)!important;
+    background: rgb(57,43,144)!important;
+    color: #fff
+}
+
+
+.Fianna-Fail_label:before {
+    content: "(FF) ";
+}
+.Fianna-Fail_abbr:before {
+    content: "FF";
+}
+.Fianna-Fail {
+    fill: rgb(64,179,79)!important;
+    background: rgb(64,179,79)!important;
+    color: #fff
+}
+
+.Independents-4-Change_label:before {
+    content: "(I4C) ";
+}
+.Independents-4-Change_abbr:before {
+    content: "I4C";
+}
+.Independents-4-Change {
+    fill: #111111!important;
+    background: #111111!important;
+    color: #fff
+}
+
+
 .Democratic-Unionist-Party---DUP_label:before {
     content: "(DUP) ";
 }
@@ -552,8 +668,8 @@
 }
 
 .Sinn-Fein {
-    fill: #4CAF50!important;
-    background: #4CAF50!important;
+    fill: rgb(39,112,70)!important;
+    background: rgb(39,112,70)!important;
     color: #fff
 }
 

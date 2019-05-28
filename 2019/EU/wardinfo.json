@@ -14,7 +14,7 @@
 		"ward_name": "Dublin",
 		"map_ward_code": "dublin",
 		"cand_ward_code": "EUR:dublin",
-		"seats": "3",
+		"seats": "4",
 		"election": "ireland"
 	},
 	{
@@ -32,7 +32,7 @@
 		"ward_name": "South",
 		"map_ward_code": "south",
 		"cand_ward_code": "EUR:south",
-		"seats": "4",
+		"seats": "5",
 		"election": "ireland"
 	}
 ]

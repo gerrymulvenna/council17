@@ -11,7 +11,8 @@ $outDir = "../2014/EU/";
 
 //$elected = getElectedCandidates($outDir, $elected_without_contest);
 //buildRtree($elections, $outDir, $party_prefix, $party_colors);
-buildData(array_keys($elections), $dataRoot, $outDir);
+//buildData(array_keys($elections), $dataRoot, $outDir);
+buildLocalData("europarl-ireland-2019.csv", "../2019/EU/ireland");
 //buildPtree($elections, $outDir, $party_prefix);
 //buildCtree($elections, $outDir, $party_prefix);
 
@@ -902,7 +903,7 @@ function convertCandidates($candidates, $last_id, $party_prefix)
 
 
 
-// wards -> candidates 
+// wards -> candidates (from Democracy Club)
 function buildData($elections, $dataRoot, $dir)
 {
     global $elected;
@@ -967,6 +968,67 @@ function buildData($elections, $dataRoot, $dir)
     }
     saveCSV($wardinfo, "candidate-wardinfo.csv");
 }
+
+// wards -> candidates (Irish candidates from a local CSV)
+function buildLocalData($my_file, $dir)
+{
+    global $elected;
+
+    $election = 'europarl';
+
+    $wardinfo = array();
+    echo "Building CANDIDATE data files...<br>\n";
+    $wards = array();
+    $wardIDs = array();   //used to keep track of which wards have been added
+    $arrCand = getLocalData($my_file);
+    for ($i = 1; $i < count($arrCand); $i++)
+    {
+        if (count($arrCand[$i]) <= 1)
+        {
+            unset ($arrCand[$i]);
+        }
+    }
+
+    $header = array_shift($arrCand);
+    array_walk($arrCand, '_combine_array', $header);
+
+    foreach ($arrCand as $candidate)
+    {
+        // fudge to get surname using part after last space
+        $names = splitName($candidate['name']);
+        if (!empty($names))
+        {
+            $candidate = array_merge($candidate, $names);
+        }
+        if (isset($elected[$candidate['id']]))
+        {
+            $candidate['elected'] = ($elected[$candidate['id']]) ? "True" : "False";
+        }
+        $post_id = $candidate['post_id'];
+        if (!empty($post_id))
+        {
+            $post_label = $candidate['post_label'];
+            unset ($candidate['election']);
+            unset ($candidate['post_id']);
+            unset ($candidate['post_label']);
+            $key = array_search($post_id, $wardIDs);
+            if ($key === False)
+            {
+                $wardIDs[] = $post_id;
+                $wards[] = array('post_id' => $post_id, 'post_label' => $post_label, 'election' => $election, 'candidates' => array($candidate));
+                $wardinfo[] = array('post_id' => $post_id, 'post_label' => $post_label, 'election' => $election);
+            }
+            else
+            {
+                array_push($wards[$key]['candidates'], $candidate);			   
+            }
+        }
+    }
+    $dc = new DemoClub_Wards();
+    $dc->wards = $wards;
+    writeJSON($dc, $dir . "/europarl.json");
+}
+
 
 // once-off routine to get ward codes from boundary data files
 function boundaryWards($elections, $dir, $my_file)
