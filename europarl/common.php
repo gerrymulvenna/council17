@@ -154,7 +154,7 @@ echo '
             </div>
             <div id="results-ack">
                 <p><em>The Single Transferable Vote (STV) animation was developed by James Bligh (<a href="http://twitter.com/anamates" target="_blank" title="External Link">@anamates</a>) and adapted by Bob Harper on <a href="http://electionsni.org" target="_blank" title="External Link">Elections NI</a>.</em><br>
-                <em>Results data were collated by <a href="https://twitter.com/gerrymulvenna">@gerrymulvenna</a>.</em><br>
+                <em>Results data and Irish candidate data were collated by <a href="https://twitter.com/gerrymulvenna">@gerrymulvenna</a>.</em><br>
                 <em>The UK candidate data was collated by</em></div><div id="dc-logo"><a href="http://democracyclub.org.uk"><img src="democracyclub-logo-with-text.png" width="250"></a>
             </div>
         </div>
