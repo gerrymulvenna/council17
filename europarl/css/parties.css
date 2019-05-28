@@ -34,6 +34,19 @@
     color: #fff
 }
 
+.Identity-Ireland_label:before {
+    content: "(II) ";
+}
+.Identity-Ireland_abbr:before {
+    content: "II";
+}
+.Identity-Ireland {
+    fill: #007777!important;
+    background: #007777!important;
+    color: #fff
+}
+
+
 .Direct-Democracy-Ireland_label:before {
     content: "(DDI) ";
 }
