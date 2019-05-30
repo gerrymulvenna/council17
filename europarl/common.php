@@ -171,7 +171,7 @@ function navigation($title, $param2 = NULL, $param3 = NULL, $param4 = NULL)
         <input type="checkbox" id="show-menu" role="button">
         <div id="cssmenu">
             <ul>
-                <li><a href="/results/"><span>STV animation</span></a></li>
+                <li><a href="index.php"><span>EP2019 (Ireland)</span></a></li>
             </ul>
         </div>';
 }
