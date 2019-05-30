@@ -123,7 +123,7 @@ echo '        <div class="cta">
         <div class="content">
             <div class="row">
                 <h2>Single Transferable Vote (STV) animation</h2>
-                <p>Choose election year, region and then click play to run the animation.</p>
+                <p>Choose election year, member state, region and then click play to run the animation.</p>
                 <div id="menuBar">
                     <select id="yearSelect">
                         <option value="2019">2019</option>
