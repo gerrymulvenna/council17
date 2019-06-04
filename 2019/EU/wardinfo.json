@@ -29,8 +29,17 @@
 	{
 		"council": "Republic of Ireland",
 		"ward_no": "3",
-		"ward_name": "South",
-		"map_ward_code": "south",
+		"ward_name": "South (take 1)",
+		"map_ward_code": "south-take1",
+		"cand_ward_code": "EUR:south",
+		"seats": "5",
+		"election": "ireland"
+	},
+	{
+		"council": "Republic of Ireland",
+		"ward_no": "3",
+		"ward_name": "South (recount)",
+		"map_ward_code": "south-recount",
 		"cand_ward_code": "EUR:south",
 		"seats": "5",
 		"election": "ireland"
