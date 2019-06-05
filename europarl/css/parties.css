@@ -517,7 +517,7 @@
     content: "(SF) ";
 }
 .Green-Party_label:before {
-    content: "(GP) ";
+    content: "(Greens) ";
 }
 .Democratic-Unionist-Party_label:before {
     content: "(DUP) ";
@@ -596,7 +596,7 @@
     content: "SF";
 }
 .Green-Party_abbr:before {
-    content: "GP";
+    content: "Greens";
 }
 .Democratic-Unionist-Party_abbr:before {
     content: "DUP";

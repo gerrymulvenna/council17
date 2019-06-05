@@ -251,7 +251,6 @@ function navigation($title, $param2 = NULL, $param3 = NULL, $param4 = NULL)
         <input type="checkbox" id="show-menu" role="button">
         <div id="cssmenu">
             <ul>
-                <li><a href="/europarl/"><span>EP2019 (Ireland)</span></a></li>
                 <li><a href="/results/"><span>STV animation</span></a></li>
                 <li><a href="/treeview/results.php"><span>Data explorer</span></a></li>
                 <li><a href="/councils/"><span>By map</span></a></li>
