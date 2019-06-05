@@ -1,5 +1,13 @@
 <?php
 
+// maps each region slug to a region name
+$regions = array(
+"dublin" => "Dublin",
+"midlands-northwest"=> "Midlands/North-west",
+"south" => "South",
+"ni" => "Northern Ireland");
+
+
 function add_count_head($title, $name, $twimg)
 {
     echo '
