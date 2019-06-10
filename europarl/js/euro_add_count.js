@@ -91,6 +91,9 @@ function loadCandidates(council, ward_code, year)
 function findWardInfo(year, filename) {
     var request = new XMLHttpRequest();
     var path = '/' + year + '/EU/' + filename; 
+	
+	wardpath.innerHTML = path;
+
     request.onreadystatechange = function() {
         if (request.readyState == 4 && request.status >= 200 && request.status < 400) {
             warddata = JSON.parse(request.responseText);
@@ -109,6 +112,8 @@ function getCountInfo(council, ward_code, year) {
     var request = new XMLHttpRequest();
     var path = '/' + year + '/EU/' + council + '/' + ward_code + '/ResultsJson.json?' + new Date().getTime(); // add ? with timestamp to force XMLHttpRequest not to cache
 	console.log(path);
+
+	resultspath.innerHTML = path;
     request.onreadystatechange = function() {
         if (request.readyState == 4 && request.status >= 200 && request.status < 400) {
             countdata = JSON.parse(request.responseText);
@@ -128,6 +133,9 @@ function findCandInfo(year, filename) {
     var request = new XMLHttpRequest();
     var path = '/' + year + '/EU/' + council + '/' + filename; 
 	console.log(path);
+
+	candidatepath.innerHTML = path;
+	summarypath.innerHTML = '/' + year + '/EU/' + council + '/all-constituency-info.json';
     request.onreadystatechange = function() {
         if (request.readyState == 4 && request.status >= 200 && request.status < 400) {
             canddata = JSON.parse(request.responseText);

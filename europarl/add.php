@@ -50,9 +50,32 @@ selectCouncil('Select an EU member state', 'add-form', '');
             </form>
         </div>
         <div id="promotional">
-<?php
-?>
-
+<h4>Data entry notes</h4>
+<ol>
+<li>Paste data as tab-delimited array of numbers, so prepare the results array in a spreadsheet</li>
+<li>There must be an odd number of columns, beginning with the first preferences, then a pair of transfers&lt;TAB&gt;totals for subsequent counts<br>
+i.e. <em>Count1&lt;TAB&gt;Transfers2&lt;TAB&gt;Count2&lt;TAB&gt;Transfers3&lt;TAB&gt;Count3&lt;TAB&gt;Transfers4&lt;TAB&gt;Count4&lt;TAB&gt;Transfers5&lt;TAB&gt;Count5 etc.</em></li>
+<li>The number of rows must equal the number of candidates</li>
+<li>The rows will be allocated to candidates, sorted in order of <em>surname, firstname</em></li>
+<li>Enter explicit zeros rather than blanks</li>
+<li>Commas can be included, as they will be ignored</li>
+<li>Look out for surnames, which include spaces or accented characters. These should be replaced in the candidate data file with html entities, e.g. &amp;nb; or &amp;iacute;</li>
+<li>If you need to make corrections to the results data or amend the names of candidates, it is best to 
+<ul>
+<li>load up the existing data in this page by selecting Member state, Region and Year,</li>
+<li>then delete the results data file and</li>
+<li>submit an entire new array into the form above.</li>
+</ul>
+In this way the electorate and voting data are preserved.</li>
+</ol>
+<h4>Results data file</h4>
+<div id="resultspath"></div>
+<h4>Summary data file</h4>
+<div id="summarypath"></div>
+<h4>Candidate data file</h4>
+<div id="candidatepath"></div>
+<h4>Ward data file</h4>
+<div id="wardpath"></div>
         </div>
 </div>
 
