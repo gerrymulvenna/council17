@@ -38,7 +38,7 @@ function add_count_head($title, $name, $twimg)
     <meta property="og:title" content="Scottish Council elections 2017 #council17" />
     <meta property="og:description" content="Presenting crowdsourced open data, live results and data visualisations for the Scottish Council Elections 2017" />
 ';
-echo "    <meta property=\"og:image\" content=\"http://" . $_SERVER['SERVER_NAME'] . "$twimg\" />\n";
+echo "    <meta property=\"og:image\" content=\"https://" . $_SERVER['SERVER_NAME'] . "$twimg\" />\n";
 echo '
 
 </head>
@@ -56,7 +56,7 @@ function results_head($title, $name, $twimg)
     $url = "http://council17.mulvenna.org/results/";
     if (isset($_GET['year']) && isset($_GET['council']) && isset($_GET['ward']))
     {
-        $url = "http://" . $_SERVER['SERVER_NAME'] . "/results/?year=" . $_GET['year'] . "&council=" . $_GET['council'] . "&ward=" . $_GET['ward'];
+        $url = "https://" . $_SERVER['SERVER_NAME'] . "/results/?year=" . $_GET['year'] . "&council=" . $_GET['council'] . "&ward=" . $_GET['ward'];
         if (isset($councils[$_GET['council']]) && isset($wards[$_GET['ward']]))
         {
             $desc = $wards[$_GET['ward']] . ", " . $councils[$_GET['council']] . " ward-level results visualisation for the council election " . $_GET['year'];
@@ -98,7 +98,7 @@ function results_head($title, $name, $twimg)
     <meta property="og:title" content="' . $title . '" />
     <meta property="og:description" content="' . $desc . '" />
 ';
-echo "    <meta property=\"og:image\" content=\"http://" . $_SERVER['SERVER_NAME'] . "$twimg\" />\n";
+echo "    <meta property=\"og:image\" content=\"https://" . $_SERVER['SERVER_NAME'] . "$twimg\" />\n";
 echo '
 
 </head>
@@ -187,8 +187,8 @@ function head($title, $mapName, $mapLat, $mapLong, $mapZoom, $mapProperty, $mapU
     echo'
     <meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js"></script>
-	<script src="http://cdn.rawgit.com/calvinmetcalf/leaflet-ajax/gh-pages/dist/leaflet.ajax.min.js"></script>
+	<script src="https://unpkg.com/leaflet@0.7.7/dist/leaflet.js"></script>
+	<script src="https://cdn.rawgit.com/calvinmetcalf/leaflet-ajax/gh-pages/dist/leaflet.ajax.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
 	<script src="/website/js/leaflet.pattern.js"></script>
     <script src="/website/js/jstree/jstree.min.js"></script>
@@ -209,7 +209,7 @@ function head($title, $mapName, $mapLat, $mapLong, $mapZoom, $mapProperty, $mapU
     }
     echo '</script>
 
-  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@0.7.7/dist//leaflet.css"/>
 	<link rel="stylesheet" type="text/css" href="/website/css/style.css" media="screen, handheld" />
 	<link rel="stylesheet" type="text/css" href="/website/css/parties.css" media="screen, handheld" />
 	<link rel="stylesheet" type="text/css" href="/website/css/enhanced.css" media="screen  and (min-width: 50.5em)" />
@@ -233,7 +233,7 @@ function head($title, $mapName, $mapLat, $mapLong, $mapZoom, $mapProperty, $mapU
     <meta property="og:title" content="' . $title . '" />
     <meta property="og:description" content="' . $desc . '" />
 ';
-echo "    <meta property=\"og:image\" content=\"http://" . $_SERVER['SERVER_NAME'] . "$twimg\" />\n";
+echo "    <meta property=\"og:image\" content=\"https://" . $_SERVER['SERVER_NAME'] . "$twimg\" />\n";
 echo '
 
 </head>
